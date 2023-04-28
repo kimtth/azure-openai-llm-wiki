@@ -192,8 +192,50 @@ Running from second times
 1. Move to `app` by `cd ..` and `cd app` command
 2. (locally running) Run `start.cmd`
 
+# **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
+
+Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://github.com/microsoft/semantic-kernel/blob/main/FEATURE_MATRIX.md)
+
+![Screenshot](./files/sk-flow.png "SK")
+
+This section includes how to utilize Azure Cosmos DB for vector storage and vector search by leveraging the Semantic-Kernel.
+
+## Semantic-Kernel
+
+- appsettings.template.json : Enviroment value configuration file.
+- ComoseDBVectorSearch.cs : Vector Search using Azure Cosmos DB
+- CosmosDBKernelBuild.cs : Kernel Build code (test)
+- CosmosDBVectorStore.cs : Embedding Text and store it to Azure Cosmos DB
+- LoadDocumentPage.cs : PDF spilitter class. Split the text to unit of section
+- LoadDocumentPageOutput : LoadDocumentPage class generated output
+- MemoryContextAndPlanner.cs : Test code of context and planner
+- MemoryConversationHistory.cs : Test code of conversation history
+- Program.cs : Run a demo. Program Entry point
+- SemanticFunction.cs : Test code of conversation history
+- semanticKernelCosmos.csproj : C# Project file
+- Settings.cs : Environment value class
+- SkillBingSearch.cs : Bing Search Skill
+- SkillDALLEImgGen.cs : DALLE Skill (Only OpenAI, Azure Open AI not supports yet)
+
+## Environment values
+
+```json
+{
+  "Type": "azure",
+  "Model": "<model_deployment_name>",
+  "EndPoint": "https://<your-endpoint-value>.openai.azure.com/",
+  "AOAIApiKey": "<your-key>",
+  "OAIApiKey": "",
+  "OrdId": "-", //The value needs only when using Open AI.
+  "BingSearchAPIKey": "<your-key>",
+  "aoaiDomainName": "<your-endpoint-value>",
+  "CosmosConnectionString": "<cosmos-connection-string>"
+}
+```
 
 ## References
+
+- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 
 - [LangChain](https://python.langchain.com/en/latest/index.html)
 
