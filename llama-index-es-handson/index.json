@@ -1,0 +1,1 @@
+{"index_struct": {"__type__": "opensearch", "__data__": {"index_id": "fcc56c5a-ebda-4c78-930a-5d2bef5e9e80", "summary": null, "nodes_dict": {}, "doc_id_dict": {}, "embeddings_dict": {}}}, "docstore": {"docs": {}, "ref_doc_info": {"6ab92c0c-682d-4dc7-9549-690e39dfa390": {"doc_hash": "b01a4f2afc9e2261a1bc77f03af8ee3a09463b63efb272279433271173086142"}}}, "vector_store": {}}

@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors>$(WarningsAsErrors);</WarningsAsErrors>
+    <NoWarn>NU1605</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningsAsErrors>$(WarningsAsErrors);</WarningsAsErrors>
+    <NoWarn>NU1605</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\samples\apps\copilot-chat-app\importdocument\ImportDocument.csproj" />
+    <ProjectReference Include="..\..\samples\apps\copilot-chat-app\webapi\CopilotChatApi.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\FileCompression\FileCompression.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\github-skills\GitHubSkills.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\graph-api-skills\MsGraphSkillsExample.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\kernel-extension-load-prompts-from-cloud\LoadPromptsFromCloud.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\kernel-syntax-examples\KernelSyntaxExamples.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\KernelBuilder\KernelBuilder.csproj" />
+    <ProjectReference Include="..\..\samples\dotnet\KernelHttpServer\KernelHttpServer.csproj" />
+    <ProjectReference Include="..\src\Connectors\Connectors.AI.OpenAI\Connectors.AI.OpenAI.csproj" />
+    <ProjectReference Include="..\src\Connectors\Connectors.Memory.CosmosDB\Connectors.Memory.CosmosDB.csproj" />
+    <ProjectReference Include="..\src\Connectors\Connectors.Memory.Qdrant\Connectors.Memory.Qdrant.csproj" />
+    <ProjectReference Include="..\src\Connectors\Connectors.Memory.Sqlite\Connectors.Memory.Sqlite.csproj" />
+    <ProjectReference Include="..\src\Connectors\Connectors.UnitTests\Connectors.UnitTests.csproj" />
+    <ProjectReference Include="..\src\IntegrationTests\IntegrationTests.csproj" />
+    <ProjectReference Include="..\src\SemanticKernel.Abstractions\SemanticKernel.Abstractions.csproj" />
+    <ProjectReference Include="..\src\SemanticKernel.MetaPackage\SemanticKernel.MetaPackage.csproj" />
+    <ProjectReference Include="..\src\SemanticKernel.UnitTests\SemanticKernel.UnitTests.csproj" />
+    <ProjectReference Include="..\src\SemanticKernel\SemanticKernel.csproj" />
+    <ProjectReference Include="..\src\Skills\Skills.Document\Skills.Document.csproj" />
+    <ProjectReference Include="..\src\Skills\Skills.MsGraph\Skills.MsGraph.csproj" />
+    <ProjectReference Include="..\src\Skills\Skills.OpenAPI\Skills.OpenAPI.csproj" />
+    <ProjectReference Include="..\src\Skills\Skills.UnitTests\Skills.UnitTests.csproj" />
+    <ProjectReference Include="..\src\Skills\Skills.Web\Skills.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="output\" />
+  </ItemGroup>
+
+</Project>
