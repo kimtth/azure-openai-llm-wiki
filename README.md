@@ -1,4 +1,8 @@
 
+## Intro
+
+This repository contains my research on open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
+
 # **Section 1** : Llama-index and Vector Storage (Search)
 
 This repository has been created for testing and feasibility checks using vector and language chains, specifically llama-index. These libraries are commonly used when implementing Prompt Engineering and consuming one's own data into LLM.  
@@ -202,11 +206,11 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 
 ## Semantic-Kernel
 
-- appsettings.template.json : Enviroment value configuration file.
+- appsettings.template.json : Environment value configuration file.
 - ComoseDBVectorSearch.cs : Vector Search using Azure Cosmos DB
 - CosmosDBKernelBuild.cs : Kernel Build code (test)
 - CosmosDBVectorStore.cs : Embedding Text and store it to Azure Cosmos DB
-- LoadDocumentPage.cs : PDF spilitter class. Split the text to unit of section
+- LoadDocumentPage.cs : PDF splitter class. Split the text to unit of section. (C# version of `azure-search-openai-demo/scripts/prepdocs.py`)
 - LoadDocumentPageOutput : LoadDocumentPage class generated output
 - MemoryContextAndPlanner.cs : Test code of context and planner
 - MemoryConversationHistory.cs : Test code of conversation history
@@ -233,16 +237,60 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 }
 ```
 
-## References
+# **Section 4** : Langchain code from [@practical-ai](https://www.youtube.com/@practical-ai)
+
+Langchain Quick Start: How to Use and Useful Utilities
+
+- Langchain_1_(믹스의_인공지능).ipynb : Langchain Get started
+- langchain_1_(믹스의_인공지능).py : ditto
+- Langchain_2_(믹스의_인공지능).ipynb : Langchain Utilities
+- langchain_2_(믹스의_인공지능).py : ditto
+
+```python
+from langchain.chains.summarize import load_summarize_chain
+chain = load_summarize_chain(chat, chain_type="map_reduce", verbose=True)
+chain.run(docs[:3])
+```
+
+Langchain chain_type
+
+- stuff: Sends everything at once in LLM. If it's too long, an error will occur.
+- map_reduce: Summarizes by dividing and then summarizing the entire summary.
+- refine: (Summary + Next document) => Summary
+- map_rerank: Ranks by score and summarizes to important points.
+
+## **Section 5**: References
+
+### Langchain and Prompt engineering library
 
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
-
 - [LangChain](https://python.langchain.com/en/latest/index.html)
-
 - [llama-index](https://github.com/jerryjliu/llama_index)
+- [믹스의 인공지능](https://www.youtube.com/@practical-ai)
+
+### Azure Open AI work with Cognitive Search act as a Long-term memory
 
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
-
 - [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
-
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+
+### AutoGPT
+
+- [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
+- [babyagi](https://github.com/yoheinakajima/babyagi)
+- [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
+
+### Democratizing the magic of ChatGPT with open models
+
+- [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+- [gpt4all](https://github.com/nomic-ai/gpt4all)
+- [vicuna](https://vicuna.lmsys.org/)
+- [dolly](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
+- [Cerebras-GPT](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
+- [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main)
+- [KoAlpaca](https://github.com/Beomi/KoAlpaca)
+
+### UI/UX
+
+- [Gradio](https://github.com/gradio-app/gradio)
+- [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
