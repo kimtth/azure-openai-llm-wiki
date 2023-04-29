@@ -1,5 +1,5 @@
 
-## Intro
+# Intro
 
 This repository contains my research on open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
 
@@ -259,7 +259,7 @@ Langchain chain_type
 - refine: (Summary + Next document) => Summary
 - map_rerank: Ranks by score and summarizes to important points.
 
-## **Section 5**: References
+# **Section 5**: References
 
 ### Langchain and Prompt engineering library
 
