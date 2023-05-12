@@ -1,3 +1,4 @@
+`added: Section 6 : Recent Updates (05/12/2023)`
 
 # Intro
 
@@ -294,3 +295,59 @@ Langchain chain_type
 
 - [Gradio](https://github.com/gradio-app/gradio)
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+
+# **Section 6** : Recent Updates (05/12/2023)
+
+## MLLM
+- Facebook: ImageBind / SAM (Just Info)
+1. [facebookresearch/ImageBind](https://github.com/facebookresearch/ImageBind): ImageBind One Embedding Space to Bind Them All (github.com)
+2. [facebookresearch/segment-anything(SAM)](https://github.com/facebookresearch/segment-anything): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. (github.com)
+
+- Microsoft: Kosmos-1
+1. [2302.14045] Language Is Not All You Need: Aligning Perception with Language Models (arxiv.org)
+2. [Language Is Not All You Need](https://arxiv.org/abs/2302.14045)
+
+## 3D
+openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
+- [openai/shap-e](https://github.com/openai/shap-e)
+
+## Communicative Agents 
+- [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society (github.com)
+- 1:1 Conversation between two ai agents
+Camel Agents - a Hugging Face Space by camel-ai
+[Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
+
+## UI/UX
+- Very Simple Langchain exaple using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
+- Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
+
+## Tiktoken Alternative in C#
+microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
+[microsoft/Tokenizer](https://github.com/microsoft/Tokenizer)
+
+## Semantic Kernel 
+- Semantic Kernel has recently introduced support for Azure Cognitive Search as a memory. However, it currently only supports Azure Cognitive Search with a Semantic Search interface, lacking any features to store vectors to ACS.
+
+- According to the comments, this suggests that the strategy of the plan could be divided into two parts. One part focuses on Semantic Search, while the other involves generating embeddings using OpenAI.
+
+`Azure Cognitive Search automatically indexes your data semantically, so you don't need to worry about embedding generation.`
+`samples/dotnet/kernel-syntax-examples/Example14_SemanticMemory.cs`.
+
+```csharp
+// TODO: use vectors
+        var options = new SearchOptions
+        {
+            QueryType = SearchQueryType.Semantic,
+            SemanticConfigurationName = "default",
+            QueryLanguage = "en-us",
+            Size = limit,
+        };
+```
+
+- SemanticKernel Implementation sample to overcome Token limits of Open AI model.
+Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
+[Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
+
+## Extras
+- [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
+- [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models (github.com) 
