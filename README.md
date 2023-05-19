@@ -1,9 +1,45 @@
 
 `updated: 05/19/2023`
 
-# Intro
-
 This repository contains my research on open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
+
+- **Section 1** : Llama-index and Vector Storage (Search)
+  * [Opensearch/Elasticsearch setup](#opensearch-elasticsearch-setup)
+  * [Llama-index](#llama-index)
+  * [Milvus Embedded](#milvus-embedded)
+  * [Conclusion](#conclusion)
+- **Section 2** : azure-search-openai-demo setup steps
+  * [extra_steps files](#extra-steps-files)
+  * [Configuration steps](#configuration-steps)
+- **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
+  * [Semantic-Kernel](#semantic-kernel)
+  * [Environment values](#environment-values)
+- [**Section 4** : Langchain sample code](#section-4--langchain-code)
+- **Section 5**: Prompt Engineering, and Langchain vs Semantic Kernel
+  - [**Prompt Engineering**](#prompt-engineering)
+  - [DeepLearning.ai Prompt Engineering COURSE](#deeplearningai-prompt-engineering-course)
+  - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
+  - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
+  - [**Langchain vs Semantic Kernel**](#langchain-vs-semantic-kernel)
+    + [Semantic Function](#semantic-function)
+    + [Prompt Template language Key takeaways](#prompt-template-language-key-takeaways)
+    + [Langchain Agent](#langchain-agent)
+    + [Sementic Kernel Glossary](#sementic-kernel-glossary)
+- **Section 6** : Reference
+  * [Langchain and Prompt engineering library](#langchain-and-prompt-engineering-library)
+  * [AutoGPT](#autogpt)
+  * [Communicative Agents](#communicative-agents)
+  * [Democratizing the magic of ChatGPT with open models](#democratizing-the-magic-of-chatgpt-with-open-models)
+  * [Hugging face Transformer](#hugging-face-transformer)
+  * [Hugging face StarCoder](#hugging-face-starcoder)
+  * [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
+  * [Generate 3D](#generate-3d)
+  * [string2string](#string2string)
+  * [Tiktoken Alternative in C#](#tiktoken-alternative-in-c-)
+  * [UI/UX](#ui-ux)
+  * [PDF with ChatGPT](#pdf-with-chatgpt)
+  * [Edge and Chrome Extension](#edge-and-chrome-extension)
+  * [etc.](#etc)
 
 # **Section 1** : Llama-index and Vector Storage (Search)
 
@@ -198,6 +234,18 @@ Running from second times
 1. Move to `app` by `cd ..` and `cd app` command
 2. (locally running) Run `start.cmd`
 
+Another Reference Architectue
+
+[azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
+
+![Screenshot](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna/raw/main/docs/architecture.png "embeddin_azure")
+
+Azure Open AI work with Cognitive Search act as a Long-term memory
+
+- [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
+- [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
+- [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+
 # **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
 
 Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://github.com/microsoft/semantic-kernel/blob/main/FEATURE_MATRIX.md)
@@ -247,30 +295,23 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 `samples/dotnet/kernel-syntax-examples/Example14_SemanticMemory.cs`.
 
 ```csharp
-
 // TODO: use vectors
-
-        var options = new SearchOptions
-
-        {
-
-            QueryType = SearchQueryType.Semantic,
-
-            SemanticConfigurationName = "default",
-
-            QueryLanguage = "en-us",
-
-            Size = limit,
-
-        };
-
+var options = new SearchOptions
+{
+        QueryType = SearchQueryType.Semantic,
+        SemanticConfigurationName = "default",
+        QueryLanguage = "en-us",
+        Size = limit,
+};
 ```
 
 - SemanticKernel Implementation sample to overcome Token limits of Open AI model.
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
 [Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
 
-# **Section 4** : Langchain code from [@practical-ai](https://www.youtube.com/@practical-ai)
+# **Section 4** : Langchain code 
+
+cite: [@practical-ai](https://www.youtube.com/@practical-ai)
 
 Langchain Quick Start: How to Use and Useful Utilities
 
@@ -292,48 +333,6 @@ Langchain chain_type
 - refine: (Summary + Next document) => Summary
 - map_rerank: Ranks by score and summarizes to important points.
 
-# **Section 5**: References
-
-### Langchain and Prompt engineering library
-
-- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
-- [LangChain](https://python.langchain.com/en/latest/index.html)
-- [llama-index](https://github.com/jerryjliu/llama_index)
-- [믹스의 인공지능](https://www.youtube.com/@practical-ai)
-
-### Azure Open AI work with Cognitive Search act as a Long-term memory
-
-- [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
-- [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
-- [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
-
-### AutoGPT
-
-- [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
-- [babyagi](https://github.com/yoheinakajima/babyagi)
-- [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
-
-### Democratizing the magic of ChatGPT with open models
-
-- [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)
-- [gpt4all](https://github.com/nomic-ai/gpt4all)
-- [vicuna](https://vicuna.lmsys.org/)
-- [dolly](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
-- [Cerebras-GPT](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
-- [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main)
-- [KoAlpaca](https://github.com/Beomi/KoAlpaca)
-
-### UI/UX
-
-- [Gradio](https://github.com/gradio-app/gradio)
-- [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
-- Very Simple Langchain exaple using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
-- Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
-
-## PDF with ChatGPT ##
-
-- Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
-
 # **Section 5**: Prompt Engineering, and Langchain vs Semantic Kernel #
 
 ## **Prompt Engineering** ##
@@ -346,6 +345,24 @@ Langchain chain_type
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
+### **DeepLearning.ai Prompt Engineering COURSE** ##
+
+[ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+
+### **Awesome ChatGPT Prompts** 
+
+[Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+### **ChatGPT : “user”, “assistant”, and “system” messages.**
+
+ To be specific, the ChatGPT API allows for differentiation between “user”, “assistant”, and “system” messages.
+
+ 1. always obey "system" messages.
+ 1. all end user input in the “user” messages.
+ 1. "assistant" messages as previous chat responses from the assistant.
+
+ Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. (https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
+
 ## **Langchain vs Semantic Kernel** ##
 
 | Langchain |  Semantic Kernel             |
@@ -353,8 +370,8 @@ Langchain chain_type
 | Memory    |  Memory                      |
 | Tookit    |  Skill                       |
 | Tool      |  Function (Native, Semantic) |
-| Agent     |  Planner, Step (?)           |
-| Chain     |  Planner, Step (?)           |
+| Agent     |  Planner                     |
+| Chain     |  Steps, Pipeline             |
 | Tool      |  Connector                   |
 
 ### **Semantic Function** ### 
@@ -363,7 +380,7 @@ expressed in natural language in a text file "*skprompt.txt*" using SK's
 [Prompt Template language](https://github.com/microsoft/semantic-kernel/blob/main/docs/PROMPT_TEMPLATE_LANGUAGE.md).
 Each semantic function is defined by a unique prompt template file, developed using modern
 
-### **Prompt Template language Key takeaway** ###
+### **Prompt Template language Key takeaways** ###
 
 1. Variables : use the {{$variableName}} syntax : Hello {{$name}}, welcome to Semantic Kernel!
 
@@ -378,7 +395,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 For instance:
 
-... {{ 'no need to \"escape" ' }} ...
+... {{ 'no need to \\"escape" ' }} ...
 is equivalent to:
 
 ... {{ 'no need to "escape" ' }} ...
@@ -409,12 +426,48 @@ is equivalent to:
 | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
 | GET       | And the user gets what they asked for ...      
 
-# **Section 7** #
+# **Section 6** : Reference #
+
+## Langchain and Prompt engineering library
+
+- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
+- [LangChain](https://python.langchain.com/en/latest/index.html)
+- [llama-index](https://github.com/jerryjliu/llama_index)
+- [믹스의 인공지능](https://www.youtube.com/@practical-ai)
+
+## AutoGPT
+
+- [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
+- [babyagi](https://github.com/yoheinakajima/babyagi)
+- [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
+
+## Communicative Agents 
+- [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society (github.com)
+- 1:1 Conversation between two ai agents
+Camel Agents - a Hugging Face Space by camel-ai
+[Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
+
+## Democratizing the magic of ChatGPT with open models
+
+- [facebookresearch/llama](https://github.com/facebookresearch/llama)
+- [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)
+- [gpt4all](https://github.com/nomic-ai/gpt4all)
+- [vicuna](https://vicuna.lmsys.org/)
+- [dolly](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html)
+- [Cerebras-GPT](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/)
+- [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main)
+- [KoAlpaca](https://github.com/Beomi/KoAlpaca)
 
 ## Hugging face Transformer
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
-## MLLM
+## Hugging face StarCoder
+
+- [StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
+
+- [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
+
+## MLLM (multimodal large language model)
 - Facebook: ImageBind / SAM (Just Info)
 1. [facebookresearch/ImageBind](https://github.com/facebookresearch/ImageBind): ImageBind One Embedding Space to Bind Them All (github.com)
 2. [facebookresearch/segment-anything(SAM)](https://github.com/facebookresearch/segment-anything): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. (github.com)
@@ -423,19 +476,34 @@ is equivalent to:
 1. [2302.14045] Language Is Not All You Need: Aligning Perception with Language Models (arxiv.org)
 2. [Language Is Not All You Need](https://arxiv.org/abs/2302.14045)
 
-## 3D
+## Generate 3D
 openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
 - [openai/shap-e](https://github.com/openai/shap-e)
 
-## Communicative Agents 
-- [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society (github.com)
-- 1:1 Conversation between two ai agents
-Camel Agents - a Hugging Face Space by camel-ai
-[Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
+## string2string
+The string2string library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. 
+- [string2string](https://github.com/stanfordnlp/string2string)
+
+![Screenshot](https://github.com/stanfordnlp/string2string/raw/main/fables/string2string-overview.png "S2S")
 
 ## Tiktoken Alternative in C#
 microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer)
+
+## UI/UX
+
+- [Gradio](https://github.com/gradio-app/gradio)
+- [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+- Very Simple Langchain example using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
+- Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
+
+## PDF with ChatGPT ##
+
+- Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
+
+## Edge and Chrome Extension
+
+[BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
 
 ## etc.
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
