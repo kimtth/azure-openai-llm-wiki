@@ -1,4 +1,5 @@
-`added: Section 6 : Recent Updates (05/12/2023)`
+
+`updated: 05/19/2023`
 
 # Intro
 
@@ -238,6 +239,37 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 }
 ```
 
+- Semantic Kernel has recently introduced support for Azure Cognitive Search as a memory. However, it currently only supports Azure Cognitive Search with a Semantic Search interface, lacking any features to store vectors to ACS.
+
+- According to the comments, this suggests that the strategy of the plan could be divided into two parts. One part focuses on Semantic Search, while the other involves generating embeddings using OpenAI.
+
+`Azure Cognitive Search automatically indexes your data semantically, so you don't need to worry about embedding generation.`
+`samples/dotnet/kernel-syntax-examples/Example14_SemanticMemory.cs`.
+
+```csharp
+
+// TODO: use vectors
+
+        var options = new SearchOptions
+
+        {
+
+            QueryType = SearchQueryType.Semantic,
+
+            SemanticConfigurationName = "default",
+
+            QueryLanguage = "en-us",
+
+            Size = limit,
+
+        };
+
+```
+
+- SemanticKernel Implementation sample to overcome Token limits of Open AI model.
+Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
+[Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
+
 # **Section 4** : Langchain code from [@practical-ai](https://www.youtube.com/@practical-ai)
 
 Langchain Quick Start: How to Use and Useful Utilities
@@ -295,8 +327,92 @@ Langchain chain_type
 
 - [Gradio](https://github.com/gradio-app/gradio)
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+- Very Simple Langchain exaple using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
+- Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
 
-# **Section 6** : Recent Updates (05/12/2023)
+## PDF with ChatGPT ##
+
+- Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
+
+# **Section 5**: Prompt Engineering, and Langchain vs Semantic Kernel #
+
+## **Prompt Engineering** ##
+
+1. Zero-shot 
+1. Few-shot Learning
+1. Chain of Thought (CoT): ReAct and Self Consistency also inherit the CoT concept.
+1. Recursively Criticizes and Improves (RCI)
+1. ReAct: Grounding with external sources.
+
+[Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+## **Langchain vs Semantic Kernel** ##
+
+| Langchain |  Semantic Kernel             |
+| --------- | ---------------------------- |
+| Memory    |  Memory                      |
+| Tookit    |  Skill                       |
+| Tool      |  Function (Native, Semantic) |
+| Agent     |  Planner, Step (?)           |
+| Chain     |  Planner, Step (?)           |
+| Tool      |  Connector                   |
+
+### **Semantic Function** ### 
+
+expressed in natural language in a text file "*skprompt.txt*" using SK's
+[Prompt Template language](https://github.com/microsoft/semantic-kernel/blob/main/docs/PROMPT_TEMPLATE_LANGUAGE.md).
+Each semantic function is defined by a unique prompt template file, developed using modern
+
+### **Prompt Template language Key takeaway** ###
+
+1. Variables : use the {{$variableName}} syntax : Hello {{$name}}, welcome to Semantic Kernel!
+
+2. Function calls: use the {{namespace.functionName}} syntax : The weather today is {{weather.getForecast}}.
+
+3. Function parameters: {{namespace.functionName $varName}} and {{namespace.functionName "value"}} syntax : The weather today in {{$city}} is {{weather.getForecast $city}}.
+
+4. Prompts needing double curly braces : 
+{{ "{{" }} and {{ "}}" }} are special SK sequences.
+
+5. Values that include quotes, and escaping : 
+
+For instance:
+
+... {{ 'no need to \"escape" ' }} ...
+is equivalent to:
+
+... {{ 'no need to "escape" ' }} ...
+
+### **Langchain Agent** ###
+
+1. If you're using a text LLM, first try `zero-shot-react-description`.
+1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
+1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
+
+1. `self-ask-with-search`: [ self ask with search paper](https://ofir.io/self-ask.pdf)
+
+1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
+
+### **Sementic Kernel Glossary** ###
+
+[Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
+
+[Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
+
+| Journey   | Short Description                                                                                                                                                                                                                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ASK       | A user's goal is sent to SK as an ASK                                                                                                                                                                                                                                                                 |
+| Kernel    | [The kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/kernel) orchestrates a user's ASK                                                                                                                                                                                          |
+| Planner   | [The planner](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/planner) breaks it down into steps based upon resources that are available                                                                                                                                                |
+| Resources | Planning involves leveraging available [skills,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/skills) [memories,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/memories) and [connectors](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/connectors) |
+| Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
+| Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
+| GET       | And the user gets what they asked for ...      
+
+# **Section 7** #
+
+## Hugging face Transformer
+- [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
 ## MLLM
 - Facebook: ImageBind / SAM (Just Info)
@@ -317,37 +433,11 @@ openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
 Camel Agents - a Hugging Face Space by camel-ai
 [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
 
-## UI/UX
-- Very Simple Langchain exaple using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
-- Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
-
 ## Tiktoken Alternative in C#
 microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer)
 
-## Semantic Kernel 
-- Semantic Kernel has recently introduced support for Azure Cognitive Search as a memory. However, it currently only supports Azure Cognitive Search with a Semantic Search interface, lacking any features to store vectors to ACS.
-
-- According to the comments, this suggests that the strategy of the plan could be divided into two parts. One part focuses on Semantic Search, while the other involves generating embeddings using OpenAI.
-
-`Azure Cognitive Search automatically indexes your data semantically, so you don't need to worry about embedding generation.`
-`samples/dotnet/kernel-syntax-examples/Example14_SemanticMemory.cs`.
-
-```csharp
-// TODO: use vectors
-        var options = new SearchOptions
-        {
-            QueryType = SearchQueryType.Semantic,
-            SemanticConfigurationName = "default",
-            QueryLanguage = "en-us",
-            Size = limit,
-        };
-```
-
-- SemanticKernel Implementation sample to overcome Token limits of Open AI model.
-Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
-[Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
-
-## Extras
+## etc.
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
+
 - [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models (github.com) 
