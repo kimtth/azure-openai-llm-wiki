@@ -1,5 +1,5 @@
 
-`updated: 05/19/2023`
+`updated: 05/26/2023`
 
 This repository contains my research on open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
 
@@ -9,31 +9,37 @@ This repository contains my research on open-source models similar to ChatGPT, a
   * [Milvus Embedded](#milvus-embedded)
   * [Conclusion](#conclusion)
 - **Section 2** : azure-search-openai-demo setup steps
-  * [extra_steps files](#extra-steps-files)
+  * [addtional_steps (optional)](#additonalsteps-files)
   * [Configuration steps](#configuration-steps)
+  * [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   * [Semantic-Kernel](#semantic-kernel)
-  * [Environment values](#environment-values)
-- [**Section 4** : Langchain sample code](#section-4--langchain-code)
+  * [Environment variable](#environment-variable)
+  * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
+- **Section 4** : Langchain sample code
+  * [Langchain sample code](#section-4--langchain-code)
 - **Section 5**: Prompt Engineering, and Langchain vs Semantic Kernel
-  - [**Prompt Engineering**](#prompt-engineering)
-  - [DeepLearning.ai Prompt Engineering COURSE](#deeplearningai-prompt-engineering-course)
+  - [Prompt Engineering](#prompt-engineering)
+  - [DeepLearning.ai Prompt Engineering Course](#deeplearningai-prompt-engineering-course)
   - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
+  - [Finetuning](#finetuning) : LoRA
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [**Langchain vs Semantic Kernel**](#langchain-vs-semantic-kernel)
     + [Semantic Function](#semantic-function)
-    + [Prompt Template language Key takeaways](#prompt-template-language-key-takeaways)
+    + [Prompt Template language key takeaways](#prompt-template-language-key-takeaways)
     + [Langchain Agent](#langchain-agent)
     + [Sementic Kernel Glossary](#sementic-kernel-glossary)
 - **Section 6** : Reference
   * [Langchain and Prompt engineering library](#langchain-and-prompt-engineering-library)
   * [AutoGPT](#autogpt)
+  * [picoGPT](#picogpt) : tiny implementation of GPT-2
   * [Communicative Agents](#communicative-agents)
   * [Democratizing the magic of ChatGPT with open models](#democratizing-the-magic-of-chatgpt-with-open-models)
   * [Hugging face Transformer](#hugging-face-transformer)
   * [Hugging face StarCoder](#hugging-face-starcoder)
   * [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
   * [Generate 3D](#generate-3d)
+  * [DragGAN](#draggan)
   * [string2string](#string2string)
   * [Tiktoken Alternative in C#](#tiktoken-alternative-in-c-)
   * [UI/UX](#ui-ux)
@@ -121,17 +127,17 @@ After starting the Milvus service, you can test by running hello_milvus.py. See 
 
 - Lang chain interface of Azure Open AI does not support ChatGPT yet. so that reason, need to use alternatives such as `text-davinci-003`.
 
-> from open ai documents: 
+> @open ai documents: 
 text-embedding-ada-002: 
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings, 
 making the new embeddings more cost effective in working with vector databases. 
 https://openai.com/blog/new-and-improved-embedding-model
 
-> from open search documents: 
+> @open search documents: 
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/
 
-> from llama-index examples: 
+> @llama-index examples: 
 However, the examples in llama-index use 1536 vector size.
 
 
@@ -143,7 +149,7 @@ https://github.com/Azure-Samples/azure-search-openai-demo
 
 ![Screenshot](./files/capture_azure_demo.png "Main")
 
-## extra_steps files
+## additonal_steps files
 
 - fix_from_origin : The modified files, setup related
 - ms_internal_az_init.ps1 : Powershell script for Azure module installation 
@@ -238,13 +244,54 @@ Another Reference Architectue
 
 [azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
 
-![Screenshot](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna/raw/main/docs/architecture.png "embeddin_azure")
+<img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="500"/>
+
+[C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
+
+<img src="files/demo-architecture-csharp.png" alt="embeddin_azure_csharp" width="500"/>
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
 
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
 - [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+
+## Azure Cognitive Search : Vector Search
+- [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
+
+Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4. Semantic Hybrid Search
+
+```python
+# Hybrid Search
+query = "scalable storage solution"  
+  
+search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))  
+  
+results = search_client.search(  
+    search_text=query,  
+    vector=Vector(value=generate_embeddings(query), k=3, fields="contentVector"),  
+    select=["title", "content", "category"],
+    top=3
+) 
+
+# Semantic Hybrid Search
+query = "what is azure sarch?"
+
+search_client = SearchClient(
+    service_endpoint, index_name, AzureKeyCredential(key))
+
+results = search_client.search(
+    search_text=query,
+    vector=Vector(value=generate_embeddings(
+        query), k=3, fields="contentVector"),
+    select=["title", "content", "category"],
+    query_type="semantic", query_language="en-us", semantic_configuration_name='my-semantic-config', query_caption="extractive", query_answer="extractive",
+    top=3
+)
+
+semantic_answers = results.get_answers()
+```
 
 # **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
 
@@ -271,7 +318,7 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 - SkillBingSearch.cs : Bing Search Skill
 - SkillDALLEImgGen.cs : DALLE Skill (Only OpenAI, Azure Open AI not supports yet)
 
-## Environment values
+## Environment variable
 
 ```json
 {
@@ -309,6 +356,20 @@ var options = new SearchOptions
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
 [Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
 
+## **Bing search Web UI and Semantic Kernel sample code**
+
+Semantic Kernel sample code to integrate with Bing Search
+
+`\ms-semactic-bing-notebook`
+- gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
+- gs_davinci.ipynb: Azure Open AI Davinci sample to use Bing Search
+
+Bing Search UI for demo
+
+`\bing-search-webui`: (utility)
+
+<img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="500"/>
+
 # **Section 4** : Langchain code 
 
 cite: [@practical-ai](https://www.youtube.com/@practical-ai)
@@ -339,9 +400,11 @@ Langchain chain_type
 
 1. Zero-shot 
 1. Few-shot Learning
+    - [Open AI: Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 1. Chain of Thought (CoT): ReAct and Self Consistency also inherit the CoT concept.
 1. Recursively Criticizes and Improves (RCI)
 1. ReAct: Grounding with external sources.
+1. Chain-of-Thought Prompting  [(paper)](https://arxiv.org/pdf/2201.11903.pdf)
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
@@ -352,6 +415,10 @@ Langchain chain_type
 ### **Awesome ChatGPT Prompts** 
 
 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+### **Finetuning**
+
+[LoRA: Low-Rank Adaptation of Large Language Models](https://github.com/microsoft/LoRA)
 
 ### **ChatGPT : “user”, “assistant”, and “system” messages.**
 
@@ -429,17 +496,19 @@ is equivalent to:
 # **Section 6** : Reference #
 
 ## Langchain and Prompt engineering library
-
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 - [LangChain](https://python.langchain.com/en/latest/index.html)
 - [llama-index](https://github.com/jerryjliu/llama_index)
 - [믹스의 인공지능](https://www.youtube.com/@practical-ai)
 
 ## AutoGPT
-
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
-- [babyagi](https://github.com/yoheinakajima/babyagi)
+- [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation
 - [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
+
+## picoGPT
+
+- An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT)
 
 ## Communicative Agents 
 - [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society (github.com)
@@ -480,11 +549,15 @@ Camel Agents - a Hugging Face Space by camel-ai
 openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
 - [openai/shap-e](https://github.com/openai/shap-e)
 
+## DragGAN
+Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold [(paper)](https://arxiv.org/pdf/2305.10973)
+- [Online Demo](https://github.com/Zeqiang-Lai/DragGAN)
+
 ## string2string
 The string2string library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. 
 - [string2string](https://github.com/stanfordnlp/string2string)
 
-![Screenshot](https://github.com/stanfordnlp/string2string/raw/main/fables/string2string-overview.png "S2S")
+<img src="files/string2string-overview.png" alt="string2string" width="500"/>
 
 ## Tiktoken Alternative in C#
 microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
@@ -496,6 +569,7 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
 - Very Simple Langchain example using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
 - Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
+- Streaming with Azure OpenAI [SSE](https://github.com/thivy/azure-openai-js-stream)
 
 ## PDF with ChatGPT ##
 
@@ -503,7 +577,7 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 
 ## Edge and Chrome Extension
 
-[BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
+- [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
 
 ## etc.
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
