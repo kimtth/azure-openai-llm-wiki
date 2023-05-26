@@ -1,0 +1,7 @@
+{
+  "type": "azure",
+  "model": "<your-key>",
+  "endpoint": "https://<your-key>.openai.azure.com/",
+  "apikey": "<your-key>",
+  "org": ""
+}
