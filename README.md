@@ -9,20 +9,23 @@ This repository contains my research on open-source models similar to ChatGPT, a
   * [Milvus Embedded](#milvus-embedded)
   * [Conclusion](#conclusion)
 - **Section 2** : azure-search-openai-demo setup steps
-  * [extra_steps files](#extra-steps-files)
+  * [addtional_steps (optional)](#extra-steps-files)
   * [Configuration steps](#configuration-steps)
+  * [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   * [Semantic-Kernel](#semantic-kernel)
-  * [Environment values](#environment-values)
+  * [Environment variable](#environment-variable)
+  * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
 - [**Section 4** : Langchain sample code](#section-4--langchain-code)
 - **Section 5**: Prompt Engineering, and Langchain vs Semantic Kernel
   - [**Prompt Engineering**](#prompt-engineering)
-  - [DeepLearning.ai Prompt Engineering COURSE](#deeplearningai-prompt-engineering-course)
+  - [DeepLearning.ai Prompt Engineering Course](#deeplearningai-prompt-engineering-course)
   - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
+  - [Finetuning](#finetuning)
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [**Langchain vs Semantic Kernel**](#langchain-vs-semantic-kernel)
     + [Semantic Function](#semantic-function)
-    + [Prompt Template language Key takeaways](#prompt-template-language-key-takeaways)
+    + [Prompt Template language key takeaways](#prompt-template-language-key-takeaways)
     + [Langchain Agent](#langchain-agent)
     + [Sementic Kernel Glossary](#sementic-kernel-glossary)
 - **Section 6** : Reference
@@ -34,6 +37,7 @@ This repository contains my research on open-source models similar to ChatGPT, a
   * [Hugging face StarCoder](#hugging-face-starcoder)
   * [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
   * [Generate 3D](#generate-3d)
+  * [DragGAN](#draggan)
   * [string2string](#string2string)
   * [Tiktoken Alternative in C#](#tiktoken-alternative-in-c-)
   * [UI/UX](#ui-ux)
@@ -238,13 +242,54 @@ Another Reference Architectue
 
 [azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
 
-![Screenshot](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna/raw/main/docs/architecture.png "embeddin_azure")
+<img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="500"/>
+
+[C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
+
+<img src="files/demo-architecture-csharp.png" alt="embeddin_azure_csharp" width="500"/>
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
 
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
 - [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+
+## Azure Cognitive Search : Vector Search
+- [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
+
+Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4. Semantic Hybrid Search
+
+```python
+# Hybrid Search
+query = "scalable storage solution"  
+  
+search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))  
+  
+results = search_client.search(  
+    search_text=query,  
+    vector=Vector(value=generate_embeddings(query), k=3, fields="contentVector"),  
+    select=["title", "content", "category"],
+    top=3
+) 
+
+# Semantic Hybrid Search
+query = "what is azure sarch?"
+
+search_client = SearchClient(
+    service_endpoint, index_name, AzureKeyCredential(key))
+
+results = search_client.search(
+    search_text=query,
+    vector=Vector(value=generate_embeddings(
+        query), k=3, fields="contentVector"),
+    select=["title", "content", "category"],
+    query_type="semantic", query_language="en-us", semantic_configuration_name='my-semantic-config', query_caption="extractive", query_answer="extractive",
+    top=3
+)
+
+semantic_answers = results.get_answers()
+```
 
 # **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
 
@@ -271,7 +316,7 @@ This section includes how to utilize Azure Cosmos DB for vector storage and vect
 - SkillBingSearch.cs : Bing Search Skill
 - SkillDALLEImgGen.cs : DALLE Skill (Only OpenAI, Azure Open AI not supports yet)
 
-## Environment values
+## Environment variable
 
 ```json
 {
@@ -309,6 +354,20 @@ var options = new SearchOptions
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
 [Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
 
+## **Bing search Web UI and Semantic Kernel sample code**
+
+Semantic Kernel sample code to integrate with Bing Search
+
+`\ms-semactic-bing-notebook`
+- gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
+- gs_davinci.ipynb: Azure Open AI Davinci sample to use Bing Search
+
+Bing Search UI for demo
+
+`\bing-search-webui`
+
+<img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="500"/>
+
 # **Section 4** : Langchain code 
 
 cite: [@practical-ai](https://www.youtube.com/@practical-ai)
@@ -342,6 +401,7 @@ Langchain chain_type
 1. Chain of Thought (CoT): ReAct and Self Consistency also inherit the CoT concept.
 1. Recursively Criticizes and Improves (RCI)
 1. ReAct: Grounding with external sources.
+1. Chain-of-Thought Prompting  [(paper)](https://arxiv.org/pdf/2201.11903.pdf)
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
@@ -352,6 +412,10 @@ Langchain chain_type
 ### **Awesome ChatGPT Prompts** 
 
 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+### **Finetuning**
+
+[LoRA: Low-Rank Adaptation of Large Language Models](https://github.com/microsoft/LoRA)
 
 ### **ChatGPT : “user”, “assistant”, and “system” messages.**
 
@@ -429,16 +493,14 @@ is equivalent to:
 # **Section 6** : Reference #
 
 ## Langchain and Prompt engineering library
-
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 - [LangChain](https://python.langchain.com/en/latest/index.html)
 - [llama-index](https://github.com/jerryjliu/llama_index)
 - [믹스의 인공지능](https://www.youtube.com/@practical-ai)
 
 ## AutoGPT
-
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
-- [babyagi](https://github.com/yoheinakajima/babyagi)
+- [babyagi](https://github.com/yoheinakajima/babyagi) :　Most Simplest Implementation
 - [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
 
 ## Communicative Agents 
@@ -480,11 +542,16 @@ Camel Agents - a Hugging Face Space by camel-ai
 openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
 - [openai/shap-e](https://github.com/openai/shap-e)
 
+## DragGAN
+Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold
+- [Online Demo](https://github.com/Zeqiang-Lai/DragGAN)
+- [(paper)](https://arxiv.org/pdf/2305.10973)
+
 ## string2string
 The string2string library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. 
 - [string2string](https://github.com/stanfordnlp/string2string)
 
-![Screenshot](https://github.com/stanfordnlp/string2string/raw/main/fables/string2string-overview.png "S2S")
+<img src="files/string2string-overview.png" alt="string2string" width="500"/>
 
 ## Tiktoken Alternative in C#
 microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
@@ -496,6 +563,7 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
 - Very Simple Langchain example using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
 - Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
+- Streaming with Azure OpenAI [SSE](https://github.com/thivy/azure-openai-js-stream)
 
 ## PDF with ChatGPT ##
 
