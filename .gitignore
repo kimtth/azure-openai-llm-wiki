@@ -22,3 +22,6 @@
 /azure-search-openai-demo/venv/
 **/__pycache__/
 *.pyc
+
+/ms-semantic-kernel-cosomos/obj/
+/ms-semantic-kernel-cosomos/bin/
