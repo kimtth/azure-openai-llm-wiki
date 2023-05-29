@@ -22,7 +22,7 @@ This repository contains my research on open-source models similar to ChatGPT, a
   - [Prompt Engineering](#prompt-engineering)
   - [DeepLearning.ai Prompt Engineering Course](#deeplearningai-prompt-engineering-course)
   - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
-  - [Finetuning](#finetuning) : LoRA
+  - [Finetuning](#finetuning) : PEFT - LoRA
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [**Langchain vs Semantic Kernel**](#langchain-vs-semantic-kernel)
     + [Semantic Function](#semantic-function)
@@ -418,7 +418,13 @@ Langchain chain_type
 
 ### **Finetuning**
 
-[LoRA: Low-Rank Adaptation of Large Language Models](https://github.com/microsoft/LoRA)
+PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
+
+- [PEFT](https://huggingface.co/blog/peft)
+
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://github.com/microsoft/LoRA)
+
+<img src="files/LoRA.png" alt="LoRA" width="450"/>
 
 ### **ChatGPT : “user”, “assistant”, and “system” messages.**
 
@@ -519,6 +525,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 ## Democratizing the magic of ChatGPT with open models
 
 - [facebookresearch/llama](https://github.com/facebookresearch/llama)
+- [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) : Open Source RLHF LLM Chatbot
 - [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)
 - [gpt4all](https://github.com/nomic-ai/gpt4all)
 - [vicuna](https://vicuna.lmsys.org/)
