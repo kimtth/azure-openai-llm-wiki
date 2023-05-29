@@ -23,5 +23,5 @@
 **/__pycache__/
 *.pyc
 
-/ms-semantic-kernel-cosomos/obj/
-/ms-semantic-kernel-cosomos/bin/
+/ms-semantic-kernel-cosmos/obj/
+/ms-semantic-kernel-cosmos/bin/
