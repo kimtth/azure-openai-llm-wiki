@@ -57,9 +57,9 @@ This repository contains research on open-source models similar to ChatGPT, as w
   * [DragGAN](#draggan)
   * [string2string](#string2string)
   * [Tiktoken Alternative in C#](#tiktoken-alternative-in-c-)
-  * [UI/UX](#ui-ux)
+  * [UI/UX](#uiux)
   * [PDF with ChatGPT](#pdf-with-chatgpt)
-  * [Edge and Chrome Extension](#edge-and-chrome-extension)
+  * [Edge and Chrome Extension / Plugin](#edge-and-chrome-extension--plugin)
   * [etc.](#etc) + MS Fabric
   * [日本語（Japanese Materials)](#日本語japanese-materials)
 
@@ -302,18 +302,6 @@ Azure Open AI work with Cognitive Search act as a Long-term memory
 Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4. Semantic Hybrid Search
 
 ```python
-# Hybrid Search
-query = "scalable storage solution"  
-  
-search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))  
-  
-results = search_client.search(  
-    search_text=query,  
-    vector=Vector(value=generate_embeddings(query), k=3, fields="contentVector"),  
-    select=["title", "content", "category"],
-    top=3
-) 
-
 # Semantic Hybrid Search
 query = "what is azure sarch?"
 
@@ -321,11 +309,11 @@ search_client = SearchClient(
     service_endpoint, index_name, AzureKeyCredential(key))
 
 results = search_client.search(
-    search_text=query,
+    search_text=query, #text
     vector=Vector(value=generate_embeddings(
-        query), k=3, fields="contentVector"),
+        query), k=3, fields="contentVector"), #vector
     select=["title", "content", "category"],
-    query_type="semantic", query_language="en-us", semantic_configuration_name='my-semantic-config', query_caption="extractive", query_answer="extractive",
+    query_type="semantic", query_language="en-us", semantic_configuration_name='my-semantic-config', query_caption="extractive", query_answer="extractive", #semantic
     top=3
 )
 
@@ -606,7 +594,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 ## Democratizing the magic of ChatGPT with open models
 
 - [facebookresearch/llama](https://github.com/facebookresearch/llama)
-- [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) : Open Source RLHF LLM Chatbot
+- [Falcon LLM](https://falconllm.tii.ae/) Apache 2.0 license
+- [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) Open Source RLHF LLM Chatbot
 - [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html)
 - [gpt4all](https://github.com/nomic-ai/gpt4all)
 - [vicuna](https://vicuna.lmsys.org/)
@@ -658,14 +647,19 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - Very Simple Langchain example using Open AI: [langchain-ask-pdf](https://github.com/alejandro-ao/langchain-ask-pdf)
 - Open AI Chat Mockup: An open source ChatGPT UI. (github.com) [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
 - Streaming with Azure OpenAI [SSE](https://github.com/thivy/azure-openai-js-stream)
+- [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app
 
 ## PDF with ChatGPT ##
 
 - Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
 
-## Edge and Chrome Extension
+## Edge and Chrome Extension / Plugin
 
 - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
+
+- [ChatHub](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
+
+- [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
 
 ## etc.
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
@@ -677,6 +671,10 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022)
 
 - [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1)
+
+- [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
+
+- [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
 
 ## 日本語（Japanese Materials）
 
