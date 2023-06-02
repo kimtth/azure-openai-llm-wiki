@@ -44,6 +44,12 @@ SmoothQuant is a training-free, accuracy-preserving, and general-purpose post-tr
 
 https://github.com/Lightning-AI/lit-llama
 
+- Quantization-aware training (QAT): quantization is integrated into the training process.
+
+- Post-training quantization (PTQ): quantization is integrated into the training process.
+
+- [SmoothQuant](https://pub.towardsai.net/fast-llm-inference-on-cpu-introducing-q8-chat-99e0f30d83db): Reduce the ratio between outlier and non-outlier values specifically for activations.
+
 ## Quantization Tutorial
 
 <img src="files/quantization.png" alt="qunat" width="600"/>
