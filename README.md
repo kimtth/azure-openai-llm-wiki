@@ -1,9 +1,9 @@
 
-`updated: 05/31/2023`
+`updated: 06/05/2023`
 
 # LLM (Large language model) and Azure related libraries
 
-This repository contains research on open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
+This repository contains references to open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
 
 > `Rule: Brief each item on one or a few lines as much as possible.`
 
@@ -30,7 +30,7 @@ This repository contains research on open-source models similar to ChatGPT, as w
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
   - [Prompt Engineering](#prompt-engineering)
   - [OpenAI Prompt Guide](#openai-prompt-guide)
-  - [DeepLearning.ai Prompt Engineering Course](#deeplearningai-prompt-engineering-course)
+  - [DeepLearning.ai Prompt Engineering Course and others](#deeplearningai-prompt-engineering-course-and-others)
   - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
@@ -41,10 +41,14 @@ This repository contains research on open-source models similar to ChatGPT, as w
     + [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
     + [Langchain Agent](#langchain-agent)
     + [Sementic Kernel Glossary](#sementic-kernel-glossary)
-- **Section 6** List of OSS LLM
+- **Section 6:** Improvement
+  - [Math problem-solving skill](#math-problem-solving-skill)
+  - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
+  - [Token-limits](#token-limits)
+- **Section 7:** List of OSS LLM
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
-- **Section 7** : References
+- **Section 8** : References
   * [Langchain and Prompt engineering library](#langchain-and-prompt-engineering-library)
   * [AutoGPT](#autogpt)
   * [picoGPT](#picogpt) : tiny implementation of GPT-2
@@ -427,12 +431,14 @@ chain.run(docs[:3])
 ## **Prompt Engineering** ##
 
 1. Zero-shot 
+    - [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
 1. Few-shot Learning
     - [Open AI: Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 1. Chain of Thought (CoT): ReAct and Self Consistency also inherit the CoT concept.
 1. Recursively Criticizes and Improves (RCI)
 1. ReAct: Grounding with external sources. (Reasoning and Act)
-1. Chain-of-Thought Prompting  [(paper)](https://arxiv.org/pdf/2201.11903.pdf)
+1. Chain-of-Thought Prompting  
+    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2205.11916)
 1. Tree of Thought [(github)](https://github.com/ysymyth/tree-of-thought-llm)
 
 - Prompt Concept
@@ -453,9 +459,11 @@ chain.run(docs[:3])
 
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 
-### **DeepLearning.ai Prompt Engineering COURSE** ##
+### **DeepLearning.ai Prompt Engineering COURSE and others** ##
 
 - [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+
+- [Short courses](https://www.deeplearning.ai/short-courses/)
 
 ### **Awesome ChatGPT Prompts** 
 
@@ -559,7 +567,21 @@ is equivalent to:
 | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
 | GET       | And the user gets what they asked for ...      
 
-# **Section 6** : List of OSS LLM #
+# **Section 6** : Improvement #
+
+## Math problem-solving skill
+- Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
+- [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
+
+## OpenAI's plans according to Sam Altman
+- [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup - [Link](files/openai-plans.pdf)
+
+## Token-limits
+- [Open AI Tokenizer](https://platform.openai.com/tokenizer)
+- [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+- [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup - [Link](files/token-limits-5-approaches.pdf)
+
+# **Section 7** : List of OSS LLM #
 
 ## List of OSS LLM
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
@@ -568,7 +590,7 @@ is equivalent to:
 ## Huggingface Open LLM Learboard
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
-# **Section 7** : References #
+# **Section 8** : References #
 
 ## Langchain and Prompt engineering library
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
