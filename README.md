@@ -57,9 +57,6 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [Hugging face Transformer](#hugging-face-transformer)
   * [Hugging face StarCoder](#hugging-face-starcoder)
   * [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
-  * [Generate 3D](#generate-3d)
-  * [DragGAN](#draggan)
-  * [string2string](#string2string)
   * [Tiktoken Alternative in C#](#tiktoken-alternative-in-c-)
   * [UI/UX](#uiux)
   * [PDF with ChatGPT](#pdf-with-chatgpt)
@@ -646,20 +643,6 @@ Camel Agents - a Hugging Face Space by camel-ai
 1. [2302.14045] Language Is Not All You Need: Aligning Perception with Language Models (arxiv.org)
 2. [Language Is Not All You Need](https://arxiv.org/abs/2302.14045)
 
-## Generate 3D
-openai/shap-e: Generate 3D objects conditioned on text or images (github.com)
-- [openai/shap-e](https://github.com/openai/shap-e)
-
-## DragGAN
-Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold [(paper)](https://arxiv.org/pdf/2305.10973)
-- [Online Demo](https://github.com/Zeqiang-Lai/DragGAN)
-
-## string2string
-The string2string library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. 
-- [string2string](https://github.com/stanfordnlp/string2string)
-
-<img src="files/string2string-overview.png" alt="string2string" width="500"/>
-
 ## Tiktoken Alternative in C#
 microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer)
@@ -698,7 +681,7 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 
 - [DeepSpeed](https://github.com/microsoft/DeepSpeed): DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
 
-- [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Prompt flow - Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language.
+- [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language.
 
 - [Prompt Engine](https://github.com/microsoft/prompt-engine): Craft prompts for Large Language Models
 
@@ -713,6 +696,15 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
 
 - [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
+
+- Generate 3D objects conditioned on text or images [openai/shap-e](https://github.com/openai/shap-e)
+
+- Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold [(paper)](https://arxiv.org/pdf/2305.10973) [online demo](https://github.com/Zeqiang-Lai/DragGAN)
+
+- string2string: 
+The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string)
+
+  <img src="files/string2string-overview.png" alt="string2string" width="500"/>
 
 - [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @LLMsPracticalGuide
 
