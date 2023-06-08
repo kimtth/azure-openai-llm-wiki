@@ -1,5 +1,5 @@
 
-`updated: 06/05/2023`
+`updated: 06/08/2023`
 
 # LLM (Large language model) and Azure related libraries
 
@@ -64,8 +64,10 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [UI/UX](#uiux)
   * [PDF with ChatGPT](#pdf-with-chatgpt)
   * [Edge and Chrome Extension / Plugin](#edge-and-chrome-extension--plugin)
-  * [etc.](#etc) + MS Fabric
   * [日本語（Japanese Materials)](#日本語japanese-materials)
+- **Section 9** : [Relavant solutions](#section-9--relavant-solutions)
+  * [Microsoft Fabric](README_Fabric.md): Single unified data analytics solution 
+  * [DeepSpeed](#section-9--relavant-solutions): Distributed training and memory optimization.
 
 - **Acknowledgements**
   * [Acknowledgements](#acknowledgements)
@@ -683,12 +685,25 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 
 - [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
 
-## etc.
+## 日本語（Japanese Materials）
+
+- [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414)
+- [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718)
+- [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa)
+
+# **Section 9** : Relavant solutions #
+
+- [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
+
+- [DeepSpeed](https://github.com/microsoft/DeepSpeed): DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
+
+- [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Prompt flow - Visual Designer for Prompt crafting
+
+- [Prompt Engine](https://github.com/microsoft/prompt-engine): Craft prompts for Large Language Models
+
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. https://activeloop.ai (github.com) 
 
 - [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models (github.com) 
-
-- [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
 
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022)
 
@@ -698,12 +713,11 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 
 - [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
 
-## 日本語（Japanese Materials）
+- [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @LLMsPracticalGuide
 
-- [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414)
-- [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718)
-- [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa)
+  <img src="files/qr_version.jpg" alt="llm" width="500"/> 
 
 # Acknowledgements
 
 - [@TODO](https://github.com/??) for [TODO](https://github.com/??/??)
+
