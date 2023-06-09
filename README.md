@@ -1,5 +1,5 @@
 
-`updated: 06/08/2023`
+`updated: 06/09/2023`
 
 # LLM (Large language model) and Azure related libraries
 
@@ -54,6 +54,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [picoGPT](#picogpt) : tiny implementation of GPT-2
   * [Communicative Agents](#communicative-agents)
   * [Democratizing the magic of ChatGPT with open models](#democratizing-the-magic-of-chatgpt-with-open-models)
+  * [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   * [Hugging face Transformer](#hugging-face-transformer)
   * [Hugging face StarCoder](#hugging-face-starcoder)
   * [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
@@ -625,6 +626,12 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main)
 - [KoAlpaca](https://github.com/Beomi/KoAlpaca)
 
+## Large Language and Vision Assistant
+
+- [LLaVa](https://llava-vl.github.io/)
+- [MiniGPT-4](https://minigpt-4.github.io/)
+- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft
+
 ## Hugging face Transformer
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
@@ -674,6 +681,9 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414)
 - [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718)
 - [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa)
+- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
+- [LLMを制御するには何をするべきか？](https://blog.brainpad.co.jp/entry/2023/06/08/161643)
+- [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003)
 
 # **Section 9** : Relavant solutions #
 
