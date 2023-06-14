@@ -1,5 +1,5 @@
 
-`updated: 06/09/2023`
+`updated: 06/14/2023`
 
 # LLM (Large language model) and Azure related libraries
 
@@ -45,6 +45,8 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Math problem-solving skill](#math-problem-solving-skill)
   - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
   - [Token-limits](#token-limits)
+  - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
+  - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
 - **Section 7:** List of OSS LLM
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
@@ -66,6 +68,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 9** : [Relavant solutions](#section-9--relavant-solutions)
   * [Microsoft Fabric](README_Fabric.md): Single unified data analytics solution 
   * [DeepSpeed](#section-9--relavant-solutions): Distributed training and memory optimization.
+  * [Office Copilot](#section-9--relavant-solutions): Semantic Interpreter, Natural Language Commanding via Program Synthesis
 
 - **Acknowledgements**
   * [Acknowledgements](#acknowledgements)
@@ -178,6 +181,17 @@ However, the examples in llama-index uses 1536 vector size.
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
+
+- [Chat engine - React mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
+
+  ```python
+  from llama_index import VectorStoreIndex, SimpleDirectoryReader
+  data = SimpleDirectoryReader(input_dir="../data/paul_graham/").load_data()
+  index = VectorStoreIndex.from_documents(data)
+  # React mode
+  chat_engine = index.as_chat_engine(chat_mode='react', verbose=True)
+  response = chat_engine.chat('Use the tool to answer: what did Paul Graham do in the summer of 1995?')
+  ```
 
 # **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
 
@@ -293,6 +307,10 @@ ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
 C# blazor and Azure Custom Template
 
 <img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="400"/>
+
+[Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript & ReactJs
+
+<img src="files/chatscreen.png" alt="gpt-cosmos" width="320"/>
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
 
@@ -581,6 +599,12 @@ is equivalent to:
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup - [Link](files/token-limits-5-approaches.pdf)
 
+## Avoid AI hallucination
+- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building Trustworthy, Safe and Secure LLM Conversational Systems
+
+## Gorilla: An API store for LLMs
+- [Gorilla: An API store for LLMs](https://github.com/ShishirPatil/gorilla): Gorilla: Large Language Model Connected with Massive APIs
+
 # **Section 7** : List of OSS LLM #
 
 ## List of OSS LLM
@@ -630,7 +654,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - [LLaVa](https://llava-vl.github.io/)
 - [MiniGPT-4](https://minigpt-4.github.io/)
-- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft
+- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix
 
 ## Hugging face Transformer
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
@@ -690,6 +714,8 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 - [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
 
 - [DeepSpeed](https://github.com/microsoft/DeepSpeed): DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
+
+- [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. 
 
 - [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language.
 
