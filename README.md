@@ -41,6 +41,7 @@ This repository contains references to open-source models similar to ChatGPT, as
     + [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
     + [Langchain Agent](#langchain-agent)
     + [Sementic Kernel Glossary](#sementic-kernel-glossary)
+    + [Langchain vs Sementic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
 - **Section 6:** Improvement
   - [Math problem-solving skill](#math-problem-solving-skill)
   - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
@@ -68,6 +69,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 9** : [Relavant solutions](#section-9--relavant-solutions)
   * [Microsoft Fabric](README_Fabric.md): Single unified data analytics solution 
   * [DeepSpeed](#section-9--relavant-solutions): Distributed training and memory optimization.
+  * [Azure Machine Learning - Prompt flow](#section-9--relavant-solutions)
   * [Office Copilot](#section-9--relavant-solutions): Semantic Interpreter, Natural Language Commanding via Program Synthesis
 
 - **Acknowledgements**
@@ -163,17 +165,17 @@ After starting the Milvus service, you can test by running hello_milvus.py. See 
 
 - ~~Lang chain interface of Azure Open AI does not support ChatGPT yet. so that reason, need to use alternatives such as `text-davinci-003`.~~
 
-> @open ai documents: 
+- @open ai documents: 
 text-embedding-ada-002: 
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings, 
 making the new embeddings more cost effective in working with vector databases. 
 https://openai.com/blog/new-and-improved-embedding-model
 
-> @open search documents: 
+- @open search documents: 
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/
 
-> @llama-index examples: 
+- @llama-index examples: 
 However, the examples in llama-index uses 1536 vector size.
 
 ## llama-index Deep dive
@@ -182,7 +184,7 @@ However, the examples in llama-index uses 1536 vector size.
 
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 
-- [Chat engine - React mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
+- [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
 
   ```python
   from llama_index import VectorStoreIndex, SimpleDirectoryReader
@@ -197,7 +199,7 @@ However, the examples in llama-index uses 1536 vector size.
 
 The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
 
-https://github.com/Azure-Samples/azure-search-openai-demo
+https://github.com/Azure-Samples/azure-search-openai-demo : Python, ReactJs, Typescript
 
 ![Screenshot](./files/capture_azure_demo.png "Main")
 
@@ -406,7 +408,7 @@ var options = new SearchOptions
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
 [Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
 
-## **Bing search Web UI and Semantic Kernel sample code**
+### **Bing search Web UI and Semantic Kernel sample code**
 
 Semantic Kernel sample code to integrate with Bing Search (ReAct??)
 
@@ -571,9 +573,11 @@ is equivalent to:
 
 ### **Sementic Kernel Glossary** ###
 
-[Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
+  <img src="files/kernel-flow.png" alt="sk" width="500"/>
 
-[Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
+  [Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
+
+  [Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
 
 | Journey   | Short Description                                                                                                                                                                                                                                                                                     |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -584,6 +588,17 @@ is equivalent to:
 | Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
 | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
 | GET       | And the user gets what they asked for ...      
+
+### **Langchain vs Sementic Kernel vs Azure Machine Learning Prompt flow** ###
+
+- What's the difference between LangChain and Semantic Kernel? 
+
+  LangChain has many agents, tools, plugins etc. out of the box. More over, LangChain has 10x more popularity, so has about 10x more developer activity to improve it. On other hand, **Semantic Kernel architecture and quality is better**, that's quite promising for Semantic Kernel. [@link](https://github.com/microsoft/semantic-kernel/discussions/1326)
+
+- What's the difference between Azure Machine Laering PromptFlow and Semantic Kernel? 
+
+  1. Low/No Code vs C#, Python, Java
+  1. Focused on Prompt orchestrating vs Integrate LLM into their existing app.
 
 # **Section 6** : Improvement #
 
@@ -654,7 +669,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - [LLaVa](https://llava-vl.github.io/)
 - [MiniGPT-4](https://minigpt-4.github.io/)
-- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix
+- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + SAM (https://github.com/facebookresearch/segment-anything.git)
 
 ## Hugging face Transformer
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
@@ -702,12 +717,12 @@ microsoft/Tokenizer: .NET and Typescript implementation of BPE tokenizer for Ope
 
 ## 日本語（Japanese Materials）
 
-- [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414)
+- [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414): Legal: Guidelines for the Use of Generative AI
 - [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718)
-- [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa)
-- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り](https://blog.brainpad.co.jp/entry/2023/06/05/153034)
-- [LLMを制御するには何をするべきか？](https://blog.brainpad.co.jp/entry/2023/06/08/161643)
-- [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003)
+- [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models
+- [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4
+- [LLMを制御するには何をするべきか？](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM
+- [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI
 
 # **Section 9** : Relavant solutions #
 
