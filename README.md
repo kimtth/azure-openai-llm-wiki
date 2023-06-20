@@ -1,9 +1,11 @@
 
-`updated: 06/14/2023`
+`updated: 06/20/2023`
 
 # LLM (Large language model) and Azure related libraries
 
 This repository contains references to open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
+
+> Not being able to keep up with and test every recent update, sometimes I simply copied them into this repository for later review. some code might be outdated.
 
 > `Rule: Brief each item on one or a few lines as much as possible.`
 
@@ -48,6 +50,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Token-limits](#token-limits)
   - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
   - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
+  - [Prompt to Game](#prompt-to-game) E2E game creation
 - **Section 7:** List of OSS LLM
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
@@ -101,6 +104,12 @@ This repository has been created for testing and feasibility checks using vector
 - llama-index-opensearch-query.py : Vector index query with questions to Open search
 - llama-index-opensearch-read.py : llama-index ElasticsearchVectorClient (Unofficial file to manipulate vector search, Created by me, Not Fully Tested)
 - env.template : The properties. Change its name to `.env` once your values settings is done.
+
+### llama-index example
+- llama-index-es-handson\callback-debug-handler.py: callback debug handler
+- llama-index-es-handson\chat-engine-flare-query.py: FLARE
+- llama-index-es-handson\chat-engine-react.py: ReAct
+- llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
 
 ```properties
 OPENAI_API_TYPE=azure
@@ -186,15 +195,6 @@ However, the examples in llama-index uses 1536 vector size.
 
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
 
-  ```python
-  from llama_index import VectorStoreIndex, SimpleDirectoryReader
-  data = SimpleDirectoryReader(input_dir="../data/paul_graham/").load_data()
-  index = VectorStoreIndex.from_documents(data)
-  # React mode
-  chat_engine = index.as_chat_engine(chat_mode='react', verbose=True)
-  response = chat_engine.chat('Use the tool to answer: what did Paul Graham do in the summer of 1995?')
-  ```
-
 # **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
 
 The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
@@ -239,15 +239,6 @@ BACKEND_URI=<your_value_in_azure>
 - console output (excerpt)
 
 ```commandline
-        Uploading blob for page 20 -> role_library-20.pdf
-        Uploading blob for page 21 -> role_library-21.pdf
-        Uploading blob for page 22 -> role_library-22.pdf
-        Uploading blob for page 23 -> role_library-23.pdf
-        Uploading blob for page 24 -> role_library-24.pdf
-        Uploading blob for page 25 -> role_library-25.pdf
-        Uploading blob for page 26 -> role_library-26.pdf
-        Uploading blob for page 27 -> role_library-27.pdf
-        Uploading blob for page 28 -> role_library-28.pdf
         Uploading blob for page 29 -> role_library-29.pdf
         Uploading blob for page 30 -> role_library-30.pdf
 Indexing sections from 'role_library.pdf' into search index 'gptkbindex'
@@ -325,24 +316,7 @@ Azure Open AI work with Cognitive Search act as a Long-term memory
 
 Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4. Semantic Hybrid Search
 
-```python
-# Semantic Hybrid Search
-query = "what is azure sarch?"
-
-search_client = SearchClient(
-    service_endpoint, index_name, AzureKeyCredential(key))
-
-results = search_client.search(
-    search_text=query, #text
-    vector=Vector(value=generate_embeddings(
-        query), k=3, fields="contentVector"), #vector
-    select=["title", "content", "category"],
-    query_type="semantic", query_language="en-us", semantic_configuration_name='my-semantic-config', query_caption="extractive", query_answer="extractive", #semantic
-    top=3
-)
-
-semantic_answers = results.get_answers()
-```
+- azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
 
 # **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
 
@@ -461,13 +435,18 @@ chain.run(docs[:3])
     - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2205.11916)
 1. Tree of Thought [(github)](https://github.com/ysymyth/tree-of-thought-llm)
 
+    - `tree-of-thought\forest_of_thought.py`: Forest of thought Decorator sample
+    - `tree-of-thought\tree_of_thought.py`: Tree of thought Decorator sample
+    - `tree-of-thought\react-prompt.py`: ReAct sample without Langchain
+
 - Prompt Concept
-1. Question-Answering
-1. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
-1. Reasoning
-1. Prompt-Chain
-1. Program Aided Language Model
-1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize
+  
+  1. Question-Answering
+  1. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
+  1. Reasoning
+  1. Prompt-Chain
+  1. Program Aided Language Model
+  1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize
 
 - 🤩[Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) : ⭐⭐⭐⭐⭐
 
@@ -619,6 +598,9 @@ is equivalent to:
 
 ## Gorilla: An API store for LLMs
 - [Gorilla: An API store for LLMs](https://github.com/ShishirPatil/gorilla): Gorilla: Large Language Model Connected with Massive APIs
+
+## Prompt to Game
+- [FRVR Official Teaser](https://youtu.be/Yjjpr-eAkqw): AI-powered end-to-end game creation
 
 # **Section 7** : List of OSS LLM #
 
