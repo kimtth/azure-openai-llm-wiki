@@ -65,17 +65,17 @@ auth_info = {
 }
 # dim=1536 -> !Must: 1536 is the predefined value.
 '''
-: from open ai documents
+: @ open ai documents
 text-embedding-ada-002: 
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings, 
 making the new embeddings more cost effective in working with vector databases. 
 https://openai.com/blog/new-and-improved-embedding-model
 
-: from open search documents
+: @ open search documents
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/
 
-: from llama-index examples
+: @ llama-index examples
 However, the examples in llama-index use 1536 vector size.
 '''
 client = ElasticsearchVectorClient(endpoint, idx, 1536, embedding_field=embedding_field, text_field=text_field,

@@ -45,3 +45,7 @@ Shortcut
 ## 日本語（Japanese Document） 
 
 [Microsoft Fabric](https://qiita.com/yangjiayi/items/605d9679e1e35d391a1a)
+
+## Learn about Microsoft Fabric from MVPs
+
+- [Videos and podcasts](https://powerbi.microsoft.com/en-us/blog/learn-about-microsoft-fabric-from-mvps/)
