@@ -1,5 +1,5 @@
 
-`updated: 06/22/2023`
+`updated: 06/23/2023`
 
 # Azure Open AI + LLM (Large language model)
 
@@ -27,7 +27,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
 - **Section 4** : Langchain
   * [Langchain cheetsheet](#langchain-cheetsheet)
-  * [Langchain Quick Start](#langchain-quick-start-how-to-use-and-useful-utilities)
+  * [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities)
   * [Langchain chain type](#langchain-chain_type)
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
   - [Prompt Engineering](#prompt-engineering)
@@ -38,6 +38,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
   - [Quantization](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
   - [Sparsification](#sparsification)
+  - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     + [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
     + [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
@@ -173,15 +174,13 @@ This repository has been created for testing and feasibility checks using vector
 
 - Azure Open AI Embedding API,text-embedding-ada-002, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. 
 
-- ~~Lang chain interface of Azure Open AI does not support ChatGPT yet. so that reason, need to use alternatives such as `text-davinci-003`.~~
-
-- @open ai documents: 
+- @citation: open ai documents: 
 text-embedding-ada-002: 
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings, 
 making the new embeddings more cost effective in working with vector databases. 
 https://openai.com/blog/new-and-improved-embedding-model
 
-- @open search documents: 
+- @citation: open search documents: 
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/
 
@@ -399,7 +398,7 @@ Bing Search UI for demo
 
 # **Section 4** : Langchain 
 
-cite: [@practical-ai](https://www.youtube.com/@practical-ai)
+@citation: [@practical-ai](https://www.youtube.com/@practical-ai)
 
 ## **Langchain cheetsheet**
 - [Cheetsheet](https://github.com/Tor101/LangChain-CheatSheet)
@@ -500,11 +499,16 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Sparsification**
 
-- @Binghchat
+- @citation: Binghchat
 
   `
   Sparsification is a technique used to reduce the size of large language models (LLMs) by removing redundant parameters without significantly affecting their performance. It is one of the methods used to compress LLMs. LLMs are neural networks that are trained on massive amounts of data and can generate human-like text. The term “sparsification” refers to the process of removing redundant parameters from these models.
   `
+
+### **Small size with Textbooks: High quality synthetic dataset** 
+
+- [ph-1](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. 
+- [Orca](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. 
 
 - 😮 [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
 
