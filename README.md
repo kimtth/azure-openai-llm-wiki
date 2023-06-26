@@ -1,5 +1,5 @@
 
-`updated: 06/23/2023`
+`updated: 06/26/2023`
 
 # Azure Open AI + LLM (Large language model)
 
@@ -12,23 +12,24 @@ This repository contains references to open-source models similar to ChatGPT, as
 ## Table of contents
 
 - **Section 1** : Llama-index and Vector Storage (Search)
-  * [Opensearch/Elasticsearch setup](#opensearch-elasticsearch-setup)
-  * [llama-index](#llama-index)
+  * [Opensearch/Elasticsearch setup](#opensearchelasticsearch-setup)
+  * [Milvus Embedded](#milvus-embedded)
   * [Vector Storage Comparison](#vector-storage-comparison)
   * [Vector Storage Options for Azure](#vector-storage-options-for-azure)
-  * [Milvus Embedded](#milvus-embedded)
   * [Conclusion](#conclusion)
+  * [llama-index](#llama-index)
   * [llama-index Deep Dive](#llama-index-deep-dive)
 - **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
-  * [Configuration steps](#configuration-steps)
   * [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
+  * [ChatGPT + Enterprise data Demo Configuration](#configuration)
+  * [Another Reference Architectue](#another-reference-architectue)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   * [Semantic-Kernel](#semantic-kernel)
   * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
 - **Section 4** : Langchain
-  * [Langchain cheetsheet](#langchain-cheetsheet)
+  * [Langchain Cheetsheet](#langchain-cheetsheet)
   * [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities)
-  * [Langchain chain type](#langchain-chain_type)
+  * [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
   - [Prompt Engineering](#prompt-engineering)
   - [OpenAI Prompt Guide](#openai-prompt-guide)
@@ -59,7 +60,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Hugging face Transformer](#hugging-face-transformer)
   - [Hugging face StarCoder](#hugging-face-starcoder)
 - **Section 8** : References
-  * [picoGPT](#picogpt) : tiny implementation of GPT-2
+  * [picoGPT](#picogpt) : tiny implementation of GPT-2. Transformer.
   * [Langchain and Prompt engineering library](#langchain-and-prompt-engineering-library)
   * [AutoGPT / Communicative Agents](#autogpt--communicative-agents)
   * [Democratizing the magic of ChatGPT with open models](#democratizing-the-magic-of-chatgpt-with-open-models)
@@ -72,17 +73,18 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 9** : [Relavant solutions and links](#section-9--relavant-solutions-and-links)
   * [Microsoft Fabric](README_Fabric.md): Single unified data analytics solution 
   * [DeepSpeed](#section-9--relavant-solutions-and-links): Distributed training and memory optimization.
-  * [Azure Machine Learning - Prompt flow](#section-9--relavant-solutions-and-links)
+  * [Azure Machine Learning - Prompt flow](#section-9--relavant-solutions-and-links): Low code
   * [Office Copilot](#section-9--relavant-solutions-and-links): Semantic Interpreter, Natural Language Commanding via Program Synthesis
+  * [microsoft/unilm](#section-9--relavant-solutions-and-links): Microsoft Foundation models
 - **Section 10** : AI Tools
   * [AI Tools](#section-10--ai-tools)
 
 - **Acknowledgements**
-  * [Acknowledgements](#acknowledgements): TODO
+  * [Acknowledgements](#acknowledgements): -
 
 # **Section 1** : Llama-index and Vector Storage (Search)
 
-This repository has been created for testing and feasibility checks using vector and language chains, specifically llama-index. These libraries are commonly used when implementing Prompt Engineering and consuming one's own data into LLM.  
+This section has been created for testing and feasibility checks using elastic search as a vector database and integration with llama-index. llama-index is specialized in integration layers to external data sources.
 
 ## Opensearch/Elasticsearch setup
 
@@ -140,8 +142,10 @@ This repository has been created for testing and feasibility checks using vector
 
 ## Vector Storage Options for Azure
 
+- [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
 - [Vector Search in Azure Cosmos DB for MongoDB vCore](https://devblogs.microsoft.com/cosmosdb/introducing-vector-search-in-azure-cosmos-db-for-mongodb-vcore/)
-- [Vector search (private preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr)
+- [Vector search (private preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
+- [Azure Cache for Redis Enterprise](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-vector-search-similarity-capabilities-in-azure-cache/ba-p/3827512): Enterprise [Redis Vector Search Demo](https://ecommerce.redisventures.com/)
 
 ## Milvus Embedded
 
@@ -172,7 +176,7 @@ This repository has been created for testing and feasibility checks using vector
 
 ## Conclusion
 
-- Azure Open AI Embedding API,text-embedding-ada-002, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. 
+- Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 
 - @citation: open ai documents: 
 text-embedding-ada-002: 
@@ -180,12 +184,12 @@ Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth
 making the new embeddings more cost effective in working with vector databases. 
 https://openai.com/blog/new-and-improved-embedding-model
 
-- @citation: open search documents: 
+- @citation: [open search documents](https://opensearch.org/docs/latest/): 
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/
 
-- @llama-index examples: 
-However, the examples in llama-index uses 1536 vector size.
+- @llama-index `ElasticsearchReader` class: 
+The name of the class in llama-index is `ElasticsearchReader`. However, actually, it can only work with open search.
 
 ## llama-index Deep dive
 
@@ -203,13 +207,7 @@ https://github.com/Azure-Samples/azure-search-openai-demo : Python, ReactJs, Typ
 
 ![Screenshot](./files/capture_azure_demo.png "Main")
 
-## additonal_steps (optional)
-
-- fix_from_origin : The modified files, setup related
-- ms_internal_az_init.ps1 : Powershell script for Azure module installation 
-- ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
-
-## Configuration steps
+## Configuration
 
 1. (optional) Check Azure module installation in Powershell by running `ms_internal_az_init.ps1` script
 2. (optional) Set your Azure subscription Id to default
@@ -285,7 +283,13 @@ Running from second times
 1. Move to `app` by `cd ..` and `cd app` command
 2. (locally running) Run `start.cmd`
 
-Another Reference Architectue
+(optional)
+
+- fix_from_origin : The modified files, setup related
+- ms_internal_az_init.ps1 : Powershell script for Azure module installation 
+- ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
+
+## Another Reference Architectue
 
 [azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
 
@@ -400,8 +404,10 @@ Bing Search UI for demo
 
 @citation: [@practical-ai](https://www.youtube.com/@practical-ai)
 
-## **Langchain cheetsheet**
-- [Cheetsheet](https://github.com/Tor101/LangChain-CheatSheet)
+## **Langchain Cheetsheet**
+- [Feature Matrix](https://langchain.com/features.html): LangChain Features
+- [Cheetsheet](https://github.com/Tor101/LangChain-CheatSheet): LangChain CheatSheet
+- [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
 
 ## **Langchain Quick Start: How to Use and Useful Utilities**
 
@@ -416,7 +422,7 @@ Bing Search UI for demo
   chain.run(docs[:3])
   ```
 
-## **Langchain chain_type**
+## **Langchain chain type: Summarizer**
 
 - stuff: Sends everything at once in LLM. If it's too long, an error will occur.
 - map_reduce: Summarizes by dividing and then summarizing the entire summary.
@@ -453,7 +459,7 @@ Bing Search UI for demo
 
 - 🤩[Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) : ⭐⭐⭐⭐⭐
 
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
 
 ### **OpenAI Prompt Guide**
 
@@ -489,13 +495,16 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://github.com/microsoft/LoRA)
 
-  <img src="files/LoRA.png" alt="LoRA" width="450"/>
+  <img src="files/LoRA.png" alt="LoRA" width="400"/>
 
 - [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/pdf/2305.14314)
 
     [artidoro/qlora](https://github.com/artidoro/qlora)
 
 - [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155)
+
+- [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA ⭐⭐⭐⭐
+. Printed version for backup. [Link](files/Fine-tuning_a_GPT_LoRA.pdf)
 
 ### **Sparsification**
 
@@ -509,6 +518,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [ph-1](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. 
 - [Orca](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. 
+
+### **Large Transformer Model Inference Optimization**
 
 - 😮 [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
 
@@ -730,6 +741,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language.
 
+- [Microsoft AI Models](https://github.com/microsoft/unilm): Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities. https://aka.ms/nlpagi
+
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
 
 - [Prompt Engine](https://github.com/microsoft/prompt-engine): Craft prompts for Large Language Models: `npm install prompt-engine`
@@ -755,7 +768,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 
   <img src="files/string2string-overview.png" alt="string2string" width="500"/>
 
-- [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @LLMsPracticalGuide
+- [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @citation: LLMsPracticalGuide
 
   <img src="files/qr_version.jpg" alt="llm" width="500"/> 
 
@@ -776,5 +789,5 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 
 # Acknowledgements
 
-- [@TODO](https://github.com/??) for [TODO](https://github.com/??/??)
+- @TODO
 
