@@ -1,7 +1,7 @@
 
-`updated: 06/27/2023`
+`updated: 06/28/2023`
 
-# Azure Open AI + LLM (Large language model)
+# Azure OpenAI + LLM (Large language model)
 
 This repository contains references to open-source models similar to ChatGPT, as well as Langchain and prompt engineering libraries. It also includes related samples and research on Langchain, Vector Search (including feasibility checks on Elasticsearch, Azure Cognitive Search, Azure Cosmos DB), and more.
 
@@ -22,7 +22,8 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
   * [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
   * [ChatGPT + Enterprise data Demo Configuration](#configuration)
-  * [Introducing Azure OpenAI Service On Your Data in Public Preview](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview)
+  * [Azure OpenAI Service On Your Data in Public Preview](#introducing-azure-openai-service-on-your-data-in-public-preview)
+  * [Azure OpenAI samples](#azure-openai-samples)
   * [Another Reference Architectures](#another-reference-architectue)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   * [Semantic-Kernel](#semantic-kernel)
@@ -51,9 +52,10 @@ This repository contains references to open-source models similar to ChatGPT, as
     + [Langchain vs Sementic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
   - [guidance](#): A guidance language for controlling large language models.
 - **Section 6:** Improvement
-  - [Math problem-solving skill](#math-problem-solving-skill)
+  - [Math problem-solving skill](#math-problem-solving-skill): incl. Latex OCR
+  - [Table Extraction](#table-extraction): Extract Tables from PDFs
   - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
-  - [Token-limits](#token-limits): 5 Approaches To Solve LLM Token Limits
+  - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
   - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
   - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
   - [Memory Optimization](#memory-optimization): PagedAttention for 24x Faster LLM Inference
@@ -292,6 +294,18 @@ Running from second times
 - fix_from_origin : The modified files, setup related
 - ms_internal_az_init.ps1 : Powershell script for Azure module installation 
 - ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
+
+## Introducing Azure OpenAI Service On Your Data in Public Preview
+
+- Azure OpenAI Service On Your Data in Public Preview [Link](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview)
+
+## Azure OpenAI samples
+
+- Azure OpenAI samples: [Link](https://github.com/Azure/azure-openai-samples)
+
+- A simple ChatGPT Plugin: [Link](https://github.com/Azure-Samples/openai-plugin-fastapi)
+
+- The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [Link](https://github.com/Azure/openai-samples)
 
 ## Another Reference Architectue
 
@@ -620,12 +634,18 @@ is equivalent to:
 ## Math problem-solving skill
 - Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
+- Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
+
+## Table Extraction
+- Azure Form Recognizer: [documentation](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
+- Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
 ## OpenAI's plans according to Sam Altman
 - [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [Link](files/openai-plans.pdf)
 
-## Token-limits
-- [Open AI Tokenizer](https://platform.openai.com/tokenizer)
+## Token counting & Token-limits
+- [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
+- [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [Link](files/token-limits-5-approaches.pdf)
 
@@ -724,6 +744,9 @@ Camel Agents - a Hugging Face Space by camel-ai
 - Microsoft: Kosmos-1
   1. [2302.14045] Language Is Not All You Need: Aligning Perception with Language Models (arxiv.org)
   1. [Language Is Not All You Need](https://arxiv.org/abs/2302.14045)
+
+- TaskMatrix.AI
+  1. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs 
 
 ## Application incl. UI/UX
 
