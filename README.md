@@ -1,5 +1,5 @@
 
-`updated: 06/28/2023`
+`updated: 06/29/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -344,7 +344,8 @@ Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4
 
 Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://github.com/microsoft/semantic-kernel/blob/main/FEATURE_MATRIX.md)
 
-<img src="files/sk-flow.png" alt="sk" width="500"/>
+<!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
+<img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="200"/>
 
 This section includes how to utilize Azure Cosmos DB for vector storage and vector search by leveraging the Semantic-Kernel.
 
@@ -732,18 +733,18 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 ## Large Language and Vision Assistant
 
-- [LLaVa](https://llava-vl.github.io/)
-- [MiniGPT-4](https://minigpt-4.github.io/)
-- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + SAM (https://github.com/facebookresearch/segment-anything.git)
+- [LLaVa](https://llava-vl.github.io/): Large Language-and-Vision Assistant
+- [MiniGPT-4](https://minigpt-4.github.io/): Enhancing Vision-language Understanding with Advanced Large Language Models
+- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + [SAM](https://github.com/facebookresearch/segment-anything.git)
 
 ## MLLM (multimodal large language model)
-- Facebook: ImageBind / SAM (Just Info)
+- Facebook: ImageBind / SAM
   1. [facebookresearch/ImageBind](https://github.com/facebookresearch/ImageBind): ImageBind One Embedding Space to Bind Them All (github.com)
   1. [facebookresearch/segment-anything(SAM)](https://github.com/facebookresearch/segment-anything): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. (github.com)
 
-- Microsoft: Kosmos-1
-  1. [2302.14045] Language Is Not All You Need: Aligning Perception with Language Models (arxiv.org)
-  1. [Language Is Not All You Need](https://arxiv.org/abs/2302.14045)
+- Microsoft: Kosmos-1 / Kosmos-2
+  1. Language Is Not All You Need: Aligning Perception with Language Models [2302.14045](https://arxiv.org/abs/2302.14045)
+  1. [Kosmos-2](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World
 
 - TaskMatrix.AI
   1. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs 
@@ -759,6 +760,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app
 - Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
 - Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
+- [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
 
 ## Edge and Chrome Extension & Plugin
 
