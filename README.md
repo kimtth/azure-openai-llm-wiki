@@ -9,6 +9,19 @@ This repository contains references to open-source models similar to ChatGPT, as
 
 > `Rule: Brief each item on one or a few lines as much as possible.`
 
+## What's the difference between Azure OpenAI and OpenAI?
+
+1. OpenAI is a better option if you want to use the latest features like function calling, plug-ins, and access to the latest models.
+1. Azure OpenAI is recommended if you require a reliable, secure, and compliant environment.
+1. Azure OpenAI provides seamless integration with other Azure services..
+1. Azure OpenAI offers `private networking` and `role-based authentication`, and responsible `AI content filtering`.
+1. Azure OpenAI provides a Service Level Agreement (SLA) that guarantees a certain level of uptime and support for the service.
+1. Azure OpenAI does not use user input as training data for other customers. [Data, privacy, and security for Azure OpenAI](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
+
+  - [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+
+  - [Open AI Models](https://platform.openai.com/docs/models)
+
 ## Table of contents
 
 - **Section 1** : llama-index and Vector Storage (Database)
@@ -24,7 +37,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [ChatGPT + Enterprise data Demo Configuration](#configuration)
   * [Azure OpenAI Service On Your Data in Public Preview](#introducing-azure-openai-service-on-your-data-in-public-preview)
   * [Azure OpenAI samples](#azure-openai-samples)
-  * [Another Reference Architectures](#another-reference-architectue)
+  * [Another Reference Architectures](#another-reference-architectures)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   * [Semantic-Kernel](#semantic-kernel)
   * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
@@ -308,7 +321,7 @@ Running from second times
 
 - The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [Link](https://github.com/Azure/openai-samples)
 
-## Another Reference Architectue
+## Another Reference Architectures
 
 [azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
 
@@ -343,12 +356,12 @@ Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4
 
 # **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
 
-Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://github.com/microsoft/semantic-kernel/blob/main/FEATURE_MATRIX.md)
+- Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://github.com/microsoft/semantic-kernel/blob/main/FEATURE_MATRIX.md)
 
+  <img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/>
 <!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
-<img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="200"/>
 
-This section includes how to utilize Azure Cosmos DB for vector storage and vector search by leveraging the Semantic-Kernel.
+- This section includes how to utilize Azure Cosmos DB for vector storage and vector search by leveraging the Semantic-Kernel.
 
 ## Semantic-Kernel
 
@@ -416,13 +429,11 @@ Semantic Kernel sample code to integrate with Bing Search (ReAct??)
 
 Bing Search UI for demo
 
-`\bing-search-webui`: (utility)
+`\bing-search-webui`: (Utility, to see the search results from Bing Search API)
 
 <img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="300"/>
 
 # **Section 4** : Langchain 
-
-@citation: [@practical-ai](https://www.youtube.com/@practical-ai)
 
 ## **Langchain Cheetsheet**
 - [Feature Matrix](https://langchain.com/features.html): LangChain Features
@@ -441,6 +452,8 @@ Bing Search UI for demo
   chain = load_summarize_chain(chat, chain_type="map_reduce", verbose=True)
   chain.run(docs[:3])
   ```
+
+  @citation: [@practical-ai](https://www.youtube.com/@practical-ai)
 
 ## **Langchain chain type: Summarizer**
 
