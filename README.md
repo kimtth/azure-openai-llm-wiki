@@ -1,5 +1,5 @@
 
-`updated: 06/29/2023`
+`updated: 07/03/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -43,9 +43,10 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
 - **Section 4** : Langchain
   * [Langchain Cheetsheet](#langchain-cheetsheet)
-  * [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities)
+  * [Langchain Impressive features](#langchain-impressive-features): cache, context-aware-splitting
+  * [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities): Sample code
   * [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
-  * [langflow](#langflow): langchain UI
+  * [langflow](#langflow): langchain UI, Drag-and-Drop Workflow Experience
   * [Lanchain vs llama-index](#langchain-vs-llama-index)
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
   - [Prompt Engineering](#prompt-engineering)
@@ -66,6 +67,7 @@ This repository contains references to open-source models similar to ChatGPT, as
     + [Langchain vs Sementic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
   - [guidance](#): A guidance language for controlling large language models.
 - **Section 6:** Improvement
+  - [Introducing 100K Context Windows](#introducing-100k-context-windows): Large Context Windows
   - [Math problem-solving skill](#math-problem-solving-skill): incl. Latex OCR
   - [Table Extraction](#table-extraction): Extract Tables from PDFs
   - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
@@ -74,7 +76,8 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
   - [Memory Optimization](#memory-optimization): PagedAttention for 24x Faster LLM Inference
   - [Open AI Plugin and function calling](#open-ai-plugin-and-function-calling)
-- **Section 7:** List of OSS LLM
+- **Section 7:** Generative AI Landscape / List of OSS LLM
+  - [Generative AI Revolution: Exploring the Current Landscape](#generative-ai-revolution-exploring-the-current-landscape)
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
   - [Hugging face Transformer](#hugging-face-transformer)
@@ -323,23 +326,12 @@ Running from second times
 
 ## Another Reference Architectures
 
-[azure-open-ai-embeddings-qna](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)
-
-<img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="300"/>
-
-[C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
-ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
-
-<img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="300"/>
-
-[Azure Cosmos DB + OpenAI ChatGPT](https://github.com/Azure-Samples/cosmosdb-chatgpt)
-C# blazor and Azure Custom Template
-
-<img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="300"/>
-
-[Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript, ReactJs and Flask
-
-<img src="files/chatscreen.png" alt="gpt-cosmos" width="300"/>
+|                                                                                                                                                        |                                                                                                                                  |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
+| [Azure OpenAI Embeddings QnA ](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)                                                          |  [Azure Cosmos DB + OpenAI ChatGPT](https://github.com/Azure-Samples/cosmosdb-chatgpt) C# blazor and Azure Custom Template       |
+| <img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="300"/>                                                                       |  <img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="300"/>                                                                  |
+| [C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search |  [Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript, ReactJs and Flask                         |
+| <img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="300"/>                                                               |  <img src="files/chatscreen.png" alt="gpt-cosmos" width="300"/>                                                                  |
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
 
@@ -431,14 +423,18 @@ Bing Search UI for demo
 
 `\bing-search-webui`: (Utility, to see the search results from Bing Search API)
 
-<img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="300"/>
+<img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="200"/>
 
 # **Section 4** : Langchain 
 
 ## **Langchain Cheetsheet**
 - [Feature Matrix](https://langchain.com/features.html): LangChain Features
 - [Cheetsheet](https://github.com/Tor101/LangChain-CheatSheet): LangChain CheatSheet
+
+## **Langchain Impressive Features**
 - [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
+
+- [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
 
 ## **Langchain Quick Start: How to Use and Useful Utilities**
 
@@ -617,22 +613,21 @@ is equivalent to:
 1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
 
 ### **Sementic Kernel Glossary** ###
+  - [Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
 
-  <img src="files/kernel-flow.png" alt="sk" width="500"/>
+  - [Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
 
-  [Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
+    <img src="files/kernel-flow.png" alt="sk" width="500"/>
 
-  [Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
-
-| Journey   | Short Description                                                                                                                                                                                                                                                                                     |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ASK       | A user's goal is sent to SK as an ASK                                                                                                                                                                                                                                                                 |
-| Kernel    | [The kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/kernel) orchestrates a user's ASK                                                                                                                                                                                          |
-| Planner   | [The planner](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/planner) breaks it down into steps based upon resources that are available                                                                                                                                                |
-| Resources | Planning involves leveraging available [skills,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/skills) [memories,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/memories) and [connectors](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/connectors) |
-| Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
-| Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
-| GET       | And the user gets what they asked for ...      
+    | Journey   | Short Description                                                                                                                                                                                                                                                                                     |
+    | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | ASK       | A user's goal is sent to SK as an ASK                                                                                                                                                                                                                                                                 |
+    | Kernel    | [The kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/kernel) orchestrates a user's ASK                                                                                                                                                                                          |
+    | Planner   | [The planner](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/planner) breaks it down into steps based upon resources that are available                                                                                                                                                |
+    | Resources | Planning involves leveraging available [skills,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/skills) [memories,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/memories) and [connectors](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/connectors) |
+    | Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
+    | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
+    | GET       | And the user gets what they asked for ...      
 
 ### **Langchain vs Sementic Kernel vs Azure Machine Learning Prompt flow** ###
 
@@ -650,6 +645,9 @@ is equivalent to:
 [guidance](https://github.com/microsoft/guidance): Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction.
 
 # **Section 6** : Improvement #
+
+## Introducing 100K Context Windows
+- [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E)
 
 ## Math problem-solving skill
 - Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
@@ -688,14 +686,17 @@ is equivalent to:
   If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
   `
 
-# **Section 7** : List of OSS LLM #
+# **Section 7** : Generative AI Landscape / List of OSS LLM #
+
+## Generative AI Revolution: Exploring the Current Landscape
+- [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [Link](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
 
 ## List of OSS LLM
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
 - Printed version for "Medium" limits. [Link](files/list_of_oss_llm.pdf)
 
 ## Huggingface Open LLM Learboard
-- [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+- [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 
 
 ## Hugging face Transformer
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
@@ -736,6 +737,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
 
 ## Democratizing the magic of ChatGPT with open models
+
+- The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "Generative AI Landscape / List of OSS LLM" section.
 
 - [facebookresearch/llama](https://github.com/facebookresearch/llama)
 - [Falcon LLM](https://falconllm.tii.ae/) Apache 2.0 license
@@ -799,6 +802,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4
 - [LLMを制御するには何をするべきか？](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM
 - [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI
+- [Azure OpenAIを活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ
 
 # **Section 9** : Relavant solutions and links #
 
@@ -854,7 +858,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
   - AI Messenger: http://personal.ai
   - Tinkering: http://poe.com
   - Fun: http://beta.character.ai
-  - Coding Auto-complete: http://github.com/features/copil
+  - Coding Auto-complete: http://github.com/features/copilot
 
 # Acknowledgements
 
