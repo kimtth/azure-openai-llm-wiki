@@ -1,5 +1,5 @@
 
-`updated: 07/03/2023`
+`updated: 07/05/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -171,6 +171,10 @@ This section has been created for testing and feasibility checks using elastic s
 - [Vector search (private preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
 - [Azure Cache for Redis Enterprise](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-vector-search-similarity-capabilities-in-azure-cache/ba-p/3827512): Enterprise [Redis Vector Search Demo](https://ecommerce.redisventures.com/)
 
+  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkimtth%2Fazure-openai-elastic-vector-langchain%2Fmain%2Finfra%2Fdeployment.json)
+
+- (WIP) azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
+
 ## Milvus Embedded
 
 - `pip install milvus`
@@ -332,6 +336,9 @@ Running from second times
 | <img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="300"/>                                                                       |  <img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="300"/>                                                                  |
 | [C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search |  [Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript, ReactJs and Flask                         |
 | <img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="300"/>                                                               |  <img src="files/chatscreen.png" alt="gpt-cosmos" width="300"/>                                                                  |
+| [Azure Video Indexer demo](https://aka.ms/viopenaidemo) Azure Video Indexer + OpenAI |            -             |
+| <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="300"/> - |                    -                                                |
+
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
 
@@ -672,6 +679,14 @@ is equivalent to:
 
 ## Gorilla: An API store for LLMs
 - [Gorilla: An API store for LLMs](https://github.com/ShishirPatil/gorilla): Gorilla: Large Language Model Connected with Massive APIs
+  1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
+  1. Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes. 
+  
+  1. @citation [Link](https://www.infoq.com/news/2023/07/microsoft-gorilla/)
+  
+  > Another user asked how Gorilla compared to LangChain; Patil replied: Langchain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into Langchain!
+
+- [Meta: Toolformer](https://github.com/lucidrains/toolformer-pytorch): Language Models That Can Use Tools, by MetaAI
 
 ## Memory Optimization
 - [PagedAttention](https://vllm.ai/) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [Link](files/vLLM_pagedattention.pdf)
@@ -680,11 +695,9 @@ is equivalent to:
 - [ChatGPT Plugin](https://openai.com/blog/chatgpt-plugins)
 - [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling)
 
-  `
-  Under the hood, functions are injected into the system message in a syntax the model has been trained on. 
+  > Under the hood, functions are injected into the system message in a syntax the model has been trained on. 
   This means functions count against the model's context limit and are billed as input tokens. 
   If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
-  `
 
 # **Section 7** : Generative AI Landscape / List of OSS LLM #
 
@@ -740,7 +753,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "Generative AI Landscape / List of OSS LLM" section.
 
-- [facebookresearch/llama](https://github.com/facebookresearch/llama)
+- [facebookresearch/llama](https://github.com/facebookresearch/llama): Not licensed for commercial use
 - [Falcon LLM](https://falconllm.tii.ae/) Apache 2.0 license
 - LLM
   - [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) First Open Source RLHF LLM Chatbot
@@ -780,7 +793,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - Open AI Chat Mockup: An open source ChatGPT UI. [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui)
 - Streaming with Azure OpenAI [SSE](https://github.com/thivy/azure-openai-js-stream)
 - [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app
-- Embedding does not use Open AI. Can be executed locally. [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
+- Embedding does not use Open AI. Can be executed locally: [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
 - Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 - [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
 
@@ -859,6 +872,10 @@ The library is an open-source tool that offers a comprehensive suite of efficien
   - Tinkering: http://poe.com
   - Fun: http://beta.character.ai
   - Coding Auto-complete: http://github.com/features/copilot
+
+      `+`
+
+  - Newsletters & Tool Databas: https://www.therundown.ai/
 
 # Acknowledgements
 

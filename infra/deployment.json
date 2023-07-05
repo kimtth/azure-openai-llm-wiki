@@ -1,0 +1,117 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Location": {
+            "defaultValue": "eastus",
+            "type": "String"
+        },
+        "RedisCacheName": {
+            "defaultValue": "[format('redis-{0}', uniqueString(resourceGroup().id))]",
+            "type": "String"
+        },
+        "searchServicesName": {
+            "defaultValue": "[format('acs-{0}', uniqueString(resourceGroup().id))]",
+            "type": "String"
+        },
+        "postgreSQLName": {
+            "defaultValue": "[format('psql-{0}', uniqueString(resourceGroup().id))]",
+            "type": "String"
+        },
+        "mongoClustersName": {
+            "defaultValue": "[format('mongo-{0}', uniqueString(resourceGroup().id))]",
+            "type": "String"
+        },
+        "administratorLogin": {
+            "defaultValue": "superuser",
+            "type": "String"
+        },
+        "administratorLoginPassword": {
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Cache/Redis",
+            "apiVersion": "2023-05-01-preview",
+            "name": "[parameters('RedisCacheName')]",
+            "location": "[parameters('Location')]",
+            "properties": {
+                "redisVersion": "6.0",
+                "sku": {
+                    "name": "Basic",
+                    "family": "C",
+                    "capacity": 0
+                },
+                "enableNonSslPort": false,
+                "publicNetworkAccess": "Enabled",
+                "redisConfiguration": {
+                    "maxmemory-reserved": "30",
+                    "maxfragmentationmemory-reserved": "30",
+                    "maxmemory-delta": "30"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.DBforPostgreSQL/serverGroupsv2",
+            "apiVersion": "2022-11-08",
+            "name": "[parameters('postgreSQLName')]",
+            "location": "[parameters('Location')]",
+            "properties": {
+                "administratorLoginPassword": "[parameters('administratorLoginPassword')]",
+                "nodeCount": 0,
+                "coordinatorEnablePublicIpAccess": true,
+                "coordinatorServerEdition": "GeneralPurpose",
+                "coordinatorStorageQuotaInMb": 131072,
+                "coordinatorVCores": 2
+            }
+        },
+        {
+            "type": "Microsoft.DocumentDB/mongoClusters",
+            "apiVersion": "2023-03-15-preview",
+            "name": "[parameters('mongoClustersName')]",
+            "location": "[parameters('Location')]",
+            "properties": {
+                "clusterStatus": "Ready",
+                "administratorLogin": "[parameters('administratorLogin')]",
+                "administratorLoginPassword": "[parameters('administratorLoginPassword')]",
+                "serverVersion": "5.0",
+                "nodeGroupSpecs": [
+                    {
+                        "kind": "Shard",
+                        "sku": "M30",
+                        "diskSizeGB": 128,
+                        "enableHa": false,
+                        "nodeCount": 1
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.Search/searchServices",
+            "apiVersion": "2022-09-01",
+            "name": "[parameters('searchServicesName')]",
+            "location": "[parameters('Location')]",
+            "sku": {
+                "name": "standard"
+            },
+            "properties": {
+                "replicaCount": 1,
+                "partitionCount": 1,
+                "hostingMode": "Default",
+                "publicNetworkAccess": "Enabled",
+                "networkRuleSet": {
+                    "ipRules": []
+                },
+                "encryptionWithCmk": {
+                    "enforcement": "Unspecified"
+                },
+                "disableLocalAuth": false,
+                "authOptions": {
+                    "apiKeyOnly": {}
+                }
+            }
+        }
+    ]
+}
