@@ -46,6 +46,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   * [Langchain Impressive features](#langchain-impressive-features): cache, context-aware-splitting
   * [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities): Sample code
   * [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
+  * [Langchain Agent](#langchain-agent)
   * [langflow](#langflow): langchain UI, Drag-and-Drop Workflow Experience
   * [Lanchain vs llama-index](#langchain-vs-llama-index)
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
@@ -62,10 +63,10 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     + [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
     + [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
-    + [Langchain Agent](#langchain-agent)
     + [Sementic Kernel Glossary](#sementic-kernel-glossary)
     + [Langchain vs Sementic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
-  - [guidance](#): A guidance language for controlling large language models.
+  - [guidance](#guidance): A guidance language for controlling large language models.
+  - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
 - **Section 6:** Improvement
   - [Introducing 100K Context Windows](#introducing-100k-context-windows): Large Context Windows
   - [Math problem-solving skill](#math-problem-solving-skill): incl. Latex OCR
@@ -173,7 +174,9 @@ This section has been created for testing and feasibility checks using elastic s
 
   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkimtth%2Fazure-openai-elastic-vector-langchain%2Fmain%2Finfra%2Fdeployment.json)
 
-- (WIP) azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
+  **Note**: Azure Cache for Redis Enterprise: Enterprise Sku series are not able to deploy by a template such as Bicep and ARM.
+
+- azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
 ## Milvus Embedded
 
@@ -337,7 +340,7 @@ Running from second times
 | [C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search |  [Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript, ReactJs and Flask                         |
 | <img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="300"/>                                                               |  <img src="files/chatscreen.png" alt="gpt-cosmos" width="300"/>                                                                  |
 | [Azure Video Indexer demo](https://aka.ms/viopenaidemo) Azure Video Indexer + OpenAI |            -             |
-| <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="300"/> - |                    -                                                |
+| <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="300"/> |                    -                                                |
 
 
 Azure Open AI work with Cognitive Search act as a Long-term memory
@@ -464,6 +467,16 @@ Bing Search UI for demo
 - map_reduce: Summarizes by dividing and then summarizing the entire summary.
 - refine: (Summary + Next document) => Summary
 - map_rerank: Ranks by score and summarizes to important points.
+
+### **Langchain Agent** ###
+
+1. If you're using a text LLM, first try `zero-shot-react-description`.
+1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
+1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
+
+1. `self-ask-with-search`: [ self ask with search paper](https://ofir.io/self-ask.pdf)
+
+1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
 
 ## **langflow**
 
@@ -609,16 +622,6 @@ is equivalent to:
 
 ... {{ 'no need to "escape" ' }} ...
 
-### **Langchain Agent** ###
-
-1. If you're using a text LLM, first try `zero-shot-react-description`.
-1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
-1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
-
-1. `self-ask-with-search`: [ self ask with search paper](https://ofir.io/self-ask.pdf)
-
-1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
-
 ### **Sementic Kernel Glossary** ###
   - [Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
 
@@ -650,6 +653,15 @@ is equivalent to:
 ## **guidance**
 
 [guidance](https://github.com/microsoft/guidance): Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction.
+
+## **Prompt Template Language**
+
+|                   | Handlebars.js                                                                 | Jinja2                                                                                 | Prompt Template                                                                                     |
+| ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Conditions        | {{#if user}}<br>  Hello {{user}}!<br>{{else}}<br>  Hello Stranger!<br>{{/if}} | {% if user %}<br>  Hello {{ user }}!<br>{% else %}<br>  Hello Stranger!<br>{% endif %} | Branching features such as "if", "for", and code blocks are not part of SK's template language.     |
+| Loop              | {{#each items}}<br>  Hello {{this}}<br>{{/each}}                              | {% for item in items %}<br>  Hello {{ item }}<br>{% endfor %}                          | By using a simple language, the kernel can also avoid complex parsing and external dependencies.    |
+| Langchain Library | guidance                                                                      | Azure Machine Learning<br>Prompt flow                                                  | Semactic Kernel                                                                                     |
+| URL               | [Link](https-//handlebarsjs.com/guide/)                                       | [Link](https-//jinja.palletsprojects.com/en/2.10.x/templates/)                         | [Link](https-//learn.microsoft.com/en-us/semantic-kernel/prompt-engineering/prompt-template-syntax) |
 
 # **Section 6** : Improvement #
 
@@ -770,7 +782,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - [LLaVa](https://llava-vl.github.io/): Large Language-and-Vision Assistant
 - [MiniGPT-4](https://minigpt-4.github.io/): Enhancing Vision-language Understanding with Advanced Large Language Models
-- [VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + [SAM](https://github.com/facebookresearch/segment-anything.git)
+- [TaskMatrix, aka VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + [SAM](https://github.com/facebookresearch/segment-anything.git)
 
 ## MLLM (multimodal large language model)
 - Facebook: ImageBind / SAM
