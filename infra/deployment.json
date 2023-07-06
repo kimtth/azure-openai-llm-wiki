@@ -6,10 +6,6 @@
             "defaultValue": "eastus",
             "type": "String"
         },
-        "RedisCacheName": {
-            "defaultValue": "[format('redis-{0}', uniqueString(resourceGroup().id))]",
-            "type": "String"
-        },
         "searchServicesName": {
             "defaultValue": "[format('acs-{0}', uniqueString(resourceGroup().id))]",
             "type": "String"
@@ -32,27 +28,6 @@
     },
     "variables": {},
     "resources": [
-        {
-            "type": "Microsoft.Cache/Redis",
-            "apiVersion": "2023-05-01-preview",
-            "name": "[parameters('RedisCacheName')]",
-            "location": "[parameters('Location')]",
-            "properties": {
-                "redisVersion": "6.0",
-                "sku": {
-                    "name": "Basic",
-                    "family": "C",
-                    "capacity": 0
-                },
-                "enableNonSslPort": false,
-                "publicNetworkAccess": "Enabled",
-                "redisConfiguration": {
-                    "maxmemory-reserved": "30",
-                    "maxfragmentationmemory-reserved": "30",
-                    "maxmemory-delta": "30"
-                }
-            }
-        },
         {
             "type": "Microsoft.DBforPostgreSQL/serverGroupsv2",
             "apiVersion": "2022-11-08",
