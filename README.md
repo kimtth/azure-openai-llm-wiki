@@ -1,5 +1,5 @@
 
-`updated: 07/05/2023`
+`updated: 07/10/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -321,7 +321,7 @@ Running from second times
 
 ## Introducing Azure OpenAI Service On Your Data in Public Preview
 
-- Azure OpenAI Service On Your Data in Public Preview [Link](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview)
+- Azure OpenAI Service On Your Data in Public Preview [Link](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000)
 
 ## Azure OpenAI samples
 
@@ -348,6 +348,11 @@ Azure Open AI work with Cognitive Search act as a Long-term memory
 - [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
 - [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+
+- Tech community
+  1. [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857)
+  2. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
+  3. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
 
 ## Azure Cognitive Search : Vector Search
 - [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
@@ -380,7 +385,7 @@ Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4
 - semanticKernelCosmos.csproj : C# Project file
 - Settings.cs : Environment value class
 - SkillBingSearch.cs : Bing Search Skill
-- SkillDALLEImgGen.cs : DALLE Skill (Only OpenAI, Azure Open AI not supports yet)
+- SkillDALLEImgGen.cs : DALLE Skill
 
 ## Environment variable
 
@@ -423,7 +428,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Bing search Web UI and Semantic Kernel sample code**
 
-Semantic Kernel sample code to integrate with Bing Search (ReAct??)
+Semantic Kernel sample code to integrate with Bing Search
 
 `\ms-semactic-bing-notebook`
 - gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
@@ -749,7 +754,6 @@ is equivalent to:
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 - [LangChain](https://python.langchain.com/en/latest/index.html)
 - [llama-index](https://github.com/jerryjliu/llama_index)
-- [@practical-ai: 믹스의 인공지능](https://www.youtube.com/@practical-ai)
 
 ## AutoGPT / Communicative Agents
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular
