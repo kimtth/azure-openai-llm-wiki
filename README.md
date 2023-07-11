@@ -1,5 +1,5 @@
 
-`updated: 07/10/2023`
+`updated: 07/11/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -78,6 +78,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Memory Optimization](#memory-optimization): PagedAttention for 24x Faster LLM Inference
   - [Open AI Plugin and function calling](#open-ai-plugin-and-function-calling)
 - **Section 7:** Generative AI Landscape / List of OSS LLM
+  - [Evolutionary Graph of LLaMA Family / LLM evolutionary tree](#evolutionary-graph-of-llama-family--llm-evolutionary-tree)
   - [Generative AI Revolution: Exploring the Current Landscape](#generative-ai-revolution-exploring-the-current-landscape)
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
@@ -718,6 +719,22 @@ is equivalent to:
 
 # **Section 7** : Generative AI Landscape / List of OSS LLM #
 
+## Evolutionary Graph of LLaMA Family / LLM evolutionary tree
+
+  Evolutionary Graph of LLaMA Family
+
+  <img src="files/llama-0628-final.png" width="450" />
+
+  LLM evolutionary tree
+
+  <img src="files/qr_version.jpg" alt="llm" width="450"/> 
+
+- [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey)
+
+- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
+
+- [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @citation: LLMsPracticalGuide
+
 ## Generative AI Revolution: Exploring the Current Landscape
 - [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [Link](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
 
@@ -868,11 +885,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - string2string: 
 The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string)
 
-  <img src="files/string2string-overview.png" alt="string2string" width="500"/>
-
-- [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @citation: LLMsPracticalGuide
-
-  <img src="files/qr_version.jpg" alt="llm" width="500"/> 
+  <img src="files/string2string-overview.png" alt="string2string" width="200"/>
 
 # **Section 10** : AI Tools #
 
