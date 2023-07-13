@@ -454,10 +454,10 @@ Bing Search UI for demo
 
 ## **Langchain Quick Start: How to Use and Useful Utilities**
 
-- Langchain_1_(믹스의_인공지능).ipynb : Langchain Get started
-- langchain_1_(믹스의_인공지능).py : -
-- Langchain_2_(믹스의_인공지능).ipynb : Langchain Utilities
-- langchain_2_(믹스의_인공지능).py : -
+- `langchain-deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
+- `langchain-deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
+- `langchain-@practical-ai\Langchain_1_(믹스의_인공지능).ipynb` : Langchain Get started
+- `langchain-@practical-ai\Langchain_2_(믹스의_인공지능).ipynb` : Langchain Utilities
 
   ```python
   from langchain.chains.summarize import load_summarize_chain
