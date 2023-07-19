@@ -1,5 +1,5 @@
 
-`updated: 07/15/2023`
+`updated: 07/19/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -35,7 +35,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
   - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
   - [ChatGPT + Enterprise data Demo Configuration](#configuration)
-  - [Azure OpenAI Service On Your Data in Public Preview](#introducing-azure-openai-service-on-your-data-in-public-preview)
+  - [Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview](#bing-chat-enterprise--azure-openai-service-on-your-data-in-public-preview)
   - [Azure OpenAI samples](#azure-openai-samples)
   - [Another Reference Architectures](#another-reference-architectures)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
@@ -47,7 +47,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities): Sample code
   - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
-  - [langflow](#langflow): langchain UI, Drag-and-Drop Workflow Experience
+  - [langflow & LangSmith](#langflow--langsmith): langchain UI, Drag-and-Drop Workflow Experience, LangSmith for LLM debugging
   - [Lanchain vs llama-index](#langchain-vs-llama-index)
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     - [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
@@ -69,7 +69,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
 - **Section 6:** Improvement
-  - [Context Limits](#context-limits): Large Context Windows, RoPE
+  - [Context Constraints](#context-constraints): Large Context Windows, RoPE
   - [Math problem-solving skill](#math-problem-solving-skill): incl. Latex OCR
   - [Table Extraction](#table-extraction): Extract Tables from PDFs
   - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
@@ -289,8 +289,11 @@ Running from second times
 - ms_internal_az_init.ps1 : Powershell script for Azure module installation
 - ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
 
-## Introducing Azure OpenAI Service On Your Data in Public Preview
+## Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview
 
+- Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
+  1. Bing Chat Enterprise doesn't have plugin support
+  2. Only content provided in the chat by users is accessible to Bing Chat Enterprise.
 - Azure OpenAI Service On Your Data in Public Preview [Link](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000)
 
 ## Azure OpenAI samples
@@ -442,9 +445,12 @@ Bing Search UI for demo
 
 1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
 
-## **langflow**
+## **langflow & LangSmith**
 
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
+- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating
+
+  <img src="files/langchain_debugging.png" width="200" />
 
 ## **Langchain vs llama-index**
 
@@ -639,7 +645,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ## Context constraints
 
-- [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E)
+- [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 
 - [Rotary Positional Embedding (RoPE)](https://blog.eleuther.ai/rotary-embeddings/) / [roformer](https://github.com/ZhuiyiTechnology/roformer) / Printed version for backup [Link](./files/RoPE.pdf)
 
@@ -647,6 +653,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   >
   > 1. Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
   > 1. Sinusoidal embeddings add a `cos` or `sin` term, while rotary embeddings use a multiplicative factor.
+
+- [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172)
+  1. Best Performace when relevant information is at beginning
+  1. Too many retrieved documents will harm performance
+  1. Performacnce decreases with an increase in context
 
 ## Math problem-solving skill
 
@@ -783,6 +794,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "Generative AI Landscape / List of OSS LLM" section.
 
 - [facebookresearch/llama](https://github.com/facebookresearch/llama): Not licensed for commercial use
+- [Llama 2](https://huggingface.co/blog/llama2): Available for commercial use [demo](https://huggingface.co/blog/llama2#demo)
 - [Falcon LLM](https://falconllm.tii.ae/) Apache 2.0 license
 - LLM
   - [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) First Open Source RLHF LLM Chatbot
