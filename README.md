@@ -1,5 +1,5 @@
 
-`updated: 07/19/2023`
+`updated: 07/25/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -26,18 +26,19 @@ This repository contains references to open-source models similar to ChatGPT, as
 
 - **Section 1** : llama-index and Vector Storage (Database)
   - [Opensearch/Elasticsearch setup](#opensearchelasticsearch-setup)
-  - [Vector Storage Comparison](#vector-storage-comparison)
-  - [Milvus Embedded](#milvus-embedded)
-  - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
-  - [Conclusion](#conclusion)
   - [llama-index](#llama-index)
   - [llama-index Deep Dive](#llama-index-deep-dive)
+  - [Vector Storage Comparison](#vector-storage-comparison)
+  - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
+  - [Milvus Embedded](#milvus-embedded)
+  - [Conclusion](#conclusion)
 - **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
-  - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
-  - [ChatGPT + Enterprise data Demo Configuration](#configuration)
+  - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
+  - [ChatGPT + Enterprise data Demo Configuration](#rag-demo-configuration)
   - [Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview](#bing-chat-enterprise--azure-openai-service-on-your-data-in-public-preview)
   - [Azure OpenAI samples](#azure-openai-samples)
-  - [Another Reference Architectures](#another-reference-architectures)
+  - [Another Reference Architectures / Tech community](#another-reference-architectures--tech-community)
+  - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
 - **Section 3** : Microsoft Semantic Kernel with Azure Cosmos DB
   - [Semantic-Kernel](#semantic-kernel)
   - [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
@@ -54,7 +55,6 @@ This repository contains references to open-source models similar to ChatGPT, as
     - [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
     - [Sementic Kernel Glossary](#sementic-kernel-glossary)
     - [Langchain vs Sementic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
-  - [guidance](#guidance): A guidance language for controlling large language models.
   - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
 - **Section 5**: Prompt Engineering, Finetuning, and Langchain
   - [Prompt Engineering](#prompt-engineering)
@@ -143,6 +143,14 @@ This section has been created for testing and feasibility checks using elastic s
 - llama-index-es-handson\chat-engine-react.py: ReAct
 - llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
 
+## llama-index Deep dive
+
+- [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
+
+- [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
+
+- [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
+
 ## Vector Storage Comparison
 
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696)
@@ -162,6 +170,8 @@ This section has been created for testing and feasibility checks using elastic s
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
 ## Milvus Embedded
+
+ `[JMO]`: Milvus is the best alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) has positioned itself as the SQLite in vector databases.
 
 - `pip install milvus`
 - Docker compose: <https://milvus.io/docs/install_offline-docker.md>
@@ -205,15 +215,19 @@ However, one exception to this is that the maximum dimension count for the Lucen
 - @llama-index `ElasticsearchReader` class:
 The name of the class in llama-index is `ElasticsearchReader`. However, actually, it can only work with open search.
 
-## llama-index Deep dive
-
-- [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
-
-- [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
-
-- [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
-
 # **Section 2** : ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search
+
+## Microsoft Azure OpenAI relevant LLM Framework & Copilot Stack
+
+  1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
+  1. [guidance][guidance]: A guidance language for controlling large language models. Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction. Langchain libaries but different approach rather than ochestration, particularly effective for implementing  `Chain of Thought`. / [git][guidance]
+  1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [doc][promptflow-doc]
+  1. [Prompt Engine][prompt-engine]: Craft prompts for Large Language Models: `npm install prompt-engine` / [git][prompt-engine] / [python][prompt-engine-py]
+  1. [TypeChat][typechat]: TypeChat replaces prompt engineering with schema engineering. To build natural language interfaces using types. / [git][typechat-git]
+  1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
+  1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot] and [Microsoft Security Copilot][sec-copilot]
+
+## RAG Demo Configuration
 
 The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
 
@@ -224,8 +238,6 @@ The files in this directory, `extra_steps`, have been created for managing extra
 --->
 
   <img src="files/capture_azure_demo.png" alt="sk" width="300"/>
-
-## Configuration
 
 1. (optional) Check Azure module installation in Powershell by running `ms_internal_az_init.ps1` script
 2. (optional) Set your Azure subscription Id to default
@@ -300,11 +312,17 @@ Running from second times
 
 - Azure OpenAI samples: [Link](https://github.com/Azure/azure-openai-samples)
 
-- A simple ChatGPT Plugin: [Link](https://github.com/Azure-Samples/openai-plugin-fastapi)
-
 - The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [Link](https://github.com/Azure/openai-samples)
 
-## Another Reference Architectures
+- Azure-Samples [Link](https://github.com/Azure-Samples)
+
+  - Azure OpenAI with AKS By Terraform: <https://github.com/Azure-Samples/aks-openai-terraform>
+  - Azure OpenAI with AKS By Bicep: <https://github.com/Azure-Samples/aks-openai>
+  - Enterprise Logging: <https://github.com/Azure-Samples/openai-python-enterprise-logging>
+  - Azure OpenAI with AKS by Terraform (simple version): <https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample>
+  - ChatGPT Plugin Quickstart using Python and FastAPI: <https://github.com/Azure-Samples/openai-plugin-fastapi>
+
+## Another Reference Architectures / Tech community
 
 |                                                                                                                                                        |                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
@@ -315,22 +333,27 @@ Running from second times
 | [Azure Video Indexer demo](https://aka.ms/viopenaidemo) Azure Video Indexer + OpenAI |            [Miyagi](https://github.com/Azure-Samples/miyagi) Integration demonstrate for multiple langchain libraries            |
 | <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="300"/> |                    <img src="files/wip-azure.png" alt="miyagi" width="300"/>                                              |
 
-Azure Open AI work with Cognitive Search act as a Long-term memory
+- Azure Open AI work with Cognitive Search act as a Long-term memory
 
-- [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
-- [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
-- [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
+  1. [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo)
+  1. [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ)
+  1. [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840)
 
 - Tech community
-  1. [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857)
-  2. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
-  3. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
+  1. [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857): Retrieval-Augmented Generation (RAG)
+  1. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
+  1. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
 
 ## Azure Cognitive Search : Vector Search
 
 - [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
 
-Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4. Semantic Hybrid Search
+Azure Cognitive Search supports
+
+  1. Text Search
+  1. Pure Vector Search
+  1. Hybrid Search (Text search + Vector search)
+  1. Semantic Hybrid Search (Text search + Semantic search + Vector search)
 
 - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
 
@@ -360,26 +383,28 @@ Options: 1. Vector similarity search, 2. Pure Vector Search, 3. Hybrid Search, 4
 - SkillBingSearch.cs : Bing Search Skill
 - SkillDALLEImgGen.cs : DALLE Skill
 
-## Environment variable
+## Notes
 
-- Semantic Kernel has recently introduced support for Azure Cognitive Search as a memory. However, it currently only supports Azure Cognitive Search with a Semantic Search interface, lacking any features to store vectors to ACS.
+- Semantic Kernel Planner
 
-- According to the comments, this suggests that the strategy of the plan could be divided into two parts. One part focuses on Semantic Search, while the other involves generating embeddings using OpenAI.
+  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="300"/>
 
-`Azure Cognitive Search automatically indexes your data semantically, so you don't need to worry about embedding generation.`
-`samples/dotnet/kernel-syntax-examples/Example14_SemanticMemory.cs`.
+- Is Semantic Kernel Planner the same as LangChain agents?
 
-  ```csharp
-  // TODO: use vectors
-  // @Microsoft Semactic Kernel
-  var options = new SearchOptions
-  {
-          QueryType = SearchQueryType.Semantic,
-          SemanticConfigurationName = "default",
-          QueryLanguage = "en-us",
-          Size = limit,
-  };
-  ```
+    > Planner in SK is not the same as Agents in LangChain. [@cite](https://github.com/microsoft/semantic-kernel/discussions/1326)
+
+    ```comment
+    Agents in LangChain use recursive calls to the LLM to decide the next step to take based on the current state.
+
+    The two planner implementations in SK are not self-correcting.
+
+      Sequential planner tries to produce all the steps at the very beginning, so it is unable to handle unexpected errors.
+      Action planner only chooses one tool to satisfy the goal
+    ```
+
+    `[JMO]`: Stepwise Planner could be have the self-correcting.
+
+- Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [Dev Blog](https://devblogs.microsoft.com/semantic-kernel)
 
 - SemanticKernel Implementation sample to overcome Token limits of Open AI model.
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
@@ -387,18 +412,18 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Bing search Web UI and Semantic Kernel sample code**
 
-Semantic Kernel sample code to integrate with Bing Search
+- Semantic Kernel sample code to integrate with Bing Search
 
-`\ms-semactic-bing-notebook`
+  `\ms-semactic-bing-notebook`
 
-- gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
-- gs_davinci.ipynb: Azure Open AI Davinci sample to use Bing Search
+  - gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
+  - gs_davinci.ipynb: Azure Open AI Davinci sample to use Bing Search
 
-Bing Search UI for demo
+- Bing Search UI for demo
 
-`\bing-search-webui`: (Utility, to see the search results from Bing Search API)
+  `\bing-search-webui`: (Utility, to see the search results from Bing Search API)
 
-<img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="200"/>
+    <img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="200"/>
 
 # **Section 4** : Langchain
 
@@ -452,6 +477,8 @@ Bing Search UI for demo
 
   <img src="files/langchain_debugging.png" width="200" />
 
+- [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
+
 ## **Langchain vs llama-index**
 
 - Basically llmaindex is a smart storage mechanism, while Langchain is a tool to bring multiple tools together. [@citation](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139)
@@ -488,12 +515,12 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 5. Values that include quotes, and escaping :
 
-For instance:
+    For instance:
 
-... {{ 'no need to \\"escape" ' }} ...
-is equivalent to:
+    ... {{ 'no need to \\"escape" ' }} ...
+    is equivalent to:
 
-... {{ 'no need to "escape" ' }} ...
+    ... {{ 'no need to "escape" ' }} ...
 
 ### **Sementic Kernel Glossary**
 
@@ -503,7 +530,7 @@ is equivalent to:
 
     <img src="files/kernel-flow.png" alt="sk" width="500"/>
 
-    | Journey   | Short Description                                                                                                                                                                                                                                                                                     |
+    | Term   | Short Description                                                                                                                                                                                                                                                                                     |
     | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | ASK       | A user's goal is sent to SK as an ASK                                                                                                                                                                                                                                                                 |
     | Kernel    | [The kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/kernel) orchestrates a user's ASK                                                                                                                                                                                          |
@@ -523,10 +550,6 @@ is equivalent to:
 
   1. Low/No Code vs C#, Python, Java
   1. Focused on Prompt orchestrating vs Integrate LLM into their existing app.
-
-## **guidance**
-
-[guidance](https://github.com/microsoft/guidance): Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction.
 
 ## **Prompt Template Language**
 
@@ -710,6 +733,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   This means functions count against the model's context limit and are billed as input tokens.
   If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
 
+  > Azure OpenAI start to support function calling. [Link][aoai_func]
+
 - [Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment
 
   > We provide our models with a working Python interpreter in a sandboxed, firewalled execution environment, along with some ephemeral disk space.
@@ -864,17 +889,9 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 - [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
 
-- [DeepSpeed](https://github.com/microsoft/DeepSpeed): DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
-
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features.
 
-- [Azure Machine Learning - Prompt flow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.): Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language.
-
-- [Microsoft AI Models](https://github.com/microsoft/unilm): Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities. <https://aka.ms/nlpagi>
-
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
-
-- [Prompt Engine](https://github.com/microsoft/prompt-engine): Craft prompts for Large Language Models: `npm install prompt-engine`
 
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. <https://activeloop.ai> (github.com)
 
@@ -920,3 +937,19 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 # Acknowledgements
 
 - @TODO
+
+[aoai_func]: https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api
+[typechat]: https://microsoft.github.io/TypeChat/blog/introducing-typechat
+[typechat-git]: https://github.com/microsoft/Typechat
+[semantic-kernel]: https://devblogs.microsoft.com/semantic-kernel/
+[semantic-kernel-git]: https://github.com/microsoft/semantic-kernel
+[guidance]: https://github.com/microsoft/guidance
+[deepspeed]: https://github.com/microsoft/DeepSpeed
+[promptflow]: https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow
+[promptflow-doc]: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.
+[prompt-engine]: https://github.com/microsoft/prompt-engine
+[prompt-engine-py]: https://github.com/microsoft/prompt-engine-py
+[m365-copilot]: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
+[d365-copilot]: https://blogs.microsoft.com/blog/2023/03/06/introducing-microsoft-dynamics-365-copilot/
+[viva-copilot]: https://www.microsoft.com/en-us/microsoft-365/blog/2023/04/20/introducing-copilot-in-microsoft-viva-a-new-way-to-boost-employee-engagement-and-performance/
+[sec-copilot]: https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
