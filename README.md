@@ -52,8 +52,8 @@ This repository contains references to open-source models similar to ChatGPT, as
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     - [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
     - [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
-    - [Semantic Kernel Glossary](#sementic-kernel-glossary)
-    - [Langchain vs Semantic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-sementic-kernel-vs-azure-machine-learning-prompt-flow)
+    - [Semantic Kernel Glossary](#semantic-kernel-glossary)
+    - [Langchain vs Semantic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
   - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
 - **Section 5**: Prompt Engineering & Finetuning
   - [Prompt Engineering](#prompt-engineering)
@@ -63,7 +63,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
-  - [Finetuning Llama2](#finetuning-llama2)
+  - [Finetuning Llama2](#finetuning-llama2): Llama 2
   - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
   - [Sparsification](#sparsification)
   - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
@@ -658,7 +658,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Finetuning Llama2**
 
-The sources of Inference code and finetuning code are commented on the files.
+The sources of Inference code and finetuning code are commented on the files. [git](https://github.com/facebookresearch/llama)
 
 - llama2-trial.ipynb: LLama 2 inference code in local
 - llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
@@ -758,7 +758,7 @@ The sources of Inference code and finetuning code are commented on the files.
 
 - [PagedAttention](https://vllm.ai/) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [Link](files/vLLM_pagedattention.pdf)
 
-- [Flash Attention](https://arxiv.org/abs/2205.14135): Flash Attention is a an method that reorders the attention computation and leverages classical techniques (tiling, recomputation) to significantly speed it up and reduce memory usage from quadratic to linear in sequence length.
+- [Flash Attention](https://arxiv.org/abs/2205.14135): An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead.
 
 ### OpenAI Plugin and function calling
 
