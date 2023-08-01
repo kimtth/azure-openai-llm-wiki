@@ -64,15 +64,16 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
   - [Finetuning Llama2](#finetuning-llama2): Llama 2
+  - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhfreinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
   - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
   - [Sparsification](#sparsification)
   - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
 - **Section 6:** LLM Enhancement
   - [Context Constraints](#context-constraints): Large Context Windows, RoPE
+  - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
   - [Math problem-solving skill](#math-problem-solving-skill): incl. Latex OCR
   - [Table Extraction](#table-extraction): Extract Tables from PDFs
-  - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
   - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
   - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
   - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
@@ -88,7 +89,6 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Huggingface StarCoder](#huggingface-starcoder)
 - **Section 8** : References
   - [picoGPT](#picogpt) : tiny implementation of GPT-2.
-  - [RLHF（Reinforcement Learning from Human Feedback)](#rlhfreinforcement-learning-from-human-feedback): TRL, trlX, Argilla
   - [AutoGPT / Communicative Agents](#autogpt--communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   - [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
@@ -100,6 +100,8 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Office Copilot](#section-9--relevant-solutions-and-resources): Semantic Interpreter, Natural Language Commanding via Program Synthesis
   - [microsoft/unilm](#section-9--relevant-solutions-and-resources): Microsoft Foundation models
 - **Section 10** : AI Tools
+  - [AI Tools](#section-10--ai-tools)
+- **Section 11** : Datasets for LLM Training
   - [AI Tools](#section-10--ai-tools)
 
 - **Acknowledgements**
@@ -663,6 +665,28 @@ The sources of Inference code and finetuning code are commented on the files. [g
 - llama2-trial.ipynb: LLama 2 inference code in local
 - llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
 
+### RLHF（Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
+
+- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
+
+  <img src="files/rhlf.png" width="400" />
+
+- Libraries: [TRL](https://huggingface.co/docs/trl/index), [trlX](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)
+
+  <img src="files/chip.jpg" width="400" />
+
+  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [doc](https://aman.ai/primers/ai/RLHF/)
+
+- `Reinforcement Learning from Human Feedback (RLHF)` is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [doc](https://huggingface.co/blog/rlhf)
+
+- `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF.
+
+- `Proximal Policy Optimization (PPO)` is a policy gradient method for reinforcement learning that aims to have the data efficiency and reliable performance of TRPO (Trust Region Policy Optimization), while using only first-order optimization. It does this by modifying the objective function to penalize changes to the policy that move the probability ratio away from 1. This results in an algorithm that is easier to implement and tune than TRPO while still achieving good performance. TRPO requires second-order optimization, which can be more difficult to implement and computationally expensive.
+
+- `First-order optimization` methods are a class of optimization algorithms that use only the first derivative (gradient) of the objective function to find its minimum or maximum. These methods include gradient descent, stochastic gradient descent, and their variants.
+
+- Second-order methods: `Second derivative (Hessian)` of the objective function
+
 ## **Quantization**
 
 - Quantization-aware training (QAT): The model is further trained with quantization in mind after being initially trained in floating-point precision.
@@ -716,6 +740,10 @@ The sources of Inference code and finetuning code are commented on the files. [g
   1. Too many retrieved documents will harm performance
   1. Performacnce decreases with an increase in context
 
+### OpenAI's plans according to Sam Altman
+
+- [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [Link](files/openai-plans.pdf)
+
 ### Math problem-solving skill
 
 - Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
@@ -726,10 +754,6 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - Azure Form Recognizer: [documentation](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
-
-### OpenAI's plans according to Sam Altman
-
-- [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [Link](files/openai-plans.pdf)
 
 ### Token counting & Token-limits
 
@@ -846,14 +870,6 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT): Transformer Decoder
 
-### RLHF（Reinforcement Learning from Human Feedback)
-
-- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
-
-  <img src="files/rhlf.png" width="400" />
-
-- Libraries: [TRL](https://huggingface.co/docs/trl/index), [trlX](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)
-
 ### AutoGPT / Communicative Agents
 
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular
@@ -870,6 +886,9 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [LLaVa](https://llava-vl.github.io/): Large Language-and-Vision Assistant
 - [MiniGPT-4](https://minigpt-4.github.io/): Enhancing Vision-language Understanding with Advanced Large Language Models
 - [TaskMatrix, aka VisualChatGPT](https://github.com/microsoft/TaskMatrix): Microsoft TaskMatrix; GroundingDINO + [SAM](https://github.com/facebookresearch/segment-anything.git)
+- [BLIP-2](https://huggingface.co/blog/blip-2): Salesforce Research, Querying Transformer (Q-Former)
+
+  > `Q-Former (Querying Transformer)`: A transformer model that consists of two submodules that share the same self-attention layers: an image transformer that interacts with a frozen image encoder for visual feature extraction, and a text transformer that can function as both a text encoder and a text decoder
 
 ### MLLM (multimodal large language model)
 
@@ -905,6 +924,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 ### 日本語（Japanese Materials）
 
 - [rinna](https://huggingface.co/rinna): rinnaの36億パラメータの日本語GPT言語モデル: 3.6 billion parameter Japanese GPT language model
+- [rinna: bilingual-gpt-neox-4b](https://huggingface.co/rinna/bilingual-gpt-neox-4b): 日英バイリンガル大規模言語モデル
 - [法律:生成AIの利用ガイドライン](https://storialaw.jp/blog/9414): Legal: Guidelines for the Use of Generative AI
 - [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718)
 - [大規模言語モデルで変わるMLシステム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models
@@ -965,6 +985,11 @@ The library is an open-source tool that offers a comprehensive suite of efficien
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
   - [ChatHub](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
   - [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
+
+## **Section 11** : Datasets for LLM Training
+
+- [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
+- [大規模言語モデルのデータセットまとめ](https://note.com/npaka/n/n686d987adfb1): 大規模言語モデルのデータセットまとめ
 
 ## Acknowledgements
 
