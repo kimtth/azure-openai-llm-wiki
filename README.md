@@ -102,7 +102,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 10** : AI Tools
   - [AI Tools](#section-10--ai-tools)
 - **Section 11** : Datasets for LLM Training
-  - [AI Tools](#section-10--ai-tools)
+  - [Datasets for LLM Training](#section-11--datasets-for-llm-training)
 
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
@@ -599,11 +599,15 @@ Each semantic function is defined by a unique prompt template file, developed us
 1. ReAct: Grounding with external sources. (Reasoning and Act)
 1. Chain-of-Thought Prompting  
     - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2205.11916)
-1. Tree of Thought [(github)](https://github.com/ysymyth/tree-of-thought-llm)
+1. Tree of Thought [git](https://github.com/ysymyth/tree-of-thought-llm)
 
     - `tree-of-thought\forest_of_thought.py`: Forest of thought Decorator sample
     - `tree-of-thought\tree_of_thought.py`: Tree of thought Decorator sample
     - `tree-of-thought\react-prompt.py`: ReAct sample without Langchain
+
+1. Zero-shot, one-shot and few-shot
+
+    <img src="files/zero-one-few-shot.png" width="200">
 
 - Prompt Concept
   
@@ -850,6 +854,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
 - Printed version for "Medium" limits. [Link](files/list_of_oss_llm.pdf)
+- [LLM Collection][llm-collection]: promptingguide.ai
 
 ### **Huggingface Open LLM Learboard**
 
@@ -1043,3 +1048,4 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 [Promptist]: https://arxiv.org/abs/2212.09611
 [Structured Prompting]: https://arxiv.org/abs/2212.06713
 [upstage]: https://en.upstage.ai/newsroom/upstage-huggingface-llm-no1
+[llm-collection]: https://www.promptingguide.ai/models/collection
