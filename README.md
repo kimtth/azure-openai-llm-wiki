@@ -1,5 +1,5 @@
 
-`updated: 07/27/2023`
+`updated: 08/01/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -64,8 +64,8 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
   - [Finetuning Llama2](#finetuning-llama2): Llama 2
-  - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhfreinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
-  - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
+  - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
+  - [Quantization](#quantization): Quantization & Run ChatGPT on a Raspberry Pi / Android
   - [Sparsification](#sparsification)
   - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
@@ -102,7 +102,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 10** : AI Tools
   - [AI Tools](#section-10--ai-tools)
 - **Section 11** : Datasets for LLM Training
-  - [AI Tools](#section-10--ai-tools)
+  - [Datasets for LLM Training](#section-11--datasets-for-llm-training)
 
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
@@ -665,7 +665,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 - llama2-trial.ipynb: LLama 2 inference code in local
 - llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
 
-### RLHF（Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
+### RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
 
 - Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
 
@@ -698,6 +698,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement |
 | Per-embedding-group quantization | Can achieve high accuracy with low bit-widths, leading to significant memory savings | May require more fine-tuning and experimentation to achieve optimal results |
 
+  [contd.](README_SBCs.md)
 
 ### **Sparsification**
 
