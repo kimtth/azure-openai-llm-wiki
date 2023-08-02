@@ -1,5 +1,5 @@
 
-`updated: 08/01/2023`
+`updated: 07/27/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -64,8 +64,8 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
   - [Finetuning Llama2](#finetuning-llama2): Llama 2
-  - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
-  - [Quantization](#quantization): Quantization & Run ChatGPT on a Raspberry Pi / Android
+  - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhfreinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
+  - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
   - [Sparsification](#sparsification)
   - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
@@ -102,7 +102,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 - **Section 10** : AI Tools
   - [AI Tools](#section-10--ai-tools)
 - **Section 11** : Datasets for LLM Training
-  - [Datasets for LLM Training](#section-11--datasets-for-llm-training)
+  - [AI Tools](#section-10--ai-tools)
 
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
@@ -223,6 +223,7 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
   1. [Prompt Engine][prompt-engine]: Craft prompts for Large Language Models: `npm install prompt-engine` / [git][prompt-engine] / [python][prompt-engine-py]
   1. [TypeChat][typechat]: TypeChat replaces prompt engineering with schema engineering. To build natural language interfaces using types. / [git][typechat-git]
   1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
+  1. [LMOps][LMOps]: a collection of tools for improving text prompts used as input to generative AI models. The toolkit includes [Promptist][Promptist], which optimizes a user's text input for text-to-image generation, and [Structured Prompting][Structured Prompting].
   1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot] and [Microsoft Security Copilot][sec-copilot]
 
 ### RAG (Retrieval-Augmented Generation) Demo Configuration
@@ -361,7 +362,7 @@ Running from second times
 <!-- <img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/> -->
 <!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
 
-### Semantic Kernel
+### **Semantic Kernel**
 
 - This section includes how to utilize Azure Cosmos DB for vector storage and vector search by leveraging the SemanticKernel.
 
@@ -380,7 +381,7 @@ Running from second times
   - SkillBingSearch.cs : Bing Search Skill
   - SkillDALLEImgGen.cs : DALLE Skill
 
-### Semantic Kernel Notes
+### **Semantic Kernel Notes**
 
 - Semantic Kernel Planner
 
@@ -434,6 +435,10 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   @cite: [doc][langchain-doc]
 
+  <img src="files/langchain-glance.png" width="400">
+
+  @cite: [packt][langchain-glance]
+
 ### Langchain and Prompt engineering library
 
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
@@ -452,8 +457,12 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 ### **Langchain Impressive Features**
 
 - [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
-
 - [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
+- [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
+
+  ```python
+  chain = prompt | model | StrOutputParser() | search
+  ```
 
 ### **Langchain Quick Start: How to Use and Useful Utilities**
 
@@ -609,6 +618,9 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
 
+- [Promptist][Promptist]: With Promptist, Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
+  - For example, instead of simply passing "Cats dancing in a space club" as a prompt, an engineered prompt might be "Cats dancing in a space club, digital painting, artstation, concept art, soft light, hdri, smooth, sharp focus, illustration, fantasy."
+
 ### **Azure OpenAI Prompt Guide**
 
 - [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
@@ -665,7 +677,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 - llama2-trial.ipynb: LLama 2 inference code in local
 - llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
 
-### RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
+### RLHF（Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
 
 - Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
 
@@ -698,7 +710,6 @@ The sources of Inference code and finetuning code are commented on the files. [g
 | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement |
 | Per-embedding-group quantization | Can achieve high accuracy with low bit-widths, leading to significant memory savings | May require more fine-tuning and experimentation to achieve optimal results |
 
-  [contd.](README_SBCs.md)
 
 ### **Sparsification**
 
@@ -740,6 +751,13 @@ The sources of Inference code and finetuning code are commented on the files. [g
   1. Best Performace when relevant information is at beginning
   1. Too many retrieved documents will harm performance
   1. Performacnce decreases with an increase in context
+
+- [Structured Prompting: Scaling In-Context Learning to 1,000 Examples](https://arxiv.org/abs/2212.06713)
+  1. Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM. 
+
+  1. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. 
+  
+      @cite [doc](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
 
 ### OpenAI's plans according to Sam Altman
 
@@ -1018,3 +1036,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 [langchain-features]: https://python.langchain.com/docs/get_started/introduction
 [awesome-langchain]: https://github.com/kyrolabs/awesome-langchain
 [llama2]: https://ai.meta.com/llama
+[LMOps]: https://github.com/microsoft/LMOps
+[langchain-glance]: https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications
+[Promptist]: https://arxiv.org/abs/2212.09611
+[Structured Prompting]: https://arxiv.org/abs/2212.06713
