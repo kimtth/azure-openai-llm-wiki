@@ -1,5 +1,5 @@
 
-`updated: 07/27/2023`
+`updated: 08/02/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -111,7 +111,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [doc][llama-index-doc]
 
-### LlamaIndex
+### **LlamaIndex**
 
 - This section has been created for testing and feasibility checks using elastic search as a vector database and integration with LlamaIndex. LlamaIndex is specialized in integration layers to external data sources.
 
@@ -134,14 +134,14 @@ This repository contains references to open-source models similar to ChatGPT, as
     - es-search.py : Usage of Elastic search python client
     - files : The Sample file for consuming
 
-### LlamaIndex example
+### **LlamaIndex example**
 
 - llama-index-es-handson\callback-debug-handler.py: callback debug handler
 - llama-index-es-handson\chat-engine-flare-query.py: FLARE
 - llama-index-es-handson\chat-engine-react.py: ReAct
 - llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
 
-### LlamaIndex Deep dive
+### **LlamaIndex Deep dive**
 
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 
@@ -149,12 +149,12 @@ This repository contains references to open-source models similar to ChatGPT, as
 
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
 
-### Vector Storage Comparison
+### **Vector Storage Comparison**
 
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696)
 - Printed version for "Medium" limits. - [Link](files/vector-dbs.pdf)
 
-### Vector Storage Options for Azure
+### **Vector Storage Options for Azure**
 
 - [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
 - [Vector Search in Azure Cosmos DB for MongoDB vCore](https://devblogs.microsoft.com/cosmosdb/introducing-vector-search-in-azure-cosmos-db-for-mongodb-vcore/)
@@ -167,7 +167,7 @@ This repository contains references to open-source models similar to ChatGPT, as
 
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
-### Milvus Embedded
+### **Milvus Embedded**
 
  `[JMO]`: Milvus looks like the best alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) has positioned itself as the SQLite in vector databases.
 
@@ -196,7 +196,7 @@ This repository contains references to open-source models similar to ChatGPT, as
   After starting the Milvus service, you can test by running hello_milvus.py. See Hello Milvus for more information.
   ```
 
-### Conclusion
+### **Conclusion**
 
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 
@@ -215,7 +215,7 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
 
 ## **Section 2** : Azure OpenAI and RAG demo
 
-### Microsoft Azure OpenAI relevant LLM Framework & Copilot Stack
+### **Microsoft Azure OpenAI relevant LLM Framework & Copilot Stack**
 
   1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
   1. [guidance][guidance]: A guidance language for controlling large language models. Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction. Langchain libaries but different approach rather than ochestration, particularly effective for implementing  `Chain of Thought`. / [git][guidance]
@@ -226,7 +226,7 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
   1. [LMOps][LMOps]: a collection of tools for improving text prompts used as input to generative AI models. The toolkit includes [Promptist][Promptist], which optimizes a user's text input for text-to-image generation, and [Structured Prompting][Structured Prompting].
   1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot] and [Microsoft Security Copilot][sec-copilot]
 
-### RAG (Retrieval-Augmented Generation) Demo Configuration
+### **RAG (Retrieval-Augmented Generation) Demo Configuration**
 
 The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
 
@@ -296,7 +296,7 @@ Running from second times
 - ms_internal_az_init.ps1 : Powershell script for Azure module installation
 - ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
 
-### Azure OpenAI samples
+### **Azure OpenAI samples**
 
 - Azure OpenAI samples: [Link](https://github.com/Azure/azure-openai-samples)
 
@@ -313,7 +313,7 @@ Running from second times
 - Azure OpenAI Network Latency Test Script
   : [Link](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py)
 
-### Another Reference Architectures / Tech community
+### **Another Reference Architectures / Tech community**
 
 |                                                                                                                                                        |                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
@@ -335,7 +335,7 @@ Running from second times
   1. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
   1. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
 
-### Azure Cognitive Search : Vector Search
+### **Azure Cognitive Search : Vector Search**
 
 - [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
 
@@ -348,7 +348,7 @@ Running from second times
 
 - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
 
-### Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview
+### **Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview**
 
 - Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
   1. Bing Chat Enterprise doesn't have plugin support
@@ -439,7 +439,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   @cite: [packt][langchain-glance]
 
-### Langchain and Prompt engineering library
+### **Langchain and Prompt engineering library**
 
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 - [LangChain](https://python.langchain.com/en/latest/index.html)
@@ -618,7 +618,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
 
-- [Promptist][Promptist]: With Promptist, Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
+- [Promptist][Promptist]: Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
   - For example, instead of simply passing "Cats dancing in a space club" as a prompt, an engineered prompt might be "Cats dancing in a space club, digital painting, artstation, concept art, soft light, hdri, smooth, sharp focus, illustration, fantasy."
 
 ### **Azure OpenAI Prompt Guide**
@@ -728,7 +728,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - 😮 [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
 
-### Visual Prompting
+### **Visual Prompting**
 
 - [https://landing.ai/what-is-visual-prompting/](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. Printed version for backup [Link](.files/vPrompt.pdf)
 - [Visual Prompting](https://arxiv.org/pdf/2211.11635.pdf)
@@ -736,7 +736,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 ## **Section 6** : LLM Enhancement
 
-### Context constraints
+### **Context constraints**
 
 - [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 
@@ -759,33 +759,33 @@ The sources of Inference code and finetuning code are commented on the files. [g
   
       @cite [doc](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
 
-### OpenAI's plans according to Sam Altman
+### **OpenAI's plans according to Sam Altman**
 
 - [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [Link](files/openai-plans.pdf)
 
-### Math problem-solving skill
+### **Math problem-solving skill**
 
 - Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 
-### Table Extraction
+### **Table Extraction**
 
 - Azure Form Recognizer: [documentation](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
-### Token counting & Token-limits
+### **Token counting & Token-limits**
 
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [Link](files/token-limits-5-approaches.pdf)
 
-### Avoid AI hallucination
+### **Avoid AI hallucination**
 
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building Trustworthy, Safe and Secure LLM Conversational Systems
 
-### Gorilla: An API store for LLMs
+### **Gorilla: An API store for LLMs**
 
 - [Gorilla: An API store for LLMs](https://github.com/ShishirPatil/gorilla): Gorilla: Large Language Model Connected with Massive APIs
   1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
@@ -797,13 +797,13 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - [Meta: Toolformer](https://github.com/lucidrains/toolformer-pytorch): Language Models That Can Use Tools, by MetaAI
 
-### Memory Optimization
+### **Memory Optimization**
 
 - [PagedAttention](https://vllm.ai/) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [Link](files/vLLM_pagedattention.pdf)
 
 - [Flash Attention](https://arxiv.org/abs/2205.14135): An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead.
 
-### OpenAI Plugin and function calling
+### **OpenAI Plugin and function calling**
 
 - [ChatGPT Plugin](https://openai.com/blog/chatgpt-plugins)
 - [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling)
@@ -814,7 +814,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
   > Azure OpenAI start to support function calling. [Link][aoai_func]
 
-### OSS Alternatives for OpenAI Code Interpreter
+### **OSS Alternatives for OpenAI Code Interpreter**
 
 - [OpenAI Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment
 
@@ -826,7 +826,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 ## **Section 7** : List of OSS LLM & Generative AI Landscape
 
-### Evolutionary Graph of LLaMA Family / LLM evolutionary tree
+### **Evolutionary Graph of LLaMA Family / LLM evolutionary tree**
 
   Evolutionary Graph of LLaMA Family
 
@@ -842,30 +842,32 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - [LLM evolutionary tree](https://github.com/Mooler0410/LLMsPracticalGuide): @citation: LLMsPracticalGuide
 
-### Generative AI Revolution: Exploring the Current Landscape
+### **Generative AI Revolution: Exploring the Current Landscape**
 
 - [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [Link](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
 
-### List of OSS LLM
+### **List of OSS LLM**
 
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
 - Printed version for "Medium" limits. [Link](files/list_of_oss_llm.pdf)
 
-### Huggingface Open LLM Learboard
+### **Huggingface Open LLM Learboard**
 
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
-### Huggingface Transformer
+- Upstage's 70B Language Model Outperforms GPT-3.5: [doc][upstage]
+
+### **Huggingface Transformer**
 
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
-### Huggingface StarCoder
+### **Huggingface StarCoder**
 
 - [StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
 
 - [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
 
-### Democratizing the magic of ChatGPT with open models
+### **Democratizing the magic of ChatGPT with open models**
 
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "Generative AI Landscape / List of OSS LLM" section.
 
@@ -885,11 +887,11 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 ## **Section 8** : References
 
-### picoGPT
+### **picoGPT**
 
 - An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT): Transformer Decoder
 
-### AutoGPT / Communicative Agents
+### **AutoGPT / Communicative Agents**
 
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular
 - [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation - Coworking of 4 agents
@@ -900,7 +902,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 Camel Agents - a Hugging Face Space by camel-ai
 [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
 
-### Large Language and Vision Assistant
+### **Large Language and Vision Assistant**
 
 - [LLaVa](https://llava-vl.github.io/): Large Language-and-Vision Assistant
 - [MiniGPT-4](https://minigpt-4.github.io/): Enhancing Vision-language Understanding with Advanced Large Language Models
@@ -909,7 +911,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 
   > `Q-Former (Querying Transformer)`: A transformer model that consists of two submodules that share the same self-attention layers: an image transformer that interacts with a frozen image encoder for visual feature extraction, and a text transformer that can function as both a text encoder and a text decoder
 
-### MLLM (multimodal large language model)
+### **MLLM (multimodal large language model)**
 
 - Facebook: ImageBind / SAM
   1. [facebookresearch/ImageBind](https://github.com/facebookresearch/ImageBind): ImageBind One Embedding Space to Bind Them All (github.com)
@@ -922,7 +924,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - TaskMatrix.AI
   1. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs
 
-### Application UI/UX
+### **Application UI/UX**
 
 - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui): Text generation web UI
@@ -935,12 +937,12 @@ Camel Agents - a Hugging Face Space by camel-ai
 - Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 - [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
 
-### Awesome demo
+### **Awesome demo**
 
 - [FRVR Official Teaser](https://youtu.be/Yjjpr-eAkqw): Prompt to Game: AI-powered end-to-end game creation
 - [rewind.ai](https://www.rewind.ai/): Rewind captures everything you’ve seen on your Mac and iPhone
 
-### 日本語（Japanese Materials）
+### **日本語（Japanese Materials）**
 
 - [rinna](https://huggingface.co/rinna): rinnaの36億パラメータの日本語GPT言語モデル: 3.6 billion parameter Japanese GPT language model
 - [rinna: bilingual-gpt-neox-4b](https://huggingface.co/rinna/bilingual-gpt-neox-4b): 日英バイリンガル大規模言語モデル
@@ -1010,7 +1012,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 - [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
 - [大規模言語モデルのデータセットまとめ](https://note.com/npaka/n/n686d987adfb1): 大規模言語モデルのデータセットまとめ
 
-## Acknowledgements
+## **Acknowledgements**
 
 [aoai_func]: https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api
 [typechat]: https://microsoft.github.io/TypeChat/blog/introducing-typechat
@@ -1040,3 +1042,4 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 [langchain-glance]: https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications
 [Promptist]: https://arxiv.org/abs/2212.09611
 [Structured Prompting]: https://arxiv.org/abs/2212.06713
+[upstage]: https://en.upstage.ai/newsroom/upstage-huggingface-llm-no1
