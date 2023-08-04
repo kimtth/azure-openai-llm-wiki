@@ -78,10 +78,10 @@ This repository contains references to open-source models similar to ChatGPT, as
     - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview has been removed from the site. Instead of that, Web-archived link.
     - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
     - [OSS Alternatives for OpenAI Code Interpreter](#oss-alternatives-for-openai-code-interpreter)
-  - Data Extraction methods for the context
+  - Data Extraction methods
     - [Math problem-solving skill](#math-problem-solving-skill)
     - [Table Extraction](#table-extraction): Extract Tables from PDFs
-    - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
+  - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
   - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
   - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
   - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
@@ -511,6 +511,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
 
 ### **Langchain & Its Competitors**
+
 ---
 
 ### **Langchain vs LlamaIndex**
@@ -753,9 +754,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
 
-### **Visual Prompting**
-
 ---
+
+### **Visual Prompting**
 
 - [https://landing.ai/what-is-visual-prompting/](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. Printed version for backup [Link](.files/vPrompt.pdf)
 - [Visual Prompting](https://arxiv.org/pdf/2211.11635.pdf)
@@ -787,6 +788,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
       @cite [doc](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
 
 ### **OpenAI's plans**
+
 ---
 
 ### **OpenAI's plans according to Sam Altman**
@@ -814,7 +816,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [SlashGPT](https://github.com/shroominic/codeinterpreter-api) The tool integrated with "jupyter" agent
 
-### **Data Extraction methods for the context**
+### **Data Extraction methods**
+
 ---
 
 ### **Math problem-solving skill**
@@ -828,14 +831,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - Azure Form Recognizer: [documentation](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
+---
+
 ### **Token counting & Token-limits**
 
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [Link](files/token-limits-5-approaches.pdf)
-
----
 
 ### **Avoid AI hallucination**
 
@@ -993,33 +996,23 @@ Camel Agents - a Hugging Face Space by camel-ai
 ## **Section 9** : Relevant solutions and resources
 
 - [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
-
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features.
-
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
-
 - [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) sample: `deeplearning.ai\wandb`
-
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. <https://activeloop.ai> (github.com)
-
 - [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models (github.com)
-
-- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022)
-
-- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1)
-
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
-
 - [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
-
 - Generate 3D objects conditioned on text or images [openai/shap-e](https://github.com/openai/shap-e)
-
 - Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold [(paper)](https://arxiv.org/pdf/2305.10973) [online demo](https://github.com/Zeqiang-Lai/DragGAN)
-
 - string2string:
 The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string)
 
   <img src="files/string2string-overview.png" alt="string2string" width="200"/>
+  
+- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022)
+- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1)
+
 
 ## **Section 10** : AI Tools
 
