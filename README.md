@@ -1,5 +1,5 @@
 
-`updated: 08/02/2023`
+`updated: 08/04/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -48,26 +48,29 @@ This repository contains references to open-source models similar to ChatGPT, as
   - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
   - [Langsmith & Langchain low code](#langsmith--langchain-low-code): Drag-and-Drop Workflow, LangSmith for LLM debugging
-  - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
+  - [Langchain vs Its Competitors](#langchain--its-competitors)
+    - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     - [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
     - [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
     - [Semantic Kernel Glossary](#semantic-kernel-glossary)
     - [Langchain vs Semantic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
-  - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
+    - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
 - **Section 5**: Prompt Engineering & Finetuning
-  - [Prompt Engineering](#prompt-engineering)
-  - [Azure OpenAI Prompt Guide](#azure-openai-prompt-guide)
-  - [OpenAI Prompt Guide](#openai-prompt-guide)
-  - [DeepLearning.ai Prompt Engineering Course and others](#deeplearningai-prompt-engineering-course-and-others)
-  - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
-  - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
-  - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
-  - [Finetuning Llama2](#finetuning-llama2): Llama 2
-  - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhfreinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
-  - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
-  - [Sparsification](#sparsification)
-  - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
+  - Prompt Engineering
+    - [Prompt Engineering](#prompt-engineering)
+    - [Azure OpenAI Prompt Guide](#azure-openai-prompt-guide)
+    - [OpenAI Prompt Guide](#openai-prompt-guide)
+    - [DeepLearning.ai Prompt Engineering Course and others](#deeplearningai-prompt-engineering-course-and-others)
+    - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
+    - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
+  - Finetuning
+    - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
+    - [Llama2 Finetuning](#llama2-finetuning): Llama 2
+    - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning): TRL, trlX, Argilla
+    - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a Raspberry Pi / Android
+    - [Sparsification](#sparsification)
+    - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
 - **Section 6:** LLM Enhancement
   - [Context Constraints](#context-constraints): Large Context Windows, RoPE
@@ -466,8 +469,8 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Langchain Quick Start: How to Use and Useful Utilities**
 
-- `langchain-deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
-- `langchain-deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
+- `deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
+- `deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
 - `langchain-@practical-ai\Langchain_1_(믹스의_인공지능).ipynb` : Langchain Get started
 - `langchain-@practical-ai\Langchain_2_(믹스의_인공지능).ipynb` : Langchain Utilities
 
@@ -504,6 +507,8 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
   <img src="files/langchain_debugging.png" width="200" />
 
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
+
+### **Langchain & Its Competitors**
 
 ### **Langchain vs LlamaIndex**
 
@@ -674,14 +679,24 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA ⭐⭐⭐⭐
 . Printed version for backup. [Link](files/Fine-tuning_a_GPT_LoRA.pdf)
 
-### **Finetuning Llama2**
+### **Llama2 Finetuning**
 
-The sources of Inference code and finetuning code are commented on the files. [git](https://github.com/facebookresearch/llama)
+- A key difference between Llama 1 and Llama 2 is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
 
-- llama2-trial.ipynb: LLama 2 inference code in local
-- llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
+- The sources of Inference code and finetuning code are commented on the files. [git](https://github.com/facebookresearch/llama)
+  - llama2-trial.ipynb: LLama 2 inference code in local
+  - llama2-finetune.ipynb: LLama 2 Finetuning with Reinforce learning
+  - Llama_2_Fine_Tuning_using_QLora.ipynb: [link](https://youtu.be/eeM6V5aPjhk)
 
-### RLHF（Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)
+- Llama 2 ONNX [git](https://github.com/microsoft/Llama-2-Onnx)
+  - ONNX: ONNX stands for Open Neural Network Exchange. It is an open standard format for machine learning interoperability. ONNX enables AI developers to use models with a variety of frameworks, tools, runtimes, and compilers.
+
+  - ONNX Runtime can be used on mobile devices. ONNX Runtime gives you a variety of options to add machine learning to your mobile application. ONNX Runtime mobile is a reduced size, high performance package for edge devices, including smartphones and other small storage devices.
+
+- LLM-Engine: The open source engine for fine-tuning LLM [git](https://github.com/scaleapi/llm-engine)
+  - finetune_llama_2_on_science_qa.ipynb: [git](https://github.com/scaleapi/llm-engine)
+
+### **RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)**
 
 - Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
 
@@ -714,10 +729,9 @@ The sources of Inference code and finetuning code are commented on the files. [g
 | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement |
 | Per-embedding-group quantization | Can achieve high accuracy with low bit-widths, leading to significant memory savings | May require more fine-tuning and experimentation to achieve optimal results |
 
-
 ### **Sparsification**
 
-- @citation: Binghchat
+- @citation: Bing chat
 
   `
   Sparsification is a technique used to reduce the size of large language models (LLMs) by removing redundant parameters without significantly affecting their performance. It is one of the methods used to compress LLMs. LLMs are neural networks that are trained on massive amounts of data and can generate human-like text. The term “sparsification” refers to the process of removing redundant parameters from these models.
@@ -730,7 +744,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 ### **Large Transformer Model Inference Optimization**
 
-- 😮 [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
+- [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
 
 ### **Visual Prompting**
 
@@ -744,7 +758,7 @@ The sources of Inference code and finetuning code are commented on the files. [g
 
 - [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 
-- [Rotary Positional Embedding (RoPE)](https://blog.eleuther.ai/rotary-embeddings/) / [roformer](https://github.com/ZhuiyiTechnology/roformer) / Printed version for backup [Link](./files/RoPE.pdf)
+- [Rotary Positional Embedding (RoPE)](https://blog.eleuther.ai/rotary-embeddings/) / Printed version for backup [Link](./files/RoPE.pdf)
 
   > How is this different from the sinusoidal embeddings used in "Attention is All You Need"?
   >
@@ -966,6 +980,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features.
 
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
+
+- [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) sample: `deeplearning.ai\wandb`
 
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. <https://activeloop.ai> (github.com)
 
