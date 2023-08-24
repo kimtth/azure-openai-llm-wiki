@@ -1,5 +1,5 @@
 
-`updated: 08/10/2023`
+`updated: 08/25/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -15,7 +15,6 @@ This repository contains references to LLM, as well as prompt engineering librar
 1. Azure OpenAI is recommended if you require a reliable, secure, and compliant environment.
 1. Azure OpenAI provides seamless integration with other Azure services..
 1. Azure OpenAI offers `private networking` and `role-based authentication`, and responsible `AI content filtering`.
-1. Azure OpenAI provides a Service Level Agreement (SLA) that guarantees a certain level of uptime and support for the service.
 1. Azure OpenAI does not use user input as training data for other customers. [Data, privacy, and security for Azure OpenAI](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
 
 - [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
@@ -47,7 +46,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities): Sample code
   - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
-  - [Langsmith & Langchain low code](#langsmith--langchain-low-code): Drag-and-Drop Workflow, LangSmith for LLM debugging
+  - [Langsmith & Langchain low code](#langsmith--langchain-low-code): Drag-and-Drop Workflow, LLM debugging
   - Langchain vs Its Competitors
     - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
@@ -64,11 +63,11 @@ This repository contains references to LLM, as well as prompt engineering librar
     - [DeepLearning.ai Prompt Engineering Course and others](#deeplearningai-prompt-engineering-course-and-others)
     - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
     - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
-  - Finetuning
-    - [Finetuning](#finetuning) : PEFT - LoRA - QLoRA
+  - Finetuning & Model Compression
+    - [Finetuning](#finetuning--model-compression) : PEFT - LoRA - QLoRA
     - [Llama2 Finetuning](#llama2-finetuning): Llama 2
-    - [RLHF（Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
-    - [Quantization](#quantization): [ref](README_SBCs.md) : Quantization & Run ChatGPT on a local machine
+    - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
+    - [Quantization](#quantization): [contd.](README_SBCs.md) : Quantization & Run ChatGPT on a local machine
     - [Sparsification](#sparsification)
     - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
   - [Visual Prompting](#visual-prompting)
@@ -82,8 +81,8 @@ This repository contains references to LLM, as well as prompt engineering librar
     - [Math problem-solving skill](#math-problem-solving-skill)
     - [Table Extraction](#table-extraction): Extract Tables from PDFs
   - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
-  - [Avoid AI hallucination](#avoid-ai-hallucination) Building Trustworthy, Safe and Secure LLM
-  - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms)
+  - [Trustworthy LLMs & Avoid AI hallucination](#building-trustworthy-safe-and-secure-llm) Building Trustworthy, Safe and Secure LLM
+  - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms): LLM to Master APIs
   - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
 - **Section 7:** List of OSS LLM & Generative AI Landscape
   - [Evolutionary Graph of LLaMA Family / LLM evolutionary tree](#evolutionary-graph-of-llama-family--llm-evolutionary-tree)
@@ -91,19 +90,20 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [List of OSS LLM](#list-of-oss-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
   - [Huggingface Transformer](#huggingface-transformer)
-  - [Huggingface StarCoder](#huggingface-starcoder)
+  - [LLM for Code](#llm-for-code)
 - **Section 8** : References
   - [picoGPT](#picogpt) : tiny implementation of GPT-2.
-  - [AutoGPT / Communicative Agents](#autogpt--communicative-agents)
+  - [AutoGPT and Communicative Agents](#autogpt--communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
-  - [MLLM (multimodal large language model)](#mllm-multimodal-large-language-model)
+  - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
   - [Application UI/UX](#application-uiux)
-  - [Awesome demo](#awesome-demo) Prompt to Game - E2E game creation
-  - [日本語（Japanese Materials)](#日本語japanese-materials)
-- **Section 9** : Relevant solutions and resources
-  - [Microsoft Fabric](README_Fabric.md): Single unified data analytics solution
-  - [Office Copilot](#section-9--relevant-solutions-and-resources): Semantic Interpreter, Natural Language Commanding via Program Synthesis
-  - [microsoft/unilm](#section-9--relevant-solutions-and-resources): Microsoft Foundation models
+  - [Awesome demo](#awesome-demo) Prompt to Game: E2E game creation
+  - [日本語 (Japanese Materials)](#日本語japanese-materials)
+  - [Other Materials](#other-materials)
+- **Section 9** : Relevant solutions
+  - [Microsoft Fabric](#section-9--relevant-solutions): [contd.](README_Fabric.md): Single unified data analytics solution
+  - [Office Copilot](#section-9--relevant-solutions): Semantic Interpreter, Natural Language Commanding via Program Synthesis
+  - [microsoft/unilm](#section-9--relevant-solutions): Microsoft Foundation models
 - **Section 10** : AI Tools
   - [AI Tools](#section-10--ai-tools)
 - **Section 11** : Datasets for LLM Training
@@ -112,9 +112,15 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
 
+- **Symbols**
+  - `ref`: external url
+  - `doc`: archived doc
+  - `cite`: the source of a comment
+  - `git`: github link
+
 ## **Section 1** : LlamaIndex and Vector Storage (Database)
 
-- LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [doc][llama-index-doc]
+- LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [ref][llama-index-doc]
 
 ### **LlamaIndex**
 
@@ -156,16 +162,20 @@ This repository contains references to LLM, as well as prompt engineering librar
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
 
+  <img src="files/llama-idx-high-lv.png" width="450">
+
 ### **Vector Storage Comparison**
 
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696)
-- Printed version for "Medium" limits. - [Link](files/vector-dbs.pdf)
+- Printed version for "Medium" limits. [doc](files/vector-dbs.pdf)
+
+- [Faiss](https://faiss.ai/): Facebook AI Similarity Search (Faiss) is a library for efficient similarity search and clustering of dense vectors. It is used as an alternative to a vector database in the development and library of algorithms for a vector database. It is developed by Facebook AI Research. [git](https://github.com/facebookresearch/faiss)
 
 ### **Vector Storage Options for Azure**
 
-- [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
+- [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
 - [Vector Search in Azure Cosmos DB for MongoDB vCore](https://devblogs.microsoft.com/cosmosdb/introducing-vector-search-in-azure-cosmos-db-for-mongodb-vcore/)
-- [Vector search (public preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): Langchain Document [URL](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
+- [Vector search (public preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): Langchain Document [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
 - [Azure Cache for Redis Enterprise](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-vector-search-similarity-capabilities-in-azure-cache/ba-p/3827512): Enterprise [Redis Vector Search Demo](https://ecommerce.redisventures.com/)
 
   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkimtth%2Fazure-openai-elastic-vector-langchain%2Fmain%2Finfra%2Fdeployment.json)
@@ -176,7 +186,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 ### **Milvus Embedded**
 
- `[JMO]`: Milvus looks like the best alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) has positioned itself as the SQLite in vector databases.
+ `[JMO]`: Milvus looks like the best alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) and [Qdrant](https://github.com/qdrant/qdrant) have positioned themselves as the SQLite in vector databases.
 
 <details>
 
@@ -212,15 +222,14 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 
-- @citation: open ai documents:
+- cite: [ref](https://openai.com/blog/new-and-improved-embedding-model):
 text-embedding-ada-002:
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings,
 making the new embeddings more cost effective in working with vector databases.
-<https://openai.com/blog/new-and-improved-embedding-model>
 
-- @citation: [open search documents](https://opensearch.org/docs/latest/):
+- cite: [ref](https://opensearch.org/docs/latest/):
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
-16,000 for the other engines. <https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/>
+16,000 for the other engines. [ref](https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/)
 
 - @LlamaIndex `ElasticsearchReader` class:
 The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually, it can only work with open search.
@@ -231,7 +240,7 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
 
   1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
   1. [guidance][guidance]: A guidance language for controlling large language models. Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction. Langchain libaries but different approach rather than ochestration, particularly effective for implementing  `Chain of Thought`. / [git][guidance]
-  1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [doc][promptflow-doc]
+  1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [ref][promptflow-doc]
   1. [Prompt Engine][prompt-engine]: Craft prompts for Large Language Models: `npm install prompt-engine` / [git][prompt-engine] / [python][prompt-engine-py]
   1. [TypeChat][typechat]: TypeChat replaces prompt engineering with schema engineering. To build natural language interfaces using types. / [git][typechat-git]
   1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
@@ -240,9 +249,19 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
 
 ### **RAG (Retrieval-Augmented Generation) Demo Configuration**
 
+What is the RAG (Retrieval-Augmented Generation)?
+
+RAG (Retrieval-Augmented Generation) : Integrates the retrieval (searching) into LLM text generation. RAG helps the model to “look up” external information to improve its responses.
+
+  <img src="files/RAG.png" alt="sk" width="400"/>
+
+[cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
+
+---
+
 The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
 
-<https://github.com/Azure-Samples/azure-search-openai-demo> : Python, ReactJs, Typescript
+[git](https://github.com/Azure-Samples/azure-search-openai-demo) : Python, ReactJs, Typescript
 
   <img src="files/capture_azure_demo.png" alt="sk" width="300"/>
 
@@ -314,11 +333,11 @@ Running from second times
 
 ### **Azure OpenAI samples**
 
-- Azure OpenAI samples: [Link](https://github.com/Azure/azure-openai-samples)
+- Azure OpenAI samples: [ref](https://github.com/Azure/azure-openai-samples)
 
-- The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [Link](https://github.com/Azure/openai-samples)
+- The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [ref](https://github.com/Azure/openai-samples)
 
-- Azure-Samples [Link](https://github.com/Azure-Samples)
+- Azure-Samples [ref](https://github.com/Azure-Samples)
 
   - Azure OpenAI with AKS By Terraform: <https://github.com/Azure-Samples/aks-openai-terraform>
   - Azure OpenAI with AKS By Bicep: <https://github.com/Azure-Samples/aks-openai>
@@ -327,7 +346,7 @@ Running from second times
   - ChatGPT Plugin Quickstart using Python and FastAPI: <https://github.com/Azure-Samples/openai-plugin-fastapi>
 
 - Azure OpenAI Network Latency Test Script
-  : [Link](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py)
+  : [ref](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py)
 
 ### **Another Reference Architectures / Tech community**
 
@@ -353,8 +372,8 @@ Running from second times
 
 ### **Azure Cognitive Search : Vector Search**
 
-- [Azure Cognitive Search : Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
-
+- In the vector databases category within Azure, several alternative solutions are available. However, ACS is the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
+- [git: Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
 - Azure Cognitive Search supports
 
   1. Text Search
@@ -369,7 +388,7 @@ Running from second times
 - Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
   1. Bing Chat Enterprise doesn't have plugin support
   2. Only content provided in the chat by users is accessible to Bing Chat Enterprise.
-- Azure OpenAI Service On Your Data in Public Preview [Link](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000)
+- Azure OpenAI Service On Your Data in Public Preview [ref](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000)
 
 ## **Section 3** : Microsoft Semantic Kernel
 
@@ -409,7 +428,7 @@ Running from second times
 
 - Is Semantic Kernel Planner the same as LangChain agents?
 
-    > Planner in SK is not the same as Agents in LangChain. [@cite](https://github.com/microsoft/semantic-kernel/discussions/1326)
+    > Planner in SK is not the same as Agents in LangChain. [cite](https://github.com/microsoft/semantic-kernel/discussions/1326)
 
     ```comment
     Agents in LangChain use recursive calls to the LLM to decide the next step to take based on the current state.
@@ -422,7 +441,7 @@ Running from second times
 
   - Stepwise Planner released. The Stepwise Planner features the "CreateScratchPad" function, acting as a 'Scratch Pad' to aggregate goal-oriented steps.
 
-    > ScratchPad: Using "program execution" strategy boosts performance of large language model tasks by enforcing the use of a "scratch pad." For instance, instead of requesting the LLM's output for a Python function with a specific input, users can ask for the execution trace. This prompts the model to generate predictions for each intermediate step of the function, thereby increasing the probability of the LLM producing the correct final line. @[cite](https://snorkel.ai/large-language-models-llms/)
+    > ScratchPad: Using "program execution" strategy boosts performance of large language model tasks by enforcing the use of a "scratch pad." For instance, instead of requesting the LLM's output for a Python function with a specific input, users can ask for the execution trace. This prompts the model to generate predictions for each intermediate step of the function, thereby increasing the probability of the LLM producing the correct final line. [cite](https://snorkel.ai/large-language-models-llms/)
 
 - Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [Dev Blog](https://devblogs.microsoft.com/semantic-kernel)
 
@@ -455,11 +474,11 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
   1. Components: modular abstractions and implementations for working with language models, with easy-to-use features.
   2. Use-Case Specific Chains: chains of components that assemble in different ways to achieve specific use cases, with customizable interfaces.
 
-  @cite: [doc][langchain-doc]
+  cite: [ref][langchain-doc]
 
   <img src="files/langchain-glance.png" width="400">
 
-  @cite: [packt][langchain-glance]
+  cite: [packt][langchain-glance]
 
 ### **Langchain and Prompt engineering library**
 
@@ -474,6 +493,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Feature Matrix][langchain-features]: LangChain Features
   - [Feature Matrix: Snapshot in 2023 July][langchain-features-202307]
 - [Cheetsheet][langchain-cookbook]: LangChain CheatSheet
+- [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [doc](./files/LangChain_kdnuggets.pdf)
 - [LangChain AI Handbook][langchain-handbook]: published by Pinecone
 - [Awesome Langchain][awesome-langchain]: Curated list of tools and projects using LangChain.
 
@@ -505,7 +525,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
     chain.run(docs[:3])
     ```
 
-    @citation: [@practical-ai](https://www.youtube.com/@practical-ai)
+    cite: [@practical-ai](https://www.youtube.com/@practical-ai)
 
   </details>
 
@@ -521,10 +541,44 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 1. If you're using a text LLM, first try `zero-shot-react-description`.
 1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
 1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
+1. `self-ask-with-search`: [self ask with search paper](https://arxiv.org/abs/2210.03350)
+1. `react-docstore`: [ReAct paper](https://arxiv.org/abs/2210.03629)
+1. Agent Type
 
-1. `self-ask-with-search`: [self ask with search paper](https://ofir.io/self-ask.pdf)
+    ```python
+    class AgentType(str, Enum):
+        """Enumerator with the Agent types."""
 
-1. `react-docstore`: [ReAct paper](https://arxiv.org/pdf/2210.03629.pdf)
+        ZERO_SHOT_REACT_DESCRIPTION = "zero-shot-react-description"
+        REACT_DOCSTORE = "react-docstore"
+        SELF_ASK_WITH_SEARCH = "self-ask-with-search"
+        CONVERSATIONAL_REACT_DESCRIPTION = "conversational-react-description"
+        CHAT_ZERO_SHOT_REACT_DESCRIPTION = "chat-zero-shot-react-description"
+        CHAT_CONVERSATIONAL_REACT_DESCRIPTION = "chat-conversational-react-description"
+        STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION = (
+            "structured-chat-zero-shot-react-description"
+        )
+        OPENAI_FUNCTIONS = "openai-functions"
+        OPENAI_MULTI_FUNCTIONS = "openai-multi-functions"
+    ```
+
+- [ReAct](https://arxiv.org/abs/2210.03629) vs [MRKL](https://arxiv.org/abs/2205.00445) (miracle)
+
+  ReAct is inspired by the synergies between "acting" and "reasoning" which allow humans to learn new tasks and make decisions or reasoning.
+
+  MRKL stands for Modular Reasoning, Knowledge and Language and is a neuro-symbolic architecture that combines large language models, external knowledge sources, and discrete reasoning
+
+  cite: [ref](https://github.com/langchain-ai/langchain/issues/2284#issuecomment-1526879904)
+
+  `zero-shot-react-description`
+  This agent uses the ReAct framework to determine which tool to use based solely on the _tool’s description_. Any number of tools can be provided. This agent requires that a description is provided for each tool.
+
+  `react-docstore`
+  This agent uses the ReAct framework to interact with a docstore. Two tools must be provided: a _Search_ tool and a _Lookup_ tool (they must be named exactly as so). The Search tool should search for a document, while the Lookup tool should lookup a term in the most recently found document. This agent is equivalent to the original ReAct paper, specifically the Wikipedia example.
+
+  According to my understanding, MRKL is implemented by using ReAct framework in langchain ,which is called `zero-shot-react-description`. The original ReAct is been implemented in `react-docstore` agent type.
+
+  ps. MRKL is published at 1 May 2022, earlier than ReAct, which is published at 6 Oct 2022.
 
 ### **LangSmith & Langchain low code**
 
@@ -541,7 +595,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Langchain vs LlamaIndex**
 
-- Basically LlamaIndex is a smart storage mechanism, while Langchain is a tool to bring multiple tools together. [@citation](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139)
+- Basically LlamaIndex is a smart storage mechanism, while Langchain is a tool to bring multiple tools together. [cite](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139)
 
 - LangChain offers many features and focuses on using chains and agents to connect with external APIs. In contrast, LlamaIndex is more specialized and excels at indexing data and retrieving documents.
 
@@ -558,9 +612,9 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Semantic Kernel : Semantic Function**
 
-expressed in natural language in a text file "*skprompt.txt*" using SK's
+Semantic Function - expressed in natural language in a text file "*skprompt.txt*" using SK's
 [Prompt Template language](https://github.com/microsoft/semantic-kernel/blob/main/docs/PROMPT_TEMPLATE_LANGUAGE.md).
-Each semantic function is defined by a unique prompt template file, developed using modern
+Each semantic function is defined by a unique prompt template file, developed using modern prompt engineering techniques. [cite](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
 
 ### **Semantic Kernel : Prompt Template language Key takeaways**
 
@@ -604,7 +658,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 - What's the difference between LangChain and Semantic Kernel?
 
-  LangChain has many agents, tools, plugins etc. out of the box. More over, LangChain has 10x more popularity, so has about 10x more developer activity to improve it. On other hand, **Semantic Kernel architecture and quality is better**, that's quite promising for Semantic Kernel. [Link](https://github.com/microsoft/semantic-kernel/discussions/1326)
+  LangChain has many agents, tools, plugins etc. out of the box. More over, LangChain has 10x more popularity, so has about 10x more developer activity to improve it. On other hand, **Semantic Kernel architecture and quality is better**, that's quite promising for Semantic Kernel. [ref](https://github.com/microsoft/semantic-kernel/discussions/1326)
 
 - What's the difference between Azure Machine Laering PromptFlow and Semantic Kernel?
 
@@ -618,7 +672,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 | Conditions        | {{#if user}}<br>  Hello {{user}}!<br>{{else}}<br>  Hello Stranger!<br>{{/if}} | {% if user %}<br>  Hello {{ user }}!<br>{% else %}<br>  Hello Stranger!<br>{% endif %} | Branching features such as "if", "for", and code blocks are not part of SK's template language.     |
 | Loop              | {{#each items}}<br>  Hello {{this}}<br>{{/each}}                              | {% for item in items %}<br>  Hello {{ item }}<br>{% endfor %}                          | By using a simple language, the kernel can also avoid complex parsing and external dependencies.    |
 | Langchain Library | guidance                                                                      | Azure Machine Learning<br>Prompt flow                                                  | Semactic Kernel                                                                                     |
-| URL               | [Link](https://handlebarsjs.com/guide/)                                       | [Link](https://jinja.palletsprojects.com/en/2.10.x/templates/)                         | [Link](https://learn.microsoft.com/en-us/semantic-kernel/prompt-engineering/prompt-template-syntax) |
+| URL               | [ref](https://handlebarsjs.com/guide/)                                       | [ref](https://jinja.palletsprojects.com/en/2.10.x/templates/)                         | [ref](https://learn.microsoft.com/en-us/semantic-kernel/prompt-engineering/prompt-template-syntax) |
 
 ## **Section 5**: Prompt Engineering & Finetuning
 
@@ -634,7 +688,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 1. [Recursively Criticizes and Improves (RCI)](https://arxiv.org/abs/2303.17491)
     - Critique: Review your previous answer and find problems with your answer.
     - Improve: Based on the problems you found, improve your answer.
-1. [ReAct](https://arxiv.org/abs/2210.03629): Grounding with external sources. (Reasoning and Act): Combines reasoning and acting
+1. [ReAct](https://arxiv.org/abs/2210.03629): Grounding with external sources. (Reasoning and Act): Combines reasoning and acting [ref](https://react-lm.github.io/)
 1. Chain-of-Thought Prompting  
     - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2205.11916)
 1. [Tree of Thought](https://arxiv.org/abs/2305.10601): Self-evaluate the progress intermediate thoughts make towards solving a problem [git](https://github.com/ysymyth/tree-of-thought-llm)
@@ -647,14 +701,18 @@ Each semantic function is defined by a unique prompt template file, developed us
 
     <img src="files/zero-one-few-shot.png" width="200">
 
-- Prompt Concept
+1. Prompt Engneering overview
+
+    <img src="files/prompt-eg-aiedge.jpg" width="400">
+
+    - Prompt Concept
   
-  1. Question-Answering
-  1. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
-  1. Reasoning
-  1. Prompt-Chain
-  1. Program Aided Language Model
-  1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize
+    1. Question-Answering
+    1. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
+    1. Reasoning
+    1. Prompt-Chain
+    <!-- 1. Program Aided Language Model -->
+    <!-- 1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize -->
 
 - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) : ⭐⭐⭐⭐⭐
 
@@ -693,7 +751,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
  Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. (@<https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/>)
 
-### **Finetuning**
+### **Finetuning & Model Compression**
 
 ---
 
@@ -712,11 +770,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155)
 
 - [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA ⭐⭐⭐⭐
-. Printed version for backup. [Link](files/Fine-tuning_a_GPT_LoRA.pdf)
+. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
 
 ### **Llama2 Finetuning**
 
-- A key difference between Llama 1 and Llama 2 is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
+- A key difference between [Llama 1](https://arxiv.org/abs/2302.13971) and [Llama 2](https://arxiv.org/abs/2307.09288) is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
 
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF
 
@@ -724,7 +782,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   - llama2-trial.ipynb: LLama 2 inference code in local
   - llama2-finetune.ipynb: LLama 2 Finetuning
   - llama_2_finetuning_inference.ipynb: LLama 2 Finetuning with Inference
-  - Llama_2_Fine_Tuning_using_QLora.ipynb: [link](https://youtu.be/eeM6V5aPjhk)
+  - Llama_2_Fine_Tuning_using_QLora.ipynb: [ref](https://youtu.be/eeM6V5aPjhk)
 
 - Llama 2 ONNX [git](https://github.com/microsoft/Llama-2-Onnx)
   - ONNX: ONNX stands for Open Neural Network Exchange. It is an open standard format for machine learning interoperability. ONNX enables AI developers to use models with a variety of frameworks, tools, runtimes, and compilers.
@@ -742,7 +800,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <img src="files/rhlf2.png" width="400" />
 
-  @[cite](https://docs.argilla.io/)
+  [cite](https://docs.argilla.io/)
 
 - Libraries: [TRL](https://huggingface.co/docs/trl/index), [trlX](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)
 
@@ -754,9 +812,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <img src="files/chip.jpg" width="400" />
 
-  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [doc](https://aman.ai/primers/ai/RLHF/)
+  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [ref](https://aman.ai/primers/ai/RLHF/)
 
-- `Reinforcement Learning from Human Feedback (RLHF)` is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [doc](https://huggingface.co/blog/rlhf)
+- `Reinforcement Learning from Human Feedback (RLHF)` is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [ref](https://huggingface.co/blog/rlhf)
 
 - `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF.
 
@@ -765,6 +823,12 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - `First-order optimization` methods are a class of optimization algorithms that use only the first derivative (gradient) of the objective function to find its minimum or maximum. These methods include gradient descent, stochastic gradient descent, and their variants.
 
 - Second-order methods: `Second derivative (Hessian)` of the objective function
+
+---
+
+## **Model Compression for Large Language Models**
+
+- A Survey on Model Compression for Large Language Models [ref](https://arxiv.org/pdf/2308.07633.pdf)
 
 ## **Quantization**
 
@@ -779,14 +843,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Sparsification**
 
-- @citation: Bing chat
+- cite: Bing chat
 
   Sparsification is a technique used to reduce the size of large language models (LLMs) by removing redundant parameters without significantly affecting their performance. It is one of the methods used to compress LLMs. LLMs are neural networks that are trained on massive amounts of data and can generate human-like text. The term “sparsification” refers to the process of removing redundant parameters from these models.
 
 ### **Small size with Textbooks: High quality synthetic dataset**
 
-- [ph-1](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [doc](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
-- [Orca](https://arxiv.org/abs/2306.02707): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [doc](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
+- [ph-1](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
+- [Orca](https://arxiv.org/abs/2306.02707): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
 
 ### **Large Transformer Model Inference Optimization**
 
@@ -796,7 +860,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Visual Prompting**
 
-- [What is visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. Printed version for backup [Link](.files/vPrompt.pdf)
+- [What is visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. Printed version for backup [doc](.files/vPrompt.pdf)
 - [Visual Prompting](https://arxiv.org/abs/2211.11635) paper
 - [Andrew Ng’s Visual Prompting Livestream](https://www.youtube.com/watch?v=FE88OOUBonQ)
 
@@ -806,7 +870,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 
-- [Rotary Positional Embedding (RoPE)](https://arxiv.org/abs/2104.09864) / Printed version for backup [doc](https://blog.eleuther.ai/rotary-embeddings/) / [Link](./files/RoPE.pdf)
+- [Rotary Positional Embedding (RoPE)](https://arxiv.org/abs/2104.09864) / Printed version for backup [ref](https://blog.eleuther.ai/rotary-embeddings/) / [doc](./files/RoPE.pdf)
 
   > How is this different from the sinusoidal embeddings used in "Attention is All You Need"?
   >
@@ -823,7 +887,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   1. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. 
   
-      @cite [doc](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
+      cite [ref](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
 
 ### **OpenAI's plans**
 
@@ -831,7 +895,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **OpenAI's plans according to Sam Altman**
 
-- [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [Link](files/openai-plans.pdf)
+- [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [doc](files/openai-plans.pdf)
 
 ### **OpenAI Plugin and function calling**
 
@@ -842,7 +906,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   This means functions count against the model's context limit and are billed as input tokens.
   If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
 
-  > Azure OpenAI start to support function calling. [Link][aoai_func]
+  > Azure OpenAI start to support function calling. [ref][aoai_func]
 
 ### **OSS Alternatives for OpenAI Code Interpreter**
 
@@ -854,6 +918,12 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [SlashGPT](https://github.com/shroominic/codeinterpreter-api) The tool integrated with "jupyter" agent
 
+- [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter.
+
+### **OpenAI Model Finetuning**
+
+- [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
+
 ### **Data Extraction methods**
 
 ---
@@ -863,10 +933,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
+- Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
 
 ### **Table Extraction**
 
-- Azure Form Recognizer: [documentation](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
+- Azure Form Recognizer: [ref](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
 ---
@@ -876,11 +947,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
-- [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [Link](files/token-limits-5-approaches.pdf)
+- [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [doc](files/token-limits-5-approaches.pdf)
 
-### **Avoid AI hallucination**
+### **Building Trustworthy, Safe and Secure LLM**
 
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building Trustworthy, Safe and Secure LLM Conversational Systems
+- [Trustworthy LLMs](https://arxiv.org/abs/2308.05374): Comprehensive overview for assessing LLM trustworthiness; Reliability, safety, fairness, resistance to misuse, explainability and reasoning, adherence to social norms, and robustness.
+
+  <img src="files/llm-trustworthiness.png" width="450">
 
 ### **Gorilla: An API store for LLMs**
 
@@ -888,7 +962,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
   1. Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.
   
-  1. @citation [Link](https://www.infoq.com/news/2023/07/microsoft-gorilla/)
+  1. [cite](https://www.infoq.com/news/2023/07/microsoft-gorilla/)
   
   > Another user asked how Gorilla compared to LangChain; Patil replied: Langchain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into Langchain!
 
@@ -910,7 +984,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [TokenAttention](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [git](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md)
 
-- [Flash Attention](https://arxiv.org/abs/2205.14135): An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention)
+- [Flash Attention](https://arxiv.org/abs/2205.14135) & [FlashAttention-2](https://arxiv.org/abs/2307.08691): An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
 
 ## **Section 7** : List of OSS LLM & Generative AI Landscape
 
@@ -932,36 +1006,37 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Generative AI Revolution: Exploring the Current Landscape**
 
-- [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [Link](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
+- [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [doc](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
 
 ### **List of OSS LLM**
 
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
-- Printed version for "Medium" limits. [Link](files/list_of_oss_llm.pdf)
+- Printed version for "Medium" limits. [doc](files/list_of_oss_llm.pdf)
 - [LLM Collection][llm-collection]: promptingguide.ai
 
 ### **Huggingface Open LLM Learboard**
 
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
-- Upstage's 70B Language Model Outperforms GPT-3.5: [doc][upstage]
+- Upstage's 70B Language Model Outperforms GPT-3.5: [ref][upstage]
 
 ### **Huggingface Transformer**
 
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
-### **Huggingface StarCoder**
+### **LLM for Code**
 
-- [StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
+- [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
+- git: [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
 
-- [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
+- [Code Llama](https://arxiv.org/abs/2308.12950) Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) [git](https://github.com/facebookresearch/codellama)
 
 ### **Democratizing the magic of ChatGPT with open models**
 
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "Generative AI Landscape / List of OSS LLM" section.
 
 - [facebookresearch/llama](https://github.com/facebookresearch/llama): Commercial use
-- [Llama 2](https://huggingface.co/blog/llama2): Available for commercial use [Link][llama2] / [demo](https://huggingface.co/blog/llama2#demo)
+- [Llama 2](https://huggingface.co/blog/llama2): Available for commercial use [ref][llama2] / [demo](https://huggingface.co/blog/llama2#demo)
 - [Falcon LLM](https://falconllm.tii.ae/) Apache 2.0 license
 - OSS LLM
   - [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) First Open Source RLHF LLM Chatbot
@@ -1004,9 +1079,10 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 ### **MLLM (multimodal large language model)**
 
-- Facebook: ImageBind / SAM
+- Facebook
   1. [facebookresearch/ImageBind](https://arxiv.org/abs/2305.05665): ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind)
   1. [facebookresearch/segment-anything(SAM)](https://arxiv.org/abs/2304.02643): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything)
+  1. [facebookresearch/SeamlessM4T](https://arxiv.org/abs/2308.11596) SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [ref](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/)
 
 - Microsoft: Kosmos-1 / Kosmos-2
   1. Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1](https://arxiv.org/abs/2302.14045)
@@ -1020,6 +1096,17 @@ Camel Agents - a Hugging Face Space by camel-ai
 
       <img src="files/multi-llm.png" width="180" />
 
+- Cross-attention [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
+
+  - The model has three sub-models:
+    1. A model to obtain image embeddings
+    1. A text model to obtain text embeddings
+    1. A model to learn the relationships between them
+  
+  This is analogous to adding vision capability to a LLM.
+
+    <img src="files/cocoa.gif" width="300" />
+
 ### **Application UI/UX**
 
 - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python
@@ -1032,6 +1119,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 - Embedding does not use Open AI. Can be executed locally: [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
 - Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
 - [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
+- [Opencopilot](https://github.com/opencopilotdev/opencopilot): Build and embed open-source AI Copilots into your product with ease.
+- [TaxyAI/browser-extension](https://github.com/TaxyAI/browser-extension): Browser Automation by Chrome debugger API and Prompt > `src/helpers/determineNextAction.ts`
 
 ### **Awesome demo**
 
@@ -1052,16 +1141,28 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI
 - [Azure OpenAIを活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ
 
-## **Section 9** : Relevant solutions and resources
+## Other materials
+
+- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): The Transformer,
+based solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely.
+- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [doc](files/top-cited-2020-2021-2022-papers.pdf)
+- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [doc](files/ml_rsc.pdf)
+- [What are the most influential current AI Papers?](https://arxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv)
+- [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
+- [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
+- [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
+- [Open Problem and Limitation of RLHF](https://arxiv.org/abs/2307.15217): Provides an overview of open problems and the limitations of RLHF
+- [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [doc](./files/aifire.pdf)
+- [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code.
+
+## **Section 9** : Relevant solutions
 
 - [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features.
-- [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images
 - [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) sample: `deeplearning.ai\wandb`
-- [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. <https://activeloop.ai> (github.com)
-- [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models (github.com)
-- [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
-- [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only
+- [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. [ref](https://activeloop.ai)
+- [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models
 - Generate 3D objects conditioned on text or images [openai/shap-e](https://github.com/openai/shap-e)
 - [Drag Your GAN](https://arxiv.org/pdf/2305.10973): Interactive Point-based Manipulation on the Generative Image Manifold [git](https://github.com/Zeqiang-Lai/DragGAN)
 - string2string:
@@ -1069,13 +1170,9 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 
   <img src="files/string2string-overview.png" alt="string2string" width="200"/>
   
-- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022)
-- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1)
-
-
 ## **Section 10** : AI Tools
 
-  @citation: [The best AI Chatbots in 2023.](https://twitter.com/slow_developer/status/1671530676045094915): twitter.com/slow_developer `+` tools
+  cite: [The best AI Chatbots in 2023.](https://twitter.com/slow_developer/status/1671530676045094915): twitter.com/slow_developer `+` tools
 
 - The leader: <http://openai.com>
 - The runner-up: <http://bard.google.com>
@@ -1134,7 +1231,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 
   <details>
 
-  <summary>@cite: https://docs.argilla.io/</summary>
+  <summary>cite: https://docs.argilla.io/</summary>
 
     ### SFT Dataset
 
