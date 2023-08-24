@@ -28,6 +28,8 @@ You can easily run llama.cpp on Android device with termux. First, obtain the An
 
 - https://github.com/ggerganov/llama.cpp#android
 
+- Qualcomm [AIMET](https://github.com/quic/aimet) AI Model Efficiency Toolkit (AIMET)
+
 ## UI/UX
 
 - https://github.com/nat/openplayground
