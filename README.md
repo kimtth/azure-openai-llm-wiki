@@ -1,5 +1,5 @@
 
-`updated: 08/25/2023`
+`updated: 08/27/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -28,76 +28,76 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [LlamaIndex Deep Dive](#llamaindex-deep-dive)
   - [Vector Storage Comparison](#vector-storage-comparison)
   - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
-  - [Milvus Embedded](#milvus-embedded)
   - [Conclusion](#conclusion)
 - **Section 2** : Azure OpenAI and RAG demo
   - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
-  - [ChatGPT + Enterprise data Demo Configuration](#rag-retrieval-augmented-generation-demo-configuration)
+  - [ChatGPT + Enterprise data (RAG) Demo](#chatgpt--enterprise-data-rag-retrieval-augmented-generation-demo)
   - [Azure OpenAI samples](#azure-openai-samples)
-  - [Another Reference Architectures / Tech community](#another-reference-architectures--tech-community)
+  - [Azure Reference Architectures](#azure-reference-architectures)
   - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
-  - [Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview](#bing-chat-enterprise--azure-openai-service-on-your-data-in-public-preview)
+  - [Azure Enterprise Services](#azure-enterprise-services)
 - **Section 3** : Microsoft Semantic Kernel
   - [Semantic Kernel](#semantic-kernel)
-  - [Bing search Web UI and Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
+  - [Semantic Kernel sample code](#bing-search-web-ui-and-semantic-kernel-sample-code)
 - **Section 4** : Langchain & Its Competitors
   - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)
-  - [Langchain Impressive features](#langchain-impressive-features): cache, context-aware-splitting
-  - [Langchain quick start](#langchain-quick-start-how-to-use-and-useful-utilities): Sample code
+  - [Langchain Impressive features](#langchain-impressive-features)
+  - [Langchain Quick start](#langchain-quick-start-how-to-use)
   - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
-  - [Langsmith & Langchain low code](#langsmith--langchain-low-code): Drag-and-Drop Workflow, LLM debugging
   - Langchain vs Its Competitors
     - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
     - [Semantic Kernel : Semantic Function](#semantic-kernel--semantic-function)
-    - [Semantic Kernel : Prompt Template language key takeaways](#semantic-kernel--prompt-template-language-key-takeaways)
+    - [Semantic Kernel : Prompt Template language](#semantic-kernel--prompt-template-language-key-takeaways)
     - [Semantic Kernel Glossary](#semantic-kernel-glossary)
-    - [Langchain vs Semantic Kernel vs Azure Machine Learning - Prompt flow](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
-    - [Prompt template language](#prompt-template-language): Handlebars.js vs Jinja2
+    - [Langchain vs Semantic Kernel vs Azure Machine Learning (Prompt flow)](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
+    - [Prompt template language](#prompt-template-language)
 - **Section 5**: Prompt Engineering & Finetuning
   - Prompt Engineering
     - [Prompt Engineering](#prompt-engineering)
     - [Azure OpenAI Prompt Guide](#azure-openai-prompt-guide)
     - [OpenAI Prompt Guide](#openai-prompt-guide)
-    - [DeepLearning.ai Prompt Engineering Course and others](#deeplearningai-prompt-engineering-course-and-others)
+    - [DeepLearning.ai Short Courses](#deeplearningai-short-courses)
     - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
     - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - Finetuning & Model Compression
     - [Finetuning](#finetuning--model-compression) : PEFT - LoRA - QLoRA
     - [Llama2 Finetuning](#llama2-finetuning): Llama 2
     - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
-    - [Quantization](#quantization): [contd.](README_SBCs.md) : Quantization & Run ChatGPT on a local machine
+    - [Quantization](#quantization): [[contd.](README_SBCs.md)]
     - [Sparsification](#sparsification)
-    - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset): High quality synthetic dataset
-  - [Visual Prompting](#visual-prompting)
+    - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset)
+  - Visual Prompting
+    - [What is the Visual Promprting?](#visual-prompting)
 - **Section 6:** LLM Enhancement
-  - [Context Constraints](#context-constraints): Large Context Windows, RoPE
+  - [Context Constraints](#context-constraints): incl. RoPE
   - OpenAI's plans
     - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
     - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
     - [OSS Alternatives for OpenAI Code Interpreter](#oss-alternatives-for-openai-code-interpreter)
+    - [GPT-4 details leaked](#gpt-4-details-leaked)
   - Data Extraction methods
     - [Math problem-solving skill](#math-problem-solving-skill)
-    - [Table Extraction](#table-extraction): Extract Tables from PDFs
-  - [Token counting & Token-limits](#token-counting--token-limits): 5 Approaches To Solve LLM Token Limits
-  - [Trustworthy LLMs & Avoid AI hallucination](#building-trustworthy-safe-and-secure-llm) Building Trustworthy, Safe and Secure LLM
-  - [Gorilla: An API store for LLMs](#gorilla-an-api-store-for-llms): LLM to Master APIs
+    - [Extract data from Tables](#extract-data-from-tables)
+  - [Approaches To Solve LLM Token Limits](#approaches-to-solve-llm-token-limits)
+  - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
+  - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
   - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
 - **Section 7:** List of OSS LLM & Generative AI Landscape
-  - [Evolutionary Graph of LLaMA Family / LLM evolutionary tree](#evolutionary-graph-of-llama-family--llm-evolutionary-tree)
-  - [Generative AI Revolution: Exploring the Current Landscape](#generative-ai-revolution-exploring-the-current-landscape)
-  - [List of OSS LLM](#list-of-oss-llm)
+  - [LLM Evolutionary tree](#llm-evolutionary-tree-and-llama-family)
+  - [Generative AI Landscape](#generative-ai-revolution-exploring-the-current-landscape)
+  - [OSS (Open-source) LLM](#oss-open-source-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
   - [Huggingface Transformer](#huggingface-transformer)
-  - [LLM for Code](#llm-for-code)
+  - [LLM for Coding](#llm-for-coding)
 - **Section 8** : References
-  - [picoGPT](#picogpt) : tiny implementation of GPT-2.
-  - [AutoGPT and Communicative Agents](#autogpt--communicative-agents)
+  - [picoGPT and lit-gpt](#picogpt-and-lit-gpt): Implementation of open-source LLMs
+  - [AutoGPT and Communicative Agents](#autogpt-and-communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
-  - [Application UI/UX](#application-uiux)
-  - [Awesome demo](#awesome-demo) Prompt to Game: E2E game creation
+  - [Application and UI/UX](#application-and-uiux)
+  - [Awesome demo](#awesome-demo) Incl. E2E game creation
   - [日本語 (Japanese Materials)](#日本語japanese-materials)
   - [Other Materials](#other-materials)
 - **Section 9** : Relevant solutions
@@ -108,6 +108,8 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [AI Tools](#section-10--ai-tools)
 - **Section 11** : Datasets for LLM Training
   - [Datasets for LLM Training](#section-11--datasets-for-llm-training)
+- **Section 12** : LLM Evaluation
+  - [Evaluation of Large Language Models](#section-12--llm-evaluation)
 
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
@@ -171,6 +173,39 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 - [Faiss](https://faiss.ai/): Facebook AI Similarity Search (Faiss) is a library for efficient similarity search and clustering of dense vectors. It is used as an alternative to a vector database in the development and library of algorithms for a vector database. It is developed by Facebook AI Research. [git](https://github.com/facebookresearch/faiss)
 
+- Milvus (A cloud-native vector database) Embedded [git](https://github.com/milvus-io/milvus)
+
+  `[JMO]`: Alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) and [Qdrant](https://github.com/qdrant/qdrant) have positioned themselves as the SQLite in vector databases.
+
+  <details>
+
+  - `pip install milvus`
+  - Docker compose: <https://milvus.io/docs/install_offline-docker.md>
+  - Milvus Embedded through python console only works in Linux and Mac OS.
+  - In Windows, Use this link, <https://github.com/matrixji/milvus/releases>.
+
+    ```commandline
+    # Step 1. Start Milvus
+
+    1. Unzip the package
+    Unzip the package, and you will find a milvus directory, which contains all the files required.
+
+    2. Start a MinIO service
+    Double-click the run_minio.bat file to start a MinIO service with default configurations. Data will be stored in the subdirectory s3data.
+
+    3. Start an etcd service
+    Double-click the run_etcd.bat file to start an etcd service with default configurations.
+
+    4. Start Milvus service
+    Double-click the run_milvus.bat file to start the Milvus service.
+
+    # Step 2. Run hello_milvus.py
+
+    After starting the Milvus service, you can test by running hello_milvus.py. See Hello Milvus for more information.
+    ```
+
+  </details>
+
 ### **Vector Storage Options for Azure**
 
 - [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
@@ -183,40 +218,6 @@ This repository contains references to LLM, as well as prompt engineering librar
   **Note**: Azure Cache for Redis Enterprise: Enterprise Sku series are not able to deploy by a template such as Bicep and ARM.
 
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
-
-### **Milvus Embedded**
-
- `[JMO]`: Milvus looks like the best alternative option to replace PineCone and Redis Search in OSS. It offers support for multiple languages, addresses the limitations of RedisSearch, and provides cloud scalability and high reliability with Kubernetes. However, for local and small-scale applications, [Chroma](https://github.com/chroma-core/chroma) and [Qdrant](https://github.com/qdrant/qdrant) have positioned themselves as the SQLite in vector databases.
-
-<details>
-
-- `pip install milvus`
-- Docker compose: <https://milvus.io/docs/install_offline-docker.md>
-- Milvus Embedded through python console only works in Linux and Mac OS.
-- In Windows, Use this link, <https://github.com/matrixji/milvus/releases>.
-
-  ```commandline
-  # Step 1. Start Milvus
-
-  1. Unzip the package
-  Unzip the package, and you will find a milvus directory, which contains all the files required.
-
-  2. Start a MinIO service
-  Double-click the run_minio.bat file to start a MinIO service with default configurations. Data will be stored in the subdirectory s3data.
-
-  3. Start an etcd service
-  Double-click the run_etcd.bat file to start an etcd service with default configurations.
-
-  4. Start Milvus service
-  Double-click the run_milvus.bat file to start the Milvus service.
-
-  # Step 2. Run hello_milvus.py
-
-  After starting the Milvus service, you can test by running hello_milvus.py. See Hello Milvus for more information.
-  ```
-
-</details>
-
 
 ### **Conclusion**
 
@@ -247,89 +248,91 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
   1. [LMOps][LMOps]: a collection of tools for improving text prompts used as input to generative AI models. The toolkit includes [Promptist][Promptist], which optimizes a user's text input for text-to-image generation, and [Structured Prompting][Structured Prompting].
   1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot] and [Microsoft Security Copilot][sec-copilot]
 
-### **RAG (Retrieval-Augmented Generation) Demo Configuration**
+### **ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation) Demo**
 
-What is the RAG (Retrieval-Augmented Generation)?
+- What is the RAG (Retrieval-Augmented Generation)?
 
-RAG (Retrieval-Augmented Generation) : Integrates the retrieval (searching) into LLM text generation. RAG helps the model to “look up” external information to improve its responses.
+  RAG (Retrieval-Augmented Generation) : Integrates the retrieval (searching) into LLM text generation. RAG helps the model to “look up” external information to improve its responses.
 
-  <img src="files/RAG.png" alt="sk" width="400"/>
+    <img src="files/RAG.png" alt="sk" width="400"/>
 
-[cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
+  [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
 
 ---
 
-The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
+- Demo Deployment Steps
 
-[git](https://github.com/Azure-Samples/azure-search-openai-demo) : Python, ReactJs, Typescript
+  The files in this directory, `extra_steps`, have been created for managing extra configurations and steps for launching the demo repository.
 
-  <img src="files/capture_azure_demo.png" alt="sk" width="300"/>
+  [git](https://github.com/Azure-Samples/azure-search-openai-demo) : Python, ReactJs, Typescript
 
-<details>
+    <img src="files/capture_azure_demo.png" alt="sk" width="300"/>
 
-1. (optional) Check Azure module installation in Powershell by running `ms_internal_az_init.ps1` script
-2. (optional) Set your Azure subscription Id to default
+  <details>
 
-    > Start the following commands in `./azure-search-openai-demo` directory
+  1. (optional) Check Azure module installation in Powershell by running `ms_internal_az_init.ps1` script
+  2. (optional) Set your Azure subscription Id to default
 
-3. (deploy azure resources) Simply Run `azd up`
+      > Start the following commands in `./azure-search-openai-demo` directory
 
-    The azd stores relevant values in the .env file which is stored at `${project_folder}\.azure\az-search-openai-tg\.env`.
+  3. (deploy azure resources) Simply Run `azd up`
 
-4. Move to `app` by `cd app` command
-5. (sample data loading) Move to `scripts` then Change into Powershell by `Powershell` command, Run `prepdocs.ps1`
+      The azd stores relevant values in the .env file which is stored at `${project_folder}\.azure\az-search-openai-tg\.env`.
 
-    - console output (excerpt)
+  4. Move to `app` by `cd app` command
+  5. (sample data loading) Move to `scripts` then Change into Powershell by `Powershell` command, Run `prepdocs.ps1`
 
-      ```commandline
-              Uploading blob for page 29 -> role_library-29.pdf
-              Uploading blob for page 30 -> role_library-30.pdf
-      Indexing sections from 'role_library.pdf' into search index 'gptkbindex'
-      Splitting './data\role_library.pdf' into sections
-              Indexed 60 sections, 60 succeeded
-      ```
+      - console output (excerpt)
 
-6. Move to `app` by `cd ..` and `cd app` command
-7. (locally running) Run `start.cmd`
+        ```commandline
+                Uploading blob for page 29 -> role_library-29.pdf
+                Uploading blob for page 30 -> role_library-30.pdf
+        Indexing sections from 'role_library.pdf' into search index 'gptkbindex'
+        Splitting './data\role_library.pdf' into sections
+                Indexed 60 sections, 60 succeeded
+        ```
 
-- console output (excerpt)
+  6. Move to `app` by `cd ..` and `cd app` command
+  7. (locally running) Run `start.cmd`
 
-  ```commandline
-  Building frontend
+  - console output (excerpt)
+
+    ```commandline
+    Building frontend
 
 
-  > frontend@0.0.0 build \azure-search-openai-demo\app\frontend
-  > tsc && vite build
+    > frontend@0.0.0 build \azure-search-openai-demo\app\frontend
+    > tsc && vite build
 
-  vite v4.1.1 building for production...
-  ✓ 1250 modules transformed.
-  ../backend/static/index.html                    0.49 kB
-  ../backend/static/assets/github-fab00c2d.svg    0.96 kB
-  ../backend/static/assets/index-184dcdbd.css     7.33 kB │ gzip:   2.17 kB
-  ../backend/static/assets/index-41d57639.js    625.76 kB │ gzip: 204.86 kB │ map: 5,057.29 kB
+    vite v4.1.1 building for production...
+    ✓ 1250 modules transformed.
+    ../backend/static/index.html                    0.49 kB
+    ../backend/static/assets/github-fab00c2d.svg    0.96 kB
+    ../backend/static/assets/index-184dcdbd.css     7.33 kB │ gzip:   2.17 kB
+    ../backend/static/assets/index-41d57639.js    625.76 kB │ gzip: 204.86 kB │ map: 5,057.29 kB
 
-  Starting backend
+    Starting backend
 
-  * Serving Flask app 'app'
-  * Debug mode: off
-  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-  * Running on http://127.0.0.1:5000
-  Press CTRL+C to quit
-  ...
-  ```
+    * Serving Flask app 'app'
+    * Debug mode: off
+    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+    * Running on http://127.0.0.1:5000
+    Press CTRL+C to quit
+    ...
+    ```
 
-Running from second times
+  Running from second times
 
-1. Move to `app` by `cd ..` and `cd app` command
-2. (locally running) Run `start.cmd`
+  1. Move to `app` by `cd ..` and `cd app` command
+  2. (locally running) Run `start.cmd`
 
-(optional)
+  (optional)
 
-- fix_from_origin : The modified files, setup related
-- ms_internal_az_init.ps1 : Powershell script for Azure module installation
-- ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
+  - fix_from_origin : The modified files, setup related
+  - ms_internal_az_init.ps1 : Powershell script for Azure module installation
+  - ms_internal_troubleshootingt.ps1 : Set Specific Subscription Id as default
 
-</details>
+  </details>
 
 ### **Azure OpenAI samples**
 
@@ -348,16 +351,16 @@ Running from second times
 - Azure OpenAI Network Latency Test Script
   : [ref](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py)
 
-### **Another Reference Architectures / Tech community**
+### **Azure Reference Architectures**
 
 |                                                                                                                                                        |                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
 | [Azure OpenAI Embeddings QnA](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna)                                                          |  [Azure Cosmos DB + OpenAI ChatGPT](https://github.com/Azure-Samples/cosmosdb-chatgpt) C# blazor and Azure Custom Template       |
-| <img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="300"/>                                                                       |  <img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="300"/>                                                                  |
+| <img src="files/demo-architecture.png" alt="embeddin_azure_csharp" width="200"/>                                                                       |  <img src="files/cosmos-gpt.png" alt="gpt-cosmos" width="200"/>                                                                  |
 | [C# Implementation](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search |  [Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) Typescript, ReactJs and Flask                         |
-| <img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="300"/>                                                               |  <img src="files/chatscreen.png" alt="gpt-cosmos" width="300"/>                                                                  |
+| <img src="files/demo-architecture-csharp2.png" alt="embeddin_azure_csharp" width="200"/>                                                               |  <img src="files/chatscreen.png" alt="gpt-cosmos" width="200"/>                                                                  |
 | [Azure Video Indexer demo](https://aka.ms/viopenaidemo) Azure Video Indexer + OpenAI |            [Miyagi](https://github.com/Azure-Samples/miyagi) Integration demonstrate for multiple langchain libraries            |
-| <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="300"/> |                    <img src="files/wip-azure.png" alt="miyagi" width="300"/>                                              |
+| <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="200"/> |                    <img src="files/wip-azure.png" alt="miyagi" width="200"/>                                              |
 
 - Azure Open AI work with Cognitive Search act as a Long-term memory
 
@@ -373,7 +376,7 @@ Running from second times
 ### **Azure Cognitive Search : Vector Search**
 
 - In the vector databases category within Azure, several alternative solutions are available. However, ACS is the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
-- [git: Vector Search](https://github.com/Azure/cognitive-search-vector-pr)
+- [git](https://github.com/Azure/cognitive-search-vector-pr): Vector Search Sample Code
 - Azure Cognitive Search supports
 
   1. Text Search
@@ -383,7 +386,7 @@ Running from second times
 
 - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
 
-### **Bing Chat Enterprise & Azure OpenAI Service On Your Data in Public Preview**
+### **Azure Enterprise Services**
 
 - Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
   1. Bing Chat Enterprise doesn't have plugin support
@@ -480,7 +483,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   cite: [packt][langchain-glance]
 
-### **Langchain and Prompt engineering library**
+### **Langchain and Prompt engineering libraries**
 
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
 - [LangChain](https://python.langchain.com/en/latest/index.html)
@@ -502,12 +505,18 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
 - [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
+- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating
+
+  <img src="files/langchain_debugging.png" width="200" />
+
+- [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
+- [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
 
   ```python
   chain = prompt | model | StrOutputParser() | search
   ```
 
-### **Langchain Quick Start: How to Use and Useful Utilities**
+### **Langchain Quick Start: How to Use**
 
 - `deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
 - `deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
@@ -579,15 +588,6 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
   According to my understanding, MRKL is implemented by using ReAct framework in langchain ,which is called `zero-shot-react-description`. The original ReAct is been implemented in `react-docstore` agent type.
 
   ps. MRKL is published at 1 May 2022, earlier than ReAct, which is published at 6 Oct 2022.
-
-### **LangSmith & Langchain low code**
-
-- [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
-- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating
-
-  <img src="files/langchain_debugging.png" width="200" />
-
-- [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
 
 ### **Langchain & Its Competitors**
 
@@ -714,7 +714,7 @@ Each semantic function is defined by a unique prompt template file, developed us
     <!-- 1. Program Aided Language Model -->
     <!-- 1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize -->
 
-- [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) : ⭐⭐⭐⭐⭐
+- [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
 
@@ -731,7 +731,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 
-### **DeepLearning.ai Prompt Engineering COURSE and others**
+### **DeepLearning.ai Short Courses**
 
 - [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
@@ -769,12 +769,17 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155)
 
-- [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA ⭐⭐⭐⭐
-. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
+- [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
+
+- [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on <b>only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.</b> LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases.
 
 ### **Llama2 Finetuning**
 
 - A key difference between [Llama 1](https://arxiv.org/abs/2302.13971) and [Llama 2](https://arxiv.org/abs/2307.09288) is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
+
+  <img src="files/grp-attn.png" alt="llm-grp-attn" width="400"/>
+
+  [cite](https://arxiv.org/abs/2305.13245)
 
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF
 
@@ -854,7 +859,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Large Transformer Model Inference Optimization**
 
-- [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/) : ⭐⭐⭐⭐⭐
+- [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
 
 ---
 
@@ -887,7 +892,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   1. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. 
   
-      cite [ref](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
+      [cite](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
 
 ### **OpenAI's plans**
 
@@ -915,10 +920,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   > We provide our models with a working Python interpreter in a sandboxed, firewalled execution environment, along with some ephemeral disk space.
 
 - [OSS Code Interpreter](https://github.com/shroominic/codeinterpreter-api) A LangChain implementation of the ChatGPT Code Interpreter.
-
 - [SlashGPT](https://github.com/shroominic/codeinterpreter-api) The tool integrated with "jupyter" agent
-
 - [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter.
+
+### **GPT-4 details leaked**
+
+  > GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
+
+  > The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [ref](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked)
 
 ### **OpenAI Model Finetuning**
 
@@ -935,14 +944,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 - Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
 
-### **Table Extraction**
+### **Extract data from Tables**
 
 - Azure Form Recognizer: [ref](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
 ---
 
-### **Token counting & Token-limits**
+### **Approaches To Solve LLM Token Limits**
 
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
@@ -956,7 +965,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <img src="files/llm-trustworthiness.png" width="450">
 
-### **Gorilla: An API store for LLMs**
+### **LLM to Master APIs**
 
 - [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): Gorilla: Large Language Model Connected with Massive APIs [git](https://github.com/ShishirPatil/gorilla)
   1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
@@ -988,19 +997,17 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ## **Section 7** : List of OSS LLM & Generative AI Landscape
 
-### **Evolutionary Graph of LLaMA Family / LLM evolutionary tree**
+### **LLM Evolutionary tree and LLaMA Family**
 
-  Evolutionary Graph of LLaMA Family
+- Evolutionary Graph of LLaMA Family
 
   <img src="files/llama-0628-final.png" width="450" />
 
-  LLM evolutionary tree
+- LLM evolutionary tree
 
   <img src="files/qr_version.jpg" alt="llm" width="450"/>
 
-- [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey)
-
-- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) paper
+- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223) paper [git](https://github.com/RUCAIBox/LLMSurvey)
 
 - [LLM evolutionary tree](https://arxiv.org/abs/2304.13712v2): A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers) [git](https://github.com/Mooler0410/LLMsPracticalGuide)
 
@@ -1008,7 +1015,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [doc](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
 
-### **List of OSS LLM**
+### **OSS (Open-source) LLM**
 
 - [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76)
 - Printed version for "Medium" limits. [doc](files/list_of_oss_llm.pdf)
@@ -1017,19 +1024,17 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 ### **Huggingface Open LLM Learboard**
 
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-
 - Upstage's 70B Language Model Outperforms GPT-3.5: [ref][upstage]
 
 ### **Huggingface Transformer**
 
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
 
-### **LLM for Code**
+### **LLM for Coding**
 
 - [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
 - git: [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
-
-- [Code Llama](https://arxiv.org/abs/2308.12950) Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) [git](https://github.com/facebookresearch/codellama)
+- [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/), [git](https://github.com/facebookresearch/codellama)
 
 ### **Democratizing the magic of ChatGPT with open models**
 
@@ -1051,11 +1056,12 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ## **Section 8** : References
 
-### **picoGPT**
+### **picoGPT and lit-gpt**
 
 - An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT): Transformer Decoder
+- lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt)
 
-### **AutoGPT / Communicative Agents**
+### **AutoGPT and Communicative Agents**
 
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular
 - [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation - Coworking of 4 agents
@@ -1077,6 +1083,17 @@ Camel Agents - a Hugging Face Space by camel-ai
   
   - Q-Former is a lightweight transformer which employs a set of learnable query vectors to extract visual features from the frozen image encoder. It acts as an information bottleneck between the frozen image encoder and the frozen LLM.
 
+- Cross-attention [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
+
+  - The model has three sub-models:
+    1. A model to obtain image embeddings
+    1. A text model to obtain text embeddings
+    1. A model to learn the relationships between them
+  
+  This is analogous to adding vision capability to a LLM.
+
+    <img src="files/cocoa.gif" width="300" />
+
 ### **MLLM (multimodal large language model)**
 
 - Facebook
@@ -1089,25 +1106,14 @@ Camel Agents - a Hugging Face Space by camel-ai
   1. [Kosmos-2](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World
 
 - TaskMatrix.AI
-  1. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs
+  - [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs
 
 - Benchmarking Multimodal LLMs
   - [SEED-Bench](https://arxiv.org/abs/2307.16125): Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench)
 
       <img src="files/multi-llm.png" width="180" />
 
-- Cross-attention [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
-
-  - The model has three sub-models:
-    1. A model to obtain image embeddings
-    1. A text model to obtain text embeddings
-    1. A model to learn the relationships between them
-  
-  This is analogous to adding vision capability to a LLM.
-
-    <img src="files/cocoa.gif" width="300" />
-
-### **Application UI/UX**
+### **Application and UI/UX**
 
 - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui): Text generation web UI
@@ -1160,7 +1166,7 @@ entirely.
 
 - [Microsoft Fabric](README_Fabric.md): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features.
-- [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) sample: `deeplearning.ai\wandb`
+- [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) doc: `deeplearning.ai/wandb`
 - [activeloopai/deeplake](https://github.com/activeloopai/deeplake): AI Vector Database for LLMs/LangChain. Doubles as a Data Lake for Deep Learning. Store, query, version, & visualize any data. Stream data in real-time to PyTorch/TensorFlow. [ref](https://activeloop.ai)
 - [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models
 - Generate 3D objects conditioned on text or images [openai/shap-e](https://github.com/openai/shap-e)
@@ -1251,6 +1257,10 @@ The library is an open-source tool that offers a comprehensive suite of efficien
     | Describe thunderstorm season in the United States and Canada. | Thunderstorm season in the United States and Canada typically occurs during the spring and summer months, when warm, moist air collides with cooler, drier air, creating the conditions for thunderstorms to form. | Describe thunderstorm season in the United States and Canada. |
 
   </details>
+
+## **Section 12** : LLM Evaluation
+
+- Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
 
 ## **Acknowledgements**
 
