@@ -1,5 +1,5 @@
 
-`updated: 08/27/2023`
+`updated: 08/29/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -18,7 +18,6 @@ This repository contains references to LLM, as well as prompt engineering librar
 1. Azure OpenAI does not use user input as training data for other customers. [Data, privacy, and security for Azure OpenAI](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
 
 - [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
-
 - [Open AI Models](https://platform.openai.com/docs/models)
 
 ## Table of contents
@@ -45,6 +44,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [Langchain Quick start](#langchain-quick-start-how-to-use)
   - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
+  - [Criticism to Langchain](#criticism-to-langchain)
   - Langchain vs Its Competitors
     - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
     - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
@@ -92,6 +92,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [Huggingface Transformer](#huggingface-transformer)
   - [LLM for Coding](#llm-for-coding)
 - **Section 8** : References
+  - [Survey of LLMs papers](#survey-of-llms-papers)
   - [picoGPT and lit-gpt](#picogpt-and-lit-gpt): Implementation of LLMs
   - [AutoGPT and Communicative Agents](#autogpt-and-communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
@@ -589,6 +590,14 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   ps. MRKL is published at 1 May 2022, earlier than ReAct, which is published at 6 Oct 2022.
 
+### **Criticism to Langchain**
+
+- The Problem With LangChain: [ref](https://minimaxir.com/2023/07/langchain-problem/), [git](https://github.com/minimaxir/langchain-problems)
+- What’s your biggest complaint about langchain?: [ref](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your_biggest_complaint_about_langchain/)
+- Langchain Is Pointless: [ref](https://news.ycombinator.com/item?id=36645575)
+
+  > LangChain has been criticized for making simple things relatively complex, which creates unnecessary complexity and tribalism that hurts the up-and-coming AI ecosystem as a whole. The documentation is also criticized for being bad and unhelpful.
+
 ### **Langchain & Its Competitors**
 
 ---
@@ -1056,6 +1065,55 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ## **Section 8** : References
 
+### **Survey of LLMs papers**
+
+- Picked out the list by [cited by count] and used [survey] as a search keyword. The papers on a specific topic are included even if few [cited by count].
+
+- A Survey of LLMs
+  - [A Survey of Transformers](https://arxiv.org/abs/2106.04554):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.04554&btnG=)
+  - [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223&btnG=)
+  - [A Comprehensive Survey of AI-Generated Content (AIGC)](https://arxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226&btnG=)
+  - [Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models](https://arxiv.org/abs/2304.01852):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.01852&btnG=)
+
+- Application of LLMs
+  - [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.13712&btnG=)
+
+- Tuning & Learning
+  - [A Cookbook of Self-Supervised Learning](https://arxiv.org/abs/2304.12210):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.12210&btnG=)
+  - [A Survey on In-context Learning](https://arxiv.org/abs/2301.00234):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.00234&btnG=)
+  - [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109&btnG=)
+
+- Vision & Trustworthy
+  - [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.13549&btnG=)
+  - [SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension](https://arxiv.org/abs/2307.16125): [(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125&btnG=)
+  - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.03629&btnG=)
+
+- Google AI Research Recap
+  - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
+  - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
+  - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
+
+<!--
+  - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
+  - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702)
+
+  - [Challenges & Application of LLMs](https://arxiv.org/abs/2306.07303):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303&btnG=)
+  - [A Survey on LLM-based Autonomous Agents](https://arxiv.org/abs/2308.11432v1):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11432v1&btnG=)
+  - [A Survey on Efficient Training of Transformers](https://arxiv.org/abs/2302.01107):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.01107&btnG=)
+
+  - [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2307.15217):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217&btnG=)
+  - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2303.15647):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647&btnG=)
+  - [Survey of Aligned LLMs](https://arxiv.org/abs/2307.12966):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966&btnG=)
+  - [Survey on Instruction Tuning for LLMs](https://arxiv.org/abs/2308.10792):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.10792&btnG=)
+  - [A Survey on Transformers in Reinforcement Learning](https://arxiv.org/abs/2301.03044):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.03044&btnG=)
+  - [Model Compression for LLMs](https://arxiv.org/abs/2308.07633):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633&btnG=)
+
+  - [Foundation Models in Vision](https://arxiv.org/abs/2307.13721):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.13721&btnG=)
+  - [Multimodal Deep Learning](https://arxiv.org/abs/2301.04856):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856&btnG=)
+  - [Trustworthy LLMs](https://arxiv.org/abs/2308.05374):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374&btnG=)
+  - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043&btnG=)
+-->
+
 ### **picoGPT and lit-gpt**
 
 - An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT): Transformer Decoder
@@ -1261,6 +1319,8 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 ## **Section 12** : LLM Evaluation
 
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
+- PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
+- OpenAI Evals: [git](https://github.com/openai/evals)
 
 ## **Acknowledgements**
 
