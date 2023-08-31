@@ -975,6 +975,10 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <img src="files/llm-trustworthiness.png" width="450">
 
+- [Political biases of LLMs](https://arxiv.org/abs/2305.08283): From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models: [cited by](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.08283&btnG=)
+
+  <img src="files/political-llm.png" width="450">
+
 ### **LLM to Master APIs**
 
 - [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): Gorilla: Large Language Model Connected with Massive APIs [git](https://github.com/ShishirPatil/gorilla)
@@ -1094,26 +1098,28 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
   - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
 
-<!--
-  - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
-  - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702)
+- etc.
 
+  <details>
+
+  - Less than 10 cited counts, August 31, 2023
+  - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
+  - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702&btnG=)
   - [Challenges & Application of LLMs](https://arxiv.org/abs/2306.07303):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303&btnG=)
   - [A Survey on LLM-based Autonomous Agents](https://arxiv.org/abs/2308.11432v1):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11432v1&btnG=)
   - [A Survey on Efficient Training of Transformers](https://arxiv.org/abs/2302.01107):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.01107&btnG=)
-
   - [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2307.15217):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217&btnG=)
   - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2303.15647):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647&btnG=)
   - [Survey of Aligned LLMs](https://arxiv.org/abs/2307.12966):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966&btnG=)
   - [Survey on Instruction Tuning for LLMs](https://arxiv.org/abs/2308.10792):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.10792&btnG=)
   - [A Survey on Transformers in Reinforcement Learning](https://arxiv.org/abs/2301.03044):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.03044&btnG=)
   - [Model Compression for LLMs](https://arxiv.org/abs/2308.07633):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633&btnG=)
-
   - [Foundation Models in Vision](https://arxiv.org/abs/2307.13721):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.13721&btnG=)
   - [Multimodal Deep Learning](https://arxiv.org/abs/2301.04856):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856&btnG=)
   - [Trustworthy LLMs](https://arxiv.org/abs/2308.05374):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374&btnG=)
   - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043&btnG=)
--->
+  
+  </details>
 
 ### **picoGPT and lit-gpt**
 
