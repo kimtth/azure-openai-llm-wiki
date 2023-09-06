@@ -1,5 +1,5 @@
 
-`updated: 08/29/2023`
+`updated: 09/06/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -837,6 +837,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - Second-order methods: `Second derivative (Hessian)` of the objective function
 
+- [RLAF](https://arxiv.org/abs/2309.00267) (Reinforcement Learning from AI Feedback): Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF and RLHF vs. the reference summaries is also not statistically significant.
+
 ---
 
 ## **Model Compression for Large Language Models**
@@ -932,6 +934,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [OSS Code Interpreter](https://github.com/shroominic/codeinterpreter-api) A LangChain implementation of the ChatGPT Code Interpreter.
 - [SlashGPT](https://github.com/snakajima/SlashGPT) The tool integrated with "jupyter" agent
 - [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter.
+- [Open Interpreter](https://github.com/KillianLucas/open-interpreter): Let language models run code on your computer.
 
 ### **GPT-4 details leaked**
 
@@ -1170,6 +1173,9 @@ Camel Agents - a Hugging Face Space by camel-ai
   1. Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1](https://arxiv.org/abs/2302.14045)
   1. [Kosmos-2](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World
 
+- Microsoft: BEiT-3
+  - [BEiT-3](https://arxiv.org/abs/2208.10442): Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks
+
 - TaskMatrix.AI
   - [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): Completing Tasks by Connecting Foundation Models with Millions of APIs
 
@@ -1192,6 +1198,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
 - [Opencopilot](https://github.com/opencopilotdev/opencopilot): Build and embed open-source AI Copilots into your product with ease.
 - [TaxyAI/browser-extension](https://github.com/TaxyAI/browser-extension): Browser Automation by Chrome debugger API and Prompt > `src/helpers/determineNextAction.ts`
+- [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java.
+- [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex
 
 ### **Awesome demo**
 
