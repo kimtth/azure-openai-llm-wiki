@@ -466,7 +466,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   `\bing-search-webui`: (Utility, to see the search results from Bing Search API)
 
-    <img src="bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="200"/>
+    <img src="code\bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="150"/>
 
 ## **Section 4** : Langchain & Its Competitors
 
@@ -508,7 +508,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
 - [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating
 
-  <img src="files/langchain_debugging.png" width="200" />
+  <img src="files/langchain_debugging.png" width="150" />
 
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
@@ -956,6 +956,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 - Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
+- [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat)
 
 ### **Extract data from Tables**
 
