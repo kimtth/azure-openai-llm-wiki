@@ -1,5 +1,5 @@
 
-`updated: 09/06/2023`
+`updated: 09/08/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -161,11 +161,16 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 ### **LlamaIndex Deep dive**
 
+- Hign-Level Concepts
+
+  <img src="files/llama-idx-high-lv.png" width="450">
+
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
+- [Fine-Tuning a Linear Adapter for Any Embedding Model](https://medium.com/llamaindex-blog/fine-tuning-a-linear-adapter-for-any-embedding-model-8dd0a142d383): Fine-tuning the embeddings model requires you to reindex your documents. With this approach, you do not need to re-embed your documents. Simply transform the query instead. [ref](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding_adapter.html)
 
-  <img src="files/llama-idx-high-lv.png" width="450">
+  <img src="files/embed-finetune-adapter.png" width="450">
 
 ### **Vector Storage Comparison**
 
@@ -258,6 +263,12 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
     <img src="files/RAG.png" alt="sk" width="400"/>
 
   [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
+
+- The Problem with RAG
+
+  1. A question is not semantically similar to its answers. Cosine similarity may favor semantically similar texts that do not contain the answer.
+  1. Semantic similarity gets diluted if the document is too long. Cosine similarity may favor short documents with only the relevant information.
+  1. The information needs to be contained in one or a few documents. Information that requires aggregations by scanning the whole data.
 
 ---
 
@@ -672,6 +683,8 @@ Each semantic function is defined by a unique prompt template file, developed us
 
   1. Low/No Code vs C#, Python, Java
   1. Focused on Prompt orchestrating vs Integrate LLM into their existing app.
+
+- Using Prompt flow with Semantic Kernel: [ref](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planners/evaluate-and-deploy-planners/)
 
 ### **Prompt Template Language**
 
