@@ -1262,6 +1262,8 @@ entirely.
 The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string)
 
   <img src="files/string2string-overview.png" alt="string2string" width="200"/>
+
+- [Sentence Transformers](https://arxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [git](https://github.com/UKPLab/sentence-transformers)
   
 ## **Section 10** : AI Tools
 
