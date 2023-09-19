@@ -1,5 +1,4 @@
-
-`updated: 09/08/2023`
+`updated: 09/19/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -879,6 +878,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Small size with Textbooks: High quality synthetic dataset**
 
+- [ph-1.5](https://arxiv.org/abs/2309.05463): Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests.
 - [ph-1](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
 - [Orca](https://arxiv.org/abs/2306.02707): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
 
@@ -995,6 +995,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Political biases of LLMs](https://arxiv.org/abs/2305.08283): From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models: [cited by](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.08283&btnG=)
 
   <img src="files/political-llm.png" width="450">
+
+- Red Teaming: The term red teaming has historically described systematic adversarial attacks for testing security vulnerabilities. LLM red teamers should be a mix of people with diverse social and professional backgrounds, demographic groups, and interdisciplinary expertise that fits the deployment context of your AI system. [ref](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
 
 ### **LLM to Master APIs**
 
@@ -1119,6 +1121,10 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <details>
 
+  - [A Survey of Techniques for Optimizing
+ Transformer Inference](https://arxiv.org/abs/2307.07982):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982&btnG=)
+  - [The Rise and Potential of Large Language Model
+Based Agents: A Survey](https://arxiv.org/abs/2309.07864):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864&btnG=)
   - Less than 10 cited counts, August 31, 2023
   - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
   - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702&btnG=)
@@ -1232,6 +1238,8 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [GPT-4登場以降に出てきたChatGPT/LLMに関する論文や技術の振り返り](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4
 - [LLMを制御するには何をするべきか？](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM
 - [生成AIのマルチモーダルモデルでできること -タスク紹介編-](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI
+- [LLMの推論を効率化する量子化技術調査](https://blog.brainpad.co.jp/entry/2023/09/01/153003): Survey of quantization techniques to improve efficiency of LLM reasoning
+- [LLMの出力制御や新モデルについて](https://blog.brainpad.co.jp/entry/2023/09/08/155352): About LLM output control and new models
 - [Azure OpenAIを活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ
 
 ## Other materials
@@ -1267,14 +1275,12 @@ The library is an open-source tool that offers a comprehensive suite of efficien
   
 ## **Section 10** : AI Tools
 
-  cite: [The best AI Chatbots in 2023.](https://twitter.com/slow_developer/status/1671530676045094915): twitter.com/slow_developer `+` tools
-
 - The leader: <http://openai.com>
 - The runner-up: <http://bard.google.com>
 - Open source: <http://huggingface.co/chat>
 - Searching web: <http://perplexity.ai>
 - Content writing: <http://jasper.ai/chat>
-- Sales and Marketing: <http://chatspot.ai>
+- Sales and Marketing: <http://chatspot.ai> / [cite](https://twitter.com/slow_developer/status/1671530676045094915)
 - Oceans of AI - All AI Tools <https://play.google.com/store/apps/details?id=in.blueplanetapps.oceansofai&hl=en_US>
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
@@ -1282,9 +1288,14 @@ The library is an open-source tool that offers a comprehensive suite of efficien
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
   - [ChatHub](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
   - [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
+- [Vercel AI](https://sdk.vercel.ai/) Vercel AI Playground / Vercel AI SDK [git](https://github.com/vercel/ai)
+- [Quora Poe](https://poe.com/login) A chatbot service that gives access to GPT-4, gpt-3.5-turbo, Claude from Anthropic, and a variety of other bots.
 
 ## **Section 11** : Datasets for LLM Training
 
+- LLM-generated datasets:
+  1. [Self-Instruct](https://arxiv.org/abs/2212.10560): Seed task pool with a set of human-written instructions.
+  1. [Self-Alignment with Instruction Backtranslation](https://arxiv.org/abs/2308.06259): Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation.
 - [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
 - [Open LLMs and Datasets](https://github.com/eugeneyan/open-llms): A list of open LLMs available for commercial use.
 - [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/): The Stanford Question Answering Dataset (SQuAD), a set of Wikipedia articles, 100,000+ question-answer pairs on 500+ articles.
@@ -1352,6 +1363,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
 - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
 - OpenAI Evals: [git](https://github.com/openai/evals)
+- TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
 
 ## **Acknowledgements**
 
