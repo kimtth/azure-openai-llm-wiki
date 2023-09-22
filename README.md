@@ -1,4 +1,4 @@
-`updated: 09/19/2023`
+`updated: 09/22/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -26,7 +26,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [LlamaIndex Deep Dive](#llamaindex-deep-dive)
   - [Vector Storage Comparison](#vector-storage-comparison)
   - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
-  - [Conclusion](#conclusion)
+  - [AOAI Ada-002 vs Lucene based search engine](#aoai-ada-002-vs-lucene-based-search-engine)
 - **Section 2** : Azure OpenAI and RAG demo
   - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
   - [ChatGPT + Enterprise data (RAG) Demo](#chatgpt--enterprise-data-rag-retrieval-augmented-generation-demo)
@@ -68,21 +68,21 @@ This repository contains references to LLM, as well as prompt engineering librar
     - [Pruning and Sparsification](#pruning-and-sparsification)
     - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset)
   - Visual Prompting
-    - [What is the Visual Promprting?](#visual-prompting)
-- **Section 6:** LLM Enhancement
+    - [What is the Visual Prompting?](#visual-prompting)
+- **Section 6:** Large Language Model: Challenges and Solutions
   - [Context Constraints](#context-constraints): incl. RoPE
   - OpenAI's plans
     - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
     - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
     - [OSS Alternatives for OpenAI Code Interpreter](#oss-alternatives-for-openai-code-interpreter)
     - [GPT-4 details leaked](#gpt-4-details-leaked)
-  - Data Extraction methods
-    - [Math problem-solving skill](#math-problem-solving-skill)
-    - [Extract data from Tables](#extract-data-from-tables)
-  - [Approaches To Solve LLM Token Limits](#approaches-to-solve-llm-token-limits)
-  - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
-  - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
-  - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
+    - [OpenAI Products](#openai-products)
+  - Token Limits, Trustworthy APIs, and Memory Optimization
+    - [Approaches To Solve LLM Token Limits](#approaches-to-solve-llm-token-limits)
+    - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
+    - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
+    - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
+    - [Language Modeling Is ...](#language-modeling-is)
 - **Section 7:** Open-source LLM & Generative AI Landscape
   - [LLM Evolutionary tree](#llm-evolutionary-tree-and-llama-family)
   - [Generative AI Landscape](#generative-ai-revolution-exploring-the-current-landscape)
@@ -97,6 +97,9 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
   - [Application and UI/UX](#application-and-uiux)
+  - Data Extraction methods
+    - [Math problem-solving skill](#math-problem-solving-skill)
+    - [Extract data from Tables](#extract-data-from-tables)
   - [Awesome demo](#awesome-demo) Incl. E2E game creation
   - [日本語 (Japanese Materials)](#日本語japanese-materials)
   - [Other Materials](#other-materials)
@@ -164,6 +167,45 @@ This repository contains references to LLM, as well as prompt engineering librar
 
   <img src="files/llama-idx-high-lv.png" width="450">
 
+- Query engine vs Chat engine
+
+  1. The query engine wraps a `retriever` and a `response synthesizer` into a pipeline, that will use the query string to fetch nodes (sentences or paragraphs) from the index and then send them to the LLM (Language and Logic Model) to generate a response
+  1. The chat engine is a quick and simple way to chat with the data in your index. It uses a `context manager` to keep track of the conversation history and generate relevant queries for the retriever. Conceptually, it is a `stateful`` analogy of a Query Engine.
+
+- Storage Context vs Service Context
+
+  Both the Storage Context and Service Context are data classes.
+
+  ```python
+  index = load_index_from_storage(storage_context, service_context=service_context)
+  ```
+
+  1. Storage Context is responsible for the storage and retrieval of data in Llama Index, while the Service Context helps in incorporating external context to enhance the search experience.
+  1. The Service Context is not directly involved in the storage or retrieval of data, but it helps in providing a more context-aware and accurate search experience.
+
+      <details>
+
+        ```python
+        # The storage context container is a utility container for storing nodes, indices, and vectors. 
+        class StorageContext:
+          docstore: BaseDocumentStore
+          index_store: BaseIndexStore
+          vector_store: VectorStore
+          graph_store: GraphStore
+        ```
+
+        ```python
+        # The service context container is a utility container for LlamaIndex index and query classes. 
+        class ServiceContext:
+          llm_predictor: BaseLLMPredictor
+          prompt_helper: PromptHelper
+          embed_model: BaseEmbedding
+          node_parser: NodeParser
+          llama_logger: LlamaLogger
+          callback_manager: CallbackManager
+        ```
+      </details>
+
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
@@ -224,7 +266,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
-### **Conclusion**
+### **AOAI Ada-002 vs Lucene based search engine**
 
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 
@@ -239,6 +281,9 @@ However, one exception to this is that the maximum dimension count for the Lucen
 
 - @LlamaIndex `ElasticsearchReader` class:
 The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually, it can only work with open search.
+
+- [Vector Search with OpenAI Embeddings: Lucene Is All You Need](https://arxiv.org/abs/2308.14963): Our experiments were based on Lucene 9.5.0, but indexing was a bit tricky
+because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, which was not sufficient for OpenAI’s 1536-dimensional embeddings. Although the resolution of this issue, which is to make vector dimensions configurable on a per codec basis, has been merged to the Lucene source trunk [git](https://github.com/apache/lucene/pull/12436), this feature has not been folded into a Lucene release (yet) as of early August 2023.
 
 ## **Section 2** : Azure OpenAI and RAG demo
 
@@ -262,6 +307,8 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
     <img src="files/RAG.png" alt="sk" width="400"/>
 
   [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
+
+- In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [ref](https://arxiv.org/abs/2005.11401)
 
 - The Problem with RAG
 
@@ -397,6 +444,12 @@ The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually,
 
 - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
 
+- Azure Cognitive Search offers a set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Hybrid search performance is better than Vector only search.` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)
+
+
+  <img src="files\acs-hybrid.png" alt="acs" width="400"/>
+
+
 ### **Azure Enterprise Services**
 
 - Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
@@ -516,7 +569,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
 - [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
-- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating
+- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating. 
 
   <img src="files/langchain_debugging.png" width="150" />
 
@@ -558,29 +611,29 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 ### **Langchain Agent**
 
-1. If you're using a text LLM, first try `zero-shot-react-description`.
-1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
-1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
-1. `self-ask-with-search`: [self ask with search paper](https://arxiv.org/abs/2210.03350)
-1. `react-docstore`: [ReAct paper](https://arxiv.org/abs/2210.03629)
-1. Agent Type
+  1. If you're using a text LLM, first try `zero-shot-react-description`.
+  1. If you're using a Chat Model, try `chat-zero-shot-react-description`.
+  1. If you're using a Chat Model and want to use memory, try `conversational-react-description`.
+  1. `self-ask-with-search`: [self ask with search paper](https://arxiv.org/abs/2210.03350)
+  1. `react-docstore`: [ReAct paper](https://arxiv.org/abs/2210.03629)
+  1. Agent Type
 
-    ```python
-    class AgentType(str, Enum):
-        """Enumerator with the Agent types."""
+  ```python
+  class AgentType(str, Enum):
+      """Enumerator with the Agent types."""
 
-        ZERO_SHOT_REACT_DESCRIPTION = "zero-shot-react-description"
-        REACT_DOCSTORE = "react-docstore"
-        SELF_ASK_WITH_SEARCH = "self-ask-with-search"
-        CONVERSATIONAL_REACT_DESCRIPTION = "conversational-react-description"
-        CHAT_ZERO_SHOT_REACT_DESCRIPTION = "chat-zero-shot-react-description"
-        CHAT_CONVERSATIONAL_REACT_DESCRIPTION = "chat-conversational-react-description"
-        STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION = (
-            "structured-chat-zero-shot-react-description"
-        )
-        OPENAI_FUNCTIONS = "openai-functions"
-        OPENAI_MULTI_FUNCTIONS = "openai-multi-functions"
-    ```
+      ZERO_SHOT_REACT_DESCRIPTION = "zero-shot-react-description"
+      REACT_DOCSTORE = "react-docstore"
+      SELF_ASK_WITH_SEARCH = "self-ask-with-search"
+      CONVERSATIONAL_REACT_DESCRIPTION = "conversational-react-description"
+      CHAT_ZERO_SHOT_REACT_DESCRIPTION = "chat-zero-shot-react-description"
+      CHAT_CONVERSATIONAL_REACT_DESCRIPTION = "chat-conversational-react-description"
+      STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION = (
+          "structured-chat-zero-shot-react-description"
+      )
+      OPENAI_FUNCTIONS = "openai-functions"
+      OPENAI_MULTI_FUNCTIONS = "openai-multi-functions"
+  ```
 
 - [ReAct](https://arxiv.org/abs/2210.03629) vs [MRKL](https://arxiv.org/abs/2205.00445) (miracle)
 
@@ -769,7 +822,7 @@ Each semantic function is defined by a unique prompt template file, developed us
  1. all end user input in the “user” messages.
  1. "assistant" messages as previous chat responses from the assistant.
 
- Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. (@<https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/>)
+ Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
 
 ### **Finetuning & Model Compression**
 
@@ -955,26 +1008,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   > The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [ref](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked)
 
-### **OpenAI Model Finetuning**
+### **OpenAI Products**
 
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
-
-### **Data Extraction methods**
-
----
-
-### **Math problem-solving skill**
-
-- Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
-- [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
-- Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
-- Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
-- [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat)
-
-### **Extract data from Tables**
-
-- Azure Form Recognizer: [ref](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
-- Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
+- [DALL·E 3](https://openai.com/dall-e-3) [git](https://github.com/openai/dall-e)
+- Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [ref](https://openai.com/blog/introducing-chatgpt-enterprise)
 
 ---
 
@@ -1027,6 +1065,10 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [TokenAttention](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [git](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md)
 
 - [Flash Attention](https://arxiv.org/abs/2205.14135) & [FlashAttention-2](https://arxiv.org/abs/2307.08691): An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
+
+### **Language Modeling Is**
+
+- [Language Modeling Is Compression](https://arxiv.org/abs/2309.10668): Lossless data compression, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%).
 
 ## **Section 7** : List of OSS LLM & Generative AI Landscape
 
@@ -1121,10 +1163,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <details>
 
-  - [A Survey of Techniques for Optimizing
- Transformer Inference](https://arxiv.org/abs/2307.07982):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982&btnG=)
-  - [The Rise and Potential of Large Language Model
-Based Agents: A Survey](https://arxiv.org/abs/2309.07864):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864&btnG=)
+  - [A Survey of Techniques for Optimizing Transformer Inference](https://arxiv.org/abs/2307.07982):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982&btnG=)
+  - [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864&btnG=) / [git](https://github.com/WooooDyy/LLM-Agent-Paper-List)
   - Less than 10 cited counts, August 31, 2023
   - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
   - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702):[(cited by)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702&btnG=)
@@ -1220,6 +1260,21 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [TaxyAI/browser-extension](https://github.com/TaxyAI/browser-extension): Browser Automation by Chrome debugger API and Prompt > `src/helpers/determineNextAction.ts`
 - [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java.
 - [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex
+
+### **Data Extraction methods**
+
+#### **Math problem-solving skill**
+
+- Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
+- [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
+- Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
+- Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
+- [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat)
+
+#### **Extract data from Tables**
+
+- Azure Form Recognizer: [ref](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer)
+- Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/)
 
 ### **Awesome demo**
 
