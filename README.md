@@ -1,4 +1,4 @@
-`updated: 09/22/2023`
+`updated: 09/23/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -26,7 +26,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [LlamaIndex Deep Dive](#llamaindex-deep-dive)
   - [Vector Storage Comparison](#vector-storage-comparison)
   - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
-  - [AOAI Ada-002 vs Lucene based search engine](#aoai-ada-002-vs-lucene-based-search-engine)
+  - [text-embedding-ada-002 & Lucene based search engine](#text-embedding-ada-002--lucene-based-search-engine)
 - **Section 2** : Azure OpenAI and RAG demo
   - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
   - [ChatGPT + Enterprise data (RAG) Demo](#chatgpt--enterprise-data-rag-retrieval-augmented-generation-demo)
@@ -131,35 +131,35 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 - This section has been created for testing and feasibility checks using elastic search as a vector database and integration with LlamaIndex. LlamaIndex is specialized in integration layers to external data sources.
 
-<details>
+    <details>
 
-  - index.json : Vector data local backup created by llama-index
-  - index_vector_in_opensearch.json : Vector data stored in Open search (Source: `files\all_h1.pdf`)
-  - llama-index-azure-elk-create.py: llama-index ElasticsearchVectorClient (Unofficial file to manipulate vector search, Created by me, Not Fully Tested)
-  - llama-index-lang-chain.py : Lang chain memory and agent usage with llama-index
-  - llama-index-opensearch-create.py : Vector index creation to Open search
-  - llama-index-opensearch-query-chatgpt.py : Test module to access Azure Open AI Embedding API.
-  - llama-index-opensearch-query.py : Vector index query with questions to Open search
-  - llama-index-opensearch-read.py : llama-index ElasticsearchVectorClient (Unofficial file to manipulate vector search, Created by me, Not Fully Tested)
-  - env.template : The properties. Change its name to `.env` once your values settings is done.
-  - Opensearch & Elasticsearch setup
-    - docker : Opensearch Docker-compose
-    - docker-elasticsearch : Not working for ES v8, requiring security plug-in with mandatory
-    - docker-elk : Elasticsearch Docker-compose, Optimized Docker configurations with solving security plug-in issues.
-    - es-open-search-set-analyzer.py : Put Language analyzer into Open search
-    - es-open-search.py : Open search sample index creation
-    - es-search-set-analyzer.py : Put Language analyzer into Elastic search
-    - es-search.py : Usage of Elastic search python client
-    - files : The Sample file for consuming
+      - index.json : Vector data local backup created by llama-index
+      - index_vector_in_opensearch.json : Vector data stored in Open search (Source: `files\all_h1.pdf`)
+      - llama-index-azure-elk-create.py: llama-index ElasticsearchVectorClient (Unofficial file to manipulate vector search, Created by me, Not Fully Tested)
+      - llama-index-lang-chain.py : Lang chain memory and agent usage with llama-index
+      - llama-index-opensearch-create.py : Vector index creation to Open search
+      - llama-index-opensearch-query-chatgpt.py : Test module to access Azure Open AI Embedding API.
+      - llama-index-opensearch-query.py : Vector index query with questions to Open search
+      - llama-index-opensearch-read.py : llama-index ElasticsearchVectorClient (Unofficial file to manipulate vector search, Created by me, Not Fully Tested)
+      - env.template : The properties. Change its name to `.env` once your values settings is done.
+      - Opensearch & Elasticsearch setup
+        - docker : Opensearch Docker-compose
+        - docker-elasticsearch : Not working for ES v8, requiring security plug-in with mandatory
+        - docker-elk : Elasticsearch Docker-compose, Optimized Docker configurations with solving security plug-in issues.
+        - es-open-search-set-analyzer.py : Put Language analyzer into Open search
+        - es-open-search.py : Open search sample index creation
+        - es-search-set-analyzer.py : Put Language analyzer into Elastic search
+        - es-search.py : Usage of Elastic search python client
+        - files : The Sample file for consuming
 
-</details>
+    ### **LlamaIndex example**
 
-### **LlamaIndex example**
+    - llama-index-es-handson\callback-debug-handler.py: callback debug handler
+    - llama-index-es-handson\chat-engine-flare-query.py: FLARE
+    - llama-index-es-handson\chat-engine-react.py: ReAct
+    - llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
 
-- llama-index-es-handson\callback-debug-handler.py: callback debug handler
-- llama-index-es-handson\chat-engine-flare-query.py: FLARE
-- llama-index-es-handson\chat-engine-react.py: ReAct
-- llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
+    </details>
 
 ### **LlamaIndex Deep dive**
 
@@ -170,7 +170,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 - Query engine vs Chat engine
 
   1. The query engine wraps a `retriever` and a `response synthesizer` into a pipeline, that will use the query string to fetch nodes (sentences or paragraphs) from the index and then send them to the LLM (Language and Logic Model) to generate a response
-  1. The chat engine is a quick and simple way to chat with the data in your index. It uses a `context manager` to keep track of the conversation history and generate relevant queries for the retriever. Conceptually, it is a `stateful`` analogy of a Query Engine.
+  1. The chat engine is a quick and simple way to chat with the data in your index. It uses a `context manager` to keep track of the conversation history and generate relevant queries for the retriever. Conceptually, it is a `stateful` analogy of a Query Engine.
 
 - Storage Context vs Service Context
 
@@ -266,16 +266,16 @@ This repository contains references to LLM, as well as prompt engineering librar
 
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
-### **AOAI Ada-002 vs Lucene based search engine**
+### **text-embedding-ada-002 & Lucene based search engine**
 
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 
-- cite: [ref](https://openai.com/blog/new-and-improved-embedding-model):
+- [ref](https://openai.com/blog/new-and-improved-embedding-model):
 text-embedding-ada-002:
 Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings,
 making the new embeddings more cost effective in working with vector databases.
 
-- cite: [ref](https://opensearch.org/docs/latest/):
+- [ref](https://opensearch.org/docs/latest/):
 However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. [ref](https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/)
 
@@ -309,6 +309,13 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
   [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7)
 
 - In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [ref](https://arxiv.org/abs/2005.11401)
+
+- 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079)
+
+  1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
+  1. Sub Question Query Engine: Break down the complex  question into sub-questions
+  1. Recursive Retriever + Query Engine: Reference node relationships, rather than only finding a node (chunk) that is most relevant.
+  1. Self Correcting Query Engines: Use an LLM to evaluate its own output.
 
 - The Problem with RAG
 
@@ -547,6 +554,10 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   cite: [packt][langchain-glance]
 
+  ```python
+  chain = prompt | model | StrOutputParser() | search
+  ```
+
 ### **Langchain and Prompt engineering libraries**
 
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
@@ -575,10 +586,6 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
-
-  ```python
-  chain = prompt | model | StrOutputParser() | search
-  ```
 
 ### **Langchain Quick Start: How to Use**
 
@@ -832,6 +839,51 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [PEFT](https://huggingface.co/blog/peft): Parameter-Efficient Fine-Tuning. PEFT is an approach to fine tuning only a few parameters.
 
+  [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2303.15647)
+
+  Category: Represent approach - Description - Pseudo Code [ref](https://speakerdeck.com/schulta)
+
+  1. Adapters: Adapters - Additional Layers. Inference can be slower.
+
+      ```python
+      def transformer_with_adapter(x):
+        residual = x
+        x = SelfAttention(x)
+        x = FFN(x) # adapter
+        x = LN(x + residual)
+        residual = x
+        x = FFN(x) # transformer FFN
+        x = FFN(x) # adapter
+        x = LN(x + residual)
+        return x
+      ```
+
+  1. Soft Prompts: Prompt-Tuning - Learnable text prompts. Not always desired results.
+
+      ```python
+      def soft_prompted_model(input_ids):
+        x = Embed(input_ids)
+        soft_prompt_embedding = SoftPromptEmbed(task_based_soft_prompt)
+        x = concat([soft_prompt_embedding, x], dim=seq)
+        return model(x)
+      ```
+
+  1. Selective: BitFit - Update only the bias parameters. fast but limited.
+
+      ```python
+      params = (p for n,p in model.named_parameters() if "bias" in n)
+      optimizer = Optimizer(params)
+      ```
+
+  1. Reparametrization: LoRa - Low-rank decomposition. Efficient, Complex to implement.
+
+      ```python
+      def lora_linear(x):
+        h = x @ W # regular linear
+        h += x @ W_A @ W_B # low_rank update
+        return scale * h
+      ```
+
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685): LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA)
 
   <img src="files/LoRA.png" alt="LoRA" width="400"/>
@@ -852,7 +904,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   <img src="files/grp-attn.png" alt="llm-grp-attn" width="400"/>
 
-  [cite](https://arxiv.org/abs/2305.13245)
+  [Multi-query attention (MQA)](https://arxiv.org/abs/2305.13245)
+
+- Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [Youtube](https://www.youtube.com/watch?v=oM4VmoabDAI) / [git](https://github.com/hkproj/pytorch-llama)
 
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF
 
@@ -947,7 +1001,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Visual Prompting](https://arxiv.org/abs/2211.11635) paper
 - [Andrew Ng’s Visual Prompting Livestream](https://www.youtube.com/watch?v=FE88OOUBonQ)
 
-## **Section 6** : LLM Enhancement
+## **Section 6** : Large Language Model: Challenges and Solutions
 
 ### **Context constraints**
 
@@ -1202,16 +1256,24 @@ Camel Agents - a Hugging Face Space by camel-ai
 
 ### **Large Language and Vision Assistant**
 
+- [CLIP](https://arxiv.org/abs/2103.00020): CLIP (Contrastive Language-Image Pretraining), Predict the most relevant text snippet given an image. [git](https://github.com/openai/CLIP)
 - [LLaVa](https://arxiv.org/abs/2304.08485): Large Language-and-Vision Assistant [git](https://llava-vl.github.io/)
 - [MiniGPT-4](https://arxiv.org/abs/2304.10592): Enhancing Vision-language Understanding with Advanced Large Language Models [git](https://minigpt-4.github.io/)
 - [TaskMatrix, aka VisualChatGPT](https://arxiv.org/abs/2303.04671): Microsoft TaskMatrix [git](https://github.com/microsoft/TaskMatrix); GroundingDINO + [SAM](https://arxiv.org/abs/2304.02643) [git](https://github.com/facebookresearch/segment-anything.git)
-- [BLIP-2](https://arxiv.org/abs/2301.12597): Salesforce Research, Querying Transformer (Q-Former) [git](https://huggingface.co/blog/blip-2)
+- [BLIP-2](https://arxiv.org/abs/2301.12597): Salesforce Research, Querying Transformer (Q-Former) / [git](https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip2_models/blip2_qformer.py) / [ref](https://huggingface.co/blog/blip-2) / [Youtube](https://www.youtube.com/watch?v=k0DAtZCCl1w) / [BLIP](https://arxiv.org/abs/2201.12086): [git](https://github.com/salesforce/BLIP)
 
   - `Q-Former (Querying Transformer)`: A transformer model that consists of two submodules that share the same self-attention layers: an image transformer that interacts with a frozen image encoder for visual feature extraction, and a text transformer that can function as both a text encoder and a text decoder.
   
   - Q-Former is a lightweight transformer which employs a set of learnable query vectors to extract visual features from the frozen image encoder. It acts as an information bottleneck between the frozen image encoder and the frozen LLM.
 
-- Cross-attention [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
+  <!-- 
+  https://zhuanlan.zhihu.com/p/635603332
+  https://zhuanlan.zhihu.com/p/613247637
+  https://zhuanlan.zhihu.com/p/604318703
+  https://zhuanlan.zhihu.com/p/104393915
+  -->
+
+- Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
 
   - The model has three sub-models:
     1. A model to obtain image embeddings
@@ -1229,9 +1291,10 @@ Camel Agents - a Hugging Face Space by camel-ai
   1. [facebookresearch/segment-anything(SAM)](https://arxiv.org/abs/2304.02643): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything)
   1. [facebookresearch/SeamlessM4T](https://arxiv.org/abs/2308.11596) SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [ref](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/)
 
-- Microsoft: Kosmos-1 / Kosmos-2
+- Microsoft: Kosmos
   1. Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1](https://arxiv.org/abs/2302.14045)
   1. [Kosmos-2](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World
+  1. [Kosmos-2.5](https://arxiv.org/abs/2309.11419): A Multimodal Literate Model
 
 - Microsoft: BEiT-3
   - [BEiT-3](https://arxiv.org/abs/2208.10442): Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks
