@@ -1,4 +1,4 @@
-`updated: 09/23/2023`
+`updated: 09/26/2023`
 
 # Azure OpenAI + LLM (Large language model)
 
@@ -74,7 +74,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - OpenAI's plans
     - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
     - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
-    - [OSS Alternatives for OpenAI Code Interpreter](#oss-alternatives-for-openai-code-interpreter)
+    - [OSS Alternatives for OpenAI Advanced Data Analytics (Code Interpreter)](#oss-alternatives-for-openai-advanced-data-analytics-aka-code-interpreter)
     - [GPT-4 details leaked](#gpt-4-details-leaked)
     - [OpenAI Products](#openai-products)
   - Token Limits, Trustworthy APIs, and Memory Optimization
@@ -86,6 +86,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Section 7:** Open-source LLM & Generative AI Landscape
   - [LLM Evolutionary tree](#llm-evolutionary-tree-and-llama-family)
   - [Generative AI Landscape](#generative-ai-revolution-exploring-the-current-landscape)
+  - [A Taxonomy of Natural Language Processing](#a-taxonomy-of-natural-language-processing)
   - [OSS (Open-source) LLM](#oss-open-source-llm)
   - [Huggingface Open LLM Learboard](#huggingface-open-llm-learboard)
   - [Huggingface Transformer](#huggingface-transformer)
@@ -794,6 +795,8 @@ Each semantic function is defined by a unique prompt template file, developed us
     <!-- 1. Program Aided Language Model -->
     <!-- 1. Recursive Summarization: Long Text -> Chunks -> Summarize pieces -> Concatenate -> Summarize -->
 
+1. [Chain-of-Verification reduces Hallucination in LLMs](https://arxiv.org/abs/2309.11495): A four-step process that consists of generating a baseline response, planning verification questions, executing verification questions, and generating a final verified response based on the verification results.
+
 - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
@@ -896,6 +899,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
 
+- [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA)
+
 - [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on <b>only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.</b> LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases.
 
 ### **Llama2 Finetuning**
@@ -975,6 +980,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement |
 <!-- | Per-embedding-group quantization | Can achieve high accuracy with low bit-widths, leading to significant memory savings | May require more fine-tuning and experimentation to achieve optimal results | -->
 
+- bitsandbytes: 8-bit optimizers [git](https://github.com/TimDettmers/bitsandbytes)
+
 ### **Pruning and Sparsification**
 
 - Pruning: The process of removing some of the neurons or layers from a neural network. This can be done by identifying and removing neurons or layers that have little or no impact on the output of the network.
@@ -1045,7 +1052,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   > Azure OpenAI start to support function calling. [ref][aoai_func]
 
-### **OSS Alternatives for OpenAI Code Interpreter**
+### **OSS Alternatives for OpenAI Advanced Data Analytics (aka. Code Interpreter)**
 
 - [OpenAI Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment
 
@@ -1065,8 +1072,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 ### **OpenAI Products**
 
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
-- [DALL·E 3](https://openai.com/dall-e-3) [git](https://github.com/openai/dall-e)
+- [DALL·E 3](https://openai.com/dall-e-3) : In September 2023, OpenAI announced their latest image model, DALL-E 3 [git](https://github.com/openai/dall-e)
 - Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [ref](https://openai.com/blog/introducing-chatgpt-enterprise)
+- [Custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions.
 
 ---
 
@@ -1142,7 +1150,21 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Generative AI Revolution: Exploring the Current Landscape**
 
-- [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [doc](files/gen-ai-landscape.pdf) ⭐⭐⭐⭐
+- [The Generative AI Revolution: Exploring the Current Landscape](https://pub.towardsai.net/the-generative-ai-revolution-exploring-the-current-landscape-4b89998fcc5f) : Printed version for backup [doc](files/gen-ai-landscape.pdf)
+
+### **A Taxonomy of Natural Language Processing**
+
+- An overview of different fields of study and recent developments in NLP. Printed version for backup [doc](files/taxonomy-nlp.pdf) [ref](https://towardsdatascience.com/a-taxonomy-of-natural-language-processing-dfc790cb4c01)
+
+  “Exploring the Landscape of Natural Language Processing Research” [ref](https://arxiv.org/abs/2307.10652)
+
+  <img src="files/taxonomy-nlp.png" width="650" />
+
+  NLP taxonomy
+
+  <img src="files/taxonomy-nlp2.png" width="650" />
+
+  Distribution of the number of papers by most popular fields of study from 2002 to 2022
 
 ### **OSS (Open-source) LLM**
 
@@ -1253,6 +1275,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - 1:1 Conversation between two ai agents
 Camel Agents - a Hugging Face Space by camel-ai
 [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
+- Microsoft Autogen: Customizable and conversable agents framework [ref](https://www.microsoft.com/en-us/research/blog/autogen-enabling-next-generation-large-language-model-applications/)
 
 ### **Large Language and Vision Assistant**
 
@@ -1274,6 +1297,7 @@ Camel Agents - a Hugging Face Space by camel-ai
   -->
 
 - Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
+- Cross-attention [ref](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)
 
   - The model has three sub-models:
     1. A model to obtain image embeddings
@@ -1479,6 +1503,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 ## **Section 12** : LLM Evaluation
 
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
+- [promptfoo](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.
 - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
 - OpenAI Evals: [git](https://github.com/openai/evals)
 - TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
