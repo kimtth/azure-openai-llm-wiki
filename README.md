@@ -1,5 +1,3 @@
-`updated: 09/26/2023`
-
 # Azure OpenAI + LLM (Large language model)
 
 This repository contains references to LLM, as well as prompt engineering libraries, focused on Azure-related libraries.
@@ -97,6 +95,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [AutoGPT and Communicative Agents](#autogpt-and-communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
+  - [ChatGPT for Robotics](#chatgpt-for-robotics)
   - [Application and UI/UX](#application-and-uiux)
   - Data Extraction methods
     - [Math problem-solving skill](#math-problem-solving-skill)
@@ -113,7 +112,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Section 11** : Datasets for LLM Training
   - [Datasets for LLM Training](#section-11--datasets-for-llm-training)
 - **Section 12** : LLM Evaluation
-  - [Evaluation of Large Language Models](#section-12--llm-evaluation)
+  - [Evaluation of Large Language Models & LLMOps](#section-12--llm-evaluation--llmops)
 
 - **Acknowledgements**
   - [Acknowledgements](#acknowledgements): -
@@ -292,7 +291,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 
   1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
   1. [guidance][guidance]: A guidance language for controlling large language models. Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction. Langchain libaries but different approach rather than ochestration, particularly effective for implementing  `Chain of Thought`. / [git][guidance]
-  1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [ref][promptflow-doc]
+  1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [ref][promptflow-doc] / [git][prompt-flow-git]
   1. [Prompt Engine][prompt-engine]: Craft prompts for Large Language Models: `npm install prompt-engine` / [git][prompt-engine] / [python][prompt-engine-py]
   1. [TypeChat][typechat]: TypeChat replaces prompt engineering with schema engineering. To build natural language interfaces using types. / [git][typechat-git]
   1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
@@ -582,9 +581,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
 - [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating. 
-
-  <img src="files/langchain_debugging.png" width="150" />
-
+  <!-- <img src="files/langchain_debugging.png" width="150" /> -->
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
 
@@ -772,11 +769,13 @@ Each semantic function is defined by a unique prompt template file, developed us
 1. [ReAct](https://arxiv.org/abs/2210.03629): Grounding with external sources. (Reasoning and Act): Combines reasoning and acting [ref](https://react-lm.github.io/)
 1. Chain-of-Thought Prompting  
     - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2205.11916)
-1. [Tree of Thought](https://arxiv.org/abs/2305.10601): Self-evaluate the progress intermediate thoughts make towards solving a problem [git](https://github.com/ysymyth/tree-of-thought-llm)
+1. [Tree of Thought](https://arxiv.org/abs/2305.10601): Self-evaluate the progress intermediate thoughts make towards solving a problem [git](https://github.com/ysymyth/tree-of-thought-llm) / Agora: Tree of Thoughts (ToT) [git](https://github.com/kyegomez/tree-of-thoughts)
 
     - `tree-of-thought\forest_of_thought.py`: Forest of thought Decorator sample
     - `tree-of-thought\tree_of_thought.py`: Tree of thought Decorator sample
     - `tree-of-thought\react-prompt.py`: ReAct sample without Langchain
+
+1. [Graph of Thoughts (GoT)](https://arxiv.org/abs/2308.09687) Solving Elaborate Problems with Large Language Models [git](https://github.com/spcl/graph-of-thoughts)
 1. [Retrieval Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401): To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model.
 1. Zero-shot, one-shot and few-shot
 
@@ -797,12 +796,16 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 1. [Chain-of-Verification reduces Hallucination in LLMs](https://arxiv.org/abs/2309.11495): A four-step process that consists of generating a baseline response, planning verification questions, executing verification questions, and generating a final verified response based on the verification results.
 
-- [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
+1. Prompt Engineering Guide
 
-- [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
+    - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
 
-- [Promptist][Promptist]: Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
-  - For example, instead of simply passing "Cats dancing in a space club" as a prompt, an engineered prompt might be "Cats dancing in a space club, digital painting, artstation, concept art, soft light, hdri, smooth, sharp focus, illustration, fantasy."
+    - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
+
+1. Promptist
+
+    - [Promptist][Promptist]: Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
+      - For example, instead of simply passing "Cats dancing in a space club" as a prompt, an engineered prompt might be "Cats dancing in a space club, digital painting, artstation, concept art, soft light, hdri, smooth, sharp focus, illustration, fantasy."
 
 ### **Azure OpenAI Prompt Guide**
 
@@ -811,13 +814,11 @@ Each semantic function is defined by a unique prompt template file, developed us
 ### **OpenAI Prompt Guide**
 
 - [Prompt example](https://platform.openai.com/examples)
-
 - [Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 
 ### **DeepLearning.ai Short Courses**
 
 - [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-
 - [Short courses](https://www.deeplearning.ai/short-courses/)
 
 ### **Awesome ChatGPT Prompts**
@@ -889,18 +890,12 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685): LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA)
 
-  <img src="files/LoRA.png" alt="LoRA" width="400"/>
+    <img src="files/LoRA.png" alt="LoRA" width="400"/>
 
-- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314): 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA).
-
-    [artidoro/qlora](https://github.com/artidoro/qlora)
-
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314): 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [git](https://github.com/artidoro/qlora)
 - [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155)
-
 - [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
-
 - [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA)
-
 - [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on <b>only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.</b> LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases.
 
 ### **Llama2 Finetuning**
@@ -1064,6 +1059,10 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter): Let language models run code on your computer.
 
 ### **GPT-4 details leaked**
+
+- GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
+
+- GPT-4 details leaked
 
   > GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
 
@@ -1331,6 +1330,10 @@ Camel Agents - a Hugging Face Space by camel-ai
 
       <img src="files/multi-llm.png" width="180" />
 
+### **ChatGPT for Robotics**
+
+- PromptCraft-Robotics: Robotics and a robot simulator with ChatGPT integration [git](https://github.com/microsoft/PromptCraft-Robotics)
+
 ### **Application and UI/UX**
 
 - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python
@@ -1500,13 +1503,19 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 
   </details>
 
-## **Section 12** : LLM Evaluation
+## **Section 12** : LLM Evaluation & LLMOps
 
-- Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
-- [promptfoo](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.
-- PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
-- OpenAI Evals: [git](https://github.com/openai/evals)
-- TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
+1. Evaluation
+
+    - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109)
+    - [promptfoo](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.
+    - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
+    - OpenAI Evals: [git](https://github.com/openai/evals)
+    - TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
+
+1. LLMOps: Large Language Model Operations
+
+    - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
 
 ## **Acknowledgements**
 
@@ -1540,3 +1549,4 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 [Structured Prompting]: https://arxiv.org/abs/2212.06713
 [upstage]: https://en.upstage.ai/newsroom/upstage-huggingface-llm-no1
 [llm-collection]: https://www.promptingguide.ai/models/collection
+[prompt-flow-git]: https://github.com/microsoft/promptflow
