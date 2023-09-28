@@ -57,14 +57,13 @@ This repository contains references to LLM, as well as prompt engineering librar
     - [OpenAI Prompt Guide](#openai-prompt-guide)
     - [DeepLearning.ai Short Courses](#deeplearningai-short-courses)
     - [Awesome ChatGPT Prompts](#awesome-chatgpt-prompts)
-    - [ChatGPT : “user”, “assistant”, and “system” messages.](#chatgpt--user-assistant-and-system-messages)
   - Finetuning & Model Compression
     - [Finetuning](#finetuning--model-compression) : PEFT - LoRA - QLoRA
     - [Llama2 Finetuning](#llama2-finetuning): Llama 2
     - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
     - [Quantization](#quantization): [[contd.](README_SBCs.md)]
     - [Pruning and Sparsification](#pruning-and-sparsification)
-    - [Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset)
+    - [Knowledge Distillation: Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset)
   - Visual Prompting
     - [What is the Visual Prompting?](#visual-prompting)
 - **Section 6:** Large Language Model: Challenges and Solutions
@@ -310,7 +309,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 
 - In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [ref](https://arxiv.org/abs/2005.11401)
 
-- 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079)
+- 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079) / [git](https://github.com/weaviate/recipes/tree/main/integrations/llamaindex)
 
   1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
   1. Sub Question Query Engine: Break down the complex  question into sub-questions
@@ -536,7 +535,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 
   `\bing-search-webui`: (Utility, to see the search results from Bing Search API)
 
-    <img src="code\bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="150"/>
+    <!-- <img src="code\bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="150"/> -->
 
 ## **Section 4** : Langchain & Its Competitors
 
@@ -749,7 +748,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 | ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Conditions        | {{#if user}}<br>  Hello {{user}}!<br>{{else}}<br>  Hello Stranger!<br>{{/if}} | {% if user %}<br>  Hello {{ user }}!<br>{% else %}<br>  Hello Stranger!<br>{% endif %} | Branching features such as "if", "for", and code blocks are not part of SK's template language.     |
 | Loop              | {{#each items}}<br>  Hello {{this}}<br>{{/each}}                              | {% for item in items %}<br>  Hello {{ item }}<br>{% endfor %}                          | By using a simple language, the kernel can also avoid complex parsing and external dependencies.    |
-| Langchain Library | guidance                                                                      | Azure Machine Learning<br>Prompt flow                                                  | Semactic Kernel                                                                                     |
+| Langchain Library | guidance                                                                      | Langchain & Prompt flow                                                  | Semactic Kernel                                                                                     |
 | URL               | [ref](https://handlebarsjs.com/guide/)                                       | [ref](https://jinja.palletsprojects.com/en/2.10.x/templates/)                         | [ref](https://learn.microsoft.com/en-us/semantic-kernel/prompt-engineering/prompt-template-syntax) |
 
 ## **Section 5**: Prompt Engineering & Finetuning
@@ -824,16 +823,6 @@ Each semantic function is defined by a unique prompt template file, developed us
 ### **Awesome ChatGPT Prompts**
 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
-
-### **ChatGPT : “user”, “assistant”, and “system” messages.**
-
- To be specific, the ChatGPT API allows for differentiation between “user”, “assistant”, and “system” messages.
-
- 1. always obey "system" messages.
- 1. all end user input in the “user” messages.
- 1. "assistant" messages as previous chat responses from the assistant.
-
- Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
 
 ### **Finetuning & Model Compression**
 
@@ -1070,10 +1059,21 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **OpenAI Products**
 
+- [ChatGPT can now see, hear, and speak](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [Whisper](https://github.com/openai/whisper) / [CLIP](https://github.com/openai/Clip)
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
 - [DALL·E 3](https://openai.com/dall-e-3) : In September 2023, OpenAI announced their latest image model, DALL-E 3 [git](https://github.com/openai/dall-e)
 - Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [ref](https://openai.com/blog/introducing-chatgpt-enterprise)
 - [Custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions.
+
+### **ChatGPT : “user”, “assistant”, and “system” messages.**
+
+ To be specific, the ChatGPT API allows for differentiation between “user”, “assistant”, and “system” messages.
+
+ 1. always obey "system" messages.
+ 1. all end user input in the “user” messages.
+ 1. "assistant" messages as previous chat responses from the assistant.
+
+ Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
 
 ---
 
@@ -1386,12 +1386,14 @@ Camel Agents - a Hugging Face Space by camel-ai
 - [LLMの推論を効率化する量子化技術調査](https://blog.brainpad.co.jp/entry/2023/09/01/153003): Survey of quantization techniques to improve efficiency of LLM reasoning
 - [LLMの出力制御や新モデルについて](https://blog.brainpad.co.jp/entry/2023/09/08/155352): About LLM output control and new models
 - [Azure OpenAIを活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ
+- [生成AI・LLMのツール拡張に関する論文の動向調査](https://blog.brainpad.co.jp/entry/2023/09/22/150341): Survey of trends in papers on tool extensions for generative AI and LLM
+- [LLMの学習・推論の効率化・高速化に関する技術調査](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference
 
 ## Other materials
 
 - [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): The Transformer,
 based solely on attention mechanisms, dispensing with recurrence and convolutions
-entirely.
+entirely. [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/)
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [doc](files/top-cited-2020-2021-2022-papers.pdf)
 - [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [doc](files/ml_rsc.pdf)
 - [What are the most influential current AI Papers?](https://arxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv)
@@ -1430,6 +1432,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
 - Edge and Chrome Extension & Plugin
+  - [MaxAI.me](https://www.maxai.me/)
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
   - [ChatHub](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
   - [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
