@@ -309,6 +309,14 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 
 - In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [ref](https://arxiv.org/abs/2005.11401)
 
+- In 2021, [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401.pdf)
+
+  1. RAG-sequence — We retrieve k documents, and use them to generate all the output tokens that answer a user query.
+
+  1. RAG-token— We retrieve k documents, use them to generate the next token, then retrieve k more documents, use them to generate the next token, and so on. This means that we could end up retrieving several different sets of documents in the generation of a single answer to a user’s query.
+
+  - Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a)
+
 - 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079) / [git](https://github.com/weaviate/recipes/tree/main/integrations/llamaindex)
 
   1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
@@ -580,7 +588,7 @@ Semantic Kernel でトークンの限界を超えるような長い文章を分�
 - [Langchain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
 - [Langchain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together
-- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating. 
+- [LangSmith](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating.
   <!-- <img src="files/langchain_debugging.png" width="150" /> -->
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
@@ -905,6 +913,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF
 
+- Official LLama Recipes incl. Finetuning: [git](https://github.com/facebookresearch/llama-recipes)
+
 - The sources of Inference code and finetuning code are commented on the files. [git](https://github.com/facebookresearch/llama)
   - llama2-trial.ipynb: LLama 2 inference code in local
   - llama2-finetune.ipynb: LLama 2 Finetuning
@@ -1056,6 +1066,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 ### **GPT-4 details leaked**
 
 - GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
+
+- [The Dawn of LMMs](https://arxiv.org/abs/2309.17421): Preliminary Explorations with GPT-4V(ision)
 
 - GPT-4 details leaked
 
@@ -1447,6 +1459,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 - Oceans of AI - All AI Tools <https://play.google.com/store/apps/details?id=in.blueplanetapps.oceansofai&hl=en_US>
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
+- Future Tools: <https://www.futuretools.io/>
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
