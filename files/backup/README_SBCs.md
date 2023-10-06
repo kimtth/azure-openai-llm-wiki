@@ -1,6 +1,10 @@
 
 # Run ChatGPT on a Raspberry Pi / Android
 
+## 5 LLM Models for Raspberry Pi
+
+- https://scifilogic.com/llm-models-for-raspberry-pi/
+
 ## Run ChatGPT on a Raspberry Pi (not really, it's Alpaca)
 
 - https://www.youtube.com/watch?v=vJ1eeGo7HUw
@@ -54,7 +58,7 @@ https://github.com/Lightning-AI/lit-llama
 
 ## Quantization Tutorial
 
-<img src="files/quantization.png" alt="qunat" width="600"/>
+<img src="../quantization.png" alt="qunat" width="600"/>
 
 - [49_quantization/quantization.ipynb](https://github.com/codebasics/deep-learning-keras-tf-tutorial/blob/master/49_quantization/quantization.ipynb)
 

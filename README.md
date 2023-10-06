@@ -61,7 +61,7 @@ This repository contains references to LLM, as well as prompt engineering librar
     - [Finetuning](#finetuning--model-compression) : PEFT - LoRA - QLoRA
     - [Llama2 Finetuning](#llama2-finetuning): Llama 2
     - [RLHF (Reinforcement Learning from Human Feedback) & SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
-    - [Quantization](#quantization): [[contd.](README_SBCs.md)]
+    - [Quantization](#quantization): [[contd.](.\files\backup\README_SBCs.md)]
     - [Pruning and Sparsification](#pruning-and-sparsification)
     - [Knowledge Distillation: Small size with Textbooks](#small-size-with-textbooks-high-quality-synthetic-dataset)
   - Visual Prompting
@@ -91,7 +91,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Section 8** : References
   - [Survey of LLMs papers](#survey-of-llms-papers)
   - [picoGPT and lit-gpt](#picogpt-and-lit-gpt): Implementation of LLMs
-  - [AutoGPT and Communicative Agents](#autogpt-and-communicative-agents)
+  - [Agents: AutoGPT and Communicative Agents](#agents-autogpt-and-communicative-agents)
   - [Large Language and Vision Assistant](#large-language-and-vision-assistant)
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
   - [ChatGPT for Robotics](#chatgpt-for-robotics)
@@ -103,7 +103,7 @@ This repository contains references to LLM, as well as prompt engineering librar
   - [日本語 (Japanese Materials)](#日本語japanese-materials)
   - [Other Materials](#other-materials)
 - **Section 9** : Relevant solutions
-  - [Microsoft Fabric](#section-9--relevant-solutions): [contd.](README_Fabric.md): Single unified data analytics solution
+  - [Microsoft Fabric](#section-9--relevant-solutions): Single unified data analytics solution
   - [Office Copilot](#section-9--relevant-solutions): Semantic Interpreter, Natural Language Commanding via Program Synthesis
   - [microsoft/unilm](#section-9--relevant-solutions): Microsoft Foundation models
 - **Section 10** : AI Tools
@@ -119,7 +119,7 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Symbols**
   - `ref`: external url
   - `doc`: archived doc
-  - `cite`: the source of a comment
+  - `cite`: the source of comments
   - `git`: github link
 
 ## **Section 1** : LlamaIndex and Vector Storage (Database)
@@ -911,6 +911,53 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [Youtube](https://www.youtube.com/watch?v=oM4VmoabDAI) / [git](https://github.com/hkproj/pytorch-llama)
 
+  <details>
+
+  Rotary PE
+
+  ```python
+  def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
+      # Separate the last dimension pairs of two values, representing the real and imaginary parts of the complex number
+      # Two consecutive values will become a single complex number
+      # (B, Seq_Len, H, Head_Dim) -> (B, Seq_Len, H, Head_Dim/2)
+      x_complex = torch.view_as_complex(x.float().reshape(*x.shape[:-1], -1, 2))
+      # Reshape the freqs_complex tensor to match the shape of the x_complex tensor. So we need to add the batch dimension and the head dimension
+      # (Seq_Len, Head_Dim/2) --> (1, Seq_Len, 1, Head_Dim/2)
+      freqs_complex = freqs_complex.unsqueeze(0).unsqueeze(2)
+      # Multiply each complex number in the x_complex tensor by the corresponding complex number in the freqs_complex tensor
+      # Which results in the rotation of the complex number as shown in the Figure 1 of the paper
+      # (B, Seq_Len, H, Head_Dim/2) * (1, Seq_Len, 1, Head_Dim/2) = (B, Seq_Len, H, Head_Dim/2)
+      x_rotated = x_complex * freqs_complex
+      # Convert the complex number back to the real number
+      # (B, Seq_Len, H, Head_Dim/2) -> (B, Seq_Len, H, Head_Dim/2, 2)
+      x_out = torch.view_as_real(x_rotated)
+      # (B, Seq_Len, H, Head_Dim/2, 2) -> (B, Seq_Len, H, Head_Dim)
+      x_out = x_out.reshape(*x.shape)
+      return x_out.type_as(x).to(device)
+  ```
+
+  KV Cache, Grouped Query Attention
+
+  ```python
+    # Replace the entry in the cache
+    self.cache_k[:batch_size, start_pos : start_pos + seq_len] = xk
+    self.cache_v[:batch_size, start_pos : start_pos + seq_len] = xv
+
+    # (B, Seq_Len_KV, H_KV, Head_Dim)
+    keys = self.cache_k[:batch_size, : start_pos + seq_len]
+    # (B, Seq_Len_KV, H_KV, Head_Dim)
+    values = self.cache_v[:batch_size, : start_pos + seq_len]
+
+    # Since every group of Q shares the same K and V heads, just repeat the K and V heads for every Q in the same group.
+
+    # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
+    keys = repeat_kv(keys, self.n_rep)
+    # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
+    values = repeat_kv(values, self.n_rep)
+  ```
+
+  </details>
+
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF
 
 - Official LLama Recipes incl. Finetuning: [git](https://github.com/facebookresearch/llama-recipes)
@@ -1292,8 +1339,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt)
 
-### **AutoGPT and Communicative Agents**
+### **Agents: AutoGPT and Communicative Agents**
 
+- [AgentBench](https://arxiv.org/abs/2308.03688) Evaluating LLMs as Agents: Assess LLM-as Agent’s reasoning and decision-making abilities.
 - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular
 - [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation - Coworking of 4 agents
 - [microsoft/JARVIS](https://github.com/microsoft/JARVIS)
@@ -1548,6 +1596,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 1. LLMOps: Large Language Model Operations
 
     - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
+    - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
 
 ## **Acknowledgements**
 
