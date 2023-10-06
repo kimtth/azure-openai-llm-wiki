@@ -113,8 +113,8 @@ This repository contains references to LLM, as well as prompt engineering librar
 - **Section 12** : LLM Evaluation
   - [Evaluation of Large Language Models & LLMOps](#section-12--llm-evaluation--llmops)
 
-- **Acknowledgements**
-  - [Acknowledgements](#acknowledgements): -
+- **Contributors**
+  - [Contributors](#contributors): 👀
 
 - **Symbols**
   - `ref`: external url
@@ -703,23 +703,20 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 ### **Semantic Kernel : Prompt Template language Key takeaways**
 
+```
 1. Variables : use the {{$variableName}} syntax : Hello {{$name}}, welcome to Semantic Kernel!
-
 2. Function calls: use the {{namespace.functionName}} syntax : The weather today is {{weather.getForecast}}.
-
-3. Function parameters: {{namespace.functionName $varName}} and {{namespace.functionName "value"}} syntax : The weather today in {{$city}} is {{weather.getForecast $city}}.
-
+3. Function parameters: {{namespace.functionName $varName}} and {{namespace.functionName "value"}} syntax
+   : The weather today in {{$city}} is {{weather.getForecast $city}}.
 4. Prompts needing double curly braces :
-{{ "{{" }} and {{ "}}" }} are special SK sequences.
-
+   {{ "{{" }} and {{ "}}" }} are special SK sequences.
 5. Values that include quotes, and escaping :
 
     For instance:
-
     ... {{ 'no need to \\"escape" ' }} ...
     is equivalent to:
-
     ... {{ 'no need to "escape" ' }} ...
+```
 
 ### **Semantic Kernel Glossary**
 
@@ -895,11 +892,34 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Fine-tuning a GPT — LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA. Printed version for backup. [doc](files/Fine-tuning_a_GPT_LoRA.pdf)
 
 - [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA)
-  1. The document states that LoRA alone is not sufficient for long context extension.
-  1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
-  1. S2-Attn can be implemented with only two lines of code in training.
+
+  <details>
+
+    <img src="files/longlora.png" alt="long-lora"/>
+
+    1. The document states that LoRA alone is not sufficient for long context extension.
+    1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
+    1. S2-Attn can be implemented with only two lines of code in training.
+
+  </details>
 
 - [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on <b>only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.</b> LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases.
+
+- [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453) 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm)
+
+  <details>
+
+  <img src="files/streaming-llm.png" alt="streaming-attn"/>
+
+  - Key-Value (KV) cache is an important component in the StreamingLLM framework.
+
+  1. Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
+
+  1. Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
+
+  1. StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
+
+  </details>
 
 ### **Llama2 Finetuning**
 
@@ -1598,7 +1618,21 @@ The library is an open-source tool that offers a comprehensive suite of efficien
     - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
     - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
 
-## **Acknowledgements**
+## **Contributors**
+
+<a href="https://github.com/kimtth/azure-openai-llm-vector-langchain/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kimtth/azure-openai-llm-vector-langchain" />
+</a>
+
+<!-- ```bibtex
+@misc{Kimtth,
+    title={GitHub - kimtth:Azure OpenAI + LLM (Large language model)},
+    url={https://github.com/kimtth/azure-openai-llm-vector-langchain},
+    journal={GitHub},
+    author={Kimtth},
+    language={en/jp/kr}
+}
+``` -->
 
 [aoai_func]: https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api
 [typechat]: https://microsoft.github.io/TypeChat/blog/introducing-typechat
