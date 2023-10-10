@@ -22,3 +22,4 @@ code/azure-vector-db-python/.env
 .venv
 venv
 .gitignore
+temp.md
