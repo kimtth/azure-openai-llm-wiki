@@ -59,12 +59,12 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
     - [What is the Visual Prompting?](#3-visual-prompting)
 - **Section 6:** Challenges and Solutions in Large Language Models
   - [Context Constraints](#context-constraints): incl. RoPE
-  - OpenAI's Roadmap and Future Plans
-    - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
+  - [OpenAI's Roadmap and Products](#openais-roadmap-and-future-plans)
+    <!-- - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
     - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
     - [OSS Alternatives for OpenAI Advanced Data Analytics (Code Interpreter)](#oss-alternatives-for-openai-advanced-data-analytics-aka-code-interpreter)
     - [GPT-4 details leaked](#gpt-4-details-leaked)
-    - [OpenAI Products](#openai-products)
+    - [OpenAI Products](#openai-products) -->
   - Numbers LLM, Token Limits, Trustworthy APIs, and Memory Optimization
     - [Numbers LLM and LLM Token Limits](#numbers-llm-and-llm-token-limits)
     - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
