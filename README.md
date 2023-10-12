@@ -3,6 +3,7 @@
 This repository contains references to Azure OpenAI, LLM, related services, and libraries.
 
 > Disclaimer: Not being able to keep up with and test every recent update, sometimes I simply copied them into this repository for later review. Please be aware that `some code might be outdated.`
+
 > `Writing Rule: Brief each item on one or a few lines as much as possible.`
 
 ## What's the difference between Azure OpenAI and OpenAI?
@@ -136,8 +137,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [ref][llama-index-doc]
 
   > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [cite](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading](https://arxiv.org/abs/2310.05029)
-    1. Build a data structure (memory tree)
-    1. Transverse it via LLM prompting
+  >  1. Build a data structure (memory tree)
+  >  1. Transverse it via LLM prompting
 
   <details>
 
@@ -268,9 +269,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 ### **Vector Storage Options for Azure**
 
-- [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): Langchain Document [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
+- [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
 - [Vector Search in Azure Cosmos DB for MongoDB vCore](https://devblogs.microsoft.com/cosmosdb/introducing-vector-search-in-azure-cosmos-db-for-mongodb-vcore/)
-- [Vector search (public preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): Langchain Document [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
+- [Vector search (public preview) - Azure Cognitive Search](https://github.com/Azure/cognitive-search-vector-pr): [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/azuresearch)
 - [Azure Cache for Redis Enterprise](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-vector-search-similarity-capabilities-in-azure-cache/ba-p/3827512): Enterprise [Redis Vector Search Demo](https://ecommerce.redisventures.com/)
 - azure-vector-db-python\vector-db-in-azure-native.ipynb: sample code for vector databases in azure
 
@@ -286,7 +287,7 @@ Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth
 making the new embeddings more cost effective in working with vector databases.
 - However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
 16,000 for the other engines. [ref](https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/)
-- @LlamaIndex `ElasticsearchReader` class:
+- LlamaIndex `ElasticsearchReader` class:
 The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually, it can only work with open search.
 - [Vector Search with OpenAI Embeddings: Lucene Is All You Need](https://arxiv.org/abs/2308.14963): Our experiments were based on Lucene 9.5.0, but indexing was a bit tricky
 because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, which was not sufficient for OpenAI’s 1536-dimensional embeddings. Although the resolution of this issue, which is to make vector dimensions configurable on a per codec basis, has been merged to the Lucene source trunk [git](https://github.com/apache/lucene/pull/12436), this feature has not been folded into a Lucene release (yet) as of early August 2023.
@@ -419,7 +420,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 ### **Azure Cognitive Search : Vector Search**
 
 - In the vector databases category within Azure, several alternative solutions are available. However, ACS is the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
-- [git](https://github.com/Azure/cognitive-search-vector-pr): Vector Search Sample Code
+- Azure Cognitive Search: Vector Search Sample Code: [git](https://github.com/Azure/cognitive-search-vector-pr)
 - Azure Cognitive Search supports
   1. Text Search
   1. Pure Vector Search
@@ -502,7 +503,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 - Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [ref](https://devblogs.microsoft.com/semantic-kernel)
 - SemanticKernel Implementation sample to overcome Token limits of Open AI model.
 Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
-[Semantic Kernel でトークンの限界を超える](https://zenn.dev/microsoft/articles/semantic-kernel-10)
+[ref](https://zenn.dev/microsoft/articles/semantic-kernel-10)
 
 ### **Semantic Function**
 
@@ -552,7 +553,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
   <img src="files/langchain-glance.png" width="400">
 
-  cite: [packt][langchain-glance]
+  [ref][langchain-glance]
 
   ```python
   chain = prompt | model | StrOutputParser() | search
@@ -653,7 +654,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 ### **Criticism to Langchain**
 
-- The Problem With LangChain: [ref](https://minimaxir.com/2023/07/langchain-problem/), [git](https://github.com/minimaxir/langchain-problems)
+- The Problem With LangChain: [ref](https://minimaxir.com/2023/07/langchain-problem/) / [git](https://github.com/minimaxir/langchain-problems)
 - What’s your biggest complaint about langchain?: [ref](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your_biggest_complaint_about_langchain/)
 - Langchain Is Pointless: [ref](https://news.ycombinator.com/item?id=36645575)
 
@@ -667,7 +668,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 - [LangChain](https://python.langchain.com/en/latest/index.html)
 - [LlamaIndex](https://github.com/jerryjliu/llama_index)
 - [Microsoft guidance](https://github.com/microsoft/guidance)
-- [Azure Machine Learning Promt flow][promptflow] / [git](https://github.com/microsoft/promptflow)
+- [Azure Machine Learning Promt flow][promptflow]: [git](https://github.com/microsoft/promptflow)
 
 ### **Langchain vs LlamaIndex**
 
@@ -1011,7 +1012,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Large Transformer Model Inference Optimization**
 
-- [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/)
+- [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/): Besides the increasing size of SoTA models, there are two main factors contributing to the inference challenge ...
 
 ### **3. Visual Prompting**
 
@@ -1038,11 +1039,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **OpenAI's Roadmap and Future Plans**
 
-### **OpenAI's plans according to Sam Altman**
+#### **OpenAI's plans according to Sam Altman**
 
 - [Archived Link](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : Printed version for backup [doc](files/openai-plans.pdf)
 
-### **OpenAI Plugin and function calling**
+#### **OpenAI Plugin and function calling**
 
 - [ChatGPT Plugin](https://openai.com/blog/chatgpt-plugins)
 - [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling)
@@ -1051,7 +1052,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
   - Azure OpenAI start to support function calling. [ref][aoai_func]
 
-### **OSS Alternatives for OpenAI Advanced Data Analytics (aka. Code Interpreter)**
+#### **OSS Alternatives for OpenAI Advanced Data Analytics (aka. Code Interpreter)**
 
 - [OpenAI Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment
   - We provide our models with a working Python interpreter in a sandboxed, firewalled execution environment, along with some ephemeral disk space.
@@ -1060,7 +1061,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter.
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter): Let language models run code on your computer.
 
-### **GPT-4 details leaked**
+#### **GPT-4 details leaked**
 
 - GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
 - [The Dawn of LMMs](https://arxiv.org/abs/2309.17421): Preliminary Explorations with GPT-4V(ision)
@@ -1068,7 +1069,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   - GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
   - The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [ref](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked)
 
-### **OpenAI Products**
+#### **OpenAI Products**
 
 - [ChatGPT can now see, hear, and speak](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [Whisper](https://github.com/openai/whisper) / [CLIP](https://github.com/openai/Clip)
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
@@ -1076,7 +1077,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [ref](https://openai.com/blog/introducing-chatgpt-enterprise)
 - [Custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions.
 
-### **ChatGPT : “user”, “assistant”, and “system” messages.**
+#### **ChatGPT : “user”, “assistant”, and “system” messages.**
 
  To be specific, the ChatGPT API allows for differentiation between “user”, “assistant”, and “system” messages.
 
@@ -1184,7 +1185,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Open-Source Large Language Models**
 
-- [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76): Printed version for "Medium" limits. [doc](files/list_of_oss_llm.pdf)
+- [The LLM Index](https://sapling.ai/llm/index): A list of large language models (LLMs)
+- [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76): Printed version for "Medium" limits. [doc](files/list_of_oss_llm.pdf): Mar 30 2023
 - [LLM Collection][llm-collection]: promptingguide.ai
 - Upstage's 70B Language Model Outperforms GPT-3.5: [ref][upstage]
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "List of OSS LLM".
@@ -1208,9 +1210,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **LLMs for Coding and Software Development**
 
-- [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder)
-- git: [bigcode/starcoder](https://huggingface.co/bigcode/starcoder)
-- [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/), [git](https://github.com/facebookresearch/codellama)
+- [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder): [git](https://huggingface.co/bigcode/starcoder)
+- [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) / [git](https://github.com/facebookresearch/codellama)
 
 ## **Section 8:  Comprehensive Reference Materials**
 
@@ -1351,7 +1352,7 @@ Camel Agents - a Hugging Face Space by camel-ai
 - Streaming with Azure OpenAI [SSE](https://github.com/thivy/azure-openai-js-stream)
 - [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app
 - Embedding does not use Open AI. Can be executed locally: [pdfGPT](https://github.com/bhaskatripathi/pdfGPT)
-- Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs. (github.com)
+- Tiktoken Alternative in C#: [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): .NET and Typescript implementation of BPE tokenizer for OpenAI LLMs.
 - [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests
 - [Opencopilot](https://github.com/opencopilotdev/opencopilot): Build and embed open-source AI Copilots into your product with ease.
 - [TaxyAI/browser-extension](https://github.com/TaxyAI/browser-extension): Browser Automation by Chrome debugger API and Prompt > `src/helpers/determineNextAction.ts`
@@ -1445,7 +1446,9 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 - [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
 - [Open LLMs and Datasets](https://github.com/eugeneyan/open-llms): A list of open LLMs available for commercial use.
 - [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/): The Stanford Question Answering Dataset (SQuAD), a set of Wikipedia articles, 100,000+ question-answer pairs on 500+ articles.
-- [RedPajama](https://together.ai/blog/redpajama): LLaMA training dataset of over 1.2 trillion tokens [git](https://github.com/togethercomputer/RedPajama-Data): Pretrain for a base model
+- [RedPajama](https://together.ai/blog/redpajama): LLaMA training dataset of over 1.2 trillion tokens [git](https://github.com/togethercomputer/RedPajama-Data)
+
+Pretrain for a base model
 
 ```json
 {
@@ -1455,7 +1458,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 }
 ```
 
-- databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/databricks/databricks-dolly-15k): SFT training - QA pairs or Dialog
+databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/databricks/databricks-dolly-15k): SFT training - QA pairs or Dialog
 
 ```json
 {
@@ -1468,7 +1471,7 @@ The library is an open-source tool that offers a comprehensive suite of efficien
 }
 ```
 
-- [Anthropic human-feedback](https://huggingface.co/datasets/Anthropic/hh-rlhf): RLHF training - Chosen and Rejected pairs
+[Anthropic human-feedback](https://huggingface.co/datasets/Anthropic/hh-rlhf): RLHF training - Chosen and Rejected pairs
 
 ```json
 {
