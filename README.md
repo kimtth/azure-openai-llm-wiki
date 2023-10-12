@@ -49,10 +49,10 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
     - [Prompt Guide](#prompt-guide)
     - [DeepLearning.ai Short Courses](#deeplearningai-short-courses)
   - 2.Finetuning & Model Compression
-    - [Advanced Finetuning](#2-finetuning--model-compression): PEFT, LoRA, and QLoRA
+    - [Advanced Finetuning](#2-finetuning--model-compression): PEFT
     - [Leveraging Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
     - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
-    - [Quantization Techniquesn](#quantization-techniques): [[contd.](.\files\backup\README_SBCs.md)]
+    - [Quantization Techniques](#quantization-techniques)<!-- : [[contd.](.\files\backup\README_SBCs.md)] -->
     - [Pruning and Sparsification](#pruning-and-sparsification)
     - [Knowledge Distillations](#knowledge-distillation-reducing-model-size-with-textbooks): Reducing Model Size with Textbooks
   - 3.Visual Prompting
@@ -65,8 +65,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
     - [OSS Alternatives for OpenAI Advanced Data Analytics (Code Interpreter)](#oss-alternatives-for-openai-advanced-data-analytics-aka-code-interpreter)
     - [GPT-4 details leaked](#gpt-4-details-leaked)
     - [OpenAI Products](#openai-products)
-  - Token Limits, Trustworthy APIs, and Memory Optimization
-    - [Approaches To Solve LLM Token Limits](#approaches-to-solve-llm-token-limits)
+  - Numbers LLM, Token Limits, Trustworthy APIs, and Memory Optimization
+    - [Numbers LLM and LLM Token Limits](#numbers-llm-and-llm-token-limits)
     - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
     - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
     - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
@@ -134,6 +134,10 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 ### **LlamaIndex**
 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [ref][llama-index-doc]
+
+  > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [cite](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading](https://arxiv.org/abs/2310.05029)
+    1. Build a data structure (memory tree)
+    1. Transverse it via LLM prompting
 
   <details>
 
@@ -554,14 +558,6 @@ Each semantic function is defined by a unique prompt template file, developed us
   chain = prompt | model | StrOutputParser() | search
   ```
 
-### **Langchain and Prompt engineering libraries**
-
-- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
-- [LangChain](https://python.langchain.com/en/latest/index.html)
-- [LlamaIndex](https://github.com/jerryjliu/llama_index)
-- [Microsoft guidance](https://github.com/microsoft/guidance)
-- [Azure Machine Learning Promt flow][promptflow]
-
 ### **Langchain Feature Matrix & Cheetsheet**
 
 - [Feature Matrix][langchain-features]: LangChain Features
@@ -665,6 +661,14 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 ### **Comparison: Langchain vs Its Competitors**
 
+### **Langchain and Prompt engineering libraries**
+
+- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
+- [LangChain](https://python.langchain.com/en/latest/index.html)
+- [LlamaIndex](https://github.com/jerryjliu/llama_index)
+- [Microsoft guidance](https://github.com/microsoft/guidance)
+- [Azure Machine Learning Promt flow][promptflow] / [git](https://github.com/microsoft/promptflow)
+
 ### **Langchain vs LlamaIndex**
 
 - Basically LlamaIndex is a smart storage mechanism, while Langchain is a tool to bring multiple tools together. [cite](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139)
@@ -746,10 +750,15 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 1. [Chain-of-Verification reduces Hallucination in LLMs](https://arxiv.org/abs/2309.11495): A four-step process that consists of generating a baseline response, planning verification questions, executing verification questions, and generating a final verified response based on the verification results.
 
+1. [FireAct](https://arxiv.org/abs/2310.05915): Toward Language Agent Fine-tuning. 1. This work takes an initial step to show multiple advantages of fine-tuning LMs for agentic uses. 2. Duringfine-tuning, The successful trajectories are then converted into the ReAct format to fine-tune a smaller LM. 3. This work is an initial step toward language agent fine-tuning,
+ and is constrained to a single type of task (QA) and a single tool (Google search). / [git](https://fireact-agent.github.io/)
+
+ 1. [Reflexion](https://arxiv.org/abs/2303.11366): Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement`
+ to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM, / [git](https://github.com/noahshinn024/reflexion)
+
 1. Prompt Engineering Guide
 
     - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
-
     - [Prompt Engineering Guide](https://www.promptingguide.ai/): Copyright © 2023 DAIR.AI
 
 1. Promptist
@@ -842,6 +851,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   </details>
 
 - [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on <b>only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.</b> LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases.
+
+- [QA-LoRA](https://arxiv.org/abs/2309.14717): Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora)
 
 - [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453) 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm)
 
@@ -996,7 +1007,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [ph-1.5](https://arxiv.org/abs/2309.05463): Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests.
 - [ph-1](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
 - [Orca](https://arxiv.org/abs/2306.02707): Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
-- [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b/): Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost
+- [Mistral 7B](https://arxiv.org/abs/2310.06825): Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [ref](https://mistral.ai/news/announcing-mistral-7b/)
 
 ### **Large Transformer Model Inference Optimization**
 
@@ -1075,12 +1086,15 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
  Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
 
-### **Approaches To Solve LLM Token Limits**
+### **Numbers LLM and LLM Token Limits**
 
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [doc](files/token-limits-5-approaches.pdf)
+- [Numbers every LLM Developer should know](https://github.com/ray-project/llm-numbers)
+
+<img src="files/llm-numbers.png" height="360">
 
 ### **Building Trustworthy, Safe and Secure LLM**
 
@@ -1123,9 +1137,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - [Language Modeling Is Compression](https://arxiv.org/abs/2309.10668): Lossless data compression, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%).
 - [LLMs Represent Space and Time](https://arxiv.org/abs/2310.02207): Large language models learn world models of space and time from text-only training.
-- Math solving Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
-- Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM)
+- Math soving optimized LLM [WizardMath](https://arxiv.org/pdf/2308.09583.pdf) :  Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM) / Math solving Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 
 ## **Section 7** : Large Language Model: Landscape
 
