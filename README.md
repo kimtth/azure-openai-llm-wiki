@@ -33,10 +33,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 3** : Microsoft Semantic Kernel
   - [Semantic Kernel Overview](#semantic-kernel-overview)
 - **Section 4** : Langchain - Features, Usage, and Comparisons
-  - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)
-  - [Langchain Impressive features](#langchain-impressive-features)
-  - [Langchain Quick start](#langchain-quick-start-how-to-use)
-  - [Langchain chain type: Summarizer](#langchain-chain-type-summarizer)
+  - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)<!-- - [Langchain Impressive features](#langchain-impressive-features) --><!-- - [Langchain Quick start](#langchain-quick-start-how-to-use) -->
+  - [Langchain Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
   - [Criticism to Langchain](#criticism-to-langchain)
   - Comparison: Langchain vs Its Competitors
@@ -193,41 +191,48 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   1. Storage Context is responsible for the storage and retrieval of data in Llama Index, while the Service Context helps in incorporating external context to enhance the search experience.
   1. The Service Context is not directly involved in the storage or retrieval of data, but it helps in providing a more context-aware and accurate search experience.
 
-    <details>
+      <details>
 
-    <summary>Llamindex Context definition</summary>
+      <summary>Llamindex Context definition</summary>
 
-      ```python
-      # The storage context container is a utility container for storing nodes, indices, and vectors. 
-      class StorageContext:
-        docstore: BaseDocumentStore
-        index_store: BaseIndexStore
-        vector_store: VectorStore
-        graph_store: GraphStore
-      ```
+        ```python
+        # The storage context container is a utility container for storing nodes, indices, and vectors. 
+        class StorageContext:
+          docstore: BaseDocumentStore
+          index_store: BaseIndexStore
+          vector_store: VectorStore
+          graph_store: GraphStore
+        ```
 
-      ```python
-      # The service context container is a utility container for LlamaIndex index and query classes. 
-      class ServiceContext:
-        llm_predictor: BaseLLMPredictor
-        prompt_helper: PromptHelper
-        embed_model: BaseEmbedding
-        node_parser: NodeParser
-        llama_logger: LlamaLogger
-        callback_manager: CallbackManager
-      ```
-    </details>
+        ```python
+        # The service context container is a utility container for LlamaIndex index and query classes. 
+        class ServiceContext:
+          llm_predictor: BaseLLMPredictor
+          prompt_helper: PromptHelper
+          embed_model: BaseEmbedding
+          node_parser: NodeParser
+          llama_logger: LlamaLogger
+          callback_manager: CallbackManager
+        ```
+      </details>
+
+- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288)
+
+  <img src="files/advanced-rag.png" width="450">
 
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
 - [Fine-Tuning a Linear Adapter for Any Embedding Model](https://medium.com/llamaindex-blog/fine-tuning-a-linear-adapter-for-any-embedding-model-8dd0a142d383): Fine-tuning the embeddings model requires you to reindex your documents. With this approach, you do not need to re-embed your documents. Simply transform the query instead. [ref](https://gpt-index.readthedocs.io/en/latest/examples/finetuning/embeddings/finetune_embedding_adapter.html)
 
-  <img src="files/embed-finetune-adapter.png" width="450">
+  <details>
+    <summary>Additional Layer for Embedding model fine-tuning</summary>
+    
+    <img src="files/embed-finetune-adapter.png" width="450">
 
-- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288): twitter
+    [Training code](https://github.com/jerryjliu/llama_index/blob/main/llama_index/finetuning/embeddings/adapter_utils.py)
+  </details>
 
-  <img src="files/advanced-rag.png" width="450">
 
 ### **Vector Storage Comparison**
 
@@ -297,6 +302,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 ### **Microsoft Azure OpenAI relevant LLM Framework & Copilot Stack**
 
   1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
+  1. [Semantic Memory](https://github.com/microsoft/semantic-memory): Semantic Memory (SM) is an open-source service and plugin specialized in the efficient indexing of datasets through custom continuous data hybrid pipelines. 
   1. [guidance][guidance]: A guidance language for controlling large language models. Simple, intuitive syntax, based on Handlebars templating. Domain Specific Language (DSL) for handling model interaction. Langchain libaries but different approach rather than ochestration, particularly effective for implementing  `Chain of Thought`. / [git][guidance]
   1. [Azure Machine Learning Promt flow][promptflow]: Visual Designer for Prompt crafting. Use [Jinja](https://github.com/pallets/jinja) as a prompt template language. / [ref][promptflow-doc] / [git][prompt-flow-git]
   1. [Prompt Engine][prompt-engine]: Craft prompts for Large Language Models: `npm install prompt-engine` / [git][prompt-engine] / [python][prompt-engine-py]
@@ -304,6 +310,8 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
   1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
   1. [LMOps][LMOps]: a collection of tools for improving text prompts used as input to generative AI models. The toolkit includes [Promptist][Promptist], which optimizes a user's text input for text-to-image generation, and [Structured Prompting][Structured Prompting].
   1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot] and [Microsoft Security Copilot][sec-copilot]
+
+  - A Memory in Semantic Kernel vs Semantic Memory: `(??)` Semantic Memory is designed to efficiently handle large datasets and extended conversations. Deploying the memory pipeline as a separate service can be beneficial when dealing with large documents or long bot conversations. [ref](https://github.com/microsoft/chat-copilot/tree/main/memorypipeline)
 
 ### **ChatGPT + Enterprise data Demo and Azure OpenAI samples**
 
@@ -1516,6 +1524,36 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
     - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
     - OpenAI Evals: [git](https://github.com/openai/evals)
     - TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
+
+1. Evaluation metrics
+
+    - Automated evaluation of LLMs
+    1. n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE and BLEU are used for summarization and translation tasks.
+    1. Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
+
+        <details>
+        <summary>Automated evaluation of LLMs</summary>
+
+        - ROUGE (Recall-Oriented Understudy for Gisting Evaluation):  The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
+
+          1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
+          1. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
+          1. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
+          1. ROUGE-S: Skip-bigram based co-occurrence statistics.
+          1. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
+
+        - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
+
+        - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
+
+        - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
+        </details>
+
+    - Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
+
+      [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969): Prompt flow の評価メトリクス紹介 / 
+      [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow): Built-in evaluation methods in Prompt flow
+
 1. LLMOps: Large Language Model Operations
     - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
     - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
