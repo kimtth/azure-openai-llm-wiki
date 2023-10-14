@@ -38,15 +38,13 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Langchain Agent](#langchain-agent)
   - [Criticism to Langchain](#criticism-to-langchain)
   - Comparison: Langchain vs Its Competitors
-    - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
-    - [Langchain vs Semantic Kernel](#langchain-vs-semantic-kernel)
-    - [Langchain vs Semantic Kernel vs Azure Machine Learning (Prompt flow)](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
-    - [Prompt template language](#prompt-template-language)
+  - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
+  - [Langchain vs Semantic Kernel vs Azure ML (Prompt flow)](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
+  - [Prompt template language](#prompt-template-language)
 - **Section 5**: Prompt Engineering, Finetuning, and Visual Prompts
   - 1.Prompt Engineering
     - [Prompt Engineering](#1-prompt-engineering)
     - [Prompt Guide](#prompt-guide)
-    - [DeepLearning.ai Short Courses](#deeplearningai-short-courses)
   - 2.Finetuning & Model Compression
     - [Advanced Finetuning](#2-finetuning--model-compression): PEFT
     - [Leveraging Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
@@ -65,18 +63,17 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
     - [GPT-4 details leaked](#gpt-4-details-leaked)
     - [OpenAI Products](#openai-products) -->
   - Numbers LLM, Token Limits, Trustworthy APIs, and Memory Optimization
-    - [Numbers LLM and LLM Token Limits](#numbers-llm-and-llm-token-limits)
-    - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
-    - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
-    - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
-    - [Large Language Model Is ...](#large-language-model-is-abilities): Abilities
+  - [Numbers LLM and LLM Token Limits](#numbers-llm-and-llm-token-limits)
+  - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
+  - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
+  - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
+  - [Large Language Model Is ...](#large-language-model-is-abilities): Abilities
 - **Section 7:** Landscape of Large Language Models
   - [Large Language Models (in 2023)](#large-language-models-in-2023)
   - [Evolutionary Tree of Large Language Models](#evolutionary-tree-of-large-language-models)
   - [Navigating the Generative AI Landscape](#navigating-the-generative-ai-landscape)
   - [A Taxonomy of Natural Language Processing](#a-taxonomy-of-natural-language-processing)
-  - [Open-Source Large Language Models](#open-source-large-language-models)
-  - [Huggingface Open-Source LLM Learboard](#huggingface-open-llm-learboard)
+  - [Open-Source Large Language Models](#open-source-large-language-models) <!-- - [Huggingface Open-Source LLM Learboard](#huggingface-open-llm-learboard) -->
   - [LLMs for Coding and Software Development](#llms-for-coding-and-software-development)
 - **Section 8** : Comprehensive Reference Materials
   - [Survey of Academic Papers on Large Language Models](#survey-of-academic-papers-on-large-language-models)
@@ -120,6 +117,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   1. Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a)
 - [Retrieval meets Long Context LLMs](https://arxiv.org/abs/2310.03025)
   - We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs.
+
+- [FreshLLMs](https://arxiv.org/abs/2310.03214): Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://www.github.com/freshllms/freshqa)
+
 - 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079) / [git](https://github.com/weaviate/recipes/tree/main/integrations/llamaindex)
   1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
   1. Sub Question Query Engine: Break down the complex  question into sub-questions
@@ -564,17 +564,20 @@ Each semantic function is defined by a unique prompt template file, developed us
   [ref][langchain-glance]
 
   ```python
-  chain = prompt | model | StrOutputParser() | search
+  '''
+  LLMChain: A LLMChain is the most common type of chain. It consists of a PromptTemplate, a model (either an LLM or a ChatModel), and an optional output parser.
+  '''
+  chain = prompt | model | parser
   ```
 
 ### **Langchain Feature Matrix & Cheetsheet**
 
 - [Feature Matrix][langchain-features]: LangChain Features
   - [Feature Matrix: Snapshot in 2023 July][langchain-features-202307]
+- [Awesome Langchain][awesome-langchain]: Curated list of tools and projects using LangChain.
 - [Cheetsheet][langchain-cookbook]: LangChain CheatSheet
 - [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [doc](./files/LangChain_kdnuggets.pdf)
 - [LangChain AI Handbook][langchain-handbook]: published by Pinecone
-- [Awesome Langchain][awesome-langchain]: Curated list of tools and projects using LangChain.
 
 ### **Langchain Impressive Features**
 
@@ -722,7 +725,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 ### **1. Prompt Engineering**
 
 1. Zero-shot
-    - [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
+    - [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916): Let’s think step by step.
 1. Few-shot Learning
     - [Open AI: Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 1. [Chain of Thought (CoT)](https://arxiv.org/abs/2201.11903): ReAct and Self Consistency also inherit the CoT concept.
@@ -765,6 +768,8 @@ Each semantic function is defined by a unique prompt template file, developed us
  1. [Reflexion](https://arxiv.org/abs/2303.11366): Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement`
  to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM, / [git](https://github.com/noahshinn024/reflexion)
 
+1. [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409): 'Take a deep breath and work on this problem step-by-step.' to improve its accuracy. Optimization by PROmpting (OPRO)
+
 1. Prompt Engineering Guide
 
     - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, , also known as In-Context Prompting ...
@@ -782,11 +787,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 - [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [Prompts for Education](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education
-
-### **DeepLearning.ai Short Courses**
-
-- [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
-- [Short courses](https://www.deeplearning.ai/short-courses/)
+- [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 ### **2. Finetuning & Model Compression**
 
@@ -1404,6 +1405,8 @@ entirely. [Illustrated transformer](http://jalammar.github.io/illustrated-transf
 - [Open Problem and Limitation of RLHF](https://arxiv.org/abs/2307.15217): Provides an overview of open problems and the limitations of RLHF
 - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [doc](./files/aifire.pdf)
 - [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code.
+- [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses
+- [DAIR.AI](https://github.com/omarsar): Machine learning & NLP research (omarsar github)
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
@@ -1415,10 +1418,7 @@ entirely. [Illustrated transformer](http://jalammar.github.io/illustrated-transf
 - Generate 3D objects conditioned on text or images [openai/shap-e](https://github.com/openai/shap-e)
 - [Drag Your GAN](https://arxiv.org/pdf/2305.10973): Interactive Point-based Manipulation on the Generative Image Manifold [git](https://github.com/Zeqiang-Lai/DragGAN)
 - string2string:
-The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string)
-
-<!-- <img src="files/string2string-overview.png" alt="string2string" width="200"/> -->
-
+The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string) <!-- <img src="files/string2string-overview.png" alt="string2string" width="200"/> -->
 - [Sentence Transformers](https://arxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [git](https://github.com/UKPLab/sentence-transformers)
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 - [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat)
