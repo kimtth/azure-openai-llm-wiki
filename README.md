@@ -33,7 +33,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 3** : Microsoft Semantic Kernel
   - [Semantic Kernel Overview](#semantic-kernel-overview)
 - **Section 4** : Langchain - Features, Usage, and Comparisons
-  - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)<!-- - [Langchain Impressive features](#langchain-impressive-features) --><!-- - [Langchain Quick start](#langchain-quick-start-how-to-use) -->
+  - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)
   - [Langchain Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
   - [Criticism to Langchain](#criticism-to-langchain)
@@ -57,11 +57,6 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 6:** Challenges and Solutions in Large Language Models
   - [Context Constraints](#context-constraints): incl. RoPE
   - [OpenAI's Roadmap and Products](#openais-roadmap-and-future-plans)
-    <!-- - [OpenAI's plans according to Sam Altman](#openais-plans-according-to-sam-altman) Humanloop interview
-    - [OpenAI Plugin and function calling](#openai-plugin-and-function-calling)
-    - [OSS Alternatives for OpenAI Advanced Data Analytics (Code Interpreter)](#oss-alternatives-for-openai-advanced-data-analytics-aka-code-interpreter)
-    - [GPT-4 details leaked](#gpt-4-details-leaked)
-    - [OpenAI Products](#openai-products) -->
   - Numbers LLM, Token Limits, Trustworthy APIs, and Memory Optimization
   - [Numbers LLM and LLM Token Limits](#numbers-llm-and-llm-token-limits)
   - [Building Trustworthy, Safe and Secure LLM](#building-trustworthy-safe-and-secure-llm)
@@ -73,7 +68,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Evolutionary Tree of Large Language Models](#evolutionary-tree-of-large-language-models)
   - [Navigating the Generative AI Landscape](#navigating-the-generative-ai-landscape)
   - [A Taxonomy of Natural Language Processing](#a-taxonomy-of-natural-language-processing)
-  - [Open-Source Large Language Models](#open-source-large-language-models) <!-- - [Huggingface Open-Source LLM Learboard](#huggingface-open-llm-learboard) -->
+  - [Open-Source Large Language Models](#open-source-large-language-models)
   - [LLMs for Coding and Software Development](#llms-for-coding-and-software-development)
 - **Section 8** : Comprehensive Reference Materials
   - [Survey of Academic Papers on Large Language Models](#survey-of-academic-papers-on-large-language-models)
@@ -102,7 +97,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - `cnt`: number of citations
   - `git`: github link
 
-## **Section 1: RAG, LlamaIndex, and Vector Storage** 
+## **Section 1: RAG, LlamaIndex, and Vector Storage**
 
 ### **What is the RAG (Retrieval-Augmented Generation)?**
 
@@ -110,8 +105,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
   <img src="files/RAG.png" alt="sk" width="400"/>
 
-- In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [ref](https://arxiv.org/abs/2005.11401)
-- In 2021, [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401.pdf)
+- In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401.pdf)
   1. RAG-sequence — We retrieve k documents, and use them to generate all the output tokens that answer a user query.
   1. RAG-token— We retrieve k documents, use them to generate the next token, then retrieve k more documents, use them to generate the next token, and so on. This means that we could end up retrieving several different sets of documents in the generation of a single answer to a user’s query.
   1. Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a)
@@ -216,10 +210,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
         ```
       </details>
 
-- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288)
-
-  <img src="files/advanced-rag.png" width="450">
-
+- [LlamaIndex Overview (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-001-overview-v0-7-9/)
 - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/)
 - [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/)
 - [Chat engine - ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html)
@@ -233,6 +224,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
     [Training code](https://github.com/jerryjliu/llama_index/blob/main/llama_index/finetuning/embeddings/adapter_utils.py)
   </details>
 
+- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288)
+
+  <img src="files/advanced-rag.png" width="450">
 
 ### **Vector Storage Comparison**
 
@@ -960,7 +954,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)**
 
-- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning
+- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning.
+- [InstructGPT: Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) is a model trained by OpenAI to follow instructions using human feedback.
 
   <img src="files/rhlf.png" width="400" />
 
@@ -1045,6 +1040,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples](https://arxiv.org/abs/2212.06713)
   1. Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM. 
   1. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. [cite](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/)
+- [Ring Attention](https://arxiv.org/abs/2310.01889): 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3.  we propose an enhancement to the blockwise parallel transformers (BPT) framework. [git](https://github.com/lhao499/llm_large_context)
 
 ### **OpenAI's Roadmap and Future Plans**
 
@@ -1102,6 +1098,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting.
 - [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 - [5 Approaches To Solve LLM Token Limits](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : Printed version for backup [doc](files/token-limits-5-approaches.pdf)
+- [Byte-Pair Encoding (BPE)](https://arxiv.org/abs/1508.07909): P.2015. The most widely used tokenization algorithm for text today. BPE adds an end token to words, splits them into characters, and merges frequent byte pairs iteratively until a stop criterion. The final tokens form the vocabulary for new data encoding and decoding. [ref](https://towardsdatascience.com/byte-pair-encoding-subword-based-tokenization-algorithm-77828a70bee0)
 - [Numbers every LLM Developer should know](https://github.com/ray-project/llm-numbers)
 
 <img src="files/llm-numbers.png" height="360">
@@ -1145,6 +1142,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Large Language Model Is: Abilities**
 
+- [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682): Large language models can develop emergent abilities, which are not explicitly trained but appear at scale and are not present in smaller models. . These abilities can be enhanced using few-shot and augmented prompting techniques. [ref](https://www.jasonwei.net/blog/emergence)
+- [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/pdf/2110.08207): A language model trained on various tasks using prompts can learn and generalize to new tasks in a zero-shot manner.
 - [Language Modeling Is Compression](https://arxiv.org/abs/2309.10668): Lossless data compression, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%).
 - [LLMs Represent Space and Time](https://arxiv.org/abs/2310.02207): Large language models learn world models of space and time from text-only training.
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)
@@ -1252,7 +1251,6 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   <summary>Survey Papers on Large Language Models: Extras</summary>
 
   - [A Survey of Techniques for Optimizing Transformer Inference](https://arxiv.org/abs/2307.07982):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982&btnG=)
-  - Less than 10 cited counts, August 31, 2023
   - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759&btnG=)
   - [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702&btnG=)
   - [Challenges & Application of LLMs](https://arxiv.org/abs/2306.07303):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303&btnG=)
@@ -1268,7 +1266,17 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   - [Multimodal Deep Learning](https://arxiv.org/abs/2301.04856):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856&btnG=)
   - [Trustworthy LLMs](https://arxiv.org/abs/2308.05374):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374&btnG=)
   - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043&btnG=)
+  - [A Survey of LLMs for Healthcare](https://arxiv.org/abs/2310.05694):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05694&btnG=)
+  - [Overview of Factuality in LLMs](https://arxiv.org/abs/2310.07521):[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.07521&btnG=)
 
+  </details>
+
+  <details>
+
+  <summary>Papers on Large Language Models</summary>
+
+  - [RECOMP: Improving Retrieval-Augmented LMs with Compressors](https://arxiv.org/abs/2310.04408)
+  - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491)
   </details>
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
@@ -1285,6 +1293,35 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   ```
 
 - lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt)
+
+#### Terminology
+
+- BeamSearch: Beam Search in Transformers is an algorithm used during inference. It keeps the `beam_size`` number of most probable sequences at each step until the end token is reached or maximum sequence length is achieved. [ref](https://huggingface.co/blog/constrained-beam-search)
+
+- Classification of Attention
+  <details>
+
+  <summary>Classification of Attention [TODO]</summary>
+
+  1. Encoder-Decoder Attention:
+      1. Soft Attention: assigns continuous weights to input elements, allowing the model to attend to multiple elements simultaneously. Used in neural machine translation.
+      1. Hard Attention: selects a subset of input elements to focus on while ignoring the rest. Used in image captioning.
+      1. Global Attention: focuses on all elements of the input sequence when computing attention weights. Captures long-range dependencies and global context.
+      1. Local Attention: focuses on a smaller, localized region of the input sequence when computing attention weights. Reduces computational complexity. Used in time series analysis.
+
+  1. Extended Forms of Attention: Only one Encoder component (only Input Sequence, no Target Sequence)
+      1. Self Attention: attends to different parts of the input sequence itself, rather than another sequence or modality. Captures long-range dependencies and contextual information. Used in transformer models.
+      1. Multi-head Self-Attention: performs self-attention multiple times in parallel, allowing the model to jointly attend to information from different representation subspaces.
+      1. Hierarchical Attention: attends to different levels of granularity in the input sequence, allowing the model to capture both local and global context.
+
+  1. Other Types of Attention:
+      1. Sparse Attention: reduces computation by focusing on a limited selection of similarity scores in a sequence, resulting in a sparse matrix. It includes implementations of “strided” and “fixed” attention. [ref](https://blog.research.google/2020/10/rethinking-attention-with-performers.html)
+
+      <!-- <img src="files/rethinking-attention-with-performers.gif"/> -->
+
+      1. Cross-Attention: mixes two different embedding sequences, allowing the model to attend to information from both sequences. In a Transformer, when the information is passed from encoder to decoder that part is known as Cross Attention. [ref](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture)
+
+  </details>
 
 ### **Agents: AutoGPT and Communicative Agents**
 
