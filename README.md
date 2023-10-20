@@ -19,42 +19,42 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 ## Table of contents
 
-- **Section 1** : RAG, LlamaIndex, and Vector Storage
-  - [RAG (Retrieval-Augmented Generation) & LlamaIndex](#llamaindex)
+- **Section 1** : [RAG, LlamaIndex, and Vector Storage](#section-1-rag-llamaindex-and-vector-storage)
+  - [RAG (Retrieval-Augmented Generation) & LlamaIndex](#what-is-the-rag-retrieval-augmented-generation)
   - [Vector Storage Comparison](#vector-storage-comparison)
   - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
   - [text-embedding-ada-002 & Lucene based search engine](#text-embedding-ada-002--lucene-based-search-engine)
-- **Section 2** : Azure OpenAI and Reference Architecture
+- **Section 2** : [Azure OpenAI and Reference Architecture](#section-2--azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
   - [ChatGPT + Enterprise data Demo and Azure OpenAI samples](#chatgpt--enterprise-data-demo-and-azure-openai-samples)
   - [Azure Reference Architectures](#azure-reference-architectures)
   - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
   - [Azure Enterprise Services](#azure-enterprise-services)
-- **Section 3** : Microsoft Semantic Kernel
+- **Section 3** : [Microsoft Semantic Kernel](#section-3--microsoft-semantic-kernel)
   - [Semantic Kernel Overview](#semantic-kernel-overview)
-- **Section 4** : Langchain - Features, Usage, and Comparisons
+- **Section 4** : [Langchain - Features, Usage, and Comparisons](#section-4--langchain---features-usage-and-comparisons)
   - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)
   - [Langchain Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent](#langchain-agent)
   - [Criticism to Langchain](#criticism-to-langchain)
-  - Comparison: Langchain vs Its Competitors
+  - Comparison: [Langchain vs Its Competitors](#comparison-langchain-vs-its-competitors)
   - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
   - [Langchain vs Semantic Kernel vs Azure ML (Prompt flow)](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
   - [Prompt template language](#prompt-template-language)
-- **Section 5**: Prompt Engineering, Finetuning, and Visual Prompts
-  - 1.Prompt Engineering
+- **Section 5** : [Prompt Engineering, Finetuning, and Visual Prompts](#section-5-prompt-engineering-finetuning-and-visual-prompts)
+  - 1.[Prompt Engineering](#1-prompt-engineering)
     - [Prompt Engineering](#1-prompt-engineering)
     - [Prompt Guide](#prompt-guide)
-  - 2.Finetuning & Model Compression
+  - 2.[Finetuning & Model Compression](#2-finetuning--model-compression)
     - [Advanced Finetuning](#2-finetuning--model-compression): PEFT
     - [Leveraging Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
     - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
     - [Quantization Techniques](#quantization-techniques)<!-- : [[contd.](.\files\backup\README_SBCs.md)] -->
     - [Pruning and Sparsification](#pruning-and-sparsification)
     - [Knowledge Distillations](#knowledge-distillation-reducing-model-size-with-textbooks): Reducing Model Size with Textbooks
-  - 3.Visual Prompting
+  - 3.[Visual Prompting](#3-visual-prompting)
     - [What is the Visual Prompting?](#3-visual-prompting)
-- **Section 6:** Challenges and Solutions in Large Language Models
+- **Section 6** : [Challenges and Solutions in Large Language Models](#section-6--large-language-model-challenges-and-solutions)
   - [Context Constraints](#context-constraints): incl. RoPE
   - [OpenAI's Roadmap and Products](#openais-roadmap-and-future-plans)
   - Numbers LLM, Token Limits, Trustworthy APIs, and Memory Optimization
@@ -63,14 +63,14 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [LLM to Master APIs](#llm-to-master-apis): incl. Gorilla
   - [Memory Optimization](#memory-optimization): PagedAttention & Flash Attention
   - [Large Language Model Is ...](#large-language-model-is-abilities): Abilities
-- **Section 7:** Landscape of Large Language Models
+- **Section 7** : [Landscape of Large Language Models](#section-7--large-language-model-landscape)
   - [Large Language Models (in 2023)](#large-language-models-in-2023)
   - [Evolutionary Tree of Large Language Models](#evolutionary-tree-of-large-language-models)
   - [Navigating the Generative AI Landscape](#navigating-the-generative-ai-landscape)
   - [A Taxonomy of Natural Language Processing](#a-taxonomy-of-natural-language-processing)
   - [Open-Source Large Language Models](#open-source-large-language-models)
   - [LLMs for Coding and Software Development](#llms-for-coding-and-software-development)
-- **Section 8** : Comprehensive Reference Materials
+- **Section 8** : [Comprehensive Reference Materials](#section-8-comprehensive-reference-materials)
   - [Survey of Academic Papers on Large Language Models](#survey-of-academic-papers-on-large-language-models)
   - [Build an LLMs from scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt): picoGPT and lit-gpt
   - [Agents](#agents-autogpt-and-communicative-agents): AutoGPT and Communicative Agents
@@ -79,23 +79,23 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Application and User Interface (UI/UX)](#application-and-user-interface-uiux)
   - [Japanese Language Materials for LLMs 日本語](#japanese-language-materials-for-llms-日本語)
   - [Supplementary Materials](#supplementary-materials)
-- **Section 9** : Relevant Solutions and Frameworks
+- **Section 9** : [Relevant Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Microsoft Fabric](#section-9-relevant-solutions-and-frameworks): Single unified data analytics solution
-  - [Office Copilot](#section-9-relevant-solutions-and-frameworks): Semantic Interpreter, Natural Language Commanding via Program SynthesisMicrosoft Foundation models
-- **Section 10** : General AI Tools and Extensions
+  - [Office Copilot](#section-9-relevant-solutions-and-frameworks): Semantic Interpreter, Natural Language Commanding via Program Synthesis
+- **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
   - [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
-- **Section 11** : Datasets for Large Language Model Training
+- **Section 11** : [Datasets for Large Language Model Training](#section-11-datasets-for-llm-training)
   - [Datasets for LLM Training](#section-11-datasets-for-llm-training)
-- **Section 12** : Evaluating Large Language Models
+- **Section 12** : [Evaluating Large Language Models](#section-12-evaluating-large-language-models--llmops)
   - [Evaluation of Large Language Models & LLMOps](#section-12-evaluating-large-language-models--llmops)
 - **Contributors**
   - [Contributors](#contributors): 👀
 - **Symbols**
-  - `ref`: external url
+  - `ref`: external URL
   - `doc`: archived doc
   - `cite`: the source of comments
   - `cnt`: number of citations
-  - `git`: github link
+  - `git`: GitHub link
 
 ## **Section 1: RAG, LlamaIndex, and Vector Storage**
 
@@ -113,6 +113,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs.
 
 - [FreshLLMs](https://arxiv.org/abs/2310.03214): Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://www.github.com/freshllms/freshqa)
+
+- [RECOMP: Improving Retrieval-Augmented LMs with Compressors](https://arxiv.org/abs/2310.04408): 1. We propose RECOMP (Retrieve, Compress, Prepend), an intermediate step which compresses retrieved documents into a textual summary prior to prepending them to improve retrieval-augmented language models (RALMs). 2. We present two compressors – an `extractive compressor` which selects useful sentences from retrieved documents and an `abstractive compressor` which generates summaries by synthesizing information from multiple documents. 3. Both compressors are trained.
 
 - 4 RAG techniques implemented in [llama_index](https://github.com/jerryjliu/llama_index) / [cite](https://x.com/ecardenas300/status/1704188276565795079) / [git](https://github.com/weaviate/recipes/tree/main/integrations/llamaindex)
   1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
@@ -489,7 +491,7 @@ because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, 
 
 - Semantic Kernel Planner
 
-  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="300"/>
+  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="400"/>
 
 - Is Semantic Kernel Planner the same as LangChain agents?
 
@@ -740,6 +742,9 @@ Each semantic function is defined by a unique prompt template file, developed us
     - `tree-of-thought\react-prompt.py`: ReAct sample without Langchain
 
 1. [Graph of Thoughts (GoT)](https://arxiv.org/abs/2308.09687) Solving Elaborate Problems with Large Language Models [git](https://github.com/spcl/graph-of-thoughts)
+
+    <img src="files/got-prompt.png" width="90%">
+
 1. [Retrieval Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401): To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model.
 1. Zero-shot, one-shot and few-shot
 
@@ -1120,6 +1125,8 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 - Red Teaming: The term red teaming has historically described systematic adversarial attacks for testing security vulnerabilities. LLM red teamers should be a mix of people with diverse social and professional backgrounds, demographic groups, and interdisciplinary expertise that fits the deployment context of your AI system. [ref](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
 
+- [The Foundation Model Transparency Index](https://arxiv.org/abs/2310.12941): A comprehensive assessment of the transparency of foundation model developers [ref](https://crfm.stanford.edu/fmti/)
+
 ### **LLM to Master APIs**
 
 - [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): Gorilla: Large Language Model Connected with Massive APIs [git](https://github.com/ShishirPatil/gorilla)
@@ -1275,13 +1282,11 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
   </details>
 
-  <details>
+  <!-- <details>
 
   <summary>Papers on Large Language Models</summary>
 
-  - [RECOMP: Improving Retrieval-Augmented LMs with Compressors](https://arxiv.org/abs/2310.04408)
-  - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491)
-  </details>
+  </details> -->
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
 
@@ -1305,7 +1310,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - Classification of Attention
   <details>
 
-  <summary>Classification of Attention [TODO]</summary>
+  <summary>Classification of Attention</summary>
+
+  - [ref](https://arize.com/blog-course/attention-mechanisms-in-machine-learning/): Must-Read Starter Guide to Mastering Attention Mechanisms in Machine Learning
 
   1. Encoder-Decoder Attention:
       1. Soft Attention: assigns continuous weights to input elements, allowing the model to attend to multiple elements simultaneously. Used in neural machine translation.
@@ -1313,7 +1320,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
       1. Global Attention: focuses on all elements of the input sequence when computing attention weights. Captures long-range dependencies and global context.
       1. Local Attention: focuses on a smaller, localized region of the input sequence when computing attention weights. Reduces computational complexity. Used in time series analysis.
 
-  1. Extended Forms of Attention: Only one Encoder component (only Input Sequence, no Target Sequence)
+  1. Extended Forms of Attention: Only one Decoder component (only Input Sequence, no Target Sequence)
       1. Self Attention: attends to different parts of the input sequence itself, rather than another sequence or modality. Captures long-range dependencies and contextual information. Used in transformer models.
       1. Multi-head Self-Attention: performs self-attention multiple times in parallel, allowing the model to jointly attend to information from different representation subspaces.
       1. Hierarchical Attention: attends to different levels of granularity in the input sequence, allowing the model to capture both local and global context.
@@ -1323,7 +1330,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
       <!-- <img src="files/rethinking-attention-with-performers.gif"/> -->
 
-      1. Cross-Attention: mixes two different embedding sequences, allowing the model to attend to information from both sequences. In a Transformer, when the information is passed from encoder to decoder that part is known as Cross Attention. [ref](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture)
+      1. Cross-Attention: mixes two different embedding sequences, allowing the model to attend to information from both sequences. In a Transformer, when the information is passed from encoder to decoder that part is known as Cross Attention. [ref](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [ref](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)
 
   </details>
 
@@ -1335,7 +1342,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation - Coworking of 4 agents
 - [microsoft/JARVIS](https://github.com/microsoft/JARVIS): an interface for LLMs to connect numerous AI models for solving complicated AI tasks!
 - [SuperAGI](https://github.com/TransformerOptimus/superagi): GUI for agent settings
-- [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society (github.com)
+- [lightaime/camel](https://github.com/lightaime/camel): 🐫 CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society
 - 1:1 Conversation between two ai agents
 Camel Agents - a Hugging Face Space by camel-ai
 [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
@@ -1363,7 +1370,7 @@ Camel Agents - a Hugging Face Space by camel-ai
   https://zhuanlan.zhihu.com/p/104393915
   -->
 - Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/)
-- Cross-attention [ref](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)
+
   - The model has three sub-models:
     1. A model to obtain image embeddings
     1. A text model to obtain text embeddings
@@ -1593,14 +1600,22 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
     - Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
 
-      [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969): Prompt flow の評価メトリクス紹介 / 
-      [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow): Built-in evaluation methods in Prompt flow
+    - [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969): Prompt flow の評価メトリクス紹介 / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow): Built-in evaluation methods in Prompt flow
+
+    - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491): We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks.
+
+1. Evaluation benchmark
+
+    - [BIG-bench](https://github.com/google/BIG-bench): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task.
+
+    - [HELM](https://github.com/stanford-crfm/helm): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on.
 
 1. LLMOps: Large Language Model Operations
     - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
     - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
 1. [Pretraining on the Test Set Is All You Need](https://arxiv.org/abs/2309.08632)
     - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [cite](https://twitter.com/rasbt)
+1. [Challenges in evaluating AI systems](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [doc](./files/eval-ai-anthropic.pdf)
 
 ## **Contributors**
 
