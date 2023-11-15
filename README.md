@@ -21,14 +21,15 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 - **Section 1** : [RAG, LlamaIndex, and Vector Storage](#section-1-rag-llamaindex-and-vector-storage)
   - [RAG (Retrieval-Augmented Generation) & LlamaIndex](#what-is-the-rag-retrieval-augmented-generation)
-  - [Vector Storage Comparison](#vector-storage-comparison)
-  - [Vector Storage Options for Azure](#vector-storage-options-for-azure)
+  - [Vector Database Comparison](#vector-database-comparison)
+  - [Vector Database Options for Azure](#vector-database-options-for-azure)
   - [text-embedding-ada-002 & Lucene based search engine](#text-embedding-ada-002--lucene-based-search-engine)
 - **Section 2** : [Azure OpenAI and Reference Architecture](#section-2--azure-openai-and-reference-architecture)
-  - [Microsoft LLM Framework & Copilot Stack](#microsoft-azure-openai-relevant-llm-framework--copilot-stack)
+  - [Microsoft LLM Framework](#microsoft-azure-openai-relevant-llm-framework)
+  - [Microsoft Copilot Product lineup](#microsoft-copilot-product-lineup)
   - [ChatGPT + Enterprise data Demo and Azure OpenAI samples](#chatgpt--enterprise-data-demo-and-azure-openai-samples)
   - [Azure Reference Architectures](#azure-reference-architectures)
-  - [Azure Cognitive Search : Vector Search](#azure-cognitive-search--vector-search)
+  - [Azure AI Search](#azure-ai-search): Vector Search + Semantic ranker
   - [Azure Enterprise Services](#azure-enterprise-services)
 - **Section 3** : [Microsoft Semantic Kernel](#section-3--microsoft-semantic-kernel)
   - [Semantic Kernel Overview](#semantic-kernel-overview)
@@ -71,7 +72,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Open-Source Large Language Models](#open-source-large-language-models)
   - [LLMs for Coding and Software Development](#llms-for-coding-and-software-development)
 - **Section 8** : [Comprehensive Reference Materials](#section-8-comprehensive-reference-materials)
-  - [Survey of Academic Papers on Large Language Models](#survey-of-academic-papers-on-large-language-models)
+  - [Survey on Large Language Models](#survey-on-large-language-models)
   - [Build an LLMs from scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt): picoGPT and lit-gpt
   - [Agents](#agents-autogpt-and-communicative-agents): AutoGPT and Communicative Agents
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
@@ -276,7 +277,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
   <img src="files/advanced-rag.png" width="450">
 
-### **Vector Storage Comparison**
+### **Vector Database Comparison**
 
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696): Printed version for "Medium" limits. [doc](files/vector-dbs.pdf)
 - [Faiss](https://faiss.ai/): Facebook AI Similarity Search (Faiss) is a library for efficient similarity search and clustering of dense vectors. It is used as an alternative to a vector database in the development and library of algorithms for a vector database. It is developed by Facebook AI Research. [git](https://github.com/facebookresearch/faiss)
@@ -313,7 +314,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
   </details>
 
-### **Vector Storage Options for Azure**
+### **Vector Database Options for Azure**
 
 - [Pgvector extension on Azure Cosmos DB for PostgreSQL](https://azure.microsoft.com/en-us/updates/generally-available-pgvector-extension-on-azure-cosmos-db-for-postgresql/): [ref](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector)
 - [Vector Search in Azure Cosmos DB for MongoDB vCore](https://devblogs.microsoft.com/cosmosdb/introducing-vector-search-in-azure-cosmos-db-for-mongodb-vcore/)
@@ -340,7 +341,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 ## **Section 2** : Azure OpenAI and Reference Architecture
 
-### **Microsoft Azure OpenAI relevant LLM Framework & Copilot Stack**
+### **Microsoft Azure OpenAI relevant LLM Framework**
 
 1. [Semantic Kernel][semantic-kernel]: Semantic Kernel is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python. An LLM Ochestrator, similar to Langchain. / [git][semantic-kernel-git]
 1. [Semantic Memory](https://github.com/microsoft/semantic-memory): Semantic Memory (SM) is an open-source service and plugin specialized in the efficient indexing of datasets through custom continuous data hybrid pipelines.
@@ -350,11 +351,29 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 1. [TypeChat][typechat]: TypeChat replaces prompt engineering with schema engineering. To build natural language interfaces using types. / [git][typechat-git]
 1. [DeepSpeed][deepspeed]: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
 1. [LMOps][LMOps]: a collection of tools for improving text prompts used as input to generative AI models. The toolkit includes [Promptist][Promptist], which optimizes a user's text input for text-to-image generation, and [Structured Prompting][Structured Prompting].
-1. Copilot Stack: [Microsoft 365 Copilot][m365-copilot], [Dynamics 365 Copilot][d365-copilot], [Copilot in Microsoft Viva][viva-copilot], and [Microsoft Security Copilot][sec-copilot]
 1. [LLMLingua](https://github.com/microsoft/LLMLingua): Compress the prompt and KV-Cache, which achieves up to 20x compression with minimal performance loss.
 1. [FLAML](https://microsoft.github.io/): A lightweight Python library for efficient automation of machine learning and AI operations. FLAML provides an seamless interface for AutoGen, AutoML, and generic hyperparameter tuning. [git](https://github.com/microsoft/FLAML)
 
 - A Memory in Semantic Kernel vs Semantic Memory: Semantic Memory is designed to efficiently handle large datasets and extended conversations. Deploying the memory pipeline as a separate service can be beneficial when dealing with large documents or long bot conversations. [ref](https://github.com/microsoft/chat-copilot/tree/main/memorypipeline)
+
+### **Microsoft Copilot Product lineup**
+
+- [Micorsoft AI](http://microsoft.com/ai)
+- [Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio): [Generative AI Developmet Hub](https://azure.microsoft.com/en-us/products/ai-studio) + Promptflow + Azure AI Content safety / [youtube](https://www.youtube.com/watch?v=Qes7p5w8Tz8)
+- [Microsoft Copilot](https://copilot.microsoft.com/): FKA. Bing Chat Enterprise
+- The Copilot System: Explained by Microsoft [youtube](https://www.youtube.com/watch?v=E5g20qmeKpg)
+- [Microsoft Copilot Dashboard](https://insights.cloud.microsoft/#/CopilotDashboard) / [blog](https://techcommunity.microsoft.com/t5/microsoft-viva-blog/new-ways-microsoft-copilot-and-viva-are-transforming-the/ba-p/3982293)
+- [Microsoft Copilot for Azure](https://learn.microsoft.com/en-us/azure/copilot) / [blog](https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/simplify-it-management-with-microsoft-copilot-for-azure-save/ba-p/3981106)
+- [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) / [blog](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/)
+- Copilot in Power Platform: [Power App AI Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview) / [Power Automate](https://powerautomate.microsoft.com/en-us/blog/copilot-in-power-automate-new-time-saving-experiences-announced-at-microsoft-ignite-2023/): [Copilot in cloud flows](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot), [Copilot in Process Mining ingestion](https://learn.microsoft.com/en-us/power-automate/process-mining-copilot-in-ingestion), [Copilot in Power Automate for desktop](https://learn.microsoft.com/en-us/power-automate/desktop-flows/copilot-in-power-automate-for-desktop) ...
+- [Copilot in Windows](https://www.microsoft.com/en-us/windows/copilot-ai-features)
+- [Microsoft Security Copilot](https://learn.microsoft.com/en-us/security-copilot/microsoft-security-copilot) / [blog](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/)
+- [Dynamics 365 Copilot](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/copilot-for-dynamics365) / [blog](https://blogs.microsoft.com/blog/2023/03/06/introducing-microsoft-dynamics-365-copilot/)
+- Microsoft Viva Copilot [blog](https://www.microsoft.com/en-us/microsoft-365/blog/2023/04/20/introducing-copilot-in-microsoft-viva-a-new-way-to-boost-employee-engagement-and-performance/)
+- Microsoft Fabric and Copilot in Microsoft Power BI: [blog](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/) / [Fabric Copilot](https://learn.microsoft.com/en-us/fabric/get-started/copilot-fabric-overview) / [PowerBI Copilot](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction)
+- [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/): Customize Copilot for Microsoft 365
+- [Github Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot)
+- [Microsoft Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot): [blog](https://clarity.microsoft.com/blog/clarity-copilot/)
 
 ### **ChatGPT + Enterprise data Demo and Azure OpenAI samples**
 
@@ -469,17 +488,18 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   1. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
   1. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/)
 
-### **Azure Cognitive Search : Vector Search**
+### **Azure AI Search**
 
-- In the vector databases category within Azure, several alternative solutions are available. However, ACS is the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
-- Azure Cognitive Search: Vector Search Sample Code: [git](https://github.com/Azure/cognitive-search-vector-pr)
-- Azure Cognitive Search supports
+- Azure Cognitive Search rebranding Azure AI Search, it supports Vector search and semantic ranker. 11/16/2023
+- In the vector databases category within Azure, several alternative solutions are available. However, the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
+- Vector Search Sample Code: [git](https://github.com/Azure/cognitive-search-vector-pr)
+- Azure AI Search (FKA. Azure Cognitive Search) supports
   1. Text Search
   1. Pure Vector Search
   1. Hybrid Search (Text search + Vector search)
   1. Semantic Hybrid Search (Text search + Semantic search + Vector search)
-- azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Azure Cognitive Search - Vector and Hybrid Search
-- Azure Cognitive Search offers a set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Hybrid search performance is better than Vector only search.` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)
+- azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Vector and Hybrid Search
+- A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Hybrid search performance is better than Vector only search.` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)
 
   <img src="files\acs-hybrid.png" alt="acs" width="400"/>
 
@@ -487,8 +507,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 ### **Azure Enterprise Services**
 
-- Bing Chat Enterprise [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
-  1. Bing Chat Enterprise doesn't have plugin support
+- Copilot (FKA. Bing Chat Enterprise) [Privacy and Protection](https://learn.microsoft.com/en-us/bing-chat-enterprise/privacy-and-protections#protected-by-default)
+  1. Doesn't have plugin support
   2. Only content provided in the chat by users is accessible to Bing Chat Enterprise.
 - Azure OpenAI Service On Your Data in Public Preview [ref](https://techcommunity.microsoft.com/t5/ai-cognitive-services-blog/introducing-azure-openai-service-on-your-data-in-public-preview/ba-p/3847000)
 
@@ -642,6 +662,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow.
 - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow
 - [Langchain Template](https://github.com/langchain-ai/langchain/tree/master/templates): Langchain Reference architectures and samples. e.g., `RAG Conversation Template`
+- [OpenGPTs](https://github.com/langchain-ai/opengpts): An open source effort to create a similar experience to OpenAI's GPTs
 
 ### **Langchain Quick Start: How to Use**
 
@@ -1072,7 +1093,6 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
   | Post-training quantization  | Easy to use, no need to retrain the model                   | May result in accuracy loss                                                          |
   | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement                      |
 
-
 - bitsandbytes: 8-bit optimizers [git](https://github.com/TimDettmers/bitsandbytes)
 
 ### **Pruning and Sparsification**
@@ -1091,7 +1111,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 - [ph-1](https://arxiv.org/abs/2306.11644): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11644)]: Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
 - [Orca](https://arxiv.org/abs/2306.02707): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.02707)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
 - Distilled Supervised Fine-Tuning (dSFT)
-  1. [Zephyr 7B](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO).
+  1. [Zephyr 7B](https://arxiv.org/abs/2310.16944): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO). [ref](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
   1. [Mistral 7B](https://arxiv.org/abs/2310.06825): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [ref](https://mistral.ai/news/announcing-mistral-7b/)
 
 ### **Large Transformer Model Inference Optimization**
@@ -1157,7 +1177,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 #### **OpenAI Products**
 
-- [OpenAI DevDay 2023](https://openai.com/blog/new-models-and-developer-products-announced-at-devday): GPT-4 Turbo with 128K context, Assistants API (Code interpreter, Retrieval, and function calling), GPTs (Custom versions of ChatGPT: [ref](https://openai.com/blog/introducing-gpts))
+- [OpenAI DevDay 2023](https://openai.com/blog/new-models-and-developer-products-announced-at-devday): GPT-4 Turbo with 128K context, Assistants API (Code interpreter, Retrieval, and function calling), GPTs (Custom versions of ChatGPT: [ref](https://openai.com/blog/introducing-gpts)), Copyright Shield
 - [ChatGPT can now see, hear, and speak](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [Whisper](https://github.com/openai/whisper) / [CLIP](https://github.com/openai/Clip)
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. August 22, 2023
 - [DALL·E 3](https://openai.com/dall-e-3) : In September 2023, OpenAI announced their latest image model, DALL-E 3 [git](https://github.com/openai/dall-e)
@@ -1312,7 +1332,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
 
 ## **Section 8: Comprehensive Reference Materials**
 
-### **Survey of Academic Papers on Large Language Models**
+### **Survey on Large Language Models**
 
 - Picked out the list by [cited by count] and used [survey] as a search keyword. The papers on a specific topic are included even if few [cited by count].
 - A Survey of LLMs
@@ -1320,6 +1340,9 @@ Presumably, the model is trained to treat the user messages as human messages, s
   - [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223)]
   - [A Comprehensive Survey of AI-Generated Content (AIGC)](https://arxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)]
   - [Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models](https://arxiv.org/abs/2304.01852):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.01852)]
+  - [A Survey on Hallucination in Large Language Models](https://arxiv.org/abs/2311.05232)
+- State of AI
+  - [Retool](https://retool.com/reports/state-of-ai-2023): A Report on AI In Production 2023
 - Application of LLMs
   - [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.13712)]
 - Tuning & Learning
@@ -1743,10 +1766,6 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 [promptflow-doc]: https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459#:~:text=Prompt%20flow%20is%20a%20powerful%20feature%20that%20simplifies,and%20deploy%20high-quality%20flows%20with%20ease%20and%20efficiency.
 [prompt-engine]: https://github.com/microsoft/prompt-engine
 [prompt-engine-py]: https://github.com/microsoft/prompt-engine-py
-[m365-copilot]: https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
-[d365-copilot]: https://blogs.microsoft.com/blog/2023/03/06/introducing-microsoft-dynamics-365-copilot/
-[viva-copilot]: https://www.microsoft.com/en-us/microsoft-365/blog/2023/04/20/introducing-copilot-in-microsoft-viva-a-new-way-to-boost-employee-engagement-and-performance/
-[sec-copilot]: https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/
 [langchain-doc]: https://docs.langchain.com/docs/
 [llama-index-doc]: https://gpt-index.readthedocs.io/en/latest/index.html
 [langchain-handbook]: https://www.pinecone.io/learn/series/langchain/
