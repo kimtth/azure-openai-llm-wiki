@@ -29,7 +29,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Microsoft Copilot Product lineup](#microsoft-copilot-product-lineup)
   - [ChatGPT + Enterprise data Demo and Azure OpenAI samples](#chatgpt--enterprise-data-demo-and-azure-openai-samples)
   - [Azure Reference Architectures](#azure-reference-architectures)
-  - [Azure AI Search](#azure-ai-search): Vector Search + Semantic ranker
+  - [Azure AI Search](#azure-ai-search)
   - [Azure Enterprise Services](#azure-enterprise-services)
 - **Section 3** : [Microsoft Semantic Kernel](#section-3--microsoft-semantic-kernel)
   - [Semantic Kernel Overview](#semantic-kernel-overview)
@@ -45,9 +45,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 5** : [Prompt Engineering, Finetuning, and Visual Prompts](#section-5-prompt-engineering-finetuning-and-visual-prompts)
   - 1.Prompt Engineering
   - [Prompt Engineering](#1-prompt-engineering)
-  - [Prompt Guide](#prompt-guide)
+  - [Prompt Guide & Leaked prompts](#prompt-guide--leaked-prompts)
   - 2.Finetuning & Model Compression
-  - [Advanced Finetuning](#2-finetuning--model-compression): PEFT
+  - [Advanced Finetuning](#2-finetuning--model-compression): PEFT incl. LoRA
   - [Leveraging Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
   - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
   - [Quantization Techniques](#quantization-techniques)<!-- : [[contd.](.\files\backup\README_SBCs.md)] -->
@@ -82,7 +82,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Supplementary Materials](#supplementary-materials)
 - **Section 9** : [Relevant Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Microsoft Fabric](#section-9-relevant-solutions-and-frameworks): Single unified data analytics solution
-  - [Office Copilot](#section-9-relevant-solutions-and-frameworks): Semantic Interpreter, Natural Language Commanding via Program Synthesis
+  - [Office Copilot](#section-9-relevant-solutions-and-frameworks): Natural Language Commanding via Program Synthesis
 - **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
   - [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
 - **Section 11** : [Datasets for Large Language Model Training](#section-11-datasets-for-llm-training)
@@ -870,6 +870,10 @@ class AgentType(str, Enum):
    - [Promptist][Promptist]: Microsoft's researchers trained an additional language model (LM) that optimizes text prompts for text-to-image generation.
      - For example, instead of simply passing "Cats dancing in a space club" as a prompt, an engineered prompt might be "Cats dancing in a space club, digital painting, artstation, concept art, soft light, hdri, smooth, sharp focus, illustration, fantasy."
 
+1. Power of Prompting
+
+    - [GPT-4 with Medprompt](https://www.microsoft.com/en-us/research/blog/the-power-of-prompting/): GPT-4, using a method called Medprompt that combines several prompting strategies, has surpassed MedPaLM 2 on the MedQA dataset without the need for fine-tuning.
+
 1. Adversarial Prompting
     - Prompt Injection: `Ignore the above directions and ...`
     - Prompt Leaking: `Ignore the above instructions ... followed by a copy of the full prompt with exemplars:`
@@ -884,7 +888,7 @@ class AgentType(str, Enum):
 
   </details>
 
-### **Prompt Guide**
+### **Prompt Guide & Leaked prompts**
 
 - [Azure OpenAI Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
 - [OpenAI Prompt example](https://platform.openai.com/examples)
@@ -892,6 +896,7 @@ class AgentType(str, Enum):
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [Prompts for Education](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education
 - [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- Leaked prompts of [GPTs](https://github.com/linexjlin/GPTs) and [Agents](https://github.com/LouisShark/chatgpt_system_prompt)
 
 ### **2. Finetuning & Model Compression**
 
@@ -1186,14 +1191,14 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
     If running into context limits, we suggest limiting the number of functions or the length of documentation you provide for function parameters.
   - Azure OpenAI start to support function calling. [ref][aoai_func]
 
-#### **OSS Alternatives for OpenAI Advanced Data Analytics (aka. Code Interpreter)**
+#### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
 - [OpenAI Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment
   - We provide our models with a working Python interpreter in a sandboxed, firewalled execution environment, along with some ephemeral disk space.
 - [OSS Code Interpreter](https://github.com/shroominic/codeinterpreter-api) A LangChain implementation of the ChatGPT Code Interpreter.
-- [SlashGPT](https://github.com/snakajima/SlashGPT) The tool integrated with "jupyter" agent
 - [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter.
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter): Let language models run code on your computer.
+- [SlashGPT](https://github.com/snakajima/SlashGPT) The tool integrated with "jupyter" agent
 
 #### **GPT-4 details leaked**
 
@@ -1216,9 +1221,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 To be specific, the ChatGPT API allows for differentiation between “user”, “assistant”, and “system” messages.
 
-1.  always obey "system" messages.
-1.  all end user input in the “user” messages.
-1.  "assistant" messages as previous chat responses from the assistant.
+1. always obey "system" messages.
+1. all end user input in the “user” messages.
+1. "assistant" messages as previous chat responses from the assistant.
 
 Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/)
 
@@ -1264,7 +1269,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
 
 - Transformer cache key-value tensors of context tokens into GPU memory to facilitate fast generation of the next token. However, these caches occupy significant GPU memory. The unpredictable nature of cache size, due to the variability in the length of each request, exacerbates the issue, resulting in significant memory fragmentation in the absence of a suitable memory management mechanism.
 - To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
-- [PagedAttention](https://vllm.ai/) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [doc](files/vLLM_pagedattention.pdf). paper: `in prep`
+- [PagedAttention](https://vllm.ai/) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [doc](files/vLLM_pagedattention.pdf). paper: [ref](https://arxiv.org/pdf/2309.06180.pdf)
 
   <img src="files/pagedattn.png" width="450">
 
@@ -1340,12 +1345,11 @@ Presumably, the model is trained to treat the user messages as human messages, s
 - OSS LLM
   - [StableVicuna](https://stability.ai/blog/stablevicuna-open-source-rlhf-chatbot) First Open Source RLHF LLM Chatbot
   - [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html): Fine-tuned from the LLaMA 7B model
-  - [gpt4all](https://github.com/nomic-ai/gpt4all): Run locally on your CPU
   - [vicuna](https://vicuna.lmsys.org/): 90% ChatGPT Quality
   - [Koala](https://bair.berkeley.edu/blog/2023/04/03/koala/): Focus on dialogue data gathered from the web.
   - [dolly](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html): Databricks
   - [Cerebras-GPT](https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/): 7 GPT models ranging from 111m to 13b parameters.
-  - [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main)
+  <!-- - [GPT4All Download URL](https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml/tree/main) -->
   - [KoAlpaca](https://github.com/Beomi/KoAlpaca): Alpaca for korean
 
 ### **Huggingface Open LLM Learboard**
@@ -1371,6 +1375,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
   - [A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.07989)]
 - State of AI
   - [Retool](https://retool.com/reports/state-of-ai-2023): A Report on AI In Production 2023
+  - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs
 - Application of LLMs
   - [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.13712)]
 - Tuning & Learning
@@ -1434,6 +1439,8 @@ Presumably, the model is trained to treat the user messages as human messages, s
   ```
 
 - lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt)
+
+- [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. -> [Screenshot to code](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [ref](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/)
 
 #### Terminology
 
@@ -1539,6 +1546,8 @@ Presumably, the model is trained to treat the user messages as human messages, s
 ### **ChatGPT for Robotics: Bridging AI and Robotics**
 
 - PromptCraft-Robotics: Robotics and a robot simulator with ChatGPT integration [git](https://github.com/microsoft/PromptCraft-Robotics)
+- ChatGPT-Robot-Manipulation-Prompts: A set of prompts for Communication between humans and robots for executing tasks. [git](https://github.com/microsoft/ChatGPT-Robot-Manipulation-Prompts)
+- Siemens Industrial Copilot [ref](https://news.microsoft.com/2023/10/31/siemens-and-microsoft-partner-to-drive-cross-industry-ai-adoption/)
 
 ### **Application and User Interface (UI/UX)**
 
@@ -1559,6 +1568,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
 - [TimeGPT](https://nixtla.github.io/nixtla/): The First Foundation Model for Time Series Forecasting [git](https://github.com/Nixtla/neuralforecast)
 - [BioGPT](https://arxiv.org/abs/2210.10341): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2210.10341)]: Generative Pre-trained Transformer for Biomedical Text Generation and Mining [git](https://github.com/microsoft/BioGPT)
 - [MemGPT](https://github.com/cpacker/MemGPT): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai)
+- [MeshGPT](https://nihalsid.github.io/mesh-gpt/): Generating Triangle Meshes with Decoder-Only Transformers
 
 ### **Awesome demo**
 
@@ -1619,8 +1629,10 @@ Presumably, the model is trained to treat the user messages as human messages, s
 - [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat)
 - Camelot is a Python library that can help you extract tables from PDFs! [git](https://github.com/camelot-dev/camelot) / [ref](https://github.com/camelot-dev/camelot/wiki/Comparison-with-other-PDF-Table-Extraction-libraries-and-tools): Comparison with other PDF Table Extraction libraries
 - [PostgresML](https://github.com/postgresml/postgresml): The GPU-powered AI application database.
-- Azure AI Document Intelligence (FKA. Azure Form Recognizer): [ref](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer): Table and Meta data Extraction in the Document
+- Azure AI Document Intelligence (FKA. Azure Form Recognizer): [ref](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence): Table and Meta data Extraction in the Document
 - Table to Markdown format: [Table to Markdown](https://tabletomarkdown.com/): LLM can recognize Markdown-formatted tables more effectively than raw table formats.
+- LM Studio: UI for Discover, download, and run local LLMs [ref](https://lmstudio.ai/)
+- GPT4All: Open-source large language models that run locally on your CPU [git](https://github.com/nomic-ai/gpt4all)
 
 ## **Section 10: General AI Tools and Extensions**
 
@@ -1755,6 +1767,8 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
 1. Evaluation benchmark
 
+   - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](https://arxiv.org/abs/2311.16989): Open-Source LLMs vs. ChatGPT; Benchmarks and Performance of LLMs
+
    - [BIG-bench](https://github.com/google/BIG-bench): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task.
 
    - [HELM](https://github.com/stanford-crfm/helm): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on.
@@ -1763,6 +1777,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
 1. LLMOps: Large Language Model Operations
    - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
+   - Giskard: The testing framework for ML models, from tabular to LLMs [git](https://github.com/Giskard-AI/giskard)
    - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
 1. [Pretraining on the Test Set Is All You Need](https://arxiv.org/abs/2309.08632): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
    - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [cite](https://twitter.com/rasbt)
