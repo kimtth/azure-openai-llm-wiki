@@ -833,7 +833,7 @@ class AgentType(str, Enum):
 
 1. [Graph of Thoughts (GoT)](https://arxiv.org/abs/2308.09687): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.09687)] Solving Elaborate Problems with Large Language Models [git](https://github.com/spcl/graph-of-thoughts)
 
-   <img src="files/got-prompt.png" width="90%">
+   <img src="files/got-prompt.png" width="700">
 
 1. [Retrieval Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2005.11401)]: To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model.
 1. Zero-shot, one-shot and few-shot [cite](https://arxiv.org/abs/2005.14165)
@@ -1138,12 +1138,13 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU))
 
 ### **Knowledge Distillation: Reducing Model Size with Textbooks**
 
+- ph-2: Phi-2 will be open source, and is 50% better at mathematical reasoning.
 - [ph-1.5](https://arxiv.org/abs/2309.05463): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.05463)]: Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests.
 - [ph-1](https://arxiv.org/abs/2306.11644): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11644)]: Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/)
-- [Orca](https://arxiv.org/abs/2306.02707): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.02707)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/)
+- [Orca 2](https://arxiv.org/abs/2311.11045): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.11045)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [ref](https://www.microsoft.com/en-us/research/blog/orca-2-teaching-small-language-models-how-to-reason/)
 - Distilled Supervised Fine-Tuning (dSFT)
   1. [Zephyr 7B](https://arxiv.org/abs/2310.16944): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO). [ref](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
-  1. [Mistral 7B](https://arxiv.org/abs/2310.06825): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [ref](https://mistral.ai/news/announcing-mistral-7b/)
+  2. [Mistral 7B](https://arxiv.org/abs/2310.06825): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [ref](https://mistral.ai/news/announcing-mistral-7b/)
 
 ### **Large Transformer Model Inference Optimization**
 
@@ -1336,7 +1337,6 @@ Presumably, the model is trained to treat the user messages as human messages, s
 ### **Open-Source Large Language Models**
 
 - [The LLM Index](https://sapling.ai/llm/index): A list of large language models (LLMs)
-- [List of OSS LLM](https://medium.com/geekculture/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76): Printed version for "Medium" limits. [doc](files/list_of_oss_llm.pdf): Mar 30 2023
 - [LLM Collection][llm-collection]: promptingguide.ai
 - Upstage's 70B Language Model Outperforms GPT-3.5: [ref][upstage]
 - The LLMs mentioned here are just small parts of the current advancements in the field. Most OSS LLM models have been built on the [facebookresearch/llama](https://github.com/facebookresearch/llama). For a comprehensive list and the latest updates, please refer to the "LLM Index".
@@ -1388,8 +1388,9 @@ Presumably, the model is trained to treat the user messages as human messages, s
   - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.03629)]
   - [Hallucination in LLMs](https://arxiv.org/abs/2311.05232):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.05232)]
   - [Evaluating Large Language Models: A Comprehensive Survey](https://arxiv.org/abs/2310.19736):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.19736)]
-- Google AI Research Recap
 
+- Google AI Research Recap
+  - [Gemini](https://blog.google/technology/ai/google-gemini-ai) Dec 06, 2023, three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU
   - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
   - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
   - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
@@ -1491,6 +1492,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
   Camel Agents - a Hugging Face Space by camel-ai
   [Hugging Face (camel-agents)](https://huggingface.co/spaces/camel-ai/camel-agents)
 - [Microsoft Autogen](https://github.com/microsoft/autogen): Customizable and conversable agents framework [ref](https://www.microsoft.com/en-us/research/blog/autogen-enabling-next-generation-large-language-model-applications/)
+- [Microsoft TaskWeaver](https://github.com/microsoft/TaskWeaver): A code-first agent framework for seamlessly planning and executing data analytics tasks. 
 - [ChatDev](https://github.com/OpenBMB/ChatDev): Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)
 - [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot): Dev tool that writes scalable apps from scratch while the developer oversees the implementation
 - [OpenAgents](https://github.com/xlang-ai/OpenAgents): three distinct agents: Data Agent for data analysis, Plugins Agent for plugin integration, and Web Agent for autonomous web browsing.
@@ -1610,6 +1612,7 @@ Presumably, the model is trained to treat the user messages as human messages, s
 - [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses
 - [DAIR.AI](https://github.com/dair-ai): Machine learning & NLP research ([omarsar github](https://github.com/omarsar))
 - [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning
+- [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
@@ -1725,69 +1728,64 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
 ## **Section 12: Evaluating Large Language Models & LLMOps**
 
-1. Evaluation
+1. Evaluation Benchmark
 
    - Awesome LLMs Evaluation Papers: Evaluating Large Language Models: A Comprehensive Survey [git](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers)
    - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109)]
-   - [promptfoo](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.
-   - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
-   - OpenAI Evals: [git](https://github.com/openai/evals)
-   - TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
+   - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](https://arxiv.org/abs/2311.16989): Open-Source LLMs vs. ChatGPT; Benchmarks and Performance of LLMs
+   - [BIG-bench](https://github.com/google/BIG-bench): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task.
+   - [HELM](https://github.com/stanford-crfm/helm): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on.
+   - [HumanEval](https://github.com/openai/human-eval): Hand-Written Evaluation Set for Code Generation Bechmark. 164 Human written Programming Problems. [ref](https://paperswithcode.com/task/code-generation)
+   - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.08491)]: We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks.
 
-1. Evaluation metrics
+2. Evaluation metrics
 
    1. Automated evaluation of LLMs
 
       - n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE and BLEU are used for summarization and translation tasks.
       - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
 
-          <details>
-          <summary>Automated evaluation of LLMs</summary>
+      <details>
+      <summary>Automated evaluation of LLMs</summary>
 
         - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
 
           1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
-          1. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
-          1. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
-          1. ROUGE-S: Skip-bigram based co-occurrence statistics.
-          1. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
+          2. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
+          3. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
+          4. ROUGE-S: Skip-bigram based co-occurrence statistics.
+          5. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
 
         - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
 
         - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
 
         - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
-        </details>
+      </details>
 
-   1. Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
+   2. Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
 
-   - [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969): Prompt flow の評価メトリクス紹介 / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow): Built-in evaluation methods in Prompt flow
+   3. Built-in evaluation methods in Prompt flow: [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969) / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow)
 
-   - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.08491)]: We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks.
-
-1. Evaluation benchmark
-
-   - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](https://arxiv.org/abs/2311.16989): Open-Source LLMs vs. ChatGPT; Benchmarks and Performance of LLMs
-
-   - [BIG-bench](https://github.com/google/BIG-bench): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task.
-
-   - [HELM](https://github.com/stanford-crfm/helm): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on.
-
-   - [HumanEval](https://github.com/openai/human-eval): Hand-Written Evaluation Set for Code Generation Bechmark. 164 Human written Programming Problems. [ref](https://paperswithcode.com/task/code-generation)
-
-1. LLMOps: Large Language Model Operations
+3. LLMOps: Large Language Model Operations
+   - OpenAI Evals: [git](https://github.com/openai/evals)
+   - [promptfoo](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.
+   - PromptTools: Open-source tools for prompt testing [git](https://github.com/hegelai/prompttools/)
+   - TruLens-Eval: Instrumentation and evaluation tools for large language model (LLM) based applications. [git](https://github.com/truera/trulens)
    - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo)
    - Giskard: The testing framework for ML models, from tabular to LLMs [git](https://github.com/Giskard-AI/giskard)
    - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
-1. [Pretraining on the Test Set Is All You Need](https://arxiv.org/abs/2309.08632): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
+4. [Pretraining on the Test Set Is All You Need](https://arxiv.org/abs/2309.08632): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
    - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [cite](https://twitter.com/rasbt)
-1. [Challenges in evaluating AI systems](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [doc](./files/eval-ai-anthropic.pdf)
+5. [Challenges in evaluating AI systems](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [doc](./files/eval-ai-anthropic.pdf)
 
 ## **Contributors**
 
 <a href="https://github.com/kimtth/azure-openai-llm-vector-langchain/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kimtth/azure-openai-llm-vector-langchain" />
 </a>
+
+ⓒ `https://github.com/kimtth` all rights reserved.
 
 <!-- ```bibtex
 @misc{Kimtth,
