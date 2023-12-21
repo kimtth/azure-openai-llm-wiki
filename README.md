@@ -76,14 +76,14 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 8** : [Survey and Reference](#section-8-survey-and-reference)
   - [Survey on Large Language Models](#survey-on-large-language-models)
   - [Build an LLMs from scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt)
-  - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)and Robotics
+  - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
   - [Japanese Language Materials for LLMs 日本語](#japanese-language-materials-for-llms-日本語)
   - [Supplementary Materials](#supplementary-materials)
 - **Section 9** : [Relevant Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks): incl. Microsoft Fabric
   - [Agents](#agents-autogpt-and-communicative-agents): AutoGPT and Communicative Agents
   - [Application and User Interface (UI/UX)](#application-and-user-interface-uiux)
-  - [ChatGPT for Robotics](#chatgpt-for-robotics-bridging-ai-and-robotics): Bridging AI
+  - [ChatGPT for Robotics](#chatgpt-for-robotics-bridging-ai-and-robotics)
   - [GPT for Domain specific](#gpt-for-domain-specific)
 - **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
   - [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
