@@ -1,11 +1,12 @@
 # Azure OpenAI + LLMs (Large Language Models)
 
-This repository contains references to Azure OpenAI, LLM, related services, and libraries.
+This repository contains references to Azure OpenAI, LLM, related services, and libraries. Similar approach to "Awesome-LLM": a curated list of Azure OpenAI and Large Language Models.
 
 > Disclaimer: Not being able to keep up with and test every recent update, sometimes I simply copied them into this repository for later review. Please be aware that `some content may be outdated.`
 
-> `Writing Rule`: 1. Brief each item on one or a few lines as much as possible.
-> 2. The release dates are determined by the date of the initial commit history, the Article published date, or the Paper issued date (v1).
+> 1. Brief each item on one or a few lines as much as possible.
+> 2. The release dates are determined by the date of the commit history, the Article published date, or the Paper issued date (v1).
+> 3. The notebook for the `deeplearning.ai short courses` is stored in the `code\deeplearning.ai` folder.
 
 ## What's the difference between Azure OpenAI and OpenAI?
 
@@ -496,12 +497,12 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - ChatGPT Plugin Quickstart using Python and FastAPI: [git](https://github.com/Azure-Samples/openai-plugin-fastapi) [May 2023]
   - Azure-Cognitive-Search-Azure-OpenAI-Accelerator: [git](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) [Feb 2023]
   - GPT-Azure-Search-Engine: [git](https://github.com/pablomarin/GPT-Azure-Search-Engine) [Feb 2023]
-- Azure OpenAI Network Latency Test Script
+  - Azure OpenAI Network Latency Test Script
   : [git](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]
-- [Azure OpenAI Design Patterns](https://github.com/microsoft/azure-openai-design-patterns): A set of design patterns using the Azure OpenAI service [May 2023]
-- [Azure AI Services Landing Zone](https://github.com/FreddyAyala/AzureAIServicesLandingZone) / [ref](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) [24 Jul 2023]
-- [Security Best Practices for GenAI Applications (OpenAI) in Azure](https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885) [16 Jan 2024]
-- [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) [09 Jan 2024]
+- Azure Open AI work with Cognitive Search act as a Long-term memory
+  1. [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
+  2. [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ) [06 Apr 2023]
+  3. [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840) [24 May 2023]
 
 ### **Azure Reference Architectures**
 
@@ -514,16 +515,22 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 |                                  [Azure Video Indexer demo](https://aka.ms/viopenaidemo) Azure Video Indexer + OpenAI [Apr 2023]                             |        [Miyagi](https://github.com/Azure-Samples/miyagi) Integration demonstrate for multiple langchain libraries [Feb 2023] |
 |                                      <img src="files/demo-videoindexer.png" alt="demo-videoindexer" width="200"/>                                      |                                 <img src="files/wip-azure.png" alt="miyagi" width="200"/>                                 |
 
-- Azure Open AI work with Cognitive Search act as a Long-term memory
+- Referece Application and Architecture
+  - [Azure Command Companion](https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/azure-command-companion/ba-p/4005044): Harnessing the Power of OpenAI GPT-3.5 Turbo for Azure CLI Command Generation [10 Dec 2023 ]
+  - [Chat with your Azure DevOps data](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/chat-with-your-azure-devops-data/ba-p/4017784) [10 Jan 2024]
+  - [Baseline OpenAI end-to-end chat reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)
+  - [Build language model pipelines with memory](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/guide/language-model-pipelines)
 
-  1. [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
-  2. [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ) [06 Apr 2023]
-  3. [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840) [24 May 2023]
-
-- Tech community
-  1. [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857): Retrieval-Augmented Generation (RAG) [09 Jun 2023]
-  1. [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087) [09 Mar 2023]
-  1. [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/) [07 Mar 2023]
+- Guideline
+  - [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857): Retrieval-Augmented Generation (RAG) [09 Jun 2023]
+  - [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087) [09 Mar 2023]
+  - [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/) [07 Mar 2023]
+  - [Azure OpenAI Design Patterns](https://github.com/microsoft/azure-openai-design-patterns): A set of design patterns using the Azure OpenAI service [May 2023]
+  - [Azure AI Services Landing Zone](https://github.com/FreddyAyala/AzureAIServicesLandingZone) / [ref](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) [24 Jul 2023]
+  - [Security Best Practices for GenAI Applications (OpenAI) in Azure](https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885) [16 Jan 2024]
+  - [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) [09 Jan 2024]
+  - [Integrate private access to your Azure Open AI Chatbot](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrate-private-access-to-your-azure-open-ai-chatbot/ba-p/3994613) [30 Nov 2023]
+  - Smart load balancing for OpenAI endpoints [git](https://github.com/Azure/aoai-smart-loadbalancing) [Jan 2024]
 
 ### **Azure AI Search**
 
@@ -562,7 +569,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 <!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
 
 - .NET Semantic Kernel SDK: 1. Renamed packages and classes that used the term “Skill” to now use “Plugin”. 2. OpenAI specific in Semantic Kernel core to be AI service agnostic 3. Consolidated our planner implementations into a single package [ref](https://devblogs.microsoft.com/semantic-kernel/introducing-the-v1-0-0-beta1-for-the-net-semantic-kernel-sdk/) [10 Oct 2023]
-- Chat Copilot: A reference application for building a chat experience using Semantic Kernel. Leveraging plugins, planners, and AI memories. [git](https://github.com/microsoft/chat-copilot) [Apr 2023]
+- Chat Copilot Sample Application: A reference application for building a chat experience using Semantic Kernel. Leveraging plugins, planners, and AI memories. [git](https://github.com/microsoft/chat-copilot) [Apr 2023]
 - Semantic Kernel Recipes: A collection of C# notebooks [git](https://github.com/johnmaeda/SK-Recipes) [Mar 2023]
 <!-- - Bing search sample and Azure Cosmos DB for vector storage by leveraging the SemanticKernel.
 
@@ -624,6 +631,10 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - SemanticKernel Implementation sample to overcome Token limits of Open AI model.
   Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
   [ref](https://zenn.dev/microsoft/articles/semantic-kernel-10) [06 May 2023]
+
+- Road to v1.0 for the Python Semantic Kernel SDK [ref](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/) [23 Jan 2024]
+- Deploy Semantic Kernel with Bot Framework [ref](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-semantic-kernel-with-bot-framework/ba-p/3928101) [git](https://github.com/Azure/semantic-kernel-bot-in-a-box) [26 Oct 2023]
+- Semantic Kernel-Powered OpenAI Plugin Development Lifecycle [ref](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/semantic-kernel-powered-openai-plugin-development-lifecycle/ba-p/3967751) [30 Oct 2023]
 
 ### **Semantic Function**
 
@@ -1634,6 +1645,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python):🏆A ranked list of awesome machine learning Python libraries. [Nov 2020]
+- [Large Language Models: Application through Production](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
@@ -1694,6 +1706,8 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java. [Jul 2023]
 - [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex [Sep 2023]
 - [Open-source GPT Wrappers](https://star-history.com/blog/gpt-wrappers) 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) 2. [FastGPT](https://github.com/labring/FastGPT) 3. [Lobe Chat](https://github.com/lobehub/lobe-chat) [Jan 2024]
+- [GPT Researcher](https://github.com/assafelovic/gpt-researcher) [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper) [Jan 2024]
+- [RAGxplorer](https://github.com/gabrielchua/RAGxplorer): Visualizing document chunks and the queries in the embedding space. [Jan 2024]
 
 ### **ChatGPT for Robotics: Bridging AI and Robotics**
 
