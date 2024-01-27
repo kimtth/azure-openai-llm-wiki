@@ -78,13 +78,13 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 - **Section 8** : [Survey and Reference](#section-8-survey-and-reference)
   - [Survey on Large Language Models](#survey-on-large-language-models)
   - [Build an LLMs from scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt)
-  - [Japanese Language Materials for LLMs 日本語](#japanese-language-materials-for-llms-日本語)
-  - [Supplementary Materials](#supplementary-materials)
+  - [Japanese Language Materials for LLMs (日本語)](#japanese-language-materials-for-llms)
+  - [Learning and Supplementary Materials](#learning-and-supplementary-materials)
 - **Section 9** : [Relevant Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Agents](#agents-autogpt-and-communicative-agents): AutoGPT and Communicative Agents
-  - [Application and User Interface (UI/UX)](#application-and-user-interface-uiux)
-  - [ChatGPT for Robotics](#chatgpt-for-robotics-bridging-ai-and-robotics)
+  - [Application Development and User Interface (UI/UX)](#application-development-and-user-interface-uiux)
+  - [LLM for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
   - [GPT for Domain specific](#gpt-for-domain-specific)
 - **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
   - [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
@@ -107,7 +107,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 - RAG (Retrieval-Augmented Generation) : Integrates the retrieval (searching) into LLM text generation. RAG helps the model to “look up” external information to improve its responses. [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7) [25 Aug 2023]
 
-  <img src="files/RAG.png" alt="sk" width="400"/>
+  <!-- <img src="files/RAG.png" alt="sk" width="400"/> -->
 
 - In a 2020 paper, Meta (Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2005.11401)] [22 May 2020]
 
@@ -115,48 +115,49 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   1. RAG-token— We retrieve k documents, use them to generate the next token, then retrieve k more documents, use them to generate the next token, and so on. This means that we could end up retrieving several different sets of documents in the generation of a single answer to a user’s query.
   1. Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a) [30 Sep 2023]
 
-- Retrieval-Augmented Generation: Research Papers
+### **Retrieval-Augmented Generation: Research Papers**
+
+- [RAG for LLMs](https://arxiv.org/abs/2312.10997): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] Retrieval-Augmented Generation for Large Language Models: A Survey: `Three paradigms of RAG Naive RAG > Advanced RAG > Modular RAG`
+
+- [Benchmarking Large Language Models in Retrieval-Augmented Generation](https://arxiv.org/abs/2309.01431): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.01431)]: Retrieval-Augmented Generation Benchmark (RGB) is proposed to assess LLMs on 4 key abilities [4 Sep 2023]:
+
+  1. Noise robustness (External documents contain noises, struggled with noise above 80%)
+  1. Negative rejection (External documents are all noises, Highest rejection rate was only 45%)
+  1. Information integration (Difficulty in summarizing across multiple documents, Highest accuracy was 60-67%)
+  1. Counterfactual robustness (Failed to detect factual errors in counterfactual external documents.)
+
+- <details>
+
+  <summary>Expand</summary>
 
   - [Active Retrieval Augmented Generation](https://arxiv.org/abs/2305.06983) : [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.06983)]: Forward-Looking Active REtrieval augmented generation (FLARE): FLARE iteratively generates a temporary next sentence and check whether it contains low-probability tokens. If so, the system retrieves relevant documents and regenerates the sentence. Determine low-probability tokens by `token_logprobs in OpenAI API response`. [git](https://github.com/jzbjyb/FLARE/blob/main/src/templates.py) [11 May 2023]
 
-  - [Benchmarking Large Language Models in Retrieval-Augmented Generation](https://arxiv.org/abs/2309.01431): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.01431)]: Retrieval-Augmented Generation Benchmark (RGB) is proposed to assess LLMs on 4 key abilities [4 Sep 2023]:
+  - [Self-RAG](https://arxiv.org/pdf/2310.11511.pdf): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.11511)] 1. `Critic model C`: Generates reflection tokens (IsREL (relevant,irrelevant), IsSUP (fullysupported,partially supported,nosupport), IsUse (is useful: 5,4,3,2,1)). It is pretrained on data labeled by GPT-4. 2. `Generator model M`: The main language model that generates task outputs and reflection tokens. It leverages the data labeled by the critic model during training. 3. `Retriever model R`: Retrieves relevant passages. The LM decides if external passages (retriever) are needed for text generation. [git](https://github.com/AkariAsai/self-rag) [17 Oct 2023]
 
-    1. Noise robustness (External documents contain noises, struggled with noise above 80%)
-    1. Negative rejection (External documents are all noises, Highest rejection rate was only 45%)
-    1. Information integration (Difficulty in summarizing across multiple documents, Highest accuracy was 60-67%)
-    1. Counterfactual robustness (Failed to detect factual errors in counterfactual external documents.)
+  - [A Survey on Retrieval-Augmented Text Generation](https://arxiv.org/abs/2202.01110): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.01110)]: This paper conducts a survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in many NLP tasks. These tasks include Dialogue response generation, Machine translation, Summarization, Paraphrase generation, Text style transfer, and Data-to-text generation. [2 Feb 2022]
 
-  - [RAG for LLMs](https://arxiv.org/abs/2312.10997): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] Retrieval-Augmented Generation for Large Language Models: A Survey: `Three paradigms of RAG Naive RAG > Advanced RAG > Modular RAG`
+  - [Retrieval meets Long Context LLMs](https://arxiv.org/abs/2310.03025): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03025)]: We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs. [4 Oct 2023]
 
-  - <details>
+  - [FreshLLMs](https://arxiv.org/abs/2310.03214): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03214)]: Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://www.github.com/freshllms/freshqa) [5 Oct 2023]
 
-    <summary>Extras</summary>
+  - [RECOMP: Improving Retrieval-Augmented LMs with Compressors](https://arxiv.org/abs/2310.04408): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.04408)]: 1. We propose RECOMP (Retrieve, Compress, Prepend), an intermediate step which compresses retrieved documents into a textual summary prior to prepending them to improve retrieval-augmented language models (RALMs). 2. We present two compressors – an `extractive compressor` which selects useful sentences from retrieved documents and an `abstractive compressor` which generates summaries by synthesizing information from multiple documents. 3. Both compressors are trained. [6 Oct 2023]
 
-    - [Self-RAG](https://arxiv.org/pdf/2310.11511.pdf): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.11511)] 1. `Critic model C`: Generates reflection tokens (IsREL (relevant,irrelevant), IsSUP (fullysupported,partially supported,nosupport), IsUse (is useful: 5,4,3,2,1)). It is pretrained on data labeled by GPT-4. 2. `Generator model M`: The main language model that generates task outputs and reflection tokens. It leverages the data labeled by the critic model during training. 3. `Retriever model R`: Retrieves relevant passages. The LM decides if external passages (retriever) are needed for text generation. [git](https://github.com/AkariAsai/self-rag) [17 Oct 2023]
+  - [Retrieval-Augmentation for Long-form Question Answering](https://arxiv.org/abs/2310.12150): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.12150)]: 1. The order of evidence documents affects the order of generated answers 2. the last sentence of the answer is more likely to be unsupported by evidence. 3. Automatic methods for detecting attribution can achieve reasonable performance, but still lag behind human agreement. `Attribution in the paper assesses how well answers are based on provided evidence and avoid creating non-existent information.` [18 Oct 2023]
 
-    - [A Survey on Retrieval-Augmented Text Generation](https://arxiv.org/abs/2202.01110): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.01110)]: This paper conducts a survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in many NLP tasks. These tasks include Dialogue response generation, Machine translation, Summarization, Paraphrase generation, Text style transfer, and Data-to-text generation. [2 Feb 2022]
+  - [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/abs/2401.06532): 1. INTERS covers 21 search tasks across three categories: query understanding, document understanding, and query-document relationship understanding. The dataset is designed for instruction tuning, a method that fine-tunes LLMs on natural language instructions. [git](https://github.com/DaoD/INTERS) [12 Jan 2024]
 
-    - [Retrieval meets Long Context LLMs](https://arxiv.org/abs/2310.03025): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03025)]: We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs. [4 Oct 2023]
+  - [RAG vs Fine-tuning](https://arxiv.org/abs/2401.08406): Pipelines, Tradeoffs, and a Case Study on Agriculture. [16 Jan 2024]
 
-    - [FreshLLMs](https://arxiv.org/abs/2310.03214): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03214)]: Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://www.github.com/freshllms/freshqa) [5 Oct 2023]
+  </details>
 
-    - [RECOMP: Improving Retrieval-Augmented LMs with Compressors](https://arxiv.org/abs/2310.04408): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.04408)]: 1. We propose RECOMP (Retrieve, Compress, Prepend), an intermediate step which compresses retrieved documents into a textual summary prior to prepending them to improve retrieval-augmented language models (RALMs). 2. We present two compressors – an `extractive compressor` which selects useful sentences from retrieved documents and an `abstractive compressor` which generates summaries by synthesizing information from multiple documents. 3. Both compressors are trained. [6 Oct 2023]
-
-    - [Retrieval-Augmentation for Long-form Question Answering](https://arxiv.org/abs/2310.12150): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.12150)]: 1. The order of evidence documents affects the order of generated answers 2. the last sentence of the answer is more likely to be unsupported by evidence. 3. Automatic methods for detecting attribution can achieve reasonable performance, but still lag behind human agreement. `Attribution in the paper assesses how well answers are based on provided evidence and avoid creating non-existent information.` [18 Oct 2023]
-  
-    - [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/abs/2401.06532): 1. INTERS covers 21 search tasks across three categories: query understanding, document understanding, and query-document relationship understanding. The dataset is designed for instruction tuning, a method that fine-tunes LLMs on natural language instructions. [git](https://github.com/DaoD/INTERS) [12 Jan 2024]
-
-    - [RAG vs Fine-tuning](https://arxiv.org/abs/2401.08406): Pipelines, Tradeoffs, and a Case Study on Agriculture. [16 Jan 2024]
-
-    </details>
+### **RAG Pipeline & Advanced RAG**
 
 - RAG Pipeline
-
   1. Indexing Stage: Preparing a knowledge base.
   2. Querying Stage: Querying the indexed data to retrieve relevant information.
   3. Responding Stage: Generating responses based on the retrieved information. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation)
 
-  How to optimize RAG pipeline: [Indexing optimization](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines) [24 Oct 2023]
+- How to optimize RAG pipeline: [Indexing optimization](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines) [24 Oct 2023]
 
 - Advanced RAG Patterns: How to improve RAG peformance [ref](https://cloudatlas.me/why-do-rag-pipelines-fail-advanced-rag-patterns-part1-841faad8b3c2) / [ref](https://cloudatlas.me/how-to-improve-rag-peformance-advanced-rag-patterns-part2-0c84e2df66e6) [17 Oct 2023]
 
@@ -174,6 +175,10 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
   <img src="files/oai-rag-success-story.jpg" width="500">
 
+- [Graph RAG](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
+
+### **The Problem with RAG**
+
 - The Problem with RAG
   1. A question is not semantically similar to its answers. Cosine similarity may favor semantically similar texts that do not contain the answer.
   1. Semantic similarity gets diluted if the document is too long. Cosine similarity may favor short documents with only the relevant information.
@@ -181,11 +186,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 - [Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856): 1. Missing Content, 2. Missed the Top Ranked Documents, 3. Not in Context, 4. Not Extracted, 5. Wrong Format, 6. Incorrect Specificity, 7. Lack of Thorough Testing [11 Jan 2024]
 
-- [Graph RAG](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
-
 ### **LlamaIndex**
 
-- LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [ref][llama-index-doc]
+- LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. [ref][llama-index-doc] / High-Level Concept: [ref](https://docs.llamaindex.ai/en/latest/getting_started/concepts.html)
 
   > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [cite](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading](https://arxiv.org/abs/2310.05029)
   >
@@ -225,10 +228,9 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - llama-index-es-handson\milvus-create-query.py: Milvus Vector storage
 
   </details> -->
+<!-- - High-Level Concept -->
 
-- Hign-Level Concepts
-
-  <img src="files/llama-idx-high-lv.png" width="450">
+  <!-- <img src="files/llama-idx-high-lv.png" width="450"> -->
 
 - Query engine vs Chat engine
 
@@ -248,7 +250,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
      <details>
 
-     <summary>Llamindex Context definition</summary>
+     <summary>Context class definition</summary>
 
      ```python
      # The storage context container is a utility container for storing nodes, indices, and vectors.
@@ -411,6 +413,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 ### **ChatGPT + Enterprise data Demo and Azure OpenAI samples**
 
+#### **ChatGPT + Enterprise data Demo**
+
 - ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation) Demo
 - A sample app for the Retrieval-Augmented Generation pattern running in Azure, using Azure Cognitive Search for retrieval and Azure OpenAI [git](https://github.com/Azure-Samples/azure-search-openai-demo) [8 Feb 2023]
 - ChatGPT + Enterprise data RAG Screenshot
@@ -487,6 +491,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
   </details> -->
 
+#### **Azure OpenAI samples**
+
 - Azure OpenAI samples: [ref](https://github.com/Azure/azure-openai-samples) [Apr 2023]
 - The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [ref](https://github.com/Azure-Samples/openai) [Apr 2023]
 - Azure-Samples [ref](https://github.com/Azure-Samples)
@@ -545,7 +551,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 <!-- - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Vector and Hybrid Search -->
 - A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023]
 
-  <img src="files\acs-hybrid.png" alt="acs" width="400"/>
+  <img src="files\acs-hybrid.png" alt="acs" width="350"/>
 
 - Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [ref](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
 
@@ -568,50 +574,26 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 <!-- <img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/> -->
 <!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
 
+#### **Feature Roadmap**
+
 - .NET Semantic Kernel SDK: 1. Renamed packages and classes that used the term “Skill” to now use “Plugin”. 2. OpenAI specific in Semantic Kernel core to be AI service agnostic 3. Consolidated our planner implementations into a single package [ref](https://devblogs.microsoft.com/semantic-kernel/introducing-the-v1-0-0-beta1-for-the-net-semantic-kernel-sdk/) [10 Oct 2023]
+- Road to v1.0 for the Python Semantic Kernel SDK [ref](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/) [23 Jan 2024]
+
+#### **Code Recipes**
+
 - Chat Copilot Sample Application: A reference application for building a chat experience using Semantic Kernel. Leveraging plugins, planners, and AI memories. [git](https://github.com/microsoft/chat-copilot) [Apr 2023]
 - Semantic Kernel Recipes: A collection of C# notebooks [git](https://github.com/johnmaeda/SK-Recipes) [Mar 2023]
-<!-- - Bing search sample and Azure Cosmos DB for vector storage by leveraging the SemanticKernel.
+- Deploy Semantic Kernel with Bot Framework [ref](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-semantic-kernel-with-bot-framework/ba-p/3928101) [git](https://github.com/Azure/semantic-kernel-bot-in-a-box) [26 Oct 2023]
+- Semantic Kernel-Powered OpenAI Plugin Development Lifecycle [ref](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/semantic-kernel-powered-openai-plugin-development-lifecycle/ba-p/3967751) [30 Oct 2023]
+- SemanticKernel Implementation sample to overcome Token limits of Open AI model.
+  Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
+  [ref](https://zenn.dev/microsoft/articles/semantic-kernel-10) [06 May 2023]
 
-  <details>
-
-  <summary>Semantic Kernel Trials</summary>
-
-  1. **Semantic Kernel sample**
-
-  - appsettings.template.json : Environment value configuration file.
-  - ComoseDBVectorSearch.cs : Vector Search using Azure Cosmos DB
-  - CosmosDBKernelBuild.cs : Kernel Build code (test)
-  - CosmosDBVectorStore.cs : Embedding Text and store it to Azure Cosmos DB
-  - LoadDocumentPage.cs : PDF splitter class. Split the text to unit of section. (C# version of `azure-search-openai-demo/scripts/prepdocs.py`)
-  - LoadDocumentPageOutput : LoadDocumentPage class generated output
-  - MemoryContextAndPlanner.cs : Test code of context and planner
-  - MemoryConversationHistory.cs : Test code of conversation history
-  - Program.cs : Run a demo. Program Entry point
-  - SemanticFunction.cs : Test code of conversation history
-  - semanticKernelCosmos.csproj : C# Project file
-  - Settings.cs : Environment value class
-  - SkillBingSearch.cs : Bing Search Skill
-  - SkillDALLEImgGen.cs : DALLE Skill
-
-  2. **Bing search Web UI and Semantic Kernel sample**
-
-  - Semantic Kernel sample code to integrate with Bing Search
-    - `\ms-semactic-bing-notebook`
-    - gs_chatgpt.ipynb: Azure Open AI ChatGPT sample to use Bing Search
-    - gs_davinci.ipynb: Azure Open AI Davinci sample to use Bing Search
-  - Bing Search UI for demo
-
-    - `\bing-search-webui`: (Utility, to see the search results from Bing Search API)
-
-      <img src="code\bing-search-webui\public\img\screenshot.png" alt="bingwebui" width="150"/>
-
-  </details> 
- -->
+#### **Semantic Kernel Planner**
 
 - Semantic Kernel Planner [ref](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-planners-actionplanner/) [24 Jul 2023]
 
-  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="400"/>
+  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="390"/>
 
 - Is Semantic Kernel Planner the same as LangChain agents?
 
@@ -628,21 +610,14 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   <!-- > ScratchPad: Using "program execution" strategy boosts performance of large language model tasks by enforcing the use of a "scratch pad." For instance, instead of requesting the LLM's output for a Python function with a specific input, users can ask for the execution trace. This prompts the model to generate predictions for each intermediate step of the function, thereby increasing the probability of the LLM producing the correct final line. [cite](https://snorkel.ai/large-language-models-llms/) -->
 
 <!-- - Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [ref](https://devblogs.microsoft.com/semantic-kernel) -->
-- SemanticKernel Implementation sample to overcome Token limits of Open AI model.
-  Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
-  [ref](https://zenn.dev/microsoft/articles/semantic-kernel-10) [06 May 2023]
 
-- Road to v1.0 for the Python Semantic Kernel SDK [ref](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/) [23 Jan 2024]
-- Deploy Semantic Kernel with Bot Framework [ref](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-semantic-kernel-with-bot-framework/ba-p/3928101) [git](https://github.com/Azure/semantic-kernel-bot-in-a-box) [26 Oct 2023]
-- Semantic Kernel-Powered OpenAI Plugin Development Lifecycle [ref](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/semantic-kernel-powered-openai-plugin-development-lifecycle/ba-p/3967751) [30 Oct 2023]
+#### **Semantic Function**
 
-### **Semantic Function**
-
-Semantic Function - expressed in natural language in a text file "_skprompt.txt_" using SK's
+- Semantic Function - expressed in natural language in a text file "_skprompt.txt_" using SK's
 [Prompt Template language](https://github.com/microsoft/semantic-kernel/blob/main/docs/PROMPT_TEMPLATE_LANGUAGE.md).
 Each semantic function is defined by a unique prompt template file, developed using modern prompt engineering techniques. [cite](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
 
-### **Prompt Template language Key takeaways**
+- Prompt Template language Key takeaways
 
 ```bash
 1. Variables : use the {{$variableName}} syntax : Hello {{$name}}, welcome to Semantic Kernel!
@@ -659,7 +634,7 @@ Each semantic function is defined by a unique prompt template file, developed us
     ... {{ 'no need to "escape" ' }} ...
 ```
 
-### **Semantic Kernel Glossary**
+#### **Semantic Kernel Glossary**
 
 - [Glossary in Git](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md) / [Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
 
@@ -720,8 +695,8 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 ### **Langchain Quick Start: How to Use**
 
-- `deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
-- `deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
+- `code\deeplearning.ai\langchain-chat-with-your-data`: DeepLearning.ai LangChain: Chat with Your Data
+- `code\deeplearning.ai\langchain-llm-app-dev`: LangChain for LLM Application Development
 <!-- - @practical-ai sample code
 
   <details>
@@ -919,7 +894,7 @@ class AgentType(str, Enum):
 
   - <details>
 
-    <summary>Extras</summary>
+    <summary>Expand</summary>
 
     1. [FireAct](https://arxiv.org/abs/2310.05915): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05915)]: Toward Language Agent Fine-tuning. 1. This work takes an initial step to show multiple advantages of fine-tuning LMs for agentic uses. 2. Duringfine-tuning, The successful trajectories are then converted into the ReAct format to fine-tune a smaller LM. 3. This work is an initial step toward language agent fine-tuning,
    and is constrained to a single type of task (QA) and a single tool (Google search). / [git](https://fireact-agent.github.io/) [9 Oct 20239]
@@ -991,7 +966,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.09685)]: LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA) [17 Jun 2021]
 
-   <img src="files/LoRA.png" alt="LoRA" width="400"/>
+   <img src="files/LoRA.png" alt="LoRA" width="390"/>
 
 - [Practical Tips for Finetuning LLMs Using LoRA (Low-Rank Adaptation)](https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms) [19 Nov 2023]: Best practical guide of LoRA.
 
@@ -1023,7 +998,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
 - <details>
 
-  <summary>Extras</summary>
+  <summary>Expand</summary>
 
   1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
 
@@ -1337,7 +1312,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
 - [PagedAttention](https://arxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [doc](files/vLLM_pagedattention.pdf). [ref](https://vllm.ai/) [12 Sep 2023]
 
-  <img src="files/pagedattn.png" width="450">
+  <img src="files/pagedattn.png" width="390">
 
   - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
 
@@ -1480,7 +1455,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
   - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
   - [SEED-Bench](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)]: Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
 
-    <img src="files/multi-llm.png" width="180" />
+    <!-- <img src="files/multi-llm.png" width="180" /> -->
 
 - Optimizing Memory Usage for Training LLMs and Vision Transformers: When applying 10 techniques to a vision transformer, we reduced the memory consumption 20x on a single GPU. [ref](https://lightning.ai/pages/community/tutorial/pytorch-memory-vit-llm/) / [git](https://github.com/rasbt/pytorch-memory-optim) [2 Jul 2023]
 
@@ -1525,7 +1500,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 
   <details>
 
-  <summary>Survey Papers on Large Language Models: Extras</summary>
+  <summary>Expand</summary>
 
   - [A Survey of Techniques for Optimizing Transformer Inference](https://arxiv.org/abs/2307.07982):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982)] [16 Jul 2023]
   - [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759)] [10 Mar 2023]
@@ -1578,7 +1553,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - Classification of Attention
   <details>
 
-  <summary>Classification of Attention</summary>
+  <summary>Expand</summary>
 
   - [ref](https://arize.com/blog-course/attention-mechanisms-in-machine-learning/): Must-Read Starter Guide to Mastering Attention Mechanisms in Machine Learning [12 Jun 2023]
 
@@ -1607,7 +1582,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 
   </details>
 
-### **Japanese Language Materials for LLMs 日本語**
+### **Japanese Language Materials for LLMs**
 
 - [LLM 研究プロジェクト](https://blog.brainpad.co.jp/entry/2023/07/27/153006): ブログ記事一覧 [27 Jul 2023]
 - [ブレインパッド社員が投稿した Qiita 記事まとめ](https://blog.brainpad.co.jp/entry/2023/07/27/153055): ブレインパッド社員が投稿した Qiita 記事まとめ [Jul 2023]
@@ -1626,7 +1601,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [LLM の学習・推論の効率化・高速化に関する技術調査](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference [Sep 2023]
 - [日本語LLMまとめ - Overview of Japanese LLMs](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ
 
-## **Supplementary Materials**
+## **Learning and Supplementary Materials**
 
 - [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+1706.03762)]: The Transformer,
   based solely on attention mechanisms, dispensing with recurrence and convolutions
@@ -1646,6 +1621,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python):🏆A ranked list of awesome machine learning Python libraries. [Nov 2020]
 - [Large Language Models: Application through Production](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
+- [Large Language Model Course](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
@@ -1689,7 +1665,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [OpenAgents](https://github.com/xlang-ai/OpenAgents): three distinct agents: Data Agent for data analysis, Plugins Agent for plugin integration, and Web Agent for autonomous web browsing. [Aug 2023]
 - [SeeAct](https://osu-nlp-group.github.io/SeeAct): GPT-4V(ision) is a Generalist Web Agent, if Grounded [Jan 2024]
 
-### **Application and User Interface (UI/UX)**
+### **Application Development and User Interface (UI/UX)**
 
 - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 - [Text generation web UI](https://github.com/oobabooga/text-generation-webui): Text generation web UI [Mar 2023]
@@ -1709,7 +1685,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [GPT Researcher](https://github.com/assafelovic/gpt-researcher) [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper) [Jan 2024]
 - [RAGxplorer](https://github.com/gabrielchua/RAGxplorer): Visualizing document chunks and the queries in the embedding space. [Jan 2024]
 
-### **ChatGPT for Robotics: Bridging AI and Robotics**
+### **LLM for Robotics: Bridging AI and Robotics**
 
 - PromptCraft-Robotics: Robotics and a robot simulator with ChatGPT integration [git](https://github.com/microsoft/PromptCraft-Robotics) [Feb 2023]
 - ChatGPT-Robot-Manipulation-Prompts: A set of prompts for Communication between humans and robots for executing tasks. [git](https://github.com/microsoft/ChatGPT-Robot-Manipulation-Prompts) [Apr 2023]
@@ -1796,7 +1772,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
   <details>
 
-  <summary>docs.argilla.io</summary>
+  <summary>Expand</summary>
 
   [cite](https://docs.argilla.io/)
 
@@ -1840,7 +1816,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
       - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
 
       <details>
-      <summary>Automated evaluation of LLMs</summary>
+      <summary>Expand</summary>
 
         - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
 
