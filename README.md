@@ -84,6 +84,8 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Solutions and Frameworks](#section-9-relevant-solutions-and-frameworks)
   - [Agents](#agents-autogpt-and-communicative-agents): AutoGPT and Communicative Agents
   - [Application Development and User Interface (UI/UX)](#application-development-and-user-interface-uiux)
+  - [Caching](#caching)
+  - [Defensive UX](#defensive-ux)
   - [LLM for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
   - [GPT for Domain specific](#gpt-for-domain-specific)
 - **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
@@ -1638,6 +1640,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - string2string:
   The library is an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [string2string](https://github.com/stanfordnlp/string2string) [Mar 2023] <!-- <img src="files/string2string-overview.png" alt="string2string" width="200"/> -->
 - [Sentence Transformers](https://arxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [git](https://github.com/UKPLab/sentence-transformers) [27 Aug 2019]
+- [fastText](https://github.com/facebookresearch/fastText): A library for efficient learning of word representations and sentence classification [Aug 2016 ]
 - Math formula OCR: [MathPix](https://mathpix.com/), OSS [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR) [Jan 2021]
 - [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat) [25 Aug 2023]
 - Camelot is a Python library that can help you extract tables from PDFs! [git](https://github.com/camelot-dev/camelot) / [ref](https://github.com/camelot-dev/camelot/wiki/Comparison-with-other-PDF-Table-Extraction-libraries-and-tools): Comparison with other PDF Table Extraction libraries [Jul 2016]
@@ -1684,6 +1687,21 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Open-source GPT Wrappers](https://star-history.com/blog/gpt-wrappers) 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) 2. [FastGPT](https://github.com/labring/FastGPT) 3. [Lobe Chat](https://github.com/lobehub/lobe-chat) [Jan 2024]
 - [GPT Researcher](https://github.com/assafelovic/gpt-researcher) [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper) [Jan 2024]
 - [RAGxplorer](https://github.com/gabrielchua/RAGxplorer): Visualizing document chunks and the queries in the embedding space. [Jan 2024]
+
+### **Caching**
+
+- Caching: A technique to store data that has been previously retrieved or computed, so that future requests for the same data can be served faster.
+- To reduce latency, cost, and LLM requests by serving pre-computed or previously served responses.
+- Strategies for caching: Caching can be based on item IDs, pairs of item IDs, constrained input, or pre-computation. Caching can also leverage embedding-based retrieval, approximate nearest neighbor search, and LLM-based evaluation. [ref](https://eugeneyan.com/writing/llm-patterns/#caching-to-reduce-latency-and-cost)
+- GPTCache: Semantic cache for LLMs. Fully integrated with LangChain and llama_index. [git](https://github.com/zilliztech/GPTCache)
+
+### **Defensive UX**
+
+- Defensive UX: A design strategy that aims to prevent and handle errors in user interactions with machine learning or LLM-based products.
+- Why defensive UX?: Machine learning and LLMs can produce inaccurate or inconsistent output, which can affect user trust and satisfaction. Defensive UX can help by increasing accessibility, trust, and UX quality.
+- [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/): Microsoft: Based on a survey of 168 potential guidelines from various sources, they narrowed it down to 18 action rules organized by user interaction stages.
+- [People + AI Guidebook](https://pair.withgoogle.com/guidebook/): Google: Google’s product teams and academic research, they provide 23 patterns grouped by common questions during the product development process3.
+- [Human Interface Guidelines for Machine Learning](https://developer.apple.com/design/human-interface-guidelines/machine-learning): Apple: Based on practitioner knowledge and experience, emphasizing aspects of UI rather than model functionality4.
 
 ### **LLM for Robotics: Bridging AI and Robotics**
 
