@@ -25,3 +25,4 @@ venv
 temp.md
 README.html
 README.pdf
+.vscode/settings.json
