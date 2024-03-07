@@ -48,13 +48,13 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Prompt Engineering](#1-prompt-engineering)
   - [Prompt Guide & Leaked prompts](#prompt-guide--leaked-prompts)
   - 2.Finetuning & Model Compression
-  - [Advanced Finetuning](#2-finetuning--model-compression): PEFT
+  - [Advanced Finetuning](#2-finetuning--model-compression): PEFT / e.g., LoRA
   - [Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
   - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
   - [Quantization Techniques](#quantization-techniques)
   - [Pruning and Sparsification](#pruning-and-sparsification)
   - [Knowledge Distillations](#knowledge-distillation-reducing-model-size-with-textbooks): Reducing Model Size with Textbooks
-  - [Other optimization techniques](#other-optimization-techniques)
+  - [Other optimization techniques](#other-optimization-techniques): e.g., MoE
   - 3.Visual Prompting
   - [What is the Visual Prompting?](#3-visual-prompting)
 - **Section 6** : [Challenges and Solutions in Large Language Models](#section-6--large-language-model-challenges-and-solutions)
@@ -799,13 +799,14 @@ class AgentType(str, Enum):
 
 ### **Comparison: Langchain vs Its Competitors**
 
-### **Langchain and Prompt engineering libraries**
+### **Prompting Frameworks**
 
-- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel) [Feb 2023]
 - [LangChain](https://python.langchain.com/en/latest/index.html): [git](https://github.com/langchain-ai/langchain) [Oct 2022]
 - [LlamaIndex](https://github.com/jerryjliu/llama_index) [Nov 2022]
+- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel) [Feb 2023]
 - [Microsoft guidance](https://github.com/microsoft/guidance) [Nov 2022]
 - [Azure Machine Learning Promt flow][promptflow]: [git](https://github.com/microsoft/promptflow) [Jun 2023]
+- [DSPy](https://github.com/stanfordnlp/dspy) [Jan 2023]
 - [Prompting Framework (PF)](https://arxiv.org/abs/2311.12785): Prompting Frameworks for Large Language Models: A Survey [git](https://github.com/lxx0628/Prompting-Framework-Survey)
 
 ### **Langchain vs LlamaIndex**
@@ -1002,6 +1003,17 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
    <img src="files/LoRA.png" alt="LoRA" width="390"/>
 
+  <details>
+
+  <summary>Expand</summary>
+
+    1. [LoRA+](https://arxiv.org/abs/2402.12354): Improves LoRA’s performance and fine-tuning speed by setting different learning rates for the LoRA adapter matrices. [19 Feb 2024]
+    1. [LoTR](https://arxiv.org/abs/2402.01376): Tensor decomposition for gradient update. [2 Feb 2024]
+    1. [The Expressive Power of Low-Rank Adaptation](https://arxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
+    1. [DoRA](https://arxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
+
+  </details>
+
 - [Practical Tips for Finetuning LLMs Using LoRA (Low-Rank Adaptation)](https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms) [19 Nov 2023]: Best practical guide of LoRA.
 
   1. QLoRA saves 33% memory but increases runtime by 39%, useful if GPU memory is a constraint.
@@ -1178,6 +1190,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
   | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement                      |
 
 - bitsandbytes: 8-bit optimizers [git](https://github.com/TimDettmers/bitsandbytes) [Oct 2021]
+- [The Era of 1-bit LLMs](https://arxiv.org/abs/2402.17764): All Large Language Models are in 1.58 Bits. BitNet b1.58, in which every single parameter (or weight) of the LLM is ternary {-1, 0, 1}. [27 Feb 2024]
 
 ### **Pruning and Sparsification**
 
@@ -1481,7 +1494,9 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
   5. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.16434)]: TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
 - Google
   1. [Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
-- Benchmarking Multimodal LLMs
+- Anthrophic
+  1. [Claude 3 Opus](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
+- Benchmarking Multimodal LLMs.
   - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
   - [SEED-Bench](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)]: Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
 
@@ -1509,7 +1524,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
   - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/) [ⓒ2023]
     > 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models.
 - Google AI Research Recap
-  - [Gemini](https://blog.google/technology/ai/google-gemini-ai) [06 Dec 2023] Three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU [rep](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf)
+  - [Gemini](https://blog.google/technology/ai/google-gemini-ai) [06 Dec 2023] Three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU [ref](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf)
   - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
   - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
   - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
@@ -1577,6 +1592,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt) [Mar 2023]
 - [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] -> [Screenshot to code](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [Oct 2017] [ref](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/)
 - [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch): Implementing a ChatGPT-like LLM from scratch, step by step
+- [Spreadsheets-are-all-you-need](https://github.com/ianand/spreadsheets-are-all-you-need): Spreadsheets-are-all-you-need implements the forward pass of GPT2 entirely in Excel using standard spreadsheet functions. [Sep 2023]
 
   <details>
 
@@ -1699,6 +1715,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot): Dev tool that writes scalable apps from scratch while the developer oversees the implementation [Jul 2023]
 - [OpenAgents](https://github.com/xlang-ai/OpenAgents): three distinct agents: Data Agent for data analysis, Plugins Agent for plugin integration, and Web Agent for autonomous web browsing. [Aug 2023]
 - [SeeAct](https://osu-nlp-group.github.io/SeeAct): GPT-4V(ision) is a Generalist Web Agent, if Grounded [Jan 2024]
+- [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent): Agent framework built upon Qwen1.5, featuring Function Calling, Code Interpreter, RAG, and Chrome extension. [Sep 2023]
 
 ### **Application Development and User Interface (UI/UX)**
 
@@ -1717,10 +1734,13 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java. [Jul 2023]
 - [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex [Sep 2023]
 - [Open-source GPT Wrappers](https://star-history.com/blog/gpt-wrappers) 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) 2. [FastGPT](https://github.com/labring/FastGPT) 3. [Lobe Chat](https://github.com/lobehub/lobe-chat) [Jan 2024]
-- [GPT Researcher](https://github.com/assafelovic/gpt-researcher) [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper) [Jan 2024]
+- [GPT Researcher](https://github.com/assafelovic/gpt-researcher): Autonomous agent designed for comprehensive online research [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper): Autonomous agent designed to create personalized newspapers [Jan 2024]
 - [RAGxplorer](https://github.com/gabrielchua/RAGxplorer): Visualizing document chunks and the queries in the embedding space. [Jan 2024]
 - [notesGPT](https://github.com/Nutlope/notesGPT): Record voice notes & transcribe, summarize, and get tasks [Nov 2023]
 - [Danswer](https://github.com/danswer-ai/danswer): Ask Questions in natural language and get Answers backed by private sources: Slack, GitHub, Confluence, etc. [Apr 2023]
+- [screenshot-to-code](https://github.com/abi/screenshot-to-code): Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue) [Nov 2023]
+- [pyspark-ai](https://github.com/pyspark-ai/pyspark-ai): English instructions and compile them into PySpark objects like DataFrames. [Apr 2023]
+- [Instructor](https://github.com/jxnl/instructor): Structured outputs for LLMs, easily map LLM outputs to structured data. [Jun 2023]
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -1769,6 +1789,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [BloombergGPT](https://arxiv.org/abs/2303.17564): A Large Language Model for Finance [30 Mar 2023]
 - [Galactica](https://arxiv.org/abs/2211.09085): A Large Language Model for Science [16 Nov 2022]
 - [EarthGPT](https://arxiv.org/abs/2401.16822): A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain [30 Jan 2024]
+- [SaulLM-7B](https://arxiv.org/abs/2403.03883): A pioneering Large Language Model for Law [6 Mar 2024]
 
 ## **Section 10: General AI Tools and Extensions**
 
@@ -1874,6 +1895,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models](https://arxiv.org/abs/2310.08491): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.08491)]: We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks. [12 Oct 2023]
 - [LLM Model Evals vs LLM Task Evals](https://x.com/aparnadhinak/status/1752763354320404488)
 : `Model Evals` are really for people who are building or fine-tuning an LLM. vs The best LLM application builders are using `Task evals`. It's a tool to help builders build. [Feb 2024]
+- [LLMPerf Leaderboard](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
 
 ### **Evaluation metrics**
 
