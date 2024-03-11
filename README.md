@@ -32,9 +32,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Azure Reference Architectures](#azure-reference-architectures)
   - [Azure AI Search](#azure-ai-search)
   - [Azure Enterprise Services](#azure-enterprise-services)
-- **Section 3** : [Microsoft Semantic Kernel](#section-3--microsoft-semantic-kernel)
-  - [Semantic Kernel Overview](#semantic-kernel-overview)
-- **Section 4** : [Langchain: Features, Usage, and Comparisons](#section-4--langchain---features-usage-and-comparisons)
+- **Section 3** : [Microsoft Semantic Kernel and Stanford NLP DSPy](#section-3--microsoft-semantic-kernel-and-stanford-nlp-dspy)
+  - [Semantic Kernel](#semantic-kernel)
+  - [DSPy](#dspy)
+- **Section 4** : [Langchain: Features, Usage, and Comparisons](#section-4--langchain-features-usage-and-comparisons)
   - [Langchain Feature Matrix & Cheetsheet](#langchain-feature-matrix--cheetsheet)
   - [Langchain Summarizer](#langchain-chain-type-summarizer)
   - [Langchain Agent / Memory](#langchain-agent--memory)
@@ -169,6 +170,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   <img src="files/oai-rag-success-story.jpg" width="500">
 
 - [Graph RAG](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
+
+- [Evaluation with Ragas](https://towardsdatascience.com/visualize-your-rag-data-evaluate-your-retrieval-augmented-generation-system-with-ragas-fc2486308557): UMAP (often used to reduce the dimensionality of embeddings) with Ragas metrics for visualizing RAG results. [Mar 2024] / `Ragas provides metrics`: Context Precision, Context Relevancy, Context Recall, Faithfulness, Answer Relevance, Answer Semantic Similarity, Answer Correctness, Aspect Critique [git](https://github.com/explodinggradients/ragas) [May 2023]
 
 ### **The Problem with RAG**
 
@@ -573,9 +576,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Models as a Service (MaaS)](https://www.linkedin.com/pulse/model-service-maas-revolutionizing-ai-azure-shibu-kt): A cloud-based AI approach that provides developers and businesses with access to pre-built, pre-trained machine learning models. [July 2023]
 - [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940): Code Interpreter, Function calling, Knowledge retrieval tool, and Threads (Truncated and optimized conversation history for the model's context length) in Azure [06 Feb 2024]
 
-## **Section 3** : Microsoft Semantic Kernel
+## **Section 3** : Microsoft Semantic Kernel and Stanford NLP DSPy
 
-### **Semantic Kernel Overview**
+### **Semantic Kernel**
 
 - Microsoft Langchain Library supports C# and Python and offers several features, some of which are still in development and may be unclear on how to implement. However, it is simple, stable, and faster than Python-based open-source software. The features listed on the link include: [Semantic Kernel Feature Matrix](https://learn.microsoft.com/en-us/semantic-kernel/get-started/supported-languages) / [git](https://aka.ms/sk/repo) [Feb 2023]
 
@@ -656,8 +659,71 @@ Each semantic function is defined by a unique prompt template file, developed us
   | Resources | Planning involves leveraging available [skills,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/skills) [memories,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/memories) and [connectors](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/connectors) |
   | Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
   | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
+- [Architecting AI Apps with Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/architecting-ai-apps-with-semantic-kernel/) How you could recreate Microsoft Word Copilot [6 Mar 2024]
+    <details>
+      <summary>Expand</summary>
+      <img src="files/semantic-kernel-with-word-copilot.png">
+    <details>
 
-## **Section 4** : Langchain - Features, Usage, and Comparisons
+### **DSPy**
+
+- DSPy (Declarative Self-improving Language Programs, pronounced “dee-es-pie”)
+- DSPy Documentation & Cheetsheet [ref](https://dspy-docs.vercel.app)
+- [DSPy](https://arxiv.org/abs/2310.03714): Compiling Declarative Language Model Calls into Self-Improving Pipelines [5 Oct 2023] / [git](https://github.com/stanfordnlp/dspy)
+- DSPy Explained! [youtube](https://www.youtube.com/watch?v=41EfOY0Ldkc) [30 Jan 2024]
+- DSPy RAG example in weviate recipes: `recipes > integrations` [git](https://github.com/weaviate/recipes)
+- Instead of a hard-coded prompt template, "Modular approach: compositions of modules -> compile". Building blocks such as ChainOfThought or Retrieve and compiling the program, optimizing the prompts based on specific metrics. Unifying strategies for both prompting and fine-tuning in one tool, Pythonic operations, prioritizing and tracing program execution. These features distinguish it from other LMP frameworks such as LangChain, and LlamaIndex. [ref](https://towardsai.net/p/machine-learning/inside-dspy-the-new-language-model-programming-framework-you-need-to-know-about) [Jan 2023]
+- Automatically iterate until the best result is achieved: 1. Collect Data -> 2. Write DSPy Program -> 3. Define validtion logic -> 4. Compile DSPy program
+
+  <img src=".\files\dspy-workflow.jpg" width="400" alt="workflow">
+
+- DSPy vs. LangChain, LlamaIndex: LangChain and LlamaIndex offer pre-built modules for specific applications. DSPy provides general-purpose modules that learn to optimize your language model based on your data and pipeline. It's like the difference between PyTorch (DSPy) and HuggingFace Transformers (higher-level libraries).
+
+#### **DSPy Glossary**
+
+- Glossary reference to the [ref](https:/towardsdatascience.com/intro-to-dspy-goodbye-prompting-hello-programming-4ca1c6ce3eb9).
+  1. Signatures: Hand-written prompts and fine-tuning are abstracted and replaced by signatures.
+      > "question -> answer" <br/>
+        "long-document -> summary"  <br/>
+        "context, question -> answer"  <br/>
+  2. Modules: Prompting techniques, such as `Chain of Thought` or `ReAct`, are abstracted and replaced by modules.
+      ```python
+      # pass a signature to ChainOfThought module
+      generate_answer = dspy.ChainOfThought("context, question -> answer")
+      ```
+  3. Optimizers (formerly Teleprompters): Manual iterations of prompt engineering is automated with optimizers (teleprompters) and a DSPy Compiler.
+      ```python
+      # Self-generate complete demonstrations. Teacher-student paradigm, `BootstrapFewShotWithOptuna`, `BootstrapFewShotWithRandomSearch` etc. which work on the same principle.
+      optimizer = BootstrapFewShot(metric=dspy.evaluate.answer_exact_match)
+      ```
+  4. DSPy Compiler: Internally trace your program and then optimize it using an optimizer (teleprompter) to maximize a given metric (e.g., improve quality or cost) for your task.
+  - e.g., the DSPy compiler optimizes the initial prompt and thus eliminates the need for manual prompt tuning.
+    ```python
+    cot_compiled = teleprompter.compile(CoT(), trainset=trainset, valset=devset)
+    cot_compiled.save('turbo_gsm8k.json')
+
+    # Loading:
+    # cot = CoT()
+    # cot.load('turbo_gsm8k.json')
+    ```
+
+    <details>
+      <summary>Expand</summary>
+
+      #### DSPy optimizer
+
+      As a rule of thumb, if you don't know where to start, use `BootstrapFewShotWithRandomSearch`.
+      
+      If you have very little data, e.g. 10 examples of your task, use `BootstrapFewShot`.
+      
+      If you have slightly more data, e.g. 50 examples of your task, use `BootstrapFewShotWithRandomSearch`.
+      
+      If you have more data than that, e.g. 300 examples or more, use `BayesianSignatureOptimizer`.
+      
+      If you have been able to use one of these with a large LM (e.g., 7B parameters or above) and need a very efficient program, compile that down to a small LM with `BootstrapFinetune`.
+    </details>
+
+## **Section 4** : Langchain Features, Usage, and Comparisons
 
 - LangChain is a framework for developing applications powered by language models. (1) Be data-aware: connect a language model to other sources of data.
   (2) Be agentic: Allow a language model to interact with its environment.
@@ -948,6 +1014,7 @@ class AgentType(str, Enum):
 - [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - Leaked prompts of [GPTs](https://github.com/linexjlin/GPTs) and [Agents](https://github.com/LouisShark/chatgpt_system_prompt)
 - [LLM Prompt Engineering Simplified](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book) [Feb 2024]
+- [Power Platform GPT Prompts](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
 
 ### **2. Finetuning & Model Compression**
 
@@ -1011,6 +1078,15 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
     1. [LoTR](https://arxiv.org/abs/2402.01376): Tensor decomposition for gradient update. [2 Feb 2024]
     1. [The Expressive Power of Low-Rank Adaptation](https://arxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
     1. [DoRA](https://arxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
+    1. LoRA Family [ref](https://towardsdatascience.com/an-overview-of-the-lora-family-515d81134725) [11 Mar 2024]
+       - LoRA introduces low-rank matrices A and B that are trained, while the pre-trained weight matrix W is frozen.
+       - LoRA+ suggests having a much higher learning rate for B than for A.
+       - VeRA does not train A and B, but initializes them randomly and trains new vectors d and b on top.
+       - LoRA-FA only trains matrix B.
+       - LoRA-drop uses the output of B*A to determine, which layers are worth to be trained at all.
+       - AdaLoRA adapts the ranks of A and B in different layers dynamically, allowing for a higher rank in these layers, where more contribution to the model’s performance is expected.
+       - DoRA splits the LoRA adapter into two components of magnitude and direction and allows to train them more independently.
+       - Delta-LoRA changes the weights of W by the gradient of A*B.
 
   </details>
 
@@ -1646,7 +1722,9 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Azure OpenAI を活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ [Jun 2023]
 - [生成 AI・LLM のツール拡張に関する論文の動向調査](https://blog.brainpad.co.jp/entry/2023/09/22/150341): Survey of trends in papers on tool extensions for generative AI and LLM [Sep 2023]
 - [LLM の学習・推論の効率化・高速化に関する技術調査](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference [Sep 2023]
-- [日本語LLMまとめ - Overview of Japanese LLMs](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ
+- [日本語LLMまとめ - Overview of Japanese LLMs](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ [Jul 2023]
+- [Azure OpenAI Service で始める ChatGPT/LLM システム構築入門](https://github.com/shohei1029/book-azureopenai-sample): サンプルプログラム [Aug 2023]
+- [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [ref](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [doc](files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
 
 ## **Learning and Supplementary Materials**
 
@@ -1698,7 +1776,6 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [GPT4All](https://github.com/nomic-ai/gpt4all): Open-source large language models that run locally on your CPU [Mar 2023]
 - [MemGPT](https://github.com/cpacker/MemGPT): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) [12 Oct 2023]
 - [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
-- [DSPy](https://github.com/stanfordnlp/dspy): Instead of a hard-coded prompt template, "Modular approach: compositions of modules -> compile". Building blocks such as ChainOfThought or Retrieve and compiling the program, optimizing the prompts based on specific metrics. Unifying strategies for both prompting and fine-tuning in one tool, Pythonic operations, prioritizing and tracing program execution. These features distinguish it from other LMP frameworks such as LangChain, and LlamaIndex. [ref](https://towardsai.net/p/machine-learning/inside-dspy-the-new-language-model-programming-framework-you-need-to-know-about) [Jan 2023]
 
 ### **Agents: AutoGPT and Communicative Agents**
 
