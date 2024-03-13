@@ -41,16 +41,13 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Langchain Agent / Memory](#langchain-agent--memory)
   - [Criticism to Langchain](#criticism-to-langchain)
   - Comparison: [Langchain vs Its Competitors](#comparison-langchain-vs-its-competitors)
-  - [Lanchain vs LlamaIndex](#langchain-vs-llamaindex)
-  - [Langchain vs Semantic Kernel vs Azure ML (Prompt flow)](#langchain-vs-semantic-kernel-vs-azure-machine-learning-prompt-flow)
   - [Prompt template language](#prompt-template-language)
 - **Section 5** : [Prompt Engineering, Finetuning, and Visual Prompts](#section-5-prompt-engineering-finetuning-and-visual-prompts)
   - 1.Prompt Engineering
-  - [Prompt Engineering](#1-prompt-engineering)
+  - [Prompt Engineering](#prompt-engineering)
   - [Prompt Guide & Leaked prompts](#prompt-guide--leaked-prompts)
   - 2.Finetuning & Model Compression
-  - [Advanced Finetuning](#2-finetuning--model-compression): PEFT / e.g., LoRA
-  - [Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
+  - [Advanced Finetuning](#finetuning--model-compression): PEFT / e.g., LoRA
   - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
   - [Quantization Techniques](#quantization-techniques)
   - [Pruning and Sparsification](#pruning-and-sparsification)
@@ -72,7 +69,6 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Generative AI Landscape](#navigating-the-generative-ai-landscape)
   - [A Taxonomy of Natural Language Processing](#a-taxonomy-of-natural-language-processing)
   - [Open-Source Large Language Models](#open-source-large-language-models)
-  - [LLMs for Coding and Software Development](#llms-for-coding-and-software-development)
   - [MLLM (Multimodal large language model)](#mllm-multimodal-large-language-model)
 - **Section 8** : [Survey and Reference](#section-8-survey-and-reference)
   - [Survey on Large Language Models](#survey-on-large-language-models)
@@ -85,7 +81,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Application Development and User Interface (UI/UX)](#application-development-and-user-interface-uiux)
   - [Caching and Defensive UX](#caching)
   - [LLM for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
-  - [GPT for Domain specific](#gpt-for-domain-specific)
+  - [GPT for Domain specific](#gpt-for-domain-specific): e.g., Software development
 - **Section 10** : [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
   - [General AI Tools and Extensions](#section-10-general-ai-tools-and-extensions)
 - **Section 11** : [Datasets for Large Language Model Training](#section-11-datasets-for-llm-training)
@@ -513,6 +509,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - GPT-Azure-Search-Engine: [git](https://github.com/pablomarin/GPT-Azure-Search-Engine) [Feb 2023]
   - Azure OpenAI Network Latency Test Script
   : [git](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]
+  - Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform [git](https://github.com/Azure-Samples/container-apps-openai/) [Jul 2023]
 - Azure Open AI work with Cognitive Search act as a Long-term memory
   1. [ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
   2. [Can ChatGPT work with your enterprise data?](https://www.youtube.com/watch?v=tW2EA4aZ_YQ) [06 Apr 2023]
@@ -588,7 +585,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 #### **Feature Roadmap**
 
 - .NET Semantic Kernel SDK: 1. Renamed packages and classes that used the term “Skill” to now use “Plugin”. 2. OpenAI specific in Semantic Kernel core to be AI service agnostic 3. Consolidated our planner implementations into a single package [ref](https://devblogs.microsoft.com/semantic-kernel/introducing-the-v1-0-0-beta1-for-the-net-semantic-kernel-sdk/) [10 Oct 2023]
-- Road to v1.0 for the Python Semantic Kernel SDK [ref](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/) [23 Jan 2024]
+- Road to v1.0 for the Python Semantic Kernel SDK [ref](https://devblogs.microsoft.com/semantic-kernel/road-to-v1-0-for-the-python-semantic-kernel-sdk/) [23 Jan 2024] [backlog](https://github.com/orgs/microsoft/projects/866/views/3?sliceBy%5Bvalue%5D=python)
 
 #### **Code Recipes**
 
@@ -731,19 +728,21 @@ Each semantic function is defined by a unique prompt template file, developed us
 
   1. Components: modular abstractions and implementations for working with language models, with easy-to-use features.
   2. Use-Case Specific Chains: chains of components that assemble in different ways to achieve specific use cases, with customizable interfaces.cite: [ref][langchain-doc]
-
+   
+  - Towards LangChain 0.1 [ref](https://blog.langchain.dev/the-new-langchain-architecture-langchain-core-v0-1-langchain-community-and-a-path-to-langchain-v0-1/) [Dec 2023] 
+  
       <img src="files/langchain-eco-v3.png" width="400">
-
+  <!-- <img src="files/langchain-eco-stack.png" width="400"> -->
   <!-- <img src="files/langchain-glance.png" width="400"> -->
 
-    Langchain eco system [ref](https://blog.langchain.dev/the-new-langchain-architecture-langchain-core-v0-1-langchain-community-and-a-path-to-langchain-v0-1/) [Dec 2023] / Basic LangChain building blocks [ref](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications) [2023]
+  - Basic LangChain building blocks [ref](https://www.packtpub.com/article-hub/using-langchain-for-large-language-model-powered-applications) [2023]
 
-  ```python
-  '''
-  LLMChain: A LLMChain is the most common type of chain. It consists of a PromptTemplate, a model (either an LLM or a ChatModel), and an optional output parser.
-  '''
-  chain = prompt | model | parser
-  ```
+    ```python
+    '''
+    LLMChain: A LLMChain is the most common type of chain. It consists of a PromptTemplate, a model (either an LLM or a ChatModel), and an optional output parser.
+    '''
+    chain = prompt | model | parser
+    ```
 
 ### **Langchain Feature Matrix & Cheetsheet**
 
@@ -865,7 +864,7 @@ class AgentType(str, Enum):
 
 ### **Comparison: Langchain vs Its Competitors**
 
-### **Prompting Frameworks**
+#### **Prompting Frameworks**
 
 - [LangChain](https://python.langchain.com/en/latest/index.html): [git](https://github.com/langchain-ai/langchain) [Oct 2022]
 - [LlamaIndex](https://github.com/jerryjliu/llama_index) [Nov 2022]
@@ -875,13 +874,13 @@ class AgentType(str, Enum):
 - [DSPy](https://github.com/stanfordnlp/dspy) [Jan 2023]
 - [Prompting Framework (PF)](https://arxiv.org/abs/2311.12785): Prompting Frameworks for Large Language Models: A Survey [git](https://github.com/lxx0628/Prompting-Framework-Survey)
 
-### **Langchain vs LlamaIndex**
+#### **Langchain vs LlamaIndex**
 
 - Basically LlamaIndex is a smart storage mechanism, while Langchain is a tool to bring multiple tools together. [cite](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139) [14 Apr 2023]
 
 - LangChain offers many features and focuses on using chains and agents to connect with external APIs. In contrast, LlamaIndex is more specialized and excels at indexing data and retrieving documents.
 
-### **Langchain vs Semantic Kernel**
+#### **Langchain vs Semantic Kernel**
 
 | Langchain | Semantic Kernel                                                                |
 | --------- | ------------------------------------------------------------------------------ |
@@ -892,7 +891,7 @@ class AgentType(str, Enum):
 | Chain     | Steps, Pipeline                                                                |
 | Tool      | Connector                                                                      |
 
-### **Langchain vs Semantic Kernel vs Azure Machine Learning Prompt flow**
+#### **Langchain vs Semantic Kernel vs Azure Machine Learning Prompt flow**
 
 - What's the difference between LangChain and Semantic Kernel?
 
@@ -918,7 +917,7 @@ class AgentType(str, Enum):
 
 ## **Section 5: Prompt Engineering, Finetuning, and Visual Prompts**
 
-### **1. Prompt Engineering**
+### **Prompt Engineering**
 
 1. Zero-shot
    - [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.11916)]: Let’s think step by step. [24 May 2022]
@@ -992,6 +991,8 @@ class AgentType(str, Enum):
 
     Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [ref](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/) [2 Mar 2023]
 
+1. [Automatic Prompt Engineer (APE)](https://arxiv.org/abs/2211.01910): Automatically optimizing prompts. APE has discovered zero-shot Chain-of-Thought (CoT) prompts superior to human-designed prompts like “Let’s think through this step-by-step” (Kojima et al., 2022). The prompt “To get the correct answer, let’s think step-by-step.” triggers a chain of thought. Two approaches to generate high-quality candidates: forward mode and reverse mode generation. [3 Nov 2022] [git](https://github.com/keirp/automatic_prompt_engineer) / [ref](https:/towardsdatascience.com/automated-prompt-engineering-78678c6371b9) [Mar 2024]
+
   - <details>
 
     <summary>Expand</summary>
@@ -1015,8 +1016,9 @@ class AgentType(str, Enum):
 - Leaked prompts of [GPTs](https://github.com/linexjlin/GPTs) and [Agents](https://github.com/LouisShark/chatgpt_system_prompt)
 - [LLM Prompt Engineering Simplified](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book) [Feb 2024]
 - [Power Platform GPT Prompts](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
+- [Fabric](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024]
 
-### **2. Finetuning & Model Compression**
+### **Finetuning & Model Compression**
 
 PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
 
@@ -1136,7 +1138,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
 </details>
 
-### **Llama 2 Finetuning**
+#### **Llama 2 Finetuning**
 
 - A key difference between [Llama 1](https://arxiv.org/abs/2302.13971): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2](https://arxiv.org/abs/2307.09288): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
 
@@ -1443,6 +1445,8 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - Math soving optimized LLM [WizardMath](https://arxiv.org/abs/2308.09583): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.09583)]: Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM) [18 Aug 2023] / Math solving Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
 - [Large Language Models for Software Engineering](https://arxiv.org/abs/2310.03533): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03533)]: Survey and Open Problems, Large Language Models (LLMs) for Software Engineering (SE) applications, such as code generation, testing, repair, and documentation. [5 Oct 2023]
 - [LLMs for Chip Design](https://arxiv.org/abs/2311.00176): Domain-Adapted LLMs for Chip Design [31 Oct 2023]
+- [Design2Code](https://arxiv.org/abs/2403.03163): How Far Are We From Automating Front-End Engineering? `64% of cases GPT-4V
+generated webpages are considered better than the original reference webpages` [5 Mar 2024]
 
 ## **Section 7** : Large Language Model: Landscape
 
@@ -1515,16 +1519,8 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [OLMo](https://arxiv.org/abs/2402.00838): Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024]
 - [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [git](https://github.com/google-deepmind/gemma) / Pytorch [git](https://github.com/google/gemma_pytorch) [Feb 2024]
 - [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
-
-### **Huggingface Open LLM Learboard**
-
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
-
-### **LLMs for Coding and Software Development**
-
-- [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder): [git](https://huggingface.co/bigcode/starcoder) [May 2023]
-- [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) / [git](https://github.com/facebookresearch/codellama) [24 Aug 2023]
 
 ### **MLLM (multimodal large language model)**
 
@@ -1749,6 +1745,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Large Language Model Course](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
 - [CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization](https://github.com/poloclub/cnn-explainer) [Apr 2020]
 - [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
+- [LLM FineTuning Projects and notes on common practical techniques](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
@@ -1818,6 +1815,9 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [screenshot-to-code](https://github.com/abi/screenshot-to-code): Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue) [Nov 2023]
 - [pyspark-ai](https://github.com/pyspark-ai/pyspark-ai): English instructions and compile them into PySpark objects like DataFrames. [Apr 2023]
 - [Instructor](https://github.com/jxnl/instructor): Structured outputs for LLMs, easily map LLM outputs to structured data. [Jun 2023]
+- [chainlit](https://github.com/Chainlit/chainlit): Build production-ready Conversational AI applications in minutes. [Mar 2023]
+- [Generative AI Design Patterns: A Comprehensive Guide](https://towardsdatascience.com/generative-ai-design-patterns-a-comprehensive-guide-41425a40d7d0): 9 architecture patterns for working with LLMs. [Feb 2024]
+- [CopilotKit](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -1849,6 +1849,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - ChatGPT-Robot-Manipulation-Prompts: A set of prompts for Communication between humans and robots for executing tasks. [git](https://github.com/microsoft/ChatGPT-Robot-Manipulation-Prompts) [Apr 2023]
 - Siemens Industrial Copilot [ref](https://news.microsoft.com/2023/10/31/siemens-and-microsoft-partner-to-drive-cross-industry-ai-adoption/)  [31 Oct 2023]
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [ref](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
+- [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [youtube](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
 
 ### **Awesome demo**
 
@@ -1867,11 +1868,14 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Galactica](https://arxiv.org/abs/2211.09085): A Large Language Model for Science [16 Nov 2022]
 - [EarthGPT](https://arxiv.org/abs/2401.16822): A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing Domain [30 Jan 2024]
 - [SaulLM-7B](https://arxiv.org/abs/2403.03883): A pioneering Large Language Model for Law [6 Mar 2024]
+- [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder): [git](https://huggingface.co/bigcode/starcoder) [May 2023]
+- [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) / [git](https://github.com/facebookresearch/codellama) [24 Aug 2023]
+- [Devin AI](https://preview.devin.ai/): Devin is an AI software engineer developed by Cognition AI [12 Mar 2024]
 
 ## **Section 10: General AI Tools and Extensions**
 
 - The leader: <http://openai.com>
-- The runner-up: <http://bard.google.com>
+- The runner-up: <http://bard.google.com> -> <https://gemini.google.com>
 - Open source: <http://huggingface.co/chat>
 - Searching web: <http://perplexity.ai>
 - Content writing: <http://jasper.ai/chat> / [cite](https://twitter.com/slow_developer/status/1671530676045094915)
@@ -1879,6 +1883,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
 - Future Tools: <https://www.futuretools.io/>
+- AI Tools: <https://aitoolmall.com/>
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
