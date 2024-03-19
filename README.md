@@ -113,7 +113,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 ### **Retrieval-Augmented Generation: Research Papers**
 
-- [RAG for LLMs](https://arxiv.org/abs/2312.10997): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] Retrieval-Augmented Generation for Large Language Models: A Survey: `Three paradigms of RAG Naive RAG > Advanced RAG > Modular RAG`
+- [RAG for LLMs](https://arxiv.org/abs/2312.10997): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] 🏆Retrieval-Augmented Generation for Large Language Models: A Survey: `Three paradigms of RAG Naive RAG > Advanced RAG > Modular RAG`
 
 - [Benchmarking Large Language Models in Retrieval-Augmented Generation](https://arxiv.org/abs/2309.01431): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.01431)]: Retrieval-Augmented Generation Benchmark (RGB) is proposed to assess LLMs on 4 key abilities [4 Sep 2023]:
 
@@ -357,6 +357,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually, it can only work with open search.
 - [Vector Search with OpenAI Embeddings: Lucene Is All You Need](https://arxiv.org/abs/2308.14963): Our experiments were based on Lucene 9.5.0, but indexing was a bit tricky
   because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, which was not sufficient for OpenAI’s 1536-dimensional embeddings. Although the resolution of this issue, which is to make vector dimensions configurable on a per codec basis, has been merged to the Lucene source trunk [git](https://github.com/apache/lucene/pull/12436), this feature has not been folded into a Lucene release (yet) as of early August 2023. [29 Aug 2023]
+- [Is Cosine-Similarity of Embeddings Really About Similarity?](https://arxiv.org/abs/2403.05440): In linear matrix factorization, the use of regularization can impact, and in some cases, render cosine similarities meaningless. Regularization involves two objectives. The first objective applies L2-norm regularization to the product of matrices A and B, a process similar to dropout. The second objective applies L2-norm regularization to each individual matrix, similar to the weight decay technique used in deep learning. [8 Mar 2024]
 
 ## **Section 2** : Azure OpenAI and Reference Architecture
 
@@ -377,6 +378,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Autogen](https://github.com/microsoft/autogen): Customizable and conversable agents framework [ref](https://www.microsoft.com/en-us/research/blog/autogen-enabling-next-generation-large-language-model-applications/) [Mar 2023]
 1. [AI Central](https://github.com/microsoft/AICentral): An AI Control Centre for monitoring, authenticating, and providing resilient access to multiple Open AI services. [Oct 2023]
 1. [PromptBench](https://github.com/microsoft/promptbench): A unified evaluation framework for large language models [Jun 2023]
+1. [UFO](https://github.com/microsoft/UFO): A UI-Focused Agent for Windows OS Interaction. [Mar 2024]
 
 - [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/): Fabric integrates technologies like Azure Data Factory, Azure Synapse Analytics, and Power BI into a single unified product [May 2023]
 - A Memory in Semantic Kernel vs Kernel Memory (FKA. Semantic Memory (SM)): Kernel Memory is designed to efficiently handle large datasets and extended conversations. Deploying the memory pipeline as a separate service can be beneficial when dealing with large documents or long bot conversations. [ref](https://github.com/microsoft/chat-copilot/tree/main/memorypipeline)
@@ -385,6 +387,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 1. Copilot Products
     - `Microsoft Copilot in Windows` vs `Microsoft Copilot` (= Copilot in Windows + Commercial Data Protection) vs `Microsoft 365 Copilot` (= Microsoft Copilot + M365 Integration) [Nov 2023]
+    - [Copilot Scenario Library](https://adoption.microsoft.com/en-us/copilot-scenario-library/)
    1. Azure
        - [Microsoft Copilot for Azure](https://learn.microsoft.com/en-us/azure/copilot) / [blog](https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/simplify-it-management-with-microsoft-copilot-for-azure-save/ba-p/3981106) [Nov 2023]
        - [Security Copilot](https://learn.microsoft.com/en-us/security-copilot/microsoft-security-copilot) / [blog](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/) [March 2023]
@@ -750,9 +753,10 @@ Each semantic function is defined by a unique prompt template file, developed us
   - [Feature Matrix: Snapshot in 2023 July][langchain-features-202307]
 - [Awesome Langchain][awesome-langchain]: Curated list of tools and projects using LangChain.
 - [Cheetsheet][langchain-cookbook]: LangChain CheatSheet
-- [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [doc](files/LangChain_kdnuggets.pdf) [ⓒ 2023]
+- [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [doc](files/LangChain_kdnuggets.pdf) [Aug 2023]
 - [LangChain AI Handbook][langchain-handbook]: published by Pinecone
 - [LangChain Tutorial](https://nanonets.com/blog/langchain/): A Complete Langchain Guide
+- [RAG From Scratch](https://github.com/langchain-ai/rag-from-scratch) [Feb 2024]
 
 ### **Langchain Impressive Features**
 
@@ -1108,7 +1112,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
   <details>
 
-  <summary>Key Takeaways from StreamingLLM</summary>
+  <summary>Expand: StreamingLLM</summary>
 
   <img src="files/streaming-llm.png" alt="streaming-attn"/>
 
@@ -1118,6 +1122,26 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
   2. Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
   3. StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
 
+  </details>
+
+- [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
+
+  <details>
+  <summary>Expand: Continued pretraining</summary>
+
+  Three training methods were compared:
+
+  <img src="files\cont-pretraining.jpg" width="400"/>
+
+  1. Regular pretraining: A model is initialized with random weights and pretrained on dataset D1.
+  2. Continued pretraining: The pretrained model from 1) is further pretrained on dataset D2.
+  3. Retraining on combined dataset: A model is initialized with random weights and trained on the combined datasets D1 and D2.
+
+  Continued pretraining can be as effective as retraining on combined datasets. Key strategies for successful continued pretraining include:
+
+  1. Re-warming: Increasing the learning rate at the start of continued pre-training.
+  2. Re-decaying: Gradually reducing the learning rate afterwards.
+  3. Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
   </details>
 
 - <details>
@@ -1241,15 +1265,16 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
   The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [ref](https://aman.ai/primers/ai/RLHF/) [ⓒ 2023]
 
-- `Reinforcement Learning from Human Feedback (RLHF)` is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [ref](https://huggingface.co/blog/rlhf) [9 Dec 2022]
 - `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF.
 
   <img src="files/rlhf-dpo.png" width="400" />
 
-- `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
-- [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.18290)]: RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. [29 May 2023]
-- `First-order optimization` methods use the first derivative to find the minimum or maximum of a function. e.g., gradient descent, stochastic gradient descent, and their variants.
-- Second-order methods: `Second derivative (Hessian)` of the objective function
+- [Reinforcement Learning from Human Feedback (RLHF)](https://arxiv.org/abs/1909.08593)) is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [18 Sep 2019] [ref](https://huggingface.co/blog/rlhf) [9 Dec 2022]
+  - `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
+- [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.18290)]: 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. [29 May 2023]
+  - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [ref](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024]
+<!-- - `First-order optimization` methods use the first derivative to find the minimum or maximum of a function. e.g., gradient descent, stochastic gradient descent, and their variants.
+- Second-order methods: `Second derivative (Hessian)` of the objective function -->
 - [Reinforcement Learning from AI Feedback (RLAF)](https://arxiv.org/abs/2309.00267): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.00267)]: Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF vs RLHF: In many cases, the two policies produced similar summaries. [1 Sep 2023]
 - OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [git](https://github.com/openai/spinningup) [Nov 2018]
 
@@ -1340,8 +1365,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - OpenAI’s CEO Says the Age of Giant AI Models Is Already Over [ref](https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giant-ai-models-is-already-over/) [17 Apr 2023]
 - Q* (pronounced as Q-Star): The model, called Q* was able to solve basic maths problems it had not seen before, according to the tech news site the Information. [ref](https://www.theguardian.com/business/2023/nov/23/openai-was-working-on-advanced-model-so-powerful-it-alarmed-staff) [23 Nov 2023]
 - Sam Altman reveals in an interview with Bill Gates (2 days ago) what's coming up in GPT-4.5 (or GPT-5): Potential integration with other modes of information beyond text, better logic and analysis capabilities, and consistency in performance over the next two years. [ref](https://x.com/IntuitMachine/status/1746278269165404164?s=20) [12 Jan 2024]
+<!-- - Sam Altman Interview with Lex Fridman: [ref](https://lexfridman.com/sam-altman-2-transcript) [19 Mar 2024] -->
 
-#### **GPT-4 details leaked**
+#### **GPT-4 details leaked** `unverified`
 
 - GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
 - [The Dawn of LMMs](https://arxiv.org/abs/2309.17421): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17421)]: Preliminary Explorations with GPT-4V(ision) [29 Sep 2023]
@@ -1521,6 +1547,8 @@ generated webpages are considered better than the original reference webpages` [
 - [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - [Huggingface Open LLM Learboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 - [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. (github.com)](https://github.com/huggingface/transformers)
+- [Grok](https://x.ai/blog/grok-os) xAI. 314B parameter Mixture-of-Experts (MoE) model. Released under the Apache 2.0 license. Not includeded training code. Developed by JAX [git](https://github.com/xai-org/grok) [March 17, 2024]
+- [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
 
 ### **MLLM (multimodal large language model)**
 
@@ -1749,6 +1777,8 @@ generated webpages are considered better than the original reference webpages` [
 
 ## **Section 9: Relevant Solutions and Frameworks**
 
+- [900 most popular open source AI tools](https://huyenchip.com/2024/03/14/ai-oss.html):🏆What I learned from looking at 900 most popular open source AI tools [list](https://huyenchip.com/llama-police) [Mar 2024]
+
 ### **Solutions and Frameworks**
 
 - [Pytorch](https://pytorch.org/): PyTorch is the most favorite library among researchers. [Papers with code Trends](https://paperswithcode.com/trends) [Sep 2016]
@@ -1773,6 +1803,7 @@ generated webpages are considered better than the original reference webpages` [
 - [GPT4All](https://github.com/nomic-ai/gpt4all): Open-source large language models that run locally on your CPU [Mar 2023]
 - [MemGPT](https://github.com/cpacker/MemGPT): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) [12 Oct 2023]
 - [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
+- [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with 70% less memory! QLoRA & LoRA finetuning [Nov 2023]
 
 ### **Agents: AutoGPT and Communicative Agents**
 
@@ -1818,6 +1849,8 @@ generated webpages are considered better than the original reference webpages` [
 - [chainlit](https://github.com/Chainlit/chainlit): Build production-ready Conversational AI applications in minutes. [Mar 2023]
 - [Generative AI Design Patterns: A Comprehensive Guide](https://towardsdatascience.com/generative-ai-design-patterns-a-comprehensive-guide-41425a40d7d0): 9 architecture patterns for working with LLMs. [Feb 2024]
 - [CopilotKit](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
+- [PrivateGPT](https://github.com/imartinez/privateGPT): 100% privately, no data leaks 1. The API is built using FastAPI and follows OpenAI's API scheme. 2. The RAG pipeline is based on LlamaIndex. [May 2023]
+- [Verba](verba.weaviate.io) Retrieval Augmented Generation (RAG) chatbot powered by Weaviate [git](https://github.com/weaviate/Verba) [Jul 2023]
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -1871,6 +1904,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Huggingface StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder): [git](https://huggingface.co/bigcode/starcoder) [May 2023]
 - [Code Llama](https://arxiv.org/abs/2308.12950): Built on top of Llama 2, free for research and commercial use. [ref](https://ai.meta.com/blog/code-llama-large-language-model-coding/) / [git](https://github.com/facebookresearch/codellama) [24 Aug 2023]
 - [Devin AI](https://preview.devin.ai/): Devin is an AI software engineer developed by Cognition AI [12 Mar 2024]
+- [FrugalGPT](https://arxiv.org/abs/2305.05176): LLM with budget constraints, requests are cascaded from low-cost to high-cost LLMs. [git](https://github.com/stanford-futuredata/FrugalGPT) [9 May 2023]
 
 ## **Section 10: General AI Tools and Extensions**
 
