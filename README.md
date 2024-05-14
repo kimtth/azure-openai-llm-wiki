@@ -916,7 +916,7 @@ class AgentType(str, Enum):
 
 1. [Automatic Prompt Engineer (APE)](https://arxiv.org/abs/2211.01910): Automatically optimizing prompts. APE has discovered zero-shot Chain-of-Thought (CoT) prompts superior to human-designed prompts like “Let’s think through this step-by-step” (Kojima et al., 2022). The prompt “To get the correct answer, let’s think step-by-step.” triggers a chain of thought. Two approaches to generate high-quality candidates: forward mode and reverse mode generation. [3 Nov 2022] [git](https://github.com/keirp/automatic_prompt_engineer) / [ref](https:/towardsdatascience.com/automated-prompt-engineering-78678c6371b9) [Mar 2024]
 
-1. [Claude Prompt Engineer](https://github.com/mshumer/gpt-prompt-engineer): Simply input a description of your task and some test cases, and the system will generate, test, and rank a multitude of prompts to find the ones that perform the best. [4 Jul 2023]
+1. [Claude Prompt Engineer](https://github.com/mshumer/gpt-prompt-engineer): Simply input a description of your task and some test cases, and the system will generate, test, and rank a multitude of prompts to find the ones that perform the best.  [4 Jul 2023] / Anthropic Helper metaprompt [ref](https://docs.anthropic.com/en/docs/helper-metaprompt-experimental)
 
 1. [Many-Shot In-Context Learning](https://arxiv.org/abs/2404.11018): Transitioning from few-shot to many-shot In-Context Learning (ICL) can lead to significant performance gains across a wide variety of generative and discriminative tasks [17 Apr 2024]
 
@@ -1323,6 +1323,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - [Sora](https://openai.com/sora) Text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt. [15 Feb 2024]
 - [ChatGPT Memory](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
 
+
 #### **GPT series release date**
 
 - GPT 1: Decoder-only model. 117 million parameters. [Jun 2018] [git](https://github.com/openai/finetune-transformer-lm)
@@ -1331,6 +1332,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - GPT 3.5: 3 variants each with 1.3B, 6B, and 175B parameters. [15 Mar 2022] Estimate the embedding size of OpenAI's gpt-3.5-turbo to be about 4,096
 - ChtGPT: GPT-3 fine-tuned with RLHF. 20B or 175B. `unverified` [ref](https://www.reddit.com/r/LocalLLaMA/comments/17lvquz/clearing_up_confusion_gpt_35turbo_may_not_be_20b/) [30 Nov 2022]
 - GPT 4: Mixture of Experts (MoE). 8 models with 220 billion parameters each, for a total of about 1.76 trillion parameters. `unverified` [ref](https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/) [14 Mar 2023]
+- [GPT-4o](https://openai.com/index/hello-gpt-4o/): o stands for Omni. 50% cheaper. 2x faster. Multimodal input and output capabilities (text, audio, vision). supports 50 languages. [13 May 2024]
 
 ### **Context constraints**
 
@@ -2002,6 +2004,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 - [LLM Model Evals vs LLM Task Evals](https://x.com/aparnadhinak/status/1752763354320404488)
 : `Model Evals` are really for people who are building or fine-tuning an LLM. vs The best LLM application builders are using `Task evals`. It's a tool to help builders build. [Feb 2024]
 - [LLMPerf Leaderboard](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
+- [Artificial Analysis LLM Performance Leaderboard](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard): Performance benchmarks & pricing across API providers of LLMs
 - LLM Evalution Benchmarks
   <details>
   <summary>Expand</summary>
@@ -2039,32 +2042,36 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
 ### **Evaluation metrics**
 
-   1. Automated evaluation of LLMs
+  1. Automated evaluation of LLMs
 
-      - n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE and BLEU are used for summarization and translation tasks.
-      - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
+  - n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE, BLEU, and METEOR are used for summarization and translation tasks.
+  - Probabilistic model evaluation metrics: Evaluates the model using the predictive performance of probability models. Perplexity.
+  - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
 
-      <details>
-      <summary>Expand</summary>
+    <details>
+    <summary>Expand</summary>
 
-        - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
+      - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
 
-          1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
-          2. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
-          3. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
-          4. ROUGE-S: Skip-bigram based co-occurrence statistics.
-          5. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
+        1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
+        2. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
+        3. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
+        4. ROUGE-S: Skip-bigram based co-occurrence statistics.
+        5. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
 
-        - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
+      - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
 
-        - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
+      - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
 
-        - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
-      </details>
+      - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
 
-   2. Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
+      - Perplexity: A measure of a model's predictive performance, with lower values indicating better prediction.
+      - METEOR: An n-gram based metric for machine translation, considering precision, recall, and semantic similarity.
+    </details>
 
-   3. Built-in evaluation methods in Prompt flow: [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969) [Aug 2023] / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow)
+  2. Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
+
+  3. Built-in evaluation methods in Prompt flow: [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969) [Aug 2023] / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow)
 
 ### **LLMOps: Large Language Model Operations**
 
@@ -2075,6 +2082,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 - Pezzo: Open-source, developer-first LLMOps platform [git](https://github.com/pezzolabs/pezzo) [May 2023]
 - Giskard: The testing framework for ML models, from tabular to LLMs [git](https://github.com/Giskard-AI/giskard) [Mar 2022]
 - Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli)
+- [Prompt flow](https://microsoft.github.io/promptflow/index.html): A set of LLMOps tools designed to facilitate the creation of LLM-based AI applications [Sep 2023]
 
 ### **Challenges in evaluating AI systems**
 
