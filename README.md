@@ -185,6 +185,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
     - `Contextual Relevancy (in DeepEval) = Number of Relevant Statements / Total Number of Statements`
   - [Papers with code](https://paperswithcode.com/method/rag)
   - [What AI Engineers Should Know about Search](https://softwaredoug.com/blog/2024/06/25/what-ai-engineers-need-to-know-search) [25 Jun 2024]
+  - [GraphRAG](https://arxiv.org/abs/2404.16130): Original Documents -> Knowledge Graph (Group Summaries) -> Partial Responses -> Final Response
+[ref](https://microsoft.github.io/graphrag) [git](https://github.com/microsoft/graphrag) [24 Apr 2024]
+  - [Learn RAG with Langchain](https://www.sakunaharinda.xyz/ragatouille-book): Online book [May 2024]
 - RAG Application
   - [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex [Sep 2023]
   - [RAGxplorer](https://github.com/gabrielchua/RAGxplorer): Visualizing document chunks and the queries in the embedding space. [Jan 2024]
@@ -196,8 +199,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [quivr](https://github.com/QuivrHQ/quivr): A personal productivity assistant (RAG). Chat with your docs (PDF, CSV, ...) [May 2023]
   - [RAGApp](https://github.com/ragapp): Agentic RAG. custom GPTs, but deployable in your own cloud infrastructure using Docker. [Apr 2024]
   - [Cognita](https://github.com/truefoundry/cognita): RAG (Retrieval Augmented Generation) Framework for building modular, open source applications [Jul 2023]
-  - [Perplexica](https://github.com/ItzCrazyKns/Perplexica): Open source alternative to Perplexity AI [Apr 2024]
-  - Search by topic: [github:topic](https://github.com/topics/perplexity):perplexity
+  - [Perplexica](https://github.com/ItzCrazyKns/Perplexica): Open source alternative to Perplexity AI [Apr 2024] / [github topic](https://github.com/topics/perplexity)
+  - [AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG): RAG AutoML tool for automatically finds an optimal RAG pipeline for your data. [Jan 2024]
+  - [RAGflow](https://github.com/infiniflow/ragflow): Streamlined RAG workflow. Focusing on Deep document understanding [Dec 2023]
 
 ### **LlamaIndex**
 
@@ -498,6 +502,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [AI-in-a-Box](https://github.com/Azure/AI-in-a-Box): AI-in-a-Box aims to provide an "Azure AI/ML Easy Button" for common scenarios [Sep 2023]
   - [AI Samples for .NET](https://github.com/dotnet/ai-samples):  official .NET samples demonstrating how to use AI [Feb 2024]
   - [OpenAI Official .NET Library](https://github.com/openai/openai-dotnet/) [Apr 2024]
+  - [Smart Components](https://github.com/dotnet-smartcomponents/smartcomponents): Experimental, end-to-end AI features for .NET apps [Mar 2024]
 
 - Guideline
   - [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857): Retrieval-Augmented Generation (RAG) [09 Jun 2023]
@@ -1431,6 +1436,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/): Google DeepMind, Frontier Safety Framework, a set of protocols designed to identify and mitigate potential harms from future AI systems. [17 May 2024]
 - [Extracting Concepts from GPT-4](https://openai.com/index/extracting-concepts-from-gpt-4/): Sparse Autoencoders identify key features, enhancing the interpretability of language models like GPT-4. They extract 16 million interpretable features using GPT-4's outputs as input for training. [6 Jun 2024]
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework/ai-rmf-development): NIST released the first complete version of the NIST AI RMF Playbook on March 30, 2023
+- [Guardrails Hub](https://hub.guardrailsai.com): Guardrails for common LLM validation use cases
 
 ### **Large Language Model Is: Abilities**
 
@@ -1633,7 +1639,7 @@ generated webpages are considered better than the original reference webpages` [
   - [From Google Gemini to OpenAI Q* (Q-Star)](https://arxiv.org/abs/2312.10868): A Survey of Reshaping the Generative Artificial Intelligence (AI) Research Landscape:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10868)] [18 Dec 2023]
   - [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234): The survey aims to provide a comprehensive understanding of the current state and future directions in efficient LLM serving [23 Dec 2023]
 - State of AI
-  - [Retool](https://retool.com/reports/state-of-ai-2023): A Report on AI In Production 2023 [ⓒ2023]
+  - [Retool: Status of AI](https://retool.com/reports): A Report on AI In Production [2023](https://retool.com/reports/state-of-ai-2023) -> [2024](https://retool.com/blog/state-of-ai-h1-2024)
   - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/) [ⓒ2023]
     > 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models.
   - [Standford AI Index Annual Report](https://aiindex.stanford.edu/report/)
@@ -1770,6 +1776,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Azure OpenAI Service で始める ChatGPT/LLM システム構築入門](https://github.com/shohei1029/book-azureopenai-sample): サンプルプログラム [Aug 2023]
 - [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [ref](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [doc](files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
 - [AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/) [Apr 2024]
+- [LLMにまつわる"評価"を整理する](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
 
 #### Korean
 - [Machine Learning Study 혼자 해보기](https://github.com/teddylee777/machine-learning) [Sep 2018]
@@ -2113,6 +2120,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
   #### Chatbot Assistance
   1. [Chatbot Arena](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations): Human-ranked ELO ranking.
   1. [MT Bench](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge): Multi-turn open-ended questions
+    - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) [9 Jun 2023]
 
   #### Reasoning
   1. [HellaSwag](https://github.com/rowanz/hellaswag): Commonsense reasoning. [Published in 2019]
@@ -2182,6 +2190,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 1. [Pretraining on the Test Set Is All You Need](https://arxiv.org/abs/2309.08632): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
    - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [cite](https://twitter.com/rasbt) [13 Sep 2023]
 2. [Challenges in evaluating AI systems](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [doc](files/eval-ai-anthropic.pdf) [4 Oct 2023]
+3. [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) [29 Mar 2024] / [How to Evaluate LLM Applications: The Complete Guide](https://www.confident-ai.com/blog/how-to-evaluate-llm-applications) [7 Nov 2023]
 
 ## **Contributors**
 
