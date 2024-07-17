@@ -195,6 +195,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [What AI Engineers Should Know about Search](https://softwaredoug.com/blog/2024/06/25/what-ai-engineers-need-to-know-search) [25 Jun 2024]
   - [GraphRAG](https://arxiv.org/abs/2404.16130): Original Documents -> Knowledge Graph (Group Summaries) -> Partial Responses -> Final Response
 [ref](https://microsoft.github.io/graphrag) [git](https://github.com/microsoft/graphrag) [24 Apr 2024]
+  - [GraphRAG Implementation with LlamaIndex](https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/GraphRAG_v1.ipynb) [15 Jul 2024]
   - [Learn RAG with Langchain](https://www.sakunaharinda.xyz/ragatouille-book): Online book [May 2024]
 - RAG Application
   - [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex [Sep 2023]
@@ -394,6 +395,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
        - [Microsoft Copilot Dashboard](https://insights.cloud.microsoft/#/CopilotDashboard) / [blog](https://techcommunity.microsoft.com/t5/microsoft-viva-blog/new-ways-microsoft-copilot-and-viva-are-transforming-the/ba-p/3982293)
     1. [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.03460)]: Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. [6 Jun 2023]
     1. [NL2KQL](https://arxiv.org/abs/2404.02933): From Natural Language to Kusto Query [3 Apr 2024]
+    1. [SpreadsheetLLM](https://arxiv.org/abs/2407.09025): Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens.[12 Jul 2024]
 
 <!-- #### **ChatGPT + Enterprise data Demo**
 
@@ -588,6 +590,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   Semantic Kernel でトークンの限界を超えるような長い文章を分割してスキルに渡して結果を結合したい (zenn.dev)
   [ref](https://zenn.dev/microsoft/articles/semantic-kernel-10) [06 May 2023]
 - [Learning Paths for Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/learning-paths-for-semantic-kernel/) [28 Mar 2024]
+- [A Pythonista’s Intro to Semantic Kernel](https://towardsdatascience.com/a-pythonistas-intro-to-semantic-kernel-af5a1a39564d) [3 Sep 2023]
 
 #### **Semantic Kernel Planner**
 
@@ -610,6 +613,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   <!-- > ScratchPad: Using "program execution" strategy boosts performance of large language model tasks by enforcing the use of a "scratch pad." For instance, instead of requesting the LLM's output for a Python function with a specific input, users can ask for the execution trace. This prompts the model to generate predictions for each intermediate step of the function, thereby increasing the probability of the LLM producing the correct final line. [cite](https://snorkel.ai/large-language-models-llms/) -->
 
 <!-- - Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [ref](https://devblogs.microsoft.com/semantic-kernel) -->
+
+- Use function calling for most tasks; it's more powerful and easier. Stepwise and Handlebars planners will be deprecated [ref](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning) [Jun 2024]
 
 #### **Semantic Function**
 
@@ -976,6 +981,8 @@ class AgentType(str, Enum):
 
 1. [NLEP (Natural Language Embedded Programs) for Hybrid Language Symbolic Reasoning](https://arxiv.org/abs/2309.10814): Use code as a scaffold for reasoning. NLEP achieves over 90% accuracy when prompting GPT-4. [19 Sep 2023]
 
+1. [A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications](https://arxiv.org/abs/2402.07927): a summary detailing the prompting methodology, its applications.🏆Taxonomy of prompt engineering techniques in LLMs. [5 Feb 2024]
+
   - <details>
 
     <summary>Expand</summary>
@@ -1151,9 +1158,9 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 
 </details>
 
-#### **Llama 2 Finetuning**
+#### **Llama Finetuning**
 
-- A key difference between [Llama 1](https://arxiv.org/abs/2302.13971): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2](https://arxiv.org/abs/2307.09288): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency.
+- A key difference between [Llama 1](https://arxiv.org/abs/2302.13971): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2](https://arxiv.org/abs/2307.09288): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency. [x-ref](#open-source-large-language-models)
 
   <img src="files/grp-attn.png" alt="llm-grp-attn" width="400"/>
 
@@ -1313,7 +1320,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
   - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
 
 - [TokenAttention](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [git](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
-- [Flash Attention](https://arxiv.org/abs/2205.14135): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.14135)] [27 May 2022] & [FlashAttention-2](https://arxiv.org/abs/2307.08691): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.08691)] [17 Jul 2023]: An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
+- [Flash Attention](https://arxiv.org/abs/2205.14135): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.14135)] [27 May 2022] / [FlashAttention-2](https://arxiv.org/abs/2307.08691): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.08691)] [17 Jul 2023]: An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster / [FlashAttention-3](https://arxiv.org/abs/2407.08608) [11 Jul 2024]
 - [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. (high-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
 
 ### **Other techniques and LLM patterns**
@@ -1397,7 +1404,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - GPT 3.5: 3 variants each with 1.3B, 6B, and 175B parameters. [15 Mar 2022] Estimate the embedding size of OpenAI's gpt-3.5-turbo to be about 4,096
 - ChtGPT: GPT-3 fine-tuned with RLHF. 20B or 175B. `unverified` [ref](https://www.reddit.com/r/LocalLLaMA/comments/17lvquz/clearing_up_confusion_gpt_35turbo_may_not_be_20b/) [30 Nov 2022]
 - GPT 4: Mixture of Experts (MoE). 8 models with 220 billion parameters each, for a total of about 1.76 trillion parameters. `unverified` [ref](https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/) [14 Mar 2023]
-- [GPT-4o](https://openai.com/index/hello-gpt-4o/): o stands for Omni. 50% cheaper. 2x faster. Multimodal input and output capabilities (text, audio, vision). supports 50 languages. [13 May 2024]
+- [GPT-4o](https://openai.com/index/hello-gpt-4o/): o stands for Omni. 50% cheaper. 2x faster. Multimodal input and output capabilities (text, audio, vision). supports 50 languages. [13 May 2024] / [GPT-4o mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/): 15 cents per million input tokens, 60 cents per million output tokens, MMLU of 82%, and fast. [18 Jul 2024]
 
 ### **Context constraints**
 
@@ -1797,10 +1804,13 @@ generated webpages are considered better than the original reference webpages` [
 - [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [ref](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [doc](files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
 - [AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/) [Apr 2024]
 - [LLMにまつわる"評価"を整理する](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
+- [コード生成を伴う LLM エージェント](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
 
 #### Korean
+
 - [Machine Learning Study 혼자 해보기](https://github.com/teddylee777/machine-learning) [Sep 2018]
 - [LangChain 한국어 튜토리얼](https://github.com/teddylee777/langchain-kr) [Feb 2024]
+- [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용](https://techblog.woowahan.com/18144/) [Jul 2024]
 
 ### **Learning and Supplementary Materials**
 
@@ -1937,6 +1947,7 @@ generated webpages are considered better than the original reference webpages` [
   - [LDB: A Large Language Model Debugger via Verifying Runtime Execution Step by Step](https://arxiv.org/abs/2402.16906) [25 Feb 2024]
   - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) [6 May 2024]
 - [AI Agents That Matter](https://arxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
+- [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
 
 #### Tool use: LLM to Master APIs
 
@@ -2233,11 +2244,13 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 ``` -->
 <!--
   - @TODO
-  - https://arxiv.org/pdf/2312.05934
-  - https://arxiv.org/pdf/2403.05676
-  - https://arxiv.org/pdf/2405.03267
-  - https://arxiv.org/pdf/2404.16130
-  - https://arxiv.org/pdf/2402.01717
-  - https://arxiv.org/pdf/2404.06809
-  - https://arxiv.org/pdf/2401.07883
+  - https://arxiv.org/pdf/2312.05934: Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs
+  - https://arxiv.org/pdf/2403.05676: PipeRAG: Fast Retrieval-Augmented Generation via Algorithm-System Co-design
+  - https://arxiv.org/pdf/2405.03267: Characterizing the Dilemma of Performance and Index Size in Billion-Scale Vector Search and Breaking It with Second-Tier Memory
+  - https://arxiv.org/pdf/2404.16130: From Local to Global: A Graph RAG Approach to Query-Focused Summarization
+  - https://arxiv.org/pdf/2402.01717: From RAGtoQA-RAG:Integrating Generative AI for Pharmaceutical Regulatory Compliance Process
+  - https://arxiv.org/pdf/2404.06809: Not All Contexts Are Equal: Teaching LLMs Credibility-aware Generation
+  - https://arxiv.org/pdf/2401.07883: THE CHRONICLES OF RAG: THE RETRIEVER, THE CHUNK AND THE GENERATOR
+  - https://arxiv.org/abs/2407.09468: Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures
+  - https://arxiv.org/abs/2407.09252: Context Embeddings for Efficient Answer Generation in RAG
 -->
