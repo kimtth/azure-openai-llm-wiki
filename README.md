@@ -614,7 +614,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 <!-- - Semantic Kernel supports Azure Cognitive Search Vector Search. `July 19th, 2023` [ref](https://devblogs.microsoft.com/semantic-kernel) -->
 
-- Use function calling for most tasks; it's more powerful and easier. Stepwise and Handlebars planners will be deprecated [ref](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning) [Jun 2024]
+- Use function calling for most tasks; it's more powerful and easier. Stepwise and Handlebars planners will be deprecated [ref](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning) [Jun 2024] 
+
+- [The future of Planners in Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/the-future-of-planners-in-semantic-kernel/) [23 July 2024]
 
 #### **Semantic Function**
 
@@ -930,12 +932,12 @@ class AgentType(str, Enum):
 
    <img src="files/prompt-eg-aiedge.jpg" width="300">
 
-1. Prompt Concept
+    - Prompt Concept
 
-   1. Question-Answering
-   2. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
-   3. Reasoning
-   4. Prompt-Chain
+      1. Question-Answering
+      2. Roll-play: `Act as a [ROLE] perform [TASK] in [FORMAT]`
+      3. Reasoning
+      4. Prompt-Chain
 
 1. [Chain-of-Verification reduces Hallucination in LLMs](https://arxiv.org/abs/2309.11495): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.11495)]: A four-step process that consists of generating a baseline response, planning verification questions, executing verification questions, and generating a final verified response based on the verification results. [20 Sep 2023]
 
@@ -973,7 +975,7 @@ class AgentType(str, Enum):
 
 1. [Automatic Prompt Engineer (APE)](https://arxiv.org/abs/2211.01910): Automatically optimizing prompts. APE has discovered zero-shot Chain-of-Thought (CoT) prompts superior to human-designed prompts like “Let’s think through this step-by-step” (Kojima et al., 2022). The prompt “To get the correct answer, let’s think step-by-step.” triggers a chain of thought. Two approaches to generate high-quality candidates: forward mode and reverse mode generation. [3 Nov 2022] [git](https://github.com/keirp/automatic_prompt_engineer) / [ref](https:/towardsdatascience.com/automated-prompt-engineering-78678c6371b9) [Mar 2024]
 
-1. [Claude Prompt Engineer](https://github.com/mshumer/gpt-prompt-engineer): Simply input a description of your task and some test cases, and the system will generate, test, and rank a multitude of prompts to find the ones that perform the best.  [4 Jul 2023] / Anthropic Helper metaprompt [ref](https://docs.anthropic.com/en/docs/helper-metaprompt-experimental)
+1. [Claude Prompt Engineer](https://github.com/mshumer/gpt-prompt-engineer): Simply input a description of your task and some test cases, and the system will generate, test, and rank a multitude of prompts to find the ones that perform the best.  [4 Jul 2023] / Anthropic Helper metaprompt [ref](https://docs.anthropic.com/en/docs/helper-metaprompt-experimental) / [Claude Sonnet 3.5 for Coding](https://www.reddit.com/r/ClaudeAI/comments/1dwra38/sonnet_35_for_coding_system_prompt/)
 
 1. [Many-Shot In-Context Learning](https://arxiv.org/abs/2404.11018): Transitioning from few-shot to many-shot In-Context Learning (ICL) can lead to significant performance gains across a wide variety of generative and discriminative tasks [17 Apr 2024]
 
@@ -1346,6 +1348,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - [Lamini Memory Tuning](https://github.com/lamini-ai/Lamini-Memory-Tuning): Mixture of Millions of Memory Experts (MoME). 95% LLM Accuracy, 10x Fewer Hallucinations. [ref](https://www.lamini.ai/blog/lamini-memory-tuning) [Jun 2024]
 - [Scaling Synthetic Data Creation with 1,000,000,000 Personas](https://arxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
 - [RouteLLM](https://github.com/lm-sys/RouteLLM): a framework for serving and evaluating LLM routers. [Jun 2024]
+- [KAN or MLP: A Fairer Comparison](https://arxiv.org/abs/2407.16674): In machine learning, computer vision, audio processing, natural language processing, and symbolic formula representation (except for symbolic formula representation tasks), MLP generally outperforms KAN. [23 Jul 2024]
 
 ### **3. Visual Prompting & Visual Grounding**
 
@@ -1395,6 +1398,7 @@ PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) 
 - [Sora](https://openai.com/sora) Text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt. [15 Feb 2024]
 - [ChatGPT Memory](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
 - [CriticGPT](https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/): a version of GPT-4 fine-tuned to critique code generated by ChatGPT [27 Jun 2024]
+- [SearchGPT](https://openai.com/index/searchgpt-prototype/): AI search [25 Jul 2024]
 
 #### **GPT series release date**
 
@@ -1531,10 +1535,11 @@ generated webpages are considered better than the original reference webpages` [
 - [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
 - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
 - Meta (aka. Facebook)
-  1. Most OSS LLM models have been built on the [ref](https://github.com/facebookresearch/llama) / [ref](https://ai.meta.com/llama)
+  1. Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama) / [ref](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
   1. [Llama 2](https://huggingface.co/blog/llama2): 1) 40% more data than Llama. 2)7B, 13B, and 70B. 3) Trained on over 1 million human annotations. 4) double the context length of Llama 1: 4K 5) Grouped Query Attention, KV Cache, and Rotary Positional Embedding were introduced in Llama 2 [18 Jul 2023] [demo](https://huggingface.co/blog/llama2#demo)
   1. [Llama 3](https://llama.meta.com/llama3/): 1) 7X more data than Llama 2. 2) 8B, 70B, and 400B. 3) 8K context length [18 Apr 2024]
   1. [MEGALODON](https://github.com/XuezheMax/megalodon): Long Sequence Model. Unlimited context length. Outperforms Llama 2 model. [Apr 2024]
+  1. [Llama 3.1](https://ai.meta.com/blog/meta-llama-3-1/): 405B, context length to 128K, add support across eight languages. first OSS model outperforms GTP-4o. [23 Jul 2024]
 - Google
   1. [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [git](https://github.com/google-deepmind/gemma) / Pytorch [git](https://github.com/google/gemma_pytorch) [Feb 2024]
 - Qualcomm
@@ -1549,6 +1554,11 @@ generated webpages are considered better than the original reference webpages` [
   1. phi-series: cost-effective small language models (SLMs) [X-ref](#knowledge-distillation-reducing-model-size-with-textbooks)
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
+- Mistral
+  1. open-weights models (Mistral 7B, Mixtral 8x7B, Mixtral 8x22B, NeMo) and optimized commercial models (Mistral Small, Mistral Medium, Mistral Large) [ref](https://docs.mistral.ai/getting-started/models/)
+  1. [NeMo](https://mistral.ai/news/mistral-nemo/): 12B model with 128k context length that outperforms LLama 3 8B [18 Jul 2024]
+- Groq
+  1. [Llama-3-Groq-Tool-Use](https://wow.groq.com/introducing-llama-3-groq-tool-use-models/): a model optimized for function calling [Jul 2024]
 - GPT for Domain Specific [X-ref](#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [X-ref](#mllm-multimodal-large-language-model)
 
@@ -1877,6 +1887,7 @@ generated webpages are considered better than the original reference webpages` [
   - [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
   - [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
   - [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database [May 2023]
+  - [Mem0](https://github.com/mem0ai/mem0): A self-improving memory layer for personalized AI experiences. [Jun 2023]
   - RAG: [X-ref](#rag-solution-design--application)
 - UI/UX
   - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
@@ -2119,7 +2130,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 
 ## **Section 12: Evaluating Large Language Models & LLMOps**
 
-### **Evaluation Benchmark**
+### **Evaluating Large Language Models**
 
 - Awesome LLMs Evaluation Papers: Evaluating Large Language Models: A Comprehensive Survey [git](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers)
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109)] [6 Jul 2023]
@@ -2134,37 +2145,47 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 : `Model Evals` are really for people who are building or fine-tuning an LLM. vs The best LLM application builders are using `Task evals`. It's a tool to help builders build. [Feb 2024]
 - [LLMPerf Leaderboard](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
 - [Artificial Analysis LLM Performance Leaderboard](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard): Performance benchmarks & pricing across API providers of LLMs
-- LLM Evalution Benchmarks
+- [LLM-as-a-Judge](https://cameronrwolfe.substack.com/i/141159804/practical-takeaways): LLM-as-a-Judge offers a quick, cost-effective way to develop models aligned with human preferences and is easy to implement with just a prompt, but should be complemented by human evaluation to address biases.  [Jul 2024]
+- [Can Large Language Models Be an Alternative to Human Evaluations?](https://arxiv.org/abs/2305.01937) [3 May 2023]
+
+### **LLM Evalution Benchmarks**
+
   <details open>
   <summary>Expand</summary>
 
   #### Language Understanding and QA
+
   1. [MMLU (Massive Multitask Language Understanding)](https://github.com/hendrycks/test): Over 15,000 questions across 57 diverse tasks. [Published in 2021]
   1. [TruthfulQA](https://huggingface.co/datasets/truthful_qa): Truthfulness. [Published in 2022]
   1. [BigBench](https://github.com/google/BIG-bench): 204 tasks. Predicting future potential [Published in 2023]
   1. [GLUE](https://gluebenchmark.com/leaderboard) & [SuperGLUE](https://super.gluebenchmark.com/leaderboard/): GLUE (General Language Understanding Evaluation)
 
   #### Coding
+
   1. [HumanEval](https://github.com/openai/human-eval): Challenges coding skills. [Published in 2021]
   1. [CodeXGLUE](https://github.com/microsoft/CodeXGLUE): Programming tasks.
   1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
   1. [MBPP](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
 
   #### Chatbot Assistance
+
   1. [Chatbot Arena](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations): Human-ranked ELO ranking.
   1. [MT Bench](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge): Multi-turn open-ended questions
     - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) [9 Jun 2023]
 
   #### Reasoning
+
   1. [HellaSwag](https://github.com/rowanz/hellaswag): Commonsense reasoning. [Published in 2019]
   1. [ARC (AI2 Reasoning Challenge)](https://github.com/fchollet/ARC): Measures general fluid intelligence.
   1. [DROP](https://huggingface.co/datasets/drop): Evaluates discrete reasoning.
   1. [LogicQA](https://github.com/lgw863/LogiQA-dataset): Evaluates logical reasoning skills.
 
   #### Translation
+
   1. [WMT](https://huggingface.co/wmt): Evaluates translation skills.
 
   #### Math
+
   1. [MATH](https://github.com/hendrycks/math): Tests ability to solve math problems. [Published in 2021]
   1. [GSM8K](https://github.com/openai/grade-school-math): Arithmetic Reasoning. [Published in 2021]
 
