@@ -135,6 +135,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Retrieval Augmented Generation or Long-Context LLMs?](https://arxiv.org/abs/2407.16833): Long-Context consistently outperforms RAG in terms of average performance. However, RAG's significantly lower cost remains a distinct advantage. [23 Jul 2024]
   - [Graph Retrieval-Augmented Generation: A Survey](https://arxiv.org/abs/2408.08921) [15 Aug 2024]
   - [Adaptive-RAG](https://arxiv.org/abs/2403.14403): Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity [git](https://github.com/starsuzi/Adaptive-RAG) [21 Mar 2024]
+  - [OP-RAG: Order-preserve RAG](https://arxiv.org/abs/2409.01666): Unlike traditional RAG, which sorts retrieved chunks by relevance, we keep them in their original order from the text.  [3 Sep 2024]
 
   </details>
 
@@ -541,6 +542,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Safeguard and trustworthy generative AI applications](https://azure.microsoft.com/en-us/blog/announcing-new-tools-in-azure-ai-to-help-you-build-more-secure-and-trustworthy-generative-ai-applications/) [28 Mar 2024]
   - [Microsoft AI / Responsible AI](https://aka.ms/RAIResources) 🏆
   - [Baseline Agentic AI Systems Architecture](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/baseline-agentic-ai-systems-architecture/ba-p/4207137) [20 Aug 2024]
+  - [AI Agent-Driven Auto Insurance Claims RAG Pipeline](https://techcommunity.microsoft.com/t5/azure-architecture-blog/exploring-ai-agent-driven-auto-insurance-claims-rag-pipeline/ba-p/4233779) [09 Sep 2024]
 
 - Azure OpenAI Accelerator
   - [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) [May 2023]
@@ -1403,6 +1405,10 @@ class AgentType(str, Enum):
 <!-- - Sam Altman Interview with Lex Fridman: [ref](https://lexfridman.com/sam-altman-2-transcript) [19 Mar 2024] -->
 - Model Spec: Desired behavior for the models in the OpenAI API and ChatGPT [ref](https://cdn.openai.com/spec/model-spec-2024-05-08.html) [8 May 2024] [ref](https://twitter.com/yi_ding/status/1788281765637038294): takeaway
 
+### OpenAI o1-preview
+
+- [A new series of reasoning models](https://openai.com/index/introducing-openai-o1-preview/): The complex reasoning-specialized model, OpenAI o1 series, excels in math, coding, and science, outperforming GPT-4o on key benchmarks. [12 Sep 2024]
+
 #### **GPT-4 details leaked** `unverified`
 
 - GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
@@ -1510,6 +1516,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 generated webpages are considered better than the original reference webpages` [5 Mar 2024]
 - [Testing theory of mind in large language models and humans](https://www.nature.com/articles/s41562-024-01882-z): Some large language models (LLMs) perform as well as, and in some cases better than, humans when presented with tasks designed to test the ability to track people’s mental states, known as “theory of mind.” [cite](https://www.technologyreview.com/2024/05/20/1092681/ai-models-can-outperform-humans-in-tests-to-identify-mental-states) [20 May 2024]
 - [A Survey on Employing Large Language Models for Text-to-SQL Tasks](https://arxiv.org/abs/2407.15186): a comprehensive overview of LLMs in text-to-SQL tasks [21 Jul 2024]
+- [Can LLMs Generate Novel Research Ideas?](https://arxiv.org/abs/2409.04109): A Large-Scale Human Study with 100+ NLP Researchers. We find LLM-generated ideas are judged as more novel (p < 0.05) than human expert ideas. However, the study revealed a lack of diversity in AI-generated ideas. [6 Sep 2024]
 
 ## **Section 7** : Large Language Model: Landscape
 
@@ -1565,7 +1572,7 @@ generated webpages are considered better than the original reference webpages` [
 - [ollam](https://ollama.com/library?sort=popular): ollama-supported models
 - [KoAlpaca](https://github.com/Beomi/KoAlpaca): Alpaca for korean [Mar 2023]
 - [Pythia](https://arxiv.org/abs/2304.01373): How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [git](https://github.com/EleutherAI/pythia) [Apr 2023]
-- [OLMo](https://arxiv.org/abs/2402.00838): Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024]
+- [OLMo](https://arxiv.org/abs/2402.00838): Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024] / [OLMoE](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
 - [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
 - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
 - Meta (aka. Facebook)
@@ -1641,6 +1648,7 @@ generated webpages are considered better than the original reference webpages` [
 - [FrugalGPT](https://arxiv.org/abs/2305.05176): LLM with budget constraints, requests are cascaded from low-cost to high-cost LLMs. [git](https://github.com/stanford-futuredata/FrugalGPT) [9 May 2023]
 - [DeepSeek-Coder-V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2): Open-source Mixture-of-Experts (MoE) code language model [17 Jun 2024]
 - [Qwen2-Math](https://github.com/QwenLM/Qwen2-Math): math-specific LLM / [Qwen2-Audio](https://github.com/QwenLM/Qwen2-Audio): large-scale audio-language model [Aug 2024]
+- [Chai-1](https://github.com/chaidiscovery/chai-lab): a multi-modal foundation model for molecular structure prediction [Sep 2024]
 
 ### **MLLM (multimodal large language model)**
 
@@ -1876,6 +1884,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Machine Learning Study 혼자 해보기](https://github.com/teddylee777/machine-learning) [Sep 2018]
 - [LangChain 한국어 튜토리얼](https://github.com/teddylee777/langchain-kr) [Feb 2024]
 - [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용](https://techblog.woowahan.com/18144/) [Jul 2024]
+- [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게](https://tech.kakao.com/posts/633) [09 Sep 2024]
 
 ### **Learning and Supplementary Materials**
 
@@ -2059,6 +2068,9 @@ generated webpages are considered better than the original reference webpages` [
   - [KHOJ](https://github.com/khoj-ai/khoj): Open-source, personal AI agents. Cloud or Self-Host, Multiple Interfaces. Python Django based [Aug 2021]
   - [PR-Agent](https://github.com/Codium-ai/pr-agent): Efficient code review and handle pull requests, by providing AI feedbacks and suggestions [Jan 2023]
   - [SakanaAI AI-Scientist](https://github.com/SakanaAI/AI-Scientist): Towards Fully Automated Open-Ended Scientific Discovery [Aug 2024]
+  - [aider](https://github.com/paul-gauthier/aider): AI pair programming in your terminal [Jan 2023]
+  - [Zed](https://github.com/soitun/zed-ai): AI code editor from the creators of Atom and Tree-sitter [Sep 2024]
+  - Proprietary Software: AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -2216,6 +2228,7 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
 - [LLM-as-a-Judge](https://cameronrwolfe.substack.com/i/141159804/practical-takeaways): LLM-as-a-Judge offers a quick, cost-effective way to develop models aligned with human preferences and is easy to implement with just a prompt, but should be complemented by human evaluation to address biases.  [Jul 2024]
 - [Can Large Language Models Be an Alternative to Human Evaluations?](https://arxiv.org/abs/2305.01937) [3 May 2023]
 - [Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)](https://eugeneyan.com/writing/llm-evaluators/): Key considerations and Use cases when using LLM-evaluators [Aug 2024]
+- [LightEval](https://github.com/huggingface/lighteval): a lightweight LLM evaluation suite that Hugging Face has been using internally [Jan 2024]
 
 ### **LLM Evalution Benchmarks**
 
