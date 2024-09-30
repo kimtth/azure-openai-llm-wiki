@@ -1,0 +1,16 @@
+advanced-rag
+azure-search-openai-demo
+azure-search-vector-sample
+azure-vector-db-python
+babyagi
+bing-search-webui
+deeplearning.ai
+langchain-@practical-ai
+leaked-prompts
+llama-index-es-handson
+meta-llama2
+ms-semactic-bing-notebook
+ms-semantic-kernel-cosmos
+picoGPT
+quantization
+tree-of-thought
