@@ -29,10 +29,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Azure Architectures & AI Search](#azure-reference-architectures)
   - [Azure Services](#azure-enterprise-services)
 - **Section 3** : [Semantic Kernel & DSPy](#section-3--microsoft-semantic-kernel-and-stanford-nlp-dspy)
-  - [Semantic Kernel](#semantic-kernel)
-  - [DSPy](#dspy)
+  - [Semantic Kernel](#semantic-kernel): Micro-orchestration
+  - [DSPy](#dspy): Optimizer frameworks
 - **Section 4** : [LangChain](#section-4--langchain-features-usage-and-comparisons)
-  - [LangChain Features](#langchain-feature-matrix--cheetsheet)
+  - [LangChain Features](#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
   - [LangChain Agent & Criticism](#langchain-chain-type-chains--summarizer)
   - [LangChain vs Competitors](#langchain-vs-competitors)
 - **Section 5** : [Prompting & Finetuning](#section-5-prompt-engineering-finetuning-and-visual-prompts)
@@ -58,7 +58,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LLMs for Korean & Japanese](#llm-materials-for-east-asian-languages)
 - **Section 9** : [Agents & Applications](#section-9-applications-and-frameworks)
   - [Applications & Frameworks](#applications-frameworks-and-user-interface-uiux)
-  - [AutoGPT & Agents](#agents-autogpt-and-communicative-agents): e.g., Tool use
+  - [AutoGPT & Agents](#agents-autogpt-and-communicative-agents): Agentic Design Frameworks & Agent Design Patterns
   - [Caching & UX](#caching)
   - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics) / [Awesome demo](#awesome-demo)
 - **Section 10** : [AI Tools & Extensions](#section-10-general-ai-tools-and-extensions)
@@ -75,7 +75,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - `cite`: the source of comments
   - `cnt`: number of citations
   - `git`: GitHub link
-  - `X-ref`: Cross reference
+  - `x-ref`: Cross reference
 
 ## **Section 1: RAG, LlamaIndex, and Vector Storage**
 
@@ -170,7 +170,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
     - [Advanced RAG with Azure AI Search and LlamaIndex](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/advanced-rag-with-azure-ai-search-and-llamaindex/ba-p/4115007)
     - [GPT-RAG](https://github.com/Azure/GPT-RAG): Enterprise RAG Solution Accelerator [Jun 2023]
     - [Azure OpenAI chat baseline architecture in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone)
-    - Azure Reference Architectures: [X-ref](#azure-reference-architectures)
+    - Azure Reference Architectures: [x-ref](#azure-reference-architectures)
   - [RAG at scale](https://medium.com/@neum_ai/retrieval-augmented-generation-at-scale-building-a-distributed-system-for-synchronizing-and-eaa29162521) [28 Sep 2023]
   - [LangChain RAG from scratch](https://github.com/langchain-ai/rag-from-scratch) [Jan 2024]
   - [LlamIndex Building Performant RAG Applications for Production](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/#building-performant-rag-applications-for-production)
@@ -215,7 +215,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [kotaemon](https://github.com/Cinnamon/kotaemon): open-source clean & customizable RAG UI for chatting with your documents. [Mar 2024]
   - [PaperQA2](https://github.com/Future-House/paper-qa): High accuracy RAG for answering questions from scientific documents with citations [Feb 2023]
   - [RAG Builder](https://github.com/KruxAI/ragbuilder): Automatically create an optimal production-ready Retrieval-Augmented Generation (RAG) setup for your data. [Jun 2024]
-- Applications, Frameworks, and User Interface (UI/UX): [X-ref](#applications-frameworks-and-user-interface-uiux)
+  - [SWIRL AI Connect](https://github.com/swirlai/swirl-search): SWIRL AI Connect enables you to perform Unified Search and bring in a secure AI Co-Pilot. [Apr 2022]
+- Applications, Frameworks, and User Interface (UI/UX): [x-ref](#applications-frameworks-and-user-interface-uiux)
 
 ### **LlamaIndex**
 
@@ -336,7 +337,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 #### **Lucene based search engine with OpenAI Embedding**
 
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
-- OpenAI Embedding models: `text-embedding-3` [X-ref](#openai-products) > `New embedding models`
+- OpenAI Embedding models: `text-embedding-3` [x-ref](#openai-products) > `New embedding models`
 - [text-embedding-ada-002](https://openai.com/blog/new-and-improved-embedding-model):
   Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings,
   making the new embeddings more cost effective in working with vector databases. [15 Dec 2022]
@@ -355,7 +356,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 #### LLM Integration Frameworks
 
-1. [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/) (Feb 2023): An open-source SDK for integrating AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages such as C# and Python. It's an LLM orchestrator, similar to LangChain. / [git](https://github.com/microsoft/semantic-kernel) / [X-ref](#semantic-kernel)
+1. [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/) (Feb 2023): An open-source SDK for integrating AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages such as C# and Python. It's an LLM orchestrator, similar to LangChain. / [git](https://github.com/microsoft/semantic-kernel) / [x-ref](#semantic-kernel)
 2. [Kernel Memory](https://github.com/microsoft/kernel-memory) (Jul 2023): An open-source service and plugin for efficient dataset indexing through custom continuous data hybrid pipelines.
 3. [Azure ML Prompt Flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow) (Jun 2023): A visual designer for prompt crafting using Jinja as a prompt template language. / [ref](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459) / [git](https://github.com/microsoft/promptflow)
 
@@ -555,6 +556,11 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 <!-- <img src="files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/> -->
 <!-- <img src="files/sk-flow.png" alt="sk" width="500"/> -->
 
+### **Micro-orchestration**
+
+- Micro-orchestration in LLM pipelines is the detailed management of LLM interactions, focusing on data flow within tasks.
+- e.g., [Semantic Kernel](https://aka.ms/sk/repo), [LangChain](https://www.langchain.com/), [LlamaIndex](https://www.llamaindex.ai/), [Haystack](https://haystack.deepset.ai/), and [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow).
+
 #### **Feature Roadmap**
 
 - .NET Semantic Kernel SDK: 1. Renamed packages and classes that used the term “Skill” to now use “Plugin”. 2. OpenAI specific in Semantic Kernel core to be AI service agnostic 3. Consolidated our planner implementations into a single package [ref](https://devblogs.microsoft.com/semantic-kernel/introducing-the-v1-0-0-beta1-for-the-net-semantic-kernel-sdk/) [10 Oct 2023]
@@ -650,7 +656,11 @@ Each semantic function is defined by a unique prompt template file, developed us
 
   <img src=".\files\dspy-workflow.jpg" width="400" alt="workflow">
 
-- DSPy vs. LangChain, LlamaIndex: LangChain and LlamaIndex offer pre-built modules for specific applications. DSPy provides general-purpose modules that learn to optimize your language model based on your data and pipeline. It's like the difference between PyTorch (DSPy) and HuggingFace Transformers (higher-level libraries).
+### **Optimizer frameworks**
+
+- These frameworks, including DSpy, utilize algorithmic methods inspired by machine learning to improve prompts, outputs, and overall performance in LLM applications.
+- [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow):💡The Library to Build and Auto-optimize LLM Applications [Apr 2024]
+- [TextGrad](https://github.com/zou-group/textgrad): automatic ``differentiation` via text. Backpropagation through text feedback provided by LLMs [Jun 2024]
 
 #### **DSPy Glossary**
 
@@ -726,6 +736,12 @@ Each semantic function is defined by a unique prompt template file, developed us
     '''
     chain = prompt | model | parser
     ```
+
+### **Macro and Micro-orchestration**
+
+- Macro-orchestration in LLM pipelines involves high-level design and management of complex workflows, integrating multiple LLMs and other components.
+- Micro-orchestration [x-ref](#micro-orchestration)
+- [LangGraph](https://langchain-ai.github.io/langgraph/) in LangChain, and [Burr](https://burr.dagworks.io/)
 
 ### **LangChain Feature Matrix & Cheetsheet**
 
@@ -1007,7 +1023,7 @@ class AgentType(str, Enum):
 
 ### **Finetuning**
 
-#### LLM Pre-training and Post-training Paradigms [X-ref](#large-language-models-in-2023)
+#### LLM Pre-training and Post-training Paradigms [x-ref](#large-language-models-in-2023)
 
 #### PEFT: Parameter-Efficient Fine-Tuning ([Youtube](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
 
@@ -1539,7 +1555,7 @@ generated webpages are considered better than the original reference webpages` [
   1. [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
   1. [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
 - Microsoft
-  1. phi-series: cost-effective small language models (SLMs) [X-ref](#knowledge-distillation-reducing-model-size-with-textbooks)
+  1. phi-series: cost-effective small language models (SLMs) [x-ref](#knowledge-distillation-reducing-model-size-with-textbooks)
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - Mistral
@@ -1557,9 +1573,9 @@ generated webpages are considered better than the original reference webpages` [
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
   1. A list of models: [git](https://github.com/deepseek-ai)
-- GPT for Domain Specific [X-ref](#gpt-for-domain-specific)
-- MLLM (multimodal large language model) [X-ref](#mllm-multimodal-large-language-model)
-- Large Language Models (in 2023) [X-ref](#large-language-models-in-2023)
+- GPT for Domain Specific [x-ref](#gpt-for-domain-specific)
+- MLLM (multimodal large language model) [x-ref](#mllm-multimodal-large-language-model)
+- Large Language Models (in 2023) [x-ref](#large-language-models-in-2023)
 
 <details>
 <summary>Expand: Llama variants emerged in 2023</summary>
@@ -1887,7 +1903,7 @@ generated webpages are considered better than the original reference webpages` [
   - [fastText](https://github.com/facebookresearch/fastText): A library for efficient learning of word representations and sentence classification [Aug 2016 ]
   - [GPT4All](https://github.com/nomic-ai/gpt4all): Open-source large language models that run locally on your CPU [Mar 2023]
   - [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
-  - [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with 70% less memory! QLoRA & LoRA finetuning [Nov 2023]
+  - [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with less memory! [Nov 2023]
   - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Unify Efficient Fine-Tuning of 100+ LLMs [May 2023]
   - [Visual Blocks](https://github.com/google/visualblocks): Google visual programming framework that lets you create ML pipelines in a no-code graph editor. [Mar 2023]
   - [LM Studio](https://lmstudio.ai/): UI for Discover, download, and run local LLMs [2023]
@@ -1895,6 +1911,8 @@ generated webpages are considered better than the original reference webpages` [
   - [vLLM](https://github.com/vllm-project/vllm): Easy-to-use library for LLM inference and serving. [Feb 2023]
   - [litellm](https://github.com/BerriAI/litellm): Python SDK to call 100+ LLM APIs in OpenAI format [Jul 2023]
   - [exo](https://github.com/exo-explore/exo): Run your own AI cluster at home with everyday devices [Jun 2024]
+  - [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024]
+  - [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
 - LLM Application
   - [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app [Mar 2023]
   - [GPT Researcher](https://github.com/assafelovic/gpt-researcher): Autonomous agent designed for comprehensive online research [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper): Autonomous agent designed to create personalized newspapers [Jan 2024]
@@ -1910,7 +1928,17 @@ generated webpages are considered better than the original reference webpages` [
   - [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
   - [Auto_Jobs_Applier_AIHawk](https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk): automates the jobs application [Aug 2024]
   - [OpenDevin](https://github.com/OpenDevin): an open-source project aiming to replicate Devin > Renamed [OpenHands](https://github.com/All-Hands-AI/OpenHands) [Mar 2024]
-  - RAG: [X-ref](#rag-solution-design--application)
+  - [anything-llm](https://github.com/Mintplex-Labs/anything-llm): All-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more. [Jun 2023]
+  - [guardrails](https://github.com/guardrails-ai/guardrails): Adding guardrails to large language models. [Jan 2023]
+  - [dataline](https://github.com/RamiAwar/dataline): Chat with your data - AI data analysis and visualization [Apr 2023]
+  - [Geppeto](https://github.com/Deeptechia/geppetto): Advanced Slack bot using multiple AI models [Jan 2024]
+  - [Nyro](https://github.com/trynyro/nyro-app): AI-Powered Desktop Productivity Tool [Aug 2024]
+  - [aider](https://github.com/paul-gauthier/aider): AI pair programming in your terminal [Jan 2023]
+  - [Zed](https://github.com/soitun/zed-ai): AI code editor from the creators of Atom and Tree-sitter [Sep 2024]
+  - [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
+  - Proprietary Software: AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+  - [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
+  - RAG: [x-ref](#rag-solution-design--application)
 - UI/UX
   - [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
   - [Text generation web UI](https://github.com/oobabooga/text-generation-webui): Text generation web UI [Mar 2023]
@@ -1918,7 +1946,6 @@ generated webpages are considered better than the original reference webpages` [
   - [chainlit](https://github.com/Chainlit/chainlit): Build production-ready Conversational AI applications in minutes. [Mar 2023]
   - [CopilotKit](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
   - [Open-source GPT Wrappers](https://star-history.com/blog/gpt-wrappers) 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) 2. [FastGPT](https://github.com/labring/FastGPT) 3. [Lobe Chat](https://github.com/lobehub/lobe-chat) [Jan 2024]
-  - [anything-llm](https://github.com/Mintplex-Labs/anything-llm): All-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more. [Jun 2023]
   - [langfun](https://github.com/google/langfun): leverages PyGlove to integrate LLMs and programming. [Aug 2023]
 - Data Processing and Management
   - [PostgresML](https://github.com/postgresml/postgresml): The GPU-powered AI application database. [Apr 2022]
@@ -1954,12 +1981,18 @@ generated webpages are considered better than the original reference webpages` [
   - [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
   - [Flowise](https://github.com/FlowiseAI/Flowise) Drag & drop UI to build your customized LLM flow [Apr 2023]
   - [ChainForge](https://github.com/ianarawjo/ChainForge): An open-source visual programming environment for battle-testing prompts to LLMs. [Mar 2023]
+  - [E2B](https://github.com/e2b-dev/e2b): an open-source infrastructure that allows you run to AI-generated code in secure isolated sandboxes in the cloud. [Mar 2023] 
 - Agent Applications & LLMOps
-  - Agent Applications and Libraries: [X-ref](#agent-applications-and-libraries)
-  - OSS Alternatives for OpenAI Code Interpreter: [X-ref](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
-  - LLMOps: Large Language Model Operations: [X-ref](#llmops-large-language-model-operations)
+  - Agent Applications and Libraries: [x-ref](#agent-applications-and-libraries)
+  - OSS Alternatives for OpenAI Code Interpreter: [x-ref](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
+  - LLMOps: Large Language Model Operations: [x-ref](#llmops-large-language-model-operations)
 
 ### **Agents: AutoGPT and Communicative Agents**
+
+### **Agentic Design Frameworks**
+
+- Agentic Design Frameworks focus on managing autonomous or semi-autonomous AI agents for complex tasks.
+- e.g., [Autogen](https://github.com/microsoft/autogen), and [crewAI](https://github.com/joaomdmoura/CrewAI)
 
 #### Agent Design Patterns
 
@@ -2023,7 +2056,8 @@ generated webpages are considered better than the original reference webpages` [
   - [Burr](https://github.com/dagworks-inc/burr): create an application as a state machine (graph/flowchart) for managing state, decisions, human feedback, and workflows. [Jan 2024]
   - [OpenAI Swarm](https://github.com/openai/swarm): An experimental and educational framework for lightweight multi-agent orchestration. [11 Oct 2024]
   - [n8n](https://github.com/n8n-io/n8n): A workflow automation tool for integrating various tools. [LangChain node](https://docs.n8n.io/advanced-ai/langchain/overview/) [Jan 2019]
-  - Microsoft Agent Frameworks [X-ref](#microsoft-azure-openai-relevant-llm-framework)
+  - [Agent-S](https://github.com/simular-ai/Agent-S): To build intelligent GUI agents that autonomously learn and perform complex tasks on your computer. [Oct 2024]
+  - Microsoft Agent Frameworks [x-ref](#microsoft-azure-openai-relevant-llm-framework)
 - Agent Application
   - [Auto-GPT](https://github.com/Torantulino/Auto-GPT): Most popular [Mar 2023]
   - [babyagi](https://github.com/yoheinakajima/babyagi): Most simplest implementation - Coworking of 4 agents [Apr 2023]
@@ -2038,10 +2072,7 @@ generated webpages are considered better than the original reference webpages` [
   - [KHOJ](https://github.com/khoj-ai/khoj): Open-source, personal AI agents. Cloud or Self-Host, Multiple Interfaces. Python Django based [Aug 2021]
   - [PR-Agent](https://github.com/Codium-ai/pr-agent): Efficient code review and handle pull requests, by providing AI feedbacks and suggestions [Jan 2023]
   - [SakanaAI AI-Scientist](https://github.com/SakanaAI/AI-Scientist): Towards Fully Automated Open-Ended Scientific Discovery [Aug 2024]
-  - [aider](https://github.com/paul-gauthier/aider): AI pair programming in your terminal [Jan 2023]
-  - [Zed](https://github.com/soitun/zed-ai): AI code editor from the creators of Atom and Tree-sitter [Sep 2024]
-  - [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
-  - Proprietary Software: AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+  - [WrenAI](https://github.com/Canner/WrenAI): Open-source SQL AI Agent for Text-to-SQL [Mar 2024]
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
