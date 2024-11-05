@@ -51,7 +51,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
   - [Advanced Finetuning](#2-finetuning--model-compression): PEFT incl. LoRA
   - [Leveraging Llama2 for Fine-Tuning](#llama-2-finetuning): Llama 2
   - [Reinforcement Learning from Human Feedback (RLHF) and SFT](#rlhf-reinforcement-learning-from-human-feedback--sft-supervised-fine-tuning)
-  - [Quantization Techniques](#quantization-techniques)<!-- : [[contd.](.\files\backup\README_SBCs.md)] -->
+  - [Quantization Techniques](#quantization-techniques)<!-- : [[contd.](../files/backup\README_SBCs.md)] -->
   - [Pruning and Sparsification](#pruning-and-sparsification)
   - [Knowledge Distillations](#knowledge-distillation-reducing-model-size-with-textbooks): Reducing Model Size with Textbooks
   - [Other optimization techniques](#other-optimization-techniques)
@@ -521,7 +521,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 <!-- - azure-search-vector-sample\azure-search-vector-python-sample.ipynb: Vector and Hybrid Search -->
 - A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023]
 
-  <img src="files\acs-hybrid.png" alt="acs" width="400"/>
+  <img src="../files/acs-hybrid.png" alt="acs" width="400"/>
 
 - Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [ref](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
 
@@ -586,7 +586,7 @@ This repository contains references to Azure OpenAI, LLM, related services, and 
 
 - Semantic Kernel Planner [ref](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-planners-actionplanner/) [24 Jul 2023]
 
-  <img src="files\sk-evolution_of_planners.jpg" alt="sk-plan" width="400"/>
+  <img src="../files/sk-evolution_of_planners.jpg" alt="sk-plan" width="400"/>
 
 - Is Semantic Kernel Planner the same as LangChain agents?
 
