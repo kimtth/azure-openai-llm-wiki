@@ -2,6 +2,7 @@
 
 - LangChain is a framework for developing applications powered by language models. (1) Be data-aware: connect a language model to other sources of data.
   (2) Be agentic: Allow a language model to interact with its environment. doc:[ref](https://docs.langchain.com/docs) / blog:[ref](https://blog.langchain.dev) / [git](https://github.com/langchain-ai/langchain)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square&label=%20&color=gray)
 - It highlights two main value props of the framework:
 
   1. Components: modular abstractions and implementations for working with language models, with easy-to-use features.
@@ -34,11 +35,14 @@
 - [Feature Matrix](https://python.langchain.com/docs/get_started/introduction): LangChain Features
   - [Feature Matrix: Snapshot in 2023 July](../files/langchain-features-202307.png)
 - [Awesome LangChain](https://github.com/kyrolabs/awesome-langchain): Curated list of tools and projects using LangChain.
+ ![GitHub Repo stars](https://img.shields.io/github/stars/kyrolabs/awesome-langchain?style=flat-square&label=%20&color=gray)
 - [Cheetsheet](https://github.com/gkamradt/langchain-tutorials): LangChain CheatSheet
+ ![GitHub Repo stars](https://img.shields.io/github/stars/gkamradt/langchain-tutorials?style=flat-square&label=%20&color=gray)
 - [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [doc](../files/LangChain_kdnuggets.pdf) [Aug 2023]
 - [LangChain AI Handbook](https://www.pinecone.io/learn/series/langchain/): published by Pinecone
 - [LangChain Tutorial](https://nanonets.com/blog/langchain/): A Complete LangChain Guide
 - [RAG From Scratch](https://github.com/langchain-ai/rag-from-scratch)💡[Feb 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=gray)
 - DeepLearning.AI short course: LangChain for LLM Application Development [ref](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [ref](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 
 ### **LangChain features and related libraries**
@@ -50,7 +54,9 @@
   <!-- <img src="../files/langchain_debugging.png" width="150" /> -->
 - [LangChain Template](https://github.com/langchain-ai/langchain/tree/master/templates): LangChain Reference architectures and samples. e.g., `RAG Conversation Template` [Oct 2023]
 - [OpenGPTs](https://github.com/langchain-ai/opengpts): An open source effort to create a similar experience to OpenAI's GPTs [Nov 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/opengpts?style=flat-square&label=%20&color=gray)
 - [LangGraph](https://github.com/langchain-ai/langgraph):💡Build and navigate language agents as graphs [ref](https://langchain-ai.github.io/langgraph/) [Aug 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=gray)
 
 ### **LangChain chain type: Chains & Summarizer**
 
@@ -117,6 +123,7 @@ class AgentType(str, Enum):
 #### **Criticism to LangChain**
 
 - The Problem With LangChain: [ref](https://minimaxir.com/2023/07/langchain-problem/) / [git](https://github.com/minimaxir/langchain-problems) [14 Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/minimaxir/langchain-problems?style=flat-square&label=%20&color=gray)
 - What’s your biggest complaint about langchain?: [ref](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your_biggest_complaint_about_langchain/) [May 2023]
 - LangChain Is Pointless: [ref](https://news.ycombinator.com/item?id=36645575) [Jul 2023]
   > LangChain has been criticized for making simple things relatively complex, which creates unnecessary complexity and tribalism that hurts the up-and-coming AI ecosystem as a whole. The documentation is also criticized for being bad and unhelpful.
@@ -128,7 +135,9 @@ class AgentType(str, Enum):
 #### **Prompting Frameworks**
 
 - [LangChain](https://github.com/langchain-ai/langchain) [Oct 2022] |  [LlamaIndex](https://github.com/jerryjliu/llama_index) [Nov 2022] |  [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel) [Feb 2023] | [Microsoft guidance](https://github.com/microsoft/guidance) [Nov 2022] | [Azure ML Promt flow](https://github.com/microsoft/promptflow) [Jun 2023] | [DSPy](https://github.com/stanfordnlp/dspy) [Jan 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/jerryjliu/llama_index?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/guidance?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/promptflow?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=flat-square&label=%20&color=gray)
 - [Prompting Framework (PF)](https://arxiv.org/abs/2311.12785): Prompting Frameworks for Large Language Models: A Survey [git](https://github.com/lxx0628/Prompting-Framework-Survey)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/lxx0628/Prompting-Framework-Survey?style=flat-square&label=%20&color=gray)
 - [What Are Tools Anyway?](https://arxiv.org/abs/2403.15452): 1. For a small number (e.g., 5–10) of tools, LMs can directly select from contexts. However, with a larger number (e.g., hundreds), an additional retrieval step involving a retriever model is often necessary. 2. LM-used tools incl. Tool creation and reuse. Tool is not useful when machine translation, summarization, and sentiment analysis (among others).  3. Evaluation metrics [18 Mar 2024]
 
 #### **LangChain vs LlamaIndex**
