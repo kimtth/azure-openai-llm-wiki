@@ -12,9 +12,13 @@
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/ztjhz/BetterChatGPT?style=flat-square&label=%20&color=gray)
   - [ChatHub](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/chathub-dev/chathub?style=flat-square&label=%20&color=gray)
   - [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/openai/chatgpt-retrieval-plugin?style=flat-square&label=%20&color=gray)
 - [Vercel AI](https://sdk.vercel.ai/) Vercel AI Playground / Vercel AI SDK [git](https://github.com/vercel/ai) [May 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray)
 - [Quora Poe](https://poe.com/login) A chatbot service that gives access to GPT-4, gpt-3.5-turbo, Claude from Anthropic, and a variety of other bots. [Feb 2023]
 - [Product Hunt > AI](https://www.producthunt.com/categories/ai)
 - [websim.ai](https://websim.ai/): a web editor and simulator that can generate websites. [1 Jul 2024]

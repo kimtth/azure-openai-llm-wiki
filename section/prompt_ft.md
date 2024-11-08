@@ -14,12 +14,14 @@
    - Improve: Based on the problems you found, improve your answer.
 1. [ReAct](https://arxiv.org/abs/2210.03629): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2210.03629)]: Grounding with external sources. (Reasoning and Act): Combines reasoning and acting [ref](https://react-lm.github.io/) [6 Oct 2022]
 1. [Tree of Thought (ToT)](https://arxiv.org/abs/2305.10601): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.10601)]: Self-evaluate the progress intermediate thoughts make towards solving a problem [17 May 2023] [git](https://github.com/ysymyth/tree-of-thought-llm) / Agora: Tree of Thoughts (ToT) [git](https://github.com/kyegomez/tree-of-thoughts)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/ysymyth/tree-of-thought-llm?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/kyegomez/tree-of-thoughts?style=flat-square&label=%20&color=gray)
 
    - `tree-of-thought\forest_of_thought.py`: Forest of thought Decorator sample
    - `tree-of-thought\tree_of_thought.py`: Tree of thought Decorator sample
    - `tree-of-thought\react-prompt.py`: ReAct sample without LangChain
 
 1. [Graph of Thoughts (GoT)](https://arxiv.org/abs/2308.09687): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.09687)] Solving Elaborate Problems with Large Language Models [git](https://github.com/spcl/graph-of-thoughts) [18 Aug 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/spcl/graph-of-thoughts?style=flat-square&label=%20&color=gray)
 
    <img src="../files/got-prompt.png" width="700">
 
@@ -44,6 +46,7 @@
 1. [Plan-and-Solve Prompting](https://arxiv.org/abs/2305.04091): Develop a plan, and then execute each step in that plan. [6 May 2023]
 
 1. [Reflexion](https://arxiv.org/abs/2303.11366): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.11366)]: Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement` to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM. [20 Mar 2023] / [git](https://github.com/noahshinn024/reflexion)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/noahshinn024/reflexion?style=flat-square&label=%20&color=gray)
 
 1. [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.03409)]: `Take a deep breath and work on this problem step-by-step.` to improve its accuracy. Optimization by PROmpting (OPRO) [7 Sep 2023]
 
@@ -56,12 +59,14 @@
 
     - [GPT-4 with Medprompt](https://arxiv.org/abs/2311.16452): GPT-4, using a method called Medprompt that combines several prompting strategies, has surpassed MedPaLM 2 on the MedQA dataset without the need for fine-tuning. [ref](https://www.microsoft.com/en-us/research/blog/the-power-of-prompting/) [28 Nov 2023]
     - [promptbase](https://github.com/microsoft/promptbase): Scripts demonstrating the Medprompt methodology [Dec 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/promptbase?style=flat-square&label=%20&color=gray)
 
 1. Adversarial Prompting
     - Prompt Injection: `Ignore the above directions and ...`
     - Prompt Leaking: `Ignore the above instructions ... followed by a copy of the full prompt with exemplars:`
     - Jailbreaking: Bypassing a safety policy, instruct Unethical instructions if the request is contextualized in a clever way. [ref](https://www.promptingguide.ai/risks/adversarial)
     - Random Search (RS): [git](https://github.com/tml-epfl/llm-adaptive-attacks): 1. Feed the modified prompt (original + suffix) to the model. 2. Compute the log probability of a target token (e.g, Sure). 3. Accept the suffix if the log probability increases.
+ ![GitHub Repo stars](https://img.shields.io/github/stars/tml-epfl/llm-adaptive-attacks?style=flat-square&label=%20&color=gray)
     - DAN (Do Anything Now): [ref](https://www.reddit.com/r/ChatGPT/comments/10tevu1/new_jailbreak_proudly_unveiling_the_tried_and/)
     - JailbreakBench: [git](https://jailbreaking-llms.github.io/) / [ref](https://jailbreakbench.github.io)
 
@@ -98,13 +103,17 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 1. [Language Models as Compilers](https://arxiv.org/abs/2404.02575): With extensive experiments on seven algorithmic reasoning tasks, Think-and-Execute is effective. It enhances large language models’ reasoning by using task-level logic and pseudocode, outperforming instance-specific methods. [20 Mar 2023]
 
-### Prompt Tuner
+### Prompt Tuner / Optimizer
 
 1. [Automatic Prompt Engineer (APE)](https://arxiv.org/abs/2211.01910): Automatically optimizing prompts. APE has discovered zero-shot Chain-of-Thought (CoT) prompts superior to human-designed prompts like “Let’s think through this step-by-step” (Kojima et al., 2022). The prompt “To get the correct answer, let’s think step-by-step.” triggers a chain of thought. Two approaches to generate high-quality candidates: forward mode and reverse mode generation. [3 Nov 2022] [git](https://github.com/keirp/automatic_prompt_engineer) / [ref](https:/towardsdatascience.com/automated-prompt-engineering-78678c6371b9) [Mar 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/keirp/automatic_prompt_engineer?style=flat-square&label=%20&color=gray)
 
 1. [Claude Prompt Engineer](https://github.com/mshumer/gpt-prompt-engineer): Simply input a description of your task and some test cases, and the system will generate, test, and rank a multitude of prompts to find the ones that perform the best.  [4 Jul 2023] / Anthropic Helper metaprompt [ref](https://docs.anthropic.com/en/docs/helper-metaprompt-experimental) / [Claude Sonnet 3.5 for Coding](https://www.reddit.com/r/ClaudeAI/comments/1dwra38/sonnet_35_for_coding_system_prompt/)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/mshumer/gpt-prompt-engineer?style=flat-square&label=%20&color=gray)
 
 1. [Cohere’s new Prompt Tuner](https://cohere.com/blog/intro-prompt-tuner): Automatically improve your prompts [31 Jul 2024]
+
+1. [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409): Optimization by PROmpting (OPRO). [git![GitHub Repo stars](https://img.shields.io/github/stars/google-deepmind/opro?style=flat-square&color=gray)](https://github.com/google-deepmind/opro): showcase OPRO on linear regression and traveling salesman problems [7 Sep 2023]
 
 ### **Prompt Guide & Leaked prompts**
 
@@ -114,19 +123,30 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [OpenAI Prompt example](https://platform.openai.com/examples)
 - [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) [Dec 2022]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/f/awesome-chatgpt-prompts?style=flat-square&label=%20&color=gray)
 - [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) [Feb 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat-square&label=%20&color=gray)
 - [Awesome-GPTs-Prompts](https://github.com/ai-boost/awesome-prompts) [Jan 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat-square&label=%20&color=gray)
 - [Prompts for Education](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education [Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/prompts-for-edu?style=flat-square&label=%20&color=gray)
 - [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 - Leaked prompts of [GPTs](https://github.com/linexjlin/GPTs) [Nov 2023] and [Agents](https://github.com/LouisShark/chatgpt_system_prompt) [Nov 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/linexjlin/GPTs?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat-square&label=%20&color=gray)
 - [LLM Prompt Engineering Simplified](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book) [Feb 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book?style=flat-square&label=%20&color=gray)
 - [Power Platform GPT Prompts](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/pnp/powerplatform-prompts?style=flat-square&label=%20&color=gray)
 - [Fabric](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/danielmiessler/fabric?style=flat-square&label=%20&color=gray)
 - [Anthropic Prompt Library](https://docs.anthropic.com/claude/prompt-library): Anthropic released a Claude 3 AI prompt library [Mar 2024]
 - [Copilot prompts](https://github.com/pnp/copilot-prompts): Examples of prompts for Microsoft Copilot. [25 Apr 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=gray)
 - [In-The-Wild Jailbreak Prompts on LLMs](https://github.com/verazuo/jailbreak_llms): A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Collected from December 2022 to December 2023 [Aug 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/verazuo/jailbreak_llms?style=flat-square&label=%20&color=gray)
 - [LangChainHub](https://smith.langchain.com/hub): a collection of all artifacts useful for working with LangChain primitives such as prompts, chains and agents. [Jan 2023]
 - [Anthropic courses > Prompt engineering interactive tutorial](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=gray)
 
 ### **Finetuning**
 
@@ -181,6 +201,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
      ```
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.09685)]: LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA) [17 Jun 2021]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/LoRA?style=flat-square&label=%20&color=gray)
 
    <img src="../files/LoRA.png" alt="LoRA" width="390"/>
 
@@ -208,10 +229,12 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   1. Adjusting the LoRA rank is essential.
   1. Multi-epoch training on static datasets may lead to overfitting and deteriorate results.
 - [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.14314)]: 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [git](https://github.com/artidoro/qlora) [23 May 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/artidoro/qlora?style=flat-square&label=%20&color=gray)
 - [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] [4 Mar 2022]
 - [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [doc](../files/Fine-tuning_a_GPT_LoRA.pdf) [20 Jun 2023]
 - [LIMA: Less Is More for Alignment](https://arxiv.org/abs/2305.11206): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.11206)]: fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
 - [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=gray)
 
   <details open>
 
@@ -246,6 +269,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - LongLoRA
 
   1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=gray)
 
   - Key Takeaways from LongLora <br/>
     <img src="../files/longlora.png" alt="long-lora" width="350"/>
@@ -254,6 +278,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
     1. S2-Attn can be implemented with only two lines of code in training.
 
   2. [QA-LoRA](https://arxiv.org/abs/2309.14717): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat-square&label=%20&color=gray)
 
 </details>
 
@@ -263,6 +288,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   <img src="../files/grp-attn.png" alt="llm-grp-attn" width="400"/>
 - [Multi-query attention (MQA)](https://arxiv.org/abs/2305.13245): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.13245)] [22 May 2023]
 - Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [Youtube](https://www.youtube.com/watch?v=oM4VmoabDAI) / [git](https://github.com/hkproj/pytorch-llama) [03 Sep 2023] <br/>
+ ![GitHub Repo stars](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=gray)
 
   - KV Cache, Grouped Query Attention, Rotary PE
 
@@ -315,8 +341,10 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 - [Comprehensive Guide for LLaMA with RLHF](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]
 - Official LLama Recipes incl. Finetuning: [git](https://github.com/facebookresearch/llama-recipes)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=gray)
 
 - Llama 2 ONNX [git](https://github.com/microsoft/Llama-2-Onnx) [Jul 2023]: ONNX, or Open Neural Network Exchange, is an open standard for machine learning interoperability. It allows AI developers to use models across various frameworks, tools, runtimes, and compilers.
+ ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/Llama-2-Onnx?style=flat-square&label=%20&color=gray)
 
 ### **RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)**
 
@@ -326,6 +354,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   <img src="../files/rhlf2.png" width="400" /> <br/>
   [cite](https://docs.argilla.io/)
 - Libraries: [TRL](https://huggingface.co/docs/trl/index), [trlX](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html) <br/>
+ ![GitHub Repo stars](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=gray)
   <img src="../files/TRL-readme.png" width="500" /> <br/>
   <!-- [SFTTrainer](https://huggingface.co/docs/trl/main/en/trainer#trl.SFTTrainer) from TRL -->
   TRL: from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step <br/>
@@ -338,9 +367,11 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Direct Preference Optimization (DPO)](https://arxiv.org/abs/2305.18290): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.18290)]: 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
   - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [ref](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [ref](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
 - [ORPO (odds ratio preference optimization)](https://arxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [git](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024] <br/>
+ ![GitHub Repo stars](https://img.shields.io/github/stars/xfactlab/orpo?style=flat-square&label=%20&color=gray)
   <img src="../files/orpo.png" width="400" />
 - [Reinforcement Learning from AI Feedback (RLAF)](https://arxiv.org/abs/2309.00267): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.00267)]: Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF vs RLHF: In many cases, the two policies produced similar summaries. [1 Sep 2023]
 - OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [git](https://github.com/openai/spinningup) [Nov 2018]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/openai/spinningup?style=flat-square&label=%20&color=gray)
 - [A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More](https://arxiv.org/abs/2407.16216) [23 Jul 2024]
 - Preference optimization techniques: [ref](https://x.com/helloiamleonie/status/1823305448650383741) [13 Aug 2024]
   - `RLHF (Reinforcement Learning from Human Feedback)`: Optimizes reward policy via objective function.
@@ -365,6 +396,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement                      |
 
 - bitsandbytes: 8-bit optimizers [git](https://github.com/TimDettmers/bitsandbytes) [Oct 2021]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/TimDettmers/bitsandbytes?style=flat-square&label=%20&color=gray)
 - [The Era of 1-bit LLMs](https://arxiv.org/abs/2402.17764): All Large Language Models are in 1.58 Bits. BitNet b1.58, in which every single parameter (or weight) of the LLM is ternary {-1, 0, 1}. [27 Feb 2024]
 
 ### **Pruning and Sparsification**
@@ -401,6 +433,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
 
 - [TokenAttention](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [git](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/ModelTC/lightllm?style=flat-square&label=%20&color=gray)
 - [Flash Attention](https://arxiv.org/abs/2205.14135): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.14135)] [27 May 2022]
   - In a GPU, A thread is the smallest execution unit, and a group of threads forms a block.
   - A block executes the same kernel (function, to simplify), with threads sharing fast SRAM memory.
@@ -408,6 +441,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - First, the query (Q) and key (K) product is computed in threads and returned to HBM. Then, it's redistributed for softmax and returned to HBM.
   - Flash attention reduces these movements by caching results in SRAM.
   - [FlashAttention-2](https://arxiv.org/abs/2307.08691): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.08691)] [17 Jul 2023]: An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
+ ![GitHub Repo stars](https://img.shields.io/github/stars/Dao-AILab/flash-attention?style=flat-square&label=%20&color=gray)
   - [FlashAttention-3](https://arxiv.org/abs/2407.08608) [11 Jul 2024]  
 - [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. High-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
 
@@ -420,20 +454,26 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Huggingface Mixture of Experts Explained](https://huggingface.co/blog/moe): Mixture of Experts, or MoEs for short [Dec 2023]
 - [Simplifying Transformer Blocks](https://arxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
 - [Model merging](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54): : A technique that combines two or more large language models (LLMs) into a single model, using methods such as SLERP, TIES, DARE, and passthrough. [Jan 2024] [git](https://github.com/cg123/mergekit): mergekit
+ ![GitHub Repo stars](https://img.shields.io/github/stars/cg123/mergekit?style=flat-square&label=%20&color=gray)
   | Method | Pros | Cons |
   | --- | --- | --- |
   | SLERP | Preserves geometric properties, popular method | Can only merge two models, may decrease magnitude |
   | TIES | Can merge multiple models, eliminates redundant parameters | Requires a base model, may discard useful parameters |
   | DARE | Reduces overfitting, keeps expectations unchanged | May introduce noise, may not work well with large differences |
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752) [1 Dec 2023] [git](https://github.com/state-spaces/mamba): 1. Structured State Space (S4) - Class of sequence models, encompassing traits from RNNs, CNNs, and classical state space models. 2. Hardware-aware (Optimized for GPU) 3. Integrating selective SSMs and eliminating attention and MLP blocks [ref](https://www.unite.ai/mamba-redefining-sequence-modeling-and-outforming-transformers-architecture/) / A Visual Guide to Mamba and State Space Models [ref](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) [19 FEB 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/state-spaces/mamba?style=flat-square&label=%20&color=gray)
   - [Mamba-2](https://arxiv.org/abs/2405.21060): 2-8X faster [31 May 2024]
 - [Sakana.ai: Evolutionary Optimization of Model Merging Recipes.](https://arxiv.org/abs/2403.13187): A Method to Combine 500,000 OSS Models. [git](https://github.com/SakanaAI/evolutionary-model-merge) [19 Mar 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/evolutionary-model-merge?style=flat-square&label=%20&color=gray)
 - [Mixture-of-Depths](https://arxiv.org/abs/2404.02258): All tokens should not require the same effort to compute. The idea is to make token passage through a block optional. Each block selects the top-k tokens for processing, and the rest skip it. [ref](https://www.linkedin.com/embed/feed/update/urn:li:share:7181996416213372930) [2 Apr 2024]
 - [Kolmogorov-Arnold Networks (KANs)](https://arxiv.org/abs/2404.19756): KANs use activation functions on connections instead of nodes like Multi-Layer Perceptrons (MLPs) do. Each weight in KANs is replaced by a learnable 1D spline function. KANs’ nodes simply sum incoming signals without applying any non-linearities. [git](https://github.com/KindXiaoming/pykan) [30 Apr 2024] / [ref](https://www.dailydoseofds.com/a-beginner-friendly-introduction-to-kolmogorov-arnold-networks-kan/): A Beginner-friendly Introduction to Kolmogorov Arnold Networks (KAN) [19 May 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/KindXiaoming/pykan?style=flat-square&label=%20&color=gray)
 - [Better & Faster Large Language Models via Multi-token Prediction](https://arxiv.org/abs/2404.19737): Suggest that training language models to predict multiple future tokens at once [30 Apr 2024]
 - [Lamini Memory Tuning](https://github.com/lamini-ai/Lamini-Memory-Tuning): Mixture of Millions of Memory Experts (MoME). 95% LLM Accuracy, 10x Fewer Hallucinations. [ref](https://www.lamini.ai/blog/lamini-memory-tuning) [Jun 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/lamini-ai/Lamini-Memory-Tuning?style=flat-square&label=%20&color=gray)
 - [Scaling Synthetic Data Creation with 1,000,000,000 Personas](https://arxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
 - [RouteLLM](https://github.com/lm-sys/RouteLLM): a framework for serving and evaluating LLM routers. [Jun 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=flat-square&label=%20&color=gray)
 - [KAN or MLP: A Fairer Comparison](https://arxiv.org/abs/2407.16674): In machine learning, computer vision, audio processing, natural language processing, and symbolic formula representation (except for symbolic formula representation tasks), MLP generally outperforms KAN. [23 Jul 2024]
 - [Differential Transformer](https://arxiv.org/abs/2410.05258): Amplifies attention to the relevant context while minimizing noise using two separate softmax attention mechanisms. [7 Oct 2024]
 
