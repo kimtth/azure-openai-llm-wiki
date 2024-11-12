@@ -42,8 +42,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Finetuning](section/prompt_ft.md/#finetuning): PEFT (e.g., LoRA), RLHF, SFT
   - [Quantization & Optimization](section/prompt_ft.md/#quantization-techniques)
   - [Other Techniques](section/prompt_ft.md/#other-techniques-and-llm-patterns): e.g., MoE
-  - [Visual Prompting](section/prompt_ft.md/#3-visual-prompting--visual-grounding)
+  - [Visual Prompting](section/prompt_ft.md/#visual-prompting--visual-grounding)
 - **Section 6** : [Challenges & Abilities](section/chab.md/#section-6--large-language-model-challenges-and-solutions)
+  - [AGI Discussion](section/chab.md/#agi-discussion)
   - [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
   - [LLM Constraints](section/chab.md/#context-constraints): e.g., RoPE
   - [Trust & Safety](section/chab.md/#trustworthy-safe-and-secure-llm)

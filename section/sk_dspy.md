@@ -56,6 +56,9 @@
 
 #### **Semantic Function**
 
+- Semantic Kernel Functions vs. Plugins: 
+  1. Function:  Individual units of work that perform specific tasks. Execute actions based on user requests. [ref](https://devblogs.microsoft.com/semantic-kernel/transforming-semantic-kernel-functions/) [12 Nov 2024]
+  2. Plugin: Collections of functions. Orchestrate multiple functions for complex tasks.
 - Semantic Function - expressed in natural language in a text file "_skprompt.txt_" using SK's
 [Prompt Template language](https://github.com/microsoft/semantic-kernel/blob/main/docs/PROMPT_TEMPLATE_LANGUAGE.md).
 Each semantic function is defined by a unique prompt template file, developed using modern prompt engineering techniques. [cite](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md)
@@ -87,7 +90,7 @@ Each semantic function is defined by a unique prompt template file, developed us
   | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | ASK       | A user's goal is sent to SK as an ASK                                                                                                                                                                                                                                                                 |
   | Kernel    | [The kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/kernel) orchestrates a user's ASK                                                                                                                                                                                          |
-  | Planner   | [The planner](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/planner) breaks it down into steps based upon resources that are available                                                                                                                                                |
+  | Planner   | [The planner](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/planner) breaks it down into steps based upon resources that are available [deprecated] -> replaced by function calling                                                                                                                                  |
   | Resources | Planning involves leveraging available [skills,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/skills) [memories,](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/memories) and [connectors](https://learn.microsoft.com/en-us/semantic-kernel/concepts-sk/connectors) |
   | Steps     | A plan is a series of steps for the kernel to execute                                                                                                                                                                                                                                                 |
   | Pipeline  | Executing the steps results in fulfilling the user's ASK                                                                                                                                                                                                                                              |
