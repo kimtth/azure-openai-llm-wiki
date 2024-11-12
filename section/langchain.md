@@ -152,10 +152,10 @@ class AgentType(str, Enum):
 | --------- | ------------------------------------------------------------------------------ |
 | Memory    | Memory                                                                         |
 | Tookit    | Plugin (pre. Skill)                                                            |
-| Tool      | LLM prompts (semantic functions) or native C# or Python code (native function) |
-| Agent     | Planner                                                                        |
+| Tool      | LLM prompts (semantic functions) <br/> native C# or Python code (native function) |
+| Agent     | Planner (Deprecated) -> Agent                                                                        |
 | Chain     | Steps, Pipeline                                                                |
-| Tool      | Connector                                                                      |
+| Tool      | Connector (Deprecated) -> Plugin                                                                     |
 
 #### **LangChain vs Semantic Kernel vs Azure Machine Learning Prompt flow**
 
