@@ -40,10 +40,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=flat-square&label=%20&color=gray)
 1. [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/jmorganca/ollama?style=flat-square&label=%20&color=gray)
-1. [litellm](https://github.com/BerriAI/litellm): Python SDK to call 100+ LLM APIs in OpenAI format [Jul 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/BerriAI/litellm?style=flat-square&label=%20&color=gray)
-1. [langfun](https://github.com/google/langfun): leverages PyGlove to integrate LLMs and programming. [Aug 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/google/langfun?style=flat-square&label=%20&color=gray)
 1. [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with less memory! [Nov 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/unslothai/unsloth?style=flat-square&label=%20&color=gray)
 1. [LM Studio](https://lmstudio.ai/): UI for Discover, download, and run local LLMs [May 2024]
@@ -86,10 +82,14 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/melih-unsal/DemoGPT?style=flat-square&label=%20&color=gray)
 1. [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java. [Jul 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/spring-projects-experimental/spring-ai?style=flat-square&label=%20&color=gray)
+1. [litellm](https://github.com/BerriAI/litellm): Python SDK to call 100+ LLM APIs in OpenAI format [Jul 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/BerriAI/litellm?style=flat-square&label=%20&color=gray)
 1. [Opencopilot](https://github.com/openchatai/copilot): Build and embed open-source AI Copilots. [Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/openchatai/copilot?style=flat-square&label=%20&color=gray)
 1. [BISHENG](https://github.com/dataelement/bisheng): an open LLM application devops platform, focusing on enterprise scenarios. [Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/dataelement/bisheng?style=flat-square&label=%20&color=gray)
+1. [langfun](https://github.com/google/langfun): leverages PyGlove to integrate LLMs and programming. [Aug 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/google/langfun?style=flat-square&label=%20&color=gray)
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=gray)
 ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/cpacker/MemGPT?style=flat-square&label=%20&color=gray)
 1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023]
@@ -155,14 +155,18 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray)
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
-1. [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
+
+#### **Code editor incl. Proprietary Software**
+
+- AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+- [Vercel AI](https://sdk.vercel.ai/) Vercel AI Toolkit for TypeScript
+- [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=gray)
+- [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square&label=%20&color=gray)
-1. Proprietary Software:
-    - AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
-    - [Vercel AI](https://sdk.vercel.ai/) Vercel AI Toolkit for TypeScript
-    - [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
-    - [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
-  ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray)
+- [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
+- [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray)
+- [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 
 #### **UI/UX**
 
@@ -178,6 +182,8 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=flat-square&label=%20&color=gray)
 1. [Open-source GPT Wrappers](https://star-history.com/blog/gpt-wrappers) 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web) [Mar 2023] 2. [FastGPT](https://github.com/labring/FastGPT) [Feb 2023] 3. [Lobe Chat](https://github.com/lobehub/lobe-chat) [Jan 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/ChatGPTNextWeb/ChatGPT-Next-Web?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/labring/FastGPT?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=flat-square&label=%20&color=gray)
+1. [anse](https://github.com/anse-app/anse): UI for multiple models such as ChatGPT, DALL-E and Stable Diffusion. [Apr 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/anse-app/anse?style=flat-square&label=%20&color=gray)
 
 #### **Data Processing and Management**
 
@@ -404,7 +410,7 @@
 - [LeRobot](https://huggingface.co/lerobot): Hugging Face. LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. [git](https://github.com/huggingface/lerobot) [Jan 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&label=%20&color=gray)
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [ref](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
-- [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [youtube](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
+- [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
 
 ### **Awesome demo**
 

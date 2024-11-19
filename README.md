@@ -79,6 +79,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - `cnt`: number of citations
   - `git`: GitHub link
   - `x-ref`: Cross reference
+  - 📺: youtube or video
 
 ## **Contributors**
 

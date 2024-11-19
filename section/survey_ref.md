@@ -10,7 +10,7 @@
   - [A Comprehensive Survey of AI-Generated Content (AIGC)](https://arxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)] [7 Mar 2023]
   - [Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models](https://arxiv.org/abs/2304.01852):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.01852)] [4 Apr 2023]
   - [A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.07989)] [14 Nov 2023]
-  - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
+  - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](eval.md/#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
   - [From Google Gemini to OpenAI Q* (Q-Star)](https://arxiv.org/abs/2312.10868): A Survey of Reshaping the Generative Artificial Intelligence (AI) Research Landscape:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10868)] [18 Dec 2023]
   - [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234): The survey aims to provide a comprehensive understanding of the current state and future directions in efficient LLM serving [23 Dec 2023]
   - [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?](https://arxiv.org/abs/2408.05109): [9 Aug 2024] [git](https://github.com/HKUSTDial/NL2SQL_Handbook)
@@ -102,8 +102,8 @@
   - Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [ref](https://github.com/karpathy/llm.c/discussions/481)
 - [llama3-from-scratch](https://github.com/naklecha/llama3-from-scratch): Implementing Llama3 from scratch [May 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/naklecha/llama3-from-scratch?style=flat-square&label=%20&color=gray)
-- [Umar Jamil github](https://github.com/hkproj): Model explanation / building a model from scratch [youtube](https://www.youtube.com/@umarjamilai)
-- `youtube`: [Andrej Karpathy](https://www.youtube.com/watch?v=l8pRSuU81PU): Reproduce the GPT-2 (124M) from scratch. [June 2024] / [SebastianRaschka](https://www.youtube.com/watch?v=kPGTx4wcm_w): Developing an LLM: Building, Training, Finetuning  [June 2024]
+- [Umar Jamil github](https://github.com/hkproj): Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
+- [Andrej Karpathy📺](https://www.youtube.com/watch?v=l8pRSuU81PU): Reproduce the GPT-2 (124M) from scratch. [June 2024] / [SebastianRaschka📺](https://www.youtube.com/watch?v=kPGTx4wcm_w): Developing an LLM: Building, Training, Finetuning  [June 2024]
 - [Transformer Explainer](https://arxiv.org/pdf/2408.04619): an open-source interactive tool to learn about the inner workings of a Transformer model (GPT-2) [git](https://poloclub.github.io/transformer-explainer/) [8 Aug 2024]
 
   <details open>
@@ -180,6 +180,7 @@
 - [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용](https://techblog.woowahan.com/18144/) [Jul 2024]
 - [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게](https://tech.kakao.com/posts/633) [09 Sep 2024]
 - [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기](https://techblog.woowahan.com/19915/) [07 Nov 2024]
+- [Harness를 이용해 LLM 애플리케이션 평가 자동화하기](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
 
 ### **Learning and Supplementary Materials**
 
@@ -216,7 +217,7 @@
 - [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
 - [LLM FineTuning Projects and notes on common practical techniques](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat-square&label=%20&color=gray)
-- [But what is a GPT?](https://www.youtube.com/watch?v=wjZofJX0v4M)🏆3blue1brown: Visual intro to transformers [Apr 2024]
+- [But what is a GPT?📺](https://www.youtube.com/watch?v=wjZofJX0v4M)🏆3blue1brown: Visual intro to transformers [Apr 2024]
 - [Daily Dose of Data Science](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science) [Dec 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ChawlaAvi/Daily-Dose-of-Data-Science?style=flat-square&label=%20&color=gray)
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=gray)
