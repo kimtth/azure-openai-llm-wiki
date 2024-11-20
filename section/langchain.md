@@ -44,6 +44,7 @@
 - [RAG From Scratch](https://github.com/langchain-ai/rag-from-scratch)💡[Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=gray)
 - DeepLearning.AI short course: LangChain for LLM Application Development [ref](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [ref](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+- [LangChain Streamlit agent examples](https://github.com/langchain-ai/streamlit-agent): Implementations of several LangChain agents as Streamlit apps. [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/streamlit-agent?style=flat-square&label=%20&color=gray)
 
 ### **LangChain features and related libraries**
 
