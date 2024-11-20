@@ -12,7 +12,7 @@
   1. RAG-token— We retrieve k documents, use them to generate the next token, then retrieve k more documents, use them to generate the next token, and so on. This means that we could end up retrieving several different sets of documents in the generation of a single answer to a user’s query.
   1. Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a) [30 Sep 2023]
 
-### **Retrieval-Augmented Generation: Research Papers**
+### **Research Papers**
 
 - [A Survey on Retrieval-Augmented Text Generation](https://arxiv.org/abs/2202.01110): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.01110)]: This paper conducts a survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in many NLP tasks. These tasks include Dialogue response generation, Machine translation, Summarization, Paraphrase generation, Text style transfer, and Data-to-text generation. [2 Feb 2022]
 - [Hyde](https://arxiv.org/abs/2212.10496): Hypothetical Document Embeddings. `zero-shot (generate a hypothetical document) -> embedding -> avg vectors -> retrieval` [20 Dec 2022]
@@ -63,7 +63,6 @@
   3. Responding Stage: Generating responses based on the retrieved information. [ref](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation)
 - [Evaluation with Ragas](https://towardsdatascience.com/visualize-your-rag-data-evaluate-your-retrieval-augmented-generation-system-with-ragas-fc2486308557): UMAP (often used to reduce the dimensionality of embeddings) with Ragas metrics for visualizing RAG results. [Mar 2024] / `Ragas provides metrics`: Context Precision, Context Relevancy, Context Recall, Faithfulness, Answer Relevance, Answer Semantic Similarity, Answer Correctness, Aspect Critique [git](https://github.com/explodinggradients/ragas) [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=flat-square&label=%20&color=gray)
-- [Graph RAG (by NebulaGraph)](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
 - Advanced RAG Patterns: How to improve RAG peformance [ref](https://cloudatlas.me/why-do-rag-pipelines-fail-advanced-rag-patterns-part1-841faad8b3c2) / [ref](https://cloudatlas.me/how-to-improve-rag-peformance-advanced-rag-patterns-part2-0c84e2df66e6) [17 Oct 2023]
   1. Data quality: Clean, standardize, deduplicate, segment, annotate, augment, and update data to make it clear, consistent, and context-rich.
   2. Embeddings fine-tuning: Fine-tune embeddings to domain specifics, adjust them according to context, and refresh them periodically to capture evolving semantics.
@@ -77,8 +76,33 @@
   <img src="../files/oai-rag-success-story.jpg" width="500">
 - [9 Effective Techniques To Boost Retrieval Augmented Generation (RAG) Systems](https://towardsdatascience.com/9-effective-techniques-to-boost-retrieval-augmented-generation-rag-systems-210ace375049) [doc](9-effective-rag-techniques.png): ReRank, Prompt Compression, Hypothetical Document Embedding (HyDE), Query Rewrite and Expansion, Enhance Data Quality, Optimize Index Structure, Add Metadata, Align Query with Documents, Mixed Retrieval (Hybrid Search) [2 Jan 2024]
 - [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval): Contextual Retrieval enhances traditional RAG by using Contextual Embeddings and Contextual BM25 to maintain context during retrieval. [19 Sep 2024]
+
+#### Agentic RAG
+
+- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288) / [doc](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf) /💡[ref](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023] <br/>
+  <img src="../files/advanced-rag.png" width="430">
 - [What is Agentic RAG](https://weaviate.io/blog/what-is-agentic-rag): The article published by Weaviate. [5 Nov 2024]
-- GraphRAG (by Microsoft): [x-ref](rag.md/#rag-solution-design--application)
+
+#### Multi-modal RAG (Vision RAG)
+
+- [Azure RAG with Vision Application Framework](https://github.com/Azure-Samples/rag-as-a-service-with-vision) [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/rag-as-a-service-with-vision?style=flat-square&label=%20&color=gray)
+- [localGPT-Vision](https://github.com/PromtEngineer/localGPT-Vision): an end-to-end vision-based Retrieval-Augmented Generation (RAG) system. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/PromtEngineer/localGPT-Vision?style=flat-square&label=%20&color=gray)
+- [Enhancing Ultra High Resolution Remote Sensing Imagery Analysis with ImageRAG](https://arxiv.org/abs/2411.07688): Ultra High Resolution (UHR) remote sensing imagery, such as satellite imagery and medical imaging. [12 Nov 2024]
+- [Visual RAG over PDFs with Vespa](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [git](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
+
+#### GraphRAG
+
+- [Graph RAG (by NebulaGraph)](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
+- [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130): Original Documents -> Knowledge Graph (Community Summaries) -> Partial Responses -> Final Response. local and global search.
+[ref](https://microsoft.github.io/graphrag) [git](https://github.com/microsoft/graphrag) [24 Apr 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/graphrag?style=flat-square&label=%20&color=gray)
+  - [GraphRAG Implementation with LlamaIndex](https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/GraphRAG_v1.ipynb) [15 Jul 2024]
+  - ["From Local to Global" GraphRAG with Neo4j and LangChain](https://neo4j.com/developer-blog/global-graphrag-neo4j-langchain/) [09 Jul 2024]
+  - [LightRAG](https://github.com/HKUDS/LightRAG): Utilizing graph structures for text indexing and retrieval processes. [8 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat-square&label=%20&color=gray)
+  - [nano-graphrag](https://github.com/gusye1234/nano-graphrag): A simple, easy-to-hack GraphRAG implementation [Jul 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/gusye1234/nano-graphrag?style=flat-square&label=%20&color=gray)
+  - [DRIFT Search](https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/): DRIFT search (Dynamic Reasoning and Inference with Flexible Traversal). Built upon Microsoft’s GraphRAG. [31 Oct 2024]
+  - [Improving global search via dynamic community selection](https://www.microsoft.com/en-us/research/blog/graphrag-improving-global-search-via-dynamic-community-selection/): Use an LLM to rate how relevant a community report -> Map-reduce search to generate final response. [15 Nov 2024]
 
 ### **The Problem with RAG**
 
@@ -105,7 +129,7 @@
 
 ---
 
-- [RAG at scale](https://medium.com/@neum_ai/retrieval-augmented-generation-at-scale-building-a-distributed-system-for-synchronizing-and-eaa29162521) [28 Sep 2023]
+- [RAG at scale](https://medium.com/@neum_ai/retrieval-augmented-generation-at-scale-building-a-distributed-system-for-synchronizing-and-eaa29162521): Building a distributed system for synchronizing and ingesting billions of text embeddings [28 Sep 2023]
 - [A Practical Approach to Retrieval Augmented Generation (RAG) Systems](https://github.com/mallahyari/rag-ebook): Online book [Dec 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mallahyari/rag-ebook?style=flat-square&label=%20&color=gray)
 - [LangChain RAG from scratch](https://github.com/langchain-ai/rag-from-scratch) [Jan 2024]
@@ -114,22 +138,6 @@
 - [Advanced RAG on Hugging Face documentation using LangChain](https://huggingface.co/learn/cookbook/advanced_rag)
 - [LLM Twin Course: Building Your Production-Ready AI Replica](https://github.com/decodingml/llm-twin-course): Learn to Build a Production-Ready LLM & RAG System with LLMOps [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/decodingml/llm-twin-course?style=flat-square&label=%20&color=gray)
 - [RAG-driven Generative AI](https://github.com/Denis2054/RAG-Driven-Generative-AI): Retrieval Augmented Generation (RAG) code for Generative AI with LlamaIndex, Deep Lake, and Pinecone [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Denis2054/RAG-Driven-Generative-AI?style=flat-square&label=%20&color=gray)
-
----
-
-- [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130): Original Documents -> Knowledge Graph (Community Summaries) -> Partial Responses -> Final Response. local and global search.
-[ref](https://microsoft.github.io/graphrag) [git](https://github.com/microsoft/graphrag) [24 Apr 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/graphrag?style=flat-square&label=%20&color=gray)
-  - [GraphRAG Implementation with LlamaIndex](https://github.com/run-llama/llama_index/blob/main/docs/docs/examples/cookbooks/GraphRAG_v1.ipynb) [15 Jul 2024]
-  - ["From Local to Global" GraphRAG with Neo4j and LangChain](https://neo4j.com/developer-blog/global-graphrag-neo4j-langchain/) [09 Jul 2024]
-  - [LightRAG](https://github.com/HKUDS/LightRAG): Utilizing graph structures for text indexing and retrieval processes. [8 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat-square&label=%20&color=gray)
-  - [nano-graphrag](https://github.com/gusye1234/nano-graphrag): A simple, easy-to-hack GraphRAG implementation [Jul 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/gusye1234/nano-graphrag?style=flat-square&label=%20&color=gray)
-  - [DRIFT Search](https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/): DRIFT search (Dynamic Reasoning and Inference with Flexible Traversal). Built upon Microsoft’s GraphRAG. [31 Oct 2024]
-  - [Improving global search via dynamic community selection](https://www.microsoft.com/en-us/research/blog/graphrag-improving-global-search-via-dynamic-community-selection/): Use an LLM to rate how relevant a community report -> Map-reduce search to generate final response. [15 Nov 2024]
-
----
-
 - [Learn RAG with LangChain](https://www.sakunaharinda.xyz/ragatouille-book): Online book [May 2024]
 - RAG context relevancy metric: Ragas, TruLens, DeepEval [ref](https://towardsdatascience.com/the-challenges-of-retrieving-and-evaluating-relevant-context-for-rag-e362f6eaed34) [Jun 2024]
   - `Context Relevancy (in Ragas) = S / Total number of sentences in retrieved context`
@@ -216,57 +224,63 @@
   - `LlamaParse`: A unique parsing tool for intricate documents [git](https://github.com/run-llama/llama_parse) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=gray)
 
----
+#### LlamaIndex integration with Azure AI
 
-- High-Level Concepts
+- [LlamaIndex integration with Azure AI](https://www.llamaindex.ai/blog/announcing-the-llamaindex-integration-with-azure-ai):  [19 Nov 2024]
+- Core: Azure OpenAI Service, Azure AI Search
+- Storage and memory: [Azure Table Storage as a Docstore](https://docs.llamaindex.ai/en/stable/examples/docstore/AzureDocstoreDemo/) or Azure Cosmos DB.
+- Workflow example: [Azure Code Interpreter](https://docs.llamaindex.ai/en/stable/examples/tools/azure_code_interpreter/)
+- [AI App Template Gallery](https://azure.github.io/ai-app-templates/repo/azure-samples/llama-index-javascript/)
 
-  - Query engine vs Chat engine
+#### High-Level Concepts
 
-    1. The query engine wraps a `retriever` and a `response synthesizer` into a pipeline, that will use the query string to fetch nodes (sentences or paragraphs) from the index and then send them to the LLM (Language and Logic Model) to generate a response
-    1. The chat engine is a quick and simple way to chat with the data in your index. It uses a `context manager` to keep track of the conversation history and generate relevant queries for the retriever. Conceptually, it is a `stateful` analogy of a Query Engine.
+- Query engine vs Chat engine
 
-  - Storage Context vs Settings (p.k.a. Service Context)
+  1. The query engine wraps a `retriever` and a `response synthesizer` into a pipeline, that will use the query string to fetch nodes (sentences or paragraphs) from the index and then send them to the LLM (Language and Logic Model) to generate a response
+  1. The chat engine is a quick and simple way to chat with the data in your index. It uses a `context manager` to keep track of the conversation history and generate relevant queries for the retriever. Conceptually, it is a `stateful` analogy of a Query Engine.
 
-    - Both the Storage Context and Service Context are data classes.
+- Storage Context vs Settings (p.k.a. Service Context)
 
-      1. Introduced in v0.10.0, ServiceContext is replaced to Settings object.
-      1. Storage Context is responsible for the storage and retrieval of data in Llama Index, while the Service Context helps in incorporating external context to enhance the search experience.
-      1. The Service Context is not directly involved in the storage or retrieval of data, but it helps in providing a more context-aware and accurate search experience.
+  - Both the Storage Context and Service Context are data classes.
 
-    ```python
-    # The storage context container is a utility container for storing nodes, indices, and vectors.
-    class StorageContext:
-      docstore: BaseDocumentStore
-      index_store: BaseIndexStore
-      vector_store: VectorStore
-      graph_store: GraphStore
-    ```
+    1. Introduced in v0.10.0, ServiceContext is replaced to Settings object.
+    1. Storage Context is responsible for the storage and retrieval of data in Llama Index, while the Service Context helps in incorporating external context to enhance the search experience.
+    1. The Service Context is not directly involved in the storage or retrieval of data, but it helps in providing a more context-aware and accurate search experience.
 
-    ```python
-    # NOTE: Deprecated, use llama_index.settings.Settings. The service context container is a utility container for LlamaIndex index and query classes.
-    class ServiceContext:
-      llm_predictor: BaseLLMPredictor
-      prompt_helper: PromptHelper
-      embed_model: BaseEmbedding
-      node_parser: NodeParser
-      llama_logger: LlamaLogger
-      callback_manager: CallbackManager
-    ```
+  ```python
+  # The storage context container is a utility container for storing nodes, indices, and vectors.
+  class StorageContext:
+    docstore: BaseDocumentStore
+    index_store: BaseIndexStore
+    vector_store: VectorStore
+    graph_store: GraphStore
+  ```
 
-    ```python
-    @dataclass
-    class _Settings:
-      # lazy initialization
-      _llm: Optional[LLM] = None
-      _embed_model: Optional[BaseEmbedding] = None
-      _callback_manager: Optional[CallbackManager] = None
-      _tokenizer: Optional[Callable[[str], List[Any]]] = None
-      _node_parser: Optional[NodeParser] = None
-      _prompt_helper: Optional[PromptHelper] = None
-      _transformations: Optional[List[TransformComponent]] = None
-    ```
+  ```python
+  # NOTE: Deprecated, use llama_index.settings.Settings. The service context container is a utility container for LlamaIndex index and query classes.
+  class ServiceContext:
+    llm_predictor: BaseLLMPredictor
+    prompt_helper: PromptHelper
+    embed_model: BaseEmbedding
+    node_parser: NodeParser
+    llama_logger: LlamaLogger
+    callback_manager: CallbackManager
+  ```
 
----
+  ```python
+  @dataclass
+  class _Settings:
+    # lazy initialization
+    _llm: Optional[LLM] = None
+    _embed_model: Optional[BaseEmbedding] = None
+    _callback_manager: Optional[CallbackManager] = None
+    _tokenizer: Optional[Callable[[str], List[Any]]] = None
+    _node_parser: Optional[NodeParser] = None
+    _prompt_helper: Optional[PromptHelper] = None
+    _transformations: Optional[List[TransformComponent]] = None
+  ```
+
+#### LlamaIndex Tutorial
 
 - [LlamaIndex Overview (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-001-overview-v0-7-9/) [17 Jul 2023]
 - [Fine-Tuning a Linear Adapter for Any Embedding Model](https://medium.com/llamaindex-blog/fine-tuning-a-linear-adapter-for-any-embedding-model-8dd0a142d383): Fine-tuning the embeddings model requires you to reindex your documents. With this approach, you do not need to re-embed your documents. Simply transform the query instead. [7 Sep 2023]
@@ -285,9 +299,7 @@
   </details>
 - [LlamaIndex Tutorial](https://nanonets.com/blog/llamaindex/): A Complete LlamaIndex Guide [18 Oct 2023]
 <!-- - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/) [27 May 2023] / [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/) [27 May 2023] / --> 
-- [Chat engine ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html), [FLARE Query engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/flare_query_engine.html) 
-- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288) /💡[ref](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023] <br/>
-  <img src="../files/advanced-rag.png" width="430">
+- [Chat engine ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html), [FLARE Query engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/flare_query_engine.html)
 - [Building and Productionizing RAG](https://docs.google.com/presentation/d/1rFQ0hPyYja3HKRdGEgjeDxr0MSE8wiQ2iu4mDtwR6fc/edit#slide=id.p): [doc](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf): Optimizing RAG Systems 1. Table Stakes 2. Advanced Retrieval: Small-to-Big 3. Agents 4. Fine-Tuning 5. Evaluation [Nov 2023]
 - Multimodal RAG Pipeline [ref](https://blog.llamaindex.ai/multi-modal-rag-621de7525fea) [Nov 2023]
 - [A Cheat Sheet and Some Recipes For Building Advanced RAG](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b) RAG cheat sheet shared above was inspired by [RAG survey paper](https://arxiv.org/abs/2312.10997). [doc](../files/advanced-rag-diagram-llama-index.png) [Jan 2024]
@@ -323,6 +335,8 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-search-vector-samples?style=flat-square&label=%20&color=gray)
 - [Azure Cache for Redis Enterprise](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-vector-search-similarity-capabilities-in-azure-cache/ba-p/3827512): Enterprise [Redis Vector Search Demo](https://ecommerce.redisventures.com/) [22 May 2023 ]
 - [Azure SQL's support for natively storing and querying vectors](https://devblogs.microsoft.com/azure-sql/announcing-eap-native-vector-support-in-azure-sql-database/) [21 May 2024]
+- GraphRAG, available in preview in [Azure Database for PostgreSQL](https://aka.ms/Ignite24/PostgreSQLAI) [19 Nov 2024]
+- [DiskANN](https://github.com/microsoft/DiskANN), a state-of-the-art suite of algorithms for low-latency, highly scalable vector search, is now generally available in [Azure Cosmos DB](https://aka.ms/ignite24/cosmosdb/blog1) and in preview for Azure Database for PostgreSQL. [19 Nov 2024]
 
 **Note**: Azure Cache for Redis Enterprise: Enterprise Sku series are not able to deploy by a template such as Bicep and ARM.
 
