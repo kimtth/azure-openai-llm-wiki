@@ -24,8 +24,9 @@
 - [websim.ai](https://websim.ai/): a web editor and simulator that can generate websites. [1 Jul 2024]
 - [napkin.ai](https://www.napkin.ai/): a text-to-visual graphics generator [7 Aug 2024]
 - AI Search engine:
+  1. [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
   1. [Perplexity](http://perplexity.ai) [Dec 2022]
   1. [GenSpark](https://www.genspark.ai/): AI agents engine perform research and generate custom pages called Sparkpages. [18 Jun 2024]
-  1. [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024] | [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
+  1. [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024]
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
-- [Text-to-editable vector image generator](https://www.recraft.ai/)
+- [recraft.ai](https://www.recraft.ai/): Text-to-editable vector image generator

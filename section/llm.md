@@ -63,11 +63,12 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/Beomi/KoAlpaca?style=flat-square&label=%20&color=gray)
 - [Pythia](https://arxiv.org/abs/2304.01373): How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [git](https://github.com/EleutherAI/pythia) [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/EleutherAI/pythia?style=flat-square&label=%20&color=gray)
-- [OLMo](https://arxiv.org/abs/2402.00838): Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024] / [OLMoE](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
+- [OLMo](https://arxiv.org/abs/2402.00838):💡Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024] / [OLMoE](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/OLMo?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/OLMoE?style=flat-square&label=%20&color=gray)
 - [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=flat-square&label=%20&color=gray)
 - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
+- [TÜLU 3](https://arxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [git](https://github.com/allenai/open-instruct) / demo:[ref](https://playground.allenai.org/) [22 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=gray)
 - Meta (aka. Facebook)
   1. Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama) / [ref](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/llama?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-models?style=flat-square&label=%20&color=gray)
@@ -202,6 +203,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=flat-square&label=%20&color=gray)
 - [mini-omni2](https://github.com/gpt-omni/mini-omni2): [ref](arxiv.org/abs/2410.11190): Towards Open-source GPT-4o with Vision, Speech and Duplex Capabilities. [15 Oct 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/gpt-omni/mini-omni2?style=flat-square&label=%20&color=gray)
+- [LLaVA-CoT](https://arxiv.org/abs/2411.10440): (FKA. LLaVA-o1) Let Vision Language Models Reason Step-by-Step. [git](https://github.com/PKU-YuanGroup/LLaVA-CoT) [15 Nov 2024]
 - Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/) [22 Aug 2023]
   - The model has three sub-models:
     1. A model to obtain image embeddings
@@ -234,6 +236,8 @@
   1. [Claude 3 Opus](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
 - Apple
   1. [4M-21](https://arxiv.org/abs/2406.09406): An Any-to-Any Vision Model for Tens of Tasks and Modalities. [13 Jun 2024]
+- Hugging Face
+  1. [SmolVLM](https://huggingface.co/blog/smolvlm): 2B small vision language models. [ref](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) / finetuning:[git](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) [24 Nov 2024]
 - Benchmarking Multimodal LLMs.
   - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
   - [SEED-Bench](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)]: Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
