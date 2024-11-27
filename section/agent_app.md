@@ -90,18 +90,16 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/dataelement/bisheng?style=flat-square&label=%20&color=gray)
 1. [langfun](https://github.com/google/langfun): leverages PyGlove to integrate LLMs and programming. [Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/langfun?style=flat-square&label=%20&color=gray)
-1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=gray)
-![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/cpacker/MemGPT?style=flat-square&label=%20&color=gray)
-1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023]
+1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray)
+1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=gray)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack): building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray)
+1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 
 #### **LLM Application**
 
-1. [OpenBB](https://github.com/OpenBB-finance/OpenBB): The first financial Platform that is free and fully open source. AI-powered workspace [Dec 2020]
-1. [knowledge](https://github.com/KnowledgeCanvas/knowledge): Tool for saving, searching, accessing, and exploring websites and files. Electron based app, built-in Chromium browser, knowledge graph [Jul 2021]
-![GitHub Repo stars](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=flat-square&label=%20&color=gray)
-![GitHub Repo stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=flat-square&label=%20&color=gray)
+1. [OpenBB](https://github.com/OpenBB-finance/OpenBB): The first financial Platform that is free and fully open source. AI-powered workspace [Dec 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=flat-square&label=%20&color=gray)
+1. [knowledge](https://github.com/KnowledgeCanvas/knowledge): Tool for saving, searching, accessing, and exploring websites and files. Electron based app, built-in Chromium browser, knowledge graph [Jul 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=flat-square&label=%20&color=gray)
 1. [guardrails](https://github.com/guardrails-ai/guardrails): Adding guardrails to large language models. [Jan 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=flat-square&label=%20&color=gray)
 1. [aider](https://github.com/paul-gauthier/aider): AI pair programming in your terminal [Jan 2023]
@@ -284,6 +282,7 @@
 - [AI Agents That Matter](https://arxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
 - [Automated Design of Agentic Systems](https://arxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
+- [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 
 #### **Tool use: LLM to Master APIs**
 
@@ -386,7 +385,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/ricklamers/gpt-code-ui?style=flat-square&label=%20&color=gray)
 1. [OSS Code Interpreter](https://github.com/shroominic/codeinterpreter-api) A LangChain implementation of the ChatGPT Code Interpreter. [Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/shroominic/codeinterpreter-api?style=flat-square&label=%20&color=gray)
-1. [Open Interpreter](https://github.com/KillianLucas/open-interpreter): Let language models run code on your computer. [Jul 2023]
+1. [Open Interpreter](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/KillianLucas/open-interpreter?style=flat-square&label=%20&color=gray)
 
 ### **Caching**
@@ -406,6 +405,13 @@
 - [Guidelines for Human-AI Interaction](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/): Microsoft: Based on a survey of 168 potential guidelines from various sources, they narrowed it down to 18 action rules organized by user interaction stages.
 - [People + AI Guidebook](https://pair.withgoogle.com/guidebook/): Google: Google’s product teams and academic research, they provide 23 patterns grouped by common questions during the product development process3.
 - [Human Interface Guidelines for Machine Learning](https://developer.apple.com/design/human-interface-guidelines/machine-learning): Apple: Based on practitioner knowledge and experience, emphasizing aspects of UI rather than model functionality4.
+
+### **Proposals & Other topics**
+
+- [/llms.txt](https://llmstxt.org/): Proposal for an `/llms.txt` file to guide LLMs in using websites during inference. [git](https://github.com/answerdotai/llms-txt) [3 Sep 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/answerdotai/llms-txt?style=flat-square&label=%20&color=gray)
+- [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray)
 
 ### **LLM for Robotics: Bridging AI and Robotics**
 

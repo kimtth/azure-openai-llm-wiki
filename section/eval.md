@@ -134,6 +134,7 @@
 - [Langfuse](https://langfuse.com): [git](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=gray)
 - [PromptTools](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=gray)
+- [30 requirements for an MLOps environment](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
 - [DeepEval](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=%20&color=gray)
 - [traceloop openllmetry](https://github.com/traceloop/openllmetry): Quality monitoring for your LLM applications. [Sep 2023]
