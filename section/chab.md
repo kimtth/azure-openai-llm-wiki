@@ -17,6 +17,7 @@
 - OpenAI's CEO, Sam Altman, predicts AGI could emerge by 2025. [ref](https://blog.cubed.run/agi-by-2025-altmans-bold-prediction-on-ai-s-future-9f15b071762c) [9 Nov 2024]
 - Anthropic's CEO, Dario Amodei, predicts AGI between 2026 and 2027. [ref](https://techcrunch.com/2024/11/13/this-week-in-ai-anthropics-ceo-talks-scaling-up-ai-and-google-predicts-floods/) [13 Nov 2024]
 - [Key figures and their predicted AGI timelines](https://x.com/slow_developer/status/1858877008375152805):💡AGI might be emerging between 2025 to 2030. [19 Nov 2024]
+- [Creating Scalable AGI: the Open General Intelligence Framework](https://arxiv.org/abs/2411.15832): a new AI architecture designed to enhance flexibility and scalability by dynamically managing specialized AI modules. [24 Nov 2024]
 
 ### **OpenAI's Roadmap and Products**
 
