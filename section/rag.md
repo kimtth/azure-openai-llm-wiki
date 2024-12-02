@@ -1,6 +1,6 @@
-## **Section 1: RAG, LlamaIndex, and Vector Storage**
+## **RAG (Retrieval-Augmented Generation)**
 
-### **What is the RAG (Retrieval-Augmented Generation)?**
+### **RAG (Retrieval-Augmented Generation)**
 
 - RAG (Retrieval-Augmented Generation) : Integrates the retrieval (searching) into LLM text generation. RAG helps the model to “look up” external information to improve its responses. [cite](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7) [25 Aug 2023]
 
@@ -206,7 +206,7 @@
 1. [HybridRAG](https://arxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=gray)
 1. [MemFree](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=gray)
-1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](agent_app.md/#applications-frameworks-and-user-interface-uiux)
+1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
 ### **LlamaIndex**
 

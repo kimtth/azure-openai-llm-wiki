@@ -1,4 +1,4 @@
-## **Section 11: Datasets for LLM Training**
+## **Datasets for LLM Training**
 
 - LLM-generated datasets:
   1. [Self-Instruct](https://arxiv.org/abs/2212.10560): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.10560)]: Seed task pool with a set of human-written instructions. [20 Dec 2022]
