@@ -1,4 +1,4 @@
-## **Section 3** : Microsoft Semantic Kernel and Stanford NLP DSPy
+## **Microsoft Semantic Kernel and Stanford NLP DSPy**
 
 ### **Semantic Kernel**
 

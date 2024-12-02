@@ -1,4 +1,4 @@
-## **Section 5: Prompt Engineering, Finetuning, and Visual Prompts**
+## **Prompt Engineering, Finetuning, and Visual Prompts**
 
 ### **Prompt Engineering**
 
