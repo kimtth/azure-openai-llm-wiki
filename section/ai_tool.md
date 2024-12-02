@@ -1,4 +1,4 @@
-## **Section 10: General AI Tools and Extensions**
+## **General AI Tools and Extensions**
 
 - The leader: <http://openai.com>
 - The runner-up: <http://bard.google.com> -> <https://gemini.google.com>

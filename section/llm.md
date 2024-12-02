@@ -1,4 +1,4 @@
-## **Section 7** : Large Language Model: Landscape
+## **Large Language Model: Landscape**
 
 ### **Large Language Models (in 2023)**
 
@@ -9,7 +9,7 @@
 - [Twitter](https://twitter.com/hwchung27/status/1710003293223821658) / [Video](https://t.co/vumzAtUvBl) / [Slides](https://t.co/IidLe4JfrC) [6 Oct 2023]
 - [LLMprices.dev](https://llmprices.dev): Compare prices for models like GPT-4, Claude Sonnet 3.5, Llama 3.1 405b and many more.
 - [AI Model Review](https://aimodelreview.com/): Compare 75 AI Models on 200+ Prompts Side By Side.
-- [Artificial Analysis](https://artificialanalysis.ai/): Independent analysis of AI models and API providers.
+- [Artificial Analysis](https://artificialanalysis.ai/):💡Independent analysis of AI models and API providers.
 - [Inside language models (from GPT to Olympus)](https://lifearchitect.ai/models/)
 - [LLM Pre-training and Post-training Paradigms](https://sebastianraschka.com/blog/2024/new-llm-pre-training-and-post-training.html) [17 Aug 2024] <br/>
   <img src="../files/llm-dev-pipeline-overview.png" width="350" />
@@ -51,7 +51,7 @@
 
   Distribution of the number of papers by most popular fields of study from 2002 to 2022
 
-### **Open-Source Large Language Models**
+### **Large Language Model Collection**
 
 - [The Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) [28 Oct 2024]
 - [The LLM Index](https://sapling.ai/llm/index): A list of large language models (LLMs)
@@ -101,6 +101,8 @@
   1. phi-series: cost-effective small language models (SLMs) [x-ref](prompt_ft.md/#knowledge-distillation-reducing-model-size-with-textbooks)
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
+- Amazon
+  1. [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
 - Mistral
   - Founded in April 2023. French tech.
   1. open-weights models (Mistral 7B, Mixtral 8x7B, Mixtral 8x22B, NeMo) and optimized commercial models (Mistral Small, Mistral Medium, Mistral Large) [ref](https://docs.mistral.ai/getting-started/models/)

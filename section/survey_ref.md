@@ -1,4 +1,4 @@
-## **Section 8: Survey and Reference**
+## **Survey and Reference**
 
 ### **Survey on Large Language Models**
 
@@ -70,6 +70,7 @@
 - [Small Language Models: Survey, Measurements, and Insights](https://arxiv.org/abs/2409.15790) [24 Sep 2024]
 - [A Survey on Data Synthesis and Augmentation for Large Language Models](https://arxiv.org/abs/2410.12896) [16 Oct 2024]
 - [A Comprehensive Survey of Small Language Models in the Era of Large Language Models](https://arxiv.org/abs/2411.03350) [4 Nov 2024]
+- [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594) [23 Nov 2024]
 - [Large Language Model-Brained GUI Agents: A Survey](https://arxiv.org/abs/2411.18279) [27 Nov 2024]
 - Evolutionary Tree of Large Language Models: [x-ref](llm.md/#evolutionary-tree-of-large-language-models)
 
@@ -77,33 +78,32 @@
 
 - An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT](https://github.com/jaymody/picoGPT): Transformer Decoder [Jan 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/jaymody/picoGPT?style=flat-square&label=%20&color=gray)
+```python
+q = x @ w_k # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
+k = x @ w_q # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
+v = x @ w_v # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
 
-  ```python
-  q = x @ w_k # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
-  k = x @ w_q # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
-  v = x @ w_v # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
-
-  # In picoGPT, combine w_q, w_k and w_v into a single matrix w_fc
-  x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
-  ```
-
+# In picoGPT, combine w_q, w_k and w_v into a single matrix w_fc
+x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
+```
 - lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [git](https://github.com/Lightning-AI/lit-gpt) [Mar 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Lightning-AI/lit-gpt?style=flat-square&label=%20&color=gray)
-- [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] -> [Screenshot to code](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [Oct 2017] [ref](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/)
- ![GitHub Repo stars](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/emilwallner/Screenshot-to-code?style=flat-square&label=%20&color=gray)
+- [pix2code](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] ![GitHub Repo stars](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=gray) 
+- [Screenshot to code](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [Oct 2017] [ref](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/) ![GitHub Repo stars](https://img.shields.io/github/stars/emilwallner/Screenshot-to-code?style=flat-square&label=%20&color=gray)
 - [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch):🏆Implementing a ChatGPT-like LLM from scratch, step by step
  ![GitHub Repo stars](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat-square&label=%20&color=gray)
 - [Spreadsheets-are-all-you-need](https://github.com/ianand/spreadsheets-are-all-you-need): Spreadsheets-are-all-you-need implements the forward pass of GPT2 entirely in Excel using standard spreadsheet functions. [Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ianand/spreadsheets-are-all-you-need?style=flat-square&label=%20&color=gray)
 - [llm.c](https://github.com/karpathy/llm.c): LLM training in simple, raw C/CUDA [Apr 2024]
- ![GitHub Repo stars](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=gray)
-  - Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [ref](https://github.com/karpathy/llm.c/discussions/481)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=gray) | Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [ref](https://github.com/karpathy/llm.c/discussions/481)
 - [llama3-from-scratch](https://github.com/naklecha/llama3-from-scratch): Implementing Llama3 from scratch [May 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/naklecha/llama3-from-scratch?style=flat-square&label=%20&color=gray)
-- [Umar Jamil github](https://github.com/hkproj): Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
+- [Umar Jamil github](https://github.com/hkproj):💡LLM Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
 - [Andrej Karpathy📺](https://www.youtube.com/watch?v=l8pRSuU81PU): Reproduce the GPT-2 (124M) from scratch. [June 2024] / [SebastianRaschka📺](https://www.youtube.com/watch?v=kPGTx4wcm_w): Developing an LLM: Building, Training, Finetuning  [June 2024]
 - [Transformer Explainer](https://arxiv.org/pdf/2408.04619): an open-source interactive tool to learn about the inner workings of a Transformer model (GPT-2) [git](https://poloclub.github.io/transformer-explainer/) [8 Aug 2024]
 - Beam Search [1977] in Transformers is an inference algorithm that maintains the `beam_size` most probable sequences until the end token appears or maximum sequence length is reached. If `beam_size` (k) is 1, it's a `Greedy Search`. If k equals the total vocabularies, it's an `Exhaustive Search`. [ref](https://huggingface.co/blog/constrained-beam-search) [Mar 2022]
+- [Einsum is All you Need](https://rockt.ai/2018/04/30/einsum): Einstein Summation [5 Feb 2018] 
+- [You could have designed state of the art positional encoding](https://fleetwood.dev/posts/you-could-have-designed-SOTA-positional-encoding): Binary Position Encoding, Sinusoidal positional encoding, Absolute vs Relative Position Encoding, Rotary Positional encoding [17 Nov 2024]
 
 #### Classification of Attention
 
@@ -202,4 +202,4 @@
 - [Daily Dose of Data Science](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science) [Dec 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ChawlaAvi/Daily-Dose-of-Data-Science?style=flat-square&label=%20&color=gray)
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=gray)
-- [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems.
+- [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [git](https://github.com/eugeneyan/applied-ml) ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat-square&label=%20&color=gray)

@@ -1,4 +1,4 @@
-## **Section 4** : LangChain Features, Usage, and Comparisons
+## **LangChain Features, Usage, and Comparisons**
 
 - LangChain is a framework for developing applications powered by language models. (1) Be data-aware: connect a language model to other sources of data.
   (2) Be agentic: Allow a language model to interact with its environment. doc:[ref](https://docs.langchain.com/docs) / blog:[ref](https://blog.langchain.dev) / [git](https://github.com/langchain-ai/langchain)
@@ -23,6 +23,10 @@
     '''
     chain = prompt | model | parser
     ```
+  - LLMChain: Deprecated since version 0.1.17: Use RunnableSequence, e.g., `prompt | llm` instead. 
+  - LangChain has shifted towards the Runnable interface since version 0.1.17.
+  - Imperative (programmatic) approach: The Runnable interface (formerly LLMChain) for flexible, programmatic chain building.
+  - Declarative approach: LangChain Expression Language (LCEL) offers a declarative syntax for chain composition, enabling features like async, batch, and streaming operations with the | operator for combining functionalities.
 
 ### **Macro and Micro-orchestration**
 
@@ -45,6 +49,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=gray)
 - DeepLearning.AI short course: LangChain for LLM Application Development [ref](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [ref](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 - [LangChain Streamlit agent examples](https://github.com/langchain-ai/streamlit-agent): Implementations of several LangChain agents as Streamlit apps. [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/streamlit-agent?style=flat-square&label=%20&color=gray)
+- [LangChain tutorial: A guide to building LLM-powered applications](https://www.elastic.co/blog/langchain-tutorial) [27 Feb 2024]
 
 ### **LangChain features and related libraries**
 

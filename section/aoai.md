@@ -1,4 +1,14 @@
-## **Section 2** : Azure OpenAI and Reference Architecture
+## **Azure OpenAI and Reference Architecture**
+
+### **Azure OpenAI vs OpenAI**
+
+1. OpenAI offers the latest features and models, while Azure OpenAI provides a reliable, secure, and compliant environment with seamless integration into other Azure services.
+2. Azure OpenAI supports `private networking`, `role-based authentication`, and `responsible AI content filtering`.
+3. Azure OpenAI does not use user input as training data for other customers. [Data, privacy, and security for Azure OpenAI](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy). Azure OpenAI does not share user data, including prompts and responses, with OpenAI.
+
+- [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview)
+- [Open AI Models](https://platform.openai.com/docs/models)
+- [Abuse Monitoring](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy): To detect and mitigate abuse, Azure OpenAI stores all prompts and generated content securely for up to thirty (30) days. (No prompts or completions are stored if the customer chooses to turn off abuse monitoring.)
 
 ### **Microsoft Azure OpenAI LLM Framework**
 
