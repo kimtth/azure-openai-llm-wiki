@@ -35,12 +35,12 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LangChain Features](section/langchain.md/#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
   - [LangChain Agent & Criticism](section/langchain.md/#langchain-chain-type-chains--summarizer)
   - [LangChain vs Competitors](section/langchain.md/#langchain-vs-competitors)
-- **Section 7** 🧠: [Prompting & Finetuning](section/prompt_ft.md/#prompt-engineering-finetuning-and-visual-prompts)
-  - [Prompt Engineering](section/prompt_ft.md/#prompt-engineering)
-  - [Finetuning](section/prompt_ft.md/#finetuning): PEFT (e.g., LoRA), RLHF, SFT
-  - [Quantization & Optimization](section/prompt_ft.md/#quantization-techniques)
-  - [Other Techniques](section/prompt_ft.md/#other-techniques-and-llm-patterns): e.g., MoE
-  - [Visual Prompting](section/prompt_ft.md/#visual-prompting--visual-grounding)
+- **Section 7** 🧠: [Prompting](section/prompt.md/#prompt-engineering) | [Finetuning](section/ft.md/#finetuning)
+  - [Prompt Engineering](section/prompt.md/#prompt-engineering)
+  - [Finetuning](section/ft.md/#finetuning): PEFT (e.g., LoRA), RLHF, SFT
+  - [Quantization & Optimization](section/ft.md/#quantization-techniques)
+  - [Other Techniques](section/ft.md/#other-techniques-and-llm-patterns): e.g., MoE
+  - [Visual Prompting](section/prompt.md/#visual-prompting--visual-grounding)
 - **Section 8** 🏄‍♂️: [Challenges & Abilities](section/chab.md/#large-language-model-challenges-and-solutions)
   - [AGI Discussion & Social Impact](section/chab.md/#agi-discussion-and-social-impact)
   - [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
@@ -63,9 +63,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LLM Training Datasets](section/dataset.md/#datasets-for-llm-training)
 - **Section 13** 📝: [Evaluations](section/eval.md/#section-12-evaluating-large-language-models--llmops)
   - [LLM Evaluation & LLMOps](section/eval.md/#evaluating-large-language-models--llmops)
-- **Contributors** 👀: 
-  - [Contributors](#contributors)
-- **Symbols** 🔑:
+- **Legend** 🔑:
   - `ref`: external URL
   - `doc`: archived doc
   - `cite`: the source of comments
@@ -74,7 +72,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - `x-ref`: Cross reference
   - 📺: youtube or video
 
-## **Contributors**
+## **Contributor** 👀
 
 <a href="https://github.com/kimtth/awesome-azure-openai-llm/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kimtth/awesome-azure-openai-llm" />
