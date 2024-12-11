@@ -63,7 +63,9 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/Beomi/KoAlpaca?style=flat-square&label=%20&color=gray)
 - [Pythia](https://arxiv.org/abs/2304.01373): How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [git](https://github.com/EleutherAI/pythia) [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/EleutherAI/pythia?style=flat-square&label=%20&color=gray)
-- [OLMo](https://arxiv.org/abs/2402.00838):💡Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024] / [OLMoE](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
+- [OLMo](https://arxiv.org/abs/2402.00838):💡Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [git](https://github.com/allenai/OLMo) [Feb 2024]
+- [OLMoE](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
+- [OLMo 2](https://allenai.org/blog/olmo2) [26 Nov 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/OLMo?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/OLMoE?style=flat-square&label=%20&color=gray)
 - [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=flat-square&label=%20&color=gray)
@@ -79,11 +81,17 @@
   1. [Llama 3.1](https://ai.meta.com/blog/meta-llama-3-1/): 405B, context length to 128K, add support across eight languages. first OSS model outperforms GTP-4o. [23 Jul 2024]
   1. [Llama 3.2](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/): Multimodal. Include text-only models (1B, 3B) and text-image models (11B, 90B), with quantized versions of 1B and 3B [Sep 2024]
   1. [NotebookLlama](https://github.com/meta-llama/llama-recipes/tree/main/recipes/quickstart/NotebookLlama): An Open Source version of NotebookLM [28 Oct 2024]
+  1. [Llama 3.3](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/): a text-only 70B instruction-tuned model. Llama 3.3 70B approaches the performance of Llama 3.1 405B. [6 Dec 2024]
 - Google
   1. [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [git](https://github.com/google-deepmind/gemma) / Pytorch [git](https://github.com/google/gemma_pytorch) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/google/gemma_pytorch?style=flat-square&label=%20&color=gray)
   1. [Gemma 2](https://www.kaggle.com/models/google/gemma-2/) 2B, 9B, 27B [ref: releases](https://ai.google.dev/gemma/docs/releases) [Jun 2024]
+  1. [PaliGemma](https://arxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
   1. [DataGemma](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
+  1. [PaliGemma 2](https://arxiv.org/abs/2412.03555): VLMs
+ at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
+  1. [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
+  1. [Gemini 2 Flash](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
 - Qualcomm
   1. [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - xAI
@@ -98,7 +106,7 @@
   1. [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
   1. [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
 - Microsoft
-  1. phi-series: cost-effective small language models (SLMs) [x-ref](prompt_ft.md/#knowledge-distillation-reducing-model-size-with-textbooks)
+  1. phi-series: cost-effective small language models (SLMs) [x-ref](ft.md/#knowledge-distillation-reducing-model-size-with-textbooks)
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - Amazon
@@ -162,6 +170,7 @@
 - [Prithvi WxC](https://arxiv.org/abs/2409.13598): In collaboration with NASA, IBM is releasing an open-source foundation model for Weather and Climate [ref](https://research.ibm.com/blog/foundation-model-weather-climate) [20 Sep 2024]
 - [AlphaChip](https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/): Reinforcement learning-based model for designing physical chip layouts. [26 Sep 2024]
 - [OpenCoder](https://github.com/OpenCoder-llm/OpenCoder-llm): 1.5B and 8B base and open-source Code LLM, supporting both English and Chinese. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenCoder-llm/OpenCoder-llm?style=flat-square&label=%20&color=gray)
+- [Video LLMs for Temporal Reasoning in Long Videos](https://arxiv.org/abs/2412.02930): TemporalVLM, a video LLM excelling in temporal reasoning and fine-grained understanding of long videos, using time-aware features and validated on datasets like TimeIT and IndustryASM for superior performance. [4 Dec 2024]
 
 ### **MLLM (multimodal large language model)**
 
@@ -212,9 +221,7 @@
     1. A text model to obtain text embeddings
     1. A model to learn the relationships between them
   - This is analogous to adding vision capability to a LLM.
-
     <img src="../files/cocoa.gif" width="200" />
-
 - Meta (aka. Facebook)
   1. [facebookresearch/ImageBind](https://arxiv.org/abs/2305.05665): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.05665)]: ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat-square&label=%20&color=gray)
@@ -231,6 +238,7 @@
   1. [TaskMatrix.AI](https://arxiv.org/abs/2303.16434): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.16434)]: TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
   1. [Florence-2](https://arxiv.org/abs/2311.06242): Advancing a unified representation for various vision tasks, demonstrating specialized models like `CLIP` for classification, `GroundingDINO` for object detection, and `SAM` for segmentation. [ref](https://huggingface.co/microsoft/Florence-2-large) [10 Nov 2023]
   1. [LLM2CLIP](https://github.com/microsoft/LLM2CLIP): Directly integrating LLMs into CLIP causes catastrophic performance drops. We propose LLM2CLIP, a caption contrastive fine-tuning method that leverages LLMs to enhance CLIP. [7 Nov 2024]
+  1. [Florence-VL](https://arxiv.org/abs/2412.04424): A multimodal large language model (MLLM) that integrates Florence-2. [5 Dec 2024]
 - Google
   1. [Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
   1. [Foundation Models](https://ai.google/discover/our-models/): Gemini, Veo, Gemma etc.

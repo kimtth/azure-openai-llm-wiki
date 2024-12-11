@@ -30,7 +30,7 @@
 - Semantic Kernel-Powered OpenAI Plugin Development Lifecycle [ref](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/semantic-kernel-powered-openai-plugin-development-lifecycle/ba-p/3967751) [30 Oct 2023]
 - SemanticKernel Implementation sample to overcome Token limits of Open AI model. [ref](https://zenn.dev/microsoft/articles/semantic-kernel-10) [06 May 2023]
 - [Learning Paths for Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/learning-paths-for-semantic-kernel/) [28 Mar 2024]
-- [A Pythonista’s Intro to Semantic Kernel](https://towardsdatascience.com/a-pythonistas-intro-to-semantic-kernel-af5a1a39564d) [3 Sep 2023]
+- [A Pythonista’s Intro to Semantic Kernel](https://towardsdatascience.com/a-pythonistas-intro-to-semantic-kernel-af5a1a39564d)💡[3 Sep 2023]
 - [Step-by-Step Guide to Building a Powerful AI Monitoring Dashboard with Semantic Kernel and Azure Monitor](https://devblogs.microsoft.com/semantic-kernel/step-by-step-guide-to-building-a-powerful-ai-monitoring-dashboard-with-semantic-kernel-and-azure-monitor/): Step-by-step guide to building an AI monitoring dashboard using Semantic Kernel and Azure Monitor to track token usage and custom metrics. [23 Aug 2024]
 - [Working with Audio in Semantic Kernel Python](https://devblogs.microsoft.com/semantic-kernel/working-with-audio-in-semantic-kernel-python/) [15 Nov 2024]
 
@@ -153,26 +153,30 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 #### DSPy optimizer
 
-<details open>
-  <summary>Expand</summary>
+- Automatic Few-Shot Learning
 
-  - Automatic Few-Shot Learning
+  - As a rule of thumb, if you don't know where to start, use `BootstrapFewShotWithRandomSearch`.
+    
+  - If you have very little data, e.g. 10 examples of your task, use `BootstrapFewShot`.
+    
+  - If you have slightly more data, e.g. 50 examples of your task, use `BootstrapFewShotWithRandomSearch`.
+    
+  - If you have more data than that, e.g. 300 examples or more, use `BayesianSignatureOptimizer`. -> deprecated and replaced with MIPRO.
 
-    - As a rule of thumb, if you don't know where to start, use `BootstrapFewShotWithRandomSearch`.
-      
-    - If you have very little data, e.g. 10 examples of your task, use `BootstrapFewShot`.
-      
-    - If you have slightly more data, e.g. 50 examples of your task, use `BootstrapFewShotWithRandomSearch`.
-      
-    - If you have more data than that, e.g. 300 examples or more, use `BayesianSignatureOptimizer`.
-  
-  - Automatic Instruction Optimization
+  - `KNNFewShot`: k-Nearest Neighbors to select the closest training examples, which are then used in the BootstrapFewShot optimization process​
 
-    - `COPRO`: Repeat for a set number of iterations, tracking the best-performing instructions.
+- Automatic Instruction Optimization
 
-    - `MIPRO`: Repeat for a set number of iterations, tracking the best-performing combinations (instructions and examples).
+  - `COPRO`: Repeat for a set number of iterations, tracking the best-performing instructions.
 
-  - Automatic Finetuning
+  - `MIPRO`: Repeat for a set number of iterations, tracking the best-performing combinations (instructions and examples). -> replaced with `MIPROv2`.
 
-    - If you have been able to use one of these with a large LM (e.g., 7B parameters or above) and need a very efficient program, compile that down to a small LM with `BootstrapFinetune`.
-</details>
+  - `MIPROv2`: If you want to keep your prompt 0-shot, or use 40+ trials or 200+ examples, choose MIPROv2. [March 2024]
+
+- Automatic Finetuning
+
+  - If you have been able to use one of these with a large LM (e.g., 7B parameters or above) and need a very efficient program, compile that down to a small LM with `BootstrapFinetune`.
+
+- Program Transformations
+
+  - `Ensemble`: Combines DSPy programs using all or randomly sampling a subset into a single program.

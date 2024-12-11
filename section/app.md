@@ -92,6 +92,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/langfun?style=flat-square&label=%20&color=gray)
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray)
 1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=gray)
+1. [Pipecat](https://github.com/pipecat-ai/pipecat): Open Source framework for voice and multimodal conversational AI [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/pipecat-ai/pipecat?style=flat-square&label=%20&color=gray)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack): building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray)
 1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
@@ -155,6 +156,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray)
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
+1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024]
 
 #### **Code editor incl. Proprietary Software**
 
