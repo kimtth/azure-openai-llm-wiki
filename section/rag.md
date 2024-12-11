@@ -79,7 +79,7 @@
 
 #### Agentic RAG
 
-- From Simple to Advanced RAG [ref](https://twitter.com/jerryjliu0/status/1711419232314065288) / [doc](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf) /💡[ref](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023] <br/>
+- From Simple to Advanced RAG (LlamaIndex) [ref](https://twitter.com/jerryjliu0/status/1711419232314065288) / [doc](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf) /💡[ref](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023] <br/>
   <img src="../files/advanced-rag.png" width="430">
 - [What is Agentic RAG](https://weaviate.io/blog/what-is-agentic-rag): The article published by Weaviate. [5 Nov 2024]
 
@@ -89,6 +89,7 @@
 - [localGPT-Vision](https://github.com/PromtEngineer/localGPT-Vision): an end-to-end vision-based Retrieval-Augmented Generation (RAG) system. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/PromtEngineer/localGPT-Vision?style=flat-square&label=%20&color=gray)
 - [Enhancing Ultra High Resolution Remote Sensing Imagery Analysis with ImageRAG](https://arxiv.org/abs/2411.07688): Ultra High Resolution (UHR) remote sensing imagery, such as satellite imagery and medical imaging. [12 Nov 2024]
 - [Visual RAG over PDFs with Vespa](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [git](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
+- [Path-RAG: Knowledge-Guided Key Region Retrieval for Open-ended Pathology Visual Question Answering](https://arxiv.org/abs/2411.17073): Using HistoCartography to improve pathology image analysis and boost PathVQA-Open performance. [26 Nov 2024]
 
 #### GraphRAG
 
@@ -206,6 +207,7 @@
 1. [HybridRAG](https://arxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=gray)
 1. [MemFree](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=gray)
+1. [RAGLite](https://github.com/superlinear-ai/raglite):　a Python toolkit for Retrieval-Augmented Generation (RAG) with PostgreSQL or SQLite [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/superlinear-ai/raglite?style=flat-square&label=%20&color=gray)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
 ### **LlamaIndex**

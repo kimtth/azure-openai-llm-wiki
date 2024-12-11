@@ -64,10 +64,17 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/ToolBench?style=flat-square&label=%20&color=gray)
 - [APIGen](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [ToolShed](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
-- [Anthropic Claude's computer use APIs](https://www.anthropic.com/news/developing-computer-use):
+
+#### **Computer use**
+
+- [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use):
   1. [OpenInterpreter starts to support Computer Use API](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
   1. [Agent.exe](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=gray)
-  1. [The Dawn of GUI Agent](https://github.com/showlab/computer_use_ootb): An out-of-the-box version of Anthropic Claude Computer Use for Windows and macOS  [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray)
+- OSS
+  1. [x-ref](aoai.md/#agent) > [UFO](https://github.com/microsoft/UFO): Windows Control
+  1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray)
+  1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray)
+  1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray)
 
 #### **Agent Framework**
 
@@ -93,6 +100,7 @@
 1. [AgentScope](https://github.com/modelscope/agentscope): To build LLM-empowered multi-agent applications. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/modelscope/agentscope?style=flat-square&label=%20&color=gray)
 1. [composio](https://github.com/ComposioHQ/composio): Integration of Agents with 100+ Tools [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/ComposioHQ/composio?style=flat-square&label=%20&color=gray)
 1. [maestro](https://github.com/Doriandarko/maestro): A Framework for Claude Opus, GPT, and local LLMs to Orchestrate Subagents [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/maestro?style=flat-square&label=%20&color=gray)
+1. [GPT Computer Assistant(GCA)](https://github.com/Upsonic/gpt-computer-assistant): an AI agent framework designed to make computer use. [May 2024]
 1. [AWS: Multi-Agent Orchestrator](https://github.com/awslabs/multi-agent-orchestrator): a framework for managing multiple AI agents and handling complex conversations. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/multi-agent-orchestrator?style=flat-square&label=%20&color=gray)
 1. [SwarmZero](https://github.com/swarmzero/swarmzero): SwarmZero's SDK for building AI agents, swarms of agents. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/swarmzero/swarmzero?style=flat-square&label=%20&color=gray)
 1. [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework): IBM. The TypeScript framework for building scalable agentic applications. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/i-am-bee/bee-agent-framework?style=flat-square&label=%20&color=gray)
@@ -151,3 +159,11 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/shroominic/codeinterpreter-api?style=flat-square&label=%20&color=gray)
 1. [Open Interpreter](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/KillianLucas/open-interpreter?style=flat-square&label=%20&color=gray)
+
+#### **Domain-specific**
+
+1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat](https://arxiv.org/abs/2311.15826) | [GEOBench-VLM](https://arxiv.org/abs/2411.19325) | [RS5M](https://github.com/om-ai-lab/RS5M) | [VHM](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
+1. [DrugAgent: Automating AI-aided Drug Discovery](https://arxiv.org/abs/2411.15692) [24 Nov 2024]
+1. [FinRobot: AI Agent for Equity Research and Valuation](https://arxiv.org/abs/2411.08804) [13 Nov 2024]
+1. [An LLM Agent for Automatic Geospatial Data Analysis](https://arxiv.org/abs/2410.18792) [24 Oct 2024]
+
