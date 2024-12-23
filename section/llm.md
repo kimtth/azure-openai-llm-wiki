@@ -95,6 +95,7 @@
   1. [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
   1. [Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
   1. [Gemini 2 Flash](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
+  1. Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
   1. [gemini/cookbook](https://github.com/google-gemini/cookbook)
 - Anthrophic
   1. [Claude 3](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
@@ -143,6 +144,8 @@
 - Apple
   1. [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
   1. [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
+- IBM
+  1. [Granite Guardian](https://github.com/ibm-granite/granite-guardian): a collection of models designed to detect risks in prompts and responses [10 Dec 2024]
 - GPT for Domain Specific [x-ref](llm.md/#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [x-ref](llm.md/#mllm-multimodal-large-language-model)
 - Large Language Models (in 2023) [x-ref](llm.md/#large-language-models-in-2023)
