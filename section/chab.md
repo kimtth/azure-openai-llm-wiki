@@ -41,6 +41,7 @@
 - [A Comparative Study on Reasoning Patterns of OpenAI's o1 Model](https://arxiv.org/abs/2410.13639): 6 types of o1 reasoning patterns (i.e., Systematic Analysis (SA), Method
 Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identification (CI), and Emphasizing Constraints (EC)). `the most commonly used reasoning patterns in o1 are DC and SR` [17 Oct 2024]
 - [OpenAI o1 system card](https://openai.com/index/openai-o1-system-card/) [5 Dec 2024]
+- [o3 preview](https://openai.com/12-days/): 12 Days of OpenAI [20 Dec 2024]
 
 #### **GPT-4 details leaked** `unverified`
 
@@ -84,6 +85,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - GPT 4: Mixture of Experts (MoE). 8 models with 220 billion parameters each, for a total of about 1.76 trillion parameters. `unverified` [ref](https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/) [14 Mar 2023]
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/): o stands for Omni. 50% cheaper. 2x faster. Multimodal input and output capabilities (text, audio, vision). supports 50 languages. [13 May 2024] / [GPT-4o mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/): 15 cents per million input tokens, 60 cents per million output tokens, MMLU of 82%, and fast. [18 Jul 2024]
 - [OpenAI o1](#openai-o1) [12 Sep 2024]
+- [OpenAI o3 preview](#openai-o1) [20 Dec 2024]
 
 ### **Context constraints**
 

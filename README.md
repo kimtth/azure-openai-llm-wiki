@@ -12,12 +12,11 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ## Table of contents
 
 - **Section 1** 🎯: [RAG](section/rag.md/#rag-retrieval-augmented-generation)
-  - [RAG (Retrieval-Augmented Generation)](section/rag.md/#what-is-the-rag-retrieval-augmented-generation)
+  - [RAG (Retrieval-Augmented Generation)](section/rag.md/#rag-retrieval-augmented-generation)
   - [RAG Design & Application](section/rag.md/#advanced-rag)
-  - [LlamaIndex](section/rag.md/#llamaindex)
   - [Vector DB](section/rag.md/#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](section/aoai.md/#azure-openai-and-reference-architecture)
-  - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-relevant-llm-framework)
+  - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
   - [Copilot Products & Azure OpenAI Service](section/aoai.md/#copilot-products)
   - [Azure Reference Architecture](section/aoai.md/#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](section/app.md/#applications-and-frameworks)
@@ -31,10 +30,11 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](section/sk_dspy.md/#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
   - [DSPy](section/sk_dspy.md/#dspy): Optimizer frameworks
-- **Section 6** 🛠️: [LangChain](section/langchain.md/#langchain-features-usage-and-comparisons)
+- **Section 6** 🛠️: [LangChain](section/langchain.md/#langchain-features-usage-and-comparisons) | [LlamaIndex](section/langchain.md/#llamaindex)
   - [LangChain Features](section/langchain.md/#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
   - [LangChain Agent & Criticism](section/langchain.md/#langchain-chain-type-chains--summarizer)
   - [LangChain vs Competitors](section/langchain.md/#langchain-vs-competitors)
+  - [LlamaIndex](section/langchain.md/#llamaindex): Micro-orchestration & RAG
 - **Section 7** 🧠: [Prompting](section/prompt.md/#prompt-engineering) | [Finetuning](section/ft.md/#finetuning)
   - [Prompt Engineering](section/prompt.md/#prompt-engineering)
   - [Finetuning](section/ft.md/#finetuning): PEFT (e.g., LoRA), RLHF, SFT
@@ -54,7 +54,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Multimodal LLMs](section/llm.md/#mllm-multimodal-large-language-model)
   - [Generative AI Landscape](section/llm.md/#generative-ai-landscape)
 - **Section 10** 📚: [Surveys & References](section/survey_ref.md/#survey-and-reference)
-  - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models)
+  - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) | [Business use cases](section/survey_ref.md/#business-use-cases)
   - [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
   - [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
 - **Section 11** 🧰: [AI Tools & Extensions](section/ai_tool.md/#general-ai-tools-and-extensions)
