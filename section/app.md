@@ -55,6 +55,7 @@
 #### **LLM Application Development**
 
 1. [mindsdb](https://github.com/mindsdb/mindsdb): The open-source virtual database for building AI from enterprise data. It supports SQL syntax for development and deployment, with over 70 technology and data integrations. [Aug 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat-square&label=%20&color=gray)
+1. [Jina-Serve](https://github.com/jina-ai/serve): a framework for building and deploying AI services that communicate via gRPC, HTTP and WebSockets. [Feb 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/serve?style=flat-square&label=%20&color=gray)
 1. [superduper](https://github.com/superduper-io/superduper): Build end-to-end AI-data workflows and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray)
 1. [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=flat-square&label=%20&color=gray)
@@ -101,6 +102,7 @@
 
 1. [OpenBB](https://github.com/OpenBB-finance/OpenBB): The first financial Platform that is free and fully open source. AI-powered workspace [Dec 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=flat-square&label=%20&color=gray)
 1. [knowledge](https://github.com/KnowledgeCanvas/knowledge): Tool for saving, searching, accessing, and exploring websites and files. Electron based app, built-in Chromium browser, knowledge graph [Jul 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=flat-square&label=%20&color=gray)
+1. [Nomic python client](https://github.com/nomic-ai/nomic): Generate, store and retrieve embeddings for your unstructured data. supports from hundreds to tens of millions of points. [Jul 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/nomic-ai/nomic?style=flat-square&label=%20&color=gray)
 1. [guardrails](https://github.com/guardrails-ai/guardrails): Adding guardrails to large language models. [Jan 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=flat-square&label=%20&color=gray)
 1. [aider](https://github.com/paul-gauthier/aider): AI pair programming in your terminal [Jan 2023]
@@ -156,7 +158,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray)
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
-1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024]
+1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024]![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray)
 
 #### **Code editor incl. Proprietary Software**
 

@@ -206,6 +206,7 @@ class AgentType(str, Enum):
   - `LlamaIndex CLI`: a command line tool to generate LlamaIndex apps [ref](https://llama-2.ai/llamaindex-cli/) [Nov 2023]
   - `LlamaParse`: A unique parsing tool for intricate documents [git](https://github.com/run-llama/llama_parse) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=gray)
+- [LlamaIndex showcase](https://github.com/run-llama/llamacloud-demo) > `examples` [ref](https://www.llamaindex.ai/blog/introducing-agentic-document-workflows): e.g., Contract Review, Patient Case Summary, and Auto Insurance Claims Workflow. [9 Jan 2025]
 
 #### LlamaIndex integration with Azure AI
 

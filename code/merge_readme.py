@@ -6,12 +6,19 @@ import os
 import re
 
 def replace_section_links(content, section_files):
-    # Update the regex to include an optional slash before the anchor
+    # 1. Update the regex to include an optional slash before the anchor
+    # for example, # (section/intro.md#getting-started) -> # (intro.md#installation)
     pattern = re.compile(
         r'\(section/(' + '|'.join([f.replace('.md', '') for f in section_files]) + r')\.md/?#([^)]+)\)'
     )
     content = pattern.sub(r'(#\2)', content)
-    # Replace "../files" with "./files"
+    # 2. Add a replacement pattern such as [x-ref](sk_dspy.md/#code-recipes) -> [x-ref](#code-recipes)
+    # Check whether text contains [x-ref].
+    # If it does, replace the link.
+    if content.find("[x-ref]") != -1:
+        for x in section_files:
+            content = content.replace(f'{x}/', '')
+    # 3. Replace "../files" with "./files"
     content = content.replace("../files", "./files")
     return content
 

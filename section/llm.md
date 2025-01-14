@@ -72,6 +72,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=flat-square&label=%20&color=gray)
 - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
 - [TÜLU 3](https://arxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [git](https://github.com/allenai/open-instruct) / demo:[ref](https://playground.allenai.org/) [22 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=gray)
+- [ModernBERT](https://arxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
 - Meta (aka. Facebook)
   1. Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama) / [ref](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/llama?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-models?style=flat-square&label=%20&color=gray)
@@ -127,6 +128,7 @@
   1. [Command R+](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
+  1. [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
   1. A list of models: [git](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
@@ -236,8 +238,7 @@
     1. A model to obtain image embeddings
     1. A text model to obtain text embeddings
     1. A model to learn the relationships between them
-  - This is analogous to adding vision capability to a LLM.
-    <img src="../files/cocoa.gif" width="200" />
+  - This is analogous to adding vision capability to a LLM. <br/><img src="../files/cocoa.gif" width="200" />
 - Meta (aka. Facebook)
   1. [facebookresearch/ImageBind](https://arxiv.org/abs/2305.05665): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.05665)]: ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat-square&label=%20&color=gray)
