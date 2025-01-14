@@ -52,7 +52,6 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LLM Collection](section/llm.md/#large-language-model-collection)
   - [Domain-Specific LLMs](section/llm.md/#llm-for-domain-specific): e.g., Software development
   - [Multimodal LLMs](section/llm.md/#mllm-multimodal-large-language-model)
-  - [Generative AI Landscape](section/llm.md/#generative-ai-landscape)
 - **Section 10** 📚: [Surveys & References](section/survey_ref.md/#survey-and-reference)
   - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) | [Business use cases](section/survey_ref.md/#business-use-cases)
   - [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
