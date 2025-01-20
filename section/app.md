@@ -77,8 +77,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=gray)
 1. [Superagent](https://github.com/superagent-ai/superagent): AI Assistant Framework & API [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/superagent-ai/superagent?style=flat-square&label=%20&color=gray)
-1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=gray)
 1. [DemoGPT](https://github.com/melih-unsal/DemoGPT): Automatic generation of LangChain code [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/melih-unsal/DemoGPT?style=flat-square&label=%20&color=gray)
 1. [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java. [Jul 2023]
@@ -91,12 +89,19 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/dataelement/bisheng?style=flat-square&label=%20&color=gray)
 1. [langfun](https://github.com/google/langfun): leverages PyGlove to integrate LLMs and programming. [Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/langfun?style=flat-square&label=%20&color=gray)
-1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context window of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray)
 1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=gray)
 1. [Pipecat](https://github.com/pipecat-ai/pipecat): Open Source framework for voice and multimodal conversational AI [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/pipecat-ai/pipecat?style=flat-square&label=%20&color=gray)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack): building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray)
 1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
+
+#### **LLM Memory**
+
+1. [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/zep?style=flat-square&label=%20&color=gray) [May 2023]
+1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=gray)
+1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray)
+1. [Memary](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=gray)
 
 #### **LLM Application**
 
@@ -144,12 +149,13 @@
 1. [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
 1. [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray)
-1. [Auto_Jobs_Applier_AIHawk](https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk): automates the jobs application [Aug 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/feder-cr/Auto_Jobs_Applier_AIHawk?style=flat-square&label=%20&color=gray)
 1. [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/iyaja/llama-fs?style=flat-square&label=%20&color=gray)
+1. [Cellm](https://github.com/getcellm/cellm): Use LLMs in Excel formulas [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getcellm/cellm?style=flat-square&label=%20&color=gray)
 1. [Nyro](https://github.com/trynyro/nyro-app): AI-Powered Desktop Productivity Tool [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/trynyro/nyro-app?style=flat-square&label=%20&color=gray)
+1. [Auto_Jobs_Applier_AIHawk](https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk): automates the jobs application [Aug 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/feder-cr/Auto_Jobs_Applier_AIHawk?style=flat-square&label=%20&color=gray)
 1. [PDF2Audio](https://github.com/lamm-mit/PDF2Audio): an open-source alternative to NotebookLM for podcast creation [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/lamm-mit/PDF2Audio?style=flat-square&label=%20&color=gray)
 1. [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
@@ -158,7 +164,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray)
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
-1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024]![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray)
+1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray)
 
 #### **Code editor incl. Proprietary Software**
 
@@ -176,6 +182,7 @@
 
 1. [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/gradio-app/gradio?style=flat-square&label=%20&color=gray)
+1. [GPT 学术优化 (GPT Academic)](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=gray)
 1. [Text generation web UI](https://github.com/oobabooga/text-generation-webui): Text generation web UI [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/oobabooga/text-generation-webui?style=flat-square&label=%20&color=gray)
 1. Open AI Chat Mockup: An open source ChatGPT UI. [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui) [Mar 2023]
@@ -188,6 +195,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/ChatGPTNextWeb/ChatGPT-Next-Web?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/labring/FastGPT?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=flat-square&label=%20&color=gray)
 1. [anse](https://github.com/anse-app/anse): UI for multiple models such as ChatGPT, DALL-E and Stable Diffusion. [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/anse-app/anse?style=flat-square&label=%20&color=gray)
+1. [Open WebUI](https://github.com/open-webui/open-webui): User-friendly AI Interface (Supports Ollama, OpenAI API, ...) [Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/open-webui/open-webui?style=flat-square&label=%20&color=gray)
 
 #### **Data Processing and Management**
 
@@ -205,6 +213,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=flat-square&label=%20&color=gray)
 1. [outlines](https://github.com/dottxt-ai/outlines): Structured Text Generation [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat-square&label=%20&color=gray)
+1. [pandas-ai](https://github.com/Sinaptik-AI/pandas-ai): Chat with your database (SQL, CSV, pandas, polars, mongodb, noSQL, etc). [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Sinaptik-AI/pandas-ai?style=flat-square&label=%20&color=gray)
 1. [Instructor](https://github.com/jxnl/instructor): Structured outputs for LLMs, easily map LLM outputs to structured data. [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/jxnl/instructor?style=flat-square&label=%20&color=gray)
 1. [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat) [25 Aug 2023]
