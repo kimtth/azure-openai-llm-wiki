@@ -34,9 +34,6 @@
 
 ### **LLM Evalution Benchmarks**
 
-  <details open>
-  <summary>Expand</summary>
-
   #### Language Understanding and QA
 
   1. [MMLU (Massive Multitask Language Understanding)](https://github.com/hendrycks/test): Over 15,000 questions across 57 diverse tasks. [Published in 2021]
@@ -82,8 +79,6 @@
   1. [GSM8K](https://github.com/openai/grade-school-math): Arithmetic Reasoning. [Published in 2021]
  ![GitHub Repo stars](https://img.shields.io/github/stars/openai/grade-school-math?style=flat-square&label=%20&color=gray)
 
-  </details>
-
 ### **Evaluation metrics**
 
   1. Automated evaluation of LLMs
@@ -91,30 +86,18 @@
   - n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE, BLEU, and METEOR are used for summarization and translation tasks.
   - Probabilistic model evaluation metrics: Evaluates the model using the predictive performance of probability models. Perplexity.
   - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
-
-    <details open>
-    <summary>Expand</summary>
-
-      - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation. It includes several measures such as:
-
-        1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
-        2. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
-        3. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
-        4. ROUGE-S: Skip-bigram based co-occurrence statistics.
-        5. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
-
-      - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
-
-      - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
-
-      - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
-
-      - Perplexity: A measure of a model's predictive performance, with lower values indicating better prediction.
-      - METEOR: An n-gram based metric for machine translation, considering precision, recall, and semantic similarity.
-    </details>
-
+    - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): The metrics compare an automatically produced summary or translation against a reference or a set of references (human-produced) summary or translation.
+      1. ROUGE-N: Overlap of n-grams between the system and reference summaries.
+      2. ROUGE-L: Longest Common Subsequence (LCS) based statistics.
+      3. ROUGE-W: Weighted LCS-based statistics that favor consecutive LCSes.
+      4. ROUGE-S: Skip-bigram based co-occurrence statistics.
+      5. ROUGE-SU: Skip-bigram plus unigram-based co-occurrence statistics1.
+    - n-gram: An n-gram is a contiguous sequence of n items from a given sample of text or speech. For example, in the sentence “I love AI”, the unigrams (1-gram) are “I”, “love”, “AI”; the bigrams (2-gram) are “I love”, “love AI”; and the trigram (3-gram) is “I love AI”.
+    - BLEU: BLEU’s output is always a number between 0 and 1. An algorithm for evaluating the quality of machine-translated text. The closer a machine translation is to a professional human translation, the better it is.
+    - BERTScore: A metric that leverages pre-trained contextual embeddings from BERT for text generation tasks. It combines precision and recall values.
+    - Perplexity: A measure of a model's predictive performance, with lower values indicating better prediction.
+    - METEOR: An n-gram based metric for machine translation, considering precision, recall, and semantic similarity.
   2. Human evaluation of LLMs (possibly Automate by LLM-based metrics): Evaluate the model’s performance on NLU and NLG tasks. It includes evaluations of relevance, fluency, coherence, and groundedness.
-
   3. Built-in evaluation methods in Prompt flow: [ref](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969) [Aug 2023] / [ref](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow)
 
 ### **LLMOps: Large Language Model Operations**
@@ -136,6 +119,7 @@
 - [Langfuse](https://langfuse.com): [git](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=gray)
 - [PromptTools](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=gray)
+- [agenta](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat-square&label=%20&color=gray)
 - [30 requirements for an MLOps environment](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
 - [DeepEval](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=%20&color=gray)

@@ -13,7 +13,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 - **Section 1** 🎯: [RAG](section/rag.md/#rag-retrieval-augmented-generation)
   - [RAG (Retrieval-Augmented Generation)](section/rag.md/#rag-retrieval-augmented-generation)
-  - [RAG Design & Application](section/rag.md/#advanced-rag)
+  - [RAG Design](section/rag.md/#advanced-rag) & [Application](section/rag.md/#rag-development)
   - [Vector DB](section/rag.md/#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](section/aoai.md/#azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
@@ -56,12 +56,13 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) | [Business use cases](section/survey_ref.md/#business-use-cases)
   - [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
   - [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
+  - [Learning and Supplementary Materials](section/survey_ref.md/#learning-and-supplementary-materials)
 - **Section 11** 🧰: [AI Tools & Extensions](section/ai_tool.md/#general-ai-tools-and-extensions)
   - [AI Tools & Extensions](section/ai_tool.md/#section-10-general-ai-tools-and-extensions)
 - **Section 12** 📊: [Datasets](section/dataset.md/#section-11-datasets-for-llm-training)
   - [LLM Training Datasets](section/dataset.md/#datasets-for-llm-training)
 - **Section 13** 📝: [Evaluations](section/eval.md/#section-12-evaluating-large-language-models--llmops)
-  - [LLM Evaluation & LLMOps](section/eval.md/#evaluating-large-language-models--llmops)
+  - [LLM Evaluation](section/eval.md/#evaluating-large-language-models) & [LLMOps](section/eval.md/#llmops-large-language-model-operations)
 - **Legend** 🔑:
   - `ref`: external URL
   - `doc`: archived doc
@@ -70,6 +71,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - `git`: GitHub link
   - `x-ref`: Cross reference
   - 📺: youtube or video
+  - 💡or 🏆: recommendation
 
 ## **Contributor** 👀
 
