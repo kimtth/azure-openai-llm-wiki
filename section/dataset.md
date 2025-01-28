@@ -15,6 +15,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat-square&label=%20&color=gray)
 - [Synthetic Data of LLMs](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data): A reading list on LLM based Synthetic Data Generation [Oct 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/wasiahmad/Awesome-LLM-Synthetic-Data?style=flat-square&label=%20&color=gray)
+- [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/open-thoughts/open-thoughts?style=flat-square&label=%20&color=gray)
 
 Pretrain for a base model
 

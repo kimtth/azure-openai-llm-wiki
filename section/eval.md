@@ -81,8 +81,8 @@
 
 ### **Evaluation metrics**
 
+  - [Evaluating LLMs and RAG Systems](https://dzone.com/articles/evaluating-llms-and-rag-systems) [27 Jan 2025]
   1. Automated evaluation of LLMs
-
   - n-gram based metrics: Evaluates the model using n-gram statistics and F1 score. ROUGE, BLEU, and METEOR are used for summarization and translation tasks.
   - Probabilistic model evaluation metrics: Evaluates the model using the predictive performance of probability models. Perplexity.
   - Embedding based metrics: Evaluates the model using semantic similarity of embeddings. Ada Similarity and BERTScore are used.
