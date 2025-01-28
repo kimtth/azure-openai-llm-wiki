@@ -119,7 +119,7 @@ class AgentType(str, Enum):
 
 1. `ConversationBufferMemory`: Stores the entire conversation history.
 1. `ConversationBufferWindowMemory`: Stores recent messages from the conversation history.
-1. `Entity Memory`: Stores and retrieves entity-related information.
+1. `Entity Store (previously Entity Memory)`: Stores and retrieves entity-related information.
 1. `Conversation Knowledge Graph Memory`: Stores entities and relationships between entities.
 1. `ConversationSummaryMemory`: Stores summarized information about the conversation.
 1. `ConversationSummaryBufferMemory`: Stores summarized information about the conversation with a token limit.
@@ -206,6 +206,7 @@ class AgentType(str, Enum):
   - `LlamaIndex CLI`: a command line tool to generate LlamaIndex apps [ref](https://llama-2.ai/llamaindex-cli/) [Nov 2023]
   - `LlamaParse`: A unique parsing tool for intricate documents [git](https://github.com/run-llama/llama_parse) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=gray)
+  - [AgentWorkflow](https://www.llamaindex.ai/blog/introducing-agentworkflow-a-powerful-system-for-building-ai-agent-systems): To build and orchestrate AI agent systems [22 Jan 2025]
 - [LlamaIndex showcase](https://github.com/run-llama/llamacloud-demo) > `examples` [ref](https://www.llamaindex.ai/blog/introducing-agentic-document-workflows): e.g., Contract Review, Patient Case Summary, and Auto Insurance Claims Workflow. [9 Jan 2025]
 
 #### LlamaIndex integration with Azure AI
