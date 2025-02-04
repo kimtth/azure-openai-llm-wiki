@@ -190,3 +190,12 @@
 1. [An LLM Agent for Automatic Geospatial Data Analysis](https://arxiv.org/abs/2410.18792) [24 Oct 2024]
 1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
 
+#### **Deep research**
+
+1. [STORM](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024]
+1. [SakanaAI AI-Scientist](https://github.com/SakanaAI/AI-Scientist): [x-ref](agent.md/#agent-application) [Aug 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist?style=flat-square&label=%20&color=gray)
+1. [OpenAI deep research](https://openai.com/index/introducing-deep-research/): [x-ref](chab.md/#openai-products)  [2 Feb 2025]
+1. [Ollama Deep Researcher](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025]
+1. [smolagents: Open Deep Research](https://github.com/huggingface/smolagents) > `examples/open_deep_research`. By HuggingFace [Feb 2025]
+1. [open source deep research](https://github.com/nickscamara/open-deep-research): Firecrawl Search based backend & UI [Feb 2025]
