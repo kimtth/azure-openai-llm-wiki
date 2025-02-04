@@ -9,6 +9,7 @@
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
 - Future Tools: <https://www.futuretools.io/>
 - AI Tools: <https://aitoolmall.com/>
+- Toolerific.ai: <https://toolerific.ai/>: Find the best AI tools for your tasks
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)
   - [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT)
@@ -23,6 +24,7 @@
 - [Product Hunt > AI](https://www.producthunt.com/categories/ai)
 - [websim.ai](https://websim.ai/): a web editor and simulator that can generate websites. [1 Jul 2024]
 - [napkin.ai](https://www.napkin.ai/): a text-to-visual graphics generator [7 Aug 2024]
+- [Smartsub](https://smartsub.ai/): AI-powered transcription, translation, and subtitle creation
 - AI Search engine:
   1. [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
   1. [Perplexity](http://perplexity.ai) [Dec 2022]

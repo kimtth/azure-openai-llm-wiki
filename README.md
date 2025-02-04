@@ -20,13 +20,13 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Copilot Products & Azure OpenAI Service](section/aoai.md/#copilot-products)
   - [Azure Reference Architecture](section/aoai.md/#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](section/app.md/#applications-and-frameworks)
-  - [LLM Frameworks & Applications](section/app.md/#applications-frameworks-and-user-interface-uiux)
+  - [LLM Frameworks & Applications](section/app.md/#applications-frameworks-and-user-interface-uiux): incl. Code editor
   - [Caching, UX, Proposals & Other topics](section/app.md/#caching)
   - [LLMs for Robotics](section/app.md/#llm-for-robotics-bridging-ai-and-robotics)
   - [Awesome demo](section/app.md/#awesome-demo)
 - **Section 4** 🤖: [Agent](section/agent.md/#agent)
   - [Agent Design Patterns](section/agent.md/#agent-design-patterns)
-  - [Agent Frameworks & Applications](section/agent.md/#agent-framework)
+  - [Agent Frameworks & Applications](section/agent.md/#agent-framework): incl. Computer use, Deep research
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](section/sk_dspy.md/#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
   - [DSPy](section/sk_dspy.md/#dspy): Optimizer frameworks
