@@ -179,6 +179,7 @@
 - [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray)
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
+- [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray)
 
 #### **UI/UX**
 
