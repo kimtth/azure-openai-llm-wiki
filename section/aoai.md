@@ -199,6 +199,7 @@
 1. [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/): a generative model for inorganic materials design [git](https://github.com/microsoft/mattergen) [13 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/mattergen?style=flat-square&label=%20&color=gray)
 1. [SpreadsheetLLM](https://arxiv.org/abs/2407.09025): Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens.[12 Jul 2024]
 1. [AutoGen Studio](https://arxiv.org/abs/2408.15247): A No-Code Developer Tool for Building and Debugging Multi-Agent Systems [9 Aug 2024]
+1. [MarS: A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) [4 Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/MarS?style=flat-square&label=%20&color=gray)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024]
 1. [PromptWizard](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/): The future of prompt optimization through feedback-driven self-evolving prompts [17 Dec 2024]
 

@@ -13,20 +13,20 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 - **Section 1** 🎯: [RAG](#rag-retrieval-augmented-generation)
   - [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
-  - [RAG Design](#advanced-rag) & [Application](#rag-development)
+  - [RAG Design](#advanced-rag) | [Application](#rag-development)
   - [Vector DB](#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](#azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework](#microsoft-azure-openai-llm-framework)
   - [Copilot Products & Azure OpenAI Service](#copilot-products)
   - [Azure Reference Architecture](#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](#applications-and-frameworks)
-  - [LLM Frameworks & Applications](#applications-frameworks-and-user-interface-uiux): incl. Code editor
+  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development): incl. Code editor
   - [Caching, UX, Proposals & Other topics](#caching)
   - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
   - [Awesome demo](#awesome-demo)
 - **Section 4** 🤖: [Agent](#agent)
   - [Agent Design Patterns](#agent-design-patterns)
-  - [Agent Frameworks & Applications](#agent-framework): incl. Computer use, Deep research
+  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application): incl. Code Interpreter, Computer use, Deep research
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](#semantic-kernel): Micro-orchestration
   - [DSPy](#dspy): Optimizer frameworks
@@ -138,7 +138,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [OP-RAG: Order-preserve RAG](https://arxiv.org/abs/2409.01666): Unlike traditional RAG, which sorts retrieved chunks by relevance, we keep them in their original order from the text.  [3 Sep 2024]
 - [Retrieval Augmented Generation (RAG) and Beyond](https://arxiv.org/abs/2409.14924):🏆The paper classifies user queries into four levels—`explicit, implicit, interpretable rationale, and hidden rationale`—and highlights the need for external data integration and fine-tuning LLMs for specialized tasks. [23 Sep 2024]
 - [Astute RAG](https://arxiv.org/abs/2410.07176): adaptively extracts essential information from LLMs, consolidates internal and external knowledge with source awareness, and finalizes answers based on reliability. [9 Oct 2024]
-- [CAG: Cache-Augmented Generation](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024]
+- [CAG: Cache-Augmented Generation](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024] [git](https://github.com/hhhuang/CAG) ![GitHub Repo stars](https://img.shields.io/github/stars/hhhuang/CAG?style=flat-square&label=%20&color=gray)
 
 ### **Advanced RAG**
 
@@ -179,6 +179,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Visual RAG over PDFs with Vespa](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [git](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
 - [Path-RAG: Knowledge-Guided Key Region Retrieval for Open-ended Pathology Visual Question Answering](https://arxiv.org/abs/2411.17073): Using HistoCartography to improve pathology image analysis and boost PathVQA-Open performance. [26 Nov 2024]
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Not only does it retrieve relevant videos from a large video corpus, but it also integrates both the visual and textual elements of videos into the answer-generation process using Large Video Language Models (LVLMs). [10 Jan 2025]
+- [Multi-Modal RAG System](https://machinelearningmastery.com/implementing-multi-modal-rag-systems/): Building a knowledge base with both image and audio data. [12 Feb 2025]
 
 #### GraphRAG
 
@@ -301,6 +302,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=gray)
 1. [MemFree](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=gray)
 1. [RAGLite](https://github.com/superlinear-ai/raglite): a Python toolkit for Retrieval-Augmented Generation (RAG) with PostgreSQL or SQLite [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/superlinear-ai/raglite?style=flat-square&label=%20&color=gray)
+1. [Xyne](https://github.com/xynehq/xyne): an AI-first Search & Answer Engine for work. We’re an OSS alternative to Glean, Gemini and MS Copilot. [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/xynehq/xyne?style=flat-square&label=%20&color=gray)
+1. [KAG](https://github.com/OpenSPG/KAG): Knowledge Augmented Generation. a logical reasoning and Q&A framework based on the OpenSPG(Semantic-enhanced Programmable Graph). By Ant Group. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenSPG/KAG?style=flat-square&label=%20&color=gray)
+1. [Simba](https://github.com/GitHamza0206/simba): Portable KMS (knowledge management system) designed to integrate seamlessly with any Retrieval-Augmented Generation (RAG) system [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/GitHamza0206/simba?style=flat-square&label=%20&color=gray)
+1. [Gemini-Search](https://github.com/ammaarreshi/Gemini-Search): Perplexity style AI Search engine clone built with Gemini [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ammaarreshi/Gemini-Search?style=flat-square&label=%20&color=gray)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](#applications-frameworks-and-user-interface-uiux)
 
 ### **Vector Database Comparison**
@@ -322,9 +327,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
  ![GitHub Repo stars](https://img.shields.io/github/stars/RedisVentures/redisvl?style=flat-square&label=%20&color=gray)
 - [A SQLite extension for efficient vector search, based on Faiss!](https://github.com/asg017/sqlite-vss) [Jan 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/asg017/sqlite-vss?style=flat-square&label=%20&color=gray)
-- [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray)
+- [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray)
 - [A Comprehensive Survey on Vector Database](https://arxiv.org/abs/2310.11703): Categorizes search algorithms by their approach, such as hash-based, tree-based, graph-based, and quantization-based. [18 Oct 2023]
+- [MongoDB's GenAI Showcase](https://github.com/mongodb-developer/GenAI-Showcase): Step-by-step Jupyter Notebook examples on how to use MongoDB as a vector database, data store, memory provider [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/mongodb-developer/GenAI-Showcase?style=flat-square&label=%20&color=gray)
 
 #### **Vector Database Options for Azure**
 
@@ -559,6 +564,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/): a generative model for inorganic materials design [git](https://github.com/microsoft/mattergen) [13 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/mattergen?style=flat-square&label=%20&color=gray)
 1. [SpreadsheetLLM](https://arxiv.org/abs/2407.09025): Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens.[12 Jul 2024]
 1. [AutoGen Studio](https://arxiv.org/abs/2408.15247): A No-Code Developer Tool for Building and Debugging Multi-Agent Systems [9 Aug 2024]
+1. [MarS: A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) [4 Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/MarS?style=flat-square&label=%20&color=gray)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024]
 1. [PromptWizard](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/): The future of prompt optimization through feedback-driven self-evolving prompts [17 Dec 2024]
 
@@ -738,6 +744,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=flat-square&label=%20&color=gray)
 1. [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) doc: `deeplearning.ai/wandb` [Jan 2020]
 ![GitHub Repo stars](https://img.shields.io/github/stars/wandb/examples?style=flat-square&label=%20&color=gray)
+1. [Reranker](https://github.com/luyug/Reranker): Training and deploying deep languge model reranker in information retrieval (IR), question answering (QA) [Jan 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/luyug/Reranker?style=flat-square&label=%20&color=gray)
 1. [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models [Jun 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mosaicml/llm-foundry?style=flat-square&label=%20&color=gray)
 1. [vLLM](https://github.com/vllm-project/vllm): Easy-to-use library for LLM inference and serving. [Feb 2023]
@@ -750,7 +757,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/visualblocks?style=flat-square&label=%20&color=gray)
 1. [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Unify Efficient Fine-Tuning of 100+ LLMs [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=flat-square&label=%20&color=gray)
-1. [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
+1. [WebLLM](https://github.com/mlc-ai/web-llm): High-Performance In-Browser LLM Inference Engine. [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mlc-ai/web-llm?style=flat-square&label=%20&color=gray)
+1. [ollama](https://github.com/jmorganca/ollama):💡Running with Large language models locally [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/jmorganca/ollama?style=flat-square&label=%20&color=gray)
 1. [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with less memory! [Nov 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/unslothai/unsloth?style=flat-square&label=%20&color=gray)
@@ -759,17 +767,19 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/yandex/YaFSDP?style=flat-square&label=%20&color=gray)
 1. [exo](https://github.com/exo-explore/exo): Run your own AI cluster at home with everyday devices [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/exo-explore/exo?style=flat-square&label=%20&color=gray)
+1. [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat-square&label=%20&color=gray)
+1. [Kiln](https://github.com/Kiln-AI/Kiln): Desktop Apps for for fine-tuning LLM models, synthetic data generation, and collaborating on datasets. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=flat-square&label=%20&color=gray)
 1. [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/BitNet?style=flat-square&label=%20&color=gray)
-1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray)
+1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray)
+1. [smolmodels](https://github.com/plexe-ai/smolmodels): Create machine learning models with minimal code by describing what you want them to do in plain words. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/plexe-ai/smolmodels?style=flat-square&label=%20&color=gray)
 
 #### **LLM Application Development**
 
 1. [mindsdb](https://github.com/mindsdb/mindsdb): The open-source virtual database for building AI from enterprise data. It supports SQL syntax for development and deployment, with over 70 technology and data integrations. [Aug 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat-square&label=%20&color=gray)
 1. [Jina-Serve](https://github.com/jina-ai/serve): a framework for building and deploying AI services that communicate via gRPC, HTTP and WebSockets. [Feb 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/serve?style=flat-square&label=%20&color=gray)
 1. [superduper](https://github.com/superduper-io/superduper): Build end-to-end AI-data workflows and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray)
-1. [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
+1. [langflow](https://github.com/langflow-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=flat-square&label=%20&color=gray)
 1. [MiniChain](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/srush/MiniChain?style=flat-square&label=%20&color=gray)
@@ -806,6 +816,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Refly](https://github.com/refly-ai/refly): WYSIWYG AI editor to create llm application. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/refly-ai/refly?style=flat-square&label=%20&color=gray)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack):💡building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray)
+1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray)
 1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray)
 
@@ -865,6 +876,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray)
 1. [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/iyaja/llama-fs?style=flat-square&label=%20&color=gray)
+1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray)
 1. [Cellm](https://github.com/getcellm/cellm): Use LLMs in Excel formulas [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getcellm/cellm?style=flat-square&label=%20&color=gray)
 1. [Nyro](https://github.com/trynyro/nyro-app): AI-Powered Desktop Productivity Tool [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/trynyro/nyro-app?style=flat-square&label=%20&color=gray)
@@ -879,6 +891,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
 1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray)
+1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray)
+1. [Meetily](https://github.com/Zackriya-Solutions/meeting-minutes): Open source Ai Assistant for taking meeting notes [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Zackriya-Solutions/meeting-minutes?style=flat-square&label=%20&color=gray)
 
 #### **Code editor incl. Proprietary Software**
 
@@ -892,9 +906,12 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray)
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 - [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray)
+- [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
+- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025]
 
 #### **UI/UX**
 
+1. [streamlit](https://github.com/streamlit/streamlit):💡Streamlit — A faster way to build and share data apps. [Jan 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/streamlit/streamlit?style=flat-square&label=%20&color=gray)
 1. [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/gradio-app/gradio?style=flat-square&label=%20&color=gray)
 1. [GPT 学术优化 (GPT Academic)](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=gray)
@@ -902,7 +919,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/oobabooga/text-generation-webui?style=flat-square&label=%20&color=gray)
 1. Open AI Chat Mockup: An open source ChatGPT UI. [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui) [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mckaywrigley/chatbot-ui?style=flat-square&label=%20&color=gray)
-1. [chainlit](https://github.com/Chainlit/chainlit): Build production-ready Conversational AI applications in minutes. [Mar 2023]
+1. [chainlit](https://github.com/Chainlit/chainlit):💡Build production-ready Conversational AI applications in minutes. [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Chainlit/chainlit?style=flat-square&label=%20&color=gray)
 1. [CopilotKit](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=flat-square&label=%20&color=gray)
@@ -924,6 +941,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat-square&label=%20&color=gray)
 1. [PostgresML](https://github.com/postgresml/postgresml): The GPU-powered AI application database. [Apr 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/postgresml/postgresml?style=flat-square&label=%20&color=gray)
+1. [agent-twitter-client](https://github.com/elizaOS/agent-twitter-client): twitter-scraper. A Twitter client for agents. no API key necessary [May 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/elizaOS/agent-twitter-client?style=flat-square&label=%20&color=gray)
 1. [unstructured](https://github.com/Unstructured-IO/unstructured): Open-Source Pre-Processing Tools for Unstructured Data [Sep 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=flat-square&label=%20&color=gray)
 1. [outlines](https://github.com/dottxt-ai/outlines): Structured Text Generation [Mar 2023]
@@ -937,15 +955,21 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/VikParuchuri/marker?style=flat-square&label=%20&color=gray)
 1. [Maxun](https://github.com/getmaxun/maxun): Open-Source No-Code Web Data Extraction Platform [Oct 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/getmaxun/maxun?style=flat-square&label=%20&color=gray)
+1. [GPT Crawler](https://github.com/BuilderIO/gpt-crawler): Crawl a site to generate knowledge files to create your own custom GPT from one or multiple URLs [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/gpt-crawler?style=flat-square&label=%20&color=gray)
 1. [firecrawl](https://github.com/mendableai/firecrawl): Scrap entire websites into LLM-ready markdown or structured data. [Apr 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=flat-square&label=%20&color=gray)
+1. [LLM Scraper](https://github.com/mishushakov/llm-scraper): a TypeScript library that allows you to extract structured data from any webpage using LLMs. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/mishushakov/llm-scraper?style=flat-square&label=%20&color=gray)
+1. [ExtractThinker](https://github.com/enoch3712/ExtractThinker): A Document Intelligence library for LLMs with ORM-style interaction for flexible workflows. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/enoch3712/ExtractThinker?style=flat-square&label=%20&color=gray)
 1. [Crawl4AI](https://github.com/unclecode/crawl4ai): Open-source LLM Friendly Web Crawler & Scrapper [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/unclecode/crawl4ai?style=flat-square&label=%20&color=gray)
 1. [MegaParse](https://github.com/quivrhq/megaparse): a powerful and versatile parser that can handle various types of documents. Focus on having no information loss during parsing. [30 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/quivrhq/megaparse?style=flat-square&label=%20&color=gray)
 1. [Zerox OCR](https://github.com/getomni-ai/zerox): Zero shot pdf OCR with gpt-4o-mini [Jul 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/getomni-ai/zerox?style=flat-square&label=%20&color=gray)
+1. [pipet](https://github.com/bjesus/pipet): Swiss-army tool for scraping and extracting data from online [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/bjesus/pipet?style=flat-square&label=%20&color=gray)
 1. [docling](https://github.com/DS4SD/docling): IBM. Docling parses documents and exports them to the desired format. [13 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/DS4SD/docling?style=flat-square&label=%20&color=gray)
-1. [markitdown](https://github.com/microsoft/markitdown): Python tool for converting files and office documents to Markdown. [14 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat-square&label=%20&color=gray)
+1. [markitdown](https://github.com/microsoft/markitdown):💡Python tool for converting files and office documents to Markdown. [14 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat-square&label=%20&color=gray)
+1. [Ollama OCR](https://github.com/imanoop7/Ollama-OCR): A powerful OCR (Optical Character Recognition) package that uses state-of-the-art vision language models. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/imanoop7/Ollama-OCR?style=flat-square&label=%20&color=gray)
+1. [Paperless-AI](https://github.com/clusterzx/paperless-ai): An automated document analyzer for Paperless-ngx using OpenAI API, Ollama and all OpenAI API compatible Services to automatically analyze and tag your documents. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/clusterzx/paperless-ai?style=flat-square&label=%20&color=gray)
 1. Azure AI Document Intelligence (FKA. Azure Form Recognizer): [ref](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence): Table and Meta data Extraction in the Document
 1. [Table to Markdown](https://tabletomarkdown.com/): LLM can recognize Markdown-formatted tables more effectively than raw table formats.
 
@@ -1022,6 +1046,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - Agentic Design Frameworks focus on managing autonomous or semi-autonomous AI agents for complex tasks.
 - e.g., [Autogen](https://github.com/microsoft/autogen), and [crewAI](https://github.com/joaomdmoura/CrewAI)
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=gray)
+- [Agent Leaderboard](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 
 #### **Agent Design Patterns**
 
@@ -1067,6 +1092,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Agents Are Not Enough](https://arxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
+- [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 
 #### **Tool use: LLM to Master APIs**
 
@@ -1086,19 +1112,22 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [APIGen](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [ToolShed](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 
-#### **Computer use**
+#### **Computer use & MCP**
 
+- [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu)
 - [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use):
-  1. [OpenInterpreter starts to support Computer Use API](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
-  1. [Agent.exe](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=gray)
-- OSS
-  1. [x-ref](#agent) > [UFO](https://github.com/microsoft/UFO): Windows Control
-  1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray)
-  1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray)
-  1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray)
-- [UI-TARS](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray) [21 Jan 2025]
-- [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](#openai-products) [23 Jan 2025]
-- [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025]
+1. [CogAgent](https://github.com/THUDM/CogAgent): An open-sourced end-to-end VLM-based GUI Agent [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/THUDM/CogAgent?style=flat-square&label=%20&color=gray)
+1. [OpenInterpreter starts to support Computer Use API](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
+1. [Agent.exe](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=gray)
+1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray)
+1. [x-ref](#agent) > [UFO](https://github.com/microsoft/UFO): Windows Control
+1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray)
+1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray)
+1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray)
+1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray)
+1. [UI-TARS](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray) [21 Jan 2025]
+1. [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](#openai-products) [23 Jan 2025]
+1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025]
 
 #### **Memory Layer**
 
@@ -1137,7 +1166,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Agent-S](https://github.com/simular-ai/Agent-S): To build intelligent GUI agents that autonomously learn and perform complex tasks on your computer. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/simular-ai/Agent-S?style=flat-square&label=%20&color=gray)
 1. [OpenAI Swarm](https://github.com/openai/swarm): An experimental and educational framework for lightweight multi-agent orchestration. [11 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/swarm?style=flat-square&label=%20&color=gray)
 1. [PydanticAI](https://github.com/pydantic/pydantic-ai): Agent Framework / shim to use Pydantic with LLMs. Model-agnostic. Type-safe. [29 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=flat-square&label=%20&color=gray)
-1. [smolagents](https://github.com/huggingface/smolagents):🤗a smol library to build great agents! [Dec 2024]
+1. [smolagents](https://github.com/huggingface/smolagents):🤗a smol library to build great agents! [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=gray)
+1. [Agentarium](https://github.com/Thytu/Agentarium): a framework for creating and managing simulations populated with AI-powered agents. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Thytu/Agentarium?style=flat-square&label=%20&color=gray)
 1. Microsoft Agent Frameworks [x-ref](#microsoft-azure-openai-relevant-llm-framework)
 1. Agent Framework used in MLE-bench: GPT-4o (AIDE) earned the highest score [x-ref](#evaluating-large-language-models)
     - [AIDE](https://github.com/WecoAI/aideml): The state-of-the-art machine learning engineer agent [Apr 2024]
@@ -1180,11 +1210,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Agentless](https://github.com/OpenAutoCoder/Agentless): an agentless approach to automatically solve software development problems. AGENTLESS, consisting of three phases: localization, repair, and patch validation (self-reflect). [1 Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenAutoCoder/Agentless?style=flat-square&label=%20&color=gray)
 1. [browser-use](https://github.com/browser-use/browser-use): Make websites accessible for AI agents. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square&label=%20&color=gray)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=gray)
-1. [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory): E2E autonomous research workflow. Using LLM Agents as Research Assistants. [8 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=flat-square&label=%20&color=gray)
 1. [Riona-AI-Agent](https://github.com/David-patrick-chuks/Riona-AI-Agent): automation tool designed for Instagram to automate social media interactions such as posting, liking, and commenting. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/David-patrick-chuks/Riona-AI-Agent?style=flat-square&label=%20&color=gray)
 1. [Realtime API Agents Demo](https://github.com/openai/openai-realtime-agents): a simple demonstration of more advanced, agentic patterns built on top of the Realtime API. OpenAI. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-realtime-agents?style=flat-square&label=%20&color=gray)
 1. [PaSa](https://github.com/bytedance/pasa): an advanced paper search agent. Bytedance. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/pasa?style=flat-square&label=%20&color=gray)
-1. [goose](https://github.com/block/goose): An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray)
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -1202,20 +1230,27 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 #### **Domain-specific**
 
 1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat](https://arxiv.org/abs/2311.15826) | [GEOBench-VLM](https://arxiv.org/abs/2411.19325) | [RS5M](https://github.com/om-ai-lab/RS5M) | [VHM](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
+1. [MLE-agent](https://github.com/MLSysOps/MLE-agent): LLM agent for machine learning engineers and researchers [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/MLSysOps/MLE-agent?style=flat-square&label=%20&color=gray)
 1. [DrugAgent: Automating AI-aided Drug Discovery](https://arxiv.org/abs/2411.15692) [24 Nov 2024]
 1. [FinRobot: AI Agent for Equity Research and Valuation](https://arxiv.org/abs/2411.08804) [13 Nov 2024]
 1. [An LLM Agent for Automatic Geospatial Data Analysis](https://arxiv.org/abs/2410.18792) [24 Oct 2024]
+1. [Director](https://github.com/video-db/Director): Think of Director as ChatGPT for videos. AI video agents framework for video interactions and workflows. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/video-db/Director?style=flat-square&label=%20&color=gray)
 1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
+1. [landing.ai: Vision Agent](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=gray)
 
 #### **Deep research**
 
 1. [STORM](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024]
 1. [SakanaAI AI-Scientist](https://github.com/SakanaAI/AI-Scientist): [x-ref](#agent-application) [Aug 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist?style=flat-square&label=%20&color=gray)
+1. [Company Researcher](https://github.com/exa-labs/company-researcher): a free and open-source tool that helps you instantly understand any company inside out. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/exa-labs/company-researcher?style=flat-square&label=%20&color=gray)
+1. [Open Deep Research](https://github.com/btahir/open-deep-research): Open source alternative to Gemini Deep Research. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/btahir/open-deep-research?style=flat-square&label=%20&color=gray)
+1. [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory): E2E autonomous research workflow. Using LLM Agents as Research Assistants. [8 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=flat-square&label=%20&color=gray)
 1. [OpenAI deep research](https://openai.com/index/introducing-deep-research/): [x-ref](#openai-products)  [2 Feb 2025]
-1. [Ollama Deep Researcher](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025]
-1. [smolagents: Open Deep Research](https://github.com/huggingface/smolagents) > `examples/open_deep_research`. By HuggingFace [Feb 2025]
-1. [open source deep research](https://github.com/nickscamara/open-deep-research): Firecrawl Search based backend & UI [Feb 2025]
+1. [Ollama Deep Researcher](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/ollama-deep-researcher?style=flat-square&label=%20&color=gray)
+1. [smolagents: Open Deep Research](https://github.com/huggingface/smolagents) > `examples/open_deep_research`. By HuggingFace [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=gray)
+1. [open source deep research](https://github.com/nickscamara/open-deep-research): Firecrawl Search based backend & UI [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/nickscamara/open-deep-research?style=flat-square&label=%20&color=gray)
+1. [DeepSearcher](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat-square&label=%20&color=gray)
 
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
@@ -1753,6 +1788,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 1. [Many-Shot In-Context Learning](https://arxiv.org/abs/2404.11018): Transitioning from few-shot to many-shot In-Context Learning (ICL) can lead to significant performance gains across a wide variety of generative and discriminative tasks [17 Apr 2024]
 1. [Is the new norm for NLP papers "prompt engineering" papers?](https://www.reddit.com/r/MachineLearning/comments/1ei9e3l/d_is_the_new_norm_for_nlp_papers_prompt/): "how can we make LLM 1 do this without training?" Is this the new norm? The CL section of arXiv is overwhelming with papers like "how come LLaMA can't understand numbers?" [2 Aug 2024]
 1. [Does Prompt Formatting Have Any Impact on LLM Performance?](https://arxiv.org/abs/2411.10541): GPT-3.5-turbo's performance in code translation varies by 40% depending on the prompt template, while GPT-4 is more robust. [15 Nov 2024]
+1. [Prompt Engineering for OpenAI’s O1 and O3-mini Reasoning Models](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/prompt-engineering-for-openai%E2%80%99s-o1-and-o3-mini-reasoning-models/4374010): 1) `Keep Prompts Clear and Minimal`, 2)`Avoid Unnecessary Few-Shot Examples` 3)`Control Length and Detail via Instructions` 4)`Specify Output, Role or Tone` [05 Feb 2025]
 
 #### Adversarial Prompting
 
@@ -1836,6 +1872,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
 - [Screen AI](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
 - [Motion Prompting](https://arxiv.org/abs/2412.02700): motion prompts for flexible video generation, enabling motion control, image interaction, and realistic physics. [git](https://motion-prompting.github.io/) [3 Dec 2024]
+- [landing.ai: Agentic Object Detection](https://landing.ai/agentic-object-detection): Agent systems use design patterns to reason at length about unique attributes like color, shape, and texture [6 Feb 2025]
 
 
 ## Finetuning
@@ -1928,10 +1965,6 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=gray)
 
-  <details open>
-
-  <summary>Expand: StreamingLLM</summary>
-
   <img src="./files/streaming-llm.png" alt="streaming-attn"/>
 
   - Key-Value (KV) cache is an important component in the StreamingLLM framework.
@@ -1939,8 +1972,6 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   1. Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
   2. Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
   3. StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
-
-  </details>
 
 - LongLoRA
 
@@ -2549,18 +2580,22 @@ generated webpages are considered better than the original reference webpages` [
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.10020)]: A comprehensive survey of the taxonomy and evolution of multimodal foundation models that demonstrate vision and vision-language capabilities. Specific-Purpose 1. Visual understanding tasks 2. Visual generation tasks General-Purpose 3. General-purpose interface. [18 Sep 2023]
 - [Awesome Multimodal Large Language Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models): Latest Papers and Datasets on Multimodal Large Language Models, and Their Evaluation. [Jun 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat-square&label=%20&color=gray)
+- Benchmarking Multimodal LLMs.
+  - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
+  - [SEED-Bench](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)]: Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/AILab-CVC/SEED-Bench?style=flat-square&label=%20&color=gray)
+- [Molmo and PixMo](https://arxiv.org/abs/2409.17146): Open Weights and Open Data for State-of-the-Art Multimodal Models [ref](https://molmo.allenai.org/) [25 Sep 2024] <!-- <img src="./files/multi-llm.png" width="180" /> -->
+- Optimizing Memory Usage for Training LLMs and Vision Transformers: When applying 10 techniques to a vision transformer, we reduced the memory consumption 20x on a single GPU. [ref](https://lightning.ai/pages/community/tutorial/pytorch-memory-vit-llm/) / [git](https://github.com/rasbt/pytorch-memory-optim) [2 Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/rasbt/pytorch-memory-optim?style=flat-square&label=%20&color=gray)
+
+#### OSS 
+
 - [CLIP](https://arxiv.org/abs/2103.00020): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2103.00020)]: CLIP (Contrastive Language-Image Pretraining), Trained on a large number of internet text-image pairs and can be applied to a wide range of tasks with zero-shot learning. [git](https://github.com/openai/CLIP) [26 Feb 2021]
  ![GitHub Repo stars](https://img.shields.io/github/stars/openai/CLIP?style=flat-square&label=%20&color=gray)
 - [BLIP-2](https://arxiv.org/abs/2301.12597) [30 Jan 2023]: [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.12597)]: Salesforce Research, Querying Transformer (Q-Former) / [git](https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip2_models/blip2_qformer.py) / [ref](https://huggingface.co/blog/blip-2) / [📺](https://www.youtube.com/watch?v=k0DAtZCCl1w) / [BLIP](https://arxiv.org/abs/2201.12086): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2201.12086)]: [git](https://github.com/salesforce/BLIP) [28 Jan 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/salesforce/BLIP?style=flat-square&label=%20&color=gray)
   - `Q-Former (Querying Transformer)`: A transformer model that consists of two submodules that share the same self-attention layers: an image transformer that interacts with a frozen image encoder for visual feature extraction, and a text transformer that can function as both a text encoder and a text decoder.
   - Q-Former is a lightweight transformer which employs a set of learnable query vectors to extract visual features from the frozen image encoder. It acts as an information bottleneck between the frozen image encoder and the frozen LLM.
-  <!--
-  https://zhuanlan.zhihu.com/p/635603332
-  https://zhuanlan.zhihu.com/p/613247637
-  https://zhuanlan.zhihu.com/p/604318703
-  https://zhuanlan.zhihu.com/p/104393915
-  -->
 - [TaskMatrix, aka VisualChatGPT](https://arxiv.org/abs/2303.04671): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04671)]: Microsoft TaskMatrix [git](https://github.com/microsoft/TaskMatrix); GroundingDINO + [SAM](https://arxiv.org/abs/2304.02643) / [git](https://github.com/facebookresearch/segment-anything) [8 Mar 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/TaskMatrix?style=flat-square&label=%20&color=gray) ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=flat-square&label=%20&color=gray)
 - [GroundingDINO](https://arxiv.org/abs/2303.05499): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05499)]: DINO with Grounded Pre-Training for Open-Set Object Detection [git](https://github.com/IDEA-Research/GroundingDINO) [9 Mar 2023]
@@ -2584,12 +2619,11 @@ generated webpages are considered better than the original reference webpages` [
  ![GitHub Repo stars](https://img.shields.io/github/stars/gpt-omni/mini-omni2?style=flat-square&label=%20&color=gray)
 - [LLaVA-CoT](https://arxiv.org/abs/2411.10440): (FKA. LLaVA-o1) Let Vision Language Models Reason Step-by-Step. [git](https://github.com/PKU-YuanGroup/LLaVA-CoT) [15 Nov 2024]
 - [MiniCPM-o](https://github.com/OpenBMB/MiniCPM-o): A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming on Your Phone [15 Jan 2025]
-- Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/) [22 Aug 2023]
-  - The model has three sub-models:
-    1. A model to obtain image embeddings
-    1. A text model to obtain text embeddings
-    1. A model to learn the relationships between them
-  - This is analogous to adding vision capability to a LLM. <br/><img src="./files/cocoa.gif" width="200" />
+- Vision capability to a LLM [ref](https://cloud.google.com/blog/products/ai-machine-learning/multimodal-generative-ai-search/): `The model has three sub-models`: A model to obtain image embeddings -> A text model to obtain text embeddings -> A model to learn the relationships between them [22 Aug 2023]
+- [Ultravox](https://github.com/fixie-ai/ultravox): A fast multimodal LLM for real-time voice [May 2024]
+
+#### MLLM Models
+
 - Meta (aka. Facebook)
   1. [facebookresearch/ImageBind](https://arxiv.org/abs/2305.05665): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.05665)]: ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat-square&label=%20&color=gray)
@@ -2611,16 +2645,6 @@ generated webpages are considered better than the original reference webpages` [
   1. [4M-21](https://arxiv.org/abs/2406.09406): An Any-to-Any Vision Model for Tens of Tasks and Modalities. [13 Jun 2024]
 - Hugging Face
   1. [SmolVLM](https://huggingface.co/blog/smolvlm): 2B small vision language models. [ref](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) / finetuning:[git](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) [24 Nov 2024]
-- Benchmarking Multimodal LLMs.
-  - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
-  - [SEED-Bench](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)]: Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/AILab-CVC/SEED-Bench?style=flat-square&label=%20&color=gray)
-- [Molmo and PixMo](https://arxiv.org/abs/2409.17146): Open Weights and Open Data for State-of-the-Art Multimodal Models [ref](https://molmo.allenai.org/) [25 Sep 2024]
-
-    <!-- <img src="./files/multi-llm.png" width="180" /> -->
-
-- Optimizing Memory Usage for Training LLMs and Vision Transformers: When applying 10 techniques to a vision transformer, we reduced the memory consumption 20x on a single GPU. [ref](https://lightning.ai/pages/community/tutorial/pytorch-memory-vit-llm/) / [git](https://github.com/rasbt/pytorch-memory-optim) [2 Jul 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/rasbt/pytorch-memory-optim?style=flat-square&label=%20&color=gray)
 
 ### **Generative AI Landscape**
 
@@ -2708,6 +2732,7 @@ generated webpages are considered better than the original reference webpages` [
 - [A Survey of Mathematical Reasoning in the Era of Multimodal Large Language Model: Benchmark, Method & Challenges](https://arxiv.org/abs/2412.11936) [16 Dec 2024]
 - [GUI Agents: A Survey](https://arxiv.org/abs/2412.13501) [18 Dec 2024]
 - [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG](https://arxiv.org/abs/2501.09136) [15 Jan 2025]
+- [Advancing Reasoning in Large Language Models: Promising Methods and Approaches](https://arxiv.org/abs/2502.03671) [5 Feb 2025]
 - Evolutionary Tree of Large Language Models: [x-ref](#evolutionary-tree-of-large-language-models)
 
 #### **Business use cases**
@@ -2722,6 +2747,7 @@ generated webpages are considered better than the original reference webpages` [
   - [Standford AI Index Annual Report](https://aiindex.stanford.edu/report/)
   - [State of AI Report 2024](https://www.stateof.ai/) [10 Oct 2024]
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
+- [Rapid Growth Continues for ChatGPT, Google’s NotebookLM](https://www.similarweb.com/blog/insights/ai-news/chatgpt-notebooklm/) [6 Nov 2024]
 - [Google: 60 of our biggest AI announcements in 2024](https://blog.google/technology/ai/google-ai-news-recap-2024/) [23 Dec 2024]
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
@@ -2813,6 +2839,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게](https://tech.kakao.com/posts/633) [09 Sep 2024]
 - [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기](https://techblog.woowahan.com/19915/) [07 Nov 2024]
 - [Harness를 이용해 LLM 애플리케이션 평가 자동화하기](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
+- [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
+- [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
 
 ### **Learning and Supplementary Materials**
 
@@ -2857,7 +2885,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
 - [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
 - [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
-
+- [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
 
 
 ## **General AI Tools and Extensions**
@@ -2901,6 +2930,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [AniDoc](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [ref](https://yihao-meng.github.io/AniDoc_demo/)
 - [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref](https://arxiv.org/abs/2412.04037) [5 Dec 2024]
 - [5 LLM-based Apps for Developers](https://hackernoon.com/5-llm-based-apps-for-developers): Github Copilot, Cursor IDE, Tabnine, Warp, Replit Agent
+- [Msty](https://msty.app/):💡The easiest way to use local and online AI models
 
 ## **Datasets for LLM Training**
 

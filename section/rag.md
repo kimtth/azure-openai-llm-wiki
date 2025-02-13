@@ -54,7 +54,7 @@
 - [OP-RAG: Order-preserve RAG](https://arxiv.org/abs/2409.01666): Unlike traditional RAG, which sorts retrieved chunks by relevance, we keep them in their original order from the text.  [3 Sep 2024]
 - [Retrieval Augmented Generation (RAG) and Beyond](https://arxiv.org/abs/2409.14924):🏆The paper classifies user queries into four levels—`explicit, implicit, interpretable rationale, and hidden rationale`—and highlights the need for external data integration and fine-tuning LLMs for specialized tasks. [23 Sep 2024]
 - [Astute RAG](https://arxiv.org/abs/2410.07176): adaptively extracts essential information from LLMs, consolidates internal and external knowledge with source awareness, and finalizes answers based on reliability. [9 Oct 2024]
-- [CAG: Cache-Augmented Generation](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024]
+- [CAG: Cache-Augmented Generation](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024] [git](https://github.com/hhhuang/CAG) ![GitHub Repo stars](https://img.shields.io/github/stars/hhhuang/CAG?style=flat-square&label=%20&color=gray)
 
 ### **Advanced RAG**
 
@@ -95,6 +95,7 @@
 - [Visual RAG over PDFs with Vespa](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [git](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
 - [Path-RAG: Knowledge-Guided Key Region Retrieval for Open-ended Pathology Visual Question Answering](https://arxiv.org/abs/2411.17073): Using HistoCartography to improve pathology image analysis and boost PathVQA-Open performance. [26 Nov 2024]
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Not only does it retrieve relevant videos from a large video corpus, but it also integrates both the visual and textual elements of videos into the answer-generation process using Large Video Language Models (LVLMs). [10 Jan 2025]
+- [Multi-Modal RAG System](https://machinelearningmastery.com/implementing-multi-modal-rag-systems/): Building a knowledge base with both image and audio data. [12 Feb 2025]
 
 #### GraphRAG
 
@@ -217,6 +218,10 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=gray)
 1. [MemFree](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=gray)
 1. [RAGLite](https://github.com/superlinear-ai/raglite): a Python toolkit for Retrieval-Augmented Generation (RAG) with PostgreSQL or SQLite [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/superlinear-ai/raglite?style=flat-square&label=%20&color=gray)
+1. [Xyne](https://github.com/xynehq/xyne): an AI-first Search & Answer Engine for work. We’re an OSS alternative to Glean, Gemini and MS Copilot. [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/xynehq/xyne?style=flat-square&label=%20&color=gray)
+1. [KAG](https://github.com/OpenSPG/KAG): Knowledge Augmented Generation. a logical reasoning and Q&A framework based on the OpenSPG(Semantic-enhanced Programmable Graph). By Ant Group. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenSPG/KAG?style=flat-square&label=%20&color=gray)
+1. [Simba](https://github.com/GitHamza0206/simba): Portable KMS (knowledge management system) designed to integrate seamlessly with any Retrieval-Augmented Generation (RAG) system [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/GitHamza0206/simba?style=flat-square&label=%20&color=gray)
+1. [Gemini-Search](https://github.com/ammaarreshi/Gemini-Search): Perplexity style AI Search engine clone built with Gemini [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ammaarreshi/Gemini-Search?style=flat-square&label=%20&color=gray)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
 ### **Vector Database Comparison**
@@ -238,9 +243,9 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/RedisVentures/redisvl?style=flat-square&label=%20&color=gray)
 - [A SQLite extension for efficient vector search, based on Faiss!](https://github.com/asg017/sqlite-vss) [Jan 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/asg017/sqlite-vss?style=flat-square&label=%20&color=gray)
-- [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray)
+- [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray)
 - [A Comprehensive Survey on Vector Database](https://arxiv.org/abs/2310.11703): Categorizes search algorithms by their approach, such as hash-based, tree-based, graph-based, and quantization-based. [18 Oct 2023]
+- [MongoDB's GenAI Showcase](https://github.com/mongodb-developer/GenAI-Showcase): Step-by-step Jupyter Notebook examples on how to use MongoDB as a vector database, data store, memory provider [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/mongodb-developer/GenAI-Showcase?style=flat-square&label=%20&color=gray)
 
 #### **Vector Database Options for Azure**
 
