@@ -26,6 +26,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=flat-square&label=%20&color=gray)
 1. [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) doc: `deeplearning.ai/wandb` [Jan 2020]
 ![GitHub Repo stars](https://img.shields.io/github/stars/wandb/examples?style=flat-square&label=%20&color=gray)
+1. [Reranker](https://github.com/luyug/Reranker): Training and deploying deep languge model reranker in information retrieval (IR), question answering (QA) [Jan 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/luyug/Reranker?style=flat-square&label=%20&color=gray)
 1. [mosaicml/llm-foundry](https://github.com/mosaicml/llm-foundry): LLM training code for MosaicML foundation models [Jun 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mosaicml/llm-foundry?style=flat-square&label=%20&color=gray)
 1. [vLLM](https://github.com/vllm-project/vllm): Easy-to-use library for LLM inference and serving. [Feb 2023]
@@ -38,7 +39,8 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/visualblocks?style=flat-square&label=%20&color=gray)
 1. [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): Unify Efficient Fine-Tuning of 100+ LLMs [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=flat-square&label=%20&color=gray)
-1. [ollama](https://github.com/jmorganca/ollama): Running with Large language models locally [Jun 2023]
+1. [WebLLM](https://github.com/mlc-ai/web-llm): High-Performance In-Browser LLM Inference Engine. [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mlc-ai/web-llm?style=flat-square&label=%20&color=gray)
+1. [ollama](https://github.com/jmorganca/ollama):💡Running with Large language models locally [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/jmorganca/ollama?style=flat-square&label=%20&color=gray)
 1. [unsloth](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with less memory! [Nov 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/unslothai/unsloth?style=flat-square&label=%20&color=gray)
@@ -47,17 +49,19 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/yandex/YaFSDP?style=flat-square&label=%20&color=gray)
 1. [exo](https://github.com/exo-explore/exo): Run your own AI cluster at home with everyday devices [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/exo-explore/exo?style=flat-square&label=%20&color=gray)
+1. [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat-square&label=%20&color=gray)
+1. [Kiln](https://github.com/Kiln-AI/Kiln): Desktop Apps for for fine-tuning LLM models, synthetic data generation, and collaborating on datasets. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=flat-square&label=%20&color=gray)
 1. [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/BitNet?style=flat-square&label=%20&color=gray)
-1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray)
+1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray)
+1. [smolmodels](https://github.com/plexe-ai/smolmodels): Create machine learning models with minimal code by describing what you want them to do in plain words. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/plexe-ai/smolmodels?style=flat-square&label=%20&color=gray)
 
 #### **LLM Application Development**
 
 1. [mindsdb](https://github.com/mindsdb/mindsdb): The open-source virtual database for building AI from enterprise data. It supports SQL syntax for development and deployment, with over 70 technology and data integrations. [Aug 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat-square&label=%20&color=gray)
 1. [Jina-Serve](https://github.com/jina-ai/serve): a framework for building and deploying AI services that communicate via gRPC, HTTP and WebSockets. [Feb 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/serve?style=flat-square&label=%20&color=gray)
 1. [superduper](https://github.com/superduper-io/superduper): Build end-to-end AI-data workflows and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray)
-1. [langflow](https://github.com/logspace-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
+1. [langflow](https://github.com/langflow-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=flat-square&label=%20&color=gray)
 1. [MiniChain](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/srush/MiniChain?style=flat-square&label=%20&color=gray)
@@ -94,6 +98,7 @@
 1. [Refly](https://github.com/refly-ai/refly): WYSIWYG AI editor to create llm application. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/refly-ai/refly?style=flat-square&label=%20&color=gray)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack):💡building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray)
+1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray)
 1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray)
 
@@ -153,6 +158,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray)
 1. [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/iyaja/llama-fs?style=flat-square&label=%20&color=gray)
+1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray)
 1. [Cellm](https://github.com/getcellm/cellm): Use LLMs in Excel formulas [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getcellm/cellm?style=flat-square&label=%20&color=gray)
 1. [Nyro](https://github.com/trynyro/nyro-app): AI-Powered Desktop Productivity Tool [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/trynyro/nyro-app?style=flat-square&label=%20&color=gray)
@@ -167,6 +173,8 @@
 1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray)
 1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray)
+1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray)
+1. [Meetily](https://github.com/Zackriya-Solutions/meeting-minutes): Open source Ai Assistant for taking meeting notes [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Zackriya-Solutions/meeting-minutes?style=flat-square&label=%20&color=gray)
 
 #### **Code editor incl. Proprietary Software**
 
@@ -180,9 +188,12 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray)
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 - [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray)
+- [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
+- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025]
 
 #### **UI/UX**
 
+1. [streamlit](https://github.com/streamlit/streamlit):💡Streamlit — A faster way to build and share data apps. [Jan 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/streamlit/streamlit?style=flat-square&label=%20&color=gray)
 1. [Gradio](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/gradio-app/gradio?style=flat-square&label=%20&color=gray)
 1. [GPT 学术优化 (GPT Academic)](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=gray)
@@ -190,7 +201,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/oobabooga/text-generation-webui?style=flat-square&label=%20&color=gray)
 1. Open AI Chat Mockup: An open source ChatGPT UI. [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui) [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mckaywrigley/chatbot-ui?style=flat-square&label=%20&color=gray)
-1. [chainlit](https://github.com/Chainlit/chainlit): Build production-ready Conversational AI applications in minutes. [Mar 2023]
+1. [chainlit](https://github.com/Chainlit/chainlit):💡Build production-ready Conversational AI applications in minutes. [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Chainlit/chainlit?style=flat-square&label=%20&color=gray)
 1. [CopilotKit](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=flat-square&label=%20&color=gray)
@@ -212,6 +223,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat-square&label=%20&color=gray)
 1. [PostgresML](https://github.com/postgresml/postgresml): The GPU-powered AI application database. [Apr 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/postgresml/postgresml?style=flat-square&label=%20&color=gray)
+1. [agent-twitter-client](https://github.com/elizaOS/agent-twitter-client): twitter-scraper. A Twitter client for agents. no API key necessary [May 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/elizaOS/agent-twitter-client?style=flat-square&label=%20&color=gray)
 1. [unstructured](https://github.com/Unstructured-IO/unstructured): Open-Source Pre-Processing Tools for Unstructured Data [Sep 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=flat-square&label=%20&color=gray)
 1. [outlines](https://github.com/dottxt-ai/outlines): Structured Text Generation [Mar 2023]
@@ -225,15 +237,21 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/VikParuchuri/marker?style=flat-square&label=%20&color=gray)
 1. [Maxun](https://github.com/getmaxun/maxun): Open-Source No-Code Web Data Extraction Platform [Oct 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/getmaxun/maxun?style=flat-square&label=%20&color=gray)
+1. [GPT Crawler](https://github.com/BuilderIO/gpt-crawler): Crawl a site to generate knowledge files to create your own custom GPT from one or multiple URLs [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/gpt-crawler?style=flat-square&label=%20&color=gray)
 1. [firecrawl](https://github.com/mendableai/firecrawl): Scrap entire websites into LLM-ready markdown or structured data. [Apr 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mendableai/firecrawl?style=flat-square&label=%20&color=gray)
+1. [LLM Scraper](https://github.com/mishushakov/llm-scraper): a TypeScript library that allows you to extract structured data from any webpage using LLMs. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/mishushakov/llm-scraper?style=flat-square&label=%20&color=gray)
+1. [ExtractThinker](https://github.com/enoch3712/ExtractThinker): A Document Intelligence library for LLMs with ORM-style interaction for flexible workflows. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/enoch3712/ExtractThinker?style=flat-square&label=%20&color=gray)
 1. [Crawl4AI](https://github.com/unclecode/crawl4ai): Open-source LLM Friendly Web Crawler & Scrapper [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/unclecode/crawl4ai?style=flat-square&label=%20&color=gray)
 1. [MegaParse](https://github.com/quivrhq/megaparse): a powerful and versatile parser that can handle various types of documents. Focus on having no information loss during parsing. [30 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/quivrhq/megaparse?style=flat-square&label=%20&color=gray)
 1. [Zerox OCR](https://github.com/getomni-ai/zerox): Zero shot pdf OCR with gpt-4o-mini [Jul 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/getomni-ai/zerox?style=flat-square&label=%20&color=gray)
+1. [pipet](https://github.com/bjesus/pipet): Swiss-army tool for scraping and extracting data from online [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/bjesus/pipet?style=flat-square&label=%20&color=gray)
 1. [docling](https://github.com/DS4SD/docling): IBM. Docling parses documents and exports them to the desired format. [13 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/DS4SD/docling?style=flat-square&label=%20&color=gray)
-1. [markitdown](https://github.com/microsoft/markitdown): Python tool for converting files and office documents to Markdown. [14 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat-square&label=%20&color=gray)
+1. [markitdown](https://github.com/microsoft/markitdown):💡Python tool for converting files and office documents to Markdown. [14 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat-square&label=%20&color=gray)
+1. [Ollama OCR](https://github.com/imanoop7/Ollama-OCR): A powerful OCR (Optical Character Recognition) package that uses state-of-the-art vision language models. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/imanoop7/Ollama-OCR?style=flat-square&label=%20&color=gray)
+1. [Paperless-AI](https://github.com/clusterzx/paperless-ai): An automated document analyzer for Paperless-ngx using OpenAI API, Ollama and all OpenAI API compatible Services to automatically analyze and tag your documents. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/clusterzx/paperless-ai?style=flat-square&label=%20&color=gray)
 1. Azure AI Document Intelligence (FKA. Azure Form Recognizer): [ref](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence): Table and Meta data Extraction in the Document
 1. [Table to Markdown](https://tabletomarkdown.com/): LLM can recognize Markdown-formatted tables more effectively than raw table formats.
 
