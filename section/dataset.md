@@ -4,18 +4,18 @@
   1. [Self-Instruct](https://arxiv.org/abs/2212.10560): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.10560)]: Seed task pool with a set of human-written instructions. [20 Dec 2022]
   1. [Self-Alignment with Instruction Backtranslation](https://arxiv.org/abs/2308.06259): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.06259)]: Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation. [11 Aug 2023]
 - [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
- ![GitHub Repo stars](https://img.shields.io/github/stars/Zjh-819/LLMDataHub?style=flat-square&label=%20&color=gray)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/Zjh-819/LLMDataHub?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Open LLMs and Datasets](https://github.com/eugeneyan/open-llms): A list of open LLMs available for commercial use.
- ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat-square&label=%20&color=gray)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/): The Stanford Question Answering Dataset (SQuAD), a set of Wikipedia articles, 100,000+ question-answer pairs on 500+ articles. [16 Jun 2016]
 - [RedPajama](https://together.ai/blog/redpajama): LLaMA training dataset of over 1.2 trillion tokens [git](https://github.com/togethercomputer/RedPajama-Data) [17 Apr 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=flat-square&label=%20&color=gray)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb): HuggingFace: crawled 15 trillion tokens of high-quality web data from the summer of 2013 to March 2024. [Apr 2024]
 - [MS MARCO Web Search](https://github.com/microsoft/MS-MARCO-Web-Search): A large-scale information-rich web dataset, featuring millions of real clicked query-document labels [Apr 2024]
- ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat-square&label=%20&color=gray)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Synthetic Data of LLMs](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data): A reading list on LLM based Synthetic Data Generation [Oct 2024]
- ![GitHub Repo stars](https://img.shields.io/github/stars/wasiahmad/Awesome-LLM-Synthetic-Data?style=flat-square&label=%20&color=gray)
-- [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/open-thoughts/open-thoughts?style=flat-square&label=%20&color=gray)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/wasiahmad/Awesome-LLM-Synthetic-Data?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/open-thoughts/open-thoughts?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 Pretrain for a base model
 
