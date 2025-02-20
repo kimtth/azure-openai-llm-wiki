@@ -13,7 +13,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 - **Section 1** 🎯: [RAG](section/rag.md/#rag-retrieval-augmented-generation)
   - [RAG (Retrieval-Augmented Generation)](section/rag.md/#rag-retrieval-augmented-generation)
-  - [RAG Design](section/rag.md/#advanced-rag) | [Application](section/rag.md/#rag-development)
+  - [RAG Design](section/rag.md/#rag-solution-design) | [Application](section/rag.md/#rag-development)
   - [Vector DB](section/rag.md/#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](section/aoai.md/#azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
@@ -46,7 +46,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
   - [Context Constraints](section/chab.md/#context-constraints): e.g., RoPE
   - [Trust & Safety](section/chab.md/#trustworthy-safe-and-secure-llm)
-  - [LLM Abilities](section/chab.md/#large-language-model-is-abilities)
+  - [LLM Abilities](section/chab.md/#large-language-model-is-abilities): incl. Reasoning
 - **Section 9** 🌍: [LLM Landscape](section/llm.md/#large-language-model-landscape)
   - [LLM Taxonomy](section/llm.md/#large-language-models-in-2023)
   - [LLM Collection](section/llm.md/#large-language-model-collection)

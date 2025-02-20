@@ -67,6 +67,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/srush/MiniChain?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [marvin](https://github.com/PrefectHQ/marvin): a lightweight AI toolkit for building natural language interfaces. [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/PrefectHQ/marvin?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [rivet](https://github.com/Ironclad/rivet): an open-source visual AI programming environment and TypeScript library [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Ironclad/rivet?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [microsoft/Tokenizer](https://github.com/microsoft/Tokenizer): Tiktoken in C#: .NET and TypeScript implementation of BPE tokenizer for OpenAI LLMs. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/Tokenizer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Azure OpenAI Proxy](https://github.com/scalaone/azure-openai-proxy): OpenAI API requests converting into Azure OpenAI API requests [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/scalaone/azure-openai-proxy?style=flat-square&label=%20&color=gray&cacheSeconds=36000)

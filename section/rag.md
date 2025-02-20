@@ -12,7 +12,7 @@
   1. RAG-token— We retrieve k documents, use them to generate the next token, then retrieve k more documents, use them to generate the next token, and so on. This means that we could end up retrieving several different sets of documents in the generation of a single answer to a user’s query.
   1. Of the two approaches proposed in the paper, the RAG-sequence implementation is pretty much always used in the industry. It’s cheaper and simpler to run than the alternative, and it produces great results. [cite](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a) [30 Sep 2023]
 
-### **Research Papers**
+### **Research**
 
 - [A Survey on Retrieval-Augmented Text Generation](https://arxiv.org/abs/2202.01110): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.01110)]: This paper conducts a survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in many NLP tasks. These tasks include Dialogue response generation, Machine translation, Summarization, Paraphrase generation, Text style transfer, and Data-to-text generation. [2 Feb 2022]
 - [Hyde](https://arxiv.org/abs/2212.10496): Hypothetical Document Embeddings. `zero-shot (generate a hypothetical document) -> embedding -> avg vectors -> retrieval` [20 Dec 2022]
@@ -55,6 +55,7 @@
 - [Retrieval Augmented Generation (RAG) and Beyond](https://arxiv.org/abs/2409.14924):🏆The paper classifies user queries into four levels—`explicit, implicit, interpretable rationale, and hidden rationale`—and highlights the need for external data integration and fine-tuning LLMs for specialized tasks. [23 Sep 2024]
 - [Astute RAG](https://arxiv.org/abs/2410.07176): adaptively extracts essential information from LLMs, consolidates internal and external knowledge with source awareness, and finalizes answers based on reliability. [9 Oct 2024]
 - [CAG: Cache-Augmented Generation](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024] [git](https://github.com/hhhuang/CAG) ![GitHub Repo stars](https://img.shields.io/github/stars/hhhuang/CAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [CoRAG](https://arxiv.org/abs/2501.14342): Chain-of-Retrieval Augmented Generation. RAG: single search -> CoRAG: Iterative search and reasoning [24 Jan 2025]
 
 ### **Advanced RAG**
 
@@ -124,9 +125,7 @@
 - Solving the core challenges of Retrieval-Augmented Generation [ref](https://towardsdatascience.com/12-rag-pain-points-and-proposed-solutions-43709939a28c) [Feb 2024] <br/>
   <img src="../files/rag-12-pain-points-solutions.jpg" width="500">
 
-### **RAG Solution Design & Application**
-
-#### **RAG Solution Design**
+### **RAG Solution Design**
 
 - [Papers with code](https://paperswithcode.com/method/rag): RAG
 - [Azure: Designing and developing a RAG solution](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide)
@@ -158,7 +157,7 @@
 - [Genie: Uber’s Gen AI On-Call Copilot](https://www.uber.com/blog/genie-ubers-gen-ai-on-call-copilot/) [10 Oct 2024]
 - [Evaluating LLMs and RAG Systems](https://dzone.com/articles/evaluating-llms-and-rag-systems) [27 Jan 2025]
 
-#### **RAG Development**
+### **RAG Development**
 
 1. [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications. [5 May 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Cognita](https://github.com/truefoundry/cognita): RAG (Retrieval Augmented Generation) Framework for building modular, open-source applications [Jul 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/truefoundry/cognita?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -182,7 +181,7 @@
 1. [MiniRAG](https://github.com/HKUDS/MiniRAG): RAG through heterogeneous graph indexing and lightweight topology-enhanced retrieval. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/MiniRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
-#### **RAG Application**
+### **RAG Application**
 
 1. [Khoj](https://github.com/khoj-ai/khoj): Open-source, personal AI agents. Cloud or Self-Host, Multiple Interfaces. Python Django based [Aug 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/khoj-ai/khoj?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SWIRL AI Connect](https://github.com/swirlai/swirl-search): SWIRL AI Connect enables you to perform Unified Search and bring in a secure AI Co-Pilot. [Apr 2022]

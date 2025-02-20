@@ -38,6 +38,9 @@
 - [5 Agentic AI Design Patterns](https://blog.dailydoseofds.com/p/5-agentic-ai-design-patterns): Reflection, Tool use, ReAct, Planning, Multi-agent pattern [24 Jan 2025]
 - [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+#### **Agent Design Reference**
+
 - [Exploring Generative AI (martinfowler.com)](https://martinfowler.com/articles/exploring-gen-ai.html): Memos on how LLMs are being used to enhance software delivery practices, including Toochain, Test-Driven Development (TDD) with GitHub Copilot, pair programming, and multi-file editing. [26 Jul 2023 ~ ]
 - [Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427): Cognitive Architectures for Language Agents (CoALA). Procedural (how to perform tasks), Semantic (long-term store of knowledge), Episodic Memory (recall specific past events) [ref](https://blog.langchain.dev/memory-for-agents/) [5 Sep 2023]
 - [Language Agent Tree Search Method (LATS)](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -148,6 +151,7 @@
 1. [ChatDev](https://github.com/OpenBMB/ChatDev): Virtual software company. Create Customized Software using LLM-powered Multi-Agent Collaboration [Sep 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/ChatDev?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [skyagi](https://github.com/litanlitudan/skyagi): Simulating believable human behaviors. Role playing [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/litanlitudan/skyagi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [tabby](https://github.com/TabbyML/tabby): a self-hosted AI coding assistant, offering an open-source and on-premises alternative to GitHub Copilot. [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/TabbyML/tabby?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Letta ADE](https://github.com/letta-ai/letta): a graphical user interface for ADE (Agent Development Environment) by [Letta (previously MemGPT)](https://github.com/letta-ai/letta) [12 Oct 2023]
 1. [AppAgent-TencentQQGYLab](https://github.com/mnotgod96/AppAgent): Multimodal Agents as Smartphone Users. [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mnotgod96/AppAgent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AIOS](https://github.com/agiresearch/AIOS): LLM Agent Operating System [Jan 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/agiresearch/AIOS?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -196,7 +200,7 @@
 
 #### **Deep research**
 
-1. [STORM](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024]
+1. [STORM](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/stanford-oval/storm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SakanaAI AI-Scientist](https://github.com/SakanaAI/AI-Scientist): [x-ref](agent.md/#agent-application) [Aug 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Company Researcher](https://github.com/exa-labs/company-researcher): a free and open-source tool that helps you instantly understand any company inside out. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/exa-labs/company-researcher?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -207,3 +211,6 @@
 1. [smolagents: Open Deep Research](https://github.com/huggingface/smolagents) > `examples/open_deep_research`. By HuggingFace [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [open source deep research](https://github.com/nickscamara/open-deep-research): Firecrawl Search based backend & UI [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/nickscamara/open-deep-research?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [DeepSearcher](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Felo.ai Deep Research](https://felo.ai/blog/free-deepseek-r1-ai-search/) [8 Feb 2025]
+1. [Perplexity Deep Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research) [14 Feb 2025]
+1. [Accelerating scientific breakthroughs with an AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Google introduces AI co-scientist, a multi-agent AI system built with Gemini 2.0 as a virtual scientific collaborator [19 Feb 2025]
