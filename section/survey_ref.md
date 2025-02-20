@@ -88,6 +88,7 @@
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [Rapid Growth Continues for ChatGPT, Google’s NotebookLM](https://www.similarweb.com/blog/insights/ai-news/chatgpt-notebooklm/) [6 Nov 2024]
 - [Google: 60 of our biggest AI announcements in 2024](https://blog.google/technology/ai/google-ai-news-recap-2024/) [23 Dec 2024]
+- [Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index): a research on the labor market impact of technologies. The usage is concentrated in software development and technical writing tasks. [10 Feb 2025]
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
 
@@ -225,4 +226,5 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
 - [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
 - [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [Hundred-Page Language Models Book by Andriy Burkov](https://github.com/aburkov/theLMbook) [15 Jan 2025]
 - [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
