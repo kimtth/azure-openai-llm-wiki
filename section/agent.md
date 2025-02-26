@@ -38,6 +38,7 @@
 - [5 Agentic AI Design Patterns](https://blog.dailydoseofds.com/p/5-agentic-ai-design-patterns): Reflection, Tool use, ReAct, Planning, Multi-agent pattern [24 Jan 2025]
 - [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
 
 #### **Agent Design Reference**
 
@@ -121,6 +122,7 @@
 1. [AWS: Multi-Agent Orchestrator](https://github.com/awslabs/multi-agent-orchestrator): a framework for managing multiple AI agents and handling complex conversations. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/multi-agent-orchestrator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SwarmZero](https://github.com/swarmzero/swarmzero): SwarmZero's SDK for building AI agents, swarms of agents. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/swarmzero/swarmzero?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Dynamiq](https://github.com/dynamiq-ai/dynamiq): An orchestration framework for RAG, agentic AI, and LLM applications [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/dynamiq-ai/dynamiq?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [PySpur](https://github.com/PySpur-Dev/pyspur): Drag-and-Drop. an AI agent builder in Python. [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/PySpur-Dev/pyspur?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework): IBM. The TypeScript framework for building scalable agentic applications. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/i-am-bee/bee-agent-framework?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Agent-S](https://github.com/simular-ai/Agent-S): To build intelligent GUI agents that autonomously learn and perform complex tasks on your computer. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/simular-ai/Agent-S?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenAI Swarm](https://github.com/openai/swarm): An experimental and educational framework for lightweight multi-agent orchestration. [11 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/swarm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -173,6 +175,7 @@
 1. [Riona-AI-Agent](https://github.com/David-patrick-chuks/Riona-AI-Agent): automation tool designed for Instagram to automate social media interactions such as posting, liking, and commenting. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/David-patrick-chuks/Riona-AI-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Realtime API Agents Demo](https://github.com/openai/openai-realtime-agents): a simple demonstration of more advanced, agentic patterns built on top of the Realtime API. OpenAI. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-realtime-agents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PaSa](https://github.com/bytedance/pasa): an advanced paper search agent. Bytedance. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/pasa?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Archon](https://github.com/coleam00/Archon): AI Agent Builder: Example of iteration from Single-Agent to Multi-Agent. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/coleam00/Archon?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -212,5 +215,6 @@
 1. [open source deep research](https://github.com/nickscamara/open-deep-research): Firecrawl Search based backend & UI [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/nickscamara/open-deep-research?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [DeepSearcher](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Felo.ai Deep Research](https://felo.ai/blog/free-deepseek-r1-ai-search/) [8 Feb 2025]
+1. [LangChain Open Deep Research](https://github.com/langchain-ai/open_deep_research): Formerly Report mAIstro, a web research assistant for generating comprehensive reports on any topic. [13 Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Perplexity Deep Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research) [14 Feb 2025]
 1. [Accelerating scientific breakthroughs with an AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Google introduces AI co-scientist, a multi-agent AI system built with Gemini 2.0 as a virtual scientific collaborator [19 Feb 2025]
