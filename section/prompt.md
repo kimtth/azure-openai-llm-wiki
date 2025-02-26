@@ -57,6 +57,9 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 1. [Is the new norm for NLP papers "prompt engineering" papers?](https://www.reddit.com/r/MachineLearning/comments/1ei9e3l/d_is_the_new_norm_for_nlp_papers_prompt/): "how can we make LLM 1 do this without training?" Is this the new norm? The CL section of arXiv is overwhelming with papers like "how come LLaMA can't understand numbers?" [2 Aug 2024]
 1. [Does Prompt Formatting Have Any Impact on LLM Performance?](https://arxiv.org/abs/2411.10541): GPT-3.5-turbo's performance in code translation varies by 40% depending on the prompt template, while GPT-4 is more robust. [15 Nov 2024]
 1. [Prompt Engineering for OpenAI’s O1 and O3-mini Reasoning Models](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/prompt-engineering-for-openai%E2%80%99s-o1-and-o3-mini-reasoning-models/4374010): 1) `Keep Prompts Clear and Minimal`, 2)`Avoid Unnecessary Few-Shot Examples` 3)`Control Length and Detail via Instructions` 4)`Specify Output, Role or Tone` [05 Feb 2025]
+1. [Chain of Draft: Thinking Faster by Writing Less](https://arxiv.org/abs/2502.18600): Chain-of-Draft prompting con-
+denses the reasoning process into minimal, abstract
+representations. `Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most.` [25 Feb 2025 ]
 
 #### Adversarial Prompting
 
@@ -131,6 +134,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Anthropic courses > Prompt engineering interactive tutorial](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [5 Principles for Writing Effective Prompts](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025 ]
 
 ### **Visual Prompting & Visual Grounding**
 

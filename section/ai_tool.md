@@ -40,3 +40,6 @@
 - [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref](https://arxiv.org/abs/2412.04037) [5 Dec 2024]
 - [5 LLM-based Apps for Developers](https://hackernoon.com/5-llm-based-apps-for-developers): Github Copilot, Cursor IDE, Tabnine, Warp, Replit Agent
 - [Msty](https://msty.app/):💡The easiest way to use local and online AI models
+- [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.
+- [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
+- [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai

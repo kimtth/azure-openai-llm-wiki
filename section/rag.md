@@ -138,7 +138,7 @@
 - [RAG at scale](https://medium.com/@neum_ai/retrieval-augmented-generation-at-scale-building-a-distributed-system-for-synchronizing-and-eaa29162521): Building a distributed system for synchronizing and ingesting billions of text embeddings [28 Sep 2023]
 - [A Practical Approach to Retrieval Augmented Generation (RAG) Systems](https://github.com/mallahyari/rag-ebook): Online book [Dec 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mallahyari/rag-ebook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [LangChain RAG from scratch](https://github.com/langchain-ai/rag-from-scratch) [Jan 2024]
+- [LangChain RAG from scratch](https://github.com/langchain-ai/rag-from-scratch) 📺[video playlist](https://youtube.com/playlist?list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x&feature=shared) [Jan 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [LlamIndex Building Performant RAG Applications for Production](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/#building-performant-rag-applications-for-production)
 - [Advanced RAG on Hugging Face documentation using LangChain](https://huggingface.co/learn/cookbook/advanced_rag)
@@ -155,6 +155,7 @@
 - [Introduction to Large-Scale Similarity Search: HNSW, IVF, LSH](https://blog.gopenai.com/introduction-to-large-scale-similarity-search-part-one-hnsw-ivf-lsh-677bf193ab07) [28 Sep 2024]
 - [5 Chunking Strategies For RAG](https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag) [19 Oct 2024]
 - [Genie: Uber’s Gen AI On-Call Copilot](https://www.uber.com/blog/genie-ubers-gen-ai-on-call-copilot/) [10 Oct 2024]
+- [bRAG](https://github.com/bRAGAI/bRAG-langchain/): Everything you need to know to build your own RAG application [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/bRAGAI/bRAG-langchain?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Evaluating LLMs and RAG Systems](https://dzone.com/articles/evaluating-llms-and-rag-systems) [27 Jan 2025]
 
 ### **RAG Development**
