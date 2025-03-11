@@ -213,22 +213,24 @@
 
 ### **Azure Reference Architectures**
 
+- `github organizations`: 🌐Azure | 🏬Azure-samples | 🏛️Microsoft | 👥MSUSAzureAccelerators
+
 #### Azure OpenAI Application
 
-- [Miyagi (Integration demo for multiple LangChain libraries)](https://github.com/Azure-Samples/miyagi) [Feb 2023]
+- 🏬[Miyagi (Integration demo for multiple LangChain libraries)](https://github.com/Azure-Samples/miyagi) [Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/miyagi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
+- 🏬[ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Azure Cosmos DB + OpenAI ChatGPT](https://github.com/AzureCosmosDB/cosmosdb-nosql-copilot) [Mar 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/AzureCosmosDB/cosmosdb-nosql-copilot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure OpenAI Embeddings QnA](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna) [Apr 2023]
+- 🏬[Azure OpenAI Embeddings QnA](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna) [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-open-ai-embeddings-qna?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [C# Implementation (ChatGPT + Enterprise data)](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) [Apr 2023]
+- 🏬[C# Implementation (ChatGPT + Enterprise data)](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo-csharp?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) [Apr 2023]
+- 🌐[Simple ChatGPT UI application](https://github.com/Azure/openai-at-scale) [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/openai-at-scale?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Azure Video Indexer demo](https://aka.ms/viopenaidemo) [Apr 2023]
-- [Chat with your data - Solution accelerator](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator) [Jun 2023]
+- 🏬[Chat with your data - Solution accelerator](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator) [Jun 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/chat-with-your-data-solution-accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 |                                                                                                                                                        |                                                                                                                           |
@@ -245,13 +247,13 @@
 ---
 
 - [An open-source template gallery](https://azure.github.io/awesome-azd/?tags=aicollection): 🏆AI template collection
-- ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation) Demo [git](https://github.com/Azure-Samples/azure-search-openai-demo) 🏆/ [📺](https://www.youtube.com/watch?v=tW2EA4aZ_YQ): Can ChatGPT work with your enterprise data? [06 Apr 2023] [8 Feb 2023]
+- 🏬ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation) Demo [git](https://github.com/Azure-Samples/azure-search-openai-demo) 🏆/ [📺](https://www.youtube.com/watch?v=tW2EA4aZ_YQ): Can ChatGPT work with your enterprise data? [06 Apr 2023] [8 Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- GPT-Azure-Search-Engine: [git](https://github.com/pablomarin/GPT-Azure-Search-Engine) `Integration of Azure Bot Service with LangChain` [Feb 2023]
+- GPT-Azure-Search-Engine: [git](https://github.com/pablomarin/GPT-Azure-Search-Engine)💡`Integration of Azure Bot Service with LangChain` [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/pablomarin/GPT-Azure-Search-Engine?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- ChatGPT Plugin Quickstart using Python and FastAPI: [git](https://github.com/Azure-Samples/openai-plugin-fastapi) [May 2023]
+- 🏬ChatGPT Plugin Quickstart using Python and FastAPI: [git](https://github.com/Azure-Samples/openai-plugin-fastapi) [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai-plugin-fastapi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure AI CLI](https://github.com/Azure/azure-ai-cli): Interactive command-line tool for ai [Jul 2023]
+- 🌐[Azure AI CLI](https://github.com/Azure/azure-ai-cli): Interactive command-line tool for ai [Jul 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-ai-cli?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Smart Components](https://github.com/dotnet-smartcomponents/smartcomponents): Experimental, end-to-end AI features for .NET apps [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/dotnet-smartcomponents/smartcomponents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -259,67 +261,80 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/stuartridout/promptbuddy?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [eShopSupport](https://github.com/dotnet/eshopsupport):💡A reference .NET application using AI for a customer support ticketing system [ref](https://devblogs.microsoft.com/semantic-kernel/eshop-infused-with-ai-a-comprehensive-intelligent-app-sample-with-semantic-kernel/) [Apr 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/dotnet/eshopsupport?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [ARGUS](https://github.com/Azure-Samples/ARGUS): Hybrid approach with Azure Document Intelligence combined and GPT4-Vision to get better results without any pre-training. [Jun 2024]
+- 🏬[ARGUS](https://github.com/Azure-Samples/ARGUS): Hybrid approach with Azure Document Intelligence combined and GPT4-Vision to get better results without any pre-training. [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/ARGUS?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [VoiceRAG](https://github.com/Azure-Samples/aisearch-openai-rag-audio):💡Voice Using Azure AI Search and the GPT-4o Realtime API for Audio [ref](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/voicerag-an-app-pattern-for-rag-voice-using-azure-ai-search-and/ba-p/4259116) [Sep 2024]
+- 🏬[VoiceRAG](https://github.com/Azure-Samples/aisearch-openai-rag-audio):💡Voice Using Azure AI Search and the GPT-4o Realtime API for Audio [ref](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/voicerag-an-app-pattern-for-rag-voice-using-azure-ai-search-and/ba-p/4259116) [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/aisearch-openai-rag-audio?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [AI Dev Gallery](https://github.com/microsoft/ai-dev-gallery):💡Windows application featuring interactive samples powered by local AI models. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/ai-dev-gallery?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- 🏛️[AI Dev Gallery](https://github.com/microsoft/ai-dev-gallery):💡Windows application featuring interactive samples powered by local AI models. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/ai-dev-gallery?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - Semantic Kernel sample application [x-ref](sk_dspy.md/#code-recipes)
 
-#### Azure OpenAI Accelerator / samples
+#### Azure OpenAI Accelerator / Quick start / samples
 
-- [Microsoft Copilot Studio Samples](https://github.com/microsoft/CopilotStudioSamples): Samples and artifacts for Microsoft Copilot Studio [Oct 2019]
+##### Accelerator 💡
+
+1. [🌐Azure: Accelerator Collection](https://github.com/orgs/Azure/repositories?q=accelerator+sort%3Astars)
+    - [GPT-RAG](https://github.com/Azure/GPT-RAG):💡Enterprise RAG Solution Accelerator (GPT-RAG). Retrieval-Augmented Generation pattern running in Azure. [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat-square&color=gray&cacheSeconds=36000&label=%20)
+1. [🏬Azure-samples: Accelerator Collection](https://github.com/orgs/Azure-samples/repositories?q=accelerator+sort%3Astars)
+1. [🏛️Microsoft: Accelerator Collection](https://github.com/orgs/Microsoft/repositories?q=accelerator+sort%3Astars)
+1. [👥MSUSAzureAccelerators: Accelerator Collection](https://github.com/MSUSAzureAccelerators):
+    - [Conversational-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator) [Feb 2022]
+  ![GitHub Repo stars](https://img.shields.io/github/stars/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+    - [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) [May 2023]
+    ![GitHub Repo stars](https://img.shields.io/github/stars/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+##### Quick start
+
+- [🏬Azure-samples: Accelerator Collection](https://github.com/orgs/Azure-samples/repositories?q=quick+sort%3Astars)
+
+##### Samples
+
+- 🏛️[Microsoft Copilot Studio Samples](https://github.com/microsoft/CopilotStudioSamples): Samples and artifacts for Microsoft Copilot Studio [Oct 2019]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/CopilotStudioSamples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Conversational-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator) [Feb 2022]
-![GitHub Repo stars](https://img.shields.io/github/stars/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- Enterprise Logging: [git](https://github.com/Azure-Samples/openai-python-enterprise-logging) [Feb 2023]
+- 🏬Enterprise Logging: [git](https://github.com/Azure-Samples/openai-python-enterprise-logging) [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai-python-enterprise-logging?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-- Azure OpenAI samples: [ref](https://github.com/Azure/azure-openai-samples) [Apr 2023]
+- 🌐Azure OpenAI samples: [ref](https://github.com/Azure/azure-openai-samples) [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-openai-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [ref](https://github.com/Azure-Samples/openai) [Apr 2023]
+- 🏬The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [ref](https://github.com/Azure-Samples/openai) [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- Azure-Samples [ref](https://github.com/Azure-Samples)
+- 🏬Azure-Samples [ref](https://github.com/Azure-Samples)
   - Azure OpenAI with AKS By Terraform: [git](https://github.com/Azure-Samples/aks-openai-terraform) [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/aks-openai-terraform?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   - Azure OpenAI with AKS By Bicep: [git](https://github.com/Azure-Samples/aks-openai) [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/aks-openai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) [May 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- Azure OpenAI with AKS by Terraform (simple version): [git](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) [May 2023]
+- 🏬Azure OpenAI with AKS by Terraform (simple version): [git](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-openai-terraform-deployment-sample?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - Azure OpenAI Network Latency Test Script
 : [git](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]
-- [GPT-RAG](https://github.com/Azure/GPT-RAG):💡Enterprise RAG Solution Accelerator (GPT-RAG). Retrieval-Augmented Generation pattern running in Azure. [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat-square&color=gray&cacheSeconds=36000&label=%20)
-- [RAG for Azure Data](https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples): Retrieval Augmented Generation (RAG) for Azure Data [Jun 2023]
+- 🏛️[RAG for Azure Data](https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples): Retrieval Augmented Generation (RAG) for Azure Data [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/AzureDataRetrievalAugmentedGenerationSamples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform [git](https://github.com/Azure-Samples/container-apps-openai/) [Jul 2023]
-- [AI-in-a-Box](https://github.com/Azure/AI-in-a-Box): AI-in-a-Box aims to provide an "Azure AI/ML Easy Button" for common scenarios [Sep 2023]
+- 🏬Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform [git](https://github.com/Azure-Samples/container-apps-openai/) [Jul 2023]
+- 🌐[AI-in-a-Box](https://github.com/Azure/AI-in-a-Box): AI-in-a-Box aims to provide an "Azure AI/ML Easy Button" for common scenarios [Sep 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/AI-in-a-Box?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure SQL DB + AOAI](https://github.com/Azure-Samples/SQL-AI-samples): AI applications built on data from an Azure SQL Database [Oct 2023]
+- 🏬[Azure SQL DB + AOAI](https://github.com/Azure-Samples/SQL-AI-samples): AI applications built on data from an Azure SQL Database [Oct 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/SQL-AI-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure Functions (C#) bindings for OpenAI](https://github.com/Azure/azure-functions-openai-extension) [Nov 2023]
+- 🌐[Azure Functions (C#) bindings for OpenAI](https://github.com/Azure/azure-functions-openai-extension) [Nov 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-functions-openai-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator): Tools for evaluation of RAG Chat Apps using Azure AI Evaluate SDK [Nov 2023]
+- 🏬[Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator): Tools for evaluation of RAG Chat Apps using Azure AI Evaluate SDK [Nov 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/ai-rag-chat-evaluator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Smart load balancing for AOAI](https://github.com/Azure-Samples/openai-aca-lb): Smart load balancing for OpenAI endpoints [Jan 2024]
+- 🏬[Smart load balancing for AOAI](https://github.com/Azure-Samples/openai-aca-lb): Smart load balancing for OpenAI endpoints [Jan 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai-aca-lb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Setting up Azure OpenAI with Azure API Management](https://github.com/Azure/enterprise-azureai) [Jan 2024]
+- 🌐[Setting up Azure OpenAI with Azure API Management](https://github.com/Azure/enterprise-azureai) [Jan 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai-python-enterprise-logging?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/enterprise-azureai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [AI Samples for .NET](https://github.com/dotnet/ai-samples):  official .NET samples demonstrating how to use AI. `Evaluating a LLM with .NET` [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/dotnet/ai-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [OpenAI Official .NET Library](https://github.com/openai/openai-dotnet/) [Apr 2024]![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-dotnet?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [azure-llm-fine-tuning](https://github.com/Azure/azure-llm-fine-tuning): SLM/LLM Fine-tuning on Azure [May 2024]
+- 🌐[azure-llm-fine-tuning](https://github.com/Azure/azure-llm-fine-tuning): SLM/LLM Fine-tuning on Azure [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-llm-fine-tuning?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [OpenAI Chat Application with Microsoft Entra Authentication](https://github.com/Azure-Samples/openai-chat-app-entra-auth-builtin): Microsoft Entra ID for user authentication [May 2024]
+- 🏬[OpenAI Chat Application with Microsoft Entra Authentication](https://github.com/Azure-Samples/openai-chat-app-entra-auth-builtin): Microsoft Entra ID for user authentication [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/openai-chat-app-entra-auth-builtin?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [AI-Sentry](https://github.com/microsoft/ai-sentry): A lightweight, pluggable facade layer for AOAI [Jun 2024]
+- 🏛️[AI-Sentry](https://github.com/microsoft/ai-sentry): A lightweight, pluggable facade layer for AOAI [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/ai-sentry?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Generic accelerator for Build your own copilot](https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator): Chat with your own data, generate a document template using your own data, and exporting the document in a docx format. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Azure Multimodal AI + LLM Processing Accelerator](https://github.com/Azure/multimodal-ai-llm-processing-accelerator): Build multimodal data processing pipelines with Azure AI Services + LLMs [Aug 2024]
+- 🏛️[Generic accelerator for Build your own copilot](https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator): Chat with your own data, generate a document template using your own data, and exporting the document in a docx format. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- 🌐[Azure Multimodal AI + LLM Processing Accelerator](https://github.com/Azure/multimodal-ai-llm-processing-accelerator): Build multimodal data processing pipelines with Azure AI Services + LLMs [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/multimodal-ai-llm-processing-accelerator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Fabric notebooks for analyzing chat history stored in CosmosDB](https://github.com/microsoft/fabric-cosmosdb-chat-analytics) [Sep 2024]
+- 🏛️[Fabric notebooks for analyzing chat history stored in CosmosDB](https://github.com/microsoft/fabric-cosmosdb-chat-analytics) [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/fabric-cosmosdb-chat-analytics?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Microsoft.Extensions.AI](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/): a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware. [8 Oct 2024]
-- [Document Processing with Azure AI Samples](https://github.com/Azure-Samples/azure-ai-document-processing-samples): Demonstrates how to use Azure AI Document Intelligence, Azure OpenAIS [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-ai-document-processing-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- 🏬[Document Processing with Azure AI Samples](https://github.com/Azure-Samples/azure-ai-document-processing-samples): Demonstrates how to use Azure AI Document Intelligence, Azure OpenAIS [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-ai-document-processing-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### Referece: Use Case and Architecture
 
