@@ -110,8 +110,11 @@
 1. [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/zep?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [May 2023]
 1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [cognee](https://github.com/topoteretes/cognee): LLM Memory using Dynamic knowledge graphs [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/topoteretes/cognee?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Memary](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Graphiti](https://github.com/getzep/graphiti): Graphiti leverages [zep](https://github.com/getzep/zep)’s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/graphiti?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Agentic Memory](https://github.com/agiresearch/A-mem): A dynamic memory system for LLM agents, inspired by the Zettelkasten method, enabling flexible memory organization. [17 Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Application**
 
@@ -192,7 +195,8 @@
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 - [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
-- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025]
+- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **UI/UX**
 
@@ -314,6 +318,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [ref](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
+- [Gemini Robotics](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/): Robotics built on the foundation of Gemini 2.0 [12 Mar 2025]
 
 ### **Awesome demo**
 

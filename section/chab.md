@@ -189,3 +189,4 @@ generated webpages are considered better than the original reference webpages` [
 - [Inference-Time Computations for LLM Reasoning and Planning: A Benchmark and Insights](https://www.arxiv.org/abs/2502.12521): Evaluate Chain-of-Thought, Tree-of-Thought, and Reasoning as Planning across 11 tasks. While scaling inference-time computation enhances reasoning, no single technique consistently outperforms the others. [18 Feb 2025]
 - [S*: Test Time Scaling for Code Generation](https://arxiv.org/abs/2502.14382): Parallel scaling (generating multiple solutions) + sequential scaling (iterative debugging). [20 Feb 2025]
 - Chain of Draft: Thinking Faster by Writing Less: [x-ref](prompt.md/#prompt-engineering)
+- [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]

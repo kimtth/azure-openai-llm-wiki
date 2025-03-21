@@ -17,16 +17,16 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Vector DB](section/rag.md/#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](section/aoai.md/#azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
-  - [Copilot Products & Azure OpenAI Service](section/aoai.md/#copilot-products)
+  - [Copilot Products & Azure OpenAI Service](section/aoai.md/#copilot-products) | [Research](section/aoai.md/#research)
   - [Azure Reference Architecture](section/aoai.md/#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](section/app.md/#applications-and-frameworks)
-  - [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) | [Applications](section/app.md/#llm-application-development): incl. Code editor
+  - [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) | [Applications](section/app.md/#llm-application-development): incl. [Code editor](section/app.md/#code-editor-incl-proprietary-software), [Memory](section/app.md/#llm-memory)
   - [Caching, UX, Proposals & Other topics](section/app.md/#caching)
   - [LLMs for Robotics](section/app.md/#llm-for-robotics-bridging-ai-and-robotics)
   - [Awesome demo](section/app.md/#awesome-demo)
 - **Section 4** 🤖: [Agent](section/agent.md/#agent)
   - [Agent Design Patterns](section/agent.md/#agent-design-patterns)
-  - [Agent Frameworks](section/agent.md/#agent-framework) | [Applications](section/agent.md/#agent-application): incl. Code Interpreter, Computer use, Deep research
+  - [Agent Frameworks](section/agent.md/#agent-framework) | [Applications](section/agent.md/#agent-application): incl. [Code Interpreter](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics), [Computer use & MCP](section/agent.md/#computer-use--mcp), [Deep research](section/agent.md/#deep-research)
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](section/sk_dspy.md/#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
   - [DSPy](section/sk_dspy.md/#dspy): Optimizer frameworks
@@ -46,7 +46,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
   - [Context Constraints](section/chab.md/#context-constraints): e.g., RoPE
   - [Trust & Safety](section/chab.md/#trustworthy-safe-and-secure-llm)
-  - [LLM Abilities](section/chab.md/#large-language-model-is-abilities): incl. Reasoning
+  - [LLM Abilities](section/chab.md/#large-language-model-is-abilities): incl. [Reasoning](section/chab.md/#reasoning)
 - **Section 9** 🌍: [LLM Landscape](section/llm.md/#large-language-model-landscape)
   - [LLM Taxonomy](section/llm.md/#large-language-models-in-2023)
   - [LLM Collection](section/llm.md/#large-language-model-collection)

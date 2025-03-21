@@ -100,6 +100,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
   1. [Gemini 2 Flash](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
   1. Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
+  1. [Gemini 2.5](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025]
   1. [gemini/cookbook](https://github.com/google-gemini/cookbook)
 - Anthrophic
   1. [Claude 3](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
@@ -135,18 +136,23 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL): Vision-language models incl. Video Understanding [Auf 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [QwQ-32B](https://qwen-ai.com/): Reasoning model [5 Mar 2025]
+- Biadu
+  1. [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
 - Cohere
   - Founded in 2019. Canadian multinational tech.
   1. [Command R+](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
+  1. [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
   1. [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
-  1. [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025]
+  1. [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref](https://arxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
   1. [Janus](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
+  1. [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   1. A list of models: [git](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![GitHub Repo stars](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+  - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
 - Qualcomm
   1. [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - xAI
