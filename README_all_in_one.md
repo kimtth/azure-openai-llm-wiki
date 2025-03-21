@@ -17,16 +17,16 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Vector DB](#vector-database-comparison)
 - **Section 2** 🌌: [Azure OpenAI](#azure-openai-and-reference-architecture)
   - [Microsoft LLM Framework](#microsoft-azure-openai-llm-framework)
-  - [Copilot Products & Azure OpenAI Service](#copilot-products)
+  - [Copilot Products & Azure OpenAI Service](#copilot-products) | [Research](#research)
   - [Azure Reference Architecture](#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](#applications-and-frameworks)
-  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development): incl. Code editor
+  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development): incl. [Code editor](#code-editor-incl-proprietary-software), [Memory](#llm-memory)
   - [Caching, UX, Proposals & Other topics](#caching)
   - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
   - [Awesome demo](#awesome-demo)
 - **Section 4** 🤖: [Agent](#agent)
   - [Agent Design Patterns](#agent-design-patterns)
-  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application): incl. Code Interpreter, Computer use, Deep research
+  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application): incl. [Code Interpreter](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics), [Computer use & MCP](#computer-use--mcp), [Deep research](#deep-research)
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](#semantic-kernel): Micro-orchestration
   - [DSPy](#dspy): Optimizer frameworks
@@ -46,7 +46,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [OpenAI Products & Roadmap](#openais-roadmap-and-products)
   - [Context Constraints](#context-constraints): e.g., RoPE
   - [Trust & Safety](#trustworthy-safe-and-secure-llm)
-  - [LLM Abilities](#large-language-model-is-abilities): incl. Reasoning
+  - [LLM Abilities](#large-language-model-is-abilities): incl. [Reasoning](#reasoning)
 - **Section 9** 🌍: [LLM Landscape](#large-language-model-landscape)
   - [LLM Taxonomy](#large-language-models-in-2023)
   - [LLM Collection](#large-language-model-collection)
@@ -574,7 +574,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024]
 1. [PromptWizard](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/): The future of prompt optimization through feedback-driven self-evolving prompts [17 Dec 2024]
 1. [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815): a framework that automatically optimizes model selection for compound AI systems [20 Feb 2025] [git](https://github.com/LLMSELECTOR/LLMSELECTOR) ![GitHub Repo stars](https://img.shields.io/github/stars/LLMSELECTOR/LLMSELECTOR?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Data Formulator 2](https://arxiv.org/abs/2408.16119): Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way [21 Feb 2025]
+1. [Data Formulator](https://arxiv.org/abs/2309.10094) [18 Sep 2023] | [Data Formulator 2](https://arxiv.org/abs/2408.16119): Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way [git](https://github.com/microsoft/data-formulator) [21 Feb 2025]
 
 ### **Azure Reference Architectures**
 
@@ -851,8 +851,11 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/zep?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [May 2023]
 1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [cognee](https://github.com/topoteretes/cognee): LLM Memory using Dynamic knowledge graphs [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/topoteretes/cognee?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Memary](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Graphiti](https://github.com/getzep/graphiti): Graphiti leverages [zep](https://github.com/getzep/zep)’s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/graphiti?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Agentic Memory](https://github.com/agiresearch/A-mem): A dynamic memory system for LLM agents, inspired by the Zettelkasten method, enabling flexible memory organization. [17 Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Application**
 
@@ -933,7 +936,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 - [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
-- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025]
+- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **UI/UX**
 
@@ -1055,6 +1059,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
  ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [ref](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
+- [Gemini Robotics](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/): Robotics built on the foundation of Gemini 2.0 [12 Mar 2025]
 
 ### **Awesome demo**
 
@@ -1143,8 +1148,12 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 #### **Computer use & MCP**
 
-- [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu)
-- [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use):
+- [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu) ![GitHub Repo stars](https://img.shields.io/github/stars/francedot/acu?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use): [23 Oct 2024]
+- [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) ![GitHub Repo stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
 1. [CogAgent](https://github.com/THUDM/CogAgent): An open-sourced end-to-end VLM-based GUI Agent [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/THUDM/CogAgent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenInterpreter starts to support Computer Use API](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
 1. [Agent.exe](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -1199,6 +1208,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [PydanticAI](https://github.com/pydantic/pydantic-ai): Agent Framework / shim to use Pydantic with LLMs. Model-agnostic. Type-safe. [29 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [smolagents](https://github.com/huggingface/smolagents):🤗a smol library to build great agents! [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Agentarium](https://github.com/Thytu/Agentarium): a framework for creating and managing simulations populated with AI-powered agents. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Thytu/Agentarium?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [AutoAgent](https://github.com/HKUDS/AutoAgent): AutoAgent: Fully-Automated and Zero-Code LLM Agent Framework ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/AutoAgent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OWL: Optimized Workforce Learning](https://github.com/camel-ai/owl): a multi-agent collaboration framework built on CAMEL-AI, enhancing task automation [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/camel-ai/owl?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Anus: Autonomous Networked Utility System](https://github.com/nikmcfly/ANUS): An open-source AI agent framework for task automation, multi-agent collaboration, and web interactions. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/nikmcfly/ANUS?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. Microsoft Agent Frameworks [x-ref](#microsoft-azure-openai-relevant-llm-framework)
@@ -1293,6 +1303,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Perplexity Deep Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research) [14 Feb 2025]
 1. [Accelerating scientific breakthroughs with an AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Google introduces AI co-scientist, a multi-agent AI system built with Gemini 2.0 as a virtual scientific collaborator [19 Feb 2025]
 1. [Manus sandbox runtime code leaked](https://x.com/jianxliao/status/1898861051183349870): Claude Sonnet with 29 tools, without multi-agent, using `browser_use`. [git](https://gist.github.com/jlia0/db0a9695b3ca7609c9b1a08dcbf872c9) [ref](https://manus.im/): Manus official site [10 Mar 2025]
+1. [OpenManus](https://github.com/mannaandpoem/OpenManus): A Free Open-Source Alternative to Manus AI Agent [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
 
@@ -2435,6 +2446,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Inference-Time Computations for LLM Reasoning and Planning: A Benchmark and Insights](https://www.arxiv.org/abs/2502.12521): Evaluate Chain-of-Thought, Tree-of-Thought, and Reasoning as Planning across 11 tasks. While scaling inference-time computation enhances reasoning, no single technique consistently outperforms the others. [18 Feb 2025]
 - [S*: Test Time Scaling for Code Generation](https://arxiv.org/abs/2502.14382): Parallel scaling (generating multiple solutions) + sequential scaling (iterative debugging). [20 Feb 2025]
 - Chain of Draft: Thinking Faster by Writing Less: [x-ref](#prompt-engineering)
+- [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
 
 ## **Large Language Model: Landscape**
 
@@ -2538,6 +2550,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Gemini 1.5](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
   1. [Gemini 2 Flash](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
   1. Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
+  1. [Gemini 2.5](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025]
   1. [gemini/cookbook](https://github.com/google-gemini/cookbook)
 - Anthrophic
   1. [Claude 3](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
@@ -2573,18 +2586,23 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL): Vision-language models incl. Video Understanding [Auf 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [QwQ-32B](https://qwen-ai.com/): Reasoning model [5 Mar 2025]
+- Biadu
+  1. [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
 - Cohere
   - Founded in 2019. Canadian multinational tech.
   1. [Command R+](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
+  1. [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
   1. [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
-  1. [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025]
+  1. [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref](https://arxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
   1. [Janus](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
+  1. [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   1. A list of models: [git](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![GitHub Repo stars](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+  - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
 - Qualcomm
   1. [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - xAI
@@ -2811,6 +2829,8 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [Advancing Reasoning in Large Language Models: Promising Methods and Approaches](https://arxiv.org/abs/2502.03671) [5 Feb 2025]
 - [A Systematic Survey of Automatic Prompt Optimization Techniques](https://arxiv.org/abs/2502.16923) [24 Feb 2025]
 - [A Survey on Post-training of Large Language Models](https://arxiv.org/abs/2503.06072) [8 Mar 2025]
+- [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
+- [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) [20 Mar 2025]
 - Evolutionary Tree of Large Language Models: [x-ref](#evolutionary-tree-of-large-language-models)
 
 #### **Business use cases**
@@ -3018,6 +3038,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.
 - [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
+- [Same.dev](https://same.new/): Clone Any Website in Minutes
+
 
 ## **Datasets for LLM Training**
 
