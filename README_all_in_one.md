@@ -20,13 +20,18 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Copilot Products & Azure OpenAI Service](#copilot-products) | [Research](#research)
   - [Azure Reference Architecture](#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](#applications-and-frameworks)
-  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development): incl. [Code editor](#code-editor-incl-proprietary-software), [Memory](#llm-memory)
+  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development)
+    - [Code editor](#code-editor-incl-proprietary-software)
+    - [Memory](#llm-memory)
   - [Caching, UX, Proposals & Other topics](#caching)
   - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
   - [Awesome demo](#awesome-demo)
 - **Section 4** 🤖: [Agent](#agent)
   - [Agent Design Patterns](#agent-design-patterns)
-  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application): incl. [Code Interpreter](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics), [Computer use & MCP](#computer-use--mcp), [Deep research](#deep-research)
+  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application)
+    - [Code Interpreter](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
+    - [Computer use & Model Context Protocol (MCP)](#computer-use--model-context-protocol-mcp)
+    - [Deep research](#deep-research)
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](#semantic-kernel): Micro-orchestration
   - [DSPy](#dspy): Optimizer frameworks
@@ -46,7 +51,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [OpenAI Products & Roadmap](#openais-roadmap-and-products)
   - [Context Constraints](#context-constraints): e.g., RoPE
   - [Trust & Safety](#trustworthy-safe-and-secure-llm)
-  - [LLM Abilities](#large-language-model-is-abilities): incl. [Reasoning](#reasoning)
+  - [LLM Abilities](#large-language-model-is-abilities)
+    - [Reasoning](#reasoning)
 - **Section 9** 🌍: [LLM Landscape](#large-language-model-landscape)
   - [LLM Taxonomy](#large-language-models-in-2023)
   - [LLM Collection](#large-language-model-collection)
@@ -62,7 +68,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - **Section 12** 📊: [Datasets](#section-11-datasets-for-llm-training)
   - [LLM Training Datasets](#datasets-for-llm-training)
 - **Section 13** 📝: [Evaluations](#section-12-evaluating-large-language-models--llmops)
-  - [LLM Evaluation](#evaluating-large-language-models) & [LLMOps](#llmops-large-language-model-operations)
+  - [LLM Evaluation](#evaluating-large-language-models)
+  - [LLMOps](#llmops-large-language-model-operations)
 - **Legend** 🔑:
   - `ref`: external URL
   - `doc`: archived doc
@@ -105,13 +112,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - <details>
     <summary>Expand</summary>
 
-    1. Noise robustness (External documents contain noises, struggled with noise above 80%)
-
-    1. Negative rejection (External documents are all noises, Highest rejection rate was only 45%)
-
-    1. Information integration (Difficulty in summarizing across multiple documents, Highest accuracy was 60-67%)
-    
-    1. Counterfactual robustness (Failed to detect factual errors in counterfactual external documents.)
+    1. Noise robustness (External documents contain noises, struggled with noise above 80%)  
+    1. Negative rejection (External documents are all noises, Highest rejection rate was only 45%)  
+    1. Information integration (Difficulty in summarizing across multiple documents, Highest accuracy was 60-67%)  
+    1. Counterfactual robustness (Failed to detect factual errors in counterfactual external documents.)  
     </details>
 - [Retrieval meets Long Context LLMs](https://arxiv.org/abs/2310.03025): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03025)]: We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs. [4 Oct 2023]
 - [FreshLLMs](https://arxiv.org/abs/2310.03214): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03214)]: Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://github.com/freshllms/freshqa) [5 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/freshllms/freshqa?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -262,7 +266,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/IntelLabs/RAGFoundry?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [RAGChecker](https://arxiv.org/abs/2408.08067): A Fine-grained Framework For Diagnosing RAG [git](https://github.com/amazon-science/RAGChecker) [15 Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/amazon-science/RAGChecker?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Chonkie](https://github.com/chonkie-ai/chonkie): RAG chunking library [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/chonkie-ai/chonkie?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Chonkie](https://github.com/SecludedCoder/chonkie): RAG chunking library [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SecludedCoder/chonkie?style=flat-square&label=%20&color=gray&cacheSeconds=36000) <!--old: https://github.com/chonkie-ai/chonkie -->
 1. [MiniRAG](https://github.com/HKUDS/MiniRAG): RAG through heterogeneous graph indexing and lightweight topology-enhanced retrieval. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/MiniRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](#applications-frameworks-and-user-interface-uiux)
 
@@ -341,6 +345,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Azure SQL's support for natively storing and querying vectors](https://devblogs.microsoft.com/azure-sql/announcing-eap-native-vector-support-in-azure-sql-database/) [21 May 2024]
 - GraphRAG, available in preview in [Azure Database for PostgreSQL](https://aka.ms/Ignite24/PostgreSQLAI) [19 Nov 2024]
 - [DiskANN](https://github.com/microsoft/DiskANN), a state-of-the-art suite of algorithms for low-latency, highly scalable vector search, is now generally available in [Azure Cosmos DB](https://aka.ms/ignite24/cosmosdb/blog1) and in preview for Azure Database for PostgreSQL. [19 Nov 2024]
+- [Exact Nearest Neighbor (ENN)](https://devblogs.microsoft.com/cosmosdb/exact-nearest-neighbor-enn-vector-search/):  vCore-based Azure Cosmos DB for MongoDB. Slower, high accuracy, and designed for small data sets. [1 Apr 2025]
 
 **Note**: Azure Cache for Redis Enterprise: Enterprise Sku series are not able to deploy by a template such as Bicep and ARM.
 
@@ -359,9 +364,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   The name of the class in LlamaIndex is `ElasticsearchReader`. However, actually, it can only work with open search. -->
 - [Vector Search with OpenAI Embeddings: Lucene Is All You Need](https://arxiv.org/abs/2308.14963): Our experiments were based on Lucene 9.5.0, but indexing was a bit tricky
   because the HNSW implementation in Lucene restricts vectors to 1024 dimensions, which was not sufficient for OpenAI’s 1536-dimensional embeddings. Although the resolution of this issue, which is to make vector dimensions configurable on a per codec basis, has been merged to the Lucene source trunk [git](https://github.com/apache/lucene/pull/12436), this feature has not been folded into a Lucene release (yet) as of early August 2023. [29 Aug 2023]
-- [Is Cosine-Similarity of Embeddings Really About Similarity?](https://arxiv.org/abs/2403.05440): In linear matrix factorization, the use of regularization can impact, and in some cases, render cosine similarities meaningless. Regularization involves two objectives. The first objective applies L2-norm regularization to the product of matrices A and B, a process similar to dropout. The second objective applies L2-norm regularization to each individual matrix, similar to the weight decay technique used in deep learning. [8 Mar 2024]
+- [Is Cosine-Similarity of Embeddings Really About Similarity?](https://arxiv.org/abs/2403.05440): Regularization in linear matrix factorization can distort cosine similarity. L2-norm regularization on (1) the product of matrices (like dropout) and (2) individual matrices (like weight decay) may lead to arbitrary similarities.  [8 Mar 2024]
 - [Contextual Document Embedding (CDE)](https://arxiv.org/abs/2410.02525): Improve document retrieval by embedding both queries and documents within the context of the broader document corpus. [ref](https://pub.aimind.so/unlocking-the-power-of-contextual-document-embeddings-enhancing-search-relevance-01abfa814c76) [3 Oct 2024]
-- [Fine-tuning Embeddings for Specific Domains](https://blog.gopenai.com/fine-tuning-embeddings-for-specific-domains-a-comprehensive-guide-5e4298b42185) [1 Oct 2024]
+- [Fine-tuning Embeddings for Specific Domains](https://blog.gopenai.com/fine-tuning-embeddings-for-specific-domains-a-comprehensive-guide-5e4298b42185): The guide discusses fine-tuning embeddings for domain-specific tasks using `sentence-transformers` [1 Oct 2024]
 
 ## **Azure OpenAI and Reference Architecture**
 
@@ -560,12 +565,16 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196)
   - [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership)
 
+#### **Vector Database Options for Azure**
+
+- [x-ref](#vector-database-options-for-azure)
+
 ### **Research**
 
-1. [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.03460)]: Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. [6 Jun 2023]
+1. [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.03460)]:💡Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. [6 Jun 2023]
 1. [Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion](https://arxiv.org/abs/2311.06318): K-LaMP. Contextual memory layer for LLM application [10 Nov 2023]
 1. [NL2KQL](https://arxiv.org/abs/2404.02933): From Natural Language to Kusto Query [3 Apr 2024]
-1. [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130): RAG with a graph-based approach to efficiently answer both specific and broad questions over large text corpora1. [ref](https://microsoft.github.io/graphrag) / [git](https://github.com/microsoft/graphrag) / [x-ref](#graphrag) [24 Apr 2024]
+1. [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130): 💡RAG with a graph-based approach to efficiently answer both specific and broad questions over large text corpora1. [ref](https://microsoft.github.io/graphrag) / [git](https://github.com/microsoft/graphrag) / [x-ref](#graphrag) [24 Apr 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/graphrag?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/): a generative model for inorganic materials design [git](https://github.com/microsoft/mattergen) [13 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/mattergen?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SpreadsheetLLM](https://arxiv.org/abs/2407.09025): Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens.[12 Jul 2024]
@@ -938,6 +947,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
 - [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
 
 #### **UI/UX**
 
@@ -1046,7 +1056,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [/llms.txt](https://llmstxt.org/): Proposal for an `/llms.txt` file to guide LLMs in using websites during inference. [git](https://github.com/answerdotai/llms-txt) [3 Sep 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/answerdotai/llms-txt?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
- ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [x-ref](#computer-use--mcp)
+- [Vibe Coding](https://en.wikipedia.org/wiki/Vibe_coding): a method where programmers explain their goals in simple language, and AI creates the code. Suggested by Andrej Karpathy in February 2025, it changes the programmer's role to guiding, testing, and improving the AI's work. [Feb 2025]
 
 ### **LLM for Robotics: Bridging AI and Robotics**
 
@@ -1146,7 +1157,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [APIGen](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [ToolShed](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 
-#### **Computer use & MCP**
+#### **Computer use & Model Context Protocol (MCP)**
 
 - [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu) ![GitHub Repo stars](https://img.shields.io/github/stars/francedot/acu?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use): [23 Oct 2024]
@@ -1162,10 +1173,12 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [UI-TARS](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [21 Jan 2025]
 1. [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](#openai-products) [23 Jan 2025]
-1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025]
+1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/browserbase/open-operator?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [AWS MCP Servers](https://github.com/awslabs/mcp): MCP servers that bring AWS best practices [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 
 #### **Memory Layer**
 
@@ -1200,6 +1213,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Atomic Agents](https://github.com/BrainBlend-AI/atomic-agents): an extremely lightweight and modular framework for building Agentic AI pipelines [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BrainBlend-AI/atomic-agents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AWS: Multi-Agent Orchestrator](https://github.com/awslabs/multi-agent-orchestrator): a framework for managing multiple AI agents and handling complex conversations. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/multi-agent-orchestrator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SwarmZero](https://github.com/swarmzero/swarmzero): SwarmZero's SDK for building AI agents, swarms of agents. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/swarmzero/swarmzero?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Mastra](https://github.com/mastra-ai/mastra): The TypeScript AI agent framework. workflows, agents, RAG, integrations and evals. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Dynamiq](https://github.com/dynamiq-ai/dynamiq): An orchestration framework for RAG, agentic AI, and LLM applications [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/dynamiq-ai/dynamiq?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PySpur](https://github.com/PySpur-Dev/pyspur): Drag-and-Drop. an AI agent builder in Python. [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/PySpur-Dev/pyspur?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework): IBM. The TypeScript framework for building scalable agentic applications. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/i-am-bee/bee-agent-framework?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -1304,6 +1318,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Accelerating scientific breakthroughs with an AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Google introduces AI co-scientist, a multi-agent AI system built with Gemini 2.0 as a virtual scientific collaborator [19 Feb 2025]
 1. [Manus sandbox runtime code leaked](https://x.com/jianxliao/status/1898861051183349870): Claude Sonnet with 29 tools, without multi-agent, using `browser_use`. [git](https://gist.github.com/jlia0/db0a9695b3ca7609c9b1a08dcbf872c9) [ref](https://manus.im/): Manus official site [10 Mar 2025]
 1. [OpenManus](https://github.com/mannaandpoem/OpenManus): A Free Open-Source Alternative to Manus AI Agent [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [CodeScientist](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/codescientist?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [OpenDeepSearch](https://github.com/sentient-agi/OpenDeepSearch): deep web search and retrieval, optimized for use with Hugging Face's SmolAgents ecosystem [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/sentient-agi/OpenDeepSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
 
@@ -2271,12 +2287,15 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 - [Levels of AGI for Operationalizing Progress on the Path to AGI](https://arxiv.org/abs/2311.02462): Provides a comprehensive discussion on AGI's progress and proposes metrics and benchmarks for assessing AGI systems. [4 Nov 2023]
 - [How Far Are We From AGI](https://arxiv.org/abs/2405.10313): A survey discussing AGI's goals, developmental trajectory, and alignment technologies, providing a roadmap for AGI realization. [16 May 2024]
 - [OpenAI: Planning for AGI and beyond](https://openai.com/index/planning-for-agi-and-beyond/) [24 Feb 2023]
+- [Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise](https://arxiv.org/abs/2410.03017): Tutor CoPilot can scale real-time expertise in education, enhancing outcomes even with less experienced tutors. It is cost-effective, priced at $20 per tutor annually. [3 Oct 2024]
 - [Linus Torvalds: 90% of AI marketing is hype](https://www.theregister.com/2024/10/29/linus_torvalds_ai_hype):💡AI is 90% marketing, 10% reality [29 Oct 2024]
 - OpenAI's CEO, Sam Altman, predicts AGI could emerge by 2025. [ref](https://blog.cubed.run/agi-by-2025-altmans-bold-prediction-on-ai-s-future-9f15b071762c) [9 Nov 2024]
 - Anthropic's CEO, Dario Amodei, predicts AGI between 2026 and 2027. [ref](https://techcrunch.com/2024/11/13/this-week-in-ai-anthropics-ceo-talks-scaling-up-ai-and-google-predicts-floods/) [13 Nov 2024]
 - [Key figures and their predicted AGI timelines](https://x.com/slow_developer/status/1858877008375152805):💡AGI might be emerging between 2025 to 2030. [19 Nov 2024]
 - [Creating Scalable AGI: the Open General Intelligence Framework](https://arxiv.org/abs/2411.15832): a new AI architecture designed to enhance flexibility and scalability by dynamically managing specialized AI modules. [24 Nov 2024]
 - [Shaping AI's Impact on Billions of Lives](https://arxiv.org/abs/2412.02730): a framework for assessing AI's potential effects and responsibilities, 18 milestones and 5 guiding principles for responsible AI [3 Dec 2024]
+- [Investigating Affective Use and Emotional Well-being on ChatGPT](https://www.media.mit.edu/publications/investigating-affective-use-and-emotional-well-being-on-chatgpt/): The MIT study found that higher ChatGPT usage correlated with increased loneliness, dependence, and lower socialization. [21 Mar 2025]
+- [The Impact of Generative AI on Critical Thinking](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers): A survey of 319 knowledge workers shows that higher confidence in Generative AI (GenAI) tools can reduce critical thinking. [Apr 2025]
 
 ### **OpenAI's Roadmap and Products**
 
@@ -2347,6 +2366,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [OpenAI o1](#openai-o-series) [12 Sep 2024]
 - [o3-mini system card](https://openai.com/index/o3-mini-system-card/): The first model to reach Medium risk on Model Autonomy. [31 Jan 2025]
 - [GPT-4.5](https://openai.com/index/introducing-gpt-4-5/): greater “EQ”. better unsupervised learning (world model accuracy and intuition). scalable training from smaller models. [ref](https://cdn.openai.com/gpt-4-5-system-card.pdf)  [27 Feb 2025]
+- [GPT-4o: 4o image generation](https://openai.com/index/gpt-4o-image-generation-system-card-addendum/): create photorealistic output, replacing DALL·E 3 [25 Mar 2025]
 
 ### **Context constraints**
 
@@ -2417,11 +2437,13 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Large Language Models Reflect the Ideology of their Creators](https://arxiv.org/abs/2410.18417): When prompted in Chinese, all LLMs favor pro-Chinese figures; Western LLMs similarly align more with Western values, even in English prompts. [24 Oct 2024]
 - [Alignment Faking](https://www.anthropic.com/research/alignment-faking): LLMs may pretend to align with training objectives during monitored interactions but revert to original behaviors when unmonitored. [18 Dec 2024] | demo: [ref](https://alignment.anthropic.com/2024/how-to-alignment-faking/) | [Alignment Science Blog](https://alignment.anthropic.com/)
 - [20 AI Governance Papers](https://www.linkedin.com/posts/oliver-patel_12-papers-was-not-enough-to-do-the-field-activity-7282005401032613888-6Ck4?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy) [Jan 2025]
+- [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model): 💡 `Claude 3.5 Haiku` 1. `Universal Thought Processing (Multiple Languages)`: Shared concepts exist across languages and are then translated into the respective language.  2. `Advance Planning (Composing Poetry)`: Despite generating text word by word, it anticipates rhyming words in advance.  3. `Fabricated Reasoning (Math)`: Produces plausible-sounding arguments even when given an incorrect hint. [27 Mar 2025] 
 
 ### **Large Language Model Is: Abilities**
 
 - [Multitask Prompted Training Enables Zero-Shot Task Generalization](https://arxiv.org/abs/2110.08207): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2110.08207)]: A language model trained on various tasks using prompts can learn and generalize to new tasks in a zero-shot manner. [15 Oct 2021]
 - [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2206.07682)]: Large language models can develop emergent abilities, which are not explicitly trained but appear at scale and are not present in smaller models. . These abilities can be enhanced using few-shot and augmented prompting techniques. [ref](https://www.jasonwei.net/blog/emergence) [15 Jun 2022]
+- [A Categorical Archive of ChatGPT Failures](https://arxiv.org/abs/2302.03494): 11  categories of failures, including reasoning, factual errors, math, coding, and bias [git](https://github.com/giuven95/chatgpt-failures) [6 Feb 2023]
 - [Improving mathematical reasoning with process supervision](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision) [31 May 2023]
 - Math soving optimized LLM [WizardMath](https://arxiv.org/abs/2308.09583): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.09583)]: Developed by adapting Evol-Instruct and Reinforcement Learning techniques, these models excel in math-related instructions like GSM8k and MATH. [git](https://github.com/nlpxucan/WizardLM) [18 Aug 2023] / Math solving Plugin: [Wolfram alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/)
  ![GitHub Repo stars](https://img.shields.io/github/stars/nlpxucan/WizardLM?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -2848,6 +2870,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [Rapid Growth Continues for ChatGPT, Google’s NotebookLM](https://www.similarweb.com/blog/insights/ai-news/chatgpt-notebooklm/) [6 Nov 2024]
 - [Google: 60 of our biggest AI announcements in 2024](https://blog.google/technology/ai/google-ai-news-recap-2024/) [23 Dec 2024]
 - [Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index): a research on the labor market impact of technologies. The usage is concentrated in software development and technical writing tasks. [10 Feb 2025]
+- [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
 
@@ -2930,6 +2953,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [コード生成を伴う LLM エージェント](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
 - [Japanese startup Orange uses Anthropic's Claude to translate manga into English](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
 - [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
+- Azure AI Foundry で MCPを使ってみた - 深掘りと最新動向調査: [part1](https://zenn.dev/chips0711/articles/e71b088f26f56a) | [part2](https://zenn.dev/chips0711/articles/ba72417a1f6c34) [30 Mar 2025]
 
 #### Korean
 
