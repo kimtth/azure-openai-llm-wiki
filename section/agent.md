@@ -39,6 +39,7 @@
 - [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
+- [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [git](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
 
 #### **Agent Design Reference**
 
@@ -94,6 +95,7 @@
 1. [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](chab.md/#openai-products) [23 Jan 2025]
 1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/browserbase/open-operator?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [AWS MCP Servers](https://github.com/awslabs/mcp): MCP servers that bring AWS best practices [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 
 #### **Memory Layer**
 
@@ -114,7 +116,7 @@
 1. [Lagent](https://github.com/InternLM/lagent): Inspired by the design philosophy of PyTorch. A lightweight framework for building LLM-based agents. [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/InternLM/lagent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Autogen](https://github.com/microsoft/autogen):💡Customizable and conversable agents framework [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [LangGraph](https://github.com/langchain-ai/langgraph): Built on top of LangChain [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [crewAI](https://github.com/joaomdmoura/CrewAI): Framework for orchestrating role-playing, autonomous AI agents. [Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [crewAI](https://github.com/joaomdmoura/CrewAI):💡Framework for orchestrating role-playing, autonomous AI agents. [Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [XAgent](https://github.com/OpenBMB/XAgent): Autonomous LLM Agent for complex task solving like data analysis, recommendation, and model training [Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/XAgent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent): Agent framework built upon Qwen1.5, featuring Function Calling, Code Interpreter, RAG, and Chrome extension. [Sep 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Open AI Assistant API](https://platform.openai.com/docs/assistants/overview) [6 Nov 2023]
@@ -149,6 +151,7 @@
     - [MLAB ResearchAgent](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023]
     ![GitHub Repo stars](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenAI Agents SDK & Response API](https://github.com/openai/openai-agents-python):🏆Responses API (Chat Completions + Assistants API), Built-in tools (web search, file search, computer use), Agents SDK for multi-agent workflows, agent workflow observability tools [11 Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Google ADK](https://github.com/google/adk-python): Agent Development Kit (ADK) [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/google/adk-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **Agent Application**
 
@@ -194,6 +197,7 @@
 
 1. [OpenAI Code Interpreter](https://openai.com/blog/chatgpt-plugins) Integration with Sandboxed python execution environment [23 Mar 2023]
     - We provide our models with a working Python interpreter in a sandboxed, firewalled execution environment, along with some ephemeral disk space.
+1. [x-ref](app.md/#llm-application): E2B - sandbox
 1. [SlashGPT](https://github.com/snakajima/SlashGPT) The tool integrated with "jupyter" agent [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/snakajima/SlashGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter. [May 2023]
@@ -202,6 +206,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/shroominic/codeinterpreter-api?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Open Interpreter](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/KillianLucas/open-interpreter?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Azure Container Apps Dynamic Sessions](https://aka.ms/AAtnnj8): Secure environment for running AI-generated code in Azure.
 
 #### **Domain-specific**
 

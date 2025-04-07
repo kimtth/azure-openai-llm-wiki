@@ -12,6 +12,12 @@
 
 ### **Applications, Frameworks, and User Interface (UI/UX)**
 
+#### **LLM Ochestration**
+
+- Micro-Orchestration: [LangChain](https://www.langchain.com), [LlamaIndex](https://www.llamaindex.ai), [Haystack](https://haystack.deepset.ai), [AdalFlow](https://adalflow.sylph.ai) | Macro-Orchestration: [LangGraph](https://langchain-ai.github.io/langgraph), [Burr](https://burr.dagworks.io) | Agentic Design: [Autogen](https://microsoft.github.io/autogen), [CrewAI](https://docs.crewai.com) | Optimizer: [DSPy](https://dspy-docs.vercel.app), [TextGrad](https://textgrad.com) 
+- [x-ref](langchain.md/#langchain-features-usage-and-comparisons): LangChain | [x-ref](langchain.md/#llamaindex): LlamaIndex | [x-ref](sk_dspy.md/#dspy): DSPy | [x-ref](sk_dspy.md/#semantic-kernel): Semantic Kernel
+- [x-ref](agent.md/#agent-framework): Agent Framework | [x-ref](rag.md/#rag-development): RAG Development | [x-ref](langchain.md/#prompting-frameworks): Prompting Frameworks | [x-ref](aoai.md/#microsoft-azure-openai-llm-framework): Microsoft Azure OpenAI LLM Framework
+
 #### **LLM Training/Build**
 
 1. [fastText](https://github.com/facebookresearch/fastText): A library for efficient learning of word representations and sentence classification [Aug 2016]
@@ -182,11 +188,12 @@
 1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Meetily](https://github.com/Zackriya-Solutions/meeting-minutes): Open source Ai Assistant for taking meeting notes [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Zackriya-Solutions/meeting-minutes?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
-#### **Code editor incl. Proprietary Software**
+#### **Code editor**
 
 - AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
 - [Vercel AI](https://sdk.vercel.ai/) Vercel AI Toolkit for TypeScript
 - [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
@@ -308,6 +315,7 @@
 - [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [x-ref](agent.md/#computer-use--mcp)
 - [Vibe Coding](https://en.wikipedia.org/wiki/Vibe_coding): a method where programmers explain their goals in simple language, and AI creates the code. Suggested by Andrej Karpathy in February 2025, it changes the programmer's role to guiding, testing, and improving the AI's work. [Feb 2025]
+- [A2A](https://github.com/google/A2A): Google. Agent2Agent (A2A) protocol. Agent Card (metadata). Task. Artifact (output). Streaming (Long-running tasks). [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/google/A2A?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ### **LLM for Robotics: Bridging AI and Robotics**
 
