@@ -79,6 +79,7 @@
 - [A Survey on Post-training of Large Language Models](https://arxiv.org/abs/2503.06072) [8 Mar 2025]
 - [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
 - [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) [20 Mar 2025]
+- [Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.24377): Efficient reasoning mechanisms that balance computational cost with performance. [31 Mar 2025]
 - Evolutionary Tree of Large Language Models: [x-ref](llm.md/#evolutionary-tree-of-large-language-models)
 
 #### **Business use cases**
@@ -133,19 +134,46 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 #### Classification of Attention
 
 - [ref](https://arize.com/blog-course/attention-mechanisms-in-machine-learning/): Must-Read Starter Guide to Mastering Attention Mechanisms in Machine Learning [12 Jun 2023]
-
-  - Soft Attention: Assigns continuous weights to all input elements. Used in neural machine translation.  
-  - Hard Attention: Selects a subset of input elements to focus on while ignoring the rest. . Requires specialized training (e.g., reinforcement learning). Used in image captioning.  
-  - Global Attention: Attends to all input elements, capturing long-range dependencies. Suitable for tasks involving small to medium-length sequences.
-  - Local Attention: Focuses on a localized input region, balancing efficiency and context. Used in time series analysis.
-  - Self-Attention: Attends to parts of the input sequence itself, capturing dependencies. Core to models like BERT.  
-  - Multi-head Self-Attention: Performs multiple self-attentions in parallel, capturing diverse features. Essential for transformers.  
-  - Sparse Attention: reduces computation by focusing on a limited selection of similarity scores in a sequence, resulting in a sparse matrix. It includes implementations like "strided" and "fixed" attention and is critical for scaling to very long sequences.
+  1. Soft Attention: Assigns continuous weights to all input elements. Used in neural machine translation.  
+  1. Hard Attention: Selects a subset of input elements to focus on while ignoring the rest. Requires specialized training (e.g., reinforcement learning). Used in image captioning.  
+  1. Global Attention: Attends to all input elements, capturing long-range dependencies. Suitable for tasks involving small to medium-length sequences.
+  1. Local Attention: Focuses on a localized input region, balancing efficiency and context. Used in time series analysis.
+  1. Self-Attention: Attends to parts of the input sequence itself, capturing dependencies. Core to models like BERT.  
+  1. Multi-head Self-Attention: Performs multiple self-attentions in parallel, capturing diverse features. Essential for transformers.  
+  1. Sparse Attention: reduces computation by focusing on a limited selection of similarity scores in a sequence, resulting in a sparse matrix. It includes implementations like "strided" and "fixed" attention and is critical for scaling to very long sequences.
   [ref](https://blog.research.google/2020/10/rethinking-attention-with-performers.html) [23 Oct 2020]  
-  - Cross-Attention: mixes two different embedding sequences, allowing the model to attend to information from both sequences. In a Transformer, when the information is passed from encoder to decoder, that part is known as Cross-Attention. Plays a vital role in tasks like machine translation.  
+  1. Cross-Attention: mixes two different embedding sequences, allowing the model to attend to information from both sequences. In a Transformer, when the information is passed from encoder to decoder, that part is known as Cross-Attention. Plays a vital role in tasks like machine translation.  
   [ref](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [ref](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  
-  - Sliding Window Attention (SWA): Used in Longformer. It uses a fixed-size window of attention around each token, allowing the model to scale efficiently to long inputs. Each token attends to half the window size tokens on each side, significantly reducing memory overhead.
+  1. Sliding Window Attention (SWA): Used in Longformer. It uses a fixed-size window of attention around each token, allowing the model to scale efficiently to long inputs. Each token attends to half the window size tokens on each side, significantly reducing memory overhead.
   [ref](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
+- [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+  <img src="../files/streaming-llm.png" alt="streaming-attn"/>
+
+  - Key-Value (KV) cache is an important component in the StreamingLLM framework.
+
+  1. Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
+  2. Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
+  3. StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
+
+- LongLoRA
+
+  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+  - Key Takeaways from LongLora <br/>
+    <img src="../files/longlora.png" alt="long-lora" width="350"/>
+    1. The document states that LoRA alone is not sufficient for long context extension.
+    1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
+    1. S2-Attn can be implemented with only two lines of code in training.
+<!--   2. [QA-LoRA](https://arxiv.org/abs/2309.14717): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat-square&label=%20&color=gray&cacheSeconds=36000) -->
+- [4 Advanced Attention Mechanisms](https://huggingface.co/blog/Kseniase/attentions) [4 Apr 2025]
+  1. Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
+  1. XAttention: Uses a sparse block attention pattern with antidiagonal alignment to ensure better coverage and efficiency. -> Preserves accuracy, boosts speed (up to 13x faster). Requires careful design of block-sparse layout.
+  1. KArAt (Kolmogorov-Arnold Attention): Replaces the fixed softmax attention with a learnable function (based on Kolmogorov–Arnold representation) to better model dependencies. -> Highly expressive, adaptable to complex patterns. Higher compute cost, less mature tooling.
+  1. MTA (Multi-Token Attention): Instead of attending token-by-token, it updates *groups* of tokens together, reducing the frequency of attention calls. -> Better for tasks where context spans across groups. Introduces grouping complexity, may hurt granularity.
 
 ### **LLM Materials for East Asian Languages**
 
@@ -214,8 +242,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/IbrahimSobh/llms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses [2023]
-- [DAIR.AI](https://github.com/dair-ai): Machine learning & NLP research ([omarsar github](https://github.com/omarsar))
-  - [ML Papers of The Week](https://github.com/dair-ai/ML-Papers-of-the-Week) [Jan 2023]
+- [DAIR.AI](https://github.com/dair-ai):💡Machine learning & NLP research ([omarsar github](https://github.com/omarsar))
+  - [ML Papers of The Week](https://github.com/dair-ai/ML-Papers-of-the-Week) [Jan 2023] | [ref](https://nlp.elvissaravia.com/): NLP Newsletter
  ![GitHub Repo stars](https://img.shields.io/github/stars/dair-ai/ML-Papers-of-the-Week?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough

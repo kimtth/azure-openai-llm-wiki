@@ -7,12 +7,6 @@
 - [Artificial Analysis LLM Performance Leaderboard](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard): Performance benchmarks & pricing across API providers of LLMs
 - [LLMPerf Leaderboard](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ray-project/llmperf-leaderboard?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [MMLU (Massive Multi-task Language Understanding)](https://arxiv.org/abs/2009.03300): LLM performance across 57 tasks including elementary mathematics, US history, computer science, law, and more. [7 Sep 2020]
-- [HumanEval](https://arxiv.org/abs/2107.03374): Hand-Written Evaluation Set for Code Generation Bechmark. 164 Human written Programming Problems. [ref](https://paperswithcode.com/task/code-generation) / [git](https://github.com/openai/human-eval) [7 Jul 2021]
- ![GitHub Repo stars](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [BIG-bench](https://arxiv.org/abs/2206.04615): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task. [git](https://github.com/google/BIG-bench) [9 Jun 2022]
- ![GitHub Repo stars](https://img.shields.io/github/stars/google/BIG-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [HELM](https://arxiv.org/abs/2211.09110): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on. [git](https://github.com/stanford-crfm/helm) [16 Nov 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Evaluation Papers for ChatGPT](https://github.com/THU-KEG/EvaluationPapers4ChatGPT) [28 Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/THU-KEG/EvaluationPapers4ChatGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109)] [6 Jul 2023]
@@ -25,60 +19,71 @@
 - [LLM-as-a-Judge](https://cameronrwolfe.substack.com/i/141159804/practical-takeaways):💡LLM-as-a-Judge offers a quick, cost-effective way to develop models aligned with human preferences and is easy to implement with just a prompt, but should be complemented by human evaluation to address biases.  [Jul 2024]
 - [Can Large Language Models Be an Alternative to Human Evaluations?](https://arxiv.org/abs/2305.01937) [3 May 2023]
 - [Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)](https://eugeneyan.com/writing/llm-evaluators/):💡Key considerations and Use cases when using LLM-evaluators [Aug 2024]
-- [OpenAI MLE-bench](https://arxiv.org/abs/2410.07095): A benchmark for measuring the performance of AI agents on ML tasks using Kaggle. [git](https://github.com/openai/mle-bench) [9 Oct 2024] > Agent Framework used in MLE-bench, `GPT-4o (AIDE) achieves more medals on average than both MLAB and OpenHands (8.7% vs. 0.8% and 4.4% respectively)` [x-ref](agent.md/#agent-applications-and-libraries)
- ![GitHub Repo stars](https://img.shields.io/github/stars/openai/mle-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Korean SAT LLM Leaderboard](https://github.com/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard): Benchmarking 10 years of Korean CSAT (College Scholastic Ability Test) exams [Oct 2024]
- ![GitHub Repo stars](https://img.shields.io/github/stars/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [OpenAI SimpleQA Benchmark](https://openai.com/index/introducing-simpleqa/): SimpleQA, a factuality benchmark for short fact-seeking queries, narrows its scope to simplify factuality measurement. [git](https://github.com/openai/simple-evals) [30 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/simple-evals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering](https://arxiv.org/abs/2411.09213) [14 Nov 2024]
+
 
 ### **LLM Evalution Benchmarks**
 
-  #### Language Understanding and QA
+#### Language Understanding and QA
 
-  1. [MMLU (Massive Multitask Language Understanding)](https://github.com/hendrycks/test): Over 15,000 questions across 57 diverse tasks. [Published in 2021]
- ![GitHub Repo stars](https://img.shields.io/github/stars/hendrycks/test?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [TruthfulQA](https://huggingface.co/datasets/truthful_qa): Truthfulness. [Published in 2022]
-  1. [BigBench](https://github.com/google/BIG-bench): 204 tasks. Predicting future potential [Published in 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/google/BIG-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [GLUE](https://gluebenchmark.com/leaderboard) & [SuperGLUE](https://super.gluebenchmark.com/leaderboard/): GLUE (General Language Understanding Evaluation)
+1. [MMLU (Massive Multitask Language Understanding)](https://github.com/hendrycks/test): Over 15,000 questions across 57 diverse tasks. [Published in 2021]
+![GitHub Repo stars](https://img.shields.io/github/stars/hendrycks/test?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [TruthfulQA](https://huggingface.co/datasets/truthful_qa): Truthfulness. [Published in 2022]
+1. [BigBench](https://github.com/google/BIG-bench): 204 tasks. Predicting future potential [Published in 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/google/BIG-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [GLUE](https://gluebenchmark.com/leaderboard) & [SuperGLUE](https://super.gluebenchmark.com/leaderboard/): GLUE (General Language Understanding Evaluation)
+- [MMLU (Massive Multi-task Language Understanding)](https://arxiv.org/abs/2009.03300): LLM performance across 57 tasks including elementary mathematics, US history, computer science, law, and more. [7 Sep 2020]
+- [HumanEval](https://arxiv.org/abs/2107.03374): Hand-Written Evaluation Set for Code Generation Bechmark. 164 Human written Programming Problems. [ref](https://paperswithcode.com/task/code-generation) / [git](https://github.com/openai/human-eval) [7 Jul 2021]
+![GitHub Repo stars](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [BIG-bench](https://arxiv.org/abs/2206.04615): Consists of 204 evaluations, contributed by over 450 authors, that span a range of topics from science to social reasoning. The bottom-up approach; anyone can submit an evaluation task. [git](https://github.com/google/BIG-bench) [9 Jun 2022]
+![GitHub Repo stars](https://img.shields.io/github/stars/google/BIG-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [HELM](https://arxiv.org/abs/2211.09110): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on. [git](https://github.com/stanford-crfm/helm) [16 Nov 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
-  #### Coding
+#### Coding
 
-  1. [HumanEval](https://github.com/openai/human-eval): Challenges coding skills. [Published in 2021]
- ![GitHub Repo stars](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [CodeXGLUE](https://github.com/microsoft/CodeXGLUE): Programming tasks.
- ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/CodeXGLUE?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
-  1. [MBPP](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
-  1. [SWE-Lancer](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025]
+1. [HumanEval](https://github.com/openai/human-eval): Challenges coding skills. [Published in 2021]
+![GitHub Repo stars](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [CodeXGLUE](https://github.com/microsoft/CodeXGLUE): Programming tasks.
+![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/CodeXGLUE?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
+1. [MBPP](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
+1. [SWE-Lancer](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025]
 
-  #### Chatbot Assistance
+#### Chatbot Assistance
 
-  1. [Chatbot Arena](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations): Human-ranked ELO ranking.
-  1. [MT Bench](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge): Multi-turn open-ended questions
-    - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) [9 Jun 2023]
+1. [Chatbot Arena](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations): Human-ranked ELO ranking.
+1. [MT Bench](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge): Multi-turn open-ended questions
+  - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) [9 Jun 2023]
 
-  #### Reasoning
+#### Reasoning
 
-  1. [HellaSwag](https://github.com/rowanz/hellaswag): Commonsense reasoning. [Published in 2019]
- ![GitHub Repo stars](https://img.shields.io/github/stars/rowanz/hellaswag?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [ARC (AI2 Reasoning Challenge)](https://github.com/fchollet/ARC): Measures general fluid intelligence.
- ![GitHub Repo stars](https://img.shields.io/github/stars/fchollet/ARC?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [DROP](https://huggingface.co/datasets/drop): Evaluates discrete reasoning.
-  1. [LogicQA](https://github.com/lgw863/LogiQA-dataset): Evaluates logical reasoning skills.
- ![GitHub Repo stars](https://img.shields.io/github/stars/lgw863/LogiQA-dataset?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [HellaSwag](https://github.com/rowanz/hellaswag): Commonsense reasoning. [Published in 2019]
+![GitHub Repo stars](https://img.shields.io/github/stars/rowanz/hellaswag?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [ARC (AI2 Reasoning Challenge)](https://github.com/fchollet/ARC): Measures general fluid intelligence.
+![GitHub Repo stars](https://img.shields.io/github/stars/fchollet/ARC?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [DROP](https://huggingface.co/datasets/drop): Evaluates discrete reasoning.
+1. [LogicQA](https://github.com/lgw863/LogiQA-dataset): Evaluates logical reasoning skills.
+![GitHub Repo stars](https://img.shields.io/github/stars/lgw863/LogiQA-dataset?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
-  #### Translation
+#### Translation
 
-  1. [WMT](https://huggingface.co/wmt): Evaluates translation skills.
+1. [WMT](https://huggingface.co/wmt): Evaluates translation skills.
 
-  #### Math
+#### Math
 
-  1. [MATH](https://github.com/hendrycks/math): Tests ability to solve math problems. [Published in 2021]
- ![GitHub Repo stars](https://img.shields.io/github/stars/hendrycks/math?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-  1. [GSM8K](https://github.com/openai/grade-school-math): Arithmetic Reasoning. [Published in 2021]
- ![GitHub Repo stars](https://img.shields.io/github/stars/openai/grade-school-math?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [MATH](https://github.com/hendrycks/math): Tests ability to solve math problems. [Published in 2021]
+![GitHub Repo stars](https://img.shields.io/github/stars/hendrycks/math?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [GSM8K](https://github.com/openai/grade-school-math): Arithmetic Reasoning. [Published in 2021]
+![GitHub Repo stars](https://img.shields.io/github/stars/openai/grade-school-math?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+ #### Other Benchmarks
+
+  - [OpenAI MLE-bench](https://arxiv.org/abs/2410.07095): A benchmark for measuring the performance of AI agents on ML tasks using Kaggle. [git](https://github.com/openai/mle-bench) [9 Oct 2024] > Agent Framework used in MLE-bench, `GPT-4o (AIDE) achieves more medals on average than both MLAB and OpenHands (8.7% vs. 0.8% and 4.4% respectively)` [x-ref](agent.md/#agent-applications-and-libraries)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/openai/mle-bench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+  - [Korean SAT LLM Leaderboard](https://github.com/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard): Benchmarking 10 years of Korean CSAT (College Scholastic Ability Test) exams [Oct 2024]
+  ![GitHub Repo stars](https://img.shields.io/github/stars/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+  - [OpenAI SimpleQA Benchmark](https://openai.com/index/introducing-simpleqa/): SimpleQA, a factuality benchmark for short fact-seeking queries, narrows its scope to simplify factuality measurement. [git](https://github.com/openai/simple-evals) [30 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/simple-evals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+  - [Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering](https://arxiv.org/abs/2411.09213) [14 Nov 2024]
+  - [OpenAI Paper Bench](https://openai.com/index/paperbench/): a benchmark evaluating the ability of AI agents to replicate state-of-the-art AI research. [git](https://github.com/openai/preparedness/tree/main/project/paperbench) [2 Apr 2025]
 
 ### **Evaluation metrics**
 
