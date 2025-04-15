@@ -73,29 +73,37 @@
 - [APIGen](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [ToolShed](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 
-#### **Computer use & Model Context Protocol (MCP)**
+#### **Model Context Protocol (MCP) & Computer use**
 
-- [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu) ![GitHub Repo stars](https://img.shields.io/github/stars/francedot/acu?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use): [23 Oct 2024]
+##### Model Context Protocol (MCP)
+
 - [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) ![GitHub Repo stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [AWS MCP Servers](https://github.com/awslabs/mcp): MCP servers that bring AWS best practices [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
+1. [mcp-use](https://github.com/mcp-use/mcp-use): MCP Client Library to connect any LLM to any MCP server [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp): automatically exposing FastAPI endpoints as Model Context Protocol (MCP) [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [Azure MCP Server](https://github.com/Azure/azure-mcp): connection between AI agents and key Azure services like Azure Storage, Cosmos DB, and more. [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 
+##### Computer use
+
+- [ACU - Awesome Agents for Computer Use](https://github.com/francedot/acu) ![GitHub Repo stars](https://img.shields.io/github/stars/francedot/acu?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Anthropic Claude's computer use](https://www.anthropic.com/news/developing-computer-use): [23 Oct 2024]
+- [Computer Agent Arena Leaderboard](https://arena.xlang.ai/leaderboard) [Apr 2025]
 1. [CogAgent](https://github.com/THUDM/CogAgent): An open-sourced end-to-end VLM-based GUI Agent [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/THUDM/CogAgent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenInterpreter starts to support Computer Use API](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
 1. [Agent.exe](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [x-ref](aoai.md/#agent) > [UFO](https://github.com/microsoft/UFO): Windows Control
 1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [UI-TARS](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [21 Jan 2025]
 1. [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](chab.md/#openai-products) [23 Jan 2025]
 1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/browserbase/open-operator?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-1. [AWS MCP Servers](https://github.com/awslabs/mcp): MCP servers that bring AWS best practices [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 
 #### **Memory Layer**
 
@@ -240,3 +248,4 @@
 1. [OpenManus](https://github.com/mannaandpoem/OpenManus): A Free Open-Source Alternative to Manus AI Agent [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [CodeScientist](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/codescientist?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenDeepSearch](https://github.com/sentient-agi/OpenDeepSearch): deep web search and retrieval, optimized for use with Hugging Face's SmolAgents ecosystem [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/sentient-agi/OpenDeepSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [git](https://github.com/SakanaAI/AI-Scientist-v2) ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)

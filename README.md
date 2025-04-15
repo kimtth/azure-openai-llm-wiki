@@ -31,7 +31,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Agent Design Patterns](section/agent.md/#agent-design-patterns)
   - [Agent Frameworks](section/agent.md/#agent-framework) | [Applications](section/agent.md/#agent-application)
     - [Code Interpreter](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
-    - [Computer use & Model Context Protocol (MCP)](section/agent.md/#computer-use--model-context-protocol-mcp)
+    - [Model Context Protocol (MCP) & Computer use](section/agent.md/#model-context-protocol-mcp--computer-use)
     - [Deep research](section/agent.md/#deep-research)
 - **Section 5** 🏗️: [Semantic Kernel & DSPy](section/sk_dspy.md/#microsoft-semantic-kernel-and-stanford-nlp-dspy)
   - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
