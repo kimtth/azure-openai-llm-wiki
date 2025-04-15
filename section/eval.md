@@ -20,7 +20,6 @@
 - [Can Large Language Models Be an Alternative to Human Evaluations?](https://arxiv.org/abs/2305.01937) [3 May 2023]
 - [Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)](https://eugeneyan.com/writing/llm-evaluators/):💡Key considerations and Use cases when using LLM-evaluators [Aug 2024]
 
-
 ### **LLM Evalution Benchmarks**
 
 #### Language Understanding and QA
@@ -84,6 +83,7 @@
   - [OpenAI SimpleQA Benchmark](https://openai.com/index/introducing-simpleqa/): SimpleQA, a factuality benchmark for short fact-seeking queries, narrows its scope to simplify factuality measurement. [git](https://github.com/openai/simple-evals) [30 Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/simple-evals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   - [Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering](https://arxiv.org/abs/2411.09213) [14 Nov 2024]
   - [OpenAI Paper Bench](https://openai.com/index/paperbench/): a benchmark evaluating the ability of AI agents to replicate state-of-the-art AI research. [git](https://github.com/openai/preparedness/tree/main/project/paperbench) [2 Apr 2025]
+  - [OpenAI BrowseComp](https://openai.com/index/browsecomp/): A benchmark assessing AI agents’ ability to use web browsing tools to complete tasks requiring up-to-date information, reasoning, and navigation skills. Boost from tools + reasoning. Human trainer success ratio = 29.2% × 86.4% ≈ 25.2% [10 Apr 2025]
 
 ### **Evaluation metrics**
 

@@ -50,6 +50,7 @@
 - DeepLearning.AI short course: LangChain for LLM Application Development [ref](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [ref](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 - [LangChain Streamlit agent examples](https://github.com/langchain-ai/streamlit-agent): Implementations of several LangChain agents as Streamlit apps. [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/streamlit-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [LangChain tutorial: A guide to building LLM-powered applications](https://www.elastic.co/blog/langchain-tutorial) [27 Feb 2024]
+- [Building intelligent agents with LangGraph: PhiloAgents simulation engine](https://github.com/neural-maze/philoagents-course) [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/neural-maze/philoagents-course?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ### **LangChain features and related libraries**
 
