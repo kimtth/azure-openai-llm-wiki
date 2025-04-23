@@ -58,16 +58,13 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/exo-explore/exo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Kiln](https://github.com/Kiln-AI/Kiln): Desktop Apps for for fine-tuning LLM models, synthetic data generation, and collaborating on datasets. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/BitNet?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [smolmodels](https://github.com/plexe-ai/smolmodels): Create machine learning models with minimal code by describing what you want them to do in plain words. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/plexe-ai/smolmodels?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Application Development**
 
 1. [mindsdb](https://github.com/mindsdb/mindsdb): The open-source virtual database for building AI from enterprise data. It supports SQL syntax for development and deployment, with over 70 technology and data integrations. [Aug 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Jina-Serve](https://github.com/jina-ai/serve): a framework for building and deploying AI services that communicate via gRPC, HTTP and WebSockets. [Feb 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/serve?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [superduper](https://github.com/superduper-io/superduper): Build end-to-end AI-data workflows and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [superduper](https://github.com/superduper-io/superduper): Build database-integrated AI-agents and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [langflow](https://github.com/langflow-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [MiniChain](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
@@ -108,8 +105,14 @@
 1. [Llama Stack](https://github.com/meta-llama/llama-stack):💡building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray&cacheSeconds=36000) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+#### **LLM Gateway**
+
+1. [Petals](https://github.com/bigscience-workshop/petals): Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading [Jun 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/bigscience-workshop/petals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [LocalAI](https://github.com/mudler/LocalAI): The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mudler/LocalAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [AI Gateway](https://github.com/Portkey-AI/gateway): AI Gateway with integrated guardrails. Route to 200+ LLMs, 50+ AI Guardrails [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray&cacheSeconds=36000) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 
 #### **LLM Memory**
 
@@ -140,12 +143,14 @@
 1. [LibreChat](https://github.com/danny-avila/LibreChat): a free, open source AI chat platform. [8 Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/enricoros/big-agi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [myGPTReader](https://github.com/myreader-io/myGPTReader): Quickly read and understand any web content through conversations [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/myreader-io/myGPTReader?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [ChatHub](https://github.com/chathub-dev/chathub): All-in-one chatbot client [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/chathub-dev/chathub?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Next.js AI Chatbot](https://github.com/vercel/ai-chatbot):💡An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel. [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai-chatbot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [dataline](https://github.com/RamiAwar/dataline): Chat with your data - AI data analysis and visualization [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/RamiAwar/dataline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [pyspark-ai](https://github.com/pyspark-ai/pyspark-ai): English instructions and compile them into PySpark objects like DataFrames. [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/pyspark-ai/pyspark-ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database [May 2023]
+1. [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database. Accurate Text-to-SQL Generation via LLMs using RAG. [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/vanna-ai/vanna?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [localGPT](https://github.com/PromtEngineer/localGPT): Chat with your documents on your local device [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/PromtEngineer/localGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -189,6 +194,7 @@
 - [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
 - [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+- [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 - [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -207,6 +213,8 @@
 - [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
+- [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **UI/UX**
 

@@ -114,6 +114,7 @@
   - [LazyGraphRAG](https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/): Reduces costs to 0.1% of full GraphRAG through efficient use of best-first (vector-based) and breadth-first (global search) retrieval and deferred LLM calls [25 Nov 2024]
 - [How to Build a Graph RAG App](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
 - [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG):💡RAG + Knowledge Graphs + Personalized PageRank. [23 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OSU-NLP-Group/HippoRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Graphiti](https://github.com/getzep/graphiti): [x-ref](app.md/#llm-memory)
 
 ### **The Problem with RAG**
 
@@ -162,7 +163,7 @@
 
 1. [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications. [5 May 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Cognita](https://github.com/truefoundry/cognita): RAG (Retrieval Augmented Generation) Framework for building modular, open-source applications [Jul 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/truefoundry/cognita?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [llmware](https://github.com/llmware-ai/llmware): Building Enterprise RAG Pipelines with Small, Specialized Models. [Oct 2023]
+1. [llmware](https://github.com/llmware-ai/llmware): Building Enterprise RAG Pipelines with Small, Specialized Models [Sep 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/llmware-ai/llmware?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Canopy](https://github.com/pinecone-io/canopy): open-source RAG framework and context engine built on top of the Pinecone vector database. [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/pinecone-io/canopy?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [RAGflow](https://github.com/infiniflow/ragflow):💡Streamlined RAG workflow. Focusing on Deep document understanding [Dec 2023] 
 ![GitHub Repo stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -189,6 +190,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/swirlai/swirl-search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PaperQA2](https://github.com/Future-House/paper-qa): High accuracy RAG for answering questions from scientific documents with citations [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Future-House/paper-qa?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Semantra](https://github.com/freedmand/semantra): Multi-tool for semantic search [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/freedmand/semantra?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Danswer](https://github.com/danswer-ai/danswer): Ask Questions in natural language and get Answers backed by private sources: Slack, GitHub, Confluence, etc. [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/danswer-ai/danswer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PrivateGPT](https://github.com/imartinez/privateGPT): 100% privately, no data leaks. The API is built using FastAPI and follows OpenAI's API scheme. [May 2023]
@@ -207,8 +209,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/developersdigest/llm-answer-engine?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [turboseek](https://github.com/Nutlope/turboseek): An AI search engine inspired by Perplexity [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Nutlope/turboseek?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [R2R](https://github.com/SciPhi-AI/R2R): R2R (RAG to Riches), the Elasticsearch for RAG. [Feb 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [R2R (Reason to Retrieve)](https://github.com/SciPhi-AI/R2R): Agentic Retrieval-Augmented Generation (RAG) with a RESTful API. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG): A Python Toolkit for Efficient RAG Research [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [kotaemon](https://github.com/Cinnamon/kotaemon): Open-source clean & customizable RAG UI for chatting with your documents. [Mar 2024]
@@ -239,8 +240,8 @@
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696): Printed version for "Medium" limits. [doc](../files/vector-dbs.pdf) [2 Oct 2021]
 - [Chroma](https://github.com/chroma-core/chroma): Open-source embedding database [Oct 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/chroma-core/chroma?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Redis extension for vector search, RedisVL](https://github.com/RedisVentures/redisvl): Redis Vector Library (RedisVL) [Nov 2022]
- ![GitHub Repo stars](https://img.shields.io/github/stars/RedisVentures/redisvl?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Redis extension for vector search, RedisVL](https://github.com/redis/redis-vl-python): Redis Vector Library (RedisVL) [Nov 2022]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/redis/redis-vl-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [A SQLite extension for efficient vector search, based on Faiss!](https://github.com/asg017/sqlite-vss) [Jan 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/asg017/sqlite-vss?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
