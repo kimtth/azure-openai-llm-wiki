@@ -206,6 +206,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LazyGraphRAG](https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/): Reduces costs to 0.1% of full GraphRAG through efficient use of best-first (vector-based) and breadth-first (global search) retrieval and deferred LLM calls [25 Nov 2024]
 - [How to Build a Graph RAG App](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
 - [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG):💡RAG + Knowledge Graphs + Personalized PageRank. [23 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OSU-NLP-Group/HippoRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Graphiti](https://github.com/getzep/graphiti): [x-ref](#llm-memory)
 
 ### **The Problem with RAG**
 
@@ -254,7 +255,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 1. [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications. [5 May 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Cognita](https://github.com/truefoundry/cognita): RAG (Retrieval Augmented Generation) Framework for building modular, open-source applications [Jul 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/truefoundry/cognita?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [llmware](https://github.com/llmware-ai/llmware): Building Enterprise RAG Pipelines with Small, Specialized Models. [Oct 2023]
+1. [llmware](https://github.com/llmware-ai/llmware): Building Enterprise RAG Pipelines with Small, Specialized Models [Sep 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/llmware-ai/llmware?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Canopy](https://github.com/pinecone-io/canopy): open-source RAG framework and context engine built on top of the Pinecone vector database. [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/pinecone-io/canopy?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [RAGflow](https://github.com/infiniflow/ragflow):💡Streamlined RAG workflow. Focusing on Deep document understanding [Dec 2023] 
 ![GitHub Repo stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -281,6 +282,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/swirlai/swirl-search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PaperQA2](https://github.com/Future-House/paper-qa): High accuracy RAG for answering questions from scientific documents with citations [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Future-House/paper-qa?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Semantra](https://github.com/freedmand/semantra): Multi-tool for semantic search [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/freedmand/semantra?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Danswer](https://github.com/danswer-ai/danswer): Ask Questions in natural language and get Answers backed by private sources: Slack, GitHub, Confluence, etc. [Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/danswer-ai/danswer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PrivateGPT](https://github.com/imartinez/privateGPT): 100% privately, no data leaks. The API is built using FastAPI and follows OpenAI's API scheme. [May 2023]
@@ -299,8 +301,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/developersdigest/llm-answer-engine?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [turboseek](https://github.com/Nutlope/turboseek): An AI search engine inspired by Perplexity [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Nutlope/turboseek?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [R2R](https://github.com/SciPhi-AI/R2R): R2R (RAG to Riches), the Elasticsearch for RAG. [Feb 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [R2R (Reason to Retrieve)](https://github.com/SciPhi-AI/R2R): Agentic Retrieval-Augmented Generation (RAG) with a RESTful API. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG): A Python Toolkit for Efficient RAG Research [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [kotaemon](https://github.com/Cinnamon/kotaemon): Open-source clean & customizable RAG UI for chatting with your documents. [Mar 2024]
@@ -331,8 +332,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Not All Vector Databases Are Made Equal](https://towardsdatascience.com/milvus-pinecone-vespa-weaviate-vald-gsi-what-unites-these-buzz-words-and-what-makes-each-9c65a3bd0696): Printed version for "Medium" limits. [doc](./files/vector-dbs.pdf) [2 Oct 2021]
 - [Chroma](https://github.com/chroma-core/chroma): Open-source embedding database [Oct 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/chroma-core/chroma?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Redis extension for vector search, RedisVL](https://github.com/RedisVentures/redisvl): Redis Vector Library (RedisVL) [Nov 2022]
- ![GitHub Repo stars](https://img.shields.io/github/stars/RedisVentures/redisvl?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Redis extension for vector search, RedisVL](https://github.com/redis/redis-vl-python): Redis Vector Library (RedisVL) [Nov 2022]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/redis/redis-vl-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [A SQLite extension for efficient vector search, based on Faiss!](https://github.com/asg017/sqlite-vss) [Jan 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/asg017/sqlite-vss?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [lancedb](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -394,6 +395,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/kernel-memory?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Azure ML Prompt Flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow) (Jun 2023): A visual designer for prompt crafting using Jinja as a prompt template language. / [ref](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/harness-the-power-of-large-language-models-with-azure-machine/ba-p/3828459) / [git](https://github.com/microsoft/promptflow)
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/promptflow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Artificial Intelligence Controller Interface (AICI)](https://github.com/microsoft/aici): a framework that enhances real-time control of Large Language Model outputs using secure, sandboxed controllers written in various languages like Rust and Python. [Sep 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/aici?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 - A Memory in Semantic Kernel vs Kernel Memory (formerly Semantic Memory) is designed to handle large datasets and extended conversations, with the memory pipeline deployed as a separate service. [ref](https://github.com/microsoft/chat-copilot/tree/main/memorypipeline)
 
@@ -450,6 +452,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [FLAML](https://github.com/microsoft/FLAML) (Dec 2020): A lightweight Python library for efficient automation of machine learning and AI operations, offering interfaces for AutoGen, AutoML, and hyperparameter tuning.
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/FLAML?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Foundation Models (aka large-scale pre-trained models)](https://github.com/microsoft/unilm): Foundation Models & Foundation Architectures [Mar 2020]
+1. [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/BitNet?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### Risk Identification & LLMOPs
 
@@ -480,6 +484,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [An AI companion for everyone](https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/): Copilot’s next phase (Copilot Voice, Copilot Daily, Copilot Vision, CoT, and others.) [1 Oct 2024]
 - [Copilot Vision](https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/12/05/copilot-vision-now-in-preview-a-new-way-to-browse/): Available only on Microsoft Edge: See the page, read along, and solve problems together. [05 Dec 2024]
 - [Microsoft 365 Copilot Chat](https://aka.ms/copilotchat): Chat experience (Free tier) + Pay-as-you-go agents [15 Jan 2025]
+- [Microsoft 365 Copilot Wave 2 Spring](https://www.microsoft.com/en-us/microsoft-365/blog/2025/04/23/microsoft-365-copilot-built-for-the-era-of-human-agent-collaboration/): Researcher and Analyst agent, Copilot Notebooks, Copilot Search, Copilot Control System, Memory and personalization, Create, Skills agent [23 Apr 2025]
 - **Azure**
   - [Microsoft Copilot for Azure](https://learn.microsoft.com/en-us/azure/copilot) / [blog](https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/simplify-it-management-with-microsoft-copilot-for-azure-save/ba-p/3981106) [Nov 2023]
   - [Security Copilot](https://learn.microsoft.com/en-us/security-copilot/microsoft-security-copilot) / [blog](https://blogs.microsoft.com/blog/2023/03/28/introducing-microsoft-security-copilot-empowering-defenders-at-the-speed-of-ai/) [March 2023]
@@ -545,9 +550,9 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   1. Pure Vector Search
   1. Hybrid Search (Text search + Vector search)
   1. Semantic Hybrid Search (Text search + Semantic search + Vector search)
-- A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023] <br/>
+- A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [ref](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023]  
   <img src="./files/acs-hybrid.png" alt="acs" width="300"/>
-- Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [ref](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
+- Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [ref](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)  
   <img src="https://learn.microsoft.com/en-us/azure/search/media/scoring-profiles/scoring-over-ranked-results.png" alt="rrf" width="300"/>
 - [Azure AI Search Python Playground](https://github.com/farzad528/azure-ai-search-python-playground):  a collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search. [Feb 2024]
 - [RAG-Knowledge](https://github.com/microsoft/RAG-Knowledge): Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization [Jun 2024]
@@ -816,16 +821,13 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/exo-explore/exo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Kiln](https://github.com/Kiln-AI/Kiln): Desktop Apps for for fine-tuning LLM models, synthetic data generation, and collaborating on datasets. [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [BitNet](https://github.com/microsoft/BitNet): Official inference framework for 1-bit LLMs [Aug 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/BitNet?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Meta Lingua](https://github.com/facebookresearch/lingua): a minimal and fast LLM training and inference library designed for research. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/lingua?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [smolmodels](https://github.com/plexe-ai/smolmodels): Create machine learning models with minimal code by describing what you want them to do in plain words. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/plexe-ai/smolmodels?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Application Development**
 
 1. [mindsdb](https://github.com/mindsdb/mindsdb): The open-source virtual database for building AI from enterprise data. It supports SQL syntax for development and deployment, with over 70 technology and data integrations. [Aug 2018] ![GitHub Repo stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Jina-Serve](https://github.com/jina-ai/serve): a framework for building and deploying AI services that communicate via gRPC, HTTP and WebSockets. [Feb 2020] ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/serve?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [superduper](https://github.com/superduper-io/superduper): Build end-to-end AI-data workflows and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [superduper](https://github.com/superduper-io/superduper): Build database-integrated AI-agents and applications with your favourite tools. [Aug 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/superduper-io/superduper?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [langflow](https://github.com/langflow-ai/langflow): LangFlow is a UI for LangChain, designed with react-flow. [Feb 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [MiniChain](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
@@ -866,8 +868,14 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Llama Stack](https://github.com/meta-llama/llama-stack):💡building blocks for Large Language Model (LLM) development [Jun 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray&cacheSeconds=36000) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+
+#### **LLM Gateway**
+
+1. [Petals](https://github.com/bigscience-workshop/petals): Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading [Jun 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/bigscience-workshop/petals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [LocalAI](https://github.com/mudler/LocalAI): The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mudler/LocalAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [AI Gateway](https://github.com/Portkey-AI/gateway): AI Gateway with integrated guardrails. Route to 200+ LLMs, 50+ AI Guardrails [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray&cacheSeconds=36000) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 
 #### **LLM Memory**
 
@@ -898,12 +906,14 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [LibreChat](https://github.com/danny-avila/LibreChat): a free, open source AI chat platform. [8 Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/danny-avila/LibreChat?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app [Mar 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/enricoros/big-agi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [myGPTReader](https://github.com/myreader-io/myGPTReader): Quickly read and understand any web content through conversations [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/myreader-io/myGPTReader?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [ChatHub](https://github.com/chathub-dev/chathub): All-in-one chatbot client [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/chathub-dev/chathub?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Next.js AI Chatbot](https://github.com/vercel/ai-chatbot):💡An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel. [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai-chatbot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [dataline](https://github.com/RamiAwar/dataline): Chat with your data - AI data analysis and visualization [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/RamiAwar/dataline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [pyspark-ai](https://github.com/pyspark-ai/pyspark-ai): English instructions and compile them into PySpark objects like DataFrames. [Apr 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/pyspark-ai/pyspark-ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database [May 2023]
+1. [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database. Accurate Text-to-SQL Generation via LLMs using RAG. [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/vanna-ai/vanna?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [localGPT](https://github.com/PromtEngineer/localGPT): Chat with your documents on your local device [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/PromtEngineer/localGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -947,6 +957,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
 - [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+- [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 - [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -965,6 +976,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
+- [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **UI/UX**
 
@@ -1154,10 +1167,14 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Automated Design of Agentic Systems](https://arxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
 - [Agent-as-a-Judge](https://arxiv.org/abs/2410.10934): Evaluate Agents with Agents. DevAI, a new benchmark of 55 realistic automated AI development tasks. `Agent-as-a-Judge > LLM-as-a-Judge > Human-as-a-Judge` [14 Oct 2024]
+- [10 Lessons to Get Started Building AI Agents](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Agents Are Not Enough](https://arxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents): 💡Anthrophic. [19 Dec 2024]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
+- [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
+- [A Practical Guide to Building AI Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 
 #### **Tool use: LLM to Master APIs**
 
@@ -1264,6 +1281,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
     ![GitHub Repo stars](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenAI Agents SDK & Response API](https://github.com/openai/openai-agents-python):🏆Responses API (Chat Completions + Assistants API), Built-in tools (web search, file search, computer use), Agents SDK for multi-agent workflows, agent workflow observability tools [11 Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Google ADK](https://github.com/google/adk-python): Agent Development Kit (ADK) [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/google/adk-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [VoltAgent](https://github.com/VoltAgent/voltagent): Open Source TypeScript AI Agent Framework [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/VoltAgent/voltagent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **Agent Application**
 
@@ -1273,6 +1291,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [CAMEL](https://github.com/lightaime/camel): CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lightaime/camel?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [babyagi](https://github.com/yoheinakajima/babyagi): Simplest implementation - Coworking of 4 agents [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/yoheinakajima/babyagi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [SuperAGI](https://github.com/TransformerOptimus/superagi): GUI for agent settings [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/TransformerOptimus/superagi?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [ai-town](https://github.com/a16z-infra/ai-town): a virtual town where AI characters live, chat and socialize. [Jul 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/a16z-infra/ai-town?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AgentGPT](https://github.com/reworkd/AgentGPT): Assemble, configure, and deploy autonomous AI agents in your browser [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/reworkd/AgentGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot): The first real AI developer. Dev tool that writes scalable apps from scratch while the developer oversees the implementation [Jul 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Pythagora-io/gpt-pilot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenDAN : Your Personal AIOS](https://github.com/fiatrete/OpenDAN-Personal-AI-OS): OpenDAN, an open-source Personal AI OS consolidating various AI modules in one place [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/fiatrete/OpenDAN-Personal-AI-OS?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -1297,6 +1316,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [TEN Agent](https://github.com/TEN-framework/TEN-Agent): The world’s first real-time multimodal agent integrated with the OpenAI Realtime API. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Agent Zero](https://github.com/frdel/agent-zero): An open-source framework for autonomous AI agents with task automation and code generation. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/frdel/agent-zero?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Agentless](https://github.com/OpenAutoCoder/Agentless): an agentless approach to automatically solve software development problems. AGENTLESS, consisting of three phases: localization, repair, and patch validation (self-reflect). [1 Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenAutoCoder/Agentless?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Potpie](https://github.com/potpie-ai/potpie): Prompt-To-Agent : Create custom engineering agents for your codebase [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/potpie-ai/potpie?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Suna](https://github.com/kortix-ai/suna): a fully open source AI assistant that helps you accomplish real-world tasks [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kortix-ai/suna?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [browser-use](https://github.com/browser-use/browser-use): Make websites accessible for AI agents. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [nanobrowser](https://github.com/nanobrowser/nanobrowser): Open-source Chrome extension for AI-powered web automation. Alternative to OpenAI Operator. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanobrowser/nanobrowser?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -2313,6 +2334,7 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 - [Shaping AI's Impact on Billions of Lives](https://arxiv.org/abs/2412.02730): a framework for assessing AI's potential effects and responsibilities, 18 milestones and 5 guiding principles for responsible AI [3 Dec 2024]
 - [Investigating Affective Use and Emotional Well-being on ChatGPT](https://www.media.mit.edu/publications/investigating-affective-use-and-emotional-well-being-on-chatgpt/): The MIT study found that higher ChatGPT usage correlated with increased loneliness, dependence, and lower socialization. [21 Mar 2025]
 - [The Impact of Generative AI on Critical Thinking](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers): A survey of 319 knowledge workers shows that higher confidence in Generative AI (GenAI) tools can reduce critical thinking. [Apr 2025]
+- [AI 2027](https://ai-2027.com/summary): a speculative scenario, "AI 2027," created by the AI Futures Project. It predicts the rapid evolution of AI, culminating in the emergence of artificial superintelligence (ASI) by 2027. [3 Apr 2025]
 
 ### **OpenAI's Roadmap and Products**
 
@@ -2327,23 +2349,6 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 - Model Spec: Desired behavior for the models in the OpenAI API and ChatGPT [ref](https://cdn.openai.com/spec/model-spec-2024-05-08.html) [8 May 2024] [ref](https://twitter.com/yi_ding/status/1788281765637038294): takeaway
 - [AMA (ask me anything) with OpenAI on Reddit](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/) [1 Nov 2024]
 - [o3/o4-mini/GPT-5](https://x.com/sama/status/1908167621624856998): `we are going to release o3 and o4-mini after all, probably in a couple of weeks, and then do GPT-5 in a few months.` [4 Apr 2025]
-
-#### **OpenAI o series**
-
-- [A new series of reasoning models](https://openai.com/index/introducing-openai-o1-preview/): The complex reasoning-specialized model, OpenAI o1 series, excels in math, coding, and science, outperforming GPT-4o on key benchmarks. [12 Sep 2024] / [ref](https://github.com/hijkzzz/Awesome-LLM-Strawberry): Awesome LLM Strawberry (OpenAI o1)
- ![GitHub Repo stars](https://img.shields.io/github/stars/hijkzzz/Awesome-LLM-Strawberry?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [A Comparative Study on Reasoning Patterns of OpenAI's o1 Model](https://arxiv.org/abs/2410.13639): 6 types of o1 reasoning patterns (i.e., Systematic Analysis (SA), Method
-Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identification (CI), and Emphasizing Constraints (EC)). `the most commonly used reasoning patterns in o1 are DC and SR` [17 Oct 2024]
-- [OpenAI o1 system card](https://openai.com/index/openai-o1-system-card/) [5 Dec 2024]
-- [o3 preview](https://openai.com/12-days/): 12 Days of OpenAI [20 Dec 2024]
-
-#### **GPT-4 details leaked** `unverified`
-
-- GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
-- [The Dawn of LMMs](https://arxiv.org/abs/2309.17421): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17421)]: Preliminary Explorations with GPT-4V(ision) [29 Sep 2023]
-- GPT-4 details leaked
-  - GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
-  - The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [ref](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked) [Jul 2023]
 
 #### **OpenAI Products**
 
@@ -2386,6 +2391,25 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [GPT-4.5](https://openai.com/index/introducing-gpt-4-5/): greater “EQ”. better unsupervised learning (world model accuracy and intuition). scalable training from smaller models. [ref](https://cdn.openai.com/gpt-4-5-system-card.pdf)  [27 Feb 2025]
 - [GPT-4o: 4o image generation](https://openai.com/index/gpt-4o-image-generation-system-card-addendum/): create photorealistic output, replacing DALL·E 3 [25 Mar 2025]
 - [GPT-4.1 family of models](https://openai.com/index/gpt-4-1/): GPT‑4.1, GPT‑4.1 mini, and GPT‑4.1 nano can process up to 1 million tokens of context. enhanced coding abilities, improved instruction following. [14 Apr 2025]
+- [gpt-image-1](https://openai.com/index/image-generation-api/): Image generation model API with designing and editing [23 Apr 2025]
+
+##### **OpenAI o series**
+
+- [A new series of reasoning models](https://openai.com/index/introducing-openai-o1-preview/): The complex reasoning-specialized model, OpenAI o1 series, excels in math, coding, and science, outperforming GPT-4o on key benchmarks. [12 Sep 2024] / [ref](https://github.com/hijkzzz/Awesome-LLM-Strawberry): Awesome LLM Strawberry (OpenAI o1)
+ ![GitHub Repo stars](https://img.shields.io/github/stars/hijkzzz/Awesome-LLM-Strawberry?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [A Comparative Study on Reasoning Patterns of OpenAI's o1 Model](https://arxiv.org/abs/2410.13639): 6 types of o1 reasoning patterns (i.e., Systematic Analysis (SA), Method
+Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identification (CI), and Emphasizing Constraints (EC)). `the most commonly used reasoning patterns in o1 are DC and SR` [17 Oct 2024]
+- [OpenAI o1 system card](https://openai.com/index/openai-o1-system-card/) [5 Dec 2024]
+- [o3 preview](https://openai.com/12-days/): 12 Days of OpenAI [20 Dec 2024]
+- [o3/o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) [16 Apr 2025]
+
+##### **GPT-4 details leaked** `unverified`
+
+- GPT-4V(ision) system card: [ref](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [ref](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
+- [The Dawn of LMMs](https://arxiv.org/abs/2309.17421): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17421)]: Preliminary Explorations with GPT-4V(ision) [29 Sep 2023]
+- GPT-4 details leaked
+  - GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
+  - The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [ref](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked) [Jul 2023]
 
 ### **Context constraints**
 
@@ -3020,6 +3044,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
 - [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
 - [Kanana](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
+- [HyperCLOVA X SEED](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
 
 ### **Learning and Supplementary Materials**
 

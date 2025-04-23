@@ -222,6 +222,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
 - [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
 - [Kanana](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
+- [HyperCLOVA X SEED](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
 
 ### **Learning and Supplementary Materials**
 
