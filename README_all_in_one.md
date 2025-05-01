@@ -22,7 +22,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [Azure Reference Architecture](#azure-reference-architectures)
 - **Section 3** 🌐: [LLM Applications](#applications-and-frameworks)
   - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development)
-    - [Code editor](#code-editor)
+    - [Code editor](#code-editor--agent)
     - [Memory](#llm-memory)
   - [Caching, UX, Proposals & Other topics](#caching)
   - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
@@ -931,12 +931,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/abi/screenshot-to-code?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Geppeto](https://github.com/Deeptechia/geppetto): Advanced Slack bot using multiple AI models [Jan 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Deeptechia/geppetto?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
-1. [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/iyaja/llama-fs?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Cellm](https://github.com/getcellm/cellm): Use LLMs in Excel formulas [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/getcellm/cellm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Nyro](https://github.com/trynyro/nyro-app): AI-Powered Desktop Productivity Tool [Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/trynyro/nyro-app?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -944,15 +940,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 ![GitHub Repo stars](https://img.shields.io/github/stars/feder-cr/Auto_Jobs_Applier_AIHawk?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PDF2Audio](https://github.com/lamm-mit/PDF2Audio): an open-source alternative to NotebookLM for podcast creation [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/lamm-mit/PDF2Audio?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Podcastfy.ai](https://github.com/souzatharsis/podcastfy): An Open Source API alternative to NotebookLM's podcast feature. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/souzatharsis/podcastfy?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Meetily](https://github.com/Zackriya-Solutions/meeting-minutes): Open source Ai Assistant for taking meeting notes [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Zackriya-Solutions/meeting-minutes?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
-#### **Code editor**
+#### **Code editor / agent**
 
 - [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
 - [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -961,6 +952,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
+- [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Firebase Studio](https://firebase.google.com/studio): Google. a cloud-based, agentic development environment. [14 May 2024]
 - [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -969,15 +964,21 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
 - [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 - [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
+- [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
 - [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
 - [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [DeepWiki](https://deepwiki.com/): Devin AI. a tool that converts any public GitHub repository into an interactive, wiki-style documentation. [25 Apr 2025]
 
 #### **UI/UX**
 
@@ -1175,19 +1176,20 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [A Practical Guide to Building AI Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
+- [Taxonomy of failure modes in AI agents ](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 
 #### **Tool use: LLM to Master APIs**
 
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard_live.html) V2 [Aug 2024]
-- [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.15334)]: Gorilla: Large Language Model Connected with Massive APIs [git](https://github.com/ShishirPatil/gorilla) [24 May 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models](https://arxiv.org/abs/2304.09842): Different tasks require different tools, and different models show different tool preferences—e.g., ChatGPT favors image captioning, while GPT-4 leans toward knowledge retrieval. [Tool transition](https://chameleon-llm.github.io/) [19 Apr 2023]
+- [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.15334)]: Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [git](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat-square&label=%20&color=gray&cacheSeconds=36000)  
 
   1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
   1. Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.
 
-  > Another user asked how Gorilla compared to LangChain; Patil replied: LangChain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into LangChain! [cite](https://www.infoq.com/news/2023/07/microsoft-gorilla/) [04 Jul 2023]
-
-- [Meta: Toolformer](https://arxiv.org/abs/2302.04761): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.04761)]: Language Models That Can Use Tools, by MetaAI [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
+  > Another user asked how Gorilla compared to LangChain; Patil replied: LangChain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into LangChain! [cite](https://www.infoq.com/news/2023/07/microsoft-gorilla/) [04 Jul 2023]  
+- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291): The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
+- [Toolformer](https://arxiv.org/abs/2302.04761): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.04761)]: Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/lucidrains/toolformer-pytorch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [ToolLLM](https://arxiv.org/abs/2307.16789): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16789)]: : Facilitating Large Language Models to Master 16000+ Real-world APIs [git](https://github.com/OpenBMB/ToolBench) [31 Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/ToolBench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -1201,6 +1203,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [git](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) ![GitHub Repo stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [ACI.dev ](https://github.com/aipotheosis-labs/aci): Unified Model-Context-Protocol (MCP) server (Built-in OAuth flows) [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/aipotheosis-labs/aci?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -1341,6 +1344,10 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
  ![GitHub Repo stars](https://img.shields.io/github/stars/KillianLucas/open-interpreter?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Azure Container Apps Dynamic Sessions](https://aka.ms/AAtnnj8): Secure environment for running AI-generated code in Azure.
 
+#### **Coding agent**
+
+- [x-ref](#code-editor--agent): Code editor / agent
+
 #### **Domain-specific**
 
 1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat](https://arxiv.org/abs/2311.15826) | [GEOBench-VLM](https://arxiv.org/abs/2411.19325) | [RS5M](https://github.com/om-ai-lab/RS5M) | [VHM](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
@@ -1351,6 +1358,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [Director](https://github.com/video-db/Director): Think of Director as ChatGPT for videos. AI video agents framework for video interactions and workflows. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/video-db/Director?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
 1. [landing.ai: Vision Agent](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [UXAgent](https://arxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
 
 #### **Deep research**
 
@@ -2281,6 +2289,9 @@ representations. `Think step by step, but only keep a minimum draft for each thi
   - [Huggingface Mixture of Experts Explained](https://huggingface.co/blog/moe): Mixture of Experts, or MoEs for short [Dec 2023]
   - [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts) [08 Oct 2024]
   - [makeMoE](https://github.com/AviSoori1x/makeMoE): From scratch implementation of a sparse mixture of experts ![GitHub Repo stars](https://img.shields.io/github/stars/AviSoori1x/makeMoE?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [Jan 2024]
+  - [The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538): Introduced sparse expert gating to scale models efficiently without increasing compute cost. [23 Jan 2017]
+  - [Switch Transformers](https://arxiv.org/abs/2101.03961): Used a single expert per token to simplify routing, enabling fast, scalable transformer models. `expert capacity = (total tokens / num experts) * capacity factor` [11 Jan 2021]
+  - [ST-MoE (Stable Transformer MoE)](https://arxiv.org/abs/2202.08906): By stabilizing the training process, ST-MoE enables more reliable and scalable deep MoE architectures. `z-loss aims to regularize the logits z before passing into the softmax` [17 Feb 2022] 
 - [Simplifying Transformer Blocks](https://arxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
 - [Model merging](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54): : A technique that combines two or more large language models (LLMs) into a single model, using methods such as SLERP, TIES, DARE, and passthrough. [Jan 2024] [git](https://github.com/cg123/mergekit): mergekit
  ![GitHub Repo stars](https://img.shields.io/github/stars/cg123/mergekit?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -2420,6 +2431,8 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
     1. Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
     2. Sinusoidal embeddings add a `cos` or `sin` term, while rotary embeddings use a multiplicative factor.
     3. Rotary embeddings are applied to positional encoding to K and V, not to the input embeddings.
+    - [ALiBi](https://arxiv.org/abs/2203.16634): Attention with Linear Biases. ALiBi applies a bias directly to the attention scores. [27 Aug 2021]
+    - [NoPE: Transformer Language Models without Positional Encodings Still Learn Positional Information](https://arxiv.org/abs/2203.16634): No postion embedding. [30 Mar 2022]
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples](https://arxiv.org/abs/2212.06713): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.06713)] [13 Dec 2022]
   1. Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
   2. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. [cite](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
@@ -2625,14 +2638,15 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [anthropic/cookbook](https://github.com/anthropics/anthropic-cookbook)
 - Microsoft
   1. phi-series: cost-effective small language models (SLMs) [ref](https://azure.microsoft.com/en-us/products/phi) [git](https://aka.ms/Phicookbook): Cookbook
-  1. [Phi-4-multimodal / mini](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf) 5.6B. speech, vision, and text processing into a single, unified architecture. [26 Feb 2025]
-  1. [Phi-4](https://arxiv.org/abs/2412.08905): Specializing in Complex Reasoning [ref](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) [12 Dec 2024]
-  1. phi-3.5-MoE-instruct: [ref](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct) [Aug 2024]
-  1. [Phi-3](https://arxiv.org/abs/2404.14219): Phi-3-mini, with 3.8 billion parameters, supports 4K and 128K context, instruction tuning, and hardware optimization. [22 Apr 2024] [ref](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/)
-  1. phi-3-vision (multimodal), phi-3-small, phi-3 (7b), phi-sillica (Copilot+PC designed for NPUs)
-  1. phi-2: open source, and 50% better at mathematical reasoning. [git](https://huggingface.co/microsoft/phi-2) [Dec 2023]
-  1. [Phi-1.5](https://arxiv.org/abs/2309.05463): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.05463)]: Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
   1. [Phi-1](https://arxiv.org/abs/2306.11644): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11644)]: Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [ref](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
+  1. [Phi-1.5](https://arxiv.org/abs/2309.05463): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.05463)]: Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
+  1. phi-2: open source, and 50% better at mathematical reasoning. [git](https://huggingface.co/microsoft/phi-2) [Dec 2023]
+  1. phi-3-vision (multimodal), phi-3-small, phi-3 (7b), phi-sillica (Copilot+PC designed for NPUs)
+  1. [Phi-3](https://arxiv.org/abs/2404.14219): Phi-3-mini, with 3.8 billion parameters, supports 4K and 128K context, instruction tuning, and hardware optimization. [22 Apr 2024] [ref](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/)
+  1. phi-3.5-MoE-instruct: [ref](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct) [Aug 2024]
+  1. [Phi-4](https://arxiv.org/abs/2412.08905): Specializing in Complex Reasoning [ref](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) [12 Dec 2024]
+  1. [Phi-4-multimodal / mini](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf) 5.6B. speech, vision, and text processing into a single, unified architecture. [26 Feb 2025]
+  1. [Phi-4-reasoning](https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/): Phi-4-reasoning, Phi-4-reasoning-plus, Phi-4-mini-reasoning [30 Apr 2025]
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - Amazon
