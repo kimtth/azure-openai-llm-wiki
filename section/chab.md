@@ -204,3 +204,4 @@ generated webpages are considered better than the original reference webpages` [
 - [S*: Test Time Scaling for Code Generation](https://arxiv.org/abs/2502.14382): Parallel scaling (generating multiple solutions) + sequential scaling (iterative debugging). [20 Feb 2025]
 - Chain of Draft: Thinking Faster by Writing Less: [x-ref](prompt.md/#prompt-engineering)
 - [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
+- [Tina: Tiny Reasoning Models via LoRA](https://arxiv.org/abs/2504.15777): Low-rank adaptation (LoRA) with Reinforcement learning (RL) on a 1.5B parameter base model  [22 Apr 2025]
