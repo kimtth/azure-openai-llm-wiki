@@ -135,7 +135,8 @@ representations. `Think step by step, but only keep a minimum draft for each thi
  ![GitHub Repo stars](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Anthropic courses > Prompt engineering interactive tutorial](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [5 Principles for Writing Effective Prompts](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025 ]
+- [5 Principles for Writing Effective Prompts](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025]
+- [ShumerPrompt](https://shumerprompt.com/): Discover and share powerful prompts for AI models
 
 ### **Visual Prompting & Visual Grounding**
 

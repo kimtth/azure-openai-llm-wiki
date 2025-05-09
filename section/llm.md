@@ -139,6 +139,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
  ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [QwQ-32B](https://qwen-ai.com/): Reasoning model [5 Mar 2025]
   1. [Qwen2.5-Omni](https://arxiv.org/abs/2503.20215): a single end-to-end multimodal model. text, audio, image, and video, and generate both text and speech in real time. Thinker(transformer decoder)-Talker(autoregressive decoder) architecture. [git](https://github.com/QwenLM/Qwen2.5-Omni) ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [26 Mar 2025]
+  1. [Qwen 3](https://qwenlm.github.io/blog/qwen3/): Hybrid Thinking Modes, Agentic Capabilities, Support 119 languages [29 Apr 2025]
 - Baidu
   1. [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
 - Cohere
@@ -151,11 +152,15 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref](https://arxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
   1. [Janus](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
   1. [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
+  1. [DeepSeek-Prover-V2](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
   1. A list of models: [git](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![GitHub Repo stars](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
+- Xiaomi
+  - Founded in 2010, Xiaomi is a Chinese company known for its innovative consumer electronics and smart home products.
+  - [Mimo](https://github.com/XiaomiMiMo/MiMo): 7B. advanced reasoning for code and math [30 Apr 2025]
 - Qualcomm
   1. [Qualcomm’s on-device AI models](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - xAI
@@ -276,7 +281,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [facebookresearch/segment-anything(SAM)](https://arxiv.org/abs/2304.02643): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.02643)]: The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [facebookresearch/SeamlessM4T](https://arxiv.org/abs/2308.11596): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11596)]: SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [ref](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/) [22 Aug 2023]
-  1. [Chameleon](https://arxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. [16 May 2024]
+  1. [Chameleon](https://arxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
   1. [Models and libraries](https://ai.meta.com/resources/models-and-libraries/)
 - Microsoft
   1. Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1](https://arxiv.org/abs/2302.14045): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.14045)] [27 Feb 2023]
