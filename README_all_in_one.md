@@ -147,6 +147,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [CoRAG](https://arxiv.org/abs/2501.14342): Chain-of-Retrieval Augmented Generation. RAG: single search -> CoRAG: Iterative search and reasoning [24 Jan 2025]
 - [RARE: Retrieval-Augmented Reasoning Modeling ](https://arxiv.org/abs/2503.23513): LLM Training from static knowledge storage (memorization) to reasoning-focused. Combining domain knowledge and thinking (Knowledge Remembering & Contextualized Reasoning). 20% increase in accuracy on tasks like PubMedQA and CoVERT. [30 Mar 2025]
 - [UniversalRAG](https://arxiv.org/abs/2504.20734): A framework for modality-aware routing across image, text, and video. It features granularity-aware routing (e.g., paragraphs, documents for text, video clips) and supports flexible routing methods (zero-shot vs trained). [29 Apr 2025]
+- [Discuss-RAG](https://arxiv.org/abs/2504.21252): Agent-Led Discussions for Better RAG in Medical QA [30 Apr 2025]
 
 ### **Advanced RAG**
 
@@ -208,7 +209,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
   - [LazyGraphRAG](https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/): Reduces costs to 0.1% of full GraphRAG through efficient use of best-first (vector-based) and breadth-first (global search) retrieval and deferred LLM calls [25 Nov 2024]
 - [How to Build a Graph RAG App](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
 - [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG):💡RAG + Knowledge Graphs + Personalized PageRank. [23 May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OSU-NLP-Group/HippoRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Graphiti](https://github.com/getzep/graphiti): [x-ref](#llm-memory)
+- [Graphiti](https://github.com/getzep/graphiti): [x-ref](#llm-memory)
 
 ### **The Problem with RAG**
 
@@ -239,7 +240,6 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Advanced RAG on Hugging Face documentation using LangChain](https://huggingface.co/learn/cookbook/advanced_rag)
 - [LLM Twin Course: Building Your Production-Ready AI Replica](https://github.com/decodingml/llm-twin-course): Learn to Build a Production-Ready LLM & RAG System with LLMOps [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/decodingml/llm-twin-course?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [RAG-driven Generative AI](https://github.com/Denis2054/RAG-Driven-Generative-AI): Retrieval Augmented Generation (RAG) code for Generative AI with LlamaIndex, Deep Lake, and Pinecone [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Denis2054/RAG-Driven-Generative-AI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Learn RAG with LangChain](https://www.sakunaharinda.xyz/ragatouille-book): Online book [May 2024]
 - RAG context relevancy metric: Ragas, TruLens, DeepEval [ref](https://towardsdatascience.com/the-challenges-of-retrieving-and-evaluating-relevant-context-for-rag-e362f6eaed34) [Jun 2024]
   - `Context Relevancy (in Ragas) = S / Total number of sentences in retrieved context`
   - `Contextual Relevancy (in DeepEval) = Number of Relevant Statements / Total Number of Statements`
@@ -1211,6 +1211,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [mcp.so](https://mcp.so/): Find Awesome MCP Servers and Clients
 - [Docker MCP Toolkit and MCP Catalog](https://www.docker.com/products/mcp-catalog-and-toolkit): `docker mcp` [5 May 2025]
 - [A Survey of AI Agent Protocols](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
+- [Postman launches full support for Model Context Protocol (MCP)](https://blog.postman.com/postman-launches-full-support-for-model-context-protocol-mcp-build-better-ai-agents-faster/) [1 May 2025]
 1. [ACI.dev ](https://github.com/aipotheosis-labs/aci): Unified Model-Context-Protocol (MCP) server (Built-in OAuth flows) [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/aipotheosis-labs/aci?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
@@ -1393,6 +1394,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 1. [OpenDeepSearch](https://github.com/sentient-agi/OpenDeepSearch): deep web search and retrieval, optimized for use with Hugging Face's SmolAgents ecosystem [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/sentient-agi/OpenDeepSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [git](https://github.com/SakanaAI/AI-Scientist-v2) ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning](https://arxiv.org/abs/2504.17192): a multi-agent LLM framework that transforms machine learning papers into functional code repositories. [24 Apr 2025] [git](https://github.com/going-doer/Paper2Code) ![GitHub Repo stars](https://img.shields.io/github/stars/going-doer/Paper2Code?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/): DeepMind’s AI agent that autonomously evolves algorithms using Gemini models—applied in chip design, data centers, robotics, math & CS, and AI training. [14 May 2025]
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
 
@@ -2232,6 +2234,7 @@ representations. `Think step by step, but only keep a minimum draft for each thi
   - `TPO (Thought Preference Optimization)`: This method generates thoughts before the final response, which are then evaluated by a Judge model for preference using Direct Preference Optimization (DPO). [14 Oct 2024]
 - [SFT vs RL](https://arxiv.org/abs/2501.17161): SFT Memorizes, RL Generalizes. RL enhances generalization across text and vision, while SFT tends to memorize and overfit. [git](https://github.com/LeslieTrue/SFTvsRL) [28 Jan 2025]
 - [Train your own R1 reasoning model with Unsloth (GRPO)](https://unsloth.ai/blog/r1-reasoning): Unsloth x vLLM > 20x more throughput, 50% VRAM savings. [6 Feb 2025]
+- [Absolute Zero: Reinforced Self-play Reasoning with Zero Data](https://arxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
 
 ### **Model Compression for Large Language Models**
 
@@ -2523,9 +2526,9 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 generated webpages are considered better than the original reference webpages` [5 Mar 2024]
 - [Testing theory of mind in large language models and humans](https://www.nature.com/articles/s41562-024-01882-z): Some large language models (LLMs) perform as well as, and in some cases better than, humans when presented with tasks designed to test the ability to track people’s mental states, known as “theory of mind.” [cite](https://www.technologyreview.com/2024/05/20/1092681/ai-models-can-outperform-humans-in-tests-to-identify-mental-states) [20 May 2024]
 - [A Survey on Employing Large Language Models for Text-to-SQL Tasks](https://arxiv.org/abs/2407.15186): a comprehensive overview of LLMs in text-to-SQL tasks [21 Jul 2024]
-- [Can LLMs Generate Novel Research Ideas?](https://arxiv.org/abs/2409.04109): A Large-Scale Human Study with 100+ NLP Researchers. We find LLM-generated ideas are judged as more novel (p < 0.05) than human expert ideas. However, the study revealed a lack of diversity in AI-generated ideas. [6 Sep 2024]
+- [Can LLMs Generate Novel Research Ideas?](https://arxiv.org/abs/2409.04109): A Large-Scale Human Study with 100+ NLP Researchers. We find LLM-generated ideas are judged as more novel (p < 0.05) than human expert ideas. However, the study revealed a lack of diversity in AI-generated ideas. [6 Sep 2024]  
 
-#### Reasoning
+### **Reasoning**
 
 - [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025]
 - [Mini-R1](https://www.philschmid.de/mini-deepseek-r1): Reproduce Deepseek R1 „aha moment“ a RL tutorial [30 Jan 2025]
@@ -2934,6 +2937,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) [20 Mar 2025]
 - [Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.24377): Efficient reasoning mechanisms that balance computational cost with performance. [31 Mar 2025]
 - [A Survey of AI Agent Protocols](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
+- [Towards Artificial General or Personalized Intelligence? ](https://arxiv.org/abs/2505.06907): Personalized federated intelligence (PFI). Foundation Model Meets Federated Learning [11 May 2025]
 - Evolutionary Tree of Large Language Models: [x-ref](#evolutionary-tree-of-large-language-models)
 
 #### **Business use cases**
