@@ -6,80 +6,109 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 🔹Brief each item on a few lines as possible. <br/>
 🔹The dates are based on the first commit, article publication, or paper version 1 issuance. <br/>
-🔹Capturing a chronicle and key terms of that rapidly advancing field. <br/>
+🔹Capturing a chronicle and key terms of that rapidly advancing field, ordered by date. <br/>
 🔹Disclaimer: Please be aware that some content may be outdated.
 
-## Table of contents
+## Contents
 
-- **Section 1** 🎯: [RAG](#rag-retrieval-augmented-generation)
-  - [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
-  - [RAG Design](#rag-solution-design) | [Application](#rag-development)
-    - [GraphRAG](#graphrag)
-  - [Vector DB](#vector-database-comparison)
-- **Section 2** 🌌: [Azure OpenAI](#azure-openai-and-reference-architecture)
-  - [Microsoft LLM Framework](#microsoft-azure-openai-llm-framework)
-  - [Copilot Products & Azure OpenAI Service](#copilot-products) | [Research](#research)
-  - [Azure Reference Architecture](#azure-reference-architectures)
-- **Section 3** 🌐: [LLM Applications](#applications-and-frameworks)
-  - [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development)
-    - [Code editor](#code-editor--agent)
-    - [Memory](#llm-memory)
-  - [Caching, UX, Proposals & Other topics](#caching)
-  - [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
-  - [Awesome demo](#awesome-demo)
-- **Section 4** 🤖: [Agent](#agent)
-  - [Agent Design Patterns](#agent-design-patterns)
-  - [Agent Frameworks](#agent-framework) | [Applications](#agent-application)
-    - [Code Interpreter](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
-    - [Model Context Protocol (MCP) & Computer use](#model-context-protocol-mcp--computer-use)
-    - [Deep research](#deep-research)
-- **Section 5** 🏗️: [Semantic Kernel & DSPy](#microsoft-semantic-kernel-and-stanford-nlp-dspy)
-  - [Semantic Kernel](#semantic-kernel): Micro-orchestration
-  - [DSPy](#dspy): Optimizer frameworks
-- **Section 6** 🛠️: [LangChain](#langchain-features-usage-and-comparisons) | [LlamaIndex](#llamaindex)
-  - [LangChain Features](#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
-  - [LangChain Agent & Criticism](#langchain-chain-type-chains--summarizer)
-  - [LangChain vs Competitors](#langchain-vs-competitors)
-  - [LlamaIndex](#llamaindex): Micro-orchestration & RAG
-- **Section 7** 🧠: [Prompting](#prompt-engineering) | [Finetuning](#finetuning)
-  - [Prompt Engineering](#prompt-engineering)
-  - [Finetuning](#finetuning): PEFT (e.g., LoRA), RLHF, SFT
-  - [Quantization & Optimization](#quantization-techniques)
-  - [Other Techniques](#other-techniques-and-llm-patterns): e.g., MoE
-  - [Visual Prompting](#visual-prompting--visual-grounding)
-- **Section 8** 🏄‍♂️: [Challenges & Abilities](#large-language-model-challenges-and-solutions)
-  - [AGI Discussion & Social Impact](#agi-discussion-and-social-impact)
-  - [OpenAI Products & Roadmap](#openais-roadmap-and-products)
-  - [Context Constraints](#context-constraints): e.g., RoPE
-  - [Trust & Safety](#trustworthy-safe-and-secure-llm)
-  - [LLM Abilities](#large-language-model-is-abilities)
-    - [Reasoning](#reasoning)
-- **Section 9** 🌍: [LLM Landscape](#large-language-model-landscape)
-  - [LLM Taxonomy](#large-language-models-in-2023)
-  - [LLM Collection](#large-language-model-collection)
-  - [Domain-Specific LLMs](#llm-for-domain-specific): e.g., Software development
-  - [Multimodal LLMs](#mllm-multimodal-large-language-model)
-- **Section 10** 📚: [Surveys & References](#survey-and-reference)
-  - [LLM Surveys](#survey-on-large-language-models) | [Business use cases](#business-use-cases)
-  - [Building LLMs](#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
-  - [LLMs for Korean & Japanese](#llm-materials-for-east-asian-languages)
-  - [Learning and Supplementary Materials](#learning-and-supplementary-materials)
-- **Section 11** 🧰: [AI Tools & Extensions](#general-ai-tools-and-extensions)
-  - [AI Tools & Extensions](#section-10-general-ai-tools-and-extensions)
-- **Section 12** 📊: [Datasets](#section-11-datasets-for-llm-training)
-  - [LLM Training Datasets](#datasets-for-llm-training)
-- **Section 13** 📝: [Evaluations](#section-12-evaluating-large-language-models--llmops)
-  - [LLM Evaluation](#evaluating-large-language-models)
-  - [LLMOps](#llmops-large-language-model-operations)
-- **Legend** 🔑:
-  - `ref`: external URL
-  - `doc`: archived doc
-  - `cite`: the source of comments
-  - `cnt`: number of citations
-  - `git`: GitHub link
-  - `x-ref`: Cross reference
-  - 📺: youtube or video
-  - 💡or 🏆: recommendation
+- [Section 1: RAG](#section-1--rag)
+- [Section 2: Azure OpenAI](#section-2--azure-openai)
+- [Section 3: LLM Applications](#section-3--llm-applications)
+- [Section 4: Agent](#section-4--agent)
+- [Section 5: Semantic Kernel & DSPy](#section-5-️-semantic-kernel--dspy)
+- [Section 6: LangChain & LlamaIndex](#section-6-️-langchain--llamaindex)
+- [Section 7: Prompting & Finetuning](#section-7--prompting--finetuning)
+- [Section 8: Challenges & Abilities](#section-8-️-challenges--abilities)
+- [Section 9: LLM Landscape](#section-9--llm-landscape)
+- [Section 10: Surveys & References](#section-10--surveys--references)
+- [Section 11: AI Tools & Extensions](#section-11--ai-tools--extensions)
+- [Section 12: Datasets](#section-12--datasets)
+- [Section 13: Evaluations](#section-13--evaluations)
+
+### **Section 1** 🎯: RAG
+- [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
+- [RAG Design](#rag-solution-design) | [Application](#rag-development)
+  - [GraphRAG](#graphrag)
+- [Vector DB](#vector-database-comparison)
+
+### **Section 2** 🌌: Azure OpenAI
+- [Microsoft LLM Framework](#microsoft-azure-openai-llm-framework)
+- [Microsoft Copilot](#microsoft-copilot)
+- [Azure AI Search & Azure AI Services](#azure-ai-search)
+- [Microsoft Research](#microsoft-research)
+- [Azure Reference Architecture](#azure-reference-architectures)
+
+### **Section 3** 🌐: LLM Applications
+- [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development)
+  - [Code Editor / Agent](#code-editor--agent)
+  - [Memory](#llm-memory)
+- [Caching, UX, Proposals & Other Topics](#caching)
+- [LLMs for Robotics](#llm-for-robotics-bridging-ai-and-robotics)
+- [Awesome Demo](#awesome-demo)
+
+### **Section 4** 🤖: Agent
+- [Agent Design Patterns](#agent-design-patterns)
+- [Agent Frameworks](#agent-framework) | [Applications](#agent-application)
+  - [Code Interpreter](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
+  - [Model Context Protocol (MCP) & Computer Use](#model-context-protocol-mcp--computer-use)
+  - [Deep Research](#deep-research)
+
+### **Section 5** 🏗️: Semantic Kernel | DSPy
+- [Semantic Kernel](#semantic-kernel): Micro-orchestration
+- [DSPy](#dspy): Optimizer frameworks
+
+### **Section 6** 🛠️: LangChain | LlamaIndex
+- [LangChain Features](#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
+- [LangChain Agent & Criticism](#langchain-chain-type-chains--summarizer)
+- [LangChain vs Competitors](#langchain-vs-competitors)
+- [LlamaIndex](#llamaindex): Micro-orchestration & RAG
+
+### **Section 7** 🧠: Prompting | Finetuning
+- [Prompt Engineering](#prompt-engineering)
+- [Finetuning](#finetuning): PEFT (e.g., LoRA), RLHF, SFT
+- [Quantization & Optimization](#quantization-techniques)
+- [Other Techniques](#other-techniques-and-llm-patterns): e.g., MoE
+- [Visual Prompting](#visual-prompting--visual-grounding)
+
+### **Section 8** 🏄‍♂️: Challenges | Abilities
+- [AGI Discussion & Social Impact](#agi-discussion-and-social-impact)
+- [OpenAI Products & Roadmap](#openais-roadmap-and-products)
+- [Context Constraints](#context-constraints): e.g., RoPE
+- [Trust & Safety](#trustworthy-safe-and-secure-llm)
+- [LLM Abilities](#large-language-model-is-abilities)
+  - [Reasoning](#reasoning)
+
+### **Section 9** 🌍: LLM Landscape
+- [LLM Taxonomy](#large-language-models-in-2023)
+- [LLM Collection](#large-language-model-collection)
+- [Domain-Specific LLMs](#llm-for-domain-specific): e.g., Software development
+- [Multimodal LLMs](#mllm-multimodal-large-language-model)
+
+### **Section 10** 📚: Surveys | References
+- [LLM Surveys](#survey-on-large-language-models) | [Business Use Cases](#business-use-cases)
+- [Building LLMs](#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
+- [LLMs for Korean & Japanese](#llm-materials-for-east-asian-languages)
+- [Learning and Supplementary Materials](#learning-and-supplementary-materials)
+
+### **Section 11** 🧰: AI Tools & Extensions
+- [AI Tools & Extensions](#section-10-general-ai-tools-and-extensions)
+
+### **Section 12** 📊: Datasets
+- [LLM Training Datasets](#datasets-for-llm-training)
+
+### **Section 13** 📝: Evaluations
+- [LLM Evaluation](#evaluating-large-language-models)
+- [LLMOps](#llmops-large-language-model-operations)
+
+#### **Legend** 🔑
+- `ref`: external URL
+- `doc`: archived doc
+- `cite`: the source of comments
+- `cnt`: number of citations
+- `git`: GitHub link
+- `x-ref`: Cross reference
+- 📺: YouTube or video
+- 💡 or 🏆: recommendation
 
 ## **Contributor** 👀
 
@@ -374,6 +403,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Is Cosine-Similarity of Embeddings Really About Similarity?](https://arxiv.org/abs/2403.05440): Regularization in linear matrix factorization can distort cosine similarity. L2-norm regularization on (1) the product of matrices (like dropout) and (2) individual matrices (like weight decay) may lead to arbitrary similarities.  [8 Mar 2024]
 - [Contextual Document Embedding (CDE)](https://arxiv.org/abs/2410.02525): Improve document retrieval by embedding both queries and documents within the context of the broader document corpus. [ref](https://pub.aimind.so/unlocking-the-power-of-contextual-document-embeddings-enhancing-search-relevance-01abfa814c76) [3 Oct 2024]
 - [Fine-tuning Embeddings for Specific Domains](https://blog.gopenai.com/fine-tuning-embeddings-for-specific-domains-a-comprehensive-guide-5e4298b42185): The guide discusses fine-tuning embeddings for domain-specific tasks using `sentence-transformers` [1 Oct 2024]
+- [A Gentle Introduction to Word Embedding and Text Vectorization](https://machinelearningmastery.com/a-gentle-introduction-to-word-embedding-and-text-vectorization/): Word embedding, Text vectorization, One-hot encoding, Bag-of-words, TF-IDF, word2vec, GloVe, FastText. | [Tokenizers in Language Models](https://machinelearningmastery.com/tokenizers-in-language-models/): Stemming, Lemmatization, Byte Pair Encoding (BPE), WordPiece, SentencePiece, Unigram [23 May 2025] 
 
 ## **Azure OpenAI and Reference Architecture**
 
@@ -528,6 +558,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners): 10 Lessons to Get Started Building AI Agents [Jan 2025]
 - [Microsoft Discovery](https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/): Graph-based scientific co-reasoning. Specialized discovery agents for conducting research. ​[19 May 2025]
 - [Microsoft Entra Agent ID](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392): Automatically registers AI agents from Copilot Studio and Azure AI Foundry in Microsoft Entra admin center, enabling easy tracking, governance, and lifecycle management. [20 May 2025]
+- [Combine Copilot Agents with Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/): Developers can now enhance Copilot with Office add-in actions for natural language interaction with Office documents. [22 May 2025]
 
 #### **Copilot Development**
 
@@ -589,7 +620,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 - [x-ref](#vector-database-options-for-azure)
 
-### **Research**
+### **Microsoft Research**
 
 1. [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.03460)]:💡Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. [6 Jun 2023]
 1. [Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion](https://arxiv.org/abs/2311.06318): K-LaMP. Contextual memory layer for LLM application [10 Nov 2023]
@@ -956,40 +987,39 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 #### **Code editor / agent**
 
-- [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
-- [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
-- [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-- [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Firebase Studio](https://firebase.google.com/studio): Google. a cloud-based, agentic development environment. [14 May 2024]
-- [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
-- [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
-- [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
-- [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
-- [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
-- [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [DeepWiki](https://deepwiki.com/): Devin AI. a tool that converts any public GitHub repository into an interactive, wiki-style documentation. [25 Apr 2025]
+1. [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
+1. AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+1. [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
+1. [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Firebase Studio](https://firebase.google.com/studio): Google. a cloud-based, agentic development environment. [14 May 2024]
+1. [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
+1. [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
+1. [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
+1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
+1. [codegen](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
+1. [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [DeepWiki](https://deepwiki.com/): Devin AI. a tool that converts any public GitHub repository into an interactive, wiki-style documentation. [25 Apr 2025]
+1. [Figma Make](https://www.figma.com/make/): Use existing Figma files or even images to kickstart your project. React（TypeScript）. Claude 3.7 Sonnet. [7 May 2025]
+1. [Stitch](https://stitch.withgoogle.com/): Google. an AI tool that turns text or images into UI designs and code, with Figma export. Static HTML generation. [20 May 2025]
+1. [Flowith Agent Neo](https://flowith.io): 24/7 operation for very long and complex tasks. Top of GAIA (General AI Assistant benchmark). 1,000 inference steps in a single task. Up to 10 million tokens of context. Cloud-based execution [21 May 2025]
 
 #### **UI/UX**
 
@@ -1170,6 +1200,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
 - [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [git](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
 - [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
+- [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs](https://arxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
+- [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
 
 #### **Agent Design Reference**
 
@@ -1444,6 +1476,8 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 - [Working with Audio in Semantic Kernel Python](https://devblogs.microsoft.com/semantic-kernel/working-with-audio-in-semantic-kernel-python/) [15 Nov 2024]
 - [Model Context Protocol (MCP) support for Python](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-adds-model-context-protocol-mcp-support-for-python/) [17 Apr 2025]
 - [Semantic Kernel Python with Google’s A2A Protocol](https://devblogs.microsoft.com/semantic-kernel/integrating-semantic-kernel-python-with-googles-a2a-protocol/) [17 Apr 2025]
+- [Semantic Kernel: Multi-agent Orchestration](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-multi-agent-orchestration/): sequential orchestration, concurrent orchestration, group chat orchestration, handoff collaboration [27 May 2025]
+- Semantic Kernel and Microsoft.Extensions.AI: Better Together: [part1](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-microsoft-extensions-ai-better-together-part-1/) | [part2](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-microsoft-extensions-ai-better-together-part-2/) [28 May 2025]
 
 #### **Semantic Kernel Planner [deprecated]**
 
@@ -2642,10 +2676,6 @@ generated webpages are considered better than the original reference webpages` [
   1. [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [git](https://github.com/google-deepmind/gemma) / Pytorch [git](https://github.com/google/gemma_pytorch) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/google/gemma_pytorch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [Gemma 2](https://www.kaggle.com/models/google/gemma-2/) 2B, 9B, 27B [ref: releases](https://ai.google.dev/gemma/docs/releases) [Jun 2024]
-  1. [PaliGemma](https://arxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
-  1. [DataGemma](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
-  1. [PaliGemma 2](https://arxiv.org/abs/2412.03555): VLMs
- at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
   1. [Gemma 3](https://developers.googleblog.com/en/introducing-gemma3/):  Single GPU. Context
 length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf) [12 Mar 2025]
   1. [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
@@ -2771,7 +2801,16 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [Video LLMs for Temporal Reasoning in Long Videos](https://arxiv.org/abs/2412.02930): TemporalVLM, a video LLM excelling in temporal reasoning and fine-grained understanding of long videos, using time-aware features and validated on datasets like TimeIT and IndustryASM for superior performance. [4 Dec 2024]
 - [ESM3: A frontier language model for biology](https://www.evolutionaryscale.ai/blog/esm3-release): Simulating 500 million years of evolution [git](https://github.com/evolutionaryscale/esm) / [ref](https://doi.org/10.1101/2024.07.01.600583) [31 Dec 2024]  ![GitHub Repo stars](https://img.shields.io/github/stars/evolutionaryscale/esm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
-- [Dolphin Gemma](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [Apr 14 2025]
+- Gemma series
+  1. [Gemma series in Huggingface](https://huggingface.co/google)
+  1. [PaliGemma](https://arxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
+  1. [DataGemma](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
+  1. [PaliGemma 2](https://arxiv.org/abs/2412.03555): VLMs
+ at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
+  1. [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
+  1. [Dolphin Gemma](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
+  1. [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
+  1. [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025]
 
 ### **MLLM (multimodal large language model)**
 
@@ -3089,6 +3128,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
 - [Kanana](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
 - [HyperCLOVA X SEED](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
+- [문의 대응을 효율화하기 위한 RAG 기반 봇 도입하기](https://techblog.lycorp.co.jp/ko/rag-based-bot-for-streamlining-inquiry-responses) [23 May 2025]
 
 ### **Learning and Supplementary Materials**
 
