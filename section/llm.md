@@ -91,10 +91,6 @@
   1. [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [git](https://github.com/google-deepmind/gemma) / Pytorch [git](https://github.com/google/gemma_pytorch) [Feb 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/google/gemma_pytorch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [Gemma 2](https://www.kaggle.com/models/google/gemma-2/) 2B, 9B, 27B [ref: releases](https://ai.google.dev/gemma/docs/releases) [Jun 2024]
-  1. [PaliGemma](https://arxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
-  1. [DataGemma](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
-  1. [PaliGemma 2](https://arxiv.org/abs/2412.03555): VLMs
- at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
   1. [Gemma 3](https://developers.googleblog.com/en/introducing-gemma3/):  Single GPU. Context
 length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf) [12 Mar 2025]
   1. [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
@@ -221,12 +217,17 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [OpenCoder](https://github.com/OpenCoder-llm/OpenCoder-llm): 1.5B and 8B base and open-source Code LLM, supporting both English and Chinese. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenCoder-llm/OpenCoder-llm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Video LLMs for Temporal Reasoning in Long Videos](https://arxiv.org/abs/2412.02930): TemporalVLM, a video LLM excelling in temporal reasoning and fine-grained understanding of long videos, using time-aware features and validated on datasets like TimeIT and IndustryASM for superior performance. [4 Dec 2024]
 - [ESM3: A frontier language model for biology](https://www.evolutionaryscale.ai/blog/esm3-release): Simulating 500 million years of evolution [git](https://github.com/evolutionaryscale/esm) / [ref](https://doi.org/10.1101/2024.07.01.600583) [31 Dec 2024]  ![GitHub Repo stars](https://img.shields.io/github/stars/evolutionaryscale/esm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
 - Gemma series
-  - [Gemma series in Huggingface](https://huggingface.co/google)
-  - [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
-  - [Dolphin Gemma](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
-  - [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
-  - [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025]
+  1. [Gemma series in Huggingface](https://huggingface.co/google)
+  1. [PaliGemma](https://arxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
+  1. [DataGemma](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
+  1. [PaliGemma 2](https://arxiv.org/abs/2412.03555): VLMs
+ at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
+  1. [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
+  1. [Dolphin Gemma](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
+  1. [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
+  1. [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025]
 
 ### **MLLM (multimodal large language model)**
 
