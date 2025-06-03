@@ -4,9 +4,10 @@
 
 ![Static Badge](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)  ![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
 
-🔹Brief each item on a few lines as possible. <br/>
-🔹The dates are based on the first commit, article publication, or paper version 1 issuance. <br/>
-🔹Capturing a chronicle and key terms of that rapidly advancing field. <br/>
+🔹Brief each item on a few lines as possible.  
+🔹Capturing a chronicle and key terms of that rapidly advancing field, ordered by date.  
+🔹The dates are based on the first commit, article publication, or paper version 1 issuance.  
+🔹GitHub links (with [star counts](https://shields.io/badges/git-hub-repo-stars)); others are articles or papers.  
 🔹Disclaimer: Please be aware that some content may be outdated.
 
 ## Contents
@@ -33,14 +34,16 @@
 
 ### **Section 2** 🌌: Azure OpenAI
 - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
-- [Copilot Products & Azure OpenAI Service](section/aoai.md/#copilot-products) | [Research](section/aoai.md/#research)
+- [Microsoft Copilot](section/aoai.md/#microsoft-copilot)
+- [Azure AI Search & Azure AI Services](section/aoai.md/#azure-ai-search)
+- [Microsoft Research](section/aoai.md/#microsoft-research)
 - [Azure Reference Architecture](section/aoai.md/#azure-reference-architectures)
 
 ### **Section 3** 🌐: LLM Applications
 - [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) | [Applications](section/app.md/#llm-application-development)
-  - [Code Editor](section/app.md/#code-editor--agent)
+  - [Code Editor / Agent](section/app.md/#code-editor--agent)
   - [Memory](section/app.md/#llm-memory)
-- [Caching, UX, Proposals & Other Topics](section/app.md/#caching)
+- [Caching, UX, Proposals](section/app.md/#caching)
 - [LLMs for Robotics](section/app.md/#llm-for-robotics-bridging-ai-and-robotics)
 - [Awesome Demo](section/app.md/#awesome-demo)
 
@@ -48,10 +51,10 @@
 - [Agent Design Patterns](section/agent.md/#agent-design-patterns)
 - [Agent Frameworks](section/agent.md/#agent-framework) | [Applications](section/agent.md/#agent-application)
   - [Code Interpreter](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
-  - [Model Context Protocol (MCP) & Computer Use](section/agent.md/#model-context-protocol-mcp--computer-use)
+  - [Model Context Protocol (MCP), A2A, Computer Use](section/agent.md/#model-context-protocol-mcp-a2a-computer-use)
   - [Deep Research](section/agent.md/#deep-research)
 
-### **Section 5** 🏗️: Semantic Kernel & DSPy
+### **Section 5** 🏗️: Semantic Kernel | DSPy
 - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
 - [DSPy](section/sk_dspy.md/#dspy): Optimizer frameworks
 
@@ -68,7 +71,7 @@
 - [Other Techniques](section/ft.md/#other-techniques-and-llm-patterns): e.g., MoE
 - [Visual Prompting](section/prompt.md/#visual-prompting--visual-grounding)
 
-### **Section 8** 🏄‍♂️: Challenges & Abilities
+### **Section 8** 🏄‍♂️: Challenges | Abilities
 - [AGI Discussion & Social Impact](section/chab.md/#agi-discussion-and-social-impact)
 - [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
 - [Context Constraints](section/chab.md/#context-constraints): e.g., RoPE
@@ -82,7 +85,7 @@
 - [Domain-Specific LLMs](section/llm.md/#llm-for-domain-specific): e.g., Software development
 - [Multimodal LLMs](section/llm.md/#mllm-multimodal-large-language-model)
 
-### **Section 10** 📚: Surveys & References
+### **Section 10** 📚: Surveys | References
 - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) | [Business Use Cases](section/survey_ref.md/#business-use-cases)
 - [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
 - [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
@@ -108,10 +111,12 @@
 - 📺: YouTube or video
 - 💡 or 🏆: recommendation
 
-#### **Contributor** 👀  
+## **Contributor** 👀
+
 <a href="https://github.com/kimtth/awesome-azure-openai-llm/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kimtth/awesome-azure-openai-llm" />
 </a>
 
+ⓒ `https://github.com/kimtth` all rights reserved.
 
 **[`^        back to top        ^`](#contents)**

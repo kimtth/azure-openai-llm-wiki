@@ -184,44 +184,39 @@
 
 #### **Code editor / agent**
 
+1. [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021]
-1. [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![GitHub Repo stars](https://img.shields.io/github/stars/zed-industries/zed?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
-1. [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
-1. [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. AI Code Editor: [Replit Agent](https://replit.com/) [09 Sep 2024] / [Cursor](https://www.cursor.com/) [Mar 2023]
+1. [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Continue](https://github.com/continuedev/continue): open-source AI code assistant inside of VS Code and JetBrains. [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/continuedev/continue?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
-1. [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [SWE-agent](https://github.com/SWE-agent/SWE-agent): SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice. It can also be employed for offensive cybersecurity or competitive coding challenges. [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SWE-agent/SWE-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [OpenHands](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Micro Agent](https://github.com/BuilderIO/micro-agent): An AI agent that writes and fixes code for you. Test case driven code generation [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/BuilderIO/micro-agent?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Firebase Studio](https://firebase.google.com/studio): Google. a cloud-based, agentic development environment. [14 May 2024]
-1. [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/cline/cline?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Llama Coder](https://github.com/nutlope/llamacoder): Open source Claude Artifacts [ref](https://llamacoder.together.ai/): demo [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nutlope/llamacoder?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/voideditor/void?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
-1. [bolt.new](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [o1-engineer](https://github.com/Doriandarko/o1-engineer): a command-line tool designed to assist developers [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/o1-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Cofounder](https://github.com/raidendotai/cofounder): full stack generative web apps ; backend + db + stateful web apps [Sep 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/raidendotai/cofounder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
-1. [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [devin.cursorrules](https://github.com/grapeot/devin.cursorrules): Transform your Cursor or Windsurf IDE into a Devin-like AI Assistant [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/grapeot/devin.cursorrules?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
-1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [DeepSeek Engineer](https://github.com/Doriandarko/deepseek-engineer): Simple and just a few lines of code. a powerful coding assistant application that integrates with the DeepSeek API [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/deepseek-engineer?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
-1. [codegen](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [codegen](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
-1. [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [DeepWiki](https://deepwiki.com/): Devin AI. a tool that converts any public GitHub repository into an interactive, wiki-style documentation. [25 Apr 2025]
-1. [Stitch](https://stitch.withgoogle.com/): Google. an AI tool that turns text or images into UI designs and code, with Figma export. [20 May 2025]
+1. [Figma Make](https://www.figma.com/make/): Use existing Figma files or even images to kickstart your project. React（TypeScript）. Claude 3.7 Sonnet. [7 May 2025]
+1. [Stitch](https://stitch.withgoogle.com/): Google. an AI tool that turns text or images into UI designs and code, with Figma export. Static HTML generation. [20 May 2025]
+1. [Flowith Agent Neo](https://flowith.io): 24/7 operation for very long and complex tasks. Top of GAIA (General AI Assistant benchmark). 1,000 inference steps in a single task. Up to 10 million tokens of context. Cloud-based execution [21 May 2025]
 
 #### **UI/UX**
 
@@ -326,7 +321,7 @@
 - [People + AI Guidebook](https://pair.withgoogle.com/guidebook/): Google: Google’s product teams and academic research, they provide 23 patterns grouped by common questions during the product development process3.
 - [Human Interface Guidelines for Machine Learning](https://developer.apple.com/design/human-interface-guidelines/machine-learning): Apple: Based on practitioner knowledge and experience, emphasizing aspects of UI rather than model functionality4.
 
-### **Proposals & Other topics**
+### **Proposals**
 
 - [/llms.txt](https://llmstxt.org/): Proposal for an `/llms.txt` file to guide LLMs in using websites during inference. [git](https://github.com/answerdotai/llms-txt) [3 Sep 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/answerdotai/llms-txt?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
