@@ -118,6 +118,7 @@ This repository contains references to Azure OpenAI, Large Language Models (LLM)
 
 ⓒ `https://github.com/kimtth` all rights reserved.
 
+**[`^        back to top        ^`](#contents)**
 
 ## **RAG (Retrieval-Augmented Generation)**
 
