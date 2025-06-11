@@ -86,7 +86,8 @@
 - [Multimodal LLMs](section/llm.md/#mllm-multimodal-large-language-model)
 
 ### **Section 10** 📚: Surveys | References
-- [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) | [Business Use Cases](section/survey_ref.md/#business-use-cases)
+- [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models)
+- [Business Use Cases](section/survey_ref.md/#business-use-cases)
 - [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
 - [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
 - [Learning and Supplementary Materials](section/survey_ref.md/#learning-and-supplementary-materials)
