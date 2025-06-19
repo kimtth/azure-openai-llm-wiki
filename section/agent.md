@@ -58,12 +58,13 @@
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Agents Are Not Enough](https://arxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
-- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents): 💡Anthrophic. [19 Dec 2024]
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [A Practical Guide to Building AI Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 - [Taxonomy of failure modes in AI agents ](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [AI Agents vs. Agentic AI](https://arxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
+- [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 
 #### **Tool use: LLM to Master APIs**
 
