@@ -122,6 +122,8 @@
 
 **[`^        back to top        ^`](#contents)**
 
+Updated: 2025/06/19
+
 ## **RAG (Retrieval-Augmented Generation)**
 
 ### **RAG (Retrieval-Augmented Generation)**
@@ -659,7 +661,8 @@
 
 ### **Azure Reference Architectures**
 
-- `github organizations`: 🌐Azure | 🏬Azure-samples | 🏛️Microsoft | 👥MSUSAzureAccelerators
+- 🏆`github organizations`: 🌐[Azure](https://github.com/Azure) | 🏬[Azure-samples](https://github.com/Azure-Samples) | 🏛️[Microsoft](https://github.com/Microsoft) | 👥[MSUSAzureAccelerators](https://github.com/MSUSAzureAccelerators)
+- 🏆[Data Science Toolkit](https://www.ds-toolkit.com/)
 
 #### Azure OpenAI Application
 
@@ -1036,6 +1039,7 @@
 1. [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Task Master](https://github.com/eyaltoledano/claude-task-master): Personal Project Manager. A task management system for AI-driven development. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
 1. [claude‑squad](https://github.com/smtg-ai/claude-squad): Terminal app to manage multiple AI assistants (Claude Code, Aider, Codex). [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
@@ -1078,7 +1082,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/activeloopai/deeplake?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PostgresML](https://github.com/postgresml/postgresml): The GPU-powered AI application database. [Apr 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/postgresml/postgresml?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [agent-twitter-client](https://github.com/elizaOS/agent-twitter-client): twitter-scraper. A Twitter client for agents. no API key necessary [May 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/elizaOS/agent-twitter-client?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+<!-- 1. [agent-twitter-client](https://github.com/elizaOS/agent-twitter-client): twitter-scraper. A Twitter client for agents. no API key necessary [May 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/elizaOS/agent-twitter-client?style=flat-square&label=%20&color=gray&cacheSeconds=36000) -->
 1. [unstructured](https://github.com/Unstructured-IO/unstructured): Open-Source Pre-Processing Tools for Unstructured Data [Sep 2022]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [outlines](https://github.com/dottxt-ai/outlines): Structured Text Generation [Mar 2023]
@@ -1242,12 +1246,13 @@
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Agents Are Not Enough](https://arxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
-- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents): 💡Anthrophic. [19 Dec 2024]
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [A Practical Guide to Building AI Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 - [Taxonomy of failure modes in AI agents ](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [AI Agents vs. Agentic AI](https://arxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
+- [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 
 #### **Tool use: LLM to Master APIs**
 
@@ -2628,6 +2633,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
 - [Tina: Tiny Reasoning Models via LoRA](https://arxiv.org/abs/2504.15777): Low-rank adaptation (LoRA) with Reinforcement learning (RL) on a 1.5B parameter base model  [22 Apr 2025]
 - [Illusion of Thinking](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf): Large Reasoning Models (LRMs) are evaluated using controlled puzzles, where complexity depends on the size of `N`. Beyond a certain complexity threshold, LRM accuracy collapses, and reasoning effort paradoxically decreases. LRMs outperform standard LLMs on medium-complexity tasks, perform worse on low-complexity ones, and both fail on high-complexity. Apple. [May 2025]
+- [Comment on The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity](https://arxiv.org/abs/2506.09250):💡The `Illusion of Thinking` findings primarily reflect experimental design limitations rather than fundamental reasoning failures. Output token limits, flawed evaluation methods, and unsolvable River Crossing problems. [10 Jun 2025]
 
 ## **Large Language Model: Landscape**
 
@@ -2751,6 +2757,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - Amazon
   1. [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
+  1. [The Amazon Nova Family of Models: Technical Report and Model Card](https://arxiv.org/abs/2506.12103) [17 Mar 2025]
 - Huggingface
   1. [Open R1](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
 - Mistral

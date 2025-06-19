@@ -248,7 +248,8 @@
 
 ### **Azure Reference Architectures**
 
-- `github organizations`: 🌐Azure | 🏬Azure-samples | 🏛️Microsoft | 👥MSUSAzureAccelerators
+- 🏆`github organizations`: 🌐[Azure](https://github.com/Azure) | 🏬[Azure-samples](https://github.com/Azure-Samples) | 🏛️[Microsoft](https://github.com/Microsoft) | 👥[MSUSAzureAccelerators](https://github.com/MSUSAzureAccelerators)
+- 🏆[Data Science Toolkit](https://www.ds-toolkit.com/)
 
 #### Azure OpenAI Application
 
