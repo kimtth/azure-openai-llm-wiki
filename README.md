@@ -121,3 +121,5 @@
 ⓒ `https://github.com/kimtth` all rights reserved.
 
 **[`^        back to top        ^`](#contents)**
+
+Updated: 2025/06/19
