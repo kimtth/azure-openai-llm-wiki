@@ -122,7 +122,7 @@
 
 **[`^        back to top        ^`](#contents)**
 
-Updated: 2025/06/19
+Updated: 2025/06/20
 
 ## **RAG (Retrieval-Augmented Generation)**
 
@@ -1323,6 +1323,12 @@ Updated: 2025/06/19
 - [x-ref](#llm-memory)
 
 #### **Agent Framework**
+
+##### Top Agent Frameworks ranked by GitHub Star Counts
+
+[LlamaIndex](https://github.com/run-llama/llama_index)  ![GitHub Repo stars](https://img.shields.io/github/stars/run-llama/llama_index?style=flat-square&label=%20&cacheSeconds=36000) > [CrewAI](https://github.com/crewAIInc/crewAI) ![GitHub Repo stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square&label=%20&cacheSeconds=36000) > [Agno](https://github.com/agno-agi/agno) ![GitHub Repo stars](https://img.shields.io/github/stars/agno-agi/agno?style=flat-square&label=%20&cacheSeconds=36000) > [Vercel AI SDK](https://github.com/vercel/ai) ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&cacheSeconds=36000) > [LangGraph](https://github.com/langchain-ai/langgraph) ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&cacheSeconds=36000) > [Mastra](https://github.com/mastra-ai/mastra) ![GitHub Repo stars](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square&label=%20&cacheSeconds=36000) > [OpenAI Agent SDK](https://github.com/openai/openai-agents-python) ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square&label=%20&cacheSeconds=36000) > [Pydantic AI](https://github.com/pydantic/pydantic-ai) ![GitHub Repo stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=flat-square&label=%20&cacheSeconds=36000) > [Google ADK](https://github.com/google/adk-python) ![GitHub Repo stars](https://img.shields.io/github/stars/google/adk-python?style=flat-square&label=%20&cacheSeconds=36000) > [AG2](https://github.com/ag2ai/ag2) ![GitHub Repo stars](https://img.shields.io/github/stars/ag2ai/ag2?style=flat-square&label=%20&cacheSeconds=36000) > [Strands Agents SDK](https://github.com/strands-agents/sdk-python) ![GitHub Repo stars](https://img.shields.io/github/stars/strands-agents/sdk-python?style=flat-square&label=%20&cacheSeconds=36000) > [AWS Bedrock Agents](https://github.com/awslabs/amazon-bedrock-agent-samples) ![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/amazon-bedrock-agent-samples?style=flat-square&label=%20&cacheSeconds=36000)
+
+##### Agent Framework
 
 1. [Huginn](https://github.com/huginn/huginn): A hackable version of IFTTT or Zapier on your own server for building agents that perform automated tasks. [Mar 2013] ![GitHub Repo stars](https://img.shields.io/github/stars/huginn/huginn?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Botpress Cloud](https://github.com/botpress/botpress): The open-source hub to build & deploy GPT/LLM Agents. [Nov 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/botpress/botpress?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -3484,8 +3490,9 @@ databricks-dolly-15k: Instruction-Tuned [git](https://huggingface.co/datasets/da
  ![GitHub Repo stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Pezzo](https://github.com/pezzolabs/pezzo): Open-source, developer-first LLMOps platform [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/pezzolabs/pezzo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Langfuse](https://langfuse.com): [git](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023]
+- [Langfuse](https://langfuse.com): [git](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023] 
  ![GitHub Repo stars](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+ - [Maxim AI](https://getmaxim.ai): [git](https://github.com/maximhq) End-to-end simulation, evaluation, and observability plaform, helping teams ship their AI agents reliably and >5x faster. [Dec 2023]
 - [PromptTools](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [agenta](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [30 requirements for an MLOps environment](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
