@@ -96,11 +96,12 @@
 - [markitdown](https://github.com/microsoft/markitdown):💡Python tool for converting files and office documents to Markdown. [14 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [NLWeb](https://github.com/microsoft/NLWeb):💡Conversational Interfaces for the Web. Support MCP, Schema.org, and RSS. [📺](https://youtu.be/EF6uywH-Yzo) [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/NLWeb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
-#### Toolkit
+#### Dev Toolkit
 
 - [Powershell: AIShell](https://github.com/PowerShell/AIShell): An interactive shell to work with AI-powered assistance providers [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/PowerShell/AIShell?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Document: AI Toolkit for Visual Studio Code](https://github.com/microsoft/vscode-ai-toolkit): AI Toolkit for Visual Studio Code extension [Dec 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/vscode-ai-toolkit?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Data Formulator](https://github.com/microsoft/data-formulator): Create Rich Visualizations with AI [28 Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/data-formulator?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Github Copilot Chat extension for VS Code](https://github.com/microsoft/vscode-copilot-chat):💡Copilot Chat extension for VS Code [June 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/vscode-copilot-chat?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ### **Microsoft Copilot**
 
@@ -245,6 +246,7 @@
 1. [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815): a framework that automatically optimizes model selection for compound AI systems [20 Feb 2025] [git](https://github.com/LLMSELECTOR/LLMSELECTOR) ![GitHub Repo stars](https://img.shields.io/github/stars/LLMSELECTOR/LLMSELECTOR?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Data Formulator](https://arxiv.org/abs/2309.10094) [18 Sep 2023] | [Data Formulator 2](https://arxiv.org/abs/2408.16119):💡Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way [git](https://github.com/microsoft/data-formulator) [21 Feb 2025]
 1. [R&D-Agent-Quant](https://arxiv.org/abs/2505.15155): R&D-Agent for Quantitative Finance, in short RD-Agent(Q), the first data-centric multi-agent framework designed to automate the full-stack research and development of quantitative strategies via coordinated factor-model co-optimization. [21 May 2025]
+1. [Microsoft AI Diagnostic Orchestrator (MAI-DxO)](https://arxiv.org/abs/2506.22405): Multi-Agent System. Accurately diagnoses up to 85% of NEJM case proceedings, which is over four times the rate achieved by a group of experienced physicians [30 June 2025 ]
 
 ### **Azure Reference Architectures**
 

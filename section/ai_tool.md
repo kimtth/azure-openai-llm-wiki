@@ -31,6 +31,7 @@
   1. [GenSpark](https://www.genspark.ai/): AI agents engine perform research and generate custom pages called Sparkpages. [18 Jun 2024]
   1. [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024]
   1. [Goover](https://goover.ai/) 
+  1. [oo.ai](https://oo.ai): Open Research. Fastest AI Search.
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [recraft.ai](https://www.recraft.ai/): Text-to-editable vector image generator
 - [Ai2 Playground](https://playground.allenai.org/)
@@ -44,3 +45,5 @@
 - [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
 - [Same.dev](https://same.new/): Clone Any Website in Minutes
+- [skywork.ai](https://skywork.ai): Deep Research is a multimodal generalist agent that can create documents, slides, and spreadsheets.
+- [AlphaXiv](https://www.alphaxiv.org): an interactive extension of arXiv
