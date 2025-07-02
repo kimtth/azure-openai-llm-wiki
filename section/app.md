@@ -9,6 +9,7 @@
  ![GitHub Repo stars](https://img.shields.io/github/stars/NirDiamant/GenAI_Agents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
 - [Azure OpenAI Samples](https://github.com/kimtth/azure-openai-cookbook): 🐳 Azure OpenAI (OpenAI) Sample Collection - 🪂 100+ Code Cookbook 🧪 [Mar 2025]
+- [GenAI Cookbook](https://github.com/dmatrix/genai-cookbook): A mixture of Gen AI cookbook recipes for Gen AI applications. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/dmatrix/genai-cookbook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ### **Applications, Frameworks, and User Interface (UI/UX)**
 
@@ -214,6 +215,7 @@
 1. [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
 1. [claude‑squad](https://github.com/smtg-ai/claude-squad): Terminal app to manage multiple AI assistants (Claude Code, Aider, Codex). [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [codex](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Gemini CLI](https://github.com/google-gemini/gemini-cli): An open-source AI agent that brings the power of Gemini directly into your terminal.  [April 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [open-codex](https://github.com/ymichael/open-codex): a fork of the OpenAI Codex CLI with expanded model support [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ymichael/open-codex?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [DeepWiki](https://deepwiki.com/): Devin AI. a tool that converts any public GitHub repository into an interactive, wiki-style documentation. [25 Apr 2025]
 1. [Figma Make](https://www.figma.com/make/): Use existing Figma files or even images to kickstart your project. React（TypeScript）. Claude 3.7 Sonnet. [7 May 2025]

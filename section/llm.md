@@ -229,7 +229,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Dolphin Gemma](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
   1. [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
   1. [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025]
-- 
+- [AlphaGenome](https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome): DeepMind’s advanced AI model, launched in June 2025, is designed to analyze the regulatory “dark matter” of the genome—specifically, the 98% of DNA that does not code for proteins but instead regulates when and how genes are expressed. [June 2025]
 
 ### **MLLM (multimodal large language model)**
 
