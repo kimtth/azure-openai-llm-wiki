@@ -22,6 +22,7 @@
     - [Gorilla](https://arxiv.org/abs/2305.15334) [24 May 2023]
     - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
     - [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
+    - [Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
   - Planning: LLM devises and executes multistep plans to reach goals.
     - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) [28 Jan 2022]
     - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
@@ -112,6 +113,7 @@
 1. [Python A2A](https://github.com/themanojdesai/python-a2a): Python Implementation of Google's Agent-to-Agent (A2A) Protocol with Model Context Protocol (MCP) Integration [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/themanojdesai/python-a2a?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [a2a-python](https://github.com/google-a2a/a2a-python): Official Python SDK for the Agent2Agent (A2A) Protocol [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/google-a2a/a2a-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AI Agent Architecture via A2A/MCP](https://medium.com/@jeffreymrichter/ai-agent-architecture-b864080c4bbc): Jeffrey Richter [4 Jun 2025]
+1. [SharpA2A](https://github.com/darrelmiller/sharpa2a): A .NET implementation of the Google A2A protocol. [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/darrelmiller/sharpa2a?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ##### Computer use
 
@@ -233,6 +235,7 @@
 1. [browser-use](https://github.com/browser-use/browser-use): Make websites accessible for AI agents. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Magentic-One](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [nanobrowser](https://github.com/nanobrowser/nanobrowser): Open-source Chrome extension for AI-powered web automation. Alternative to OpenAI Operator. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanobrowser/nanobrowser?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Agent workflows and samples are available in Live Agent Studio](https://github.com/coleam00/ottomator-agents): All the open source AI Agents hosted on the oTTomator Live Agent Studio. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/coleam00/ottomator-agents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Riona-AI-Agent](https://github.com/David-patrick-chuks/Riona-AI-Agent): automation tool designed for Instagram to automate social media interactions such as posting, liking, and commenting. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/David-patrick-chuks/Riona-AI-Agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Realtime API Agents Demo](https://github.com/openai/openai-realtime-agents): a simple demonstration of more advanced, agentic patterns built on top of the Realtime API. OpenAI. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-realtime-agents?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PaSa](https://github.com/bytedance/pasa): an advanced paper search agent. Bytedance. [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/pasa?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -241,6 +244,7 @@
 1. [PayPal Agent Toolkit](https://github.com/paypal/agent-toolkit): OpenAI's Agent SDK, LangChain, Vercel's AI SDK, and Model Context Protocol (MCP) to integrate with PayPal APIs through function calling. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/paypal/agent-toolkit?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [Open Agent Platform](https://github.com/langchain-ai/open-agent-platform): Langchain. An open-source, no-code agent building platform. [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/open-agent-platform?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [xpander.ai](https://github.com/xpander-ai/xpander.ai): Backend-as-a-Service for AI Agents. Equip any AI Agent with tools, memory, multi-agent collaboration, state, triggering, storage, and more. [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/xpander-ai/xpander.ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Customer Service Agents Demo](https://github.com/openai/openai-cs-agents-demo): OpenAI. Customer Service Agents Demo. [Jun 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-cs-agents-demo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **OSS Alternatives for OpenAI Code Interpreter (aka. Advanced Data Analytics)**
 
@@ -272,6 +276,7 @@
 1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
 1. [landing.ai: Vision Agent](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [UXAgent](https://arxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
+1. [DeepRare](https://arxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
 
 #### **Deep research**
 

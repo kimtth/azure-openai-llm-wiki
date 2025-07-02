@@ -92,7 +92,7 @@
 - [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
 - [Learning and Supplementary Materials](section/survey_ref.md/#learning-and-supplementary-materials)
 
-### **Section 11** 🧰: AI Tools & Extensions
+### **Section 11** 🧰: AI Tools | Extensions
 - [AI Tools & Extensions](section/ai_tool.md/#section-10-general-ai-tools-and-extensions)
 
 ### **Section 12** 📊: Datasets
@@ -122,4 +122,4 @@
 
 **[`^        back to top        ^`](#contents)**
 
-Updated: 2025/06/24
+Updated: 2025/07/02
