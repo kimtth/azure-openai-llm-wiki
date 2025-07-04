@@ -28,7 +28,8 @@
 
 ### **Section 1** 🎯: RAG
 - [RAG (Retrieval-Augmented Generation)](section/rag.md/#rag-retrieval-augmented-generation)
-- [RAG Design](section/rag.md/#rag-solution-design) | [Application](section/rag.md/#rag-development)
+- [RAG Design](section/rag.md/#rag-solution-design)
+- [RAG Application](section/rag.md/#rag-development)
   - [GraphRAG](section/rag.md/#graphrag)
 - [Vector DB](section/rag.md/#vector-database-comparison)
 
@@ -37,19 +38,21 @@
 - [Microsoft Copilot](section/aoai.md/#microsoft-copilot)
 - [Azure AI Search & Azure AI Services](section/aoai.md/#azure-ai-search)
 - [Microsoft Research](section/aoai.md/#microsoft-research)
-- [Azure Reference Architecture](section/aoai.md/#azure-reference-architectures)
+- [Reference Architecture & Samples](section/aoai.md/#azure-reference-architectures)
 
 ### **Section 3** 🌐: LLM Applications
 - [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) | [Applications](section/app.md/#llm-application-development)
-  - [Code Editor / Agent](section/app.md/#code-editor--agent)
+  - [Code Editor / Code Agent](section/app.md/#code-editor--agent)
   - [Memory](section/app.md/#llm-memory)
-- [Caching, UX, Proposals](section/app.md/#caching)
-- [LLMs for Robotics](section/app.md/#llm-for-robotics-bridging-ai-and-robotics)
+- [Caching, UX](section/app.md/#caching)
+- [Proposals & Glossary](section/app.md/#proposals--glossary): e.g., Context Engineering
+- [Robotics](section/app.md/#llm-for-robotics)
 - [Awesome Demo](section/app.md/#awesome-demo)
 
 ### **Section 4** 🤖: Agent
 - [Agent Design Patterns](section/agent.md/#agent-design-patterns)
-- [Agent Frameworks](section/agent.md/#agent-framework) | [Applications](section/agent.md/#agent-application)
+- [Agent Frameworks](section/agent.md/#agent-framework)
+- [Agent Applications](section/agent.md/#agent-application)
   - [Code Interpreter](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
   - [Model Context Protocol (MCP), A2A, Computer Use](section/agent.md/#model-context-protocol-mcp-a2a-computer-use)
   - [Deep Research](section/agent.md/#deep-research)
@@ -82,8 +85,8 @@
 ### **Section 9** 🌍: LLM Landscape
 - [LLM Taxonomy](section/llm.md/#large-language-models-in-2023)
 - [LLM Collection](section/llm.md/#large-language-model-collection)
-- [Domain-Specific LLMs](section/llm.md/#llm-for-domain-specific): e.g., Software development
-- [Multimodal LLMs](section/llm.md/#mllm-multimodal-large-language-model)
+- [Domain-Specific](section/llm.md/#llm-for-domain-specific): e.g., Software development
+- [Multimodal](section/llm.md/#mllm-multimodal-large-language-model)
 
 ### **Section 10** 📚: Surveys | References
 - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models)
