@@ -41,11 +41,12 @@
 - [Reference Architecture & Samples](section/aoai.md/#azure-reference-architectures)
 
 ### **Section 3** 🌐: LLM Applications
-- [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) | [Applications](section/app.md/#llm-application-development)
+- [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux)
+- [LLM Applications](section/app.md/#llm-application-development)
   - [Code Editor / Code Agent](section/app.md/#code-editor--agent)
   - [Memory](section/app.md/#llm-memory)
 - [Caching, UX](section/app.md/#caching)
-- [Proposals & Glossary](section/app.md/#proposals--glossary): e.g., Context Engineering
+- [Proposals & Glossary](section/app.md/#proposals--glossary): e.g., Vibe Coding, Context Engineering
 - [Robotics](section/app.md/#llm-for-robotics)
 - [Awesome Demo](section/app.md/#awesome-demo)
 
@@ -125,4 +126,5 @@
 
 **[`^        back to top        ^`](#contents)**
 
-Updated: 2025/07/10
+
+Updated: 2025/07/15
