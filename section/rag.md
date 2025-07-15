@@ -58,6 +58,8 @@
 - [UniversalRAG](https://arxiv.org/abs/2504.20734): A framework for modality-aware routing across image, text, and video. It features granularity-aware routing (e.g., paragraphs, documents for text, video clips) and supports flexible routing methods (zero-shot vs trained). [29 Apr 2025]
 - [Discuss-RAG](https://arxiv.org/abs/2504.21252): Agent-Led Discussions for Better RAG in Medical QA [30 Apr 2025]
 - [Towards AI Search Paradigm](https://arxiv.org/abs/2506.17188): Baidu. A modular, 4-agent LLM system: master (coordinator), planner (task decomposition), executor (tool use & retrieval), writer (answer synthesis), leveraging DAG for agentic AI search. [20 Jun 2025]
+- [ARAG](https://arxiv.org/abs/2506.21931): Agentic Retrieval Augmented Generation for Personalized Recommendation [27 Jun 2025]
+- [HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation](https://arxiv.org/abs/2507.05714): fine-tunes LLMs to learn a three-level hierarchical reasoning process — Filtering: select relevant information; Combination: synthesize across documents; RAG-specific reasoning: infer using retrieved documents plus internal knowledge. [8 Jul 2025]
 
 ### **Advanced RAG**
 
@@ -229,6 +231,7 @@
 1. [KAG](https://github.com/OpenSPG/KAG): Knowledge Augmented Generation. a logical reasoning and Q&A framework based on the OpenSPG(Semantic-enhanced Programmable Graph). By Ant Group. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenSPG/KAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Simba](https://github.com/GitHamza0206/simba): Portable KMS (knowledge management system) designed to integrate seamlessly with any Retrieval-Augmented Generation (RAG) system [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/GitHamza0206/simba?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Gemini-Search](https://github.com/ammaarreshi/Gemini-Search): Perplexity style AI Search engine clone built with Gemini [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ammaarreshi/Gemini-Search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Fireplexity](https://github.com/mendableai/fireplexity): AI search engine by Firecrawl's search API ![GitHub Repo stars](https://img.shields.io/github/stars/mendableai/fireplexity?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [Jun 2025]
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
 ### **Vector Database Comparison**
