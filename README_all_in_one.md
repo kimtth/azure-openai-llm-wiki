@@ -41,11 +41,12 @@
 - [Reference Architecture & Samples](#azure-reference-architectures)
 
 ### **Section 3** 🌐: LLM Applications
-- [LLM Frameworks](#applications-frameworks-and-user-interface-uiux) | [Applications](#llm-application-development)
+- [LLM Frameworks](#applications-frameworks-and-user-interface-uiux)
+- [LLM Applications](#llm-application-development)
   - [Code Editor / Code Agent](#code-editor--agent)
   - [Memory](#llm-memory)
 - [Caching, UX](#caching)
-- [Proposals & Glossary](#proposals--glossary): e.g., Context Engineering
+- [Proposals & Glossary](#proposals--glossary): e.g., Vibe Coding, Context Engineering
 - [Robotics](#llm-for-robotics)
 - [Awesome Demo](#awesome-demo)
 
@@ -125,7 +126,9 @@
 
 **[`^        back to top        ^`](#contents)**
 
-Updated: 2025/07/02
+
+Updated: 2025/07/15
+
 
 ## **RAG (Retrieval-Augmented Generation)**
 
@@ -187,6 +190,8 @@ Updated: 2025/07/02
 - [UniversalRAG](https://arxiv.org/abs/2504.20734): A framework for modality-aware routing across image, text, and video. It features granularity-aware routing (e.g., paragraphs, documents for text, video clips) and supports flexible routing methods (zero-shot vs trained). [29 Apr 2025]
 - [Discuss-RAG](https://arxiv.org/abs/2504.21252): Agent-Led Discussions for Better RAG in Medical QA [30 Apr 2025]
 - [Towards AI Search Paradigm](https://arxiv.org/abs/2506.17188): Baidu. A modular, 4-agent LLM system: master (coordinator), planner (task decomposition), executor (tool use & retrieval), writer (answer synthesis), leveraging DAG for agentic AI search. [20 Jun 2025]
+- [ARAG](https://arxiv.org/abs/2506.21931): Agentic Retrieval Augmented Generation for Personalized Recommendation [27 Jun 2025]
+- [HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation](https://arxiv.org/abs/2507.05714): fine-tunes LLMs to learn a three-level hierarchical reasoning process — Filtering: select relevant information; Combination: synthesize across documents; RAG-specific reasoning: infer using retrieved documents plus internal knowledge. [8 Jul 2025]
 
 ### **Advanced RAG**
 
@@ -358,6 +363,7 @@ Updated: 2025/07/02
 1. [KAG](https://github.com/OpenSPG/KAG): Knowledge Augmented Generation. a logical reasoning and Q&A framework based on the OpenSPG(Semantic-enhanced Programmable Graph). By Ant Group. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/OpenSPG/KAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Simba](https://github.com/GitHamza0206/simba): Portable KMS (knowledge management system) designed to integrate seamlessly with any Retrieval-Augmented Generation (RAG) system [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/GitHamza0206/simba?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Gemini-Search](https://github.com/ammaarreshi/Gemini-Search): Perplexity style AI Search engine clone built with Gemini [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ammaarreshi/Gemini-Search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Fireplexity](https://github.com/mendableai/fireplexity): AI search engine by Firecrawl's search API ![GitHub Repo stars](https://img.shields.io/github/stars/mendableai/fireplexity?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [Jun 2025]
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](#applications-frameworks-and-user-interface-uiux)
 
 ### **Vector Database Comparison**
@@ -593,7 +599,9 @@ Updated: 2025/07/02
 
 ### **Azure AI Search**
 
-- 🏬[Python samples for Azure AI Search](https://github.com/Azure-Samples/azure-search-python-samples) [Apr 2019]
+- 🏬[Python samples for Azure AI Search](https://github.com/Azure-Samples/azure-search-python-samples) [Apr 2019] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-python-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- 🏬[REST examples for Azure AI Search](https://github.com/Azure-Samples/azure-search-rest-samples) [Apr 2019] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-rest-samples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- 🏬[Azure AI Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills): Custom skills for Azure AI Search [Jun 2019] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-power-skills?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - 🏬[ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - 🏬[Azure AI Search Multimodal Sample](https://github.com/Azure-Samples/azure-ai-search-multimodal-sample) [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure-Samples/azure-ai-search-multimodal-sample?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -612,7 +620,7 @@ Updated: 2025/07/02
 - Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [ref](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)  
   <img src="https://learn.microsoft.com/en-us/azure/search/media/scoring-profiles/scoring-over-ranked-results.png" alt="rrf" width="300"/>
 - [Azure AI Search Python Playground](https://github.com/farzad528/azure-ai-search-python-playground):  a collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search. [Feb 2024]
-- [RAG-Knowledge](https://github.com/microsoft/RAG-Knowledge): Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization [Jun 2024]
+- [RAG-Knowledge](https://github.com/microsoft/RAG-Knowledge):💡Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization [Jun 2024]
 - [Integrated vectorization](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836): Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization. [24 Aug 2024]
 - [Agentic retrieval in Azure AI Search](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-agentic-retrieval-in-azure-ai-search/4414677): An automated query engine that creates and runs its own retrieval plan for relevant results to complex questions. [20 May 2025]
 - [Document-level access control](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview): Document-level access helps restrict content visibility to authorized users, based on predefined access rules. [20 May 2025]
@@ -632,6 +640,7 @@ Updated: 2025/07/02
   - [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership)
   - [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352): General Availability [20 May 2025]
   - [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873): SFT: non-reasoning models, DPO: GPT-4o, RFT: supported by reasoning models, GPT o4-mini [20 May 2025]
+  - [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service): API and software development kit (SDK)-based offering of OpenAI’s advanced agentic research [7 Jul 2025]
 
 <!-- 
 #### .old
@@ -943,6 +952,7 @@ Updated: 2025/07/02
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Customer Service Chat with AI Assistant Handoff](https://github.com/pereiralex/Simple-bot-handoff-sample): Seamlessly hand off to a human agent when needed. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/pereiralex/Simple-bot-handoff-sample?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Gateway**
 
@@ -1244,6 +1254,7 @@ Updated: 2025/07/02
 - [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
 - [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs](https://arxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
 - [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
+- [Agentic AI Architecture Framework for Enterprises ](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous [11 Jul 2025]
 
 #### **Agent Design Reference**
 
@@ -1506,6 +1517,7 @@ Updated: 2025/07/02
 1. [DeerFlow](https://github.com/bytedance/deer-flow):  Bytedance. Deep Exploration and Efficient Research Flow. a community-driven Deep Research framework that combines language models with tools like web search, crawling, and code execution.  ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [May 2025]
 1. [OpenEvolve](https://github.com/codelion/openevolve): An open-source implementation of the AlphaEvolve system described in the Google DeepMind paper "AlphaEvolve: A coding agent for scientific and algorithmic discovery" [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codelion/openevolve?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]
+1. [Deep Research Agent](https://arxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
 
@@ -2776,6 +2788,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Phi-4](https://arxiv.org/abs/2412.08905): Specializing in Complex Reasoning [ref](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) [12 Dec 2024]
   1. [Phi-4-multimodal / mini](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf) 5.6B. speech, vision, and text processing into a single, unified architecture. [26 Feb 2025]
   1. [Phi-4-reasoning](https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/): Phi-4-reasoning, Phi-4-reasoning-plus, Phi-4-mini-reasoning [30 Apr 2025]
+  1. [Phi-4-mini-flash-reasoning](https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/): 3.8B, 64K context, Single GPU, Decoder-Hybrid-Decoder architecture  [9 Jul 2025]
 - NVIDIA
   1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - Amazon
@@ -2828,6 +2841,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
  ![GitHub Repo stars](https://img.shields.io/github/stars/xai-org/grok?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   1. [Grok-2 and Grok-2 mini](https://x.ai/blog/grok-2) [13 Aug 2024]
   1. [Grok-3](https://x.ai/grok): 200,000 GPUs to train. Grok 3 beats GPT-4o on AIME, GPQA. Grok 3 Reasoning and Grok 3 mini Reasoning. [17 Feb 2025]
+  1. [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
 - Databricks
   1. [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [git](https://github.com/databricks/dbrx) [27 Mar 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/databricks/dbrx?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -2836,6 +2850,9 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
 - IBM
   1. [Granite Guardian](https://github.com/ibm-granite/granite-guardian): a collection of models designed to detect risks in prompts and responses [10 Dec 2024]
+- Moonshot AI
+  - Moonshot AI is a Beijing-based Chinese AI company founded in March 2023
+  1. [Kimi-K2](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
 - GPT for Domain Specific [x-ref](#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [x-ref](#mllm-multimodal-large-language-model)
 - Large Language Models (in 2023) [x-ref](#large-language-models-in-2023)
@@ -3060,6 +3077,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [A Survey on Post-training of Large Language Models](https://arxiv.org/abs/2503.06072) [8 Mar 2025]
 - [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
 - [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) [20 Mar 2025]
+- [Survey on Evaluation of LLM-based Agents](https://arxiv.org/abs/2503.16416) [20 Mar 2025]
 - [Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.24377): Efficient reasoning mechanisms that balance computational cost with performance. [31 Mar 2025]
 - [A Survey of AI Agent Protocols](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
 - [Towards Artificial General or Personalized Intelligence? ](https://arxiv.org/abs/2505.06907): Personalized federated intelligence (PFI). Foundation Model Meets Federated Learning [11 May 2025]
@@ -3079,6 +3097,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   - [State of AI Report 2024](https://www.stateof.ai/) [10 Oct 2024]
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [Rapid Growth Continues for ChatGPT, Google’s NotebookLM](https://www.similarweb.com/blog/insights/ai-news/chatgpt-notebooklm/) [6 Nov 2024]
+- [Examining the Use and Impact of an AI Code Assistant on Developer Productivity and Experience in the Enterprise](https://arxiv.org/abs/2412.06603): IBM study surveying developer experiences with watsonx Code Assistant (WCA). Most common use: code explanations (71.9%). Rated effective by 57.4%, ineffective by 42.6%. Many described WCA as similar to an “intern” or “junior developer.” [9 Dec 2024]
 - [Google: 60 of our biggest AI announcements in 2024](https://blog.google/technology/ai/google-ai-news-recap-2024/) [23 Dec 2024]
 - [Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index): a research on the labor market impact of technologies. The usage is concentrated in software development and technical writing tasks. [10 Feb 2025]
 - [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
@@ -3086,6 +3105,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - [SignalFire State of Talent Report 2025](https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025): 1. Entry‑level hiring down sharply since 2019 (-50%) 2. Anthropic dominate mid/senior talent retention 3. Roles labeled “junior” filled by seniors, blocking grads. [20 May 2025]
 - [Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce](https://arxiv.org/abs/2506.06576): A new framework maps U.S. workers’ preferences for AI automation vs. augmentation across 844 tasks.　It shows how people want AI to help or replace them. Many jobs need AI to support people, not just take over. [6 Jun 2025]
 - [Who is using AI to code? Global diffusion and impact of generative AI](https://arxiv.org/abs/2506.08945): AI wrote 30% of Python functions by U.S. devs in 2024. Adoption is uneven globally but boosts output and innovation. New coders use AI more, and usage drives $9.6–$14.4B in U.S. annual value. [10 Jun 2025]
+
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
 

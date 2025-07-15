@@ -107,6 +107,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/av/harbor?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [PocketFlow](https://github.com/miniLLMFlow/PocketFlow): Minimalist LLM Framework in 100 Lines. Enable LLMs to Program Themselves. [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/miniLLMFlow/PocketFlow?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Customer Service Chat with AI Assistant Handoff](https://github.com/pereiralex/Simple-bot-handoff-sample): Seamlessly hand off to a human agent when needed. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/pereiralex/Simple-bot-handoff-sample?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 #### **LLM Gateway**
 
