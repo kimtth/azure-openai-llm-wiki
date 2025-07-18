@@ -30,7 +30,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/huggingface/transformers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [jax](https://github.com/google/jax): JAX is Autograd (automatically differentiate native Python & Numpy) and XLA (compile and run NumPy) [Oct 2018]
 ![GitHub Repo stars](https://img.shields.io/github/stars/google/jax?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Sentence Transformers](https://arxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [git](https://github.com/UKPLab/sentence-transformers) [27 Aug 2019]
+1. [Sentence Transformers](https://alphaxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [git](https://github.com/UKPLab/sentence-transformers) [27 Aug 2019]
 ![GitHub Repo stars](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Weights & Biases](https://github.com/wandb/examples): Visualizing and tracking your machine learning experiments [wandb.ai](https://wandb.ai/) doc: `deeplearning.ai/wandb` [Jan 2020]
 ![GitHub Repo stars](https://img.shields.io/github/stars/wandb/examples?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -91,8 +91,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/melih-unsal/DemoGPT?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Spring AI](https://github.com/spring-projects-experimental/spring-ai): Developing AI applications for Java. [Jul 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/spring-projects-experimental/spring-ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [litellm](https://github.com/BerriAI/litellm): Python SDK to call 100+ LLM APIs in OpenAI format [Jul 2023]
-![GitHub Repo stars](https://img.shields.io/github/stars/BerriAI/litellm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Opencopilot](https://github.com/openchatai/copilot): Build and embed open-source AI Copilots. [Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/openchatai/copilot?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [BISHENG](https://github.com/dataelement/bisheng): an open LLM application devops platform, focusing on enterprise scenarios. [Aug 2023]
@@ -113,6 +111,8 @@
 
 1. [Petals](https://github.com/bigscience-workshop/petals): Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading [Jun 2022] ![GitHub Repo stars](https://img.shields.io/github/stars/bigscience-workshop/petals?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [LocalAI](https://github.com/mudler/LocalAI): The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. [Mar 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/mudler/LocalAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [litellm](https://github.com/BerriAI/litellm): Python SDK to call 100+ LLM APIs in OpenAI format [Jul 2023]
+![GitHub Repo stars](https://img.shields.io/github/stars/BerriAI/litellm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AI Gateway](https://github.com/Portkey-AI/gateway): AI Gateway with integrated guardrails. Route to 200+ LLMs, 50+ AI Guardrails [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat-square&label=%20&color=gray&cacheSeconds=36000) vs [litellm](https://github.com/BerriAI/litellm) vs [OpenRouter](https://github.com/OpenRouterTeam/openrouter-runner)
 
@@ -121,7 +121,7 @@
 1. [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![GitHub Repo stars](https://img.shields.io/github/stars/getzep/zep?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [May 2023]
 1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-    | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413) [28 Apr 2025]  
+    | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://alphaxiv.org/abs/2504.19413) [28 Apr 2025]  
 1. [cognee](https://github.com/topoteretes/cognee): LLM Memory using Dynamic knowledge graphs (lightweight ECL pipelines) [Aug 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/topoteretes/cognee?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [ref](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Memary](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -210,7 +210,7 @@
 1. [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
 1. [codegen](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [LLM Debugger](https://github.com/mohsen1/llm-debugger-vscode-extension): a VSCode extension that demonstrates the use of LLMs for active debugging of programs. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mohsen1/llm-debugger-vscode-extension?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
-1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://arxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
+1. [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref](https://alphaxiv.org/abs/2502.03719) ![GitHub Repo stars](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 1. [Task Master](https://github.com/eyaltoledano/claude-task-master): Personal Project Manager. A task management system for AI-driven development. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Deepsite](https://huggingface.co/spaces/enzostvs/deepsite): Mockup UI generator Powered by Deepseek [Mar 2025]
@@ -223,6 +223,7 @@
 1. [Figma Make](https://www.figma.com/make/): Use existing Figma files or even images to kickstart your project. React（TypeScript）. Claude 3.7 Sonnet. [7 May 2025]
 1. [Stitch](https://stitch.withgoogle.com/): Google. an AI tool that turns text or images into UI designs and code, with Figma export. Static HTML generation. [20 May 2025]
 1. [Flowith Agent Neo](https://flowith.io): 24/7 operation for very long and complex tasks. Top of GAIA (General AI Assistant benchmark). 1,000 inference steps in a single task. Up to 10 million tokens of context. Cloud-based execution [21 May 2025]
+1. [Kiro](https://github.com/kirodotdev/Kiro): AWS. an agentic IDE. [Jun 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/kirodotdev/Kiro?style=flat-square\&label=%20\&color=gray\&cacheSeconds=36000)
 
 #### **UI/UX**
 
@@ -265,7 +266,7 @@
 1. [pandas-ai](https://github.com/Sinaptik-AI/pandas-ai): Chat with your database (SQL, CSV, pandas, polars, mongodb, noSQL, etc). [Apr 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/Sinaptik-AI/pandas-ai?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Instructor](https://github.com/jxnl/instructor): Structured outputs for LLMs, easily map LLM outputs to structured data. [Jun 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/jxnl/instructor?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Nougat](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat) [25 Aug 2023]
+1. [Nougat](https://alphaxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [git](https://github.com/facebookresearch/nougat) [25 Aug 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/nougat?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Marker](https://github.com/VikParuchuri/marker): converts PDF to markdown [Oct 2023]
 ![GitHub Repo stars](https://img.shields.io/github/stars/VikParuchuri/marker?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -316,7 +317,7 @@
 - Strategies for caching: Caching can be based on item IDs, pairs of item IDs, constrained input, or pre-computation. Caching can also leverage embedding-based retrieval, approximate nearest neighbor search, and LLM-based evaluation. [ref](https://eugeneyan.com/writing/llm-patterns/#caching-to-reduce-latency-and-cost)
 - GPTCache: Semantic cache for LLMs. Fully integrated with LangChain and llama_index. [git](https://github.com/zilliztech/GPTCache) [Mar 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Prompt Cache: Modular Attention Reuse for Low-Latency Inference](https://arxiv.org/abs/2311.04934): LLM inference by reusing precomputed attention states from overlapping prompts. [7 Nov 2023]
+- [Prompt Cache: Modular Attention Reuse for Low-Latency Inference](https://alphaxiv.org/abs/2311.04934): LLM inference by reusing precomputed attention states from overlapping prompts. [7 Nov 2023]
 - [Prompt caching with Claude](https://www.anthropic.com/news/prompt-caching): Reducing costs by up to 90% and latency by up to 85% for long prompts. [15 Aug 2024]
 
 ### **Defensive UX**
