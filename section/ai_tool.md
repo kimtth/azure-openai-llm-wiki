@@ -38,7 +38,7 @@
 - [Pika AI - Free AI Video Generator](https://pika.art/login)
 - [TEXT-TO-CAD](https://zoo.dev/text-to-cad): Generate CAD from text prompts
 - [AniDoc](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [ref](https://yihao-meng.github.io/AniDoc_demo/)
-- [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref](https://arxiv.org/abs/2412.04037) [5 Dec 2024]
+- [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref](https://alphaxiv.org/abs/2412.04037) [5 Dec 2024]
 - [5 LLM-based Apps for Developers](https://hackernoon.com/5-llm-based-apps-for-developers): Github Copilot, Cursor IDE, Tabnine, Warp, Replit Agent
 - [Msty](https://msty.app/):💡The easiest way to use local and online AI models
 - [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.

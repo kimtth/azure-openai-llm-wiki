@@ -3,10 +3,10 @@
 ### **Survey on Large Language Models**
 
 #### **Overview: A Survey of LLMs**
-  - [Large Language Models: A Survey](https://arxiv.org/abs/2402.06196): 🏆Well organized visuals and contents [9 Feb 2024]
-  - [A Survey of Transformers](https://arxiv.org/abs/2106.04554):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.04554)] [8 Jun 2021]
-  - [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223)] [v1: 31 Mar 2023 - v15: 13 Oct 2024]
-  - [A Primer on Large Language Models and their Limitations](https://arxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
+  - [Large Language Models: A Survey](https://alphaxiv.org/abs/2402.06196): 🏆Well organized visuals and contents [9 Feb 2024]
+  - [A Survey of Transformers](https://alphaxiv.org/abs/2106.04554):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.04554)] [8 Jun 2021]
+  - [A Survey of Large Language Models](https://alphaxiv.org/abs/2303.18223):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223)] [v1: 31 Mar 2023 - v15: 13 Oct 2024]
+  - [A Primer on Large Language Models and their Limitations](https://alphaxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
 - Google AI Research Recap
   - [Gemini](https://blog.google/technology/ai/google-gemini-ai) [06 Dec 2023] Three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU [ref](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf)
   - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
@@ -16,75 +16,76 @@
   - [Research at Microsoft 2023](https://www.microsoft.com/en-us/research/blog/research-at-microsoft-2023-a-year-of-groundbreaking-ai-advances-and-discoveries/): A year of groundbreaking AI advances and discoveries
 - [LLM Research Papers: The 2024 List](https://sebastianraschka.com/blog/2024/llm-research-papers-the-2024-list.html) [29 Dec 2024]
 - [Noteworthy LLM Research Papers of 2024](https://sebastianraschka.com/blog/2025/llm-research-2024.html) [23 Jan 2025]
-- [LLM Post-Training: A Deep Dive into Reasoning Large Language Models](https://arxiv.org/abs/2502.21321): [git](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) [28 Feb 2025]
+- [LLM Post-Training: A Deep Dive into Reasoning Large Language Models](https://alphaxiv.org/abs/2502.21321): [git](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) [28 Feb 2025]
 
 #### **Additional Topics: A Survey of LLMs**
 
-- [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.03629)] [8 Feb 2022]
-- [A Survey on In-context Learning](https://arxiv.org/abs/2301.00234):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.00234)] [31 Dec 2022]
-- [A Survey on Transformers in Reinforcement Learning](https://arxiv.org/abs/2301.03044):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.03044)] [8 Jan 2023]
-- [Multimodal Deep Learning](https://arxiv.org/abs/2301.04856):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856)] [12 Jan 2023]
-- [A Survey on Efficient Training of Transformers](https://arxiv.org/abs/2302.01107):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.01107)] [2 Feb 2023]
-- [A Comprehensive Survey of AI-Generated Content (AIGC)](https://arxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)] [7 Mar 2023]
-- [An Overview on Language Models: Recent Developments and Outlook](https://arxiv.org/abs/2303.05759):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759)] [10 Mar 2023]
-- [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2303.15647):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
-- [Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models](https://arxiv.org/abs/2304.01852):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.01852)] [4 Apr 2023]
-- [A Cookbook of Self-Supervised Learning](https://arxiv.org/abs/2304.12210):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.12210)] [24 Apr 2023]
-- [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.13712)] [26 Apr 2023]
-- [Challenges & Application of LLMs](https://arxiv.org/abs/2306.07303):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303)] [11 Jun 2023]
-- [A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.13549)] [23 Jun 2023]
-- [A Survey on Evaluation of Large Language Models](https://arxiv.org/abs/2307.03109):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109)] [6 Jul 2023]
-- [A Survey of Techniques for Optimizing Transformer Inference](https://arxiv.org/abs/2307.07982):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982)] [16 Jul 2023]
-- [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702)] [19 Jul 2023]
-- [Survey of Aligned LLMs](https://arxiv.org/abs/2307.12966):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966)] [24 Jul 2023]
-- [Foundation Models in Vision](https://arxiv.org/abs/2307.13721):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.13721)] [25 Jul 2023]
-- [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://arxiv.org/abs/2307.15217):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)] [27 Jul 2023]
-- [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043)] [27 Jul 2023]
-- [SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension](https://arxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)] [30 Jul 2023]
-- [Trustworthy LLMs](https://arxiv.org/abs/2308.05374):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374)] [10 Aug 2023]
-- [Model Compression for LLMs](https://arxiv.org/abs/2308.07633):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633)] [15 Aug 2023]
-- [Survey on Instruction Tuning for LLMs](https://arxiv.org/abs/2308.10792):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.10792)] [21 Aug 2023]
-- [A Survey on LLM-based Autonomous Agents](https://arxiv.org/abs/2308.11432v1):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11432v1)] [22 Aug 2023]
-- [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864) [14 Sep 2023]
-- [A Survey of LLMs for Healthcare](https://arxiv.org/abs/2310.05694):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05694)] [9 Oct 2023]
-- [Overview of Factuality in LLMs](https://arxiv.org/abs/2310.07521):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.07521)] [11 Oct 2023]
-- [Evaluating Large Language Models: A Comprehensive Survey](https://arxiv.org/abs/2310.19736):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.19736)] [30 Oct 2023]
-- [Hallucination in LLMs](https://arxiv.org/abs/2311.05232):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.05232)] [9 Nov 2023]
-- [A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.07989)] [14 Nov 2023]
+- [Survey of Hallucination in Natural Language Generation](https://alphaxiv.org/abs/2202.03629):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2202.03629)] [8 Feb 2022]
+- [A Survey on In-context Learning](https://alphaxiv.org/abs/2301.00234):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.00234)] [31 Dec 2022]
+- [A Survey on Transformers in Reinforcement Learning](https://alphaxiv.org/abs/2301.03044):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.03044)] [8 Jan 2023]
+- [Multimodal Deep Learning](https://alphaxiv.org/abs/2301.04856):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856)] [12 Jan 2023]
+- [A Survey on Efficient Training of Transformers](https://alphaxiv.org/abs/2302.01107):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.01107)] [2 Feb 2023]
+- [A Comprehensive Survey of AI-Generated Content (AIGC)](https://alphaxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)] [7 Mar 2023]
+- [An Overview on Language Models: Recent Developments and Outlook](https://alphaxiv.org/abs/2303.05759):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759)] [10 Mar 2023]
+- [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://alphaxiv.org/abs/2303.15647):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
+- [Summary of ChatGPT/GPT-4 Research and Perspective Towards the Future of Large Language Models](https://alphaxiv.org/abs/2304.01852):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.01852)] [4 Apr 2023]
+- [A Cookbook of Self-Supervised Learning](https://alphaxiv.org/abs/2304.12210):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.12210)] [24 Apr 2023]
+- [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://alphaxiv.org/abs/2304.13712):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.13712)] [26 Apr 2023]
+- [Challenges & Application of LLMs](https://alphaxiv.org/abs/2306.07303):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303)] [11 Jun 2023]
+- [A Survey on Multimodal Large Language Models](https://alphaxiv.org/abs/2306.13549):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.13549)] [23 Jun 2023]
+- [A Survey on Evaluation of Large Language Models](https://alphaxiv.org/abs/2307.03109):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03109)] [6 Jul 2023]
+- [A Survey of Techniques for Optimizing Transformer Inference](https://alphaxiv.org/abs/2307.07982):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.07982)] [16 Jul 2023]
+- [Efficient Guided Generation for Large Language Models](https://alphaxiv.org/abs/2307.09702):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702)] [19 Jul 2023]
+- [Survey of Aligned LLMs](https://alphaxiv.org/abs/2307.12966):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966)] [24 Jul 2023]
+- [Foundation Models in Vision](https://alphaxiv.org/abs/2307.13721):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.13721)] [25 Jul 2023]
+- [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback](https://alphaxiv.org/abs/2307.15217):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)] [27 Jul 2023]
+- [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://alphaxiv.org/abs/2307.15043):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043)] [27 Jul 2023]
+- [SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension](https://alphaxiv.org/abs/2307.16125): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)] [30 Jul 2023]
+- [Trustworthy LLMs](https://alphaxiv.org/abs/2308.05374):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374)] [10 Aug 2023]
+- [Model Compression for LLMs](https://alphaxiv.org/abs/2308.07633):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633)] [15 Aug 2023]
+- [Survey on Instruction Tuning for LLMs](https://alphaxiv.org/abs/2308.10792):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.10792)] [21 Aug 2023]
+- [A Survey on LLM-based Autonomous Agents](https://alphaxiv.org/abs/2308.11432v1):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11432v1)] [22 Aug 2023]
+- [The Rise and Potential of Large Language Model Based Agents: A Survey](https://alphaxiv.org/abs/2309.07864) [14 Sep 2023]
+- [A Survey of LLMs for Healthcare](https://alphaxiv.org/abs/2310.05694):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05694)] [9 Oct 2023]
+- [Overview of Factuality in LLMs](https://alphaxiv.org/abs/2310.07521):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.07521)] [11 Oct 2023]
+- [Evaluating Large Language Models: A Comprehensive Survey](https://alphaxiv.org/abs/2310.19736):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.19736)] [30 Oct 2023]
+- [Hallucination in LLMs](https://alphaxiv.org/abs/2311.05232):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.05232)] [9 Nov 2023]
+- [A Survey on Language Models for Code](https://alphaxiv.org/abs/2311.07989):[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.07989)] [14 Nov 2023]
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?](eval.md/#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
-- [Data Management For Large Language Models: A Survey](https://arxiv.org/abs/2312.01700) [4 Dec 2023]
-- [A Survey of Reasoning with Foundation Models](https://arxiv.org/abs/2312.11562) [17 Dec 2023]
-- [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997) [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] [18 Dec 2023]
-- [From Google Gemini to OpenAI Q* (Q-Star)](https://arxiv.org/abs/2312.10868): A Survey of Reshaping the Generative Artificial Intelligence (AI) Research Landscape:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10868)] [18 Dec 2023]
-- [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234): The survey aims to provide a comprehensive understanding of the current state and future directions in efficient LLM serving [23 Dec 2023]
-- [Mitigating Hallucination in LLMs](https://arxiv.org/abs/2401.01313): Summarizes 32 techniques to mitigate hallucination in LLMs [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2401.01313)] [2 Jan 2024]
-- [A Comprehensive Survey of Compression Algorithms for Language Models](https://arxiv.org/abs/2401.15347) [27 Jan 2024]
-- [Position Paper: Agent AI Towards a Holistic Intelligence](https://arxiv.org/abs/2403.00833) [28 Feb 2024]
-- [A Survey on Retrieval-Augmented Text Generation for Large Language Models](https://arxiv.org/abs/2404.10981) [17 Apr 2024]
-- [A Survey on Mixture of Experts](https://arxiv.org/abs/2407.06204) [26 Jun 2024]
-- [A Survey of Prompt Engineering Methods in Large Language Models for Different NLP Tasks](https://arxiv.org/abs/2407.12994) [17 Jul 2024]
-- [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?](https://arxiv.org/abs/2408.05109): [9 Aug 2024] [git](https://github.com/HKUSTDial/NL2SQL_Handbook)
+- [Data Management For Large Language Models: A Survey](https://alphaxiv.org/abs/2312.01700) [4 Dec 2023]
+- [A Survey of Reasoning with Foundation Models](https://alphaxiv.org/abs/2312.11562) [17 Dec 2023]
+- [Retrieval-Augmented Generation for Large Language Models: A Survey](https://alphaxiv.org/abs/2312.10997) [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] [18 Dec 2023]
+- [From Google Gemini to OpenAI Q* (Q-Star)](https://alphaxiv.org/abs/2312.10868): A Survey of Reshaping the Generative Artificial Intelligence (AI) Research Landscape:[[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10868)] [18 Dec 2023]
+- [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://alphaxiv.org/abs/2312.15234): The survey aims to provide a comprehensive understanding of the current state and future directions in efficient LLM serving [23 Dec 2023]
+- [Mitigating Hallucination in LLMs](https://alphaxiv.org/abs/2401.01313): Summarizes 32 techniques to mitigate hallucination in LLMs [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2401.01313)] [2 Jan 2024]
+- [A Comprehensive Survey of Compression Algorithms for Language Models](https://alphaxiv.org/abs/2401.15347) [27 Jan 2024]
+- [Position Paper: Agent AI Towards a Holistic Intelligence](https://alphaxiv.org/abs/2403.00833) [28 Feb 2024]
+- [A Survey on Retrieval-Augmented Text Generation for Large Language Models](https://alphaxiv.org/abs/2404.10981) [17 Apr 2024]
+- [A Survey on Mixture of Experts](https://alphaxiv.org/abs/2407.06204) [26 Jun 2024]
+- [A Survey of Prompt Engineering Methods in Large Language Models for Different NLP Tasks](https://alphaxiv.org/abs/2407.12994) [17 Jul 2024]
+- [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [git](https://github.com/HKUSTDial/NL2SQL_Handbook)
 ![GitHub Repo stars](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [What is the Role of Small Models in the LLM Era: A Survey](https://arxiv.org/abs/2409.06857) [10 Sep 2024]
-- [Small Language Models: Survey, Measurements, and Insights](https://arxiv.org/abs/2409.15790) [24 Sep 2024]
-- [A Survey on Data Synthesis and Augmentation for Large Language Models](https://arxiv.org/abs/2410.12896) [16 Oct 2024]
-- [A Comprehensive Survey of Small Language Models in the Era of Large Language Models](https://arxiv.org/abs/2411.03350) [4 Nov 2024]
-- [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594) [23 Nov 2024]
-- [Large Language Model-Brained GUI Agents: A Survey](https://arxiv.org/abs/2411.18279) [27 Nov 2024]
-- [A Survey of Mathematical Reasoning in the Era of Multimodal Large Language Model: Benchmark, Method & Challenges](https://arxiv.org/abs/2412.11936) [16 Dec 2024]
-- [GUI Agents: A Survey](https://arxiv.org/abs/2412.13501) [18 Dec 2024]
-- [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG](https://arxiv.org/abs/2501.09136) [15 Jan 2025]
-- [Advancing Reasoning in Large Language Models: Promising Methods and Approaches](https://arxiv.org/abs/2502.03671) [5 Feb 2025]
-- [A Systematic Survey of Automatic Prompt Optimization Techniques](https://arxiv.org/abs/2502.16923) [24 Feb 2025]
-- [A Survey on Post-training of Large Language Models](https://arxiv.org/abs/2503.06072) [8 Mar 2025]
-- [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://arxiv.org/abs/2503.10814) [13 Mar 2025]
-- [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) [20 Mar 2025]
-- [Survey on Evaluation of LLM-based Agents](https://arxiv.org/abs/2503.16416) [20 Mar 2025]
-- [Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.24377): Efficient reasoning mechanisms that balance computational cost with performance. [31 Mar 2025]
-- [A Survey of AI Agent Protocols](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
-- [Towards Artificial General or Personalized Intelligence? ](https://arxiv.org/abs/2505.06907): Personalized federated intelligence (PFI). Foundation Model Meets Federated Learning [11 May 2025]
+- [What is the Role of Small Models in the LLM Era: A Survey](https://alphaxiv.org/abs/2409.06857) [10 Sep 2024]
+- [Small Language Models: Survey, Measurements, and Insights](https://alphaxiv.org/abs/2409.15790) [24 Sep 2024]
+- [A Survey on Data Synthesis and Augmentation for Large Language Models](https://alphaxiv.org/abs/2410.12896) [16 Oct 2024]
+- [A Comprehensive Survey of Small Language Models in the Era of Large Language Models](https://alphaxiv.org/abs/2411.03350) [4 Nov 2024]
+- [A Survey on LLM-as-a-Judge](https://alphaxiv.org/abs/2411.15594) [23 Nov 2024]
+- [Large Language Model-Brained GUI Agents: A Survey](https://alphaxiv.org/abs/2411.18279) [27 Nov 2024]
+- [A Survey of Mathematical Reasoning in the Era of Multimodal Large Language Model: Benchmark, Method & Challenges](https://alphaxiv.org/abs/2412.11936) [16 Dec 2024]
+- [GUI Agents: A Survey](https://alphaxiv.org/abs/2412.13501) [18 Dec 2024]
+- [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG](https://alphaxiv.org/abs/2501.09136) [15 Jan 2025]
+- [Advancing Reasoning in Large Language Models: Promising Methods and Approaches](https://alphaxiv.org/abs/2502.03671) [5 Feb 2025]
+- [A Systematic Survey of Automatic Prompt Optimization Techniques](https://alphaxiv.org/abs/2502.16923) [24 Feb 2025]
+- [A Survey on Post-training of Large Language Models](https://alphaxiv.org/abs/2503.06072) [8 Mar 2025]
+- [Thinking Machines: A Survey of LLM based Reasoning Strategies](https://alphaxiv.org/abs/2503.10814) [13 Mar 2025]
+- [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://alphaxiv.org/abs/2503.16419) [20 Mar 2025]
+- [Survey on Evaluation of LLM-based Agents](https://alphaxiv.org/abs/2503.16416) [20 Mar 2025]
+- [Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models](https://alphaxiv.org/abs/2503.24377): Efficient reasoning mechanisms that balance computational cost with performance. [31 Mar 2025]
+- [A Survey of AI Agent Protocols](https://alphaxiv.org/abs/2504.16736) [23 Apr 2025]
+- [Towards Artificial General or Personalized Intelligence? ](https://alphaxiv.org/abs/2505.06907): Personalized federated intelligence (PFI). Foundation Model Meets Federated Learning [11 May 2025]
 - Evolutionary Tree of Large Language Models: [x-ref](llm.md/#evolutionary-tree-of-large-language-models)
-- [A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures](https://arxiv.org/abs/2506.19676) [24 Jun 2025]
+- [A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures](https://alphaxiv.org/abs/2506.19676) [24 Jun 2025]
+- [A Survey of Context Engineering for Large Language Models](https://www.alphaxiv.org/abs/2507.13334) [17 Jul 2025]
 
 #### **Business use cases**
 
@@ -99,14 +100,14 @@
   - [State of AI Report 2024](https://www.stateof.ai/) [10 Oct 2024]
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [Rapid Growth Continues for ChatGPT, Google’s NotebookLM](https://www.similarweb.com/blog/insights/ai-news/chatgpt-notebooklm/) [6 Nov 2024]
-- [Examining the Use and Impact of an AI Code Assistant on Developer Productivity and Experience in the Enterprise](https://arxiv.org/abs/2412.06603): IBM study surveying developer experiences with watsonx Code Assistant (WCA). Most common use: code explanations (71.9%). Rated effective by 57.4%, ineffective by 42.6%. Many described WCA as similar to an “intern” or “junior developer.” [9 Dec 2024]
+- [Examining the Use and Impact of an AI Code Assistant on Developer Productivity and Experience in the Enterprise](https://alphaxiv.org/abs/2412.06603): IBM study surveying developer experiences with watsonx Code Assistant (WCA). Most common use: code explanations (71.9%). Rated effective by 57.4%, ineffective by 42.6%. Many described WCA as similar to an “intern” or “junior developer.” [9 Dec 2024]
 - [Google: 60 of our biggest AI announcements in 2024](https://blog.google/technology/ai/google-ai-news-recap-2024/) [23 Dec 2024]
 - [Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index): a research on the labor market impact of technologies. The usage is concentrated in software development and technical writing tasks. [10 Feb 2025]
 - [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
 - [Trends – Artiﬁcial Intelligence](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf):💡Issued by Bondcap VC. 340 Slides. ChatGPT’s 800 Million Users, 99% Cost Drop within 17 months. [May 2025]
 - [SignalFire State of Talent Report 2025](https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025): 1. Entry‑level hiring down sharply since 2019 (-50%) 2. Anthropic dominate mid/senior talent retention 3. Roles labeled “junior” filled by seniors, blocking grads. [20 May 2025]
-- [Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce](https://arxiv.org/abs/2506.06576): A new framework maps U.S. workers’ preferences for AI automation vs. augmentation across 844 tasks.　It shows how people want AI to help or replace them. Many jobs need AI to support people, not just take over. [6 Jun 2025]
-- [Who is using AI to code? Global diffusion and impact of generative AI](https://arxiv.org/abs/2506.08945): AI wrote 30% of Python functions by U.S. devs in 2024. Adoption is uneven globally but boosts output and innovation. New coders use AI more, and usage drives $9.6–$14.4B in U.S. annual value. [10 Jun 2025]
+- [Future of Work with AI Agents: Auditing Automation and Augmentation Potential across the U.S. Workforce](https://alphaxiv.org/abs/2506.06576): A new framework maps U.S. workers’ preferences for AI automation vs. augmentation across 844 tasks.　It shows how people want AI to help or replace them. Many jobs need AI to support people, not just take over. [6 Jun 2025]
+- [Who is using AI to code? Global diffusion and impact of generative AI](https://alphaxiv.org/abs/2506.08945): AI wrote 30% of Python functions by U.S. devs in 2024. Adoption is uneven globally but boosts output and innovation. New coders use AI more, and usage drives $9.6–$14.4B in U.S. annual value. [10 Jun 2025]
 
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
@@ -157,7 +158,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
   [ref](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [ref](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  
   1. Sliding Window Attention (SWA): Used in Longformer. It uses a fixed-size window of attention around each token, allowing the model to scale efficiently to long inputs. Each token attends to half the window size tokens on each side, significantly reducing memory overhead.
   [ref](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
-- [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
+- [Efficient Streaming Language Models with Attention Sinks](http://alphaxiv.org/abs/2309.17453): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
   <img src="../files/streaming-llm.png" alt="streaming-attn"/>
@@ -170,7 +171,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 - LongLoRA
 
-  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://arxiv.org/abs/2309.12307): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
+  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models](https://alphaxiv.org/abs/2309.12307): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
   - Key Takeaways from LongLora <br/>
@@ -178,7 +179,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
     1. The document states that LoRA alone is not sufficient for long context extension.
     1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
     1. S2-Attn can be implemented with only two lines of code in training.
-<!--   2. [QA-LoRA](https://arxiv.org/abs/2309.14717): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
+<!--   2. [QA-LoRA](https://alphaxiv.org/abs/2309.14717): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat-square&label=%20&color=gray&cacheSeconds=36000) -->
 - [4 Advanced Attention Mechanisms](https://huggingface.co/blog/Kseniase/attentions) [4 Apr 2025]
   1. Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
@@ -243,14 +244,14 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
   entirely. [12 Jun 2017] [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/)
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [doc](../files/top-cited-2020-2021-2022-papers.pdf) [8 Mar 2023]
 - [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [doc](../files/ml_rsc.pdf) [20 Aug 2017]
-- [What are the most influential current AI Papers?](https://arxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
+- [What are the most influential current AI Papers?](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
  ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/xtekky/gpt4free?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images [20 Jun 2023]
-- [Open Problem and Limitation of RLHF](https://arxiv.org/abs/2307.15217): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)]: Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
+- [Open Problem and Limitation of RLHF](https://alphaxiv.org/abs/2307.15217): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)]: Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
 <!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [doc](../files/aifire.pdf) [2023] -->
 - [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/IbrahimSobh/llms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -276,7 +277,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ChawlaAvi/Daily-Dose-of-Data-Science?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [git](https://github.com/eugeneyan/applied-ml) ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Foundations of Large Language Models](https://arxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
+- [Foundations of Large Language Models](https://alphaxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
 - [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
 - [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
 - [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
