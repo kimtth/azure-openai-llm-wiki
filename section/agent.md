@@ -6,85 +6,87 @@
 - e.g., [Autogen](https://github.com/microsoft/autogen), and [crewAI](https://github.com/joaomdmoura/CrewAI)
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Agent Leaderboard](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)🤗
+- [Agent Leaderboard v2](https://github.com/rungalileo/agent-leaderboard) ![GitHub Repo stars](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
 
 #### **Agent Design Patterns**
 
-- [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864): The papers list for LLM-based agents [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864)] / [git](https://github.com/WooooDyy/LLM-Agent-Paper-List) [14 Sep 2023]
+- [The Rise and Potential of Large Language Model Based Agents: A Survey](https://alphaxiv.org/abs/2309.07864): The papers list for LLM-based agents [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864)] / [git](https://github.com/WooooDyy/LLM-Agent-Paper-List) [14 Sep 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [AgentBench](https://arxiv.org/abs/2308.03688) Evaluating LLMs as Agents: Assess LLM-as Agent’s reasoning and decision-making abilities. [7 Aug 2023]
+- [AgentBench](https://alphaxiv.org/abs/2308.03688) Evaluating LLMs as Agents: Assess LLM-as Agent’s reasoning and decision-making abilities. [7 Aug 2023]
 - Agentic Design Patterns [ref](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
   - Reflection: LLM self-evaluates to improve.
-    - [Self-Refine](https://arxiv.org/abs/2303.17651) [30 Mar 2023]
-    - [Reflexion](https://arxiv.org/abs/2303.11366) [20 Mar 2023]
-    - [CRITIC](https://arxiv.org/abs/2305.11738) [19 May 2023]
+    - [Self-Refine](https://alphaxiv.org/abs/2303.17651) [30 Mar 2023]
+    - [Reflexion](https://alphaxiv.org/abs/2303.11366) [20 Mar 2023]
+    - [CRITIC](https://alphaxiv.org/abs/2305.11738) [19 May 2023]
   - Tool use: LLM uses tools for information gathering, action, or data processing.
-    - [Gorilla](https://arxiv.org/abs/2305.15334) [24 May 2023]
-    - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
-    - [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
-    - [Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
+    - [Gorilla](https://alphaxiv.org/abs/2305.15334) [24 May 2023]
+    - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action](https://alphaxiv.org/abs/2303.11381) [20 Mar 2023]
+    - [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://alphaxiv.org/abs/2401.17464) [30 Jan 2024]
+    - [Executable Code Actions Elicit Better LLM Agents](https://alphaxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
   - Planning: LLM devises and executes multistep plans to reach goals.
-    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) [28 Jan 2022]
-    - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
-    - [Understanding the planning of LLM agents: A survey](https://arxiv.org/abs/2402.02716) [5 Feb 2024]
+    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://alphaxiv.org/abs/2201.11903) [28 Jan 2022]
+    - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://alphaxiv.org/abs/2303.17580) [30 Mar 2023]
+    - [Understanding the planning of LLM agents: A survey](https://alphaxiv.org/abs/2402.02716) [5 Feb 2024]
   - Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
-    - [Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) [16 Jul 2023]
-    - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) [16 Aug 2023]
-    - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352) [1 Aug 2023]
+    - [Communicative Agents for Software Development](https://alphaxiv.org/abs/2307.07924) [16 Jul 2023]
+    - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://alphaxiv.org/abs/2308.08155) [16 Aug 2023]
+    - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://alphaxiv.org/abs/2308.00352) [1 Aug 2023]
     - Framework: [Autogen](https://github.com/microsoft/autogen) / [LangGraph](https://github.com/langchain-ai/langgraph) / [crewAI](https://github.com/joaomdmoura/CrewAI)
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - Generate the code [ref](https://www.deeplearning.ai/the-batch/issue-254/) [Jun 2024]
-  - [AgentCoder: Multiagent-Code Generation with Iterative Testing and Optimisation](https://arxiv.org/abs/2312.13010) [20 Dec 2023]
-  - [LDB: A Large Language Model Debugger via Verifying Runtime Execution Step by Step](https://arxiv.org/abs/2402.16906) [25 Feb 2024]
-  - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) [6 May 2024]
+  - [AgentCoder: Multiagent-Code Generation with Iterative Testing and Optimisation](https://alphaxiv.org/abs/2312.13010) [20 Dec 2023]
+  - [LDB: A Large Language Model Debugger via Verifying Runtime Execution Step by Step](https://alphaxiv.org/abs/2402.16906) [25 Feb 2024]
+  - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://alphaxiv.org/abs/2405.15793) [6 May 2024]
 - [5 Agentic AI Design Patterns](https://blog.dailydoseofds.com/p/5-agentic-ai-design-patterns): Reflection, Tool use, ReAct, Planning, Multi-agent pattern [24 Jan 2025]
 - [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
-- [Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [git](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
+- [Advances and Challenges in Foundation Agents](https://alphaxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [git](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
 - [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
-- [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs](https://arxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
-- [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
-- [Agentic AI Architecture Framework for Enterprises ](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous [11 Jul 2025]
+- [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs](https://alphaxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
+- [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://alphaxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
+- [Agentic AI Architecture Framework for Enterprises ](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous (experimental) [11 Jul 2025]
 
 #### **Agent Design Reference**
 
 - [Exploring Generative AI (martinfowler.com)](https://martinfowler.com/articles/exploring-gen-ai.html): Memos on how LLMs are being used to enhance software delivery practices, including Toochain, Test-Driven Development (TDD) with GitHub Copilot, pair programming, and multi-file editing. [26 Jul 2023 ~ ]
-- [Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427): Cognitive Architectures for Language Agents (CoALA). Procedural (how to perform tasks), Semantic (long-term store of knowledge), Episodic Memory (recall specific past events) [ref](https://blog.langchain.dev/memory-for-agents/) [5 Sep 2023]
+- [Cognitive Architectures for Language Agents](https://alphaxiv.org/abs/2309.02427): Cognitive Architectures for Language Agents (CoALA). Procedural (how to perform tasks), Semantic (long-term store of knowledge), Episodic Memory (recall specific past events) [ref](https://blog.langchain.dev/memory-for-agents/) [5 Sep 2023]
 - [Language Agent Tree Search Method (LATS)](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [AI Agents That Matter](https://arxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
-- [Automated Design of Agentic Systems](https://arxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
+- [AI Agents That Matter](https://alphaxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
+- [Automated Design of Agentic Systems](https://alphaxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
-- [Agent-as-a-Judge](https://arxiv.org/abs/2410.10934): Evaluate Agents with Agents. DevAI, a new benchmark of 55 realistic automated AI development tasks. `Agent-as-a-Judge > LLM-as-a-Judge > Human-as-a-Judge` [14 Oct 2024]
+- [Agent-as-a-Judge](https://alphaxiv.org/abs/2410.10934): Evaluate Agents with Agents. DevAI, a new benchmark of 55 realistic automated AI development tasks. `Agent-as-a-Judge > LLM-as-a-Judge > Human-as-a-Judge` [14 Oct 2024]
 - [10 Lessons to Get Started Building AI Agents](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
-- [Generative Agent Simulations of 1,000 People](https://arxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
-- [Agents Are Not Enough](https://arxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
+- [Generative Agent Simulations of 1,000 People](https://alphaxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
+- [Agents Are Not Enough](https://alphaxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
 - [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [A Practical Guide to Building AI Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 - [Taxonomy of failure modes in AI agents ](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
-- [AI Agents vs. Agentic AI](https://arxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
+- [AI Agents vs. Agentic AI](https://alphaxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
+- [Azure AI Foundry Agent Ochestration Patterns ](https://aifoundry.app/patterns): Prompt Chaining, Routing, Parallelization, Orchestrator, Evaluator-optimizer
 
 #### **Tool use: LLM to Master APIs**
 
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard_live.html) V2 [Aug 2024]
-- [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models](https://arxiv.org/abs/2304.09842): Different tasks require different tools, and different models show different tool preferences—e.g., ChatGPT favors image captioning, while GPT-4 leans toward knowledge retrieval. [Tool transition](https://chameleon-llm.github.io/) [19 Apr 2023]
-- [Gorilla: An API store for LLMs](https://arxiv.org/abs/2305.15334): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.15334)]: Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [git](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat-square&label=%20&color=gray&cacheSeconds=36000)  
+- [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models](https://alphaxiv.org/abs/2304.09842): Different tasks require different tools, and different models show different tool preferences—e.g., ChatGPT favors image captioning, while GPT-4 leans toward knowledge retrieval. [Tool transition](https://chameleon-llm.github.io/) [19 Apr 2023]
+- [Gorilla: An API store for LLMs](https://alphaxiv.org/abs/2305.15334): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.15334)]: Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [git](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat-square&label=%20&color=gray&cacheSeconds=36000)  
 
   1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.
   1. Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.
 
   > Another user asked how Gorilla compared to LangChain; Patil replied: LangChain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into LangChain! [cite](https://www.infoq.com/news/2023/07/microsoft-gorilla/) [04 Jul 2023]  
-- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291): The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
-- [Toolformer](https://arxiv.org/abs/2302.04761): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.04761)]: Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
+- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://alphaxiv.org/abs/2305.16291): The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
+- [Toolformer](https://alphaxiv.org/abs/2302.04761): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.04761)]: Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/lucidrains/toolformer-pytorch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [ToolLLM](https://arxiv.org/abs/2307.16789): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16789)]: : Facilitating Large Language Models to Master 16000+ Real-world APIs [git](https://github.com/OpenBMB/ToolBench) [31 Jul 2023]
+- [ToolLLM](https://alphaxiv.org/abs/2307.16789): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16789)]: : Facilitating Large Language Models to Master 16000+ Real-world APIs [git](https://github.com/OpenBMB/ToolBench) [31 Jul 2023]
  ![GitHub Repo stars](https://img.shields.io/github/stars/OpenBMB/ToolBench?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [APIGen](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
-- [ToolShed](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
+- [APIGen](https://alphaxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
+- [ToolShed](https://alphaxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 
 #### **Model Context Protocol (MCP), A2A, Computer use**
 
@@ -95,7 +97,7 @@
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) ![GitHub Repo stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [mcp.so](https://mcp.so/): Find Awesome MCP Servers and Clients
 - [Docker MCP Toolkit and MCP Catalog](https://www.docker.com/products/mcp-catalog-and-toolkit): `docker mcp` [5 May 2025]
-- [A Survey of AI Agent Protocols](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
+- [A Survey of AI Agent Protocols](https://alphaxiv.org/abs/2504.16736) [23 Apr 2025]
 - [Postman launches full support for Model Context Protocol (MCP)](https://blog.postman.com/postman-launches-full-support-for-model-context-protocol-mcp-build-better-ai-agents-faster/) [1 May 2025]
 1. [ACI.dev ](https://github.com/aipotheosis-labs/aci): Unified Model-Context-Protocol (MCP) server (Built-in OAuth flows) [Sep 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/aipotheosis-labs/aci?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [5ire](https://github.com/nanbingxyz/5ire): a cross-platform desktop AI assistant, MCP client. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/nanbingxyz/5ire?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -129,7 +131,7 @@
 1. [Self-Operating Computer Framework](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![GitHub Repo stars](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [UI-TARS](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [21 Jan 2025]
+1. [UI-TARS](https://alphaxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [git](https://github.com/bytedance/UI-TARS) / Application [git](https://github.com/bytedance/UI-TARS-desktop) ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [21 Jan 2025]
 1. [OpenAI Operator](https://openai.com/index/introducing-operator/) [x-ref](chab.md/#openai-products) [23 Jan 2025]
 1. [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/browserbase/open-operator?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 
@@ -268,16 +270,16 @@
 
 #### **Domain-specific**
 
-1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat](https://arxiv.org/abs/2311.15826) | [GEOBench-VLM](https://arxiv.org/abs/2411.19325) | [RS5M](https://github.com/om-ai-lab/RS5M) | [VHM](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
+1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat](https://alphaxiv.org/abs/2311.15826) | [GEOBench-VLM](https://alphaxiv.org/abs/2411.19325) | [RS5M](https://github.com/om-ai-lab/RS5M) | [VHM](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
 1. [MLE-agent](https://github.com/MLSysOps/MLE-agent): LLM agent for machine learning engineers and researchers [Apr 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/MLSysOps/MLE-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [DrugAgent: Automating AI-aided Drug Discovery](https://arxiv.org/abs/2411.15692) [24 Nov 2024]
-1. [FinRobot: AI Agent for Equity Research and Valuation](https://arxiv.org/abs/2411.08804) [13 Nov 2024]
-1. [An LLM Agent for Automatic Geospatial Data Analysis](https://arxiv.org/abs/2410.18792) [24 Oct 2024]
+1. [DrugAgent: Automating AI-aided Drug Discovery](https://alphaxiv.org/abs/2411.15692) [24 Nov 2024]
+1. [FinRobot: AI Agent for Equity Research and Valuation](https://alphaxiv.org/abs/2411.08804) [13 Nov 2024]
+1. [An LLM Agent for Automatic Geospatial Data Analysis](https://alphaxiv.org/abs/2410.18792) [24 Oct 2024]
 1. [Director](https://github.com/video-db/Director): Think of Director as ChatGPT for videos. AI video agents framework for video interactions and workflows. [Oct 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/video-db/Director?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
+1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning](https://alphaxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
 1. [landing.ai: Vision Agent](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [UXAgent](https://arxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
-1. [DeepRare](https://arxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
+1. [UXAgent](https://alphaxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
+1. [DeepRare](https://alphaxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
 
 #### **Deep research**
 
@@ -301,11 +303,11 @@
 1. [OpenManus](https://github.com/mannaandpoem/OpenManus): A Free Open-Source Alternative to Manus AI Agent [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [CodeScientist](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/codescientist?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [OpenDeepSearch](https://github.com/sentient-agi/OpenDeepSearch): deep web search and retrieval, optimized for use with Hugging Face's SmolAgents ecosystem [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/sentient-agi/OpenDeepSearch?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [git](https://github.com/SakanaAI/AI-Scientist-v2) ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning](https://arxiv.org/abs/2504.17192): a multi-agent LLM framework that transforms machine learning papers into functional code repositories. [24 Apr 2025] [git](https://github.com/going-doer/Paper2Code) ![GitHub Repo stars](https://img.shields.io/github/stars/going-doer/Paper2Code?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://alphaxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [git](https://github.com/SakanaAI/AI-Scientist-v2) ![GitHub Repo stars](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning](https://alphaxiv.org/abs/2504.17192): a multi-agent LLM framework that transforms machine learning papers into functional code repositories. [24 Apr 2025] [git](https://github.com/going-doer/Paper2Code) ![GitHub Repo stars](https://img.shields.io/github/stars/going-doer/Paper2Code?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/): DeepMind’s AI agent that autonomously evolves algorithms using Gemini models—applied in chip design, data centers, robotics, math & CS, and AI training. [14 May 2025]
 1. [WebThinker](https://github.com/RUC-NLPIR/WebThinker): WebThinker allows the reasoning model itself to perform actions during thinking, achieving end-to-end task execution in a single generation. [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [DeerFlow](https://github.com/bytedance/deer-flow):  Bytedance. Deep Exploration and Efficient Research Flow. a community-driven Deep Research framework that combines language models with tools like web search, crawling, and code execution.  ![GitHub Repo stars](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [May 2025]
 1. [OpenEvolve](https://github.com/codelion/openevolve): An open-source implementation of the AlphaEvolve system described in the Google DeepMind paper "AlphaEvolve: A coding agent for scientific and algorithmic discovery" [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/codelion/openevolve?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]
-1. [Deep Research Agent](https://arxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
+1. [Deep Research Agent](https://alphaxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
