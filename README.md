@@ -1,4 +1,4 @@
-# Awesome Azure OpenAI + LLM Resources
+# Awesome Azure OpenAI + LLM
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
@@ -25,7 +25,7 @@ This repository serves as a comprehensive guide to the rapidly evolving field of
 
 ---
 
-## Core Areas & Specialized Topics
+## Core Topics
 
 ### 1.🎯RAG Systems
 Retrieval-Augmented Generation - Enhancing LLMs with External Knowledge
@@ -114,12 +114,12 @@ Popular Open-Source Frameworks for LLM Applications
 
 ---
 
-## Tools & Implementation
+## Tools
 
 ### 8.📚AI Tools & Extensions
 Practical Tools and Browser Extensions
 
-- [Development Tools](section/ai_tool.md/#section-10-general-ai-tools-and-extensions) - IDEs, plugins, and development utilities
+- [AI Tools & Extensions](section/ai_tool.md/#general-ai-tools-and-extensions)
 
 ### 9.📊Datasets
 Training and Evaluation Data Resources
