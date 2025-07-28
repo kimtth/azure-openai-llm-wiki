@@ -1,130 +1,169 @@
-# Azure OpenAI + LLM [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) 
+# Awesome Azure OpenAI + LLM Resources
 
-> Curated resources on Azure OpenAI, Large Language Models (LLMs), and applications.
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
+![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
 
-![Static Badge](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)  ![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
+> A comprehensive, curated collection of resources for Azure OpenAI, Large Language Models (LLMs), and their applications.
 
-🔹Brief each item on a few lines as possible.  
-🔹Capturing a chronicle and key terms of that rapidly advancing field, ordered by date.  
-🔹The dates are based on the first commit, article publication, or paper version 1 issuance.  
-🔹GitHub links (with [star counts](https://shields.io/badges/git-hub-repo-stars)); others are articles or papers.  
-🔹Disclaimer: Please be aware that some content may be outdated.
+This repository serves as a comprehensive guide to the rapidly evolving field of LLMs and Azure OpenAI services. Key features:
 
-## Contents
+🔹Concise Summaries: Each resource is briefly described for quick understanding  
+🔹Chronological Organization: Resources ordered by date (first commit, publication, or paper release)  
+🔹Active Tracking: Regular updates to capture the latest developments  
 
-- [Section 1: RAG](#section-1--rag)
-- [Section 2: Azure OpenAI](#section-2--azure-openai)
-- [Section 3: LLM Applications](#section-3--llm-applications)
-- [Section 4: Agent](#section-4--agent)
-- [Section 5: Semantic Kernel & DSPy](#section-5-️-semantic-kernel--dspy)
-- [Section 6: LangChain & LlamaIndex](#section-6-️-langchain--llamaindex)
-- [Section 7: Prompting & Finetuning](#section-7--prompting--finetuning)
-- [Section 8: Challenges & Abilities](#section-8-️-challenges--abilities)
-- [Section 9: LLM Landscape](#section-9--llm-landscape)
-- [Section 10: Surveys & References](#section-10--surveys--references)
-- [Section 11: AI Tools & Extensions](#section-11--ai-tools--extensions)
-- [Section 12: Datasets](#section-12--datasets)
-- [Section 13: Evaluations](#section-13--evaluations)
+> Note: Some content may become outdated due to the rapid pace of development in this field.
 
-### **Section 1** 🎯: RAG
-- [RAG (Retrieval-Augmented Generation)](section/rag.md/#rag-retrieval-augmented-generation)
-- [RAG Design](section/rag.md/#rag-solution-design)
-- [RAG Application](section/rag.md/#rag-development)
-  - [GraphRAG](section/rag.md/#graphrag)
-- [Vector DB](section/rag.md/#vector-database-comparison)
+## Quick Navigation
 
-### **Section 2** 🌌: Azure OpenAI
-- [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework)
-- [Microsoft Copilot](section/aoai.md/#microsoft-copilot)
-- [Azure AI Search & Azure AI Services](section/aoai.md/#azure-ai-search)
-- [Microsoft Research](section/aoai.md/#microsoft-research)
-- [Reference Architecture & Samples](section/aoai.md/#azure-reference-architectures)
+| Application | LLM | Tools |
+|------------|-------------------|----------------------|
+| [1. RAG Systems](#1rag-systems) | [5. Prompt Engineering](#5prompt-engineering--finetuning) | [8. AI Tools & Extensions](#8ai-tools--extensions) |
+| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6challenges--abilities) | [9. Datasets](#9datasets) |
+| [3. LLM Applications](#3llm-applications) | [7. LLM Landscape](#7llm-landscape) | [10. Evaluation Methods](#10evaluation-methods) |
+| [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research--surveys) | [Frameworks](#️frameworks) |
 
-### **Section 3** 🌐: LLM Applications
-- [LLM Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux)
-- [LLM Applications](section/app.md/#llm-application-development)
-  - [Code Editor / Code Agent](section/app.md/#code-editor--agent)
-  - [Memory](section/app.md/#llm-memory)
-- [Caching, UX](section/app.md/#caching)
-- [Proposals & Glossary](section/app.md/#proposals--glossary): e.g., Vibe Coding, Context Engineering
-- [Robotics](section/app.md/#llm-for-robotics)
-- [Awesome Demo](section/app.md/#awesome-demo)
+---
 
-### **Section 4** 🤖: Agent
-- [Agent Design Patterns](section/agent.md/#agent-design-patterns)
-- [Agent Frameworks](section/agent.md/#agent-framework)
-- [Agent Applications](section/agent.md/#agent-application)
-  - [Code Interpreter](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
-  - [Model Context Protocol (MCP), A2A, Computer Use](section/agent.md/#model-context-protocol-mcp-a2a-computer-use)
-  - [Deep Research](section/agent.md/#deep-research)
+## Core Areas & Specialized Topics
 
-### **Section 5** 🏗️: Semantic Kernel | DSPy
-- [Semantic Kernel](section/sk_dspy.md/#semantic-kernel): Micro-orchestration
-- [DSPy](section/sk_dspy.md/#dspy): Optimizer frameworks
+### 1.🎯RAG Systems
+Retrieval-Augmented Generation - Enhancing LLMs with External Knowledge
 
-### **Section 6** 🛠️: LangChain | LlamaIndex
-- [LangChain Features](section/langchain.md/#langchain-feature-matrix--cheetsheet): Macro & Micro-orchestration
-- [LangChain Agent & Criticism](section/langchain.md/#langchain-chain-type-chains--summarizer)
-- [LangChain vs Competitors](section/langchain.md/#langchain-vs-competitors)
-- [LlamaIndex](section/langchain.md/#llamaindex): Micro-orchestration & RAG
+- [RAG Fundamentals](section/rag.md/#rag-retrieval-augmented-generation) - Core concepts and implementation strategies
+- [RAG Architecture Design](section/rag.md/#rag-solution-design) - System design patterns and best practices
+- [RAG Applications](section/rag.md/#rag-development) - Real-world implementations and use cases
+  - [GraphRAG](section/rag.md/#graphrag) - Graph-based retrieval approaches
+- [Vector Databases](section/rag.md/#vector-database-comparison) - Comparison and selection guide
 
-### **Section 7** 🧠: Prompting | Finetuning
-- [Prompt Engineering](section/prompt.md/#prompt-engineering)
-- [Finetuning](section/ft.md/#finetuning): PEFT (e.g., LoRA), RLHF, SFT
-- [Quantization & Optimization](section/ft.md/#quantization-techniques)
-- [Other Techniques](section/ft.md/#other-techniques-and-llm-patterns): e.g., MoE
-- [Visual Prompting](section/prompt.md/#visual-prompting--visual-grounding)
+### 2.🌌Azure OpenAI
+Microsoft's Cloud-Based AI Platform and Services
 
-### **Section 8** 🏄‍♂️: Challenges | Abilities
-- [AGI Discussion & Social Impact](section/chab.md/#agi-discussion-and-social-impact)
-- [OpenAI Products & Roadmap](section/chab.md/#openais-roadmap-and-products)
-- [Context Constraints](section/chab.md/#context-constraints): e.g., RoPE
-- [Trust & Safety](section/chab.md/#trustworthy-safe-and-secure-llm)
-- [LLM Abilities](section/chab.md/#large-language-model-is-abilities)
-  - [Reasoning](section/chab.md/#reasoning)
+- [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework) - Official frameworks and SDKs
+- [Microsoft Copilot](section/aoai.md/#microsoft-copilot) - Copilot products overview
+- [Azure AI Services](section/aoai.md/#azure-ai-search) - Azure AI Search, AI services
+- [Microsoft Research](section/aoai.md/#microsoft-research) - Research publications and findings
+- [Reference Architectures](section/aoai.md/#azure-reference-architectures) - Proven architectural patterns and samples
 
-### **Section 9** 🌍: LLM Landscape
-- [LLM Taxonomy](section/llm.md/#large-language-models-in-2023)
-- [LLM Collection](section/llm.md/#large-language-model-collection)
-- [Domain-Specific](section/llm.md/#llm-for-domain-specific): e.g., Software development
-- [Multimodal](section/llm.md/#mllm-multimodal-large-language-model)
+### 3.🤖LLM Applications
+Building Real-World Applications with Large Language Models
 
-### **Section 10** 📚: Surveys | References
-- [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models)
-- [Business Use Cases](section/survey_ref.md/#business-use-cases)
-- [Building LLMs](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt): from scratch
-- [LLMs for Korean & Japanese](section/survey_ref.md/#llm-materials-for-east-asian-languages)
-- [Learning and Supplementary Materials](section/survey_ref.md/#learning-and-supplementary-materials)
+- [Development Frameworks](section/app.md/#applications-frameworks-and-user-interface-uiux) - Tools for building LLM applications
+- [Application Development](section/app.md/#llm-application-development) - Implementation guides and best practices
+  - [Code Development Tools](section/app.md/#code-editor--agent) - AI-powered coding assistants and editors
+  - [Memory Systems](section/app.md/#llm-memory) - Persistent memory and context management
+- [Performance Optimization](section/app.md/#caching) - Caching strategies and UX improvements
+- [Emerging Concepts](section/app.md/#proposals--glossary) - New paradigms like Vibe Coding and Context Engineering
+- [Robotics Integration](section/app.md/#llm-for-robotics) - LLMs in robotic systems
+- [Demonstration Projects](section/app.md/#awesome-demo) - Inspiring examples and showcases
 
-### **Section 11** 🧰: AI Tools | Extensions
-- [AI Tools & Extensions](section/ai_tool.md/#section-10-general-ai-tools-and-extensions)
+### 4.🤖Agent Development
+Building Autonomous AI Agents and Multi-Agent Systems
 
-### **Section 12** 📊: Datasets
-- [LLM Training Datasets](section/dataset.md/#datasets-for-llm-training)
+- [Design Patterns](section/agent.md/#agent-design-patterns) - Proven architectural approaches for agent systems
+- [Development Frameworks](section/agent.md/#agent-framework) - Tools and libraries for building agents
+- [Agent Applications](section/agent.md/#agent-application) - Real-world agent implementations
+  - [Code Interpreters](section/agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics) - Open-source alternatives to OpenAI's Code Interpreter
+  - [Model Context Protocol](section/agent.md/#model-context-protocol-mcp-a2a-computer-use) - MCP, Agent-to-Agent communication, and computer interaction
+  - [Research Agents](section/agent.md/#deep-research) - AI systems for deep research and analysis
 
-### **Section 13** 📝: Evaluations
-- [LLM Evaluation](section/eval.md/#evaluating-large-language-models)
-- [LLMOps](section/eval.md/#llmops-large-language-model-operations)
+### 5.🧠Prompt Engineering & Finetuning
+Optimizing Model Performance and Behavior
 
-#### **Legend** 🔑
-- `ref`: external URL
-- `doc`: archived doc
-- `cite`: the source of comments
-- `cnt`: number of citations
-- `git`: GitHub link
-- `x-ref`: Cross reference
-- 📺: YouTube or video
-- 💡 or 🏆: recommendation
+- [Prompt Engineering](section/prompt.md/#prompt-engineering) - Techniques for effective prompt design
+- [Model Finetuning](section/ft.md/#finetuning) - PEFT (LoRA), RLHF, and supervised fine-tuning
+- [Model Optimization](section/ft.md/#quantization-techniques) - Quantization and performance optimization
+- [Advanced Techniques](section/ft.md/#other-techniques-and-llm-patterns) - Mixture of Experts (MoE) and other patterns
+- [Visual Prompting](section/prompt.md/#visual-prompting--visual-grounding) - Working with multimodal inputs
 
-## **Contributor** 👀
+### 6.🏄‍♂️Challenges & Abilities
+Understanding LLM Capabilities and Limitations
+
+- [AGI and Social Impact](section/chab.md/#agi-discussion-and-social-impact) - Discussions on artificial general intelligence
+- [OpenAI Ecosystem](section/chab.md/#openais-roadmap-and-products) - Product roadmaps and strategic direction
+- [Technical Constraints](section/chab.md/#context-constraints) - Context limitations and solutions (e.g., RoPE)
+- [Safety and Security](section/chab.md/#trustworthy-safe-and-secure-llm) - Building trustworthy AI systems
+- [LLM Capabilities](section/chab.md/#large-language-model-is-abilities) - Understanding what LLMs can and cannot do
+  - [Reasoning Abilities](section/chab.md/#reasoning) - Logical reasoning and problem-solving
+
+### 7.🌍LLM Landscape
+Overview of Available Models and Technologies
+
+- [Model Taxonomy](section/llm.md/#large-language-models-in-2023) - Classification and comparison of LLMs
+- [Model Collection](section/llm.md/#large-language-model-collection) - Comprehensive list of available models
+- [Domain-Specific Models](section/llm.md/#llm-for-domain-specific) - Specialized models for software development and other domains
+- [Multimodal Models](section/llm.md/#mllm-multimodal-large-language-model) - Models handling text, image, audio, and video
+
+---
+
+## 🏗️Frameworks
+
+### Semantic Kernel & DSPy
+Microsoft's Orchestration Framework and Optimization Tools
+
+- [Semantic Kernel](section/sk_dspy.md/#semantic-kernel) - Microsoft's micro-orchestration framework for AI applications
+- [DSPy](section/sk_dspy.md/#dspy) - Optimizer frameworks for systematic prompt and model optimization
+
+### LangChain & LlamaIndex
+Popular Open-Source Frameworks for LLM Applications
+
+- [LangChain Features](section/langchain.md/#langchain-feature-matrix--cheetsheet) - Comprehensive feature overview and cheat sheets
+- [LangChain Agents](section/langchain.md/#langchain-chain-type-chains--summarizer) - Agent implementations and critical analysis
+- [Framework Comparisons](section/langchain.md/#langchain-vs-competitors) - LangChain vs. alternative frameworks
+- [LlamaIndex](section/langchain.md/#llamaindex) - Micro-orchestration and RAG-focused framework
+
+---
+
+## Tools & Implementation
+
+### 8.📚AI Tools & Extensions
+Practical Tools and Browser Extensions
+
+- [Development Tools](section/ai_tool.md/#section-10-general-ai-tools-and-extensions) - IDEs, plugins, and development utilities
+
+### 9.📊Datasets
+Training and Evaluation Data Resources
+
+- [Training Datasets](section/dataset.md/#datasets-for-llm-training) - High-quality datasets for model training and fine-tuning
+
+### 10.📝Evaluation Methods
+Measuring and Improving LLM Performance
+
+- [Evaluation Frameworks](section/eval.md/#evaluating-large-language-models) - Methods and metrics for LLM assessment
+- [LLMOps](section/eval.md/#llmops-large-language-model-operations) - Operations and lifecycle management for LLM systems
+
+---
+
+### 11.🧠Research & Surveys
+Comprehensive Surveys and Learning Materials
+
+- [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) - Academic surveys and systematic reviews
+- [Business Applications](section/survey_ref.md/#business-use-cases) - Industry use cases and implementation strategies
+- [Building from Scratch](section/survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt) - Educational resources for understanding LLM internals
+- [Multilingual Resources](section/survey_ref.md/#llm-materials-for-east-asian-languages) - LLM resources for Korean, Japanese, and other languages
+- [Learning Materials](section/survey_ref.md/#learning-and-supplementary-materials) - Tutorials, courses, and supplementary resources
+
+---
+
+## Legend & Notation
+
+| Symbol | Meaning | Symbol | Meaning |
+|--------|---------|--------|---------|
+| `ref` | External URL | `git` | GitHub repository |
+| `doc` | Archived document | `x-ref` | Cross reference |
+| `cite` | Source citation | 📺 | Video content |
+| `cnt` | Citation count | 💡🏆 | Recommended resource |
+
+---
+
+## Contributing
 
 <a href="https://github.com/kimtth/awesome-azure-openai-llm/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kimtth/awesome-azure-openai-llm" />
 </a>
 
-ⓒ `https://github.com/kimtth` all rights reserved.
+<!-- All rights reserved © `kimtth` -->
 
-**[`^        back to top        ^`](#contents)**
+*Last Updated: July 23, 2025*
 
-
-Last Updated: 2025/07/23
+[⬆ Back to Top](#awesome-azure-openai--llm-resources)
