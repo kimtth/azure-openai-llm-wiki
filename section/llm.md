@@ -1,12 +1,14 @@
 ## **Large Language Model: Landscape**
 
-### **Large Language Models (in 2023)**
+#### Large Language Models (in 2023)
 
 1. Change in perspective is necessary because some abilities only emerge at a certain scale. Some conclusions from the past are invalidated and we need to constantly unlearn intuitions built on top of such ideas.
 1. From first-principles, scaling up the Transformer amounts to efficiently doing matrix multiplications with many, many machines.
 1. Further scaling (think 10000x GPT-4 scale). It entails finding the inductive bias that is the bottleneck in further scaling.
+> [Twitter](https://twitter.com/hwchung27/status/1710003293223821658) / [Video](https://t.co/vumzAtUvBl) / [Slides](https://t.co/IidLe4JfrC) [6 Oct 2023]
 
-- [Twitter](https://twitter.com/hwchung27/status/1710003293223821658) / [Video](https://t.co/vumzAtUvBl) / [Slides](https://t.co/IidLe4JfrC) [6 Oct 2023]
+#### Large Language Model Comparison
+
 - [LLMArena](https://lmarena.ai/):💡Chatbot Arena (formerly LMSYS): Free AI Chat to Compare & Test Best AI Chatbots
 - [LLMprices.dev](https://llmprices.dev): Compare prices for models like GPT-4, Claude Sonnet 3.5, Llama 3.1 405b and many more.
 - [AI Model Review](https://aimodelreview.com/): Compare 75 AI Models on 200+ Prompts Side By Side.
@@ -14,6 +16,20 @@
 - [Inside language models (from GPT to Olympus)](https://lifearchitect.ai/models/)
 - [LLM Pre-training and Post-training Paradigms](https://sebastianraschka.com/blog/2024/new-llm-pre-training-and-post-training.html) [17 Aug 2024] <br/>
   <img src="../files/llm-dev-pipeline-overview.png" width="350" />
+
+#### The Big LLM Architecture Comparison (in 2025)
+
+- [The Big LLM Architecture Comparison](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html) [19 Jul 2025]
+
+  | Model              | Release         | Params | Attention          | Norm                | MoE                         | Notable Features                                                                     |
+  | ------------------ | --------------- | ------ | ------------------ | ------------------- | --------------------------- | ------------------------------------------------------------------------------------ |
+  | **DeepSeek V3/R1** | Dec ’24/Jan ’25 | 671 B  | MLA                | RMSNorm             | Yes (256 experts, 9 active) | Shared‑expert MoE |
+  | **OLMo 2**         | Jan ’25         | –      | MHA                | RMSNorm (+ QK‑Norm) | No                          | Post‑Norm placement for training      |
+  | **Gemma 3**        | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Additional norm layers for stability                               |
+  | **Gemma 3n**       | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Per‑layer embeddings & MatFormer slicing                           |
+  | **Mistral S 3.1**  | 2025            | –      | GQA                | RMSNorm             | No                          | Layer‑trimmed, compact FFN & KV cache                                                |
+  | **SmolLM 3**       | 2025            | –      | GQA/MHA            | RMSNorm             | No                          | Drops positional embeddings in select layers                                         |
+  | **Kimi K2**        | 2025            | 1 T    | MLA + GQA          | RMSNorm             | Yes                         | Trillion‑parameter scale 
 
 ### **Evolutionary Tree of Large Language Models**
 
@@ -126,7 +142,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Open R1](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
 - Mistral
   - Founded in April 2023. French tech.
-  1. open-weights models (Mistral 7B, Mixtral 8x7B, Mixtral 8x22B, NeMo) and optimized commercial models (Mistral Small, Mistral Medium, Mistral Large) [ref](https://docs.mistral.ai/getting-started/models/)
+  1. Model overview [ref](https://docs.mistral.ai/getting-started/models/)
   1. [NeMo](https://mistral.ai/news/mistral-nemo/): 12B model with 128k context length that outperforms LLama 3 8B [18 Jul 2024]
   1. [Mistral OCR](https://mistral.ai/news/mistral-ocr): Precise text recognition with up to 99% accuracy. Multimodal. Browser based [6 Mar 2025]
 - Groq
@@ -140,8 +156,10 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [QwQ-32B](https://qwen-ai.com/): Reasoning model [5 Mar 2025]
   1. [Qwen2.5-Omni](https://alphaxiv.org/abs/2503.20215): a single end-to-end multimodal model. text, audio, image, and video, and generate both text and speech in real time. Thinker(transformer decoder)-Talker(autoregressive decoder) architecture. [git](https://github.com/QwenLM/Qwen2.5-Omni) ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [26 Mar 2025]
   1. [Qwen 3](https://qwenlm.github.io/blog/qwen3/): Hybrid Thinking Modes, Agentic Capabilities, Support 119 languages [29 Apr 2025]
+  - A list of models: [git](https://github.com/QwenLM)
 - Baidu
   1. [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
+  1. A list of models & libraries: [git](https://github.com/PaddlePaddle/ERNIE)
 - Cohere
   - Founded in 2019. Canadian multinational tech.
   1. [Command R+](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
@@ -158,6 +176,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![GitHub Repo stars](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
   - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
+  - A list of models: [git](https://github.com/Tencent-Hunyuan)
 - Xiaomi
   - Founded in 2010, Xiaomi is a Chinese company known for its innovative consumer electronics and smart home products.
   - [Mimo](https://github.com/XiaomiMiMo/MiMo): 7B. advanced reasoning for code and math [30 Apr 2025]
