@@ -213,15 +213,16 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/gabrielchua/RAGxplorer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Perplexica](https://github.com/ItzCrazyKns/Perplexica):💡Open source alternative to Perplexity AI [Apr 2024] / [Marqo](https://github.com/marqo-ai/marqo) [Aug 2022] / [txtai](https://github.com/neuml/txtai) [Aug 2020] / [Typesense](https://github.com/typesense/typesense) [Jan 2017] / [Morphic](https://github.com/miurla/morphic) [Apr 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ItzCrazyKns/Perplexica?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/marqo-ai/marqo?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/neuml/txtai?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/typesense/typesense?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/miurla/morphic?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [R2R (Reason to Retrieve)](https://github.com/SciPhi-AI/R2R): Agentic Retrieval-Augmented Generation (RAG) with a RESTful API. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [llm-answer-engine](https://github.com/developersdigest/llm-answer-engine): Build a Perplexity-Inspired Answer Engine Using Next.js, Groq, Mixtral, LangChain, OpenAI, Brave & Serper [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/developersdigest/llm-answer-engine?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [turboseek](https://github.com/Nutlope/turboseek): An AI search engine inspired by Perplexity [May 2024]
-![GitHub Repo stars](https://img.shields.io/github/stars/Nutlope/turboseek?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-1. [R2R (Reason to Retrieve)](https://github.com/SciPhi-AI/R2R): Agentic Retrieval-Augmented Generation (RAG) with a RESTful API. [Feb 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG): A Python Toolkit for Efficient RAG Research [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [kotaemon](https://github.com/Cinnamon/kotaemon): Open-source clean & customizable RAG UI for chatting with your documents. [Mar 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/Cinnamon/kotaemon?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [turboseek](https://github.com/Nutlope/turboseek): An AI search engine inspired by Perplexity [May 2024]
+![GitHub Repo stars](https://img.shields.io/github/stars/Nutlope/turboseek?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [smartrag](https://github.com/aymenfurter/smartrag): Deep Research through Multi-Agents, using GraphRAG. [Jun 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/aymenfurter/smartrag?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Scira (Formerly MiniPerplx)](https://github.com/zaidmukaddam/scira): A minimalistic AI-powered search engine [Aug 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/zaidmukaddam/scira?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [MedGraphRAG](https://alphaxiv.org/abs/2408.04187): MedGraphRAG outperforms the previous SOTA model, [Medprompt](https://alphaxiv.org/abs/2311.16452), by 1.1%. [git](https://github.com/medicinetoken/medical-graph-rag) [8 Aug 2024]
 ![GitHub Repo stars](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -232,6 +233,8 @@
 1. [Simba](https://github.com/GitHamza0206/simba): Portable KMS (knowledge management system) designed to integrate seamlessly with any Retrieval-Augmented Generation (RAG) system [Dec 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/GitHamza0206/simba?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Gemini-Search](https://github.com/ammaarreshi/Gemini-Search): Perplexity style AI Search engine clone built with Gemini [Jan 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/ammaarreshi/Gemini-Search?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. [Fireplexity](https://github.com/mendableai/fireplexity): AI search engine by Firecrawl's search API ![GitHub Repo stars](https://img.shields.io/github/stars/mendableai/fireplexity?style=flat-square&label=%20&color=gray&cacheSeconds=36000) [Jun 2025]
+1. [RAG-Anything](https://github.com/HKUDS/RAG-Anything): "RAG-Anything: All-in-One RAG System". [Jun 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/RAG-Anything?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+1. [WeKnora](https://github.com/Tencent/WeKnora): LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm. [Jul 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/Tencent/WeKnora?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 1. Applications, Frameworks, and User Interface (UI/UX): [x-ref](app.md/#applications-frameworks-and-user-interface-uiux)
 
 ### **Vector Database Comparison**
