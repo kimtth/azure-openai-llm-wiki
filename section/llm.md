@@ -31,6 +31,19 @@
   | **SmolLM 3**       | 2025            | –      | GQA/MHA            | RMSNorm             | No                          | Drops positional embeddings in select layers                                         |
   | **Kimi K2**        | 2025            | 1 T    | MLA + GQA          | RMSNorm             | Yes                         | Trillion‑parameter scale 
 
+#### GPT-2 vs gpt-oss
+
+- [From GPT-2 to gpt-oss: Analyzing the Architectural Advances](https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the) [9 Aug 2025]
+
+| Feature              | GPT-2                          | GPT-OSS                              |
+| -------------------- | ------------------------------ | ------------------------------------ |
+| Release & Size       | 2019, up to 1.5B params        | 2025, 20B & 120B params (MoE)        |
+| Architecture         | Dense transformer decoder      | Mixture-of-Experts (MoE) decoder     |
+| Activation & Dropout | Swish activation, uses dropout | GELU (or optimized), no dropout      |
+| Parameter Efficiency | All params active per token    | Sparse activation of experts         |
+| Deployment & License | MIT license    | Open-weight local runs, Apache 2.0   |
+| Reasoning & Tools    | Basic generation               | Built-in chain-of-thought & tool use |
+
 ### **Evolutionary Tree of Large Language Models**
 
 - Evolutionary Graph of LLaMA Family
@@ -90,6 +103,8 @@
 - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
 - [TÜLU 3](https://alphaxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [git](https://github.com/allenai/open-instruct) / demo:[ref](https://playground.allenai.org/) [22 Nov 2024] ![GitHub Repo stars](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [ModernBERT](https://alphaxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
+- OpenAI
+  1. [gpt-oss](https://github.com/openai/gpt-oss):💡**gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/gpt-oss?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - Meta (aka. Facebook)
   1. Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama) / [ref](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
  ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/llama?style=flat-square&label=%20&color=gray&cacheSeconds=36000) ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama-models?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -254,6 +269,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
   1. [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025]
 - [AlphaGenome](https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome): DeepMind’s advanced AI model, launched in June 2025, is designed to analyze the regulatory “dark matter” of the genome—specifically, the 98% of DNA that does not code for proteins but instead regulates when and how genes are expressed. [June 2025]
+- [Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder): Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team, Alibaba Cloud. [Jul 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/QwenLM/Qwen3-Coder?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 
 ### **MLLM (multimodal large language model)**
 
