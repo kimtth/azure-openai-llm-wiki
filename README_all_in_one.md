@@ -462,7 +462,8 @@ Comprehensive Surveys and Learning Materials
 - [Is Cosine-Similarity of Embeddings Really About Similarity?](https://alphaxiv.org/abs/2403.05440): Regularization in linear matrix factorization can distort cosine similarity. L2-norm regularization on (1) the product of matrices (like dropout) and (2) individual matrices (like weight decay) may lead to arbitrary similarities.  [8 Mar 2024]
 - [Contextual Document Embedding (CDE)](https://alphaxiv.org/abs/2410.02525): Improve document retrieval by embedding both queries and documents within the context of the broader document corpus. [ref](https://pub.aimind.so/unlocking-the-power-of-contextual-document-embeddings-enhancing-search-relevance-01abfa814c76) [3 Oct 2024]
 - [Fine-tuning Embeddings for Specific Domains](https://blog.gopenai.com/fine-tuning-embeddings-for-specific-domains-a-comprehensive-guide-5e4298b42185): The guide discusses fine-tuning embeddings for domain-specific tasks using `sentence-transformers` [1 Oct 2024]
-- [A Gentle Introduction to Word Embedding and Text Vectorization](https://machinelearningmastery.com/a-gentle-introduction-to-word-embedding-and-text-vectorization/): Word embedding, Text vectorization, One-hot encoding, Bag-of-words, TF-IDF, word2vec, GloVe, FastText. | [Tokenizers in Language Models](https://machinelearningmastery.com/tokenizers-in-language-models/): Stemming, Lemmatization, Byte Pair Encoding (BPE), WordPiece, SentencePiece, Unigram [23 May 2025] 
+- [A Gentle Introduction to Word Embedding and Text Vectorization](https://machinelearningmastery.com/a-gentle-introduction-to-word-embedding-and-text-vectorization/): Word embedding, Text vectorization, One-hot encoding, Bag-of-words, TF-IDF, word2vec, GloVe, FastText. | [Tokenizers in Language Models](https://machinelearningmastery.com/tokenizers-in-language-models/): Stemming, Lemmatization, Byte Pair Encoding (BPE), WordPiece, SentencePiece, Unigram [23 May 2025]
+- [Contextualized Chunk Embedding Model](https://blog.voyageai.com/2025/07/23/voyage-context-3/): Rather than embedding each chunk separately, a contextualized chunk embedding model uses the whole document to create chunk embeddings that reflect the document’s overall context. [ref](https://blog.dailydoseofds.com/p/contextualized-chunk-embedding-model) [23 Jul 2025]
 
 ## **Azure OpenAI and Reference Architecture**
 
@@ -1308,10 +1309,12 @@ Comprehensive Surveys and Learning Materials
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
 - [Advances and Challenges in Foundation Agents](https://alphaxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [git](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
 - [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
+- [Beyond the Gang of Four: Practical Design Patterns for Modern AI Systems](https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/): **Prompting & Context:** Few-Shot Prompting, Role Prompting, Chain-of-Thought, RAG; **Responsible AI:** Output Guardrails, Model Critic; **UX:** Contextual Guidance, Editable Output, Iterative Exploration; **AI-Ops:** Metrics-Driven AI-Ops, Prompt-Model-Config Versioning; **Optimization:** Prompt Caching, Dynamic Batching, Intelligent Model Routing. [15 My 2025]
 - [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs](https://alphaxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
 - [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://alphaxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
 - [Agentic AI Architecture Framework for Enterprises ](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous (experimental) [11 Jul 2025]
 - [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns):💡Sequential, Concurrent, Group chat, Handoff, Magentic orchestration [17 Jun 2025]
+- [Agent Factory: The new era of agentic AI—common use cases and design patterns](https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/):💡Tool use, Reflection, Planning,  Multi-agent, ReAct (Reason + Act) Patterns [13 Aug 2025]
 
 #### **Agent Design Reference**
 
@@ -1373,6 +1376,7 @@ Comprehensive Surveys and Learning Materials
 1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 1. [mcp-use](https://github.com/mcp-use/mcp-use): MCP Client Library to connect any LLM to any MCP server [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp): automatically exposing FastAPI endpoints as Model Context Protocol (MCP) [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
+1. [Context7](https://github.com/upstash/context7): Up-to-date code documentation for LLMs and AI code editors [Mar 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/upstash/context7?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [Azure MCP Server](https://github.com/Azure/azure-mcp): connection between AI agents and key Azure services like Azure Storage, Cosmos DB, and more. [Apr 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/Azure/azure-mcp?style=flat-square&label=%20&color=gray&cacheSeconds=36000) 
 1. [Hugging Face MCP Course](https://huggingface.co/mcp-course): 🤗 Model Context Protocol (MCP) Course
 1. [mcp-ui](https://github.com/idosal/mcp-ui): SDK for UI over MCP. Create next-gen UI experiences! [May 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/idosal/mcp-ui?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -2606,6 +2610,8 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 - [gpt-image-1](https://openai.com/index/image-generation-api/): Image generation model API with designing and editing [23 Apr 2025]
 - [gpt-oss](https://github.com/openai/gpt-oss): **gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![GitHub Repo stars](https://img.shields.io/github/stars/openai/gpt-oss?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [GPT-5](https://openai.com/index/introducing-gpt-5/): Real-time router orchestrating multiple models. GPT‑5 is the new default in ChatGPT, replacing GPT‑4o, OpenAI o3, OpenAI o4-mini, GPT‑4.1, and GPT‑4.5.  [7 Aug 2025]
+  1. [GPT-5 prompting guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
+  2. [Frontend coding with GPT-5](https://cookbook.openai.com/examples/gpt-5/gpt-5_frontend)
 
 ##### **OpenAI o series**
 
@@ -2735,6 +2741,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Tina: Tiny Reasoning Models via LoRA](https://alphaxiv.org/abs/2504.15777): Low-rank adaptation (LoRA) with Reinforcement learning (RL) on a 1.5B parameter base model  [22 Apr 2025]
 - [Illusion of Thinking](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf): Large Reasoning Models (LRMs) are evaluated using controlled puzzles, where complexity depends on the size of `N`. Beyond a certain complexity threshold, LRM accuracy collapses, and reasoning effort paradoxically decreases. LRMs outperform standard LLMs on medium-complexity tasks, perform worse on low-complexity ones, and both fail on high-complexity. Apple. [May 2025]
 - [Comment on The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity](https://alphaxiv.org/abs/2506.09250):💡The `Illusion of Thinking` findings primarily reflect experimental design limitations rather than fundamental reasoning failures. Output token limits, flawed evaluation methods, and unsolvable River Crossing problems. [10 Jun 2025]
+- [Is Chain-of-Thought Reasoning of LLMs a Mirage?](https://arxiv.org/abs/2508.01191): The paper concludes that CoT is largely a mimic rather than true reasoning. Using DataAlchemy—`atom` = A–Z; `element` = e.g., APPLE; `transform` = (1) ROT (rotation), (2) position shift; `compositional transform` = combinations of transforms—the model is fine-tuned and evaluated on its ability to generalize to unlearned patterns.
 
 
 ## **Large Language Model: Landscape**
@@ -3186,6 +3193,8 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - Evolutionary Tree of Large Language Models: [x-ref](#evolutionary-tree-of-large-language-models)
 - [A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures](https://alphaxiv.org/abs/2506.19676) [24 Jun 2025]
 - [A Survey of Context Engineering for Large Language Models](https://www.alphaxiv.org/abs/2507.13334) [17 Jul 2025]
+- [Tabular Data Understanding with LLMs: A Survey of Recent Advances and Challenges](https://arxiv.org/abs/2508.00217) [31 Jul 2025]
+- [A comprehensive taxonomy of hallucinations in Large Language Models](https://arxiv.org/abs/2508.01781) [3 Aug 2025]
 
 #### **Business use cases**
 

@@ -86,6 +86,8 @@
 - Evolutionary Tree of Large Language Models: [x-ref](llm.md/#evolutionary-tree-of-large-language-models)
 - [A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures](https://alphaxiv.org/abs/2506.19676) [24 Jun 2025]
 - [A Survey of Context Engineering for Large Language Models](https://www.alphaxiv.org/abs/2507.13334) [17 Jul 2025]
+- [Tabular Data Understanding with LLMs: A Survey of Recent Advances and Challenges](https://arxiv.org/abs/2508.00217) [31 Jul 2025]
+- [A comprehensive taxonomy of hallucinations in Large Language Models](https://arxiv.org/abs/2508.01781) [3 Aug 2025]
 
 #### **Business use cases**
 
