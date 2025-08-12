@@ -28,6 +28,7 @@
 - AI Search engine:
   1. [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
   1. [Perplexity](http://perplexity.ai) [Dec 2022]
+    - [Perplexity comet](https://www.perplexity.ai/comet): agentic browser [9 Jul 2025]
   1. [GenSpark](https://www.genspark.ai/): AI agents engine perform research and generate custom pages called Sparkpages. [18 Jun 2024]
   1. [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024]
   1. [Goover](https://goover.ai/) 
