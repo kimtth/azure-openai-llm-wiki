@@ -48,3 +48,4 @@
 - [Same.dev](https://same.new/): Clone Any Website in Minutes
 - [skywork.ai](https://skywork.ai): Deep Research is a multimodal generalist agent that can create documents, slides, and spreadsheets.
 - [AlphaXiv](https://www.alphaxiv.org): an interactive extension of arXiv
+- [God Tier Prompts](https://www.godtierprompts.com): A community driven leaderboard where the best prompts rise to the top.
