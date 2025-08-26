@@ -9,7 +9,7 @@
 This repository serves as a comprehensive guide to the rapidly evolving field of LLMs and Azure OpenAI services. Key features:
 
 🔹Concise Summaries: Each resource is briefly described for quick understanding  
-🔹Chronological Organization: Resources ordered by date (first commit, publication, or paper release)  
+🔹Chronological Organization: Resources appended with date (first commit, publication, or paper release)  
 🔹Active Tracking: Regular updates to capture the latest developments  
 
 > Note: Some content may become outdated due to the rapid pace of development in this field.
