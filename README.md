@@ -9,7 +9,7 @@
 This repository serves as a comprehensive guide to the rapidly evolving field of LLMs and Azure OpenAI services. Key features:
 
 🔹Concise Summaries: Each resource is briefly described for quick understanding  
-🔹Chronological Organization: Resources ordered by date (first commit, publication, or paper release)  
+🔹Chronological Organization: Resources appended with date (first commit, publication, or paper release)  
 🔹Active Tracking: Regular updates to capture the latest developments  
 
 > Note: Some content may become outdated due to the rapid pace of development in this field.
@@ -19,7 +19,7 @@ This repository serves as a comprehensive guide to the rapidly evolving field of
 | Application | LLM | Tools |
 |------------|-------------------|----------------------|
 | [1. RAG Systems](#1rag-systems) | [5. Prompt Engineering](#5prompt-engineering--finetuning) | [8. AI Tools & Extensions](#8ai-tools--extensions) |
-| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6challenges--abilities) | [9. Datasets](#9datasets) |
+| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6️challenges--abilities) | [9. Datasets](#9datasets) |
 | [3. LLM Applications](#3llm-applications) | [7. LLM Landscape](#7llm-landscape) | [10. Evaluation Methods](#10evaluation-methods) |
 | [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research--surveys) | [Frameworks](#️frameworks) |
 
