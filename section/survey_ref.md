@@ -88,6 +88,7 @@
 - [A Survey of Context Engineering for Large Language Models](https://www.alphaxiv.org/abs/2507.13334) [17 Jul 2025]
 - [Tabular Data Understanding with LLMs: A Survey of Recent Advances and Challenges](https://arxiv.org/abs/2508.00217) [31 Jul 2025]
 - [A comprehensive taxonomy of hallucinations in Large Language Models](https://arxiv.org/abs/2508.01781) [3 Aug 2025]
+- [Speed Always Wins: A Survey on Efficient Architectures for Large Language Models](https://arxiv.org/abs/2508.09834) [13 Aug 2025]
 
 #### **Business use cases**
 
@@ -222,7 +223,6 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [コード生成を伴う LLM エージェント](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
 - [Japanese startup Orange uses Anthropic's Claude to translate manga into English](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
 - [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
-- Azure AI Foundry で MCPを使ってみた - 深掘りと最新動向調査: [part1](https://zenn.dev/chips0711/articles/e71b088f26f56a) | [part2](https://zenn.dev/chips0711/articles/ba72417a1f6c34) [30 Mar 2025]
 
 #### Korean
 
@@ -242,48 +242,50 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 ### **Learning and Supplementary Materials**
 
+- [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
+- [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [Anti-hype LLM reading list](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
 - [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+1706.03762)]: 🏆 The Transformer,
   based solely on attention mechanisms, dispensing with recurrence and convolutions
   entirely. [12 Jun 2017] [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/)
-- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [doc](../files/top-cited-2020-2021-2022-papers.pdf) [8 Mar 2023]
-- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [doc](../files/ml_rsc.pdf) [20 Aug 2017]
-- [What are the most influential current AI Papers?](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
- ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/xtekky/gpt4free?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images [20 Jun 2023]
-- [Open Problem and Limitation of RLHF](https://alphaxiv.org/abs/2307.15217): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)]: Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
-<!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [doc](../files/aifire.pdf) [2023] -->
-- [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/IbrahimSobh/llms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses [2023]
-- [DAIR.AI](https://github.com/dair-ai):💡Machine learning & NLP research ([omarsar github](https://github.com/omarsar))
-  - [ML Papers of The Week](https://github.com/dair-ai/ML-Papers-of-the-Week) [Jan 2023] | [ref](https://nlp.elvissaravia.com/): NLP Newsletter
- ![GitHub Repo stars](https://img.shields.io/github/stars/dair-ai/ML-Papers-of-the-Week?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
-- [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 - [Best-of Machine Learning with Python](https://github.com/ml-tooling/best-of-ml-python):🏆A ranked list of awesome machine learning Python libraries. [Nov 2020]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ml-tooling/best-of-ml-python?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Large Language Models: Application through Production](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
- ![GitHub Repo stars](https://img.shields.io/github/stars/databricks-academy/large-language-models?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Large Language Model Course](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [But what is a GPT?📺](https://www.youtube.com/watch?v=wjZofJX0v4M)🏆3blue1brown: Visual intro to transformers [Apr 2024]
 - [CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization](https://github.com/poloclub/cnn-explainer) [Apr 2020]
  ![GitHub Repo stars](https://img.shields.io/github/stars/poloclub/cnn-explainer?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
-- [LLM FineTuning Projects and notes on common practical techniques](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
- ![GitHub Repo stars](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [But what is a GPT?📺](https://www.youtube.com/watch?v=wjZofJX0v4M)🏆3blue1brown: Visual intro to transformers [Apr 2024]
+- [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images [20 Jun 2023]
+- [DAIR.AI](https://github.com/dair-ai):💡Machine learning & NLP research ([omarsar github](https://github.com/omarsar))
+  - [ML Papers of The Week](https://github.com/dair-ai/ML-Papers-of-The-Week) [Jan 2023] | [ref](https://nlp.elvissaravia.com/): NLP Newsletter
+ ![GitHub Repo stars](https://img.shields.io/github/stars/dair-ai/ML-Papers-of-the-Week?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Daily Dose of Data Science](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science) [Dec 2022]
  ![GitHub Repo stars](https://img.shields.io/github/stars/ChawlaAvi/Daily-Dose-of-Data-Science?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
-- [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
+- [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses [2023]
 - [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [git](https://github.com/eugeneyan/applied-ml) ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
 - [Foundations of Large Language Models](https://alphaxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
-- [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
-- [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
-- [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/xtekky/gpt4free?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
 - [Hundred-Page Language Models Book by Andriy Burkov](https://github.com/aburkov/theLMbook) [15 Jan 2025]
+- [IbrahimSobh/llms](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/IbrahimSobh/llms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Large Language Model Course](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Large Language Models: Application through Production](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
+ ![GitHub Repo stars](https://img.shields.io/github/stars/databricks-academy/large-language-models?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [LLM FineTuning Projects and notes on common practical techniques](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
+- [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![GitHub Repo stars](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [doc](../files/top-cited-2020-2021-2022-papers.pdf) [8 Mar 2023]
+- [Open Problem and Limitation of RLHF](https://alphaxiv.org/abs/2307.15217): [[cnt](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)]: Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
+<!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [doc](../files/aifire.pdf) [2023] -->
+- [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
+ ![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
+- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [doc](../files/ml_rsc.pdf) [20 Aug 2017]
 - [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
-- [Anti-hype LLM reading list](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
+- [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
+- [What are the most influential current AI Papers?](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
+ ![GitHub Repo stars](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
+- [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]

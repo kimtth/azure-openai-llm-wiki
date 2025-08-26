@@ -61,6 +61,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 denses the reasoning process into minimal, abstract
 representations. `Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most.` [25 Feb 2025]
 1. [OpenAI Prompt Migration Guide](https://cookbook.openai.com/examples/prompt_migration_guide):💡OpenAI Cookbook. By leveraging GPT‑4.1, refine your prompts to ensure that each instruction is clear, specific, and closely matches your intended outcomes. [26 Jun 2025]
+1. [OpenAI Harmony Response Format](https://cookbook.openai.com/articles/openai-harmony): system > developer > user > assistant > tool. [git](https://github.com/openai/harmony) [5 Aug 2025]
 
 #### Adversarial Prompting
 
