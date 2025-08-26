@@ -186,6 +186,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Janus](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
   1. [DeepSeek-V3](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   1. [DeepSeek-Prover-V2](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
+  1. [DeepSeek-v3.1](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
   1. A list of models: [git](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
@@ -204,6 +205,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
   1. [Grok-2 and Grok-2 mini](https://x.ai/blog/grok-2) [13 Aug 2024]
   1. [Grok-3](https://x.ai/grok): 200,000 GPUs to train. Grok 3 beats GPT-4o on AIME, GPQA. Grok 3 Reasoning and Grok 3 mini Reasoning. [17 Feb 2025]
   1. [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
+  1. [Grok-2.5](https://x.com/elonmusk/status/1959379349322313920): Grok 2.5 Goes Open Source [24 Aug 2025]
 - Databricks
   1. [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [git](https://github.com/databricks/dbrx) [27 Mar 2024]
  ![GitHub Repo stars](https://img.shields.io/github/stars/databricks/dbrx?style=flat-square&label=%20&color=gray&cacheSeconds=36000)
@@ -215,6 +217,9 @@ length of 128K tokens, SigLIP encoder, Reasoning [ref](https://storage.googleapi
 - Moonshot AI
   - Moonshot AI is a Beijing-based Chinese AI company founded in March 2023
   1. [Kimi-K2](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
+- Z.ai
+  - formerly Zhipu, Beijing-based Chinese AI company founded in March 2019
+  1. [GLM-4.5](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
 - GPT for Domain Specific [x-ref](llm.md/#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [x-ref](llm.md/#mllm-multimodal-large-language-model)
 - Large Language Models (in 2023) [x-ref](llm.md/#large-language-models-in-2023)
