@@ -149,10 +149,11 @@ Comprehensive Surveys and Learning Materials
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| `ref` | External URL | `git` | GitHub repository |
-| `doc` | Archived document | `x-ref` | Cross reference |
-| `cite` | Source citation | 📺 | Video content |
-| `cnt` | Citation count | 💡🏆 | Recommended resource |
+| ✍️  | Blog post | 🐙 | GitHub repository |
+| 🗄️ | Archived files | 🔗 | Cross reference |
+| 🗣️ | Source citation | 📺 | Video content |
+| 🔢 | Citation count | 💡🏆 | Recommend |
+| 📑 |  Academic paper | 🤗 | Huggingface |
 
 ---
 
@@ -164,6 +165,6 @@ Comprehensive Surveys and Learning Materials
 
 <!-- All rights reserved © `kimtth` -->
 
-*Last Updated: July 23, 2025*
+*Last Updated: Sep 16, 2025*
 
 [⬆ Back to Top](#awesome-azure-openai--llm-resources)
