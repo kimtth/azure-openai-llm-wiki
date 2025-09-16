@@ -12,7 +12,7 @@ def add_github_badge(line, added_badges):
         
         # Add badge if it hasn't been added for this repo
         if unique_key not in added_badges:
-            badge = f"![GitHub Repo stars](https://img.shields.io/github/stars/{user}/{repo}?style=flat-square&label=%20&color=gray&cacheSeconds=36000)"
+            badge = f"![GitHub Repo stars](https://img.shields.io/github/stars/{user}/{repo}?style=flat-square&label=%20&color=blue&cacheSeconds=36000)"
             line += f" {badge}"
             added_badges.add(unique_key)  # Track added badges to avoid duplicates
     
