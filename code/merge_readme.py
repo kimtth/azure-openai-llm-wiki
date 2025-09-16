@@ -15,7 +15,7 @@ def replace_section_links(content, section_files):
     # 2. Add a replacement pattern such as [x-ref](sk_dspy.md/#code-recipes) -> [x-ref](#code-recipes)
     # Check whether text contains [x-ref].
     # If it does, replace the link.
-    if content.find("[x-ref]") != -1:
+    if content.find("[🔗]") != -1:
         for x in section_files:
             content = content.replace(f'{x}/', '')
     # 3. Replace "../files" with "./files"
