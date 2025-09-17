@@ -477,7 +477,7 @@ Comprehensive Surveys and Learning Materials
 - [Open AI Models](https://platform.openai.com/docs/models)
 - [Abuse Monitoring✍️](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy): To detect and mitigate abuse, Azure OpenAI stores all prompts and generated content securely for up to thirty (30) days. (No prompts or completions are stored if the customer chooses to turn off abuse monitoring.)
 - 🏆[Data Science Toolkit](https://www.ds-toolkit.com/)
-- 🏆`github organizations`: 🌐[Azure🐙](https://github.com/Azure) | 🏬[Azure-samples🐙](https://github.com/Azure-Samples) | 🏛️[Microsoft🐙](https://github.com/Microsoft) | 👥[MSUSAzureAccelerators🐙](https://github.com/MSUSAzureAccelerators)
+- 🏆`github organizations`: 🌐[Azure](https://github.com/Azure) | 🏬[Azure-samples](https://github.com/Azure-Samples) | 🏛️[Microsoft](https://github.com/Microsoft) | 👥[MSUSAzureAccelerators](https://github.com/MSUSAzureAccelerators)
 
 ### **Microsoft Azure OpenAI LLM Framework**
 
@@ -1225,7 +1225,7 @@ Comprehensive Surveys and Learning Materials
 - ChatGPT-Robot-Manipulation-Prompts: A set of prompts for Communication between humans and robots for executing tasks. [🐙](https://github.com/microsoft/ChatGPT-Robot-Manipulation-Prompts) [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/ChatGPT-Robot-Manipulation-Prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Siemens Industrial Copilot [✍️](https://news.microsoft.com/2023/10/31/siemens-and-microsoft-partner-to-drive-cross-industry-ai-adoption/)  [31 Oct 2023]
-- [LeRobot🤗](https://huggingface.co/lerobot):🤗 Hugging Face. LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. [🐙](https://github.com/huggingface/lerobot) [Jan 2024]
+- [LeRobot🤗](https://huggingface.co/lerobot): Hugging Face. LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. [🐙](https://github.com/huggingface/lerobot) [Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [✍️](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
@@ -1246,7 +1246,7 @@ Comprehensive Surveys and Learning Materials
 #### **Agentic Design Frameworks**
 
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
-- [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)🤗
+- [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 - [Agent Leaderboard v2🐙](https://github.com/rungalileo/agent-leaderboard) ![**github stars**](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Agentic Design Frameworks focus on managing autonomous or semi-autonomous AI agents for complex tasks.
 - e.g., [Autogen🐙](https://github.com/microsoft/autogen), and [crewAI🐙](https://github.com/joaomdmoura/CrewAI)
@@ -1355,7 +1355,7 @@ Comprehensive Surveys and Learning Materials
 1. [Context7🐙](https://github.com/upstash/context7): Up-to-date code documentation for LLMs and AI code editors [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/upstash/context7?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 1. [fastapi_mcp🐙](https://github.com/tadata-org/fastapi_mcp): automatically exposing FastAPI endpoints as Model Context Protocol (MCP) [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 1. [goose🐙](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/block/goose?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Hugging Face MCP Course🤗](https://huggingface.co/mcp-course) 🤗 Model Context Protocol (MCP) Course
+1. [Hugging Face MCP Course🤗](https://huggingface.co/mcp-course): Model Context Protocol (MCP) Course
 1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 1. [mcp-agent🐙](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 1. [mcp-ui🐙](https://github.com/idosal/mcp-ui): SDK for UI over MCP. Create next-gen UI experiences! [May 2025] ![**github stars**](https://img.shields.io/github/stars/idosal/mcp-ui?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -3275,8 +3275,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [rinna🤗](https://huggingface.co/rinna): rinna の 36 億パラメータの日本語 GPT 言語モデル: 3.6 billion parameter Japanese GPT language model [17 May 2023]
 - [rinna: bilingual-gpt-neox-4b🤗](https://huggingface.co/rinna/bilingual-gpt-neox-4b): 日英バイリンガル大規模言語モデル [17 May 2023]
 - [法律:生成 AI の利用ガイドライン](https://storialaw.jp/blog/9414): Legal: Guidelines for the Use of Generative AI
-- [New Era of Computing - ChatGPT がもたらした新時代](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718) [May 2023]
-- [大規模言語モデルで変わる ML システム開発](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models [Mar 2023]
+- [New Era of Computing - ChatGPT がもたらした新時代✍️](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718) [May 2023]
+- [大規模言語モデルで変わる ML システム開発✍️](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models [Mar 2023]
 - [GPT-4 登場以降に出てきた ChatGPT/LLM に関する論文や技術の振り返り✍️](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4 [Jun 2023]
 - [LLM を制御するには何をするべきか？✍️](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM [Jun 2023]
 - [1. 生成 AI のマルチモーダルモデルでできること✍️](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI [2. 生成 AI のマルチモーダリティに関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/10/18/153000) [Jun 2023]
@@ -3293,10 +3293,10 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840) [24 May 2023]
 - [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [✍️](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [🗄️](./files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
 - [AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/) [Apr 2024]
-- [LLMにまつわる"評価"を整理する](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
-- [コード生成を伴う LLM エージェント](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
-- [Japanese startup Orange uses Anthropic's Claude to translate manga into English](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
-- [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
+- [LLMにまつわる"評価"を整理する✍️](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
+- [コード生成を伴う LLM エージェント✍️](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
+- [Japanese startup Orange uses Anthropic's Claude to translate manga into English✍️](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
+- [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例✍️](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
 
 #### Korean
 
@@ -3304,15 +3304,15 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/machine-learning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LangChain 한국어 튜토리얼🐙](https://github.com/teddylee777/langchain-kr) [Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/langchain-kr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용](https://techblog.woowahan.com/18144/) [Jul 2024]
-- [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게](https://tech.kakao.com/posts/633) [09 Sep 2024]
-- [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기](https://techblog.woowahan.com/19915/) [07 Nov 2024]
-- [Harness를 이용해 LLM 애플리케이션 평가 자동화하기](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
-- [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
-- [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
+- [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용✍️](https://techblog.woowahan.com/18144/) [Jul 2024]
+- [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게✍️](https://tech.kakao.com/posts/633) [09 Sep 2024]
+- [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기✍️](https://techblog.woowahan.com/19915/) [07 Nov 2024]
+- [Harness를 이용해 LLM 애플리케이션 평가 자동화하기✍️](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
+- [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례✍️](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
+- [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개✍️](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
 - [Kanana🐙](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
 - [HyperCLOVA X SEED🤗](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
-- [문의 대응을 효율화하기 위한 RAG 기반 봇 도입하기](https://techblog.lycorp.co.jp/ko/rag-based-bot-for-streamlining-inquiry-responses) [23 May 2025]
+- [문의 대응을 효율화하기 위한 RAG 기반 봇 도입하기✍️](https://techblog.lycorp.co.jp/ko/rag-based-bot-for-streamlining-inquiry-responses) [23 May 2025]
 
 ### **Learning and Supplementary Materials**
 
