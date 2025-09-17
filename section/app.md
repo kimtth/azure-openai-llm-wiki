@@ -344,7 +344,7 @@
 - ChatGPT-Robot-Manipulation-Prompts: A set of prompts for Communication between humans and robots for executing tasks. [🐙](https://github.com/microsoft/ChatGPT-Robot-Manipulation-Prompts) [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/ChatGPT-Robot-Manipulation-Prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Siemens Industrial Copilot [✍️](https://news.microsoft.com/2023/10/31/siemens-and-microsoft-partner-to-drive-cross-industry-ai-adoption/)  [31 Oct 2023]
-- [LeRobot🤗](https://huggingface.co/lerobot):🤗 Hugging Face. LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. [🐙](https://github.com/huggingface/lerobot) [Jan 2024]
+- [LeRobot🤗](https://huggingface.co/lerobot): Hugging Face. LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. [🐙](https://github.com/huggingface/lerobot) [Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/huggingface/lerobot?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [✍️](https://venturebeat.com/automation/stanfords-mobile-aloha-robot-learns-from-humans-to-cook-clean-do-laundry/) [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
