@@ -14,6 +14,7 @@
 - [FineWeb🤗](https://huggingface.co/datasets/HuggingFaceFW/fineweb):🤗HuggingFace. crawled 15 trillion tokens of high-quality web data from the summer of 2013 to March 2024. [Apr 2024]
 - [MS MARCO Web Search🐙](https://github.com/microsoft/MS-MARCO-Web-Search): A large-scale information-rich web dataset, featuring millions of real clicked query-document labels [Apr 2024]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Nemotron-Personas-Japan: Synthesized Data for Sovereign AI🤗](https://huggingface.co/blog/nvidia/nemotron-personas-japan): The first open synthetic dataset that captures Japan's demographic, geographic, and cultural spectrum.  [23 Sep 2025]
 - [Synthetic Data of LLMs🐙](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data): A reading list on LLM based Synthetic Data Generation [Oct 2024]
  ![**github stars**](https://img.shields.io/github/stars/wasiahmad/Awesome-LLM-Synthetic-Data?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Open Thoughts🐙](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025] ![**github stars**](https://img.shields.io/github/stars/open-thoughts/open-thoughts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

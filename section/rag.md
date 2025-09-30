@@ -134,6 +134,7 @@
 ### **RAG Solution Design**
 
 - [5 Chunking Strategies For RAG✍️](https://blog.dailydoseofds.com/p/5-chunking-strategies-for-rag) [19 Oct 2024]
+- [8 RAG Architectures for AI Engineers✍️](https://blog.dailydoseofds.com/p/8-rag-architectures-for-ai-engineers) [16 Aug 2025]
 - [A Practical Approach to Retrieval Augmented Generation (RAG) Systems🐙](https://github.com/mallahyari/rag-ebook): Online book [Dec 2023]
 ![**github stars**](https://img.shields.io/github/stars/mallahyari/rag-ebook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Advanced RAG on Hugging Face documentation using LangChain🤗](https://huggingface.co/learn/cookbook/advanced_rag)
@@ -148,6 +149,7 @@
 ![**github stars**](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [bRAG🐙](https://github.com/bRAGAI/bRAG-langchain/): Everything you need to know to build your own RAG application [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/bRAGAI/bRAG-langchain?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Evaluating LLMs and RAG Systems✍️](https://dzone.com/articles/evaluating-llms-and-rag-systems): Best Practices for Evaluating LLMs and RAG Systems [27 Jan 2025]
+- [From Zero to Hero: Proven Methods to Optimize RAG for Production✍️](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/from-zero-to-hero-proven-methods-to-optimize-rag-for-production/4450040): ColBERT (Token-level embedding), [CoPali](https://huggingface.co/vidore/colpali-v1.2)(Extends ColBERT’s multi-vector retrieval and late interaction from text to vision), RAPTOR, HyDE, Re-Ranking and Fusion [Sep 2025]
 - [Galileo eBook](https://www.rungalileo.io/mastering-rag): 200 pages content. Mastering RAG. [🗄️](../files/archive/Mastering%20RAG-compressed.pdf) [Sep 2024]
 - [Genie: Uber’s Gen AI On-Call Copilot✍️](https://www.uber.com/blog/genie-ubers-gen-ai-on-call-copilot/) [10 Oct 2024]
 - [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html): The official website for the classic textbook (free to read online) “Introduction to Information Retrieval” by Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
@@ -255,6 +257,7 @@
  ![**github stars**](https://img.shields.io/github/stars/qdrant/qdrant?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Redis extension for vector search, RedisVL🐙](https://github.com/redis/redis-vl-python): Redis Vector Library (RedisVL) [Nov 2022]
  ![**github stars**](https://img.shields.io/github/stars/redis/redis-vl-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [The Semantic Galaxy🤗](https://huggingface.co/spaces/webml-community/semantic-galaxy): Visualize embeddings in 3D space, powered by EmbeddingGemma and Transformers.js [Sep 2025]
 - [Weaviate🐙](https://github.com/weaviate/weaviate): Store both vectors and data objects. [Jan 2021]
  ![**github stars**](https://img.shields.io/github/stars/weaviate/weaviate?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
