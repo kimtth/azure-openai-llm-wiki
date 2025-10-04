@@ -149,7 +149,7 @@ Comprehensive Surveys and Learning Materials
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| ✍️  | Blog post / Documentation | 🐙 | GitHub repository |
+| ✍️  | Blog post / Documentation | ✨ | GitHub repository |
 | 🗄️ | Archived files | 🔗 | Cross reference |
 | 🗣️ | Source citation | 📺 | Video content |
 | 🔢 | Citation count | 💡🏆 | Recommend |
