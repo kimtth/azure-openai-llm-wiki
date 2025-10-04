@@ -5,7 +5,7 @@
 #### **Overview: A Survey of LLMs**
   - [A Primer on Large Language Models and their Limitations📑](https://alphaxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
   - [A Survey of Large Language Models📑](https://alphaxiv.org/abs/2303.18223):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223)] [v1: 31 Mar 2023 - v15: 13 Oct 2024]
-- [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [🐙](https://github.com/HKUSTDial/NL2SQL_Handbook)
+- [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [✨](https://github.com/HKUSTDial/NL2SQL_Handbook)
 ![**github stars**](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [A Survey of Transformers📑](https://alphaxiv.org/abs/2106.04554):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.04554)] [8 Jun 2021]
 - Google AI Research Recap
@@ -14,7 +14,7 @@
   - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
   - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
   - [Large Language Models: A Survey📑](https://alphaxiv.org/abs/2402.06196): 🏆Well organized visuals and contents [9 Feb 2024]
-- [LLM Post-Training: A Deep Dive into Reasoning Large Language Models📑](https://alphaxiv.org/abs/2502.21321): [🐙](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) [28 Feb 2025]
+- [LLM Post-Training: A Deep Dive into Reasoning Large Language Models📑](https://alphaxiv.org/abs/2502.21321): [✨](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) [28 Feb 2025]
 - [LLM Research Papers: The 2024 List](https://sebastianraschka.com/blog/2024/llm-research-papers-the-2024-list.html) [29 Dec 2024]
 - Microsoft Research Recap
   - [Research at Microsoft 2023✍️](https://www.microsoft.com/en-us/research/blog/research-at-microsoft-2023-a-year-of-groundbreaking-ai-advances-and-discoveries/): A year of groundbreaking AI advances and discoveries
@@ -61,7 +61,7 @@
 - [Model Compression for LLMs📑](https://alphaxiv.org/abs/2308.07633):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633)] [15 Aug 2023]
 - [Multimodal Deep Learning📑](https://alphaxiv.org/abs/2301.04856):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2301.04856)] [12 Jan 2023]
 - [Multimodal Large Language Models📑](https://alphaxiv.org/abs/2306.13549):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.13549)] [23 Jun 2023]
-- [NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [🐙](https://github.com/HKUSTDial/NL2SQL_Handbook)
+- [NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [✨](https://github.com/HKUSTDial/NL2SQL_Handbook)
 ![**github stars**](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback📑](https://alphaxiv.org/abs/2307.15217):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)] [27 Jul 2023]
 - [Overview of Factuality in LLMs📑](https://alphaxiv.org/abs/2310.07521):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.07521)] [11 Oct 2023]
@@ -117,7 +117,7 @@
 
 ### **Build an LLMs from scratch: picoGPT and lit-gpt**
 
-- An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT🐙](https://github.com/jaymody/picoGPT): Transformer Decoder [Jan 2023]
+- An unnecessarily tiny implementation of GPT-2 in NumPy. [picoGPT✨](https://github.com/jaymody/picoGPT): Transformer Decoder [Jan 2023]
  ![**github stars**](https://img.shields.io/github/stars/jaymody/picoGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 ```python
 q = x @ w_k # [n_seq, n_embd] @ [n_embd, n_embd] -> [n_seq, n_embd]
@@ -130,23 +130,23 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [4 LLM Text Generation Strategies](https://blog.dailydoseofds.com/p/4-llm-text-generation-strategies): Greedy strategy, Multinomial sampling strategy, Beam search, Contrastive search [27 Sep 2025]
 - [Andrej Karpathy📺](https://www.youtube.com/watch?v=l8pRSuU81PU): Reproduce the GPT-2 (124M) from scratch. [June 2024] / [SebastianRaschka📺](https://www.youtube.com/watch?v=kPGTx4wcm_w): Developing an LLM: Building, Training, Finetuning  [June 2024]
 - Beam Search [1977] in Transformers is an inference algorithm that maintains the `beam_size` most probable sequences until the end token appears or maximum sequence length is reached. If `beam_size` (k) is 1, it's a `Greedy Search`. If k equals the total vocabularies, it's an `Exhaustive Search`. [🤗](https://huggingface.co/blog/constrained-beam-search) [Mar 2022]
-- [Build a Large Language Model (From Scratch)🐙](https://github.com/rasbt/LLMs-from-scratch):🏆Implementing a ChatGPT-like LLM from scratch, step by step
+- [Build a Large Language Model (From Scratch)✨](https://github.com/rasbt/LLMs-from-scratch):🏆Implementing a ChatGPT-like LLM from scratch, step by step
  ![**github stars**](https://img.shields.io/github/stars/rasbt/LLMs-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Einsum is All you Need](https://rockt.ai/2018/04/30/einsum): Einstein Summation [5 Feb 2018] 
-- lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [🐙](https://github.com/Lightning-AI/lit-gpt) [Mar 2023]
+- lit-gpt: Hackable implementation of state-of-the-art open-source LLMs based on nanoGPT. Supports flash attention, 4-bit and 8-bit quantization, LoRA and LLaMA-Adapter fine-tuning, pre-training. Apache 2.0-licensed. [✨](https://github.com/Lightning-AI/lit-gpt) [Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/Lightning-AI/lit-gpt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [llama3-from-scratch🐙](https://github.com/naklecha/llama3-from-scratch): Implementing Llama3 from scratch [May 2024]
+- [llama3-from-scratch✨](https://github.com/naklecha/llama3-from-scratch): Implementing Llama3 from scratch [May 2024]
  ![**github stars**](https://img.shields.io/github/stars/naklecha/llama3-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [llm.c🐙](https://github.com/karpathy/llm.c): LLM training in simple, raw C/CUDA [Apr 2024]
- ![**github stars**](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=blue&cacheSeconds=36000) | Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [🐙](https://github.com/karpathy/llm.c/discussions/481)
-- [nanoGPT🐙](https://github.com/karpathy/nanoGPT):💡Andrej Karpathy [Dec 2022] | [nanoMoE🐙](https://github.com/wolfecameron/nanoMoE) [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanoGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/wolfecameron/nanoMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [nanoVLM🐙](https://github.com/huggingface/nanoVLM): 🤗 The simplest, fastest repository for training/finetuning small-sized VLMs. [May 2025]
-- [pix2code🐙](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] ![**github stars**](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
-- [Screenshot to code🐙](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [Oct 2017] [✍️](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/) ![**github stars**](https://img.shields.io/github/stars/emilwallner/Screenshot-to-code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Spreadsheets-are-all-you-need🐙](https://github.com/ianand/spreadsheets-are-all-you-need): Spreadsheets-are-all-you-need implements the forward pass of GPT2 entirely in Excel using standard spreadsheet functions. [Sep 2023]
+- [llm.c✨](https://github.com/karpathy/llm.c): LLM training in simple, raw C/CUDA [Apr 2024]
+ ![**github stars**](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=blue&cacheSeconds=36000) | Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [✨](https://github.com/karpathy/llm.c/discussions/481)
+- [nanoGPT✨](https://github.com/karpathy/nanoGPT):💡Andrej Karpathy [Dec 2022] | [nanoMoE✨](https://github.com/wolfecameron/nanoMoE) [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanoGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/wolfecameron/nanoMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [nanoVLM✨](https://github.com/huggingface/nanoVLM): 🤗 The simplest, fastest repository for training/finetuning small-sized VLMs. [May 2025]
+- [pix2code✨](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] ![**github stars**](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
+- [Screenshot to code✨](https://github.com/emilwallner/Screenshot-to-code): Turning Design Mockups Into Code With Deep Learning [Oct 2017] [✍️](https://blog.floydhub.com/turning-design-mockups-into-code-with-deep-learning/) ![**github stars**](https://img.shields.io/github/stars/emilwallner/Screenshot-to-code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Spreadsheets-are-all-you-need✨](https://github.com/ianand/spreadsheets-are-all-you-need): Spreadsheets-are-all-you-need implements the forward pass of GPT2 entirely in Excel using standard spreadsheet functions. [Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/ianand/spreadsheets-are-all-you-need?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Transformer Explainer](https://alphaxiv.org/pdf/2408.04619): an open-source interactive tool to learn about the inner workings of a Transformer model (GPT-2) [🐙](https://poloclub.github.io/transformer-explainer/) [8 Aug 2024]
-- [Umar Jamil github🐙](https://github.com/hkproj):💡LLM Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
+- [Transformer Explainer](https://alphaxiv.org/pdf/2408.04619): an open-source interactive tool to learn about the inner workings of a Transformer model (GPT-2) [✨](https://poloclub.github.io/transformer-explainer/) [8 Aug 2024]
+- [Umar Jamil github✨](https://github.com/hkproj):💡LLM Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
 - [You could have designed state of the art positional encoding](https://fleetwood.dev/posts/you-could-have-designed-SOTA-positional-encoding): Binary Position Encoding, Sinusoidal positional encoding, Absolute vs Relative Position Encoding, Rotary Positional encoding [17 Nov 2024]
 
 #### Classification of Attention
@@ -160,8 +160,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 1. Sparse Attention: Computes only a subset of similarity scores (e.g., strided, fixed); enables scaling to very long sequences (see *Performer*).
 1. Cross-Attention: Attends between two sequences (e.g., encoder–decoder in machine translation).
 1. Sliding Window Attention (SWA): Used in **Longformer**; each token attends within a fixed-size local window, reducing memory use for long texts.
-- [✍️](https://blog.research.google/2020/10/rethinking-attention-with-performers.html) [23 Oct 2020] / [✍️](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [✍️](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  / [🐙](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
-- [Efficient Streaming Language Models with Attention Sinks](http://alphaxiv.org/abs/2309.17453): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [🐙](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
+- [✍️](https://blog.research.google/2020/10/rethinking-attention-with-performers.html) [23 Oct 2020] / [✍️](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [✍️](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  / [✨](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
+- [Efficient Streaming Language Models with Attention Sinks](http://alphaxiv.org/abs/2309.17453): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [✨](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
   <img src="../files/streaming-llm.png" alt="streaming-attn"/>
@@ -174,7 +174,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 - LongLoRA
 
-  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models📑](https://alphaxiv.org/abs/2309.12307): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [🐙](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
+  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models📑](https://alphaxiv.org/abs/2309.12307): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [✨](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
   - Key Takeaways from LongLora <br/>
@@ -182,7 +182,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
     1. The document states that LoRA alone is not sufficient for long context extension.
     1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
     1. S2-Attn can be implemented with only two lines of code in training.
-<!--   2. [QA-LoRA📑](https://alphaxiv.org/abs/2309.14717): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [🐙](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
+<!--   2. [QA-LoRA📑](https://alphaxiv.org/abs/2309.14717): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [✨](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat-square&label=%20&color=blue&cacheSeconds=36000) -->
 - [4 Advanced Attention Mechanisms🤗](https://huggingface.co/blog/Kseniase/attentions) [4 Apr 2025]
   1. Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
@@ -194,7 +194,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 #### Japanese
 
-- [ChatGPTやCopilotなど各種生成AI用の日本語の Prompt のサンプル🐙](https://github.com/dahatake/GenerativeAI-Prompt-Sample-Japanese) [Apr 2023]
+- [ChatGPTやCopilotなど各種生成AI用の日本語の Prompt のサンプル✨](https://github.com/dahatake/GenerativeAI-Prompt-Sample-Japanese) [Apr 2023]
 - [LLM 研究プロジェクト✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153006): ブログ記事一覧 [27 Jul 2023]
 - [ブレインパッド社員が投稿した Qiita 記事まとめ✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153055): ブレインパッド社員が投稿した Qiita 記事まとめ [Jul 2023]
 - [rinna🤗](https://huggingface.co/rinna): rinna の 36 億パラメータの日本語 GPT 言語モデル: 3.6 billion parameter Japanese GPT language model [17 May 2023]
@@ -207,13 +207,13 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [1. 生成 AI のマルチモーダルモデルでできること✍️](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI [2. 生成 AI のマルチモーダリティに関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/10/18/153000) [Jun 2023]
 - [LLM の推論を効率化する量子化技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/01/153003): Survey of quantization techniques to improve efficiency of LLM reasoning [Sep 2023]
 - [LLM の出力制御や新モデルについて✍️](https://blog.brainpad.co.jp/entry/2023/09/08/155352): About LLM output control and new models [Sep 2023]
-- [Azure OpenAI を活用したアプリケーション実装のリファレンス🐙](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ [Jun 2023]
+- [Azure OpenAI を活用したアプリケーション実装のリファレンス✨](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ [Jun 2023]
  ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/jp-azureopenai-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [生成 AI・LLM のツール拡張に関する論文の動向調査✍️](https://blog.brainpad.co.jp/entry/2023/09/22/150341): Survey of trends in papers on tool extensions for generative AI and LLM [Sep 2023]
 - [LLM の学習・推論の効率化・高速化に関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference [Sep 2023]
-- [日本語LLMまとめ - Overview of Japanese LLMs🐙](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ [Jul 2023]
+- [日本語LLMまとめ - Overview of Japanese LLMs✨](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/llm-jp/awesome-japanese-llm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Azure OpenAI Service で始める ChatGPT/LLM システム構築入門🐙](https://github.com/shohei1029/book-azureopenai-sample): サンプルプログラム [Aug 2023]
+- [Azure OpenAI Service で始める ChatGPT/LLM システム構築入門✨](https://github.com/shohei1029/book-azureopenai-sample): サンプルプログラム [Aug 2023]
  ![**github stars**](https://img.shields.io/github/stars/shohei1029/book-azureopenai-sample?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840) [24 May 2023]
 - [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [✍️](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [🗄️](../files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
@@ -225,9 +225,9 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 #### Korean
 
-- [Machine Learning Study 혼자 해보기🐙](https://github.com/teddylee777/machine-learning) [Sep 2018]
+- [Machine Learning Study 혼자 해보기✨](https://github.com/teddylee777/machine-learning) [Sep 2018]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/machine-learning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangChain 한국어 튜토리얼🐙](https://github.com/teddylee777/langchain-kr) [Feb 2024]
+- [LangChain 한국어 튜토리얼✨](https://github.com/teddylee777/langchain-kr) [Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/langchain-kr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용✍️](https://techblog.woowahan.com/18144/) [Jul 2024]
 - [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게✍️](https://tech.kakao.com/posts/633) [09 Sep 2024]
@@ -235,56 +235,56 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Harness를 이용해 LLM 애플리케이션 평가 자동화하기✍️](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
 - [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례✍️](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
 - [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개✍️](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
-- [Kanana🐙](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
+- [Kanana✨](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
 - [HyperCLOVA X SEED🤗](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
 - [문의 대응을 효율화하기 위한 RAG 기반 봇 도입하기✍️](https://techblog.lycorp.co.jp/ko/rag-based-bot-for-streamlining-inquiry-responses) [23 May 2025]
 
 ### **Learning and Supplementary Materials**
 
-- [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [🐙](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
-- [AI-Crash-Course🐙](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [✨](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
+- [AI-Crash-Course✨](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
 - [Anti-hype LLM reading list](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
 - [Attention Is All You Need](https://alphaxiv.org/pdf/1706.03762.pdf): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+1706.03762)]: 🏆 The Transformer,
   based solely on attention mechanisms, dispensing with recurrence and convolutions
   entirely. [12 Jun 2017] [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/)
-- [Best-of Machine Learning with Python🐙](https://github.com/ml-tooling/best-of-ml-python):🏆A ranked list of awesome machine learning Python libraries. [Nov 2020]
+- [Best-of Machine Learning with Python✨](https://github.com/ml-tooling/best-of-ml-python):🏆A ranked list of awesome machine learning Python libraries. [Nov 2020]
  ![**github stars**](https://img.shields.io/github/stars/ml-tooling/best-of-ml-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [But what is a GPT?📺](https://www.youtube.com/watch?v=wjZofJX0v4M)🏆3blue1brown: Visual intro to transformers [Apr 2024]
-- [CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization🐙](https://github.com/poloclub/cnn-explainer) [Apr 2020]
+- [CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization✨](https://github.com/poloclub/cnn-explainer) [Apr 2020]
  ![**github stars**](https://img.shields.io/github/stars/poloclub/cnn-explainer?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Comparing Adobe Firefly, Dalle-2, OpenJourney, Stable Diffusion, and Midjourney✍️](https://blog.usmanity.com/comparing-adobe-firefly-dalle-2-and-openjourney/): Generative AI for images [20 Jun 2023]
-- [DAIR.AI🐙](https://github.com/dair-ai):💡Machine learning & NLP research ([omarsar github🐙](https://github.com/omarsar))
-  - [ML Papers of The Week🐙](https://github.com/dair-ai/ML-Papers-of-The-Week) [Jan 2023] | [✍️](https://nlp.elvissaravia.com/): NLP Newsletter
+- [DAIR.AI✨](https://github.com/dair-ai):💡Machine learning & NLP research ([omarsar github✨](https://github.com/omarsar))
+  - [ML Papers of The Week✨](https://github.com/dair-ai/ML-Papers-of-The-Week) [Jan 2023] | [✍️](https://nlp.elvissaravia.com/): NLP Newsletter
  ![**github stars**](https://img.shields.io/github/stars/dair-ai/ML-Papers-of-the-Week?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Daily Dose of Data Science🐙](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science) [Dec 2022]
+- [Daily Dose of Data Science✨](https://github.com/ChawlaAvi/Daily-Dose-of-Data-Science) [Dec 2022]
  ![**github stars**](https://img.shields.io/github/stars/ChawlaAvi/Daily-Dose-of-Data-Science?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Deep Learning cheatsheets for Stanford's CS 230🐙](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
+- [Deep Learning cheatsheets for Stanford's CS 230✨](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
 - [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses [2023]
-- [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [🐙](https://github.com/eugeneyan/applied-ml) ![**github stars**](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [✨](https://github.com/eugeneyan/applied-ml) ![**github stars**](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
 - [Foundations of Large Language Models📑](https://alphaxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
-- [gpt4free🐙](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]
+- [gpt4free✨](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/xtekky/gpt4free?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Hundred-Page Language Models Book by Andriy Burkov🐙](https://github.com/aburkov/theLMbook) [15 Jan 2025]
-- [IbrahimSobh/llms🐙](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
+- [Hundred-Page Language Models Book by Andriy Burkov✨](https://github.com/aburkov/theLMbook) [15 Jan 2025]
+- [IbrahimSobh/llms✨](https://github.com/IbrahimSobh/llms): Language models introduction with simple code. [Jun 2023]
  ![**github stars**](https://img.shields.io/github/stars/IbrahimSobh/llms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Large Language Model Course🐙](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
+- [Large Language Model Course✨](https://github.com/mlabonne/llm-course): Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. [Jun 2023]
  ![**github stars**](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Large Language Models: Application through Production🐙](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
+- [Large Language Models: Application through Production✨](https://github.com/databricks-academy/large-language-models): A course on edX & Databricks Academy
  ![**github stars**](https://img.shields.io/github/stars/databricks-academy/large-language-models?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LLM FineTuning Projects and notes on common practical techniques🐙](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
+- [LLM FineTuning Projects and notes on common practical techniques✨](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
-- [Machine learning algorithms🐙](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![**github stars**](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Machine learning algorithms✨](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![**github stars**](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [🗄️](../files/top-cited-2020-2021-2022-papers.pdf) [8 Mar 2023]
 - [Open Problem and Limitation of RLHF📑](https://alphaxiv.org/abs/2307.15217): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15217)]: Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
 <!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [🗄️](../files/aifire.pdf) [2023] -->
-- [OpenAI Cookbook🐙](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
+- [OpenAI Cookbook✨](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
  ![**github stars**](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [oumi: Open Universal Machine Intelligence🐙](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
+- [oumi: Open Universal Machine Intelligence✨](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
 - [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [🗄️](../files/ml_rsc.pdf) [20 Aug 2017]
 - [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
-- [What are the most influential current AI Papers?📑](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [🐙](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
+- [What are the most influential current AI Papers?📑](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [✨](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
