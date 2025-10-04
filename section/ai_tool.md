@@ -13,16 +13,16 @@
 - [Ai2 Playground](https://playground.allenai.org/)
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [AlphaXiv](https://www.alphaxiv.org): an interactive extension of arXiv
-- [AniDoc🐙](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/)
+- [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/)
 - Content writing: <http://jasper.ai/chat> / [🗣️](https://twitter.com/slow_developer/status/1671530676045094915)
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)
-  - [BetterChatGPT🐙](https://github.com/ztjhz/BetterChatGPT)
+  - [BetterChatGPT✨](https://github.com/ztjhz/BetterChatGPT)
  ![**github stars**](https://img.shields.io/github/stars/ztjhz/BetterChatGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [ChatHub🐙](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
+  - [ChatHub✨](https://github.com/chathub-dev/chathub) All-in-one chatbot client [Webpage](https://chathub.gg/)
  ![**github stars**](https://img.shields.io/github/stars/chathub-dev/chathub?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [ChatGPT Retrieval Plugin🐙](https://github.com/openai/chatgpt-retrieval-plugin)
+  - [ChatGPT Retrieval Plugin✨](https://github.com/openai/chatgpt-retrieval-plugin)
  ![**github stars**](https://img.shields.io/github/stars/openai/chatgpt-retrieval-plugin?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
 - Future Tools: <https://www.futuretools.io/>
@@ -45,7 +45,7 @@
 - The leader: <http://openai.com>
 - The runner-up: <http://bard.google.com> -> <https://gemini.google.com>
 - Toolerific.ai: <https://toolerific.ai/>: Find the best AI tools for your tasks
-- [Vercel AI](https://sdk.vercel.ai/) Vercel AI Playground / Vercel AI SDK [🐙](https://github.com/vercel/ai) [May 2023]
+- [Vercel AI](https://sdk.vercel.ai/) Vercel AI Playground / Vercel AI SDK [✨](https://github.com/vercel/ai) [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [websim.ai](https://websim.ai/): a web editor and simulator that can generate websites. [1 Jul 2024]
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
