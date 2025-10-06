@@ -18,10 +18,10 @@ This repository serves as a comprehensive guide to the rapidly evolving field of
 
 | Application | LLM | Tools |
 |------------|-------------------|----------------------|
-| [1. RAG Systems](#1rag-systems) | [5. Prompt Engineering](#5prompt-engineering--finetuning) | [8. AI Tools & Extensions](#8ai-tools--extensions) |
-| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6️challenges--abilities) | [9. Datasets](#9datasets) |
+| [1. RAG Systems](#1rag-systems) | [5. Prompt & Finetuning](#5prompt-engineering-and-finetuning) | [8. AI Tools & Extensions](#8ai-tools-and-extensions) |
+| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6challenges-and-abilities) | [9. Datasets](#9datasets) |
 | [3. LLM Applications](#3llm-applications) | [7. LLM Landscape](#7llm-landscape) | [10. Evaluation Methods](#10evaluation-methods) |
-| [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research--surveys) | [Frameworks](#️frameworks) |
+| [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research-and-surveys) | [Frameworks](#semantic-kernel-and-dspy) |
 
 ---
 
@@ -67,7 +67,7 @@ Building Autonomous AI Agents and Multi-Agent Systems
   - [Model Context Protocol](section/agent.md/#model-context-protocol-mcp-a2a-computer-use) - MCP, Agent-to-Agent communication, and computer interaction
   - [Research Agents](section/agent.md/#deep-research) - AI systems for deep research and analysis
 
-### 5.🧠Prompt Engineering & Finetuning
+### 5.🧠Prompt Engineering and Finetuning
 Optimizing Model Performance and Behavior
 
 - [Prompt Engineering](section/prompt.md/#prompt-engineering) - Techniques for effective prompt design
@@ -76,7 +76,7 @@ Optimizing Model Performance and Behavior
 - [Advanced Techniques](section/ft.md/#other-techniques-and-llm-patterns) - Mixture of Experts (MoE) and other patterns
 - [Visual Prompting](section/prompt.md/#visual-prompting--visual-grounding) - Working with multimodal inputs
 
-### 6.🏄‍♂️Challenges & Abilities
+### 6.⚡Challenges and Abilities
 Understanding LLM Capabilities and Limitations
 
 - [AGI and Social Impact](section/chab.md/#agi-discussion-and-social-impact) - Discussions on artificial general intelligence
@@ -98,13 +98,13 @@ Overview of Available Models and Technologies
 
 ## 🏗️Frameworks
 
-### Semantic Kernel & DSPy
+### Semantic Kernel and DSPy
 Microsoft's Orchestration Framework and Optimization Tools
 
 - [Semantic Kernel](section/sk_dspy.md/#semantic-kernel) - Microsoft's micro-orchestration framework for AI applications
 - [DSPy](section/sk_dspy.md/#dspy) - Optimizer frameworks for systematic prompt and model optimization
 
-### LangChain & LlamaIndex
+### LangChain and LlamaIndex
 Popular Open-Source Frameworks for LLM Applications
 
 - [LangChain Features](section/langchain.md/#langchain-feature-matrix--cheetsheet) - Comprehensive feature overview and cheat sheets
@@ -116,7 +116,7 @@ Popular Open-Source Frameworks for LLM Applications
 
 ## Tools
 
-### 8.📚AI Tools & Extensions
+### 8.📚AI Tools and Extensions
 Practical Tools and Browser Extensions
 
 - [AI Tools & Extensions](section/ai_tool.md/#general-ai-tools-and-extensions)
@@ -134,7 +134,7 @@ Measuring and Improving LLM Performance
 
 ---
 
-### 11.🧠Research & Surveys
+### 11.🧠Research and Surveys
 Comprehensive Surveys and Learning Materials
 
 - [LLM Surveys](section/survey_ref.md/#survey-on-large-language-models) - Academic surveys and systematic reviews

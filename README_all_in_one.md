@@ -18,10 +18,10 @@ This repository serves as a comprehensive guide to the rapidly evolving field of
 
 | Application | LLM | Tools |
 |------------|-------------------|----------------------|
-| [1. RAG Systems](#1rag-systems) | [5. Prompt Engineering](#5prompt-engineering--finetuning) | [8. AI Tools & Extensions](#8ai-tools--extensions) |
-| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6️challenges--abilities) | [9. Datasets](#9datasets) |
+| [1. RAG Systems](#1rag-systems) | [5. Prompt & Finetuning](#5prompt-engineering-and-finetuning) | [8. AI Tools & Extensions](#8ai-tools-and-extensions) |
+| [2. Azure OpenAI](#2azure-openai) | [6. Challenges & Abilities](#6challenges-and-abilities) | [9. Datasets](#9datasets) |
 | [3. LLM Applications](#3llm-applications) | [7. LLM Landscape](#7llm-landscape) | [10. Evaluation Methods](#10evaluation-methods) |
-| [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research--surveys) | [Frameworks](#️frameworks) |
+| [4. Agent Development](#4agent-development) | [11. Research & Surveys](#11research-and-surveys) | [Frameworks](#semantic-kernel-and-dspy) |
 
 ---
 
@@ -67,7 +67,7 @@ Building Autonomous AI Agents and Multi-Agent Systems
   - [Model Context Protocol](#model-context-protocol-mcp-a2a-computer-use) - MCP, Agent-to-Agent communication, and computer interaction
   - [Research Agents](#deep-research) - AI systems for deep research and analysis
 
-### 5.🧠Prompt Engineering & Finetuning
+### 5.🧠Prompt Engineering and Finetuning
 Optimizing Model Performance and Behavior
 
 - [Prompt Engineering](#prompt-engineering) - Techniques for effective prompt design
@@ -76,7 +76,7 @@ Optimizing Model Performance and Behavior
 - [Advanced Techniques](#other-techniques-and-llm-patterns) - Mixture of Experts (MoE) and other patterns
 - [Visual Prompting](#visual-prompting--visual-grounding) - Working with multimodal inputs
 
-### 6.🏄‍♂️Challenges & Abilities
+### 6.⚡Challenges and Abilities
 Understanding LLM Capabilities and Limitations
 
 - [AGI and Social Impact](#agi-discussion-and-social-impact) - Discussions on artificial general intelligence
@@ -98,13 +98,13 @@ Overview of Available Models and Technologies
 
 ## 🏗️Frameworks
 
-### Semantic Kernel & DSPy
+### Semantic Kernel and DSPy
 Microsoft's Orchestration Framework and Optimization Tools
 
 - [Semantic Kernel](#semantic-kernel) - Microsoft's micro-orchestration framework for AI applications
 - [DSPy](#dspy) - Optimizer frameworks for systematic prompt and model optimization
 
-### LangChain & LlamaIndex
+### LangChain and LlamaIndex
 Popular Open-Source Frameworks for LLM Applications
 
 - [LangChain Features](#langchain-feature-matrix--cheetsheet) - Comprehensive feature overview and cheat sheets
@@ -116,7 +116,7 @@ Popular Open-Source Frameworks for LLM Applications
 
 ## Tools
 
-### 8.📚AI Tools & Extensions
+### 8.📚AI Tools and Extensions
 Practical Tools and Browser Extensions
 
 - [AI Tools & Extensions](#general-ai-tools-and-extensions)
@@ -134,7 +134,7 @@ Measuring and Improving LLM Performance
 
 ---
 
-### 11.🧠Research & Surveys
+### 11.🧠Research and Surveys
 Comprehensive Surveys and Learning Materials
 
 - [LLM Surveys](#survey-on-large-language-models) - Academic surveys and systematic reviews
@@ -491,7 +491,7 @@ Comprehensive Surveys and Learning Materials
  ![**github stars**](https://img.shields.io/github/stars/microsoft/promptflow?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Kernel Memory✨](https://github.com/microsoft/kernel-memory) (Jul 2023): An open-source service and plugin for efficient dataset indexing through custom continuous data hybrid pipelines.
  ![**github stars**](https://img.shields.io/github/stars/microsoft/kernel-memory?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Microsoft Agent Framework✨](https://github.com/microsoft/agent-framework):🏆Unified SDK (Semantic Kernel & AutoGen), Graph-based Workflows, DevUI, Built-in connectors, MCP + A2A + OpenAPI [Apr 2025] [✍️](https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/)
+1. [Microsoft Agent Framework✨](https://github.com/microsoft/agent-framework):🏆Unified SDK (Semantic Kernel & AutoGen), Graph-based Workflows, DevUI, Built-in connectors, MCP + A2A + OpenAPI [Apr 2025] / [Blog✍️](https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-framework?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Semantic Kernel✍️](https://devblogs.microsoft.com/semantic-kernel/) (Feb 2023): An open-source SDK for integrating AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages such as C# and Python. It's an LLM orchestrator, similar to LangChain. / [✨](https://github.com/microsoft/semantic-kernel) / [🔗](#semantic-kernel)
  ![**github stars**](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
@@ -901,8 +901,8 @@ Comprehensive Surveys and Learning Materials
 
 #### **Cross-reference**
 
-- RAG: [🔗](#rag-solution-design--application)
-- Agent Applications and Libraries: [🔗](#agent-applications-and-libraries)
+- RAG: [🔗](#rag-solution-design)
+- Agent Applications and Libraries: [🔗](#agentic-design-frameworks)
 - OSS Alternatives for OpenAI Code Interpreter: [🔗](#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
 - LLMOps: Large Language Model Operations: [🔗](#llmops-large-language-model-operations)
 
