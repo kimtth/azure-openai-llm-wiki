@@ -13,8 +13,8 @@
 
 #### **Cross-reference**
 
-- RAG: [🔗](rag.md/#rag-solution-design--application)
-- Agent Applications and Libraries: [🔗](agent.md/#agent-applications-and-libraries)
+- RAG: [🔗](rag.md/#rag-solution-design)
+- Agent Applications and Libraries: [🔗](agent.md/#agentic-design-frameworks)
 - OSS Alternatives for OpenAI Code Interpreter: [🔗](agent.md/#oss-alternatives-for-openai-code-interpreter-aka-advanced-data-analytics)
 - LLMOps: Large Language Model Operations: [🔗](eval.md/#llmops-large-language-model-operations)
 
