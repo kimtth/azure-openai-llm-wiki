@@ -1,4 +1,4 @@
-# Awesome Azure OpenAI + LLM
+# Azure OpenAI + LLM
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
@@ -155,16 +155,4 @@ Comprehensive Surveys and Learning Materials
 | 🔢 | Citation count | 💡🏆 | Recommend |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
----
-
-## Contributing
-
-<a href="https://github.com/kimtth/awesome-azure-openai-llm/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kimtth/awesome-azure-openai-llm" />
-</a>
-
 <!-- All rights reserved © `kimtth` -->
-
-*Last Updated: Sep 16, 2025*
-
-[⬆ Back to Top](#awesome-azure-openai--llm-resources)
