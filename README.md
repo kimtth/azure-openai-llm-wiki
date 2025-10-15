@@ -1,6 +1,6 @@
 # Azure OpenAI + LLM
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+![GitHub last commit](https://img.shields.io/github/last-commit/kimtth/awesome-azure-openai-llm?label=commit&color=hotpink&style=flat-square)
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
 ![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
 
@@ -149,10 +149,12 @@ Comprehensive Surveys and Learning Materials
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| ✍️  | Blog post / Documentation | ✨ | GitHub repository |
+| ✍️ | Blog post / Documentation | ✨ | GitHub repository |
 | 🗄️ | Archived files | 🔗 | Cross reference |
 | 🗣️ | Source citation | 📺 | Video content |
 | 🔢 | Citation count | 💡🏆 | Recommend |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
 <!-- All rights reserved © `kimtth` -->
+
+**[`^        back to top        ^`](#azure-openai--llm)**

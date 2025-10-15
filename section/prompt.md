@@ -105,44 +105,49 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 
 ### **Prompt Guide & Leaked prompts**
 
-- [Prompt Engineering Guide](https://www.promptingguide.ai/): 🏆Copyright © 2023 DAIR.AI
-- [Azure OpenAI Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
-- [OpenAI Prompt example](https://platform.openai.com/examples)
-- [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-- [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [5 Principles for Writing Effective Prompts✍️](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025]
+- [Anthropic Prompt Library](https://docs.anthropic.com/claude/prompt-library): Anthropic released a Claude 3 AI prompt library [Mar 2024]
+- [Anthropic courses > Prompt engineering interactive tutorial✨](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
+ ![**github stars**](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Awesome ChatGPT Prompts✨](https://github.com/f/awesome-chatgpt-prompts) [Dec 2022]
  ![**github stars**](https://img.shields.io/github/stars/f/awesome-chatgpt-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangChainHub](https://smith.langchain.com/hub): a collection of all artifacts useful for working with LangChain primitives such as prompts, chains and agents. [Jan 2023]
 - [Awesome Prompt Engineering✨](https://github.com/promptslab/Awesome-Prompt-Engineering) [Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [TheBigPromptLibrary✨](https://github.com/0xeb/TheBigPromptLibrary) [Nov 2023] ![**github stars**](https://img.shields.io/github/stars/0xeb/TheBigPromptLibrary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Awesome-GPTs-Prompts✨](https://github.com/ai-boost/awesome-prompts) [Jan 2024]
+ ![**github stars**](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Azure OpenAI Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
+- [Copilot prompts✨](https://github.com/pnp/copilot-prompts): Examples of prompts for Microsoft Copilot. [25 Apr 2024]
+ ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [Fabric✨](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024]
+ ![**github stars**](https://img.shields.io/github/stars/danielmiessler/fabric?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [In-The-Wild Jailbreak Prompts on LLMs✨](https://github.com/verazuo/jailbreak_llms): A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Collected from December 2022 to December 2023 [Aug 2023]
+ ![**github stars**](https://img.shields.io/github/stars/verazuo/jailbreak_llms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [LangChainHub](https://smith.langchain.com/hub): a collection of all artifacts useful for working with LangChain primitives such as prompts, chains and agents. [Jan 2023]
+- Leaked prompts of [GPTs✨](https://github.com/linexjlin/GPTs) [Nov 2023] and [Agents✨](https://github.com/LouisShark/chatgpt_system_prompt) [Nov 2023]
+ ![**github stars**](https://img.shields.io/github/stars/linexjlin/GPTs?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [LLM Prompt Engineering Simplified✨](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book): Online Book [Feb 2024]
+ ![**github stars**](https://img.shields.io/github/stars/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+- [OpenAI Prompt example](https://platform.openai.com/examples)
+- [OpenAI Prompt Pack](https://academy.openai.com/public/tags/prompt-packs-6849a0f98c613939acef841c): curated collections of pre-designed prompts tailored for specific roles, industries, or use cases.
+- [Power Platform GPT Prompts✨](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
+ ![**github stars**](https://img.shields.io/github/stars/pnp/powerplatform-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/): 🏆Copyright © 2023 DAIR.AI
 - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, also known as In-Context Prompting ... [Mar 2023]
 - [Prompts for Education✨](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/prompts-for-edu?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [In-The-Wild Jailbreak Prompts on LLMs✨](https://github.com/verazuo/jailbreak_llms): A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Collected from December 2022 to December 2023 [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/verazuo/jailbreak_llms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- Leaked prompts of [GPTs✨](https://github.com/linexjlin/GPTs) [Nov 2023] and [Agents✨](https://github.com/LouisShark/chatgpt_system_prompt) [Nov 2023]
- ![**github stars**](https://img.shields.io/github/stars/linexjlin/GPTs?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Awesome-GPTs-Prompts✨](https://github.com/ai-boost/awesome-prompts) [Jan 2024]
- ![**github stars**](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Fabric✨](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/danielmiessler/fabric?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LLM Prompt Engineering Simplified✨](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book): Online Book [Feb 2024]
- ![**github stars**](https://img.shields.io/github/stars/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Power Platform GPT Prompts✨](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
- ![**github stars**](https://img.shields.io/github/stars/pnp/powerplatform-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Anthropic Prompt Library](https://docs.anthropic.com/claude/prompt-library): Anthropic released a Claude 3 AI prompt library [Mar 2024]
-- [Copilot prompts✨](https://github.com/pnp/copilot-prompts): Examples of prompts for Microsoft Copilot. [25 Apr 2024]
- ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Anthropic courses > Prompt engineering interactive tutorial✨](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
- ![**github stars**](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [5 Principles for Writing Effective Prompts✍️](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025]
 - [ShumerPrompt](https://shumerprompt.com/): Discover and share powerful prompts for AI models
+- [TheBigPromptLibrary✨](https://github.com/0xeb/TheBigPromptLibrary) [Nov 2023]
+ ![**github stars**](https://img.shields.io/github/stars/0xeb/TheBigPromptLibrary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **Visual Prompting & Visual Grounding**
 
-- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [🗄️](../files/vPrompt.pdf) [26 Apr 2023]
-- [Visual Prompting📑](https://alphaxiv.org/abs/2211.11635) [21 Nov 2022]
 - [Andrew Ng’s Visual Prompting Livestream📺](https://www.youtube.com/watch?v=FE88OOUBonQ) [24 Apr 2023]
-- [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
-- [Screen AI✍️](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
-- [Motion Prompting📑](https://alphaxiv.org/abs/2412.02700): motion prompts for flexible video generation, enabling motion control, image interaction, and realistic physics. [✨](https://motion-prompting.github.io/) [3 Dec 2024]
+- Chain of Frame (CoF): Reasoning via structured frames. DeepMind proposed CoF in [Veo 3 Paper📑](https://alphaxiv.org/abs/2509.20328). [24 Sep 2025]
 - [landing.ai: Agentic Object Detection](https://landing.ai/agentic-object-detection): Agent systems use design patterns to reason at length about unique attributes like color, shape, and texture [6 Feb 2025]
+- [Motion Prompting📑](https://alphaxiv.org/abs/2412.02700): motion prompts for flexible video generation, enabling motion control, image interaction, and realistic physics. [✨](https://motion-prompting.github.io/) [3 Dec 2024]
+- [Screen AI✍️](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
+- [Visual Prompting📑](https://alphaxiv.org/abs/2211.11635) [21 Nov 2022]
+- [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
+- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [🗄️](../files/vPrompt.pdf) [26 Apr 2023]

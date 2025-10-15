@@ -21,15 +21,21 @@
 
 - [The Big LLM Architecture Comparison](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html) [19 Jul 2025]
 
-  | Model              | Release         | Params | Attention          | Norm                | MoE                         | Notable Features                                                                     |
-  | ------------------ | --------------- | ------ | ------------------ | ------------------- | --------------------------- | ------------------------------------------------------------------------------------ |
-  | **DeepSeek V3/R1** | Dec ’24/Jan ’25 | 671 B  | MLA                | RMSNorm             | Yes (256 experts, 9 active) | Shared‑expert MoE |
-  | **OLMo 2**         | Jan ’25         | –      | MHA                | RMSNorm (+ QK‑Norm) | No                          | Post‑Norm placement for training      |
-  | **Gemma 3**        | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Additional norm layers for stability                               |
-  | **Gemma 3n**       | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Per‑layer embeddings & MatFormer slicing                           |
-  | **Mistral S 3.1**  | 2025            | –      | GQA                | RMSNorm             | No                          | Layer‑trimmed, compact FFN & KV cache                                                |
-  | **SmolLM 3**       | 2025            | –      | GQA/MHA            | RMSNorm             | No                          | Drops positional embeddings in select layers                                         |
-  | **Kimi K2**        | 2025            | 1 T    | MLA + GQA          | RMSNorm             | Yes                         | Trillion‑parameter scale 
+  | Model                 | Parameters | Attention Type                           | MoE                             | Norm                            | Positional Encoding            | Notable Features                                                                            |
+  | --------------------- | ---------- | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
+  | **DeepSeek V3 / R1**  | 671B       | Multi-Head Latent Attention (MLA)        | Yes, 256 experts (37B active)   | Pre-normalization               | RoPE                           | KV compression via MLA, shared expert, high inference efficiency                            |
+  | **OLMo 2**            | 32B        | Multi-Head Attention (MHA)               | No                              | Post-normalization + QK norm (RMSNorm) | RoPE                           | RMSNorm scaling after attention & FF, training stability                                  |
+  | **Gemma 3 / 3n**      | 27B / 4B   | Sliding Window + Grouped-Query Attention | No                              | Pre + Post RMSNorm          | RoPE                           | Sliding window attention, Gemma 3n: Per-Layer Embedding (PLE), MatFormer slices             |
+  | **Mistral Small 3.1** | 24B        | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Optimized for low latency, simpler than Gemma 3                                             |
+  | **Llama 4 Maverick**  | 400B       | Grouped-Query Attention                  | Yes, fewer & larger experts     | Pre-normalization               | RoPE                           | Alternating MoE & dense layers, 17B active parameters                                       |
+  | **Qwen3 (Dense)**     | 0.6–32B    | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Deep architecture, small memory footprint                                                   |
+  | **Qwen3 (MoE)**       | 30B–235B   | Grouped-Query Attention                  | Yes, no shared expert           | Pre-normalization               | RoPE                           | Sparse MoE, optimized for large-scale inference                                             |
+  | **SmolLM3**           | 3B         | Grouped-Query Attention                  | No                              | Pre-normalization               | NoPE (No Positional Embedding) | Good small-scale performance, improved length generalization                                |
+  | **Kimi K2**           | 1T         | MLA                                      | Yes, more experts than DeepSeek | Pre-normalization               | RoPE                           | Muon optimizer, very high modeling performance, open-weight                                 |
+  | **gpt-oss**           | 20B / 120B | Grouped-Query + Sliding Window           | Yes, few large experts          | Pre-normalization               | RoPE                           | Wider architecture, attention sinks, bias units                                             |
+  | **Grok 2.5**          | 70B        | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard large-scale architecture                                                           |
+  | **GLM-4.5**           | 130B       | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard architecture with high performance                                                 |
+  | **Qwen3-Next**        | -        | Grouped-Query Attention                  | Yes                             | Pre-normalization               | RoPE                           | Expert size & number tuned, Gated DeltaNet + Gated Attention Hybrid, Multi-Token Prediction |
 
 #### GPT-2 vs gpt-oss
 
@@ -135,6 +141,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   1. [Claude 3✍️](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
   1. [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
   1. [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
+  1. [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
   1. [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
 - Microsoft
   1. [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
@@ -188,6 +195,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   1. [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   1. [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
   1. [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
+  1. [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   1. A list of models: [✨](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
@@ -221,6 +229,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - Z.ai
   - formerly Zhipu, Beijing-based Chinese AI company founded in March 2019
   1. [GLM-4.5✨](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
+  1. [GLM-4.6✍️](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
 - GPT for Domain Specific [🔗](llm.md/#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [🔗](llm.md/#mllm-multimodal-large-language-model)
 - Large Language Models (in 2023) [🔗](llm.md/#large-language-models-in-2023)

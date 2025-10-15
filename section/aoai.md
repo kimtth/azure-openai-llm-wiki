@@ -339,9 +339,7 @@
 - 🌐[Azure Multimodal AI + LLM Processing Accelerator✨](https://github.com/Azure/multimodal-ai-llm-processing-accelerator): Build multimodal data processing pipelines with Azure AI Services + LLMs [Aug 2024]
 ![**github stars**](https://img.shields.io/github/stars/Azure/multimodal-ai-llm-processing-accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Azure OpenAI Network Latency Test Script
-: [✨](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]
-- 🌐Azure OpenAI samples: [✨](https://github.com/Azure/azure-openai-samples) [Apr 2023]
-![**github stars**](https://img.shields.io/github/stars/Azure/azure-openai-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+: [✨](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]  
 - 🏬Azure OpenAI with AKS by Terraform (simple version): [✨](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) [May 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-openai-terraform-deployment-sample?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬Azure-Samples [✨](https://github.com/Azure-Samples)

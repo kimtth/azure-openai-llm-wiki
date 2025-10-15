@@ -26,9 +26,11 @@
 - [Agentic Retrieval-Augmented Generation: Agentic RAG📑](https://alphaxiv.org/abs/2501.09136) [15 Jan 2025]
 - [AI Agent Protocols📑](https://alphaxiv.org/abs/2504.16736) [23 Apr 2025]
 - [AI-Generated Content (AIGC)📑](https://alphaxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)] [7 Mar 2023]
+- [AIOps in the Era of Large Language Models📑](https://alphaxiv.org/abs/2507.12472) [23 Jun 2025]
 - [Aligned LLMs📑](https://alphaxiv.org/abs/2307.12966):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966)] [24 Jul 2023]
 - [An Overview on Language Models: Recent Developments and Outlook📑](https://alphaxiv.org/abs/2303.05759):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759)] [10 Mar 2023]
-- [A comprehensive taxonomy of hallucinations in Large Language Models](https://alphaxiv.org/abs/2508.01781) [3 Aug 2025]
+- [A comprehensive taxonomy of hallucinations in Large Language Models📑](https://alphaxiv.org/abs/2508.01781) [3 Aug 2025]
+- [Autonomous Scientific Discovery📑](https://alphaxiv.org/abs/2508.14111): From AI for Science to Agentic Science [18 Aug 2025]
 - [Automatic Prompt Optimization Techniques📑](https://alphaxiv.org/abs/2502.16923) [24 Feb 2025]
 - [Challenges & Application of LLMs📑](https://alphaxiv.org/abs/2306.07303):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303)] [11 Jun 2023]
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?🔗](eval.md/#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
@@ -56,6 +58,7 @@
 - [LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures📑](https://alphaxiv.org/abs/2506.19676) [24 Jun 2025]
 - [LLMs for Healthcare📑](https://alphaxiv.org/abs/2310.05694):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05694)] [9 Oct 2023]
 - [Mathematical Reasoning in the Era of Multimodal Large Language Model: Benchmark, Method & Challenges📑](https://alphaxiv.org/abs/2412.11936) [16 Dec 2024]
+- [Medical Reasoning in the Era of LLMs📑](https://alphaxiv.org/abs/2508.00669): A Systematic Review of Enhancement Techniques and Applications [1 Aug 2025]
 - [Mixture of Experts📑](https://alphaxiv.org/abs/2407.06204) [26 Jun 2024]
 - [Mitigating Hallucination in LLMs📑](https://alphaxiv.org/abs/2401.01313): Summarizes 32 techniques to mitigate hallucination in LLMs [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2401.01313)] [2 Jan 2024]
 - [Model Compression for LLMs📑](https://alphaxiv.org/abs/2308.07633):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633)] [15 Aug 2023]
@@ -69,6 +72,7 @@
 - [Post-training of Large Language Models📑](https://alphaxiv.org/abs/2503.06072) [8 Mar 2025]
 - [Prompt Engineering Methods in Large Language Models for Different NLP Tasks📑](https://alphaxiv.org/abs/2407.12994) [17 Jul 2024]
 - [Retrieval-Augmented Generation for Large Language Models: A Survey📑](https://alphaxiv.org/abs/2312.10997) [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] [18 Dec 2023]
+- [Retrieval And Structuring Augmented Generation with Large Language Models📑](https://alphaxiv.org/abs/2509.10697) [12 Sep 2025]
 - [Retrieval-Augmented Text Generation for Large Language Models📑](https://alphaxiv.org/abs/2404.10981) [17 Apr 2024]
 - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning📑](https://alphaxiv.org/abs/2303.15647):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
 - [SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension📑](https://alphaxiv.org/abs/2307.16125): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)] [30 Jul 2023]
@@ -109,7 +113,8 @@
   - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/) [ⓒ2023]
     > 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models.
   - [Standford AI Index Annual Report](https://aiindex.stanford.edu/report/)
-  - [State of AI Report 2024](https://www.stateof.ai/) [10 Oct 2024]
+  - [State of AI Report 2024](https://www.stateof.ai/2024) [10 Oct 2024]
+  - [State of AI Report 2025](https://www.stateof.ai/2025-report-launch) [9 Oct 2025]
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
 - [Trends – Artiﬁcial Intelligence](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf):💡Issued by Bondcap VC. 340 Slides. ChatGPT’s 800 Million Users, 99% Cost Drop within 17 months. [May 2025]
@@ -139,6 +144,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
  ![**github stars**](https://img.shields.io/github/stars/naklecha/llama3-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [llm.c✨](https://github.com/karpathy/llm.c): LLM training in simple, raw C/CUDA [Apr 2024]
  ![**github stars**](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=blue&cacheSeconds=36000) | Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [✨](https://github.com/karpathy/llm.c/discussions/481)
+- [nanochat✨](https://github.com/karpathy/nanochat): a full-stack implementation of an LLM [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanochat?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 - [nanoGPT✨](https://github.com/karpathy/nanoGPT):💡Andrej Karpathy [Dec 2022] | [nanoMoE✨](https://github.com/wolfecameron/nanoMoE) [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanoGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/wolfecameron/nanoMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [nanoVLM✨](https://github.com/huggingface/nanoVLM): 🤗 The simplest, fastest repository for training/finetuning small-sized VLMs. [May 2025]
 - [pix2code✨](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] ![**github stars**](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
