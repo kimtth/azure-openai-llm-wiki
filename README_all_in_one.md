@@ -1,6 +1,6 @@
-# Awesome Azure OpenAI + LLM
+# Azure OpenAI + LLM
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+![GitHub last commit](https://img.shields.io/github/last-commit/kimtth/awesome-azure-openai-llm?label=commit&color=hotpink&style=flat-square)
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
 ![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
 
@@ -149,26 +149,15 @@ Comprehensive Surveys and Learning Materials
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| ✍️  | Blog post / Documentation | ✨ | GitHub repository |
+| ✍️ | Blog post / Documentation | ✨ | GitHub repository |
 | 🗄️ | Archived files | 🔗 | Cross reference |
 | 🗣️ | Source citation | 📺 | Video content |
 | 🔢 | Citation count | 💡🏆 | Recommend |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
----
-
-## Contributing
-
-<a href="https://github.com/kimtth/awesome-azure-openai-llm/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kimtth/awesome-azure-openai-llm" />
-</a>
-
 <!-- All rights reserved © `kimtth` -->
 
-*Last Updated: Sep 16, 2025*
-
-[⬆ Back to Top](#awesome-azure-openai--llm-resources)
-
+**[`^        back to top        ^`](#azure-openai--llm)**
 
 ## **RAG (Retrieval-Augmented Generation)**
 
@@ -221,6 +210,7 @@ Comprehensive Surveys and Learning Materials
 - [RARE: Retrieval-Augmented Reasoning Modeling 📑](https://alphaxiv.org/abs/2503.23513): LLM Training from static knowledge storage (memorization) to reasoning-focused. Combining domain knowledge and thinking (Knowledge Remembering & Contextualized Reasoning). 20% increase in accuracy on tasks like PubMedQA and CoVERT. [30 Mar 2025]
 - [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval📑](https://alphaxiv.org/abs/2401.18059): Introduce a novel approach to retrieval-augmented language models by constructing a recursive tree structure from documents. [✨](https://github.com/run-llama/llama_index/blob/main/llama-index-packs/llama-index-packs-raptor/README.md) `pip install llama-index-packs-raptor` / [✨](https://github.com/profintegra/raptor-rag) [31 Jan 2024] ![**github stars**](https://img.shields.io/github/stars/profintegra/raptor-rag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [RECOMP: Improving Retrieval-Augmented LMs with Compressors📑](https://alphaxiv.org/abs/2310.04408): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.04408)]: 1. We propose RECOMP (Retrieve, Compress, Prepend), an intermediate step which compresses retrieved documents into a textual summary prior to prepending them to improve retrieval-augmented language models (RALMs). 2. We present two compressors – an `extractive compressor` which selects useful sentences from retrieved documents and an `abstractive compressor` which generates summaries by synthesizing information from multiple documents. 3. Both compressors are trained. [6 Oct 2023]
+- [REFRAG: Rethinking RAG based Decoding📑](https://alphaxiv.org/abs/2509.01092): Meta. Compress (chunk → single embedding) → Sense/Select (RL policy picks relevant chunks) → Expand (Selective expansion). 16× Longer Contexts and Up to 31× Faster RAG Decoding. [1 Sep 2025] [✍️](https://x.com/_avichawla/status/1977260787027919209)
 - [Retrieval Augmented Generation (RAG) and Beyond📑](https://alphaxiv.org/abs/2409.14924):🏆The paper classifies user queries into four levels—`explicit, implicit, interpretable rationale, and hidden rationale`—and highlights the need for external data integration and fine-tuning LLMs for specialized tasks. [23 Sep 2024]
 - [Retrieval Augmented Generation or Long-Context LLMs?📑](https://alphaxiv.org/abs/2407.16833): Long-Context consistently outperforms RAG in terms of average performance. However, RAG's significantly lower cost remains a distinct advantage. [23 Jul 2024]
 - [Retrieval meets Long Context LLMs📑](https://alphaxiv.org/abs/2310.03025): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.03025)]: We demonstrate that retrieval-augmentation significantly improves the performance of 4K context LLMs. Perhaps surprisingly, we find this simple retrieval-augmented baseline can perform comparable to 16K long context LLMs. [4 Oct 2023]
@@ -809,9 +799,7 @@ Comprehensive Surveys and Learning Materials
 - 🌐[Azure Multimodal AI + LLM Processing Accelerator✨](https://github.com/Azure/multimodal-ai-llm-processing-accelerator): Build multimodal data processing pipelines with Azure AI Services + LLMs [Aug 2024]
 ![**github stars**](https://img.shields.io/github/stars/Azure/multimodal-ai-llm-processing-accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Azure OpenAI Network Latency Test Script
-: [✨](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]
-- 🌐Azure OpenAI samples: [✨](https://github.com/Azure/azure-openai-samples) [Apr 2023]
-![**github stars**](https://img.shields.io/github/stars/Azure/azure-openai-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+: [✨](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]  
 - 🏬Azure OpenAI with AKS by Terraform (simple version): [✨](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) [May 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-openai-terraform-deployment-sample?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬Azure-Samples [✨](https://github.com/Azure-Samples)
@@ -1047,6 +1035,7 @@ Comprehensive Surveys and Learning Materials
 ![**github stars**](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/assafelovic/gpt-newspaper?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [guardrails✨](https://github.com/guardrails-ai/guardrails): Adding guardrails to large language models. [Jan 2023]
 ![**github stars**](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Inbox Zero✨](https://github.com/elie222/inbox-zero): AI personal assistant for email. [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/elie222/inbox-zero?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 1. [knowledge✨](https://github.com/KnowledgeCanvas/knowledge): Tool for saving, searching, accessing, and exploring websites and files. Electron based app, built-in Chromium browser, knowledge graph [Jul 2021] ![**github stars**](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [KnowledgeGPT✨](https://github.com/mmz-001/knowledge_gpt): Upload your documents and get answers to your questions, with citations [Jan 2023]
 ![**github stars**](https://img.shields.io/github/stars/mmz-001/knowledge_gpt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1117,6 +1106,7 @@ Comprehensive Surveys and Learning Materials
 1. [open-swe✨](https://github.com/langchain-ai/open-swe): An Open-Source Asynchronous Coding Agent. [May 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/open-swe?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Opal](https://opal.withgoogle.com/landing/): Google. Build, edit and share mini-AI apps using natural language [Jun 205]
 1. [OpenHands✨](https://github.com/All-Hands-AI/OpenHands): OpenHands (formerly OpenDevin), a platform for software development agents [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Ruler✨](https://github.com/intellectronica/ruler): Centralise Your AI Coding Assistant Instructions [May 2025] ![**github stars**](https://img.shields.io/github/stars/intellectronica/ruler?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Task Master✨](https://github.com/eyaltoledano/claude-task-master): Personal Project Manager. A task management system for AI-driven development. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Trae](https://www.trae.ai/): Bytedance. Free, but not open-source. [20 Jan 2025]
 1. [Vercel AI✨](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![**github stars**](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1133,6 +1123,7 @@ Comprehensive Surveys and Learning Materials
 ![**github stars**](https://img.shields.io/github/stars/Chainlit/chainlit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [CopilotKit✨](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [ElevenLabs UI✨](https://github.com/elevenlabs/ui): a component library built on top of shadcn/ui to help you build audio & agentic applications [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/elevenlabs/ui?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [GPT 学术优化 (GPT Academic)✨](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Gradio✨](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 ![**github stars**](https://img.shields.io/github/stars/gradio-app/gradio?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1155,6 +1146,7 @@ Comprehensive Surveys and Learning Materials
 ![**github stars**](https://img.shields.io/github/stars/camelot-dev/camelot?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Crawl4AI✨](https://github.com/unclecode/crawl4ai): Open-source LLM Friendly Web Crawler & Scrapper [May 2024]
 ![**github stars**](https://img.shields.io/github/stars/unclecode/crawl4ai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [DocETL✨](https://github.com/ucbepic/docetl): Agentic LLM-powered data processing and ETL. Complex Document Processing Pipelines. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/ucbepic/docetl?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [docling✨](https://github.com/DS4SD/docling): IBM. Docling parses documents and exports them to the desired format. [13 Nov 2024] ![**github stars**](https://img.shields.io/github/stars/DS4SD/docling?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [dolphin✨](https://github.com/bytedance/dolphin): The official repo for "Dolphin: Document Image Parsing via Heterogeneous Anchor Prompting", ACL, 2025. [May 2025] ![**github stars**](https://img.shields.io/github/stars/bytedance/dolphin?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [dots.ocr✨](https://github.com/rednote-hilab/dots.ocr): a powerful, multilingual document parser that unifies layout detection and content recognition within a single vision-language model (1.7B) [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/rednote-hilab/dots.ocr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1222,7 +1214,8 @@ Comprehensive Surveys and Learning Materials
 ### **Proposals & Glossary**
 
 - [A2A✨](https://github.com/google/A2A): Google. Agent2Agent (A2A) protocol. Agent Card (metadata: self-description). Task (a unit of work). Artifact (output). Streaming (Long-running tasks). Leverages HTTP, SSE, and JSON-RPC. Multi-modality incl. interacting with UI components [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/google/A2A?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Agent Payments Protocol (AP2)](https://github.com/google-agentic-commerce/AP2): an open-source protocol developed by Google to enable secure, interoperable AI-driven payments between agents [May 2025] ![**github stars**](https://img.shields.io/github/stars/google-agentic-commerce/AP2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Agent Payments Protocol (AP2)✨](https://github.com/google-agentic-commerce/AP2): an open-source protocol developed by Google to enable secure, interoperable AI-driven payments between agents [May 2025] ![**github stars**](https://img.shields.io/github/stars/google-agentic-commerce/AP2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Agentic Commerce Protocol (ACP)✨](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol): an interaction model and open standard for connecting buyers, their AI agents [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/agentic-commerce-protocol/agentic-commerce-protocol?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Context Engineering: [tweet from Shopify CEO Tobi Lutke](https://x.com/tobi/status/1935533422589399127), [tweet from Andrej Karpathy](https://x.com/karpathy/status/1937902205765607626), [The New Skill in AI is Not Prompting, It's Context Engineering](https://www.philschmid.de/context-engineering) [Jun 2025]
 - [AGENTS.md](https://agents.md/): AGENTS.md as a README for agents. [✨](https://github.com/openai/agents.md) [Aug 2025]
 - [/llms.txt](https://llmstxt.org/): Proposal for an `/llms.txt` file to guide LLMs in using websites during inference. [✨](https://github.com/answerdotai/llms-txt) [3 Sep 2024]
@@ -1273,14 +1266,17 @@ Comprehensive Surveys and Learning Materials
 [AG2✨](https://github.com/ag2ai/ag2) ![**github stars**](https://img.shields.io/github/stars/ag2ai/ag2?style=flat-square&label=%20&cacheSeconds=36000) > [Agno✨](https://github.com/agno-agi/agno) ![**github stars**](https://img.shields.io/github/stars/agno-agi/agno?style=flat-square&label=%20&cacheSeconds=36000) > [AWS Bedrock Agents✨](https://github.com/awslabs/amazon-bedrock-agent-samples) ![**github stars**](https://img.shields.io/github/stars/awslabs/amazon-bedrock-agent-samples?style=flat-square&label=%20&cacheSeconds=36000) > [CrewAI✨](https://github.com/crewAIInc/crewAI) ![**github stars**](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square&label=%20&cacheSeconds=36000) > [Google ADK✨](https://github.com/google/adk-python) ![**github stars**](https://img.shields.io/github/stars/google/adk-python?style=flat-square&label=%20&cacheSeconds=36000) > [LangChain✨](https://github.com/langchain-ai/langchain) ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square&label=%20&cacheSeconds=36000) > [LangGraph✨](https://github.com/langchain-ai/langgraph) ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&cacheSeconds=36000) > [LlamaIndex✨](https://github.com/run-llama/llama_index)  ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_index?style=flat-square&label=%20&cacheSeconds=36000) > [Mastra✨](https://github.com/mastra-ai/mastra) ![**github stars**](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square&label=%20&cacheSeconds=36000) > [OpenAI Agent SDK✨](https://github.com/openai/openai-agents-python) ![**github stars**](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square&label=%20&cacheSeconds=36000) > [Pydantic AI✨](https://github.com/pydantic/pydantic-ai) ![**github stars**](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=flat-square&label=%20&cacheSeconds=36000) > [Strands Agents SDK✨](https://github.com/strands-agents/sdk-python) ![**github stars**](https://img.shields.io/github/stars/strands-agents/sdk-python?style=flat-square&label=%20&cacheSeconds=36000) > [Vercel AI SDK✨](https://github.com/vercel/ai) ![**github stars**](https://img.shields.io/github/stars/vercel/ai?style=flat-square&label=%20&cacheSeconds=36000)
 
 #### **Agent Design Patterns**
-
+- [10 Lessons to Get Started Building AI Agents✨](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [5 Agentic AI Design Patterns✍️](https://blog.dailydoseofds.com/p/5-agentic-ai-design-patterns): Reflection, Tool use, ReAct, Planning, Multi-agent pattern [24 Jan 2025]
 - [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs📑](https://alphaxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
+- [A Practical Guide to Building AI Agents✍️](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 - [Advances and Challenges in Foundation Agents📑](https://alphaxiv.org/abs/2504.01990):💡From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems [✨](https://github.com/FoundationAgents/awesome-foundation-agents) [31 Mar 2025]
 - [Agent Factory: The new era of agentic AI—common use cases and design patterns✍️](https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/):💡Tool use, Reflection, Planning,  Multi-agent, ReAct (Reason + Act) Patterns [13 Aug 2025]
-- [AgentBench📑](https://alphaxiv.org/abs/2308.03688) Evaluating LLMs as Agents: Assess LLM-as Agent’s reasoning and decision-making abilities. [7 Aug 2023]
+- [Agent-as-a-Judge📑](https://alphaxiv.org/abs/2410.10934): Evaluate Agents with Agents. DevAI, a new benchmark of 55 realistic automated AI development tasks. `Agent-as-a-Judge > LLM-as-a-Judge > Human-as-a-Judge` [14 Oct 2024]
+- [AgentBench📑](https://alphaxiv.org/abs/2308.03688) Evaluating LLMs as Agents: Assess LLM-as Agent's reasoning and decision-making abilities. [7 Aug 2023]
 - [Agentic AI Architecture Framework for Enterprises ✍️](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous (experimental) [11 Jul 2025]
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
+- [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models📑](https://alphaxiv.org/abs/2510.04618): Agentic Context Engineering (ACE) lets language models self-improve by evolving their contexts without any fine-tuning. [6 Oct 2025]
 - Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
   - Reflection: LLM self-evaluates to improve.
     - [Self-Refine📑](https://alphaxiv.org/abs/2303.17651) [30 Mar 2023]
@@ -1301,34 +1297,26 @@ Comprehensive Surveys and Learning Materials
     - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://alphaxiv.org/abs/2308.00352) [1 Aug 2023]
     - Framework: [Autogen✨](https://github.com/microsoft/autogen) / [LangGraph✨](https://github.com/langchain-ai/langgraph) / [crewAI✨](https://github.com/joaomdmoura/CrewAI)
  ![**github stars**](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Agentic Design Patterns✍️](https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0#heading=h.pxcur8v2qagu): Google Docs. A Hands-On Guide to Building Intelligent Systems. [🗄️](./files/archive/Agentic_Design_Patterns.docx) [May 2025]
+- [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
+- [Agents Are Not Enough📑](https://alphaxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
 - [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns):💡Sequential, Concurrent, Group chat, Handoff, Magentic orchestration [17 Jun 2025]
+- [AI Agents That Matter📑](https://alphaxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
+- [AI Agents vs. Agentic AI📑](https://alphaxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
+- [Automated Design of Agentic Systems📑](https://alphaxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
+- [Azure AI Foundry Agent Ochestration Patterns ](https://aifoundry.app/patterns): Prompt Chaining, Routing, Parallelization, Orchestrator, Evaluator-optimizer
 - [Beyond the Gang of Four: Practical Design Patterns for Modern AI Systems✍️](https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/): **Prompting & Context:** Few-Shot Prompting, Role Prompting, Chain-of-Thought, RAG; **Responsible AI:** Output Guardrails, Model Critic; **UX:** Contextual Guidance, Editable Output, Iterative Exploration; **AI-Ops:** Metrics-Driven AI-Ops, Prompt-Model-Config Versioning; **Optimization:** Prompt Caching, Dynamic Batching, Intelligent Model Routing. [15 My 2025]
+- [Building effective agents✍️](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
+- [Cognitive Architectures for Language Agents📑](https://alphaxiv.org/abs/2309.02427): Cognitive Architectures for Language Agents (CoALA). Procedural (how to perform tasks), Semantic (long-term store of knowledge), Episodic Memory (recall specific past events) [✍️](https://blog.langchain.dev/memory-for-agents/) [5 Sep 2023]
 - [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents📑](https://alphaxiv.org/abs/2505.22954): Darwin Gödel Machine (DGM) iteratively self-modifies its code, with improvements validated by SWE-bench and Polyglot. It uses frozen foundation models to enable coding agents that read, write, and execute code via tools. Starting from a single agent, DGM evolves by branching multiple improved agents, boosting SWE-bench scores from 20% to 50% and Polyglot from 14% to 31%. [29 May 2025]
+- [Exploring Generative AI (martinfowler.com)](https://martinfowler.com/articles/exploring-gen-ai.html): Memos on how LLMs are being used to enhance software delivery practices, including Toochain, Test-Driven Development (TDD) with GitHub Copilot, pair programming, and multi-file editing. [26 Jul 2023 ~ ]
 - Generate the code [✍️](https://www.deeplearning.ai/the-batch/issue-254/) [Jun 2024]
   - [AgentCoder: Multiagent-Code Generation with Iterative Testing and Optimisation📑](https://alphaxiv.org/abs/2312.13010) [20 Dec 2023]
   - [LDB: A Large Language Model Debugger via Verifying Runtime Execution Step by Step📑](https://alphaxiv.org/abs/2402.16906) [25 Feb 2024]
   - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering📑](https://alphaxiv.org/abs/2405.15793) [6 May 2024]
+- [Generative Agent Simulations of 1,000 People📑](https://alphaxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Generative AI Design Patterns for Agentic AI Systems✨](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [The Rise and Potential of Large Language Model Based Agents: A Survey📑](https://alphaxiv.org/abs/2309.07864): The papers list for LLM-based agents [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864)] / [✨](https://github.com/WooooDyy/LLM-Agent-Paper-List) [14 Sep 2023]
- ![**github stars**](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
-
-#### **Agent Design Reference**
-
-- [10 Lessons to Get Started Building AI Agents✨](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [A Practical Guide to Building AI Agents✍️](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
-- [AI Agents That Matter📑](https://alphaxiv.org/abs/2407.01502): AI agent evaluations for optimizing both accuracy and cost. Focusing solely on accuracy can lead to overfitting and high costs. `retry, warming, escalation` [1 Jul 2024]
-- [AI Agents vs. Agentic AI📑](https://alphaxiv.org/abs/2505.10468): `TL;DR` AI Agents are tool-like and task-specific; Agentic AI is goal-directed, autonomous, and capable of planning, reacting, and learning. [15 May 2025]
-- [Agent-as-a-Judge📑](https://alphaxiv.org/abs/2410.10934): Evaluate Agents with Agents. DevAI, a new benchmark of 55 realistic automated AI development tasks. `Agent-as-a-Judge > LLM-as-a-Judge > Human-as-a-Judge` [14 Oct 2024]
-- [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
-- [Agents Are Not Enough📑](https://alphaxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
-- [Automated Design of Agentic Systems📑](https://alphaxiv.org/abs/2408.08435): Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them. [15 Aug 2024]
-- [Azure AI Foundry Agent Ochestration Patterns ](https://aifoundry.app/patterns): Prompt Chaining, Routing, Parallelization, Orchestrator, Evaluator-optimizer
-- [Building effective agents✍️](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
-- [Cognitive Architectures for Language Agents📑](https://alphaxiv.org/abs/2309.02427): Cognitive Architectures for Language Agents (CoALA). Procedural (how to perform tasks), Semantic (long-term store of knowledge), Episodic Memory (recall specific past events) [✍️](https://blog.langchain.dev/memory-for-agents/) [5 Sep 2023]
-- [Exploring Generative AI (martinfowler.com)](https://martinfowler.com/articles/exploring-gen-ai.html): Memos on how LLMs are being used to enhance software delivery practices, including Toochain, Test-Driven Development (TDD) with GitHub Copilot, pair programming, and multi-file editing. [26 Jul 2023 ~ ]
-- [Generative Agent Simulations of 1,000 People📑](https://alphaxiv.org/abs/2411.10109): a generative agent architecture that simulates more than 1,000 real individuals using two-hour qualitative interviews. 85% accuracy in General Social Survey. [15 Nov 2024]
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [How Anthropic Built a Multi-Agent Research System✍️](https://blog.bytebytego.com/p/how-anthropic-built-a-multi-agent): Lead Researcher agent to coordinate specialized subagents, enabling dynamic, parallelized research and citation verification [17 Sep 2025]
 - [How we built our multi-agent research system✍️](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
@@ -1336,7 +1324,10 @@ Comprehensive Surveys and Learning Materials
 - [Language Agent Tree Search Method (LATS)✨](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Taxonomy of failure modes in AI agents ✍️](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
+- [The Rise and Potential of Large Language Model Based Agents: A Survey📑](https://alphaxiv.org/abs/2309.07864): The papers list for LLM-based agents [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864)] / [✨](https://github.com/WooooDyy/LLM-Agent-Paper-List) [14 Sep 2023]
+ ![**github stars**](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [When One AI Agent Isn't Enough - Building Multi-Agent Systems✍️](https://diamantai.substack.com/p/when-one-ai-agent-isnt-enough-building): When Multi-Agent Systems Make Sense: Complex subtasks, diverse expertise, parallel speed, easy scaling, and multi-entity problems. [Jul 14]
+- [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
 
 #### **Tool use: LLM to Master APIs**
 
@@ -1396,6 +1387,7 @@ Comprehensive Surveys and Learning Materials
 1. [Agent.exe✨](https://github.com/corbt/agent.exe): Electron app to use computer use APIs. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/corbt/agent.exe?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [CogAgent✨](https://github.com/THUDM/CogAgent): An open-sourced end-to-end VLM-based GUI Agent [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/THUDM/CogAgent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Computer Use OOTB✨](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [cua✨](https://github.com/trycua/cua): Open-source infrastructure for Computer-Use Agents. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/trycua/cua?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open-Interface✨](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Operator✨](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![**github stars**](https://img.shields.io/github/stars/browserbase/open-operator?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 1. [OpenAI Operator✍️](https://openai.com/index/introducing-operator/) [🔗](#openai-products) [23 Jan 2025]
@@ -1434,8 +1426,10 @@ Comprehensive Surveys and Learning Materials
 1. [Botpress Cloud✨](https://github.com/botpress/botpress): The open-source hub to build & deploy GPT/LLM Agents. [Nov 2016] ![**github stars**](https://img.shields.io/github/stars/botpress/botpress?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Burr✨](https://github.com/dagworks-inc/burr): Create an application as a state machine (graph/flowchart) for managing state, decisions, human feedback, and workflows. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/dagworks-inc/burr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Cheshire-Cat (Stregatto)✨](https://github.com/cheshire-cat-ai/core): Framework to build custom AIs with memory and plugins [Feb 2023] ![**github stars**](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Claude Agent SDK for Python✨](https://github.com/anthropics/claude-agent-sdk-python) [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/anthropics/claude-agent-sdk-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [composio✨](https://github.com/ComposioHQ/composio): Integration of Agents with 100+ Tools [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/ComposioHQ/composio?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [crewAI✨](https://github.com/joaomdmoura/CrewAI):💡Framework for orchestrating role-playing, autonomous AI agents. [Oct 2023] ![**github stars**](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Dagger✨](https://github.com/dagger/dagger): an open-source runtime for composable workflows. [Nov 2019] ![**github stars**](https://img.shields.io/github/stars/dagger/dagger?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Dynamiq✨](https://github.com/dynamiq-ai/dynamiq): An orchestration framework for RAG, agentic AI, and LLM applications [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/dynamiq-ai/dynamiq?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Eko (pronounced like ‘echo’) ✨](https://github.com/FellouAI/eko): Pure JavaScript. Build Production-ready Agentic Workflow with Natural Language. Support Browser use & Computer use [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/FellouAI/eko?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Google ADK✨](https://github.com/google/adk-python): Agent Development Kit (ADK) [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/google/adk-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1542,6 +1536,7 @@ Comprehensive Surveys and Learning Materials
 
 1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat📑](https://alphaxiv.org/abs/2311.15826) | [GEOBench-VLM📑](https://alphaxiv.org/abs/2411.19325) | [RS5M✨](https://github.com/om-ai-lab/RS5M) | [VHM✨](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
 1. [An LLM Agent for Automatic Geospatial Data Analysis📑](https://alphaxiv.org/abs/2410.18792) [24 Oct 2024]
+1. [AgentSociety✨](https://github.com/tsinghua-fib-lab/agentsociety): Building agents in urban simulation environments. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/tsinghua-fib-lab/agentsociety?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning📑](https://alphaxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
 1. [DeepRare📑](https://alphaxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
 1. [Director✨](https://github.com/video-db/Director): Think of Director as ChatGPT for videos. AI video agents framework for video interactions and workflows. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/video-db/Director?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1581,6 +1576,8 @@ Comprehensive Surveys and Learning Materials
 1. [smolagents: Open Deep Research✨](https://github.com/huggingface/smolagents) > `examples/open_deep_research`.🤗HuggingFace [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [STORM✨](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/stanford-oval/storm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search📑](https://alphaxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [✨](https://github.com/SakanaAI/AI-Scientist-v2) ![**github stars**](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Tongyi DeepResearch✨](https://github.com/Alibaba-NLP/DeepResearch): Alibaba. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Universal Deep Research (UDR)✨](https://github.com/NVlabs/UniversalDeepResearch): NVDIA. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/NVlabs/UniversalDeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [WebThinker✨](https://github.com/RUC-NLPIR/WebThinker): WebThinker allows the reasoning model itself to perform actions during thinking, achieving end-to-end task execution in a single generation. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ## **Microsoft Semantic Kernel and Stanford NLP DSPy**
@@ -1599,6 +1596,7 @@ Comprehensive Surveys and Learning Materials
 - [A Guide to Microsoft’s Semantic Kernel Process Framework✍️](https://devblogs.microsoft.com/semantic-kernel/guest-blog-revolutionize-business-automation-with-ai-a-guide-to-microsofts-semantic-kernel-process-framework/)  [11 April 2025]
 - [Semantic Kernel and Copilot Studio Usage✍️](https://devblogs.microsoft.com/semantic-kernel/guest-blog-semantic-kernel-and-copilot-studio-usage-series-part-1/) [7 Apr 2025]
 - [Context based function selection✨](https://github.com/microsoft/semantic-kernel/pull/12130): ADR (Architectural Decision Records). Agents analyze the conversation context to select the most relevant function, instead of considering all available functions. [May 2025]
+- [Semantic Kernel and Microsoft Agent Framework✍️](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-microsoft-agent-framework/): 💡Microsoft Agent Framework is the successor to Semantic Kernel for building AI agents. Microsoft Agent Framework remains in Preview for the next few months. Use Semantic Kernel for existing or time-sensitive projects. For new projects that can wait for General Availability, start with Microsoft Agent Framework. [7 Oct 2025]
 
 <!-- <img src="./files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/> -->
 <!-- <img src="./files/sk-flow.png" alt="sk" width="500"/> -->
@@ -2177,47 +2175,52 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 
 ### **Prompt Guide & Leaked prompts**
 
-- [Prompt Engineering Guide](https://www.promptingguide.ai/): 🏆Copyright © 2023 DAIR.AI
-- [Azure OpenAI Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
-- [OpenAI Prompt example](https://platform.openai.com/examples)
-- [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
-- [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [5 Principles for Writing Effective Prompts✍️](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025]
+- [Anthropic Prompt Library](https://docs.anthropic.com/claude/prompt-library): Anthropic released a Claude 3 AI prompt library [Mar 2024]
+- [Anthropic courses > Prompt engineering interactive tutorial✨](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
+ ![**github stars**](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Awesome ChatGPT Prompts✨](https://github.com/f/awesome-chatgpt-prompts) [Dec 2022]
  ![**github stars**](https://img.shields.io/github/stars/f/awesome-chatgpt-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangChainHub](https://smith.langchain.com/hub): a collection of all artifacts useful for working with LangChain primitives such as prompts, chains and agents. [Jan 2023]
 - [Awesome Prompt Engineering✨](https://github.com/promptslab/Awesome-Prompt-Engineering) [Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/promptslab/Awesome-Prompt-Engineering?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [TheBigPromptLibrary✨](https://github.com/0xeb/TheBigPromptLibrary) [Nov 2023] ![**github stars**](https://img.shields.io/github/stars/0xeb/TheBigPromptLibrary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Awesome-GPTs-Prompts✨](https://github.com/ai-boost/awesome-prompts) [Jan 2024]
+ ![**github stars**](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Azure OpenAI Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/advanced-prompt-engineering)
+- [Copilot prompts✨](https://github.com/pnp/copilot-prompts): Examples of prompts for Microsoft Copilot. [25 Apr 2024]
+ ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [DeepLearning.ai ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [Fabric✨](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024]
+ ![**github stars**](https://img.shields.io/github/stars/danielmiessler/fabric?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [In-The-Wild Jailbreak Prompts on LLMs✨](https://github.com/verazuo/jailbreak_llms): A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Collected from December 2022 to December 2023 [Aug 2023]
+ ![**github stars**](https://img.shields.io/github/stars/verazuo/jailbreak_llms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [LangChainHub](https://smith.langchain.com/hub): a collection of all artifacts useful for working with LangChain primitives such as prompts, chains and agents. [Jan 2023]
+- Leaked prompts of [GPTs✨](https://github.com/linexjlin/GPTs) [Nov 2023] and [Agents✨](https://github.com/LouisShark/chatgpt_system_prompt) [Nov 2023]
+ ![**github stars**](https://img.shields.io/github/stars/linexjlin/GPTs?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [LLM Prompt Engineering Simplified✨](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book): Online Book [Feb 2024]
+ ![**github stars**](https://img.shields.io/github/stars/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [OpenAI Best practices for prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+- [OpenAI Prompt example](https://platform.openai.com/examples)
+- [OpenAI Prompt Pack](https://academy.openai.com/public/tags/prompt-packs-6849a0f98c613939acef841c): curated collections of pre-designed prompts tailored for specific roles, industries, or use cases.
+- [Power Platform GPT Prompts✨](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
+ ![**github stars**](https://img.shields.io/github/stars/pnp/powerplatform-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/): 🏆Copyright © 2023 DAIR.AI
 - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, also known as In-Context Prompting ... [Mar 2023]
 - [Prompts for Education✨](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/prompts-for-edu?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [In-The-Wild Jailbreak Prompts on LLMs✨](https://github.com/verazuo/jailbreak_llms): A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Collected from December 2022 to December 2023 [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/verazuo/jailbreak_llms?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- Leaked prompts of [GPTs✨](https://github.com/linexjlin/GPTs) [Nov 2023] and [Agents✨](https://github.com/LouisShark/chatgpt_system_prompt) [Nov 2023]
- ![**github stars**](https://img.shields.io/github/stars/linexjlin/GPTs?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/LouisShark/chatgpt_system_prompt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Awesome-GPTs-Prompts✨](https://github.com/ai-boost/awesome-prompts) [Jan 2024]
- ![**github stars**](https://img.shields.io/github/stars/ai-boost/awesome-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Fabric✨](https://github.com/danielmiessler/fabric): A modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/danielmiessler/fabric?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LLM Prompt Engineering Simplified✨](https://github.com/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book): Online Book [Feb 2024]
- ![**github stars**](https://img.shields.io/github/stars/AkmmusAI/LLM-Prompt-Engineering-Simplified-Book?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Power Platform GPT Prompts✨](https://github.com/pnp/powerplatform-prompts) [Mar 2024]
- ![**github stars**](https://img.shields.io/github/stars/pnp/powerplatform-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Anthropic Prompt Library](https://docs.anthropic.com/claude/prompt-library): Anthropic released a Claude 3 AI prompt library [Mar 2024]
-- [Copilot prompts✨](https://github.com/pnp/copilot-prompts): Examples of prompts for Microsoft Copilot. [25 Apr 2024]
- ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-prompts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Anthropic courses > Prompt engineering interactive tutorial✨](https://github.com/anthropics/courses): a comprehensive step-by-step guide to key prompting techniques / prompt evaluations [Aug 2024]
- ![**github stars**](https://img.shields.io/github/stars/anthropics/courses?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [5 Principles for Writing Effective Prompts✍️](https://blog.tobiaszwingmann.com/p/5-principles-for-writing-effective-prompts): RGTD - Role, Goal, Task, Details Framework [07 Feb 2025]
 - [ShumerPrompt](https://shumerprompt.com/): Discover and share powerful prompts for AI models
+- [TheBigPromptLibrary✨](https://github.com/0xeb/TheBigPromptLibrary) [Nov 2023]
+ ![**github stars**](https://img.shields.io/github/stars/0xeb/TheBigPromptLibrary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **Visual Prompting & Visual Grounding**
 
-- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [🗄️](./files/vPrompt.pdf) [26 Apr 2023]
-- [Visual Prompting📑](https://alphaxiv.org/abs/2211.11635) [21 Nov 2022]
 - [Andrew Ng’s Visual Prompting Livestream📺](https://www.youtube.com/watch?v=FE88OOUBonQ) [24 Apr 2023]
-- [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
-- [Screen AI✍️](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
-- [Motion Prompting📑](https://alphaxiv.org/abs/2412.02700): motion prompts for flexible video generation, enabling motion control, image interaction, and realistic physics. [✨](https://motion-prompting.github.io/) [3 Dec 2024]
+- Chain of Frame (CoF): Reasoning via structured frames. DeepMind proposed CoF in [Veo 3 Paper📑](https://alphaxiv.org/abs/2509.20328). [24 Sep 2025]
 - [landing.ai: Agentic Object Detection](https://landing.ai/agentic-object-detection): Agent systems use design patterns to reason at length about unique attributes like color, shape, and texture [6 Feb 2025]
+- [Motion Prompting📑](https://alphaxiv.org/abs/2412.02700): motion prompts for flexible video generation, enabling motion control, image interaction, and realistic physics. [✨](https://motion-prompting.github.io/) [3 Dec 2024]
+- [Screen AI✍️](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
+- [Visual Prompting📑](https://alphaxiv.org/abs/2211.11635) [21 Nov 2022]
+- [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
+- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [🗄️](./files/vPrompt.pdf) [26 Apr 2023]
 
 
 ## Finetuning
@@ -2486,17 +2489,29 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 
 #### **Other techniques and LLM patterns**
 
-- [LLM patterns](https://eugeneyan.com/writing/llm-patterns/): 🏆From data to user, from defensive to offensive [🗄️](./files/llm-patterns-og.png)
-- [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/):💡A practical guide to building successful LLM products, covering the tactical, operational, and strategic.  [8 June 2024]
+- [Better & Faster Large Language Models via Multi-token Prediction📑](https://alphaxiv.org/abs/2404.19737): Suggest that training language models to predict multiple future tokens at once [30 Apr 2024]
+- [Differential Transformer📑](https://alphaxiv.org/abs/2410.05258): Amplifies attention to the relevant context while minimizing noise using two separate softmax attention mechanisms. [7 Oct 2024]
+- [KAN or MLP: A Fairer Comparison📑](https://alphaxiv.org/abs/2407.16674): In machine learning, computer vision, audio processing, natural language processing, and symbolic formula representation (except for symbolic formula representation tasks), MLP generally outperforms KAN. [23 Jul 2024]
+- [Kolmogorov-Arnold Networks (KANs)📑](https://alphaxiv.org/abs/2404.19756): KANs use activation functions on connections instead of nodes like Multi-Layer Perceptrons (MLPs) do. Each weight in KANs is replaced by a learnable 1D spline function. KANs’ nodes simply sum incoming signals without applying any non-linearities. [✨](https://github.com/KindXiaoming/pykan) [30 Apr 2024] / [✍️](https://www.dailydoseofds.com/a-beginner-friendly-introduction-to-kolmogorov-arnold-networks-kan/): A Beginner-friendly Introduction to Kolmogorov Arnold Networks (KAN) [19 May 2024]
+ ![**github stars**](https://img.shields.io/github/stars/KindXiaoming/pykan?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Large Concept Models📑](https://alphaxiv.org/abs/2412.08821): Focusing on high-level sentence (concept) level rather than tokens. using SONAR for sentence embedding space. [11 Dec 2024]
+- [Large Language Diffusion Models📑](https://alphaxiv.org/abs/2502.09992): LLaDA's core is a mask predictor, which uses controlled noise to help models learn to predict missing information from context. [✍️](https://ml-gsai.github.io/LLaDA-demo/) [14 Feb 2025]
 - [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/): Besides the increasing size of SoTA models, there are two main factors contributing to the inference challenge ... [10 Jan 2023]
+- [Lamini Memory Tuning✨](https://github.com/lamini-ai/Lamini-Memory-Tuning): Mixture of Millions of Memory Experts (MoME). 95% LLM Accuracy, 10x Fewer Hallucinations. [✍️](https://www.lamini.ai/blog/lamini-memory-tuning) [Jun 2024]
+ ![**github stars**](https://img.shields.io/github/stars/lamini-ai/Lamini-Memory-Tuning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Less is More: Recursive Reasoning with Tiny Networks📑](https://alphaxiv.org/abs/2510.04871): Tiny neural networks can perform complex recursive reasoning efficiently, achieving strong results with minimal model size. [6 Oct 2025] [✨](https://github.com/SamsungSAILMontreal/TinyRecursiveModels) ![**github stars**](https://img.shields.io/github/stars/SamsungSAILMontreal/TinyRecursiveModels?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [LLM patterns](https://eugeneyan.com/writing/llm-patterns/): 🏆From data to user, from defensive to offensive [🗄️](./files/llm-patterns-og.png)
+- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces📑](https://alphaxiv.org/abs/2312.00752) [1 Dec 2023] [✨](https://github.com/state-spaces/mamba): 1. Structured State Space (S4) - Class of sequence models, encompassing traits from RNNs, CNNs, and classical state space models. 2. Hardware-aware (Optimized for GPU) 3. Integrating selective SSMs and eliminating attention and MLP blocks [✍️](https://www.unite.ai/mamba-redefining-sequence-modeling-and-outforming-transformers-architecture/) / A Visual Guide to Mamba and State Space Models [✍️](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) [19 FEB 2024]
+ ![**github stars**](https://img.shields.io/github/stars/state-spaces/mamba?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [Mamba-2📑](https://alphaxiv.org/abs/2405.21060): 2-8X faster [31 May 2024]
+- [Mixture-of-Depths📑](https://alphaxiv.org/abs/2404.02258): All tokens should not require the same effort to compute. The idea is to make token passage through a block optional. Each block selects the top-k tokens for processing, and the rest skip it. [✍️](https://www.linkedin.com/embed/feed/update/urn:li:share:7181996416213372930) [2 Apr 2024]
 - [Mixture of experts models](https://mistral.ai/news/mixtral-of-experts/): Mixtral 8x7B: Sparse mixture of experts models (SMoE) [magnet](https://x.com/MistralAI/status/1706877320844509405?s=20) [Dec 2023]
   - [Huggingface Mixture of Experts Explained🤗](https://huggingface.co/blog/moe): Mixture of Experts, or MoEs for short [Dec 2023]
   - [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts) [08 Oct 2024]
   - [makeMoE✨](https://github.com/AviSoori1x/makeMoE): From scratch implementation of a sparse mixture of experts ![**github stars**](https://img.shields.io/github/stars/AviSoori1x/makeMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [Jan 2024]
   - [The Sparsely-Gated Mixture-of-Experts Layer📑](https://alphaxiv.org/abs/1701.06538): Introduced sparse expert gating to scale models efficiently without increasing compute cost. [23 Jan 2017]
   - [Switch Transformers📑](https://alphaxiv.org/abs/2101.03961): Used a single expert per token to simplify routing, enabling fast, scalable transformer models. `expert capacity = (total tokens / num experts) * capacity factor` [11 Jan 2021]
-  - [ST-MoE (Stable Transformer MoE)📑](https://alphaxiv.org/abs/2202.08906): By stabilizing the training process, ST-MoE enables more reliable and scalable deep MoE architectures. `z-loss aims to regularize the logits z before passing into the softmax` [17 Feb 2022] 
-- [Simplifying Transformer Blocks📑](https://alphaxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
+  - [ST-MoE (Stable Transformer MoE)📑](https://alphaxiv.org/abs/2202.08906): By stabilizing the training process, ST-MoE enables more reliable and scalable deep MoE architectures. `z-loss aims to regularize the logits z before passing into the softmax` [17 Feb 2022]
 - [Model merging✍️](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54): : A technique that combines two or more large language models (LLMs) into a single model, using methods such as SLERP, TIES, DARE, and passthrough. [Jan 2024] [✨](https://github.com/cg123/mergekit): mergekit
  ![**github stars**](https://img.shields.io/github/stars/cg123/mergekit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   | Method | Pros | Cons |
@@ -2504,24 +2519,14 @@ representations. `Think step by step, but only keep a minimum draft for each thi
   | SLERP | Preserves geometric properties, popular method | Can only merge two models, may decrease magnitude |
   | TIES | Can merge multiple models, eliminates redundant parameters | Requires a base model, may discard useful parameters |
   | DARE | Reduces overfitting, keeps expectations unchanged | May introduce noise, may not work well with large differences |
-- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces📑](https://alphaxiv.org/abs/2312.00752) [1 Dec 2023] [✨](https://github.com/state-spaces/mamba): 1. Structured State Space (S4) - Class of sequence models, encompassing traits from RNNs, CNNs, and classical state space models. 2. Hardware-aware (Optimized for GPU) 3. Integrating selective SSMs and eliminating attention and MLP blocks [✍️](https://www.unite.ai/mamba-redefining-sequence-modeling-and-outforming-transformers-architecture/) / A Visual Guide to Mamba and State Space Models [✍️](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) [19 FEB 2024]
- ![**github stars**](https://img.shields.io/github/stars/state-spaces/mamba?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [Mamba-2📑](https://alphaxiv.org/abs/2405.21060): 2-8X faster [31 May 2024]
-- [Sakana.ai: Evolutionary Optimization of Model Merging Recipes.📑](https://alphaxiv.org/abs/2403.13187): A Method to Combine 500,000 OSS Models. [✨](https://github.com/SakanaAI/evolutionary-model-merge) [19 Mar 2024]
- ![**github stars**](https://img.shields.io/github/stars/SakanaAI/evolutionary-model-merge?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Mixture-of-Depths📑](https://alphaxiv.org/abs/2404.02258): All tokens should not require the same effort to compute. The idea is to make token passage through a block optional. Each block selects the top-k tokens for processing, and the rest skip it. [✍️](https://www.linkedin.com/embed/feed/update/urn:li:share:7181996416213372930) [2 Apr 2024]
-- [Kolmogorov-Arnold Networks (KANs)📑](https://alphaxiv.org/abs/2404.19756): KANs use activation functions on connections instead of nodes like Multi-Layer Perceptrons (MLPs) do. Each weight in KANs is replaced by a learnable 1D spline function. KANs’ nodes simply sum incoming signals without applying any non-linearities. [✨](https://github.com/KindXiaoming/pykan) [30 Apr 2024] / [✍️](https://www.dailydoseofds.com/a-beginner-friendly-introduction-to-kolmogorov-arnold-networks-kan/): A Beginner-friendly Introduction to Kolmogorov Arnold Networks (KAN) [19 May 2024]
- ![**github stars**](https://img.shields.io/github/stars/KindXiaoming/pykan?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Better & Faster Large Language Models via Multi-token Prediction📑](https://alphaxiv.org/abs/2404.19737): Suggest that training language models to predict multiple future tokens at once [30 Apr 2024]
-- [Lamini Memory Tuning✨](https://github.com/lamini-ai/Lamini-Memory-Tuning): Mixture of Millions of Memory Experts (MoME). 95% LLM Accuracy, 10x Fewer Hallucinations. [✍️](https://www.lamini.ai/blog/lamini-memory-tuning) [Jun 2024]
- ![**github stars**](https://img.shields.io/github/stars/lamini-ai/Lamini-Memory-Tuning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Scaling Synthetic Data Creation with 1,000,000,000 Personas📑](https://alphaxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
 - [RouteLLM✨](https://github.com/lm-sys/RouteLLM): a framework for serving and evaluating LLM routers. [Jun 2024]
  ![**github stars**](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [KAN or MLP: A Fairer Comparison📑](https://alphaxiv.org/abs/2407.16674): In machine learning, computer vision, audio processing, natural language processing, and symbolic formula representation (except for symbolic formula representation tasks), MLP generally outperforms KAN. [23 Jul 2024]
-- [Differential Transformer📑](https://alphaxiv.org/abs/2410.05258): Amplifies attention to the relevant context while minimizing noise using two separate softmax attention mechanisms. [7 Oct 2024]
-- [Large Concept Models📑](https://alphaxiv.org/abs/2412.08821): Focusing on high-level sentence (concept) level rather than tokens. using SONAR for sentence embedding space. [11 Dec 2024]
-- [Large Language Diffusion Models📑](https://alphaxiv.org/abs/2502.09992): LLaDA's core is a mask predictor, which uses controlled noise to help models learn to predict missing information from context. [✍️](https://ml-gsai.github.io/LLaDA-demo/) [14 Feb 2025]
+- [Sakana.ai: Evolutionary Optimization of Model Merging Recipes.📑](https://alphaxiv.org/abs/2403.13187): A Method to Combine 500,000 OSS Models. [✨](https://github.com/SakanaAI/evolutionary-model-merge) [19 Mar 2024]
+ ![**github stars**](https://img.shields.io/github/stars/SakanaAI/evolutionary-model-merge?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Scaling Synthetic Data Creation with 1,000,000,000 Personas📑](https://alphaxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
+- [Simplifying Transformer Blocks📑](https://alphaxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
+- [Text-to-LoRA (T2L)](https://github.com/SakanaAI/text-to-lora): Converts text prompts into LoRA models, enabling lightweight fine-tuning of AI models for custom tasks. ![**github stars**](https://img.shields.io/github/stars/SakanaAI/text-to-lora?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [01 May 2025]
+- [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/):💡A practical guide to building successful LLM products, covering the tactical, operational, and strategic.  [8 June 2024]
 
 
 ## **Large Language Model: Challenges and Solutions**
@@ -2592,6 +2597,7 @@ representations. `Think step by step, but only keep a minimum draft for each thi
 - [deep research✍️](https://openai.com/index/introducing-deep-research/): An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks [2 Feb 2025]
 - [Agents SDK & Response API✍️](https://openai.com/index/new-tools-for-building-agents/): Responses API (Chat Completions + Assistants API), Built-in tools (web search, file search, computer use), Agents SDK for multi-agent workflows, agent workflow observability tools [11 Mar 2025] [✨](https://github.com/openai/openai-agents-python)
 - [ChatGPT agent✍️](https://openai.com/index/introducing-chatgpt-agent/): Web-browsing, File-editing, Terminal, Email, Spreadsheet, Calendar, API-calling, Automation, Task-chaining, Reasoning. [17 Jul 2025]
+- [OpenAI DevDay 2025✍️](https://openai.com/devday): ChatGPT Apps + SDK, AgentKit, GPT-5 Pro, Sora 2 video API, upgraded Codex [✍️](https://openai.com/index/announcing-devday-2025/) [6 Oct 2025]
 
 #### **GPT series release date**
 
@@ -2771,15 +2777,21 @@ generated webpages are considered better than the original reference webpages` [
 
 - [The Big LLM Architecture Comparison](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html) [19 Jul 2025]
 
-  | Model              | Release         | Params | Attention          | Norm                | MoE                         | Notable Features                                                                     |
-  | ------------------ | --------------- | ------ | ------------------ | ------------------- | --------------------------- | ------------------------------------------------------------------------------------ |
-  | **DeepSeek V3/R1** | Dec ’24/Jan ’25 | 671 B  | MLA                | RMSNorm             | Yes (256 experts, 9 active) | Shared‑expert MoE |
-  | **OLMo 2**         | Jan ’25         | –      | MHA                | RMSNorm (+ QK‑Norm) | No                          | Post‑Norm placement for training      |
-  | **Gemma 3**        | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Additional norm layers for stability                               |
-  | **Gemma 3n**       | 2025            | –      | Sliding‑window GQA | RMSNorm             | No                          | Per‑layer embeddings & MatFormer slicing                           |
-  | **Mistral S 3.1**  | 2025            | –      | GQA                | RMSNorm             | No                          | Layer‑trimmed, compact FFN & KV cache                                                |
-  | **SmolLM 3**       | 2025            | –      | GQA/MHA            | RMSNorm             | No                          | Drops positional embeddings in select layers                                         |
-  | **Kimi K2**        | 2025            | 1 T    | MLA + GQA          | RMSNorm             | Yes                         | Trillion‑parameter scale 
+  | Model                 | Parameters | Attention Type                           | MoE                             | Norm                            | Positional Encoding            | Notable Features                                                                            |
+  | --------------------- | ---------- | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
+  | **DeepSeek V3 / R1**  | 671B       | Multi-Head Latent Attention (MLA)        | Yes, 256 experts (37B active)   | Pre-normalization               | RoPE                           | KV compression via MLA, shared expert, high inference efficiency                            |
+  | **OLMo 2**            | 32B        | Multi-Head Attention (MHA)               | No                              | Post-normalization + QK scaling | RoPE                           | RMSNorm scaling after attention & FF, training stability                                  |
+  | **Gemma 3 / 3n**      | 27B / 4B   | Sliding Window + Grouped-Query Attention | No                              | Pre + Post RMSNorm scaling          | RoPE                           | Sliding window attention, Gemma 3n: Per-Layer Embedding (PLE), MatFormer slices             |
+  | **Mistral Small 3.1** | 24B        | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Optimized for low latency, simpler than Gemma 3                                             |
+  | **Llama 4 Maverick**  | 400B       | Grouped-Query Attention                  | Yes, fewer & larger experts     | Pre-normalization               | RoPE                           | Alternating MoE & dense layers, 17B active parameters                                       |
+  | **Qwen3 (Dense)**     | 0.6–32B    | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Deep architecture, small memory footprint                                                   |
+  | **Qwen3 (MoE)**       | 30B–235B   | Grouped-Query Attention                  | Yes, no shared expert           | Pre-normalization               | RoPE                           | Sparse MoE, optimized for large-scale inference                                             |
+  | **SmolLM3**           | 3B         | Grouped-Query Attention                  | No                              | Pre-normalization               | NoPE (No Positional Embedding) | Good small-scale performance, improved length generalization                                |
+  | **Kimi K2**           | 1T         | MLA                                      | Yes, more experts than DeepSeek | Pre-normalization               | RoPE                           | Muon optimizer, very high modeling performance, open-weight                                 |
+  | **gpt-oss**           | 20B / 120B | Grouped-Query + Sliding Window           | Yes, few large experts          | Pre-normalization               | RoPE                           | Wider architecture, attention sinks, bias units                                             |
+  | **Grok 2.5**          | 70B        | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Standard large-scale architecture                                                           |
+  | **GLM-4.5**           | 130B       | Grouped-Query Attention                  | No                              | Pre-normalization               | RoPE                           | Standard architecture with high performance                                                 |
+  | **Qwen3-Next**        | -        | Grouped-Query Attention                  | Yes                             | Pre-normalization               | RoPE                           | Expert size & number tuned, Gated DeltaNet + Gated Attention Hybrid, Multi-Token Prediction |
 
 #### GPT-2 vs gpt-oss
 
@@ -2885,6 +2897,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   1. [Claude 3✍️](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
   1. [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
   1. [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
+  1. [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
   1. [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
 - Microsoft
   1. [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
@@ -2938,6 +2951,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   1. [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   1. [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
   1. [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
+  1. [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   1. A list of models: [✨](https://github.com/deepseek-ai)
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
@@ -2971,6 +2985,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - Z.ai
   - formerly Zhipu, Beijing-based Chinese AI company founded in March 2019
   1. [GLM-4.5✨](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
+  1. [GLM-4.6✍️](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
 - GPT for Domain Specific [🔗](#gpt-for-domain-specific)
 - MLLM (multimodal large language model) [🔗](#mllm-multimodal-large-language-model)
 - Large Language Models (in 2023) [🔗](#large-language-models-in-2023)
@@ -3132,9 +3147,11 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [Agentic Retrieval-Augmented Generation: Agentic RAG📑](https://alphaxiv.org/abs/2501.09136) [15 Jan 2025]
 - [AI Agent Protocols📑](https://alphaxiv.org/abs/2504.16736) [23 Apr 2025]
 - [AI-Generated Content (AIGC)📑](https://alphaxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.04226)] [7 Mar 2023]
+- [AIOps in the Era of Large Language Models📑](https://alphaxiv.org/abs/2507.12472) [23 Jun 2025]
 - [Aligned LLMs📑](https://alphaxiv.org/abs/2307.12966):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.12966)] [24 Jul 2023]
 - [An Overview on Language Models: Recent Developments and Outlook📑](https://alphaxiv.org/abs/2303.05759):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05759)] [10 Mar 2023]
-- [A comprehensive taxonomy of hallucinations in Large Language Models](https://alphaxiv.org/abs/2508.01781) [3 Aug 2025]
+- [A comprehensive taxonomy of hallucinations in Large Language Models📑](https://alphaxiv.org/abs/2508.01781) [3 Aug 2025]
+- [Autonomous Scientific Discovery📑](https://alphaxiv.org/abs/2508.14111): From AI for Science to Agentic Science [18 Aug 2025]
 - [Automatic Prompt Optimization Techniques📑](https://alphaxiv.org/abs/2502.16923) [24 Feb 2025]
 - [Challenges & Application of LLMs📑](https://alphaxiv.org/abs/2306.07303):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.07303)] [11 Jun 2023]
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?🔗](#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
@@ -3162,6 +3179,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures📑](https://alphaxiv.org/abs/2506.19676) [24 Jun 2025]
 - [LLMs for Healthcare📑](https://alphaxiv.org/abs/2310.05694):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.05694)] [9 Oct 2023]
 - [Mathematical Reasoning in the Era of Multimodal Large Language Model: Benchmark, Method & Challenges📑](https://alphaxiv.org/abs/2412.11936) [16 Dec 2024]
+- [Medical Reasoning in the Era of LLMs📑](https://alphaxiv.org/abs/2508.00669): A Systematic Review of Enhancement Techniques and Applications [1 Aug 2025]
 - [Mixture of Experts📑](https://alphaxiv.org/abs/2407.06204) [26 Jun 2024]
 - [Mitigating Hallucination in LLMs📑](https://alphaxiv.org/abs/2401.01313): Summarizes 32 techniques to mitigate hallucination in LLMs [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2401.01313)] [2 Jan 2024]
 - [Model Compression for LLMs📑](https://alphaxiv.org/abs/2308.07633):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.07633)] [15 Aug 2023]
@@ -3175,6 +3193,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [Post-training of Large Language Models📑](https://alphaxiv.org/abs/2503.06072) [8 Mar 2025]
 - [Prompt Engineering Methods in Large Language Models for Different NLP Tasks📑](https://alphaxiv.org/abs/2407.12994) [17 Jul 2024]
 - [Retrieval-Augmented Generation for Large Language Models: A Survey📑](https://alphaxiv.org/abs/2312.10997) [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2312.10997)] [18 Dec 2023]
+- [Retrieval And Structuring Augmented Generation with Large Language Models📑](https://alphaxiv.org/abs/2509.10697) [12 Sep 2025]
 - [Retrieval-Augmented Text Generation for Large Language Models📑](https://alphaxiv.org/abs/2404.10981) [17 Apr 2024]
 - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning📑](https://alphaxiv.org/abs/2303.15647):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
 - [SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension📑](https://alphaxiv.org/abs/2307.16125): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.16125)] [30 Jul 2023]
@@ -3215,7 +3234,8 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/) [ⓒ2023]
     > 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models.
   - [Standford AI Index Annual Report](https://aiindex.stanford.edu/report/)
-  - [State of AI Report 2024](https://www.stateof.ai/) [10 Oct 2024]
+  - [State of AI Report 2024](https://www.stateof.ai/2024) [10 Oct 2024]
+  - [State of AI Report 2025](https://www.stateof.ai/2025-report-launch) [9 Oct 2025]
   - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
 - [Trends – Artiﬁcial Intelligence](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf):💡Issued by Bondcap VC. 340 Slides. ChatGPT’s 800 Million Users, 99% Cost Drop within 17 months. [May 2025]
@@ -3245,6 +3265,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
  ![**github stars**](https://img.shields.io/github/stars/naklecha/llama3-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [llm.c✨](https://github.com/karpathy/llm.c): LLM training in simple, raw C/CUDA [Apr 2024]
  ![**github stars**](https://img.shields.io/github/stars/karpathy/llm.c?style=flat-square&label=%20&color=blue&cacheSeconds=36000) | Reproducing GPT-2 (124M) in llm.c in 90 minutes for $20 [✨](https://github.com/karpathy/llm.c/discussions/481)
+- [nanochat✨](https://github.com/karpathy/nanochat): a full-stack implementation of an LLM [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanochat?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 - [nanoGPT✨](https://github.com/karpathy/nanoGPT):💡Andrej Karpathy [Dec 2022] | [nanoMoE✨](https://github.com/wolfecameron/nanoMoE) [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/karpathy/nanoGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/wolfecameron/nanoMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [nanoVLM✨](https://github.com/huggingface/nanoVLM): 🤗 The simplest, fastest repository for training/finetuning small-sized VLMs. [May 2025]
 - [pix2code✨](https://github.com/tonybeltramelli/pix2code): Generating Code from a Graphical User Interface Screenshot. Trained dataset as a pair of screenshots and simplified intermediate script for HTML, utilizing image embedding for CNN and text embedding for LSTM, encoder and decoder model. Early adoption of image-to-code. [May 2017] ![**github stars**](https://img.shields.io/github/stars/tonybeltramelli/pix2code?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
