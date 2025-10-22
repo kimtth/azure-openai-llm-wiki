@@ -173,30 +173,34 @@
     - [Microsoft Copilot Dashboard](https://insights.cloud.microsoft/#/CopilotDashboard) / [✍️](https://techcommunity.microsoft.com/t5/microsoft-viva-blog/new-ways-microsoft-copilot-and-viva-are-transforming-the/ba-p/3982293)
     - [Microsoft Copilot Studio✍️](https://learn.microsoft.com/en-us/microsoft-copilot-studio/): Customize Copilot for Microsoft 365. FKA. Power Virtual Agents: [✍️](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio) [Nov 2023]
     - The Copilot System: Explained by Microsoft [📺](https://www.youtube.com/watch?v=E5g20qmeKpg) [Mar 2023]
-    - [What’s new in Copilot Studio: March 2025✍️](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/): Autonomous agents, deep reasoning, agent flows, generative orchestration, Model Context Protocol, tools/prompts in Copilot Studio, open web search, Microsoft-built agents in Copilot Studio, and private preview of GPT-4.5 now available. [31 Mar 2025]
+    - [Copilot Studio Monthly updates](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/cs-content-type/monthly-updates/):
+      - [What’s new in Copilot Studio: March 2025✍️](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/): Autonomous agents, deep reasoning, agent flows, generative orchestration, Model Context Protocol, tools/prompts in Copilot Studio, open web search, Microsoft-built agents in Copilot Studio, and private preview of GPT-4.5 now available. [31 Mar 2025]
+      - Copilot Studio lite (formerly called the Microsoft 365 agent builder): [Sep 2025]
 
 ### **Azure AI Search**
 
-- Azure AI Search (FKA Azure Cognitive Search) supports Hybrid Search, Pure Vector Search, Semantic Hybrid Search, and Text Search.
+- Azure AI Search (FKA Azure Cognitive Search) supports Hybrid Search, Pure Vector Search, Semantic Hybrid Search, and Text Search. doc:[✍️](https://learn.microsoft.com/en-us/azure/search/) / blog:[✍️](https://azure.microsoft.com/en-us/blog/product/azure-ai-search) / [✨](https://github.com/Azure-Samples/azureai-samples?tab=readme-ov-file#azure-ai-search)
+- Azure Cognitive Search rebranding Azure AI Search, it supports Vector search and semantic ranker. [16 Nov 2023]
+- A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [✍️](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023]  
+  <img src="../files/acs-hybrid.png" alt="acs" width="300"/>
+- [Agentic retrieval in Azure AI Search✍️](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-agentic-retrieval-in-azure-ai-search/4414677): An automated query engine that creates and runs its own retrieval plan for relevant results to complex questions. [20 May 2025]
+- 🏬[Azure AI Search Demos using Jupyter Notebook✨](https://github.com/Azure-Samples/rag-with-azure-ai-search-notebooks): Jupyter notebooks that demonstrate vector search, hybrid search, image search, RAG, and evaluation. [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/rag-with-azure-ai-search-notebooks?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[Azure AI Search OpenAI Purview Data Security Demo✨](https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity): Demo integrating Azure Search, OpenAI, and Purview data security [Jun 2025]
+![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo-purviewdatasecurity?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Azure AI Search Python Playground✨](https://github.com/farzad528/azure-ai-search-python-playground):  a collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search. [Feb 2024]
 - 🏬[Azure AI Search Multimodal Sample✨](https://github.com/Azure-Samples/azure-ai-search-multimodal-sample) [May 2025] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-ai-search-multimodal-sample?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[Azure AI Search Power Skills✨](https://github.com/Azure-Samples/azure-search-power-skills): Custom skills for Azure AI Search [Jun 2019] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-power-skills?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[ChatGPT + Enterprise data RAG (Retrieval-Augmented Generation)✨](https://github.com/Azure-Samples/azure-search-openai-demo) [Feb 2023]
- ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- doc:[✍️](https://learn.microsoft.com/en-us/azure/search/) / blog:[✍️](https://azure.microsoft.com/en-us/blog/product/azure-ai-search) / [✨](https://github.com/Azure-Samples/azureai-samples?tab=readme-ov-file#azure-ai-search)
-- In the vector databases category within Azure, several alternative solutions are available. However, the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
-- Azure Cognitive Search rebranding Azure AI Search, it supports Vector search and semantic ranker. [16 Nov 2023]
-- [Agentic retrieval in Azure AI Search✍️](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-agentic-retrieval-in-azure-ai-search/4414677): An automated query engine that creates and runs its own retrieval plan for relevant results to complex questions. [20 May 2025]
+  ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Document-level access control✍️](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview): Document-level access helps restrict content visibility to authorized users, based on predefined access rules. [20 May 2025]
-- [Integrated vectorization✍️](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836): Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization. [24 Aug 2024]
-- [RAG-Knowledge✨](https://github.com/microsoft/RAG-Knowledge):💡Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization [Jun 2024]
-- [Azure AI Search Python Playground✨](https://github.com/farzad528/azure-ai-search-python-playground):  a collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search. [Feb 2024]
-- 🏬[Python samples for Azure AI Search✨](https://github.com/Azure-Samples/azure-search-python-samples) [Apr 2019] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-python-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Hybrid search using Reciprocal Rank Fusion (RRF): Reciprocal Rank Fusion (RRF) is an algorithm that evaluates the search scores from multiple, previously ranked results to produce a unified result set. In Azure Cognitive Search, RRF is used whenever there are two or more queries that execute in parallel. [✍️](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)  
   <img src="https://learn.microsoft.com/en-us/azure/search/media/scoring-profiles/scoring-over-ranked-results.png" alt="rrf" width="300"/>
-- A set of capabilities designed to improve relevance in these scenarios. We use a combination of hybrid retrieval (vector search + keyword search) + semantic ranking as the most effective approach for improved relevance out-of–the-box. `TL;DR: Retrieval Performance; Hybrid search + Semantic rank > Hybrid search > Vector only search > Keyword only` [✍️](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) [18 Sep 2023]  
-  <img src="../files/acs-hybrid.png" alt="acs" width="300"/>
+- In the vector databases category within Azure, several alternative solutions are available. However, the only option that provides a range of choices, including a conventional Lucene-based search engine and a hybrid search incorporating vector search capabilities.
+- [Integrated vectorization✍️](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836): Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization. [24 Aug 2024]
+- 🏬[Python samples for Azure AI Search✨](https://github.com/Azure-Samples/azure-search-python-samples) [Apr 2019] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-python-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [RAG-Knowledge✨](https://github.com/microsoft/RAG-Knowledge):💡Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization [Jun 2024]
 - Vector Search Sample Code: [✨](https://github.com/Azure/azure-search-vector-samples) [Apr 2023]
- ![**github stars**](https://img.shields.io/github/stars/Azure/azure-search-vector-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  ![**github stars**](https://img.shields.io/github/stars/Azure/azure-search-vector-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[REST examples for Azure AI Search✨](https://github.com/Azure-Samples/azure-search-rest-samples) [Apr 2019] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-rest-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **Azure AI Services**
@@ -248,6 +252,7 @@
 1. [PromptWizard✍️](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/): The future of prompt optimization through feedback-driven self-evolving prompts [17 Dec 2024]
 1. [R&D-Agent-Quant📑](https://alphaxiv.org/abs/2505.15155): R&D-Agent for Quantitative Finance, in short RD-Agent(Q), the first data-centric multi-agent framework designed to automate the full-stack research and development of quantitative strategies via coordinated factor-model co-optimization. [21 May 2025]
 1. [SpreadsheetLLM📑](https://alphaxiv.org/abs/2407.09025): Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens.[12 Jul 2024]
+1. [VibeVoice📑](https://alphaxiv.org/abs/2508.19205): Open-Source Text-to-Speech [26 Aug 2025]
 
 ### **Azure Reference Architectures**
 
@@ -308,6 +313,7 @@
 
 ##### Accelerator 💡
 
+1. [Solution Accelerator Portal✍️](https://accelerators.ms)
 1. [🌐Azure: Accelerator Collection✨](https://github.com/orgs/Azure/repositories?q=accelerator+sort%3Astars)
     - [GPT-RAG✨](https://github.com/Azure/GPT-RAG):💡Enterprise RAG Solution Accelerator (GPT-RAG). Retrieval-Augmented Generation pattern running in Azure. [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat-square&color=blue&cacheSeconds=36000&label=%20)
 1. [🏬Azure-samples: Accelerator Collection✨](https://github.com/orgs/Azure-samples/repositories?q=accelerator+sort%3Astars)
@@ -332,12 +338,17 @@
 ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-sentry?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🌐[AI-in-a-Box✨](https://github.com/Azure/AI-in-a-Box): AI-in-a-Box aims to provide an "Azure AI/ML Easy Button" for common scenarios [Sep 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure/AI-in-a-Box?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- 🌐[azure-llm-fine-tuning✨](https://github.com/Azure/azure-llm-fine-tuning): SLM/LLM Fine-tuning on Azure [May 2024]
-![**github stars**](https://img.shields.io/github/stars/Azure/azure-llm-fine-tuning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[AI-in-a-Box - Generative AI Bot Quickstart✨](https://github.com/Azure-Samples/gen-ai-bot-in-a-box) - A template deploys a Generative AI Virtual Assistant using Azure OpenAI and Bot Framework. [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/gen-ai-bot-in-a-box?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[Azure AI Foundry Baseline✨](https://github.com/Azure-Samples/azure-ai-foundry-baseline): Baseline setup for Azure AI Foundry projects [Jan 2024]
+![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-ai-foundry-baseline?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[Azure OpenAI RAFT✨](https://github.com/Azure-Samples/azure-openai-raft ): RAFT Fine-Tuning for RAG Using Azure OpenAI [Sep 2024]
+![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-openai-raft?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🌐[Azure Functions (C#) bindings for OpenAI✨](https://github.com/Azure/azure-functions-openai-extension) [Nov 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure/azure-functions-openai-extension?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🌐[Azure Multimodal AI + LLM Processing Accelerator✨](https://github.com/Azure/multimodal-ai-llm-processing-accelerator): Build multimodal data processing pipelines with Azure AI Services + LLMs [Aug 2024]
 ![**github stars**](https://img.shields.io/github/stars/Azure/multimodal-ai-llm-processing-accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[Azure OpenAI cookbook✨](https://github.com/Azure-Samples/openai): The repository for all Azure OpenAI Samples complementing the OpenAI cookbook. [Apr 2023]
+![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Azure OpenAI Network Latency Test Script
 : [✨](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) [Jun 2023]  
 - 🏬Azure OpenAI with AKS by Terraform (simple version): [✨](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) [May 2023]
@@ -349,15 +360,22 @@
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/aks-openai-terraform?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[Azure SQL DB + AOAI✨](https://github.com/Azure-Samples/SQL-AI-samples): AI applications built on data from an Azure SQL Database [Oct 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/SQL-AI-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏛️[Build Your Own Copilot Solution Accelerator✨](https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator): Solution Accelerator to show how to build your own copilot [Mar 2024]
+![**github stars**](https://img.shields.io/github/stars/microsoft/Build-your-own-copilot-Solution-Accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform [✨](https://github.com/Azure-Samples/container-apps-openai/) [Jul 2023]
+- 🏬[Design and Evaluation of RAG Solutions✨](https://github.com/Azure-Samples/Design-and-evaluation-of-RAG-solutions): Resources for designing and evaluating RAG solutions [Sep 2024]
+![**github stars**](https://img.shields.io/github/stars/Azure-Samples/Design-and-evaluation-of-RAG-solutions?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏛️[Document generation solution accelerator✨](https://github.com/microsoft/document-generation-solution-accelerator):  AI assistant for document generation [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/document-generation-solution-accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[Document Processing with Azure AI Samples✨](https://github.com/Azure-Samples/azure-ai-document-processing-samples): Demonstrates how to use Azure AI Document Intelligence, Azure OpenAIS [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-ai-document-processing-samples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- 🏬Enterprise Logging: [✨](https://github.com/Azure-Samples/openai-python-enterprise-logging) [Feb 2023]
+- 🏬[Enterprise Logging✨](https://github.com/Azure-Samples/openai-python-enterprise-logging): Comprehensive logging of Azure OpenAI model execution [Feb 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-python-enterprise-logging?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
+- 🌐[Enterprise RAG Avatar✨](https://github.com/Azure/gpt-rag-avatar): GPT-RAG Avatar integrates Generative AI responses, real-time streaming into a dynamic avatar interface [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/Azure/gpt-rag-avatar?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 - 🏬[Evaluating a RAG Chat App✨](https://github.com/Azure-Samples/ai-rag-chat-evaluator): Tools for evaluation of RAG Chat Apps using Azure AI Evaluate SDK [Nov 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/ai-rag-chat-evaluator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[Fabric notebooks for analyzing chat history stored in CosmosDB✨](https://github.com/microsoft/fabric-cosmosdb-chat-analytics) [Sep 2024]
 ![**github stars**](https://img.shields.io/github/stars/microsoft/fabric-cosmosdb-chat-analytics?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[Generic accelerator for Build your own copilot✨](https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator): Chat with your own data, generate a document template using your own data, and exporting the document in a docx format. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🌐[GPT RAG Ingestion✨](https://github.com/Azure/gpt-rag-ingestion): GPT-based RAG ingestion utilities [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/Azure/gpt-rag-ingestion?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🌐[GPT-RAG Orchestrator✨](https://github.com/Azure/gpt-rag-orchestrator): an agentic orchestration layer built on Azure AI Foundry Agent Service and the Semantic Kernel framework. [June 2023]
 - 🏬[M365 Custom Engine Agent✨](https://github.com/Azure-Samples/m365-custom-engine-agents): Proxy Agent demo to handle Copilot activities and forward a simple request to your existing backend [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/m365-custom-engine-agents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[Microsoft Copilot Studio Samples✨](https://github.com/microsoft/CopilotStudioSamples): Samples and artifacts for Microsoft Copilot Studio [Oct 2019] ![**github stars**](https://img.shields.io/github/stars/microsoft/CopilotStudioSamples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -366,12 +384,14 @@
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-chat-app-entra-auth-builtin?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[RAG for Azure Data✨](https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples): Retrieval Augmented Generation (RAG) for Azure Data [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/microsoft/AzureDataRetrievalAugmentedGenerationSamples?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- 🌐[Setting up Azure OpenAI with Azure API Management✨](https://github.com/Azure/enterprise-azureai) [Jan 2024]
+- 🏛️[Semantic Kernel Cookbook](https://github.com/microsoft/SemanticKernelCookBook) - ✨Semantic Kernel Cookbook for beginners. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/SemanticKernelCookBook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🌐[Setting up Azure OpenAI with Azure API Management✨](https://github.com/Azure/enterprise-azureai): Setting up Azure API Management to serve Azure OpenAI [Jan 2024]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-python-enterprise-logging?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/Azure/enterprise-azureai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🌐[SLM/LLM Fine-tuning on Azure✨](https://github.com/Azure/azure-llm-fine-tuning): SLM/LLM Fine-tuning on Azure [May 2024]
+![**github stars**](https://img.shields.io/github/stars/Azure/azure-llm-fine-tuning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏬[Smart load balancing for AOAI✨](https://github.com/Azure-Samples/openai-aca-lb): Smart load balancing for OpenAI endpoints [Jan 2024]
 ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-aca-lb?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- 🏬The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.: [✨](https://github.com/Azure-Samples/openai) [Apr 2023]
-![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- 🏬[Vector similarity search with Azure SQL & Azure OpenAI✨](https://github.com/Azure-Samples/azure-sql-db-openai): Samples on how to use Azure SQL database with Azure OpenAI [May 2023] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-sql-db-openai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 #### Referece: Use Case and Architecture
 
