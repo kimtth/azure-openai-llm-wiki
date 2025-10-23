@@ -39,6 +39,7 @@ Retrieval-Augmented Generation - Enhancing LLMs with External Knowledge
 ### 2.🌌Azure OpenAI
 Microsoft's Cloud-Based AI Platform and Services
 
+- [Azure OpenAI vs OpenAI](section/aoai.md/#azure-openai-vs-openai) - Azure OpenAI vs OpenAI
 - [Microsoft LLM Framework](section/aoai.md/#microsoft-azure-openai-llm-framework) - Official frameworks and SDKs
 - [Microsoft Copilot](section/aoai.md/#microsoft-copilot) - Copilot products overview
 - [Azure AI Services](section/aoai.md/#azure-ai-search) - Azure AI Search, AI services
