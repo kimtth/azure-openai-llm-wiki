@@ -4,15 +4,79 @@
 
 #### LLM Pre-training and Post-training Paradigms [🔗](llm.md/#large-language-models-in-2023)
 
+- [🔗](survey_ref.md/#classification-of-attention): Classification of Attention
+- [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
+  - Three training methods were compared:  
+    <img src="../files/cont-pretraining.jpg" width="400"/>  
+    1. Regular pretraining: A model is initialized with random weights and pretrained on dataset D1.
+    2. Continued pretraining: The pretrained model from 1) is further pretrained on dataset D2.
+    3. Retraining on combined dataset: A model is initialized with random weights and trained on the combined datasets D1 and D2.
+  - Continued pretraining can be as effective as retraining on combined datasets. Key strategies for successful continued pretraining include:
+    1. Re-warming: Increasing the learning rate at the start of continued pre-training.
+    2. Re-decaying: Gradually reducing the learning rate afterwards.
+    3. Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
+- [LIMA: Less Is More for Alignment📑](https://alphaxiv.org/abs/2305.11206): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.11206)]: fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
+
+#### Llama finetuning
+
+- A key difference between [Llama 1📑](https://alphaxiv.org/abs/2302.13971): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2📑](https://alphaxiv.org/abs/2307.09288): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency. > OSS LLM [🔗](llm.md/#open-source-large-language-models) / Llama3 > Build an llms from scratch [🔗](survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt) <br/>
+  <img src="../files/grp-attn.png" alt="llm-grp-attn" width="400"/>
+- Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [📺](https://www.youtube.com/watch?v=oM4VmoabDAI) / [✨](https://github.com/hkproj/pytorch-llama) [03 Sep 2023] <br/>
+ ![**github stars**](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - KV Cache, Grouped Query Attention, Rotary PE  
+    <img src="../files/llama2.png" width="300" />    
+  - Rotary PE
+    ```python
+    def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
+        # Separate the last dimension pairs of two values, representing the real and imaginary parts of the complex number
+        # Two consecutive values will become a single complex number
+        # (B, Seq_Len, H, Head_Dim) -> (B, Seq_Len, H, Head_Dim/2)
+        x_complex = torch.view_as_complex(x.float().reshape(*x.shape[:-1], -1, 2))
+        # Reshape the freqs_complex tensor to match the shape of the x_complex tensor. So we need to add the batch dimension and the head dimension
+        # (Seq_Len, Head_Dim/2) --> (1, Seq_Len, 1, Head_Dim/2)
+        freqs_complex = freqs_complex.unsqueeze(0).unsqueeze(2)
+        # Multiply each complex number in the x_complex tensor by the corresponding complex number in the freqs_complex tensor
+        # Which results in the rotation of the complex number as shown in the Figure 1 of the paper
+        # (B, Seq_Len, H, Head_Dim/2) * (1, Seq_Len, 1, Head_Dim/2) = (B, Seq_Len, H, Head_Dim/2)
+        x_rotated = x_complex * freqs_complex
+        # Convert the complex number back to the real number
+        # (B, Seq_Len, H, Head_Dim/2) -> (B, Seq_Len, H, Head_Dim/2, 2)
+        x_out = torch.view_as_real(x_rotated)
+        # (B, Seq_Len, H, Head_Dim/2, 2) -> (B, Seq_Len, H, Head_Dim)
+        x_out = x_out.reshape(*x.shape)
+        return x_out.type_as(x).to(device)
+    ```  
+  - KV Cache, Grouped Query Attention
+    ```python
+      # Replace the entry in the cache
+      self.cache_k[:batch_size, start_pos : start_pos + seq_len] = xk
+      self.cache_v[:batch_size, start_pos : start_pos + seq_len] = xv
+
+      # (B, Seq_Len_KV, H_KV, Head_Dim)
+      keys = self.cache_k[:batch_size, : start_pos + seq_len]
+      # (B, Seq_Len_KV, H_KV, Head_Dim)
+      values = self.cache_v[:batch_size, : start_pos + seq_len]
+
+      # Since every group of Q shares the same K and V heads, just repeat the K and V heads for every Q in the same group.
+
+      # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
+      keys = repeat_kv(keys, self.n_rep)
+      # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
+      values = repeat_kv(values, self.n_rep)
+    ```  
+- [Comprehensive Guide for LLaMA with RLHF🤗](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]  
+- Official LLama Recipes incl. Finetuning: [✨](https://github.com/facebookresearch/llama-recipes)
+ ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+- Llama 2 ONNX [✨](https://github.com/microsoft/Llama-2-Onnx) [Jul 2023]: ONNX, or Open Neural Network Exchange, is an open standard for machine learning interoperability. It allows AI developers to use models across various frameworks, tools, runtimes, and compilers.
+ ![**github stars**](https://img.shields.io/github/stars/microsoft/Llama-2-Onnx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Multi-query attention (MQA)📑](https://alphaxiv.org/abs/2305.13245): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.13245)] [22 May 2023]
+
 #### PEFT: Parameter-Efficient Fine-Tuning ([📺](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
 
 - [PEFT🤗](https://huggingface.co/blog/peft): Parameter-Efficient Fine-Tuning. PEFT is an approach to fine tuning only a few parameters. [10 Feb 2023]
 - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning📑](https://alphaxiv.org/abs/2303.15647): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
-
 - Category: Represent approach - Description - Pseudo Code [✍️](https://speakerdeck.com/schulta) [22 Sep 2023]
-
   1. Adapters: Adapters - Additional Layers. Inference can be slower.
-
      ```python
      def transformer_with_adapter(x):
        residual = x
@@ -25,9 +89,7 @@
        x = LN(x + residual)
        return x
      ```
-
   1. Soft Prompts: Prompt-Tuning - Learnable text prompts. Not always desired results.
-
      ```python
      def soft_prompted_model(input_ids):
        x = Embed(input_ids)
@@ -35,16 +97,12 @@
        x = concat([soft_prompt_embedding, x], dim=seq)
        return model(x)
      ```
-
   1. Selective: BitFit - Update only the bias parameters. fast but limited.
-
      ```python
      params = (p for n,p in model.named_parameters() if "bias" in n)
      optimizer = Optimizer(params)
      ```
-
   1. Reparametrization: LoRa - Low-rank decomposition. Efficient, Complex to implement.
-
      ```python
      def lora_linear(x):
        h = x @ W # regular linear
@@ -52,147 +110,59 @@
        return scale * h
      ```
 
+#### LoRA: Low-Rank Adaptation
+
+- 5 Techniques of LoRA [✍️](https://blog.dailydoseofds.com/p/5-llm-fine-tuning-techniques-explained): LoRA, LoRA-FA, VeRA, Delta-LoRA, LoRA+ [May 2024]
+- [DoRA📑](https://alphaxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
+- [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [🗄️](../files/Fine-tuning_a_GPT_LoRA.pdf) [20 Jun 2023]
 - [LoRA: Low-Rank Adaptation of Large Language Models📑](https://alphaxiv.org/abs/2106.09685): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2106.09685)]: LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [✨](https://github.com/microsoft/LoRA) [17 Jun 2021]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/LoRA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LoRA learns less and forgets less📑](https://alphaxiv.org/abs/2405.09673): Compared to full training, LoRA has less learning but better retention of original knowledge. [15 May 2024]
-
+- [LoRA learns less and forgets less📑](https://alphaxiv.org/abs/2405.09673): Compared to full training, LoRA has less learning but better retention of original knowledge. [15 May 2024]  
    <img src="../files/LoRA.png" alt="LoRA" width="390"/>
-
-  1. [LoRA+📑](https://alphaxiv.org/abs/2402.12354): Improves LoRA’s performance and fine-tuning speed by setting different learning rates for the LoRA adapter matrices. [19 Feb 2024]
-  1. [LoTR📑](https://alphaxiv.org/abs/2402.01376): Tensor decomposition for gradient update. [2 Feb 2024]
-  1. [The Expressive Power of Low-Rank Adaptation📑](https://alphaxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
-  1. [DoRA📑](https://alphaxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
-  1. LoRA Family [✍️](https://towardsdatascience.com/an-overview-of-the-lora-family-515d81134725) [11 Mar 2024]
-      - `LoRA` introduces low-rank matrices A and B that are trained, while the pre-trained weight matrix W is frozen.
-      - `LoRA+` suggests having a much higher learning rate for B than for A.
-      - `VeRA` does not train A and B, but initializes them randomly and trains new vectors d and b on top.
-      - `LoRA-FA` only trains matrix B.
-      - `LoRA-drop` uses the output of B*A to determine, which layers are worth to be trained at all.
-      - `AdaLoRA` adapts the ranks of A and B in different layers dynamically, allowing for a higher rank in these layers, where more contribution to the model’s performance is expected.
-      - `DoRA` splits the LoRA adapter into two components of magnitude and direction and allows to train them more independently.
-      - `Delta-LoRA` changes the weights of W by the gradient of A*B.
-  1. 5 Techniques of LoRA [✍️](https://blog.dailydoseofds.com/p/5-llm-fine-tuning-techniques-explained): LoRA, LoRA-FA, VeRA, Delta-LoRA, LoRA+ [May 2024]
-
-  </details>
+- [LoRA+📑](https://alphaxiv.org/abs/2402.12354): Improves LoRA’s performance and fine-tuning speed by setting different learning rates for the LoRA adapter matrices. [19 Feb 2024]
+- [LoTR📑](https://alphaxiv.org/abs/2402.01376): Tensor decomposition for gradient update. [2 Feb 2024]
+- LoRA Family [✍️](https://towardsdatascience.com/an-overview-of-the-lora-family-515d81134725) [11 Mar 2024]
+    - `LoRA` introduces low-rank matrices A and B that are trained, while the pre-trained weight matrix W is frozen.
+    - `LoRA+` suggests having a much higher learning rate for B than for A.
+    - `VeRA` does not train A and B, but initializes them randomly and trains new vectors d and b on top.
+    - `LoRA-FA` only trains matrix B.
+    - `LoRA-drop` uses the output of B*A to determine, which layers are worth to be trained at all.
+    - `AdaLoRA` adapts the ranks of A and B in different layers dynamically, allowing for a higher rank in these layers, where more contribution to the model’s performance is expected.
+    - `DoRA` splits the LoRA adapter into two components of magnitude and direction and allows to train them more independently.
+    - `Delta-LoRA` changes the weights of W by the gradient of A*B.
 - [Practical Tips for Finetuning LLMs Using LoRA (Low-Rank Adaptation)✍️✍️](https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms) [19 Nov 2023]: Best practical guide of LoRA.
   1. QLoRA saves 33% memory but increases runtime by 39%, useful if GPU memory is a constraint.
   1. Optimizer choice for LLM finetuning isn’t crucial. Adam optimizer’s memory-intensity doesn’t significantly impact LLM’s peak memory.
   1. Apply LoRA across all layers for maximum performance.
   1. Adjusting the LoRA rank is essential.
   1. Multi-epoch training on static datasets may lead to overfitting and deteriorate results.
-- [Training language models to follow instructions with human feedback📑](https://alphaxiv.org/abs/2203.02155): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] [4 Mar 2022]
 - [QLoRA: Efficient Finetuning of Quantized LLMs📑](https://alphaxiv.org/abs/2305.14314): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.14314)]: 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [✨](https://github.com/artidoro/qlora) [23 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/artidoro/qlora?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [🗄️](../files/Fine-tuning_a_GPT_LoRA.pdf) [20 Jun 2023]
-- [LIMA: Less Is More for Alignment📑](https://alphaxiv.org/abs/2305.11206): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.11206)]: fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
-- [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
-
-  Three training methods were compared:
-
-  <img src="../files/cont-pretraining.jpg" width="400"/>
-
-  1. Regular pretraining: A model is initialized with random weights and pretrained on dataset D1.
-  2. Continued pretraining: The pretrained model from 1) is further pretrained on dataset D2.
-  3. Retraining on combined dataset: A model is initialized with random weights and trained on the combined datasets D1 and D2.
-
-  Continued pretraining can be as effective as retraining on combined datasets. Key strategies for successful continued pretraining include:
-
-  1. Re-warming: Increasing the learning rate at the start of continued pre-training.
-  2. Re-decaying: Gradually reducing the learning rate afterwards.
-  3. Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
-- [🔗](survey_ref.md/#classification-of-attention): Classification of Attention
-
-#### **Llama Finetuning**
-
-- A key difference between [Llama 1📑](https://alphaxiv.org/abs/2302.13971): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2📑](https://alphaxiv.org/abs/2307.09288): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency. > OSS LLM [🔗](llm.md/#open-source-large-language-models) / Llama3 > Build an llms from scratch [🔗](survey_ref.md/#build-an-llms-from-scratch-picogpt-and-lit-gpt) <br/>
-  <img src="../files/grp-attn.png" alt="llm-grp-attn" width="400"/>
-- [Multi-query attention (MQA)📑](https://alphaxiv.org/abs/2305.13245): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.13245)] [22 May 2023]
-- Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [📺](https://www.youtube.com/watch?v=oM4VmoabDAI) / [✨](https://github.com/hkproj/pytorch-llama) [03 Sep 2023] <br/>
- ![**github stars**](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-
-  - KV Cache, Grouped Query Attention, Rotary PE
-
-  <img src="../files/llama2.png" width="300" />
-
-  - Rotary PE
-
-  ```python
-  def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
-      # Separate the last dimension pairs of two values, representing the real and imaginary parts of the complex number
-      # Two consecutive values will become a single complex number
-      # (B, Seq_Len, H, Head_Dim) -> (B, Seq_Len, H, Head_Dim/2)
-      x_complex = torch.view_as_complex(x.float().reshape(*x.shape[:-1], -1, 2))
-      # Reshape the freqs_complex tensor to match the shape of the x_complex tensor. So we need to add the batch dimension and the head dimension
-      # (Seq_Len, Head_Dim/2) --> (1, Seq_Len, 1, Head_Dim/2)
-      freqs_complex = freqs_complex.unsqueeze(0).unsqueeze(2)
-      # Multiply each complex number in the x_complex tensor by the corresponding complex number in the freqs_complex tensor
-      # Which results in the rotation of the complex number as shown in the Figure 1 of the paper
-      # (B, Seq_Len, H, Head_Dim/2) * (1, Seq_Len, 1, Head_Dim/2) = (B, Seq_Len, H, Head_Dim/2)
-      x_rotated = x_complex * freqs_complex
-      # Convert the complex number back to the real number
-      # (B, Seq_Len, H, Head_Dim/2) -> (B, Seq_Len, H, Head_Dim/2, 2)
-      x_out = torch.view_as_real(x_rotated)
-      # (B, Seq_Len, H, Head_Dim/2, 2) -> (B, Seq_Len, H, Head_Dim)
-      x_out = x_out.reshape(*x.shape)
-      return x_out.type_as(x).to(device)
-  ```
-
-  - KV Cache, Grouped Query Attention
-
-  ```python
-    # Replace the entry in the cache
-    self.cache_k[:batch_size, start_pos : start_pos + seq_len] = xk
-    self.cache_v[:batch_size, start_pos : start_pos + seq_len] = xv
-
-    # (B, Seq_Len_KV, H_KV, Head_Dim)
-    keys = self.cache_k[:batch_size, : start_pos + seq_len]
-    # (B, Seq_Len_KV, H_KV, Head_Dim)
-    values = self.cache_v[:batch_size, : start_pos + seq_len]
-
-    # Since every group of Q shares the same K and V heads, just repeat the K and V heads for every Q in the same group.
-
-    # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
-    keys = repeat_kv(keys, self.n_rep)
-    # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
-    values = repeat_kv(values, self.n_rep)
-  ```
-
-  </details>
-
-- [Comprehensive Guide for LLaMA with RLHF🤗](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]
-- Official LLama Recipes incl. Finetuning: [✨](https://github.com/facebookresearch/llama-recipes)
- ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-
-- Llama 2 ONNX [✨](https://github.com/microsoft/Llama-2-Onnx) [Jul 2023]: ONNX, or Open Neural Network Exchange, is an open standard for machine learning interoperability. It allows AI developers to use models across various frameworks, tools, runtimes, and compilers.
- ![**github stars**](https://img.shields.io/github/stars/microsoft/Llama-2-Onnx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [The Expressive Power of Low-Rank Adaptation📑](https://alphaxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
+- [Training language models to follow instructions with human feedback📑](https://alphaxiv.org/abs/2203.02155): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] [4 Mar 2022]
 
 ### **RLHF (Reinforcement Learning from Human Feedback) & SFT (Supervised Fine-Tuning)**
 
-- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning.
-- [InstructGPT: Training language models to follow instructions with human feedback📑](https://alphaxiv.org/abs/2203.02155): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022] <br/>
-  <img src="../files/rhlf.png" width="400" /> <br/>
-  <img src="../files/rhlf2.png" width="400" /> <br/>
-  [🗣️](https://docs.argilla.io/)
-- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index), [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html) <br/>
- ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  <img src="../files/TRL-readme.png" width="500" /> <br/>
-  <!-- [SFTTrainer🤗](https://huggingface.co/docs/trl/main/en/trainer#trl.SFTTrainer) from TRL -->
-  TRL: from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step <br/>
-  <img src="../files/chip.jpg" width="400" /> <br/>
-  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/) [ⓒ 2023]
-- `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF. <br/>
-  <img src="../files/rlhf-dpo.png" width="400" />
-- [Reinforcement Learning from Human Feedback (RLHF)📑](https://alphaxiv.org/abs/1909.08593)) is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [18 Sep 2019] [🤗](https://huggingface.co/blog/rlhf) [9 Dec 2022]
-  - `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
+- [A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More📑](https://alphaxiv.org/abs/2407.16216) [23 Jul 2024]
+- [Absolute Zero: Reinforced Self-play Reasoning with Zero Data📑](https://alphaxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
 - [Direct Preference Optimization (DPO)📑](https://alphaxiv.org/abs/2305.18290): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.18290)]: 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
   - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [✍️](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [✍️](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
-- [ORPO (odds ratio preference optimization)📑](https://alphaxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [✨](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO✍️](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024] <br/>
- ![**github stars**](https://img.shields.io/github/stars/xfactlab/orpo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  <img src="../files/orpo.png" width="400" />
-- [Reinforcement Learning from AI Feedback (RLAF)📑](https://alphaxiv.org/abs/2309.00267): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.00267)]: Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF vs RLHF: In many cases, the two policies produced similar summaries. [1 Sep 2023]
-- OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [✨](https://github.com/openai/spinningup) [Nov 2018]
- ![**github stars**](https://img.shields.io/github/stars/openai/spinningup?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More📑](https://alphaxiv.org/abs/2407.16216) [23 Jul 2024]
+- [InstructGPT: Training language models to follow instructions with human feedback📑](https://alphaxiv.org/abs/2203.02155): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022]  
+  <img src="../files/rhlf.png" width="400" />  
+  <img src="../files/rhlf2.png" width="400" />  
+  [🗣️](https://docs.argilla.io/)
+- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index), [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)  
+ ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="../files/TRL-readme.png" width="500" />   
+  <!-- [SFTTrainer🤗](https://huggingface.co/docs/trl/main/en/trainer#trl.SFTTrainer) from TRL -->
+  TRL: from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step  
+  <img src="../files/chip.jpg" width="400" />  
+  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/) [ⓒ 2023]
+- Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning.
+- OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [✨](https://github.com/openai/spinningup) [Nov 2018] ![**github stars**](https://img.shields.io/github/stars/openai/spinningup?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [ORPO (odds ratio preference optimization)📑](https://alphaxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [✨](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO✍️](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024]  
+ ![**github stars**](https://img.shields.io/github/stars/xfactlab/orpo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="../files/orpo.png" width="400" />  
 - Preference optimization techniques: [✍️](https://x.com/helloiamleonie/status/1823305448650383741) [13 Aug 2024]
   - `RLHF (Reinforcement Learning from Human Feedback)`: Optimizes reward policy via objective function.
   - `DPO (Direct preference optimization)`: removes the need for a reward model. > Minimizes loss; no reward policy.
@@ -200,56 +170,47 @@
   - `KTO (Kahneman-Tversky Optimization)` : Scales more data by replacing the pairs of accepted and rejected generations with a binary label.
   - `ORPO (Odds Ratio Preference Optimization)` : Combines instruction tuning and preference optimization into one training process, which is cheaper and faster.
   - `TPO (Thought Preference Optimization)`: This method generates thoughts before the final response, which are then evaluated by a Judge model for preference using Direct Preference Optimization (DPO). [14 Oct 2024]
+- [Reinforcement Learning from AI Feedback (RLAF)📑](https://alphaxiv.org/abs/2309.00267): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.00267)]: Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF vs RLHF: In many cases, the two policies produced similar summaries. [1 Sep 2023]
+- [Reinforcement Learning from Human Feedback (RLHF)📑](https://alphaxiv.org/abs/1909.08593)) is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [18 Sep 2019] [🤗](https://huggingface.co/blog/rlhf) [9 Dec 2022]
+  - `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
 - [SFT vs RL📑](https://alphaxiv.org/abs/2501.17161): SFT Memorizes, RL Generalizes. RL enhances generalization across text and vision, while SFT tends to memorize and overfit. [✨](https://github.com/LeslieTrue/SFTvsRL) [28 Jan 2025]
+- `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF. <br/>
+  <img src="../files/rlhf-dpo.png" width="400" />  
 - [Train your own R1 reasoning model with Unsloth (GRPO)](https://unsloth.ai/blog/r1-reasoning): Unsloth x vLLM > 20x more throughput, 50% VRAM savings. [6 Feb 2025]
-- [Absolute Zero: Reinforced Self-play Reasoning with Zero Data📑](https://alphaxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
 
-### **Model Compression for Large Language Models**
+#### **Model Compression for Large Language Models**
 
 - A Survey on Model Compression for Large Language Models [ref📑](https://alphaxiv.org/abs/2308.07633) [15 Aug 2023]
 
 #### **Quantization Techniques**
 
+- bitsandbytes: 8-bit optimizers [✨](https://github.com/TimDettmers/bitsandbytes) [Oct 2021]
+ ![**github stars**](https://img.shields.io/github/stars/TimDettmers/bitsandbytes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+- [The Era of 1-bit LLMs📑](https://alphaxiv.org/abs/2402.17764): All Large Language Models are in 1.58 Bits. BitNet b1.58, in which every single parameter (or weight) of the LLM is ternary {-1, 0, 1}. [27 Feb 2024]  
 - Quantization-aware training (QAT): The model is further trained with quantization in mind after being initially trained in floating-point precision.
 - Post-training quantization (PTQ): The model is quantized after it has been trained without further optimization during the quantization process.
-
   | Method                      | Pros                                                        | Cons                                                                                 |
   | --------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
   | Post-training quantization  | Easy to use, no need to retrain the model                   | May result in accuracy loss                                                          |
   | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement                      |
 
-- bitsandbytes: 8-bit optimizers [✨](https://github.com/TimDettmers/bitsandbytes) [Oct 2021]
- ![**github stars**](https://img.shields.io/github/stars/TimDettmers/bitsandbytes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [The Era of 1-bit LLMs📑](https://alphaxiv.org/abs/2402.17764): All Large Language Models are in 1.58 Bits. BitNet b1.58, in which every single parameter (or weight) of the LLM is ternary {-1, 0, 1}. [27 Feb 2024]
-
 #### **Pruning and Sparsification**
 
 - Pruning: The process of removing some of the neurons or layers from a neural network. This can be done by identifying and eliminating neurons or layers that have little or no impact on the network's output.
-
 - Sparsification: A technique used to reduce the size of large language models by removing redundant parameters.
-
 - [Wanda Pruning📑](https://alphaxiv.org/abs/2306.11695): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11695)]: A Simple and Effective Pruning Approach for Large Language Models [20 Jun 2023] [✍️](https://www.linkedin.com/pulse/efficient-model-pruning-large-language-models-wandas-ayoub-kirouane)
 
 #### **Knowledge Distillation: Reducing Model Size with Textbooks**
 
-- phi-series: [🔗](llm.md/#large-language-model-collection): Textbooks Are All You Need.
-- [Orca 2📑](https://alphaxiv.org/abs/2311.11045): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.11045)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [✍️](https://www.microsoft.com/en-us/research/blog/orca-2-teaching-small-language-models-how-to-reason/) [18 Nov 2023]
 - Distilled Supervised Fine-Tuning (dSFT)
   1. [Zephyr 7B📑](https://alphaxiv.org/abs/2310.16944): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO). [🤗](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) [25 Oct 2023]
   2. [Mistral 7B📑](https://alphaxiv.org/abs/2310.06825): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [✍️](https://mistral.ai/news/announcing-mistral-7b/) [10 Oct 2023]
+- phi-series: [🔗](llm.md/#large-language-model-collection): Textbooks Are All You Need.
+- [Orca 2📑](https://alphaxiv.org/abs/2311.11045): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.11045)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [✍️](https://www.microsoft.com/en-us/research/blog/orca-2-teaching-small-language-models-how-to-reason/) [18 Nov 2023]
 
 #### **Memory Optimization**
 
-- Transformer cache key-value tensors of context tokens into GPU memory to facilitate fast generation of the next token. However, these caches occupy significant GPU memory. The unpredictable nature of cache size, due to the variability in the length of each request, exacerbates the issue, resulting in significant memory fragmentation in the absence of a suitable memory management mechanism.
-- To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
-- [PagedAttention📑](https://alphaxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [🗄️](../files/vLLM_pagedattention.pdf). [✍️](https://vllm.ai/): vllm [12 Sep 2023]
-
-  <img src="../files/pagedattn.png" width="390">
-
-  - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
-
-- [TokenAttention✨](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [✨](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
- ![**github stars**](https://img.shields.io/github/stars/ModelTC/lightllm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. High-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
 - [Flash Attention📑](https://alphaxiv.org/abs/2205.14135): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.14135)] [27 May 2022]
   - In a GPU, A thread is the smallest execution unit, and a group of threads forms a block.
   - A block executes the same kernel (function, to simplify), with threads sharing fast SRAM memory.
@@ -259,8 +220,14 @@
   - `Tiling` splits attention computation into memory-efficient blocks, while `recomputation` saves memory by recalculating intermediates during backprop. [📺](https://www.youtube.com/live/gMOAud7hZg4?si=dx637BQV-4Duu3uY)
   - [FlashAttention-2📑](https://alphaxiv.org/abs/2307.08691): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.08691)] [17 Jul 2023]: An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [✨](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
  ![**github stars**](https://img.shields.io/github/stars/Dao-AILab/flash-attention?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [FlashAttention-3📑](https://alphaxiv.org/abs/2407.08608) [11 Jul 2024]  
-- [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. High-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
+  - [FlashAttention-3📑](https://alphaxiv.org/abs/2407.08608) [11 Jul 2024]
+- [PagedAttention📑](https://alphaxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [🗄️](../files/vLLM_pagedattention.pdf). [✍️](https://vllm.ai/): vllm [12 Sep 2023]  
+  <img src="../files/pagedattn.png" width="390">  
+  - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
+  - Transformer cache key-value tensors of context tokens into GPU memory to facilitate fast generation of the next token. However, these caches occupy significant GPU memory. The unpredictable nature of cache size, due to the variability in the length of each request, exacerbates the issue, resulting in significant memory fragmentation in the absence of a suitable memory management mechanism.
+  - To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
+- [TokenAttention✨](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [✨](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
+ ![**github stars**](https://img.shields.io/github/stars/ModelTC/lightllm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 #### **Other techniques and LLM patterns**
 

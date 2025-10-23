@@ -31,42 +31,42 @@
 
 #### **OpenAI's roadmap**
 
-- [The Timeline of the OpenaAI's Founder Journeys✍️](https://www.coffeespace.com/blog-post/openai-founders-journey-a-transformer-company-transformed) [15 Oct 2024]
+- [AMA (ask me anything) with OpenAI on Reddit🗣️](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/) [1 Nov 2024]
 - [Humanloop Interview 2023🗣️](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : [🗄️](../files/openai-plans.pdf) [29 May 2023]
+- Model Spec: Desired behavior for the models in the OpenAI API and ChatGPT [✍️](https://cdn.openai.com/spec/model-spec-2024-05-08.html) [8 May 2024] [✍️](https://twitter.com/yi_ding/status/1788281765637038294): takeaway
+- [o3/o4-mini/GPT-5🗣️](https://x.com/sama/status/1908167621624856998): `we are going to release o3 and o4-mini after all, probably in a couple of weeks, and then do GPT-5 in a few months.` [4 Apr 2025]
 - OpenAI’s CEO Says the Age of Giant AI Models Is Already Over [✍️](https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giant-ai-models-is-already-over/) [17 Apr 2023]
 - Q* (pronounced as Q-Star): The model, called Q* was able to solve basic maths problems it had not seen before, according to the tech news site the Information. [✍️](https://www.theguardian.com/business/2023/nov/23/openai-was-working-on-advanced-model-so-powerful-it-alarmed-staff) [23 Nov 2023]
+- [Reflections on OpenAI🗣️](https://calv.info/openai-reflections): OpenAI culture. Bottoms-up decision-making. Progress is iterative, not driven by a rigid roadmap. Direction changes quickly based on new information. Slack is the primary communication tool. [16 Jul 2025]
 - Sam Altman reveals in an interview with Bill Gates (2 days ago) what's coming up in GPT-4.5 (or GPT-5): Potential integration with other modes of information beyond text, better logic and analysis capabilities, and consistency in performance over the next two years. [✍️](https://x.com/IntuitMachine/status/1746278269165404164?s=20) [12 Jan 2024]
 <!-- - Sam Altman Interview with Lex Fridman: [✍️](https://lexfridman.com/sam-altman-2-transcript) [19 Mar 2024] -->
-- Model Spec: Desired behavior for the models in the OpenAI API and ChatGPT [✍️](https://cdn.openai.com/spec/model-spec-2024-05-08.html) [8 May 2024] [✍️](https://twitter.com/yi_ding/status/1788281765637038294): takeaway
-- [AMA (ask me anything) with OpenAI on Reddit🗣️](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/) [1 Nov 2024]
-- [o3/o4-mini/GPT-5🗣️](https://x.com/sama/status/1908167621624856998): `we are going to release o3 and o4-mini after all, probably in a couple of weeks, and then do GPT-5 in a few months.` [4 Apr 2025]
-- [Reflections on OpenAI🗣️](https://calv.info/openai-reflections): OpenAI culture. Bottoms-up decision-making. Progress is iterative, not driven by a rigid roadmap. Direction changes quickly based on new information. Slack is the primary communication tool. [16 Jul 2025]
+- [The Timeline of the OpenaAI's Founder Journeys✍️](https://www.coffeespace.com/blog-post/openai-founders-journey-a-transformer-company-transformed) [15 Oct 2024]
 
 #### **OpenAI Products**
 
-- [ChatGPT can now see, hear, and speak✍️](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [25 Sep 2023] [Whisper✨](https://github.com/openai/whisper) / [CLIP✨](https://github.com/openai/Clip)
- ![**github stars**](https://img.shields.io/github/stars/openai/whisper?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/openai/Clip?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [ChatGPT Plugin✍️](https://openai.com/blog/chatgpt-plugins) [23 Mar 2023]
-- [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling) [Jun 2023] > Azure OpenAI supports function calling. [✍️](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api)
-- [Custom instructions✍️](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions. [20 Jul 2023]
-- [GPT-3.5 Turbo Fine-tuning✍️](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. [22 Aug 2023]
-- Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [✍️](https://openai.com/blog/introducing-chatgpt-enterprise) [28 Aug 2023]
-- [DALL·E 3✍️](https://openai.com/dall-e-3) : In September 2023, OpenAI announced their latest image model, DALL-E 3 [✨](https://github.com/openai/dall-e) [Sep 2023]
- ![**github stars**](https://img.shields.io/github/stars/openai/dall-e?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [OpenAI DevDay 2023✍️](https://openai.com/blog/new-models-and-developer-products-announced-at-devday): GPT-4 Turbo with 128K context, Assistants API (Code interpreter, Retrieval, and function calling), GPTs (Custom versions of ChatGPT: [✍️](https://openai.com/blog/introducing-gpts)), Copyright Shield, Parallel Function Calling, JSON Mode, Reproducible outputs [6 Nov 2023]
-- [Introducing the GPT Store✍️](https://openai.com/blog/introducing-the-gpt-store): Roll out the GPT Store to ChatGPT Plus, Team and Enterprise users  [GPTs](https://chat.openai.com/gpts) [10 Jan 2024]
-- [New embedding models✍️](https://openai.com/blog/new-embedding-models-and-api-updates) `text-embedding-3-small`: Embedding size: 512, 1536 `text-embedding-3-large`: Embedding size: 256,1024,3072 [25 Jan 2024]
-- [Sora✍️](https://openai.com/sora) Text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt. [15 Feb 2024]
-- [ChatGPT Memory✍️](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
-- [CriticGPT✍️](https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/): a version of GPT-4 fine-tuned to critique code generated by ChatGPT [27 Jun 2024]
-- [SearchGPT✍️](https://openai.com/index/searchgpt-prototype/): AI search [25 Jul 2024] > [ChatGPT Search✍️](https://openai.com/index/introducing-chatgpt-search/) [31 Oct 2024]
-- [Structured Outputs in the API✍️](https://openai.com/index/introducing-structured-outputs-in-the-api/): a new feature designed to ensure model-generated outputs will exactly match JSON Schemas provided by developers. [6 Aug 2024]
-- [OpenAI DevDay 2024✍️](https://openai.com/devday/): Real-time API (speech-to-speech), Vision Fine-Tuning, Prompt Caching, and Distillation (fine-tuning a small language model using a large language model). [✍️](https://community.openai.com/t/devday-2024-san-francisco-live-ish-news/963456) [1 Oct 2024]
-- [Operator✍️](https://openai.com/index/introducing-operator/): GUI Agent. Operates embedded virtual environments. Specialized model (Computer-Using Agent). [23 Jan 2025]
-- [deep research✍️](https://openai.com/index/introducing-deep-research/): An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks [2 Feb 2025]
 - [Agents SDK & Response API✍️](https://openai.com/index/new-tools-for-building-agents/): Responses API (Chat Completions + Assistants API), Built-in tools (web search, file search, computer use), Agents SDK for multi-agent workflows, agent workflow observability tools [11 Mar 2025] [✨](https://github.com/openai/openai-agents-python)
 - [ChatGPT agent✍️](https://openai.com/index/introducing-chatgpt-agent/): Web-browsing, File-editing, Terminal, Email, Spreadsheet, Calendar, API-calling, Automation, Task-chaining, Reasoning. [17 Jul 2025]
+- [ChatGPT can now see, hear, and speak✍️](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [25 Sep 2023] [Whisper✨](https://github.com/openai/whisper) / [CLIP✨](https://github.com/openai/Clip)
+ ![**github stars**](https://img.shields.io/github/stars/openai/whisper?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/openai/Clip?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling) [Jun 2023] > Azure OpenAI supports function calling. [✍️](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api)
+- [ChatGPT Memory✍️](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
+- [ChatGPT Plugin✍️](https://openai.com/blog/chatgpt-plugins) [23 Mar 2023]
+- [CriticGPT✍️](https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/): a version of GPT-4 fine-tuned to critique code generated by ChatGPT [27 Jun 2024]
+- [Custom instructions✍️](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions. [20 Jul 2023]
+- [DALL·E 3✍️](https://openai.com/dall-e-3) : In September 2023, OpenAI announced their latest image model, DALL-E 3 [✨](https://github.com/openai/dall-e) [Sep 2023]
+ ![**github stars**](https://img.shields.io/github/stars/openai/dall-e?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [deep research✍️](https://openai.com/index/introducing-deep-research/): An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks [2 Feb 2025]
+- [GPT-3.5 Turbo Fine-tuning✍️](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. [22 Aug 2023]
+- [Introducing the GPT Store✍️](https://openai.com/blog/introducing-the-gpt-store): Roll out the GPT Store to ChatGPT Plus, Team and Enterprise users  [GPTs](https://chat.openai.com/gpts) [10 Jan 2024]
+- [New embedding models✍️](https://openai.com/blog/new-embedding-models-and-api-updates) `text-embedding-3-small`: Embedding size: 512, 1536 `text-embedding-3-large`: Embedding size: 256,1024,3072 [25 Jan 2024]
+- Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [✍️](https://openai.com/blog/introducing-chatgpt-enterprise) [28 Aug 2023]
+- [OpenAI DevDay 2023✍️](https://openai.com/blog/new-models-and-developer-products-announced-at-devday): GPT-4 Turbo with 128K context, Assistants API (Code interpreter, Retrieval, and function calling), GPTs (Custom versions of ChatGPT: [✍️](https://openai.com/blog/introducing-gpts)), Copyright Shield, Parallel Function Calling, JSON Mode, Reproducible outputs [6 Nov 2023]
+- [OpenAI DevDay 2024✍️](https://openai.com/devday/): Real-time API (speech-to-speech), Vision Fine-Tuning, Prompt Caching, and Distillation (fine-tuning a small language model using a large language model). [✍️](https://community.openai.com/t/devday-2024-san-francisco-live-ish-news/963456) [1 Oct 2024]
 - [OpenAI DevDay 2025✍️](https://openai.com/devday): ChatGPT Apps + SDK, AgentKit, GPT-5 Pro, Sora 2 video API, upgraded Codex [✍️](https://openai.com/index/announcing-devday-2025/) [6 Oct 2025]
+- [Operator✍️](https://openai.com/index/introducing-operator/): GUI Agent. Operates embedded virtual environments. Specialized model (Computer-Using Agent). [23 Jan 2025]
+- [SearchGPT✍️](https://openai.com/index/searchgpt-prototype/): AI search [25 Jul 2024] > [ChatGPT Search✍️](https://openai.com/index/introducing-chatgpt-search/) [31 Oct 2024]
+- [Sora✍️](https://openai.com/sora) Text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt. [15 Feb 2024]
+- [Structured Outputs in the API✍️](https://openai.com/index/introducing-structured-outputs-in-the-api/): a new feature designed to ensure model-generated outputs will exactly match JSON Schemas provided by developers. [6 Aug 2024]
 
 #### **GPT series release date**
 
@@ -112,8 +112,19 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 
 ### **Context constraints**
 
-- [Sparse Attention: Generating Long Sequences with Sparse Transformer📑](https://alphaxiv.org/abs/1904.10509):💡Sparse attention computes scores for a subset of pairs, selected via a fixed or learned sparsity pattern, reducing calculation costs. Strided attention: image, audio / Fixed attention:text [✍️](https://openai.com/index/sparse-transformer/) / [✨](https://github.com/openai/sparse_attention) [23 Apr 2019]
- ![**github stars**](https://img.shields.io/github/stars/openai/sparse_attention?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Context Rot: How Increasing Input Tokens Impacts LLM Performance✨](https://github.com/chroma-core/context-rot) [14 Jul 2025]
+- [Giraffe📑](https://alphaxiv.org/abs/2308.10882): Adventures in Expanding Context Lengths in LLMs. A new truncation strategy for modifying the basis for the position encoding.  [✍️](https://blog.abacus.ai/blog/2023/08/22/giraffe-long-context-llms/) [2 Jan 2024]
+- [Introducing 100K Context Windows✍️](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
+- [Leave No Context Behind📑](https://alphaxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
+- [LLM Maybe LongLM📑](https://alphaxiv.org/abs/2401.01325): Self-Extend LLM Context Window Without Tuning. With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning. [2 Jan 2024]
+- [Lost in the Middle: How Language Models Use Long Contexts📑](https://alphaxiv.org/abs/2307.03172):💡[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03172)] [6 Jul 2023]
+  1. Best Performace when relevant information is at beginning
+  2. Too many retrieved documents will harm performance
+  3. Performacnce decreases with an increase in context
+- [“Needle in a Haystack” Analysis](https://bito.ai/blog/claude-2-1-200k-context-window-benchmarks/) [21 Nov 2023]: Context Window Benchmarks; Claude 2.1 (200K Context Window) vs [GPT-4✨](https://github.com/gkamradt/LLMTest_NeedleInAHaystack); [Long context prompting for Claude 2.1✍️](https://www.anthropic.com/index/claude-2-1-prompting) `adding just one sentence, “Here is the most relevant sentence in the context:”, to the prompt resulted in near complete fidelity throughout Claude 2.1’s 200K context window.` [6 Dec 2023]
+ ![**github stars**](https://img.shields.io/github/stars/gkamradt/LLMTest_NeedleInAHaystack?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Ring Attention📑](https://alphaxiv.org/abs/2310.01889): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.01889)]: 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3. we propose an enhancement to the blockwise parallel transformers (BPT) framework. [✨](https://github.com/lhao499/llm_large_context) [3 Oct 2023]
+ ![**github stars**](https://img.shields.io/github/stars/lhao499/llm_large_context?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Rotary Positional Embedding (RoPE)📑](https://alphaxiv.org/abs/2104.09864):💡[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2104.09864)] / [✍️](https://blog.eleuther.ai/rotary-embeddings/) / [🗄️](../files/RoPE.pdf) [20 Apr 2021]
   - How is this different from the sinusoidal embeddings used in "Attention is All You Need"?
     1. Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
@@ -121,35 +132,24 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
     3. Rotary embeddings are applied to positional encoding to K and V, not to the input embeddings.
     - [ALiBi📑](https://alphaxiv.org/abs/2203.16634): Attention with Linear Biases. ALiBi applies a bias directly to the attention scores. [27 Aug 2021]
     - [NoPE: Transformer Language Models without Positional Encodings Still Learn Positional Information📑](https://alphaxiv.org/abs/2203.16634): No postion embedding. [30 Mar 2022]
+- [Sparse Attention: Generating Long Sequences with Sparse Transformer📑](https://alphaxiv.org/abs/1904.10509):💡Sparse attention computes scores for a subset of pairs, selected via a fixed or learned sparsity pattern, reducing calculation costs. Strided attention: image, audio / Fixed attention:text [✍️](https://openai.com/index/sparse-transformer/) / [✨](https://github.com/openai/sparse_attention) [23 Apr 2019]
+ ![**github stars**](https://img.shields.io/github/stars/openai/sparse_attention?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples📑](https://alphaxiv.org/abs/2212.06713): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.06713)] [13 Dec 2022]
   1. Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
-  2. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer internals, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
-- [Introducing 100K Context Windows✍️](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
-- [Lost in the Middle: How Language Models Use Long Contexts📑](https://alphaxiv.org/abs/2307.03172):💡[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03172)] [6 Jul 2023]
-  1. Best Performace when relevant information is at beginning
-  2. Too many retrieved documents will harm performance
-  3. Performacnce decreases with an increase in context
-- [Ring Attention📑](https://alphaxiv.org/abs/2310.01889): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.01889)]: 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3. we propose an enhancement to the blockwise parallel transformers (BPT) framework. [✨](https://github.com/lhao499/llm_large_context) [3 Oct 2023]
- ![**github stars**](https://img.shields.io/github/stars/lhao499/llm_large_context?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [“Needle in a Haystack” Analysis](https://bito.ai/blog/claude-2-1-200k-context-window-benchmarks/) [21 Nov 2023]: Context Window Benchmarks; Claude 2.1 (200K Context Window) vs [GPT-4✨](https://github.com/gkamradt/LLMTest_NeedleInAHaystack); [Long context prompting for Claude 2.1✍️](https://www.anthropic.com/index/claude-2-1-prompting) `adding just one sentence, “Here is the most relevant sentence in the context:”, to the prompt resulted in near complete fidelity throughout Claude 2.1’s 200K context window.` [6 Dec 2023]
- ![**github stars**](https://img.shields.io/github/stars/gkamradt/LLMTest_NeedleInAHaystack?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LLM Maybe LongLM📑](https://alphaxiv.org/abs/2401.01325): Self-Extend LLM Context Window Without Tuning. With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning. [2 Jan 2024]
-- [Giraffe📑](https://alphaxiv.org/abs/2308.10882): Adventures in Expanding Context Lengths in LLMs. A new truncation strategy for modifying the basis for the position encoding.  [✍️](https://blog.abacus.ai/blog/2023/08/22/giraffe-long-context-llms/) [2 Jan 2024]
-- [Leave No Context Behind📑](https://alphaxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
-- [Context Rot: How Increasing Input Tokens Impacts LLM Performance✨](https://github.com/chroma-core/context-rot) [14 Jul 2025]
+  2. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer interns, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
 
 ### **Numbers LLM**
 
+- [5 Approaches To Solve LLM Token Limits✍️](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : [🗄️](../files/token-limits-5-approaches.pdf) [2023]
+- [Byte-Pair Encoding (BPE)📑](https://alphaxiv.org/abs/1508.07909): P.2015. The most widely used tokenization algorithm for text today. BPE adds an end token to words, splits them into characters, and merges frequent byte pairs iteratively until a stop criterion. The final tokens form the vocabulary for new data encoding and decoding. [31 Aug 2015] / [✍️](https://towardsdatascience.com/byte-pair-encoding-subword-based-tokenization-algorithm-77828a70bee0) [13 Aug 2021]
+- [Numbers every LLM Developer should know✨](https://github.com/ray-project/llm-numbers) [18 May 2023] ![**github stars**](https://img.shields.io/github/stars/ray-project/llm-numbers?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="../files/llm-numbers.png" height="360">
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
 - [tiktoken✨](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting. [✍️](https://tiktokenizer.vercel.app/):💡online app [Dec 2022]
  ![**github stars**](https://img.shields.io/github/stars/openai/tiktoken?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [What are tokens and how to count them?✍️](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them): OpenAI Articles
-- [5 Approaches To Solve LLM Token Limits✍️](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : [🗄️](../files/token-limits-5-approaches.pdf) [2023]
-- [Byte-Pair Encoding (BPE)📑](https://alphaxiv.org/abs/1508.07909): P.2015. The most widely used tokenization algorithm for text today. BPE adds an end token to words, splits them into characters, and merges frequent byte pairs iteratively until a stop criterion. The final tokens form the vocabulary for new data encoding and decoding. [31 Aug 2015] / [✍️](https://towardsdatascience.com/byte-pair-encoding-subword-based-tokenization-algorithm-77828a70bee0) [13 Aug 2021]
 - [Tokencost✨](https://github.com/AgentOps-AI/tokencost): Token price estimates for 400+ LLMs [Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/AgentOps-AI/tokencost?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Numbers every LLM Developer should know✨](https://github.com/ray-project/llm-numbers) [18 May 2023] ![**github stars**](https://img.shields.io/github/stars/ray-project/llm-numbers?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-  <img src="../files/llm-numbers.png" height="360">
+- [What are tokens and how to count them?✍️](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them): OpenAI Articles
 
 ### **Trustworthy, Safe and Secure LLM**
 

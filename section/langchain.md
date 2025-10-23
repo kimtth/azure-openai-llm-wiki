@@ -36,33 +36,32 @@
 
 ### **LangChain Feature Matrix & Cheetsheet**
 
-- [Feature Matrix](https://python.langchain.com/docs/get_started/introduction): LangChain Features
-  - [Feature Matrix: Snapshot in 2023 July](../files/langchain-features-202307.png)
 - [Awesome LangChain✨](https://github.com/kyrolabs/awesome-langchain): Curated list of tools and projects using LangChain.
  ![**github stars**](https://img.shields.io/github/stars/kyrolabs/awesome-langchain?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Building intelligent agents with LangGraph: PhiloAgents simulation engine✨](https://github.com/neural-maze/philoagents-course) [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/neural-maze/philoagents-course?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Cheetsheet✨](https://github.com/gkamradt/langchain-tutorials): LangChain CheatSheet
  ![**github stars**](https://img.shields.io/github/stars/gkamradt/langchain-tutorials?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [🗄️](../files/LangChain_kdnuggets.pdf) [Aug 2023]
+- DeepLearning.AI short course: LangChain for LLM Application Development [✍️](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [✍️](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+- [Feature Matrix](https://python.langchain.com/docs/get_started/introduction): LangChain Features
+- [Feature Matrix: Snapshot in 2023 July](../files/langchain-features-202307.png)  
 - [LangChain AI Handbook](https://www.pinecone.io/learn/series/langchain/): published by Pinecone
+- [LangChain Cheetsheet KD-nuggets](https://www.kdnuggets.com/wp-content/uploads/LangChain_Cheat_Sheet_KDnuggets.pdf): LangChain Cheetsheet KD-nuggets [🗄️](../files/LangChain_kdnuggets.pdf) [Aug 2023]
+- [LangChain Streamlit agent examples✨](https://github.com/langchain-ai/streamlit-agent): Implementations of several LangChain agents as Streamlit apps. [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/streamlit-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LangChain Tutorial](https://nanonets.com/blog/langchain/): A Complete LangChain Guide
+- [LangChain tutorial: A guide to building LLM-powered applications](https://www.elastic.co/blog/langchain-tutorial) [27 Feb 2024]
 - [RAG From Scratch✨](https://github.com/langchain-ai/rag-from-scratch)💡[Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- DeepLearning.AI short course: LangChain for LLM Application Development [✍️](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) / LangChain: Chat with Your Data [✍️](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
-- [LangChain Streamlit agent examples✨](https://github.com/langchain-ai/streamlit-agent): Implementations of several LangChain agents as Streamlit apps. [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/streamlit-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangChain tutorial: A guide to building LLM-powered applications](https://www.elastic.co/blog/langchain-tutorial) [27 Feb 2024]
-- [Building intelligent agents with LangGraph: PhiloAgents simulation engine✨](https://github.com/neural-maze/philoagents-course) [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/neural-maze/philoagents-course?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **LangChain features and related libraries**
 
+- [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together [Aug 2023]
+- [LangChain Template✨](https://github.com/langchain-ai/langchain/tree/master/templates): LangChain Reference architectures and samples. e.g., `RAG Conversation Template` [Oct 2023]
 - [LangChain/cache](https://python.langchain.com/docs/modules/model_io/models/llms/how_to/llm_caching): Reducing the number of API calls
 - [LangChain/context-aware-splitting](https://python.langchain.com/docs/use_cases/question_answering/document-context-aware-QA): Splits a file into chunks while keeping metadata
-- [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together [Aug 2023]
+- [LangGraph✨](https://github.com/langchain-ai/langgraph):💡Build and navigate language agents as graphs [✍️](https://langchain-ai.github.io/langgraph/) [Aug 2023] -> LangGraph is inspired by [Pregel](https://research.google/pubs/pub37252/) for Parallel Processing, [Apache Beam](https://beam.apache.org/) for Data flows, and [NetworkX](https://networkx.org/documentation/latest/) for Graph. | [Tutorial](https://langchain-ai.github.io/langgraph/tutorials). ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LangSmith✍️](https://blog.langchain.dev/announcing-langsmith/) Platform for debugging, testing, evaluating. [Jul 2023]
-  <!-- <img src="../files/langchain_debugging.png" width="150" /> -->
-- [LangChain Template✨](https://github.com/langchain-ai/langchain/tree/master/templates): LangChain Reference architectures and samples. e.g., `RAG Conversation Template` [Oct 2023]
 - [OpenGPTs✨](https://github.com/langchain-ai/opengpts): An open source effort to create a similar experience to OpenAI's GPTs [Nov 2023]
  ![**github stars**](https://img.shields.io/github/stars/langchain-ai/opengpts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangGraph✨](https://github.com/langchain-ai/langgraph):💡Build and navigate language agents as graphs [✍️](https://langchain-ai.github.io/langgraph/) [Aug 2023] -> LangGraph is inspired by [Pregel](https://research.google/pubs/pub37252/) for Parallel Processing, [Apache Beam](https://beam.apache.org/) for Data flows, and [NetworkX](https://networkx.org/documentation/latest/) for Graph. | [Tutorial](https://langchain-ai.github.io/langgraph/tutorials). ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **LangChain chain type: Chains & Summarizer**
 
@@ -128,14 +127,14 @@ class AgentType(str, Enum):
 
 #### **Criticism to LangChain**
 
-- The Problem With LangChain: [✍️](https://minimaxir.com/2023/07/langchain-problem/) / [✨](https://github.com/minimaxir/langchain-problems) [14 Jul 2023]
- ![**github stars**](https://img.shields.io/github/stars/minimaxir/langchain-problems?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- What’s your biggest complaint about langchain?: [✍️](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your_biggest_complaint_about_langchain/) [May 2023]
-- LangChain Is Pointless: [✍️](https://news.ycombinator.com/item?id=36645575) [Jul 2023]
-  > LangChain has been criticized for making simple things relatively complex, which creates unnecessary complexity and tribalism that hurts the up-and-coming AI ecosystem as a whole. The documentation is also criticized for being bad and unhelpful.
 - [How to Build Ridiculously Complex LLM Pipelines with LangGraph!](https://newsletter.theaiedge.io/p/how-to-build-ridiculously-complex) [17 Sep 2024 ]
   > LangChain does too much, and as a consequence, it does many things badly. Scaling beyond the basic use cases with LangChain is a challenge that is often better served with building things from scratch by using the underlying APIs.
+- LangChain Is Pointless: [✍️](https://news.ycombinator.com/item?id=36645575) [Jul 2023]
+  > LangChain has been criticized for making simple things relatively complex, which creates unnecessary complexity and tribalism that hurts the up-and-coming AI ecosystem as a whole. The documentation is also criticized for being bad and unhelpful.
 - [The Hidden Cost of LangChain: Why My Simple RAG System Cost 2.7x More Than Expected ](https://dev.to/himanjan/the-hidden-cost-of-langchain-why-my-simple-rag-system-cost-27x-more-than-expected-4hk9) [23 Jul 2025]
+- The Problem With LangChain: [✍️](https://minimaxir.com/2023/07/langchain-problem/) / [✨](https://github.com/minimaxir/langchain-problems) [14 Jul 2023]
+ ![**github stars**](https://img.shields.io/github/stars/minimaxir/langchain-problems?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- What’s your biggest complaint about langchain?: [✍️](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your-biggest_complaint_about_langchain/) [May 2023]
 
 ### **LangChain vs Competitors**
 
@@ -195,28 +194,24 @@ class AgentType(str, Enum):
 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. High-Level Concept: [✍️](https://docs.llamaindex.ai/en/latest/getting_started/concepts.html) / doc:[✍️](https://gpt-index.readthedocs.io/en/latest/index.html) / blog:[✍️](https://www.llamaindex.ai/blog) / [✨](https://github.com/run-llama/llama_index) [Nov 2022]
  ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_index?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-
   > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [🗣️](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading📑](https://alphaxiv.org/abs/2310.05029)
   >
   > 1.  Build a data structure (memory tree)
   > 1.  Transverse it via LLM prompting
-
-- LlamaIndex Toolkits: 
-  - `LlamaHub`: A library of data loaders for LLMs [✨](https://github.com/run-llama/llama-hub) [Feb 2023]
- ![**github stars**](https://img.shields.io/github/stars/run-llama/llama-hub?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - `LlamaIndex CLI`: a command line tool to generate LlamaIndex apps [✍️](https://llama-2.ai/llamaindex-cli/) [Nov 2023]
-  - `LlamaParse`: A unique parsing tool for intricate documents [✨](https://github.com/run-llama/llama_parse) [Feb 2024]
- ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [AgentWorkflow](https://www.llamaindex.ai/blog/introducing-agentworkflow-a-powerful-system-for-building-ai-agent-systems): To build and orchestrate AI agent systems [22 Jan 2025]
+- [AgentWorkflow](https://www.llamaindex.ai/blog/introducing-agentworkflow-a-powerful-system-for-building-ai-agent-systems): To build and orchestrate AI agent systems [22 Jan 2025]
+- `LlamaHub`: A library of data loaders for LLMs [✨](https://github.com/run-llama/llama-hub) [Feb 2023]
+![**github stars**](https://img.shields.io/github/stars/run-llama/llama-hub?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- `LlamaIndex CLI`: a command line tool to generate LlamaIndex apps [✍️](https://llama-2.ai/llamaindex-cli/) [Nov 2023]
+- `LlamaParse`: A unique parsing tool for intricate documents [✨](https://github.com/run-llama/llama_parse) [Feb 2024]
+![**github stars**](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LlamaIndex showcase✨](https://github.com/run-llama/llamacloud-demo) > `examples` [✍️](https://www.llamaindex.ai/blog/introducing-agentic-document-workflows): e.g., Contract Review, Patient Case Summary, and Auto Insurance Claims Workflow. [9 Jan 2025]
 
 #### LlamaIndex integration with Azure AI
 
+- [AI App Template Gallery✍️](https://azure.github.io/ai-app-templates/repo/azure-samples/llama-index-javascript/)
 - [LlamaIndex integration with Azure AI](https://www.llamaindex.ai/blog/announcing-the-llamaindex-integration-with-azure-ai):  [19 Nov 2024]
-- Core: Azure OpenAI Service, Azure AI Search
 - Storage and memory: [Azure Table Storage as a Docstore](https://docs.llamaindex.ai/en/stable/examples/docstore/AzureDocstoreDemo/) or Azure Cosmos DB.
 - Workflow example: [Azure Code Interpreter](https://docs.llamaindex.ai/en/stable/examples/tools/azure_code_interpreter/)
-- [AI App Template Gallery✍️](https://azure.github.io/ai-app-templates/repo/azure-samples/llama-index-javascript/)
 
 #### High-Level Concepts
 
@@ -267,26 +262,18 @@ class AgentType(str, Enum):
   ```
 
 #### LlamaIndex Tutorial
-
-- [LlamaIndex Overview (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-001-overview-v0-7-9/) [17 Jul 2023]
-- [Fine-Tuning a Linear Adapter for Any Embedding Model](https://medium.com/llamaindex-blog/fine-tuning-a-linear-adapter-for-any-embedding-model-8dd0a142d383): Fine-tuning the embeddings model requires you to reindex your documents. With this approach, you do not need to re-embed your documents. Simply transform the query instead. [7 Sep 2023]
 - 4 RAG techniques implemented in `llama_index` / [🗣️](https://x.com/ecardenas300/status/1704188276565795079) [20 Sep 2023] / [✨](https://github.com/weaviate/recipes)
  ![**github stars**](https://img.shields.io/github/stars/weaviate/recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  <details open>
-  <summary>Expand: 4 RAG techniques</summary>
-
-    1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
-
-    2. Sub Question Query Engine: Break down the complex question into sub-questions
-
-    3. Recursive Retriever + Query Engine: Reference node relationships, rather than only finding a node (chunk) that is most relevant.
-    
-    4. Self Correcting Query Engines: Use an LLM to evaluate its own output.
-  </details>
-- [LlamaIndex Tutorial](https://nanonets.com/blog/llamaindex/): A Complete LlamaIndex Guide [18 Oct 2023]
+  1. SQL Router Query Engine: Query router that can reference your vector database or SQL database
+  2. Sub Question Query Engine: Break down the complex question into sub-questions
+  3. Recursive Retriever + Query Engine: Reference node relationships, rather than only finding a node (chunk) that is most relevant.
+  4. Self Correcting Query Engines: Use an LLM to evaluate its own output.  
+- [A Cheat Sheet and Some Recipes For Building Advanced RAG✍️](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b) RAG cheat sheet shared above was inspired by [RAG survey paper📑](https://alphaxiv.org/abs/2312.10997). [🗄️](../files/advanced-rag-diagram-llama-index.png) [Jan 2024]
+- [Building and Productionizing RAG](https://docs.google.com/presentation/d/1rFQ0hPyYja3HKRdGEgjeDxr0MSE8wiQ2iu4mDtwR6fc/edit#slide=id.p): [🗄️](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf): Optimizing RAG Systems 1. Table Stakes 2. Advanced Retrieval: Small-to-Big 3. Agents 4. Fine-Tuning 5. Evaluation [Nov 2023]
 <!-- - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/) [27 May 2023] / [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/) [27 May 2023] / --> 
 - [Chat engine ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html), [FLARE Query engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/flare_query_engine.html)
-- [Building and Productionizing RAG](https://docs.google.com/presentation/d/1rFQ0hPyYja3HKRdGEgjeDxr0MSE8wiQ2iu4mDtwR6fc/edit#slide=id.p): [🗄️](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf): Optimizing RAG Systems 1. Table Stakes 2. Advanced Retrieval: Small-to-Big 3. Agents 4. Fine-Tuning 5. Evaluation [Nov 2023]
+- [Fine-Tuning a Linear Adapter for Any Embedding Model](https://medium.com/llamaindex-blog/fine-tuning-a-linear-adapter-for-any-embedding-model-8dd0a142d383): Fine-tuning the embeddings model requires you to reindex your documents. With this approach, you do not need to re-embed your documents. Simply transform the query instead. [7 Sep 2023]
+- [LlamaIndex Overview (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-001-overview-v0-7-9/) [17 Jul 2023]
+- [LlamaIndex Tutorial](https://nanonets.com/blog/llamaindex/): A Complete LlamaIndex Guide [18 Oct 2023]
 - Multimodal RAG Pipeline [✍️](https://blog.llamaindex.ai/multi-modal-rag-621de7525fea) [Nov 2023]
-- [A Cheat Sheet and Some Recipes For Building Advanced RAG✍️](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b) RAG cheat sheet shared above was inspired by [RAG survey paper📑](https://alphaxiv.org/abs/2312.10997). [🗄️](../files/advanced-rag-diagram-llama-index.png) [Jan 2024]
 
