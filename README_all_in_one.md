@@ -156,7 +156,12 @@ Comprehensive Surveys and Learning Materials
 | 🔢 | Citation count | 💡🏆 | Recommend |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
-<!-- All rights reserved © `kimtth` -->
+<!-- 
+All rights reserved © `kimtth` 
+-->
+<!-- 
+https://shields.io/badges/git-hub-created-at
+-->
 
 **[`^        back to top        ^`](#azure-openai--llm)**
 
@@ -370,6 +375,7 @@ Comprehensive Surveys and Learning Materials
 ![**github stars**](https://img.shields.io/github/stars/developersdigest/llm-answer-engine?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MedGraphRAG📑](https://alphaxiv.org/abs/2408.04187): MedGraphRAG outperforms the previous SOTA model, [Medprompt📑](https://alphaxiv.org/abs/2311.16452), by 1.1%. [✨](https://github.com/medicinetoken/medical-graph-rag) [8 Aug 2024]
 ![**github stars**](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Meilisearch](https://github.com/meilisearch/meilisearch): A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications. [Apr 2018] ![**github stars**](https://img.shields.io/github/stars/meilisearch/meilisearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MemFree✨](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [PaperQA2✨](https://github.com/Future-House/paper-qa): High accuracy RAG for answering questions from scientific documents with citations [Feb 2023]
 ![**github stars**](https://img.shields.io/github/stars/Future-House/paper-qa?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1090,6 +1096,7 @@ Comprehensive Surveys and Learning Materials
 1. [bolt.new✨](https://github.com/stackblitz/bolt.new): Dev Sanbox with AI from stackblitz [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/stackblitz/bolt.new?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Claude sub-agents collection✨](https://github.com/wshobson/agents): A collection of production-ready subagents for Claude Code. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/wshobson/agents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [claude-code✨](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Claude Skills✨](https://github.com/anthropics/skills): Official repository for Skills. Skills teach Claude how to complete specific tasks in a repeatable way. [Sep 2025] [✍️](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) ![**github stars**](https://img.shields.io/github/stars/anthropics/skills?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [claude‑squad✨](https://github.com/smtg-ai/claude-squad): Terminal app to manage multiple AI assistants (Claude Code, Aider, Codex). [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Cline✨](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [code2prompt✨](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
@@ -2175,6 +2182,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Prompts for Education✨](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/prompts-for-edu?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [ShumerPrompt](https://shumerprompt.com/): Discover and share powerful prompts for AI models
+- [System Prompts and Models of AI Tools✨](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): System Prompts, Internal Tools & AI Models collection [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [TheBigPromptLibrary✨](https://github.com/0xeb/TheBigPromptLibrary) [Nov 2023]
  ![**github stars**](https://img.shields.io/github/stars/0xeb/TheBigPromptLibrary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
@@ -2217,6 +2225,9 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
  ![**github stars**](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - KV Cache, Grouped Query Attention, Rotary PE  
     <img src="./files/llama2.png" width="300" />    
+  <details>
+  <summary>Pytorch code</summary>
+  
   - Rotary PE
     ```python
     def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
@@ -2256,6 +2267,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
       # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
       values = repeat_kv(values, self.n_rep)
     ```  
+    </details>
 - [Comprehensive Guide for LLaMA with RLHF🤗](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]  
 - Official LLama Recipes incl. Finetuning: [✨](https://github.com/facebookresearch/llama-recipes)
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
@@ -2343,13 +2355,10 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   <img src="./files/rhlf.png" width="400" />  
   <img src="./files/rhlf2.png" width="400" />  
   [🗣️](https://docs.argilla.io/)
-- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index), [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)  
- ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-  <img src="./files/TRL-readme.png" width="500" />   
-  <!-- [SFTTrainer🤗](https://huggingface.co/docs/trl/main/en/trainer#trl.SFTTrainer) from TRL -->
-  TRL: from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step  
+- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index): from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step, [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html) ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="./files/TRL-readme.png" width="500" />  
   <img src="./files/chip.jpg" width="400" />  
-  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/) [ⓒ 2023]
+  - The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/)
 - Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning.
 - OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [✨](https://github.com/openai/spinningup) [Nov 2018] ![**github stars**](https://img.shields.io/github/stars/openai/spinningup?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [ORPO (odds ratio preference optimization)📑](https://alphaxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [✨](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO✍️](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024]  
@@ -2807,6 +2816,7 @@ generated webpages are considered better than the original reference webpages` [
   1. [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
   1. [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
   1. [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  1. [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR) [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   1. A list of models: [✨](https://github.com/deepseek-ai)
 - EleutherAI
   - Founded in July 2020. United States tech. GPT-Neo, GPT-J, GPT-NeoX, and The Pile dataset.
@@ -3340,7 +3350,8 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Ai2 Playground](https://playground.allenai.org/)
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [AlphaXiv](https://www.alphaxiv.org): an interactive extension of arXiv
-- [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/)
+- [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/) ![**github stars**](https://img.shields.io/github/stars/yihao-meng/AniDoc?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Cherry Studio✨](https://github.com/CherryHQ/cherry-studio): a desktop client that supports multiple LLM providers. ![**github stars**](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Content writing: <http://jasper.ai/chat> / [🗣️](https://twitter.com/slow_developer/status/1671530676045094915)
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
 - Edge and Chrome Extension & Plugin
@@ -3354,11 +3365,26 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
 - Future Tools: <https://www.futuretools.io/>
 - [God Tier Prompts](https://www.godtierprompts.com): A community driven leaderboard where the best prompts rise to the top.
+- Open Source Image Creation Tool
+  1. ComfyUI - https://github.com/comfyanonymous/ComfyUI
+  1. Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref📑](https://alphaxiv.org/abs/2412.04037) [5 Dec 2024]
 - [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.
 - [Msty](https://msty.app/):💡The easiest way to use local and online AI models
 - [napkin.ai](https://www.napkin.ai/): a text-to-visual graphics generator [7 Aug 2024]
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
+- Open Source No-Code AI Tools
+  1. Anything-LLM — https://anythingllm.com
+  1. Budibase — https://budibase.com
+  1. Coze Studio — https://www.coze.com
+  1. Dify — https://dify.ai
+  1. Flowise — https://flowiseai.com
+  1. n8n — https://n8n.io
+  1. NocoBase — https://www.nocobase.com
+  1. NocoDB — https://nocodb.com
+  1. Sim — https://www.sim.ai
+  1. Strapi — https://strapi.io
+  1. ToolJet — https://www.tooljet.ai
 - Oceans of AI - All AI Tools <https://play.google.com/store/apps/details?id=in.blueplanetapps.oceansofai&hl=en_US>
 - Open source (huggingface):🤗<http://huggingface.co/chat>
 - [Pika AI - Free AI Video Generator](https://pika.art/login)
@@ -3561,42 +3587,43 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 
 ### **LLMOps: Large Language Model Operations**
 
-- [30 requirements for an MLOps environment🗣️](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
-- [agenta✨](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Azure ML Prompt flow](https://microsoft.github.io/promptflow/index.html): A set of LLMOps tools designed to facilitate the creation of LLM-based AI applications [Sep 2023] > [How to Evaluate & Upgrade Model Versions in the Azure OpenAI Service✍️](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/how-to-evaluate-amp-upgrade-model-versions-in-the-azure-openai/ba-p/4218880) [14 Aug 2024]
-- Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [✍️](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli) [Apr 2024]
-- [circuit‑tracer✨](https://github.com/safety-research/circuit-tracer): Anthrophic. Tool for finding and visualizing circuits within large language models. a circuit is a minimal, causal computation pathway inside a transformer model that shows how internal features lead to a specific output. [May 2025] ![**github stars**](https://img.shields.io/github/stars/safety-research/circuit-tracer?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [DeepEval✨](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
+1. [agenta✨](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Azure ML Prompt flow](https://microsoft.github.io/promptflow/index.html): A set of LLMOps tools designed to facilitate the creation of LLM-based AI applications [Sep 2023] > [How to Evaluate & Upgrade Model Versions in the Azure OpenAI Service✍️](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/how-to-evaluate-amp-upgrade-model-versions-in-the-azure-openai/ba-p/4218880) [14 Aug 2024]
+1. Azure Machine Learning studio Model Data Collector: Collect production data, analyze key safety and quality evaluation metrics on a recurring basis, receive timely alerts about critical issues, and visualize the results. [✍️](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-collect-production-data?view=azureml-api-2&tabs=azure-cli) [Apr 2024]
+1. [circuit‑tracer✨](https://github.com/safety-research/circuit-tracer): Anthrophic. Tool for finding and visualizing circuits within large language models. a circuit is a minimal, causal computation pathway inside a transformer model that shows how internal features lead to a specific output. [May 2025] ![**github stars**](https://img.shields.io/github/stars/safety-research/circuit-tracer?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [DeepEval✨](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
  ![**github stars**](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Economics of Hosting Open Source LLMs✍️](https://towardsdatascience.com/economics-of-hosting-open-source-llms-17b4ec4e7691): Comparison of cloud vendors such as AWS, Modal, BentoML, Replicate, Hugging Face Endpoints, and Beam, using metrics like processing time, cold start latency, and costs associated with CPU, memory, and GPU usage. [✨](https://github.com/ilsilfverskiold/Awesome-LLM-Resources-List) [13 Nov 2024]
-- [Giskard✨](https://github.com/Giskard-AI/giskard): The testing framework for ML models, from tabular to LLMs [Mar 2022] ![**github stars**](https://img.shields.io/github/stars/Giskard-AI/giskard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Langfuse](https://langfuse.com): [✨](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023] 
+1. [Giskard✨](https://github.com/Giskard-AI/giskard): The testing framework for ML models, from tabular to LLMs [Mar 2022] ![**github stars**](https://img.shields.io/github/stars/Giskard-AI/giskard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Langfuse](https://langfuse.com): [✨](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023] 
  ![**github stars**](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Language Model Evaluation Harness✨](https://github.com/EleutherAI/lm-evaluation-harness):💡Over 60 standard academic benchmarks for LLMs. A framework for few-shot evaluation. Hugginface uses this for [Open LLM Leaderboard🤗](https://huggingface.co/open-llm-leaderboard) [Aug 2020]
+1. [Language Model Evaluation Harness✨](https://github.com/EleutherAI/lm-evaluation-harness):💡Over 60 standard academic benchmarks for LLMs. A framework for few-shot evaluation. Hugginface uses this for [Open LLM Leaderboard🤗](https://huggingface.co/open-llm-leaderboard) [Aug 2020]
  ![**github stars**](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LangWatch scenario✨](https://github.com/langwatch/scenario):💡LangWatch Agentic testing for agentic codebases. Simulating agentic communication using autopilot [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/langwatch/scenario?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [LLMOps Database](https://www.zenml.io/llmops-database): A curated knowledge base of real-world LLMOps implementations.
-- [Maxim AI](https://getmaxim.ai): [✨](https://github.com/maximhq) End-to-end simulation, evaluation, and observability plaform, helping teams ship their AI agents reliably and >5x faster. [Dec 2023]
-- [Machine Learning Operations (MLOps) For Beginners✍️](https://towardsdatascience.com/machine-learning-operations-mlops-for-beginners-a5686bfe02b2): DVC (Data Version Control), MLflow, Evidently AI (Monitor a model). Insurance Cross Sell Prediction [✨](https://github.com/prsdm/mlops-project) [29 Aug 2024]
+1. [LangWatch scenario✨](https://github.com/langwatch/scenario):💡LangWatch Agentic testing for agentic codebases. Simulating agentic communication using autopilot [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/langwatch/scenario?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [LLMOps Database](https://www.zenml.io/llmops-database): A curated knowledge base of real-world LLMOps implementations.
+1. [Maxim AI](https://getmaxim.ai): [✨](https://github.com/maximhq) End-to-end simulation, evaluation, and observability plaform, helping teams ship their AI agents reliably and >5x faster. [Dec 2023]
+1. [Machine Learning Operations (MLOps) For Beginners✍️](https://towardsdatascience.com/machine-learning-operations-mlops-for-beginners-a5686bfe02b2): DVC (Data Version Control), MLflow, Evidently AI (Monitor a model). Insurance Cross Sell Prediction [✨](https://github.com/prsdm/mlops-project) [29 Aug 2024]
  ![**github stars**](https://img.shields.io/github/stars/prsdm/mlops-project?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [OpenAI Evals✨](https://github.com/openai/evals): A framework for evaluating large language models (LLMs) [Mar 2023]
+1. [Netdata✨](https://github.com/netdata/netdata): AI-powered real-time infrastructure monitoring platform [Jun 2013] ![**github stars**](https://img.shields.io/github/stars/netdata/netdata?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [OpenAI Evals✨](https://github.com/openai/evals): A framework for evaluating large language models (LLMs) [Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/openai/evals?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Opik✨](https://github.com/comet-ml/opik): an open-source platform for evaluating, testing and monitoring LLM applications. Built by Comet. [2 Sep 2024] ![**github stars**](https://img.shields.io/github/stars/comet-ml/opik?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Pezzo✨](https://github.com/pezzolabs/pezzo): Open-source, developer-first LLMOps platform [May 2023]
+1. [Opik✨](https://github.com/comet-ml/opik): an open-source platform for evaluating, testing and monitoring LLM applications. Built by Comet. [2 Sep 2024] ![**github stars**](https://img.shields.io/github/stars/comet-ml/opik?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Pezzo✨](https://github.com/pezzolabs/pezzo): Open-source, developer-first LLMOps platform [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/pezzolabs/pezzo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [promptfoo✨](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality. [Apr 2023]
+1. [promptfoo✨](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality. [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [PromptTools✨](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Ragas✨](https://github.com/explodinggradients/ragas): Evaluation framework for your Retrieval Augmented Generation (RAG) [May 2023]
+1. [PromptTools✨](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Ragas✨](https://github.com/explodinggradients/ragas): Evaluation framework for your Retrieval Augmented Generation (RAG) [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/explodinggradients/ragas?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [traceloop openllmetry✨](https://github.com/traceloop/openllmetry): Quality monitoring for your LLM applications. [Sep 2023]
+1. [traceloop openllmetry✨](https://github.com/traceloop/openllmetry): Quality monitoring for your LLM applications. [Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [TruLens✨](https://github.com/truera/trulens): Instrumentation and evaluation tools for large language model (LLM) based applications. [Nov 2020]
+1. [TruLens✨](https://github.com/truera/trulens): Instrumentation and evaluation tools for large language model (LLM) based applications. [Nov 2020]
  ![**github stars**](https://img.shields.io/github/stars/truera/trulens?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **Challenges in evaluating AI systems**
 
+1. [30 requirements for an MLOps environment🗣️](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
 1. [Challenges in evaluating AI systems✍️](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [🗄️](./files/eval-ai-anthropic.pdf) [4 Oct 2023]
+1. [Economics of Hosting Open Source LLMs✍️](https://towardsdatascience.com/economics-of-hosting-open-source-llms-17b4ec4e7691): Comparison of cloud vendors such as AWS, Modal, BentoML, Replicate, Hugging Face Endpoints, and Beam, using metrics like processing time, cold start latency, and costs associated with CPU, memory, and GPU usage. [✨](https://github.com/ilsilfverskiold/Awesome-LLM-Resources-List) [13 Nov 2024]
 1. [Pretraining on the Test Set Is All You Need📑](https://alphaxiv.org/abs/2309.08632): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
    - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [🗣️](https://twitter.com/rasbt) [13 Sep 2023]
 1. [Sakana AI claimed 100x faster AI training, but a bug caused a 3x slowdown](https://techcrunch.com/2025/02/21/sakana-walks-back-claims-that-its-ai-can-dramatically-speed-up-model-training/): Sakana’s AI resulted in a 3x slowdown — not a speedup. [21 Feb 2025]
