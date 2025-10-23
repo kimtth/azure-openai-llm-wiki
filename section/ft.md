@@ -25,6 +25,9 @@
  ![**github stars**](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - KV Cache, Grouped Query Attention, Rotary PE  
     <img src="../files/llama2.png" width="300" />    
+  <details>
+  <summary>Pytorch code</summary>
+  
   - Rotary PE
     ```python
     def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
@@ -64,6 +67,7 @@
       # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
       values = repeat_kv(values, self.n_rep)
     ```  
+    </details>
 - [Comprehensive Guide for LLaMA with RLHF🤗](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]  
 - Official LLama Recipes incl. Finetuning: [✨](https://github.com/facebookresearch/llama-recipes)
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
@@ -151,13 +155,10 @@
   <img src="../files/rhlf.png" width="400" />  
   <img src="../files/rhlf2.png" width="400" />  
   [🗣️](https://docs.argilla.io/)
-- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index), [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html)  
- ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-  <img src="../files/TRL-readme.png" width="500" />   
-  <!-- [SFTTrainer🤗](https://huggingface.co/docs/trl/main/en/trainer#trl.SFTTrainer) from TRL -->
-  TRL: from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step  
+- Libraries: [TRL🤗](https://huggingface.co/docs/trl/index): from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step, [trlX✨](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html) ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="../files/TRL-readme.png" width="500" />  
   <img src="../files/chip.jpg" width="400" />  
-  The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/) [ⓒ 2023]
+  - The three steps in the process: 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/)
 - Machine learning technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning.
 - OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [✨](https://github.com/openai/spinningup) [Nov 2018] ![**github stars**](https://img.shields.io/github/stars/openai/spinningup?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [ORPO (odds ratio preference optimization)📑](https://alphaxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [✨](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO✍️](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024]  
