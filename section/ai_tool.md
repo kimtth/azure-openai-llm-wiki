@@ -13,7 +13,8 @@
 - [Ai2 Playground](https://playground.allenai.org/)
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [AlphaXiv](https://www.alphaxiv.org): an interactive extension of arXiv
-- [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/)
+- [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/) ![**github stars**](https://img.shields.io/github/stars/yihao-meng/AniDoc?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Cherry Studio✨](https://github.com/CherryHQ/cherry-studio): a desktop client that supports multiple LLM providers. ![**github stars**](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Content writing: <http://jasper.ai/chat> / [🗣️](https://twitter.com/slow_developer/status/1671530676045094915)
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
 - Edge and Chrome Extension & Plugin
@@ -27,11 +28,26 @@
 - [FLORA](https://www.florafauna.ai/): an AI platform integrating text, image, and video models into a unified canvas.
 - Future Tools: <https://www.futuretools.io/>
 - [God Tier Prompts](https://www.godtierprompts.com): A community driven leaderboard where the best prompts rise to the top.
+- Open Source Image Creation Tool
+  1. ComfyUI - https://github.com/comfyanonymous/ComfyUI
+  1. Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref📑](https://alphaxiv.org/abs/2412.04037) [5 Dec 2024]
 - [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.
 - [Msty](https://msty.app/):💡The easiest way to use local and online AI models
 - [napkin.ai](https://www.napkin.ai/): a text-to-visual graphics generator [7 Aug 2024]
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
+- Open Source No-Code AI Tools
+  1. Anything-LLM — https://anythingllm.com
+  1. Budibase — https://budibase.com
+  1. Coze Studio — https://www.coze.com
+  1. Dify — https://dify.ai
+  1. Flowise — https://flowiseai.com
+  1. n8n — https://n8n.io
+  1. NocoBase — https://www.nocobase.com
+  1. NocoDB — https://nocodb.com
+  1. Sim — https://www.sim.ai
+  1. Strapi — https://strapi.io
+  1. ToolJet — https://www.tooljet.ai
 - Oceans of AI - All AI Tools <https://play.google.com/store/apps/details?id=in.blueplanetapps.oceansofai&hl=en_US>
 - Open source (huggingface):🤗<http://huggingface.co/chat>
 - [Pika AI - Free AI Video Generator](https://pika.art/login)
