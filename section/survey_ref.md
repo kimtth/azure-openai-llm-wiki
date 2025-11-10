@@ -36,6 +36,7 @@
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?🔗](eval.md/#section-12-evaluating-large-language-models--llmops) > Evaluation benchmark: Benchmarks and Performance of LLMs [28 Nov 2023]
 - [Compression Algorithms for Language Models📑](https://alphaxiv.org/abs/2401.15347) [27 Jan 2024]
 - [Context Engineering for Large Language Models📑](https://alphaxiv.org/abs/2507.13334) [17 Jul 2025]
+- [Context Engineering 2.0](https://arxiv.org/abs/2510.26493) [30 Oct 2025]
 - [Data Management For Large Language Models: A Survey📑](https://alphaxiv.org/abs/2312.01700) [4 Dec 2023]
 - [Data Synthesis and Augmentation for Large Language Models📑](https://alphaxiv.org/abs/2410.12896) [16 Oct 2024]
 - [Efficient Guided Generation for Large Language Models📑](https://alphaxiv.org/abs/2307.09702):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09702)] [19 Jul 2023]

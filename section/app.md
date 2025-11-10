@@ -55,6 +55,7 @@
 ![**github stars**](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [string2string✨](https://github.com/stanfordnlp/string2string): an open-source tool that offers a comprehensive suite of efficient algorithms for a broad range of string-to-string problems. [Mar 2023]
 ![**github stars**](https://img.shields.io/github/stars/stanfordnlp/string2string?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Transformer Lab✨](https://github.com/transformerlab/transformerlab-app): Open Source Application for Advanced LLM + Diffusion Engineering: interact, train, fine-tune, and evaluation. [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/transformerlab/transformerlab-app?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [unsloth✨](https://github.com/unslothai/unsloth): Finetune Mistral, Gemma, Llama 2-5x faster with less memory! [Nov 2023]
 ![**github stars**](https://img.shields.io/github/stars/unslothai/unsloth?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Visual Blocks✨](https://github.com/google/visualblocks): Google visual programming framework that lets you create ML pipelines in a no-code graph editor. [Mar 2023]
@@ -131,6 +132,7 @@
 ![**github stars**](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
     | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory📑](https://alphaxiv.org/abs/2504.19413) [28 Apr 2025]  
 1. [Memary✨](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![**github stars**](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [OpenMemory✨](https://github.com/CaviraOSS/OpenMemory): Long-term memory for AI systems. Open source, self-hosted, and explainable. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/CaviraOSS/OpenMemory?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [zep✨](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![**github stars**](https://img.shields.io/github/stars/getzep/zep?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [May 2023]
 
 #### **LLM Application**
@@ -149,6 +151,7 @@
 1. [Customer Service Chat with AI Assistant Handoff✨](https://github.com/pereiralex/Simple-bot-handoff-sample): Seamlessly hand off to a human agent when needed. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/pereiralex/Simple-bot-handoff-sample?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [dataline✨](https://github.com/RamiAwar/dataline): Chat with your data - AI data analysis and visualization [Apr 2023]
 ![**github stars**](https://img.shields.io/github/stars/RamiAwar/dataline?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Deepnote✨](https://github.com/deepnote/deepnote): A successor of Jupyter. a data notebook for the AI. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepnote/deepnote?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Dialoqbase✨](https://github.com/n4ze3m/dialoqbase): Create custom chatbots with your own knowledge base using PostgreSQL [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/n4ze3m/dialoqbase?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DocsGPT✨](https://github.com/arc53/docsgpt): Chatbot for document with your data [Feb 2023]
@@ -185,10 +188,12 @@
 ![**github stars**](https://img.shields.io/github/stars/abi/screenshot-to-code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [SolidGPT✨](https://github.com/AI-Citizen/SolidGPT): AI searching assistant for developers (VSCode Extension) [Aug 2023]
 ![**github stars**](https://img.shields.io/github/stars/AI-Citizen/SolidGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Strix✨](https://github.com/usestrix/strix): Open-source AI Hackers to secure your Apps. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/usestrix/strix?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [SurfSense✨](https://github.com/MODSetter/SurfSense): Open-source alternative to NotebookLM, Perplexity, and Glean — integrates with your personal knowledge base, search engines, Slack, Linear, Notion, YouTube, and GitHub. ![**github stars**](https://img.shields.io/github/stars/MODSetter/SurfSense?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [July 2024]
 1. [TaxyAI/browser-extension✨](https://github.com/TaxyAI/browser-extension): Browser Automation by Chrome debugger API and Prompt > `src/helpers/determineNextAction.ts` [Mar 2023]
 1. [vanna✨](https://github.com/vanna-ai/vanna): Chat with your SQL database. Accurate Text-to-SQL Generation via LLMs using RAG. [May 2023]
 ![**github stars**](https://img.shields.io/github/stars/vanna-ai/vanna?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [ValueCell✨](https://github.com/ValueCell-ai/valuecell): a community-driven, multi-agent platform for financial applications. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/ValueCell-ai/valuecell?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 #### **Code editor / Agent**
 
@@ -302,6 +307,7 @@
 1. [surya✨](https://github.com/VikParuchuri/surya): OCR, layout analysis, reading order, table recognition in 90+ languages [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/VikParuchuri/surya?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Trafilatura✨](https://github.com/adbar/trafilatura): Gather text from the web and convert raw HTML into structured, meaningful data. [Apr 2019]
 ![**github stars**](https://img.shields.io/github/stars/adbar/trafilatura?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Token-Oriented Object Notation (TOON)✨](https://github.com/toon-format/toon): a compact, human-readable serialization format designed for passing structured data with significantly reduced token usage. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/toon-format/toon?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [unstructured✨](https://github.com/Unstructured-IO/unstructured): Open-Source Pre-Processing Tools for Unstructured Data [Sep 2022]
 ![**github stars**](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [WaterCrawl✨](https://github.com/watercrawl/WaterCrawl): Transform Web Content into LLM-Ready Data. [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/watercrawl/WaterCrawl?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

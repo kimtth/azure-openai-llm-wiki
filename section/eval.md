@@ -77,6 +77,7 @@
 
  #### Other Benchmarks
 
+- [Alpha Arena](https://nof1.ai/): a benchmark designed to measure AI's investing abilities. [Oct 2025]
 - [Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering📑](https://alphaxiv.org/abs/2411.09213) [14 Nov 2024]
 - [Korean SAT LLM Leaderboard✨](https://github.com/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard): Benchmarking 10 years of Korean CSAT (College Scholastic Ability Test) exams [Oct 2024]
 ![**github stars**](https://img.shields.io/github/stars/Marker-Inc-Korea/Korean-SAT-LLM-Leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -112,6 +113,7 @@
 1. [circuit‑tracer✨](https://github.com/safety-research/circuit-tracer): Anthrophic. Tool for finding and visualizing circuits within large language models. a circuit is a minimal, causal computation pathway inside a transformer model that shows how internal features lead to a specific output. [May 2025] ![**github stars**](https://img.shields.io/github/stars/safety-research/circuit-tracer?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DeepEval✨](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
  ![**github stars**](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [DeepTeam✨](https://github.com/confident-ai/deepteam): A LLM Red Teaming Framework. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/confident-ai/deepteam?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Giskard✨](https://github.com/Giskard-AI/giskard): The testing framework for ML models, from tabular to LLMs [Mar 2022] ![**github stars**](https://img.shields.io/github/stars/Giskard-AI/giskard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Langfuse](https://langfuse.com): [✨](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023] 
  ![**github stars**](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
