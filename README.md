@@ -4,15 +4,15 @@
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
 ![GitHub Created At](https://img.shields.io/github/created-at/kimtth/awesome-azure-openai-llm?style=flat-square)
 
-> A comprehensive, curated collection of resources for Azure OpenAI, Large Language Models (LLMs), and their applications.
-
-This repository serves as a comprehensive guide to the rapidly evolving field of LLMs and Azure OpenAI services. Key features:
+A comprehensive, curated collection of resources for Azure OpenAI, Large Language Models (LLMs), and their applications.
 
 🔹Concise Summaries: Each resource is briefly described for quick understanding  
 🔹Chronological Organization: Resources appended with date (first commit, publication, or paper release)  
 🔹Active Tracking: Regular updates to capture the latest developments  
 
-> Note: Some content may become outdated due to the rapid pace of development in this field.
+> [!TIP]
+> A refined list focusing on Azure and Microsoft products.  
+> Check [**_Awesome Azure OpenAI & Copilot_**](https://github.com/kimtth/awesome-azure-openai-copilot).   
 
 ## Quick Navigation
 
@@ -27,7 +27,7 @@ This repository serves as a comprehensive guide to the rapidly evolving field of
 
 Key topics:
 - RAG: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag)
-- Application: [AI Application](section/applications.md#ai-application) ([Caching](section/applications.md#caching), [Data Processing](section/applications.md#data-processing), [Gateway](section/applications.md#gateway), [Memory](section/applications.md#memory))
+- Application: [AI Application](section/applications.md#ai-application) ([Agent & Application](section/applications.md#agent--application), [No Code & UI](section/applications.md#no-code--user-interface), [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services), [Caching](section/applications.md#caching), [Data Processing](section/applications.md#data-processing), [Gateway](section/applications.md#gateway), [Memory](section/applications.md#memory))
 - Agent Protocols: [Agent Protocol](section/applications.md#agent-protocol) ([MCP](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer Use](section/applications.md#computer-use))
 - Coding & Research: [Coding](section/applications.md#coding), [Domain-Specific](section/applications.md#domain-specific), [Deep Research](section/applications.md#deep-research)
 - Frameworks: [Top Agent Frameworks](section/applications.md#top-agent-frameworks), [Orchestration](section/applications.md#ochestration-framework) ([LangChain](section/applications.md#langchain), [LlamaIndex](section/applications.md#llamaindex), [Semantic Kernel](section/applications.md#semantic-kernel), [DSPy](section/applications.md#dspy))
@@ -79,8 +79,6 @@ Key topics:
 - Agent: [Agent Best Practices](section/best_practices.md#agent-best-practices), [Agentic Design Frameworks](section/best_practices.md#agentic-design-frameworks), [Agent Design Patterns](section/best_practices.md#agent-design-patterns)
 - Tool Use: [Tool Use](section/best_practices.md#tool-use-llm-to-master-apis)
 - Reference: [Proposals & Glossary](section/best_practices.md#proposals--glossary)
-
----
 
 ## Legend & Notation
 
