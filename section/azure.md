@@ -9,8 +9,6 @@
 - [Microsoft Research](#microsoft-research)
 - [Azure Reference Architectures](#azure-reference-architectures)
 
----
-
 ### **Azure OpenAI vs OpenAI**
 
 1. OpenAI offers the latest features and models, while Azure OpenAI provides a reliable, secure, and compliant environment with seamless integration into other Azure services.

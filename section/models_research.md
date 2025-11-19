@@ -21,8 +21,6 @@
   - [Build an LLMs from Scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt)
   - [Business Use Cases](#business-use-cases)
 
----
-
 ## **Large Language Model: Landscape**
 
 #### Large Language Models (in 2023)

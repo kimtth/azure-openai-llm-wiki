@@ -14,8 +14,6 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
   - [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
 - [Proposals & Glossary](#proposals--glossary)
 
----
-
 ## **RAG Best Practices**
 
 ### **The Problem with RAG**
@@ -104,8 +102,6 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Towards AI Search Paradigm📑](https://alphaxiv.org/abs/2506.17188): Baidu. A modular, 4-agent LLM system: master (coordinator), planner (task decomposition), executor (tool use & retrieval), writer (answer synthesis), leveraging DAG for agentic AI search. [20 Jun 2025]
 - [UniversalRAG📑](https://alphaxiv.org/abs/2504.20734): A framework for modality-aware routing across image, text, and video. It features granularity-aware routing (e.g., paragraphs, documents for text, video clips) and supports flexible routing methods (zero-shot vs trained). [29 Apr 2025]
 
----
-
 ## **Agent Best Practices**
 
 ### **Agentic Design Frameworks**
@@ -113,19 +109,6 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
 - [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 - [Agent Leaderboard v2✨](https://github.com/rungalileo/agent-leaderboard) ![**github stars**](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- Agentic Design Frameworks focus on managing autonomous or semi-autonomous AI agents for complex tasks.
-- e.g., [Autogen✨](https://github.com/microsoft/autogen), and [crewAI✨](https://github.com/joaomdmoura/CrewAI)
- ![**github stars**](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
- - [900 most popular open source AI tools](https://huyenchip.com/2024/03/14/ai-oss.html):🏆What I learned from looking at 900 most popular open source AI tools [list](https://huyenchip.com/llama-police) [Mar 2024]
-- [Awesome LLM Apps✨](https://github.com/Shubhamsaboo/awesome-llm-apps):💡A curated collection of awesome LLM apps built with RAG and AI agents. [Apr 2024]
- ![**github stars**](https://img.shields.io/github/stars/Shubhamsaboo/awesome-llm-apps?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Azure OpenAI Samples✨](https://github.com/kimtth/azure-openai-cookbook): 🐳 Azure OpenAI (OpenAI) Sample Collection - 🪂 100+ Code Cookbook 🧪 [Mar 2025]
-- [GenAI Agents✨](https://github.com/NirDiamant/GenAI_Agents):🏆Tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. [Sep 2024]
- ![**github stars**](https://img.shields.io/github/stars/NirDiamant/GenAI_Agents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [GenAI Cookbook✨](https://github.com/dmatrix/genai-cookbook): A mixture of Gen AI cookbook recipes for Gen AI applications. [Nov 2023] ![**github stars**](https://img.shields.io/github/stars/dmatrix/genai-cookbook?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Generative AI Design Patterns✍️](https://towardsdatascience.com/generative-ai-design-patterns-a-comprehensive-guide-41425a40d7d0): 9 architecture patterns for working with LLMs. [Feb 2024]
-- [Open100: Top 100 Open Source achievements.](https://www.benchcouncil.org/evaluation/opencs/annual.html)
-- [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
 
 #### **Agent Design Patterns**
 - [10 Lessons to Get Started Building AI Agents✨](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -186,6 +169,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Language Agent Tree Search Method (LATS)✨](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Taxonomy of failure modes in AI agents ✍️](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
+- [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
 - [The Rise and Potential of Large Language Model Based Agents: A Survey📑](https://alphaxiv.org/abs/2309.07864): The papers list for LLM-based agents [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.07864)] / [✨](https://github.com/WooooDyy/LLM-Agent-Paper-List) [14 Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [When One AI Agent Isn't Enough - Building Multi-Agent Systems✍️](https://diamantai.substack.com/p/when-one-ai-agent-isnt-enough-building): When Multi-Agent Systems Make Sense: Complex subtasks, diverse expertise, parallel speed, easy scaling, and multi-entity problems. [Jul 14]
@@ -206,8 +190,6 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
  ![**github stars**](https://img.shields.io/github/stars/OpenBMB/ToolBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [ToolShed📑](https://alphaxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models📑](https://alphaxiv.org/abs/2305.16291): The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
-
----
 
 ### **Proposals & Glossary**
 
