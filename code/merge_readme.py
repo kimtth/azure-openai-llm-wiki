@@ -25,10 +25,10 @@ def replace_section_links(content, section_files):
 def merge_markdowns(section_dir, existing_readme, output_file):
     section_files = [
         "applications.md",
-        "best_practices.md",
         "azure.md",
         "models_research.md",
-        "tools_extra.md"
+        "tools_extra.md",
+        "best_practices.md"
     ]
     with open(output_file, "w", encoding="utf-8") as outfile:
         if os.path.exists(existing_readme):

@@ -1,26 +1,25 @@
 # Tools, Datasets, and Evaluation
 
-### **Table of Contents**
+### **Contents**
 
 - [General AI Tools and Extensions](#general-ai-tools-and-extensions)
-  - [LLM for Robotics](#llm-for-robotics)
-  - [Awesome Demo](#awesome-demo)
+- [LLM for Robotics](#llm-for-robotics)
+- [Awesome Demo](#awesome-demo)
 - [Datasets for LLM Training](#datasets-for-llm-training)
-- [Evaluating Large Language Models & LLMOps](#evaluating-large-language-models--llmops)
-  - [Evaluating Large Language Models](#evaluating-large-language-models)
-  - [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
+- [Evaluating Large Language Models](#evaluating-large-language-models)
+- [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
 
 ## **General AI Tools and Extensions**
 
 - [5 LLM-based Apps for Developers](https://hackernoon.com/5-llm-based-apps-for-developers): Github Copilot, Cursor IDE, Tabnine, Warp, Replit Agent
 - AI Search engine:
-  1. [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
-  1. [Perplexity](http://perplexity.ai) [Dec 2022]
-    - [Perplexity comet](https://www.perplexity.ai/comet): agentic browser [9 Jul 2025]
-  1. [GenSpark](https://www.genspark.ai/): AI agents engine perform research and generate custom pages called Sparkpages. [18 Jun 2024]
-  1. [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024]
-  1. [Goover](https://goover.ai/) 
-  1. [oo.ai](https://oo.ai): Open Research. Fastest AI Search.
+  - [Phind](https://www.phind.com/search): AI-Powered Search Engine for Developers [July 2022]
+  - [Perplexity](http://perplexity.ai) [Dec 2022]
+  - [Perplexity comet](https://www.perplexity.ai/comet): agentic browser [9 Jul 2025]
+  - [GenSpark](https://www.genspark.ai/): AI agents engine perform research and generate custom pages called Sparkpages. [18 Jun 2024]
+  - [felo.ai](https://felo.ai/search): Sparticle Inc. in Tokyo, Japan [04 Sep 2024]
+  - [Goover](https://goover.ai/) 
+  - [oo.ai](https://oo.ai): Open Research. Fastest AI Search.
 - AI Tools: <https://aitoolmall.com/>
 - [Ai2 Playground](https://playground.allenai.org/)
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
@@ -41,25 +40,25 @@
 - Future Tools: <https://www.futuretools.io/>
 - [God Tier Prompts](https://www.godtierprompts.com): A community driven leaderboard where the best prompts rise to the top.
 - Open Source Image Creation Tool
-  1. ComfyUI - https://github.com/comfyanonymous/ComfyUI
-  1. Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  - ComfyUI - https://github.com/comfyanonymous/ComfyUI
+  - Stable Diffusion web UI - https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - [INFP: Audio-Driven Interactive Head Generation in Dyadic Conversations](https://grisoon.github.io/INFP/) [ref📑](https://alphaxiv.org/abs/2412.04037) [5 Dec 2024]
 - [MGX (MetaGPT X)](https://mgx.dev/): Multi-agent collaboration platform to develop an application.
 - [Msty](https://msty.app/):💡The easiest way to use local and online AI models
 - [napkin.ai](https://www.napkin.ai/): a text-to-visual graphics generator [7 Aug 2024]
 - Newsletters & Tool Databas: <https://www.therundown.ai/>
 - Open Source No-Code AI Tools
-  1. Anything-LLM — https://anythingllm.com
-  1. Budibase — https://budibase.com
-  1. Coze Studio — https://www.coze.com
-  1. Dify — https://dify.ai
-  1. Flowise — https://flowiseai.com
-  1. n8n — https://n8n.io
-  1. NocoBase — https://www.nocobase.com
-  1. NocoDB — https://nocodb.com
-  1. Sim — https://www.sim.ai
-  1. Strapi — https://strapi.io
-  1. ToolJet — https://www.tooljet.ai
+  - Anything-LLM — https://anythingllm.com
+  - Budibase — https://budibase.com
+  - Coze Studio — https://www.coze.com
+  - Dify — https://dify.ai
+  - Flowise — https://flowiseai.com
+  - n8n — https://n8n.io
+  - NocoBase — https://www.nocobase.com
+  - NocoDB — https://nocodb.com
+  - Sim — https://www.sim.ai
+  - Strapi — https://strapi.io
+  - ToolJet — https://www.tooljet.ai
 - Oceans of AI - All AI Tools <https://play.google.com/store/apps/details?id=in.blueplanetapps.oceansofai&hl=en_US>
 - Open source (huggingface):🤗<http://huggingface.co/chat>
 - [Pika AI - Free AI Video Generator](https://pika.art/login)
@@ -78,7 +77,7 @@
 - [websim.ai](https://websim.ai/): a web editor and simulator that can generate websites. [1 Jul 2024]
 - allAIstartups: <https://www.allaistartups.com/ai-tools>
 
-### **LLM for Robotics**
+## **LLM for Robotics**
 
 - PromptCraft-Robotics: Robotics and a robot simulator with ChatGPT integration [✨](https://github.com/microsoft/PromptCraft-Robotics) [Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/PromptCraft-Robotics?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -91,7 +90,7 @@
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
 - [Gemini Robotics](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/): Robotics built on the foundation of Gemini 2.0 [12 Mar 2025]
 
-### **Awesome demo**
+## **Awesome demo**
 
 - [FRVR Official Teaser📺](https://youtu.be/Yjjpr-eAkqw): Prompt to Game: AI-powered end-to-end game creation [16 Jun 2023]
 - [rewind.ai](https://www.rewind.ai/): Rewind captures everything you’ve seen on your Mac and iPhone [Nov 2023]
@@ -104,8 +103,8 @@
 ## **Datasets for LLM Training**
 
 - LLM-generated datasets:
-  1. [Self-Instruct📑](https://alphaxiv.org/abs/2212.10560): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.10560)]: Seed task pool with a set of human-written instructions. [20 Dec 2022]
-  1. [Self-Alignment with Instruction Backtranslation📑](https://alphaxiv.org/abs/2308.06259): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.06259)]: Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation. [11 Aug 2023]
+  - [Self-Instruct📑](https://alphaxiv.org/abs/2212.10560): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.10560)]: Seed task pool with a set of human-written instructions. [20 Dec 2022]
+  - [Self-Alignment with Instruction Backtranslation📑](https://alphaxiv.org/abs/2308.06259): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.06259)]: Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation. [11 Aug 2023]
 - [LLMDataHub: Awesome Datasets for LLM Training✨](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
  ![**github stars**](https://img.shields.io/github/stars/Zjh-819/LLMDataHub?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Open LLMs and Datasets✨](https://github.com/eugeneyan/open-llms): A list of open LLMs available for commercial use.
@@ -176,9 +175,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
   | What do you know about the city of Aberdeen in Scotland? | Aberdeen is a city located in the North East of Scotland. It is known for its granite architecture and its offshore oil industry. | As an AI language model, I don't have personal knowledge or experiences about Aberdeen. |
   | Describe thunderstorm season in the United States and Canada. | Thunderstorm season in the United States and Canada typically occurs during the spring and summer months, when warm, moist air collides with cooler, drier air, creating the conditions for thunderstorms to form. | Describe thunderstorm season in the United States and Canada. |
 
-## **Evaluating Large Language Models & LLMOps**
-
-### **Evaluating Large Language Models**
+## **Evaluating Large Language Models**
 
 - [Artificial Analysis LLM Performance Leaderboard🤗](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard): Performance benchmarks & pricing across API providers of LLMs
 - Awesome LLMs Evaluation Papers: Evaluating Large Language Models: A Comprehensive Survey [✨](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers) [Oct 2023]
@@ -270,20 +267,20 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 ### **Evaluation Metrics**
 
 - [Evaluating LLMs and RAG Systems✍️](https://dzone.com/articles/evaluating-llms-and-rag-systems) (Jan 2025)
-1. Automated evaluation
-    - **n-gram metrics**: ROUGE, BLEU, METEOR → compare overlap with reference text.
-      - *ROUGE*: multiple variants (N, L, W, S, SU) based on n-gram, LCS, skip-bigrams.
-      - *BLEU*: 0–1 score for translation quality.
-      - *METEOR*: precision + recall + semantic similarity.
-    - **Probabilistic metrics**: *Perplexity* → lower is better predictive performance.
-    - **Embedding metrics**: Ada Similarity, BERTScore → semantic similarity using embeddings.
-2. Human evaluation
+- Automated evaluation
+  - **n-gram metrics**: ROUGE, BLEU, METEOR → compare overlap with reference text.
+  - *ROUGE*: multiple variants (N, L, W, S, SU) based on n-gram, LCS, skip-bigrams.
+  - *BLEU*: 0–1 score for translation quality.
+  - *METEOR*: precision + recall + semantic similarity.
+  - **Probabilistic metrics**: *Perplexity* → lower is better predictive performance.
+  - **Embedding metrics**: Ada Similarity, BERTScore → semantic similarity using embeddings.
+- Human evaluation
     - Measures **relevance, fluency, coherence, groundedness**.
     - Automated with LLM-based evaluators.
-3. Built-in methods
+- Built-in methods
     - Prompt flow evaluation methods: [✍️](https://qiita.com/nohanaga/items/b68bf5a65142c5af7969) [Aug 2023] / [✍️](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-bulk-test-evaluate-flow)
 
-### **LLMOps: Large Language Model Operations**
+## **LLMOps: Large Language Model Operations**
 
 1. [agenta✨](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Azure ML Prompt flow](https://microsoft.github.io/promptflow/index.html): A set of LLMOps tools designed to facilitate the creation of LLM-based AI applications [Sep 2023] > [How to Evaluate & Upgrade Model Versions in the Azure OpenAI Service✍️](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/how-to-evaluate-amp-upgrade-model-versions-in-the-azure-openai/ba-p/4218880) [14 Aug 2024]
@@ -323,7 +320,6 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [30 requirements for an MLOps environment🗣️](https://x.com/KirkDBorne/status/1679952405805555713): Kirk Borne twitter [15 Jul 2023]
 1. [Challenges in evaluating AI systems✍️](https://www.anthropic.com/index/evaluating-ai-systems): The challenges and limitations of various methods for evaluating AI systems, such as multiple-choice tests, human evaluations, red teaming, model-generated evaluations, and third-party audits. [🗄️](../files/eval-ai-anthropic.pdf) [4 Oct 2023]
 1. [Economics of Hosting Open Source LLMs✍️](https://towardsdatascience.com/economics-of-hosting-open-source-llms-17b4ec4e7691): Comparison of cloud vendors such as AWS, Modal, BentoML, Replicate, Hugging Face Endpoints, and Beam, using metrics like processing time, cold start latency, and costs associated with CPU, memory, and GPU usage. [✨](https://github.com/ilsilfverskiold/Awesome-LLM-Resources-List) [13 Nov 2024]
-1. [Pretraining on the Test Set Is All You Need📑](https://alphaxiv.org/abs/2309.08632): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]
-   - On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [🗣️](https://twitter.com/rasbt) [13 Sep 2023]
+1. [Pretraining on the Test Set Is All You Need📑](https://alphaxiv.org/abs/2309.08632): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.08632)]: On that note, in the satirical Pretraining on the Test Set Is All You Need paper, the author trains a small 1M parameter LLM that outperforms all other models, including the 1.3B phi-1.5 model. This is achieved by training the model on all downstream academic benchmarks. It appears to be a subtle criticism underlining how easily benchmarks can be "cheated" intentionally or unintentionally (due to data contamination). [🗣️](https://twitter.com/rasbt) [13 Sep 2023]
 1. [Sakana AI claimed 100x faster AI training, but a bug caused a 3x slowdown](https://techcrunch.com/2025/02/21/sakana-walks-back-claims-that-its-ai-can-dramatically-speed-up-model-training/): Sakana’s AI resulted in a 3x slowdown — not a speedup. [21 Feb 2025]
 1. [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) [29 Mar 2024] / [How to Evaluate LLM Applications: The Complete Guide](https://www.confident-ai.com/blog/how-to-evaluate-llm-applications) [7 Nov 2023]

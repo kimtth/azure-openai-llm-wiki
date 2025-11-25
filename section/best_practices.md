@@ -2,14 +2,13 @@
 
 This file curates blogs (✍️), best practices, architectural guidance, and implementation tips from across all LLM topics.
 
-### **Table of Contents**
+### **Contents**
 
 - [RAG Best Practices](#rag-best-practices)
   - [The Problem with RAG](#the-problem-with-rag)
   - [RAG Solution Design](#rag-solution-design)
   - [RAG Research](#rag-research)
 - [Agent Best Practices](#agent-best-practices)
-  - [Agentic Design Frameworks](#agentic-design-frameworks)
   - [Agent Design Patterns](#agent-design-patterns)
   - [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
 - [Proposals & Glossary](#proposals--glossary)
@@ -22,9 +21,9 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - Solving the core challenges of Retrieval-Augmented Generation [✍️](https://towardsdatascience.com/12-rag-pain-points-and-proposed-solutions-43709939a28c) [Feb 2024] <br/>
   <img src="../files/rag-12-pain-points-solutions.jpg" width="500">
 - The Problem with RAG
-  1. A question is not semantically similar to its answers. Cosine similarity may favor semantically similar texts that do not contain the answer.
-  1. Semantic similarity gets diluted if the document is too long. Cosine similarity may favor short documents with only the relevant information.
-  1. The information needs to be contained in one or a few documents. Information that requires aggregations by scanning the whole data.
+  - A question is not semantically similar to its answers. Cosine similarity may favor semantically similar texts that do not contain the answer.
+  - Semantic similarity gets diluted if the document is too long. Cosine similarity may favor short documents with only the relevant information.
+  - The information needs to be contained in one or a few documents. Information that requires aggregations by scanning the whole data.
 
 ### **RAG Solution Design**
 
@@ -104,13 +103,12 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 
 ## **Agent Best Practices**
 
-### **Agentic Design Frameworks**
-
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
 - [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 - [Agent Leaderboard v2✨](https://github.com/rungalileo/agent-leaderboard) ![**github stars**](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-#### **Agent Design Patterns**
+### **Agent Design Patterns**
+
 - [10 Lessons to Get Started Building AI Agents✨](https://github.com/microsoft/ai-agents-for-beginners): 💡Microsoft. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [5 Agentic AI Design Patterns✍️](https://blog.dailydoseofds.com/p/5-agentic-ai-design-patterns): Reflection, Tool use, ReAct, Planning, Multi-agent pattern [24 Jan 2025]
 - [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs📑](https://alphaxiv.org/abs/2505.23006): 1. DAG-based workflows for e-commerce tasks. 2. A prototype agent generates responses, with human annotations used to build the dataset. 3. Response and loss masking isolate node outputs and losses to prevent conflicts between nodes. [29 May 2025]
@@ -122,26 +120,6 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Agentic AI Architecture Framework for Enterprises ✍️](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous (experimental) [11 Jul 2025]
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
 - [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models📑](https://alphaxiv.org/abs/2510.04618): Agentic Context Engineering (ACE) lets language models self-improve by evolving their contexts without any fine-tuning. [6 Oct 2025]
-- Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
-  - Reflection: LLM self-evaluates to improve.
-    - [Self-Refine📑](https://alphaxiv.org/abs/2303.17651) [30 Mar 2023]
-    - [Reflexion📑](https://alphaxiv.org/abs/2303.11366) [20 Mar 2023]
-    - [CRITIC📑](https://alphaxiv.org/abs/2305.11738) [19 May 2023]
-  - Tool use: LLM uses tools for information gathering, action, or data processing.
-    - [Gorilla📑](https://alphaxiv.org/abs/2305.15334) [24 May 2023]
-    - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://alphaxiv.org/abs/2303.11381) [20 Mar 2023]
-    - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://alphaxiv.org/abs/2401.17464) [30 Jan 2024]
-    - [Executable Code Actions Elicit Better LLM Agents📑](https://alphaxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
-  - Planning: LLM devises and executes multistep plans to reach goals.
-    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://alphaxiv.org/abs/2201.11903) [28 Jan 2022]
-    - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://alphaxiv.org/abs/2303.17580) [30 Mar 2023]
-    - [Understanding the planning of LLM agents: A survey📑](https://alphaxiv.org/abs/2402.02716) [5 Feb 2024]
-  - Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
-    - [Communicative Agents for Software Development📑](https://alphaxiv.org/abs/2307.07924) [16 Jul 2023]
-    - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://alphaxiv.org/abs/2308.08155) [16 Aug 2023]
-    - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://alphaxiv.org/abs/2308.00352) [1 Aug 2023]
-    - Framework: [Autogen✨](https://github.com/microsoft/autogen) / [LangGraph✨](https://github.com/langchain-ai/langgraph) / [crewAI✨](https://github.com/joaomdmoura/CrewAI)
- ![**github stars**](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/joaomdmoura/CrewAI?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Agentic Design Patterns✍️](https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0#heading=h.pxcur8v2qagu): Google Docs. A Hands-On Guide to Building Intelligent Systems. [🗄️](../files/archive/Agentic_Design_Patterns.docx) [May 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [Agents Are Not Enough📑](https://alphaxiv.org/abs/2412.16241): Proposes an ecosystem comprising agents (task executors), sims (user preferences and behavior), and assistants (human-in-the-loop). [19 Dec 2024]
@@ -167,6 +145,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [How we built our multi-agent research system✍️](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 - [Hugging Face Agents Course✨](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Language Agent Tree Search Method (LATS)✨](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Solving a Million-Step LLM Task with Zero Errors📑](https://arxiv.org/abs/2511.09030): MDAP framework: MAKER (for Maximal Agentic decomposition, first-to-ahead-by-K Error correction, and Red-flagging) [12 Nov 2025] [✨](https://github.com/mpesce/MDAP) ![**github stars**](https://img.shields.io/github/stars/mpesce/MDAP?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Taxonomy of failure modes in AI agents ✍️](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
 - [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
@@ -175,14 +154,35 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [When One AI Agent Isn't Enough - Building Multi-Agent Systems✍️](https://diamantai.substack.com/p/when-one-ai-agent-isnt-enough-building): When Multi-Agent Systems Make Sense: Complex subtasks, diverse expertise, parallel speed, easy scaling, and multi-entity problems. [Jul 14]
 - [Zero to One: Learning Agentic Patterns](https://www.philschmid.de/agentic-pattern):💡Structured `workflows` follow fixed paths, while `agentic patterns` allow autonomous, dynamic decision-making. Sample code using Gemini. [5 May 2025]
 
+### **Reflection, Tool Use, Planning and Multi-agent collaboration**
+
+- Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
+  - Reflection: LLM self-evaluates to improve.
+    - [Self-Refine📑](https://alphaxiv.org/abs/2303.17651) [30 Mar 2023]
+    - [Reflexion📑](https://alphaxiv.org/abs/2303.11366) [20 Mar 2023]
+    - [CRITIC📑](https://alphaxiv.org/abs/2305.11738) [19 May 2023]
+  - Tool use: LLM uses tools for information gathering, action, or data processing.
+    - [Gorilla📑](https://alphaxiv.org/abs/2305.15334) [24 May 2023]
+    - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://alphaxiv.org/abs/2303.11381) [20 Mar 2023]
+    - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://alphaxiv.org/abs/2401.17464) [30 Jan 2024]
+    - [Executable Code Actions Elicit Better LLM Agents📑](https://alphaxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
+  - Planning: LLM devises and executes multistep plans to reach goals.
+    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://alphaxiv.org/abs/2201.11903) [28 Jan 2022]
+    - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://alphaxiv.org/abs/2303.17580) [30 Mar 2023]
+    - [Understanding the planning of LLM agents: A survey📑](https://alphaxiv.org/abs/2402.02716) [5 Feb 2024]
+  - Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
+    - [Communicative Agents for Software Development📑](https://alphaxiv.org/abs/2307.07924) [16 Jul 2023]
+    - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://alphaxiv.org/abs/2308.08155) [16 Aug 2023]
+    - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://alphaxiv.org/abs/2308.00352) [1 Aug 2023]
+
 ### **Tool Use: LLM to Master APIs**
 
 - [APIGen📑](https://alphaxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard_live.html) V2 [Aug 2024]
 - [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models📑](https://alphaxiv.org/abs/2304.09842): Different tasks require different tools, and different models show different tool preferences—e.g., ChatGPT favors image captioning, while GPT-4 leans toward knowledge retrieval. [Tool transition](https://chameleon-llm.github.io/) [19 Apr 2023]
 - [Gorilla: An API store for LLMs📑](https://alphaxiv.org/abs/2305.15334): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.15334)]: Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [✨](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![**github stars**](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-  1. Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.  
-  1. Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.  
+  - Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.  
+  - Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.  
   > Another user asked how Gorilla compared to LangChain; Patil replied: LangChain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into LangChain! [cite✍️](https://www.infoq.com/news/2023/07/microsoft-gorilla/) [04 Jul 2023]  
 - [Toolformer📑](https://alphaxiv.org/abs/2302.04761): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.04761)]: Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [✨](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/lucidrains/toolformer-pytorch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

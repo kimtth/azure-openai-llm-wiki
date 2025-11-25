@@ -1,6 +1,6 @@
 # Models and Research
 
-### **Table of Contents**
+### **Contents**
 
 - [Large Language Model: Landscape](#large-language-model-landscape)
   - [Large Language Model Comparison](#large-language-model-comparison)
@@ -13,8 +13,9 @@
 - [Large Language Model: Challenges and Solutions](#large-language-model-challenges-and-solutions)
   - [Context Constraints](#context-constraints)
   - [Trustworthy, Safe and Secure LLM](#trustworthy-safe-and-secure-llm)
-  - [Large Language Model's Abilities](#large-language-models-abilities)
-  - [OpenAI's Roadmap and Products](#openais-roadmap-and-products)
+  - [Large Language Model's Abilities](#large-language-model-is-abilities)
+  - [Reasoning](#reasoning)
+  - [OpenAI's Products](#openais-products)
   - [AGI Discussion and Social Impact](#agi-discussion-and-social-impact)
 - [Survey and Reference](#survey-and-reference)
   - [Survey on Large Language Models](#survey-on-large-language-models)
@@ -103,74 +104,77 @@
 
 - Ai2 (Allen Institute for AI)
   - Founded by Paul Allen, the co-founder of Microsoft, in Sep 2024.
+  - [DR Tulu✨](https://github.com/rlresearch/DR-Tulu): 8B. Deep Research (DR) model trained for long-form DR tasks. [Nov 2025]
   - [OLMo📑](https://alphaxiv.org/abs/2402.00838):💡Truly open language model and framework to build, study, and advance LMs, along with the training data, training and evaluation code, intermediate model checkpoints, and training logs. [✨](https://github.com/allenai/OLMo) [Feb 2024]
   - [OLMo 2](https://allenai.org/blog/olmo2) [26 Nov 2024]
   ![**github stars**](https://img.shields.io/github/stars/allenai/OLMo?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/allenai/OLMoE?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [OLMo 3✍️](https://allenai.org/blog/olmo3): Fully open models including the entire flow. [20 Nov 2025]
   - [OLMoE✨](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
   - [TÜLU 3📑](https://alphaxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [✨](https://github.com/allenai/open-instruct) / demo:[✍️](https://playground.allenai.org/) [22 Nov 2024] ![**github stars**](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Alibaba
-  1. Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
+  - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
 - Amazon
-  1. [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
-  1. [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://alphaxiv.org/abs/2506.12103) [17 Mar 2025]
+  - [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
+  - [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://alphaxiv.org/abs/2506.12103) [17 Mar 2025]
 - Anthrophic
-  1. [Claude 3✍️](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
-  1. [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
-  1. [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
-  1. [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
-  1. [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
+  - [Claude 3✍️](https://www.anthropic.com/news/claude-3-family), the largest version of the new LLM, outperforms rivals GPT-4 and Google’s Gemini 1.0 Ultra. Three variants: Opus, Sonnet, and Haiku. [Mar 2024]
+  - [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
+  - [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
+  - [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
+  - [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
 - Apple
-  1. [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
-  1. [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
+  - [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
+  - [Apple Intelligence Foundation Language Models](https://machinelearning.apple.com/research/apple-intelligence-foundation-language-models): 1. A 3B on-device model used for language tasks like summarization and Writing Tools. 2. A large Server model used for language tasks too complex to do on-device. [10 Jun 2024]
 - Baidu
-  1. [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
-  1. A list of models & libraries: [✨](https://github.com/PaddlePaddle/ERNIE)
+  - [ERNIE Bot's official website](https://yiyan.baidu.com/): ERNIE X1 (deep-thinking reasoning) and ERNIE 4.5 (multimodal) [16 Mar 2025]
+  - A list of models & libraries: [✨](https://github.com/PaddlePaddle/ERNIE)
 - Chatbot Arena🤗
   - [Chatbot Arena🤗](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard): Benchmarking LLMs in the Wild with Elo Ratings
 - Cohere
   - Founded in 2019. Canadian multinational tech.
-  1. [Command R+🤗](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
-  1. [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
+  - [Command R+🤗](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
+  - [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
 - Databricks
-  1. [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [✨](https://github.com/databricks/dbrx) [27 Mar 2024]
+  - [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [✨](https://github.com/databricks/dbrx) [27 Mar 2024]
  ![**github stars**](https://img.shields.io/github/stars/databricks/dbrx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
-  1. [DeepSeek-V3✨](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
-  1. [DeepSeek-R1✨](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref📑](https://alphaxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
-  1. [Janus✨](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
-  1. [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
-  1. [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
-  1. [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
-  1. [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. A list of models: [✨](https://github.com/deepseek-ai)
+  - [DeepSeek-V3✨](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
+  - [DeepSeek-R1✨](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref📑](https://alphaxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
+  - [Janus✨](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
+  - [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
+  - [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
+  - [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
+  - [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - A list of models: [✨](https://github.com/deepseek-ai)
 - EleutherAI
   - Founded in July 2020. United States tech. GPT-Neo, GPT-J, GPT-NeoX, and The Pile dataset.
   - [Pythia📑](https://alphaxiv.org/abs/2304.01373): How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [✨](https://github.com/EleutherAI/pythia) [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/EleutherAI/pythia?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Google
-  1. [Foundation Models](https://ai.google/discover/our-models/): Gemini, Veo, Gemma etc.
-  1. [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [✨](https://github.com/google-deepmind/gemma) / Pytorch [✨](https://github.com/google/gemma_pytorch) [Feb 2024]
+  - [Foundation Models](https://ai.google/discover/our-models/): Gemini, Veo, Gemma etc.
+  - [Gemma](http://ai.google.dev/gemma): Open weights LLM from Google DeepMind. [✨](https://github.com/google-deepmind/gemma) / Pytorch [✨](https://github.com/google/gemma_pytorch) [Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/google-deepmind/gemma?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/google/gemma_pytorch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [Gemma 2](https://www.kaggle.com/models/google/gemma-2/) 2B, 9B, 27B [ref: releases](https://ai.google.dev/gemma/docs/releases) [Jun 2024]
-  1. [Gemma 3](https://developers.googleblog.com/en/introducing-gemma3/):  Single GPU. Context
+  - [Gemma 2](https://www.kaggle.com/models/google/gemma-2/) 2B, 9B, 27B [ref: releases](https://ai.google.dev/gemma/docs/releases) [Jun 2024]
+  - [Gemma 3](https://developers.googleblog.com/en/introducing-gemma3/):  Single GPU. Context
 length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf) [12 Mar 2025]
-  1. [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
-  1. [Gemini 1.5✍️](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
-  1. [Gemini 2 Flash✍️](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
-  1. Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
-  1. [Gemini 2.5✍️](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025] -> [I/O 2025✍️](https://blog.google/technology/ai/io-2025-keynote) Deep Think, 1M-token context, Native audio output, Project Mariner: AI-powered computer control. [20 May 2025] [Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities.📑](https://alphaxiv.org/abs/2507.06261)
-  1. [Gemma 3n](https://developers.googleblog.com/en/introducing-gemma-3n/): The next generation of Gemini Nano. Gemma 3n uses DeepMind’s Per-Layer Embeddings (PLE) to run 5B/8B models at 2GB/3GB RAM. [20 May 2025]
-  1. [gemini/cookbook✨](https://github.com/google-gemini/cookbook)
+  - [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
+  - [Gemini 1.5✍️](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
+  - [Gemini 2 Flash✍️](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
+  - Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
+  - [Gemini 2.5✍️](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025] -> [I/O 2025✍️](https://blog.google/technology/ai/io-2025-keynote) Deep Think, 1M-token context, Native audio output, Project Mariner: AI-powered computer control. [20 May 2025] [Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities.📑](https://alphaxiv.org/abs/2507.06261)
+  - [Gemma 3n](https://developers.googleblog.com/en/introducing-gemma-3n/): The next generation of Gemini Nano. Gemma 3n uses DeepMind’s Per-Layer Embeddings (PLE) to run 5B/8B models at 2GB/3GB RAM. [20 May 2025]
+  - [gemini/cookbook✨](https://github.com/google-gemini/cookbook)
+  - [Gemini 3 Pro✍️](https://blog.google/products/gemini/gemini-3/): Deep Think reasoning, Advanced  multimodal understanding, spatial reasoning, and agentic capabilities up 30% from 2.5 Pro — reaching 37.5% on Humanity’s Last Exam (41% in Deep Think mode). [18 Nov 2025]
 - Groq
   - Founded in 2016. low-latency AI inference H/W. American tech.
-  1. [Llama-3-Groq-Tool-Use](https://wow.groq.com/introducing-llama-3-groq-tool-use-models/): a model optimized for function calling [Jul 2024]
+  - [Llama-3-Groq-Tool-Use](https://wow.groq.com/introducing-llama-3-groq-tool-use-models/): a model optimized for function calling [Jul 2024]
 - Huggingface
-  1. [Open R1✨](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
-  1. [Huggingface Open LLM Learboard🤗](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+  - [Open R1✨](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
+  - [Huggingface Open LLM Learboard🤗](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 - IBM
-  1. [Granite Guardian✨](https://github.com/ibm-granite/granite-guardian): a collection of models designed to detect risks in prompts and responses [10 Dec 2024]
+  - [Granite Guardian✨](https://github.com/ibm-granite/granite-guardian): a collection of models designed to detect risks in prompts and responses [10 Dec 2024]
 - Jamba
   - [Jamba](https://www.ai21.com/blog/announcing-jamba): AI21's SSM-Transformer Model. Mamba  + Transformer + MoE [28 Mar 2024]
 - [KoAlpaca✨](https://github.com/Beomi/KoAlpaca): Alpaca for korean [Mar 2023]
@@ -186,51 +190,52 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - Upstage's 70B Language Model Outperforms GPT-3.5: [✍️](https://en.upstage.ai/newsroom/upstage-huggingface-llm-no1) [1 Aug 2023]
 - [LLM Collection](https://www.promptingguide.ai/models/collection): promptingguide.ai
 - Meta
-  1. Most OSS LLM models have been built on the [Llama✨](https://github.com/facebookresearch/llama) / [✍️](https://ai.meta.com/llama) / [✨](https://github.com/meta-llama/llama-models)
+  - Most OSS LLM models have been built on the [Llama✨](https://github.com/facebookresearch/llama) / [✍️](https://ai.meta.com/llama) / [✨](https://github.com/meta-llama/llama-models)
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/meta-llama/llama-models?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [Llama 2🤗](https://huggingface.co/blog/llama2): 1) 40% more data than Llama. 2)7B, 13B, and 70B. 3) Trained on over 1 million human annotations. 4) double the context length of Llama 1: 4K 5) Grouped Query Attention, KV Cache, and Rotary Positional Embedding were introduced in Llama 2 [18 Jul 2023] [demo🤗](https://huggingface.co/blog/llama2#demo)
-  1. [Llama 3](https://llama.meta.com/llama3/): 1) 7X more data than Llama 2. 2) 8B, 70B, and 400B. 3) 8K context length [18 Apr 2024]
-  1. [MEGALODON✨](https://github.com/XuezheMax/megalodon): Long Sequence Model. Unlimited context length. Outperforms Llama 2 model. [Apr 2024]
+  - [Llama 2🤗](https://huggingface.co/blog/llama2): 1) 40% more data than Llama. 2)7B, 13B, and 70B. 3) Trained on over 1 million human annotations. 4) double the context length of Llama 1: 4K 5) Grouped Query Attention, KV Cache, and Rotary Positional Embedding were introduced in Llama 2 [18 Jul 2023] [demo🤗](https://huggingface.co/blog/llama2#demo)
+  - [Llama 3](https://llama.meta.com/llama3/): 1) 7X more data than Llama 2. 2) 8B, 70B, and 400B. 3) 8K context length [18 Apr 2024]
+  - [MEGALODON✨](https://github.com/XuezheMax/megalodon): Long Sequence Model. Unlimited context length. Outperforms Llama 2 model. [Apr 2024]
  ![**github stars**](https://img.shields.io/github/stars/XuezheMax/megalodon?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [Llama 3.1](https://ai.meta.com/blog/meta-llama-3-1/): 405B, context length to 128K, add support across eight languages. first OSS model outperforms GTP-4o. [23 Jul 2024]
-  1. [Llama 3.2](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/): Multimodal. Include text-only models (1B, 3B) and text-image models (11B, 90B), with quantized versions of 1B and 3B [Sep 2024]
-  1. [NotebookLlama✨](https://github.com/meta-llama/llama-recipes/tree/main/recipes/quickstart/NotebookLlama): An Open Source version of NotebookLM [28 Oct 2024]
-  1. [Llama 3.3](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/): a text-only 70B instruction-tuned model. Llama 3.3 70B approaches the performance of Llama 3.1 405B. [6 Dec 2024]
-  1. [Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/):  Mixture of Experts (MoE). Llama 4 Scout (actived 17b / total 109b, 10M Context, single GPU), Llama 4 Maverick (actived 17b / total 400b, 1M Context) [✨](https://github.com/meta-llama/llama-models/tree/main/models/llama4): Model Card [5 Apr 2025] 
+  - [Llama 3.1](https://ai.meta.com/blog/meta-llama-3-1/): 405B, context length to 128K, add support across eight languages. first OSS model outperforms GTP-4o. [23 Jul 2024]
+  - [Llama 3.2](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/): Multimodal. Include text-only models (1B, 3B) and text-image models (11B, 90B), with quantized versions of 1B and 3B [Sep 2024]
+  - [NotebookLlama✨](https://github.com/meta-llama/llama-recipes/tree/main/recipes/quickstart/NotebookLlama): An Open Source version of NotebookLM [28 Oct 2024]
+  - [Llama 3.3](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/): a text-only 70B instruction-tuned model. Llama 3.3 70B approaches the performance of Llama 3.1 405B. [6 Dec 2024]
+  - [Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/):  Mixture of Experts (MoE). Llama 4 Scout (actived 17b / total 109b, 10M Context, single GPU), Llama 4 Maverick (actived 17b / total 400b, 1M Context) [✨](https://github.com/meta-llama/llama-models/tree/main/models/llama4): Model Card [5 Apr 2025] 
 - [ModernBERT📑](https://alphaxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
 - Microsoft
-  1. [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
-  1. phi-series: cost-effective small language models (SLMs) [✍️](https://azure.microsoft.com/en-us/products/phi) [✨](https://aka.ms/Phicookbook): Cookbook
-  1. [Phi-1📑](https://alphaxiv.org/abs/2306.11644): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11644)]: Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [✍️](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
-  1. [Phi-1.5📑](https://alphaxiv.org/abs/2309.05463): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.05463)]: Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
-  1. phi-2: open source, and 50% better at mathematical reasoning. [✨🤗](https://huggingface.co/microsoft/phi-2) [Dec 2023]
-  1. phi-3-vision (multimodal), phi-3-small, phi-3 (7b), phi-sillica (Copilot+PC designed for NPUs)
-  1. [Phi-3📑](https://alphaxiv.org/abs/2404.14219): Phi-3-mini, with 3.8 billion parameters, supports 4K and 128K context, instruction tuning, and hardware optimization. [22 Apr 2024] [✍️](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/)
-  1. phi-3.5-MoE-instruct: [🤗](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct) [Aug 2024]
-  1. [Phi-4📑](https://alphaxiv.org/abs/2412.08905): Specializing in Complex Reasoning [✍️](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) [12 Dec 2024]
-  1. [Phi-4-multimodal / mini🤗](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf) 5.6B. speech, vision, and text processing into a single, unified architecture. [26 Feb 2025]
-  1. [Phi-4-reasoning✍️](https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/): Phi-4-reasoning, Phi-4-reasoning-plus, Phi-4-mini-reasoning [30 Apr 2025]
-  1. [Phi-4-mini-flash-reasoning✍️](https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/): 3.8B, 64K context, Single GPU, Decoder-Hybrid-Decoder architecture  [9 Jul 2025]
+  - [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
+  - phi-series: cost-effective small language models (SLMs) [✍️](https://azure.microsoft.com/en-us/products/phi) [✨](https://aka.ms/Phicookbook): Cookbook
+  - [Phi-1📑](https://alphaxiv.org/abs/2306.11644): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11644)]: Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [✍️](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
+  - [Phi-1.5📑](https://alphaxiv.org/abs/2309.05463): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.05463)]: Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
+  - phi-2: open source, and 50% better at mathematical reasoning. [✨🤗](https://huggingface.co/microsoft/phi-2) [Dec 2023]
+  - phi-3-vision (multimodal), phi-3-small, phi-3 (7b), phi-sillica (Copilot+PC designed for NPUs)
+  - [Phi-3📑](https://alphaxiv.org/abs/2404.14219): Phi-3-mini, with 3.8 billion parameters, supports 4K and 128K context, instruction tuning, and hardware optimization. [22 Apr 2024] [✍️](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/)
+  - phi-3.5-MoE-instruct: [🤗](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct) [Aug 2024]
+  - [Phi-4📑](https://alphaxiv.org/abs/2412.08905): Specializing in Complex Reasoning [✍️](https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) [12 Dec 2024]
+  - [Phi-4-multimodal / mini🤗](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf) 5.6B. speech, vision, and text processing into a single, unified architecture. [26 Feb 2025]
+  - [Phi-4-reasoning✍️](https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/): Phi-4-reasoning, Phi-4-reasoning-plus, Phi-4-mini-reasoning [30 Apr 2025]
+  - [Phi-4-mini-flash-reasoning✍️](https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/): 3.8B, 64K context, Single GPU, Decoder-Hybrid-Decoder architecture  [9 Jul 2025]
 - MiniMaxAI
   - Founded in Dec 2021. Shanghai, China.
-  1. [MiniMax-M2✨](https://github.com/MiniMax-AI/MiniMax-M2): Coding and Agent tasks, 230B (10B Active), MoE, a new high ahead of DeepSeek-V3.2 and Kimi K2 ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [MiniMax-M2✨](https://github.com/MiniMax-AI/MiniMax-M2): Coding and Agent tasks, 230B (10B Active), MoE, a new high ahead of DeepSeek-V3.2 and Kimi K2 ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Mistral
   - Founded in April 2023. French tech.
-  1. Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
-  1. [NeMo](https://mistral.ai/news/mistral-nemo/): 12B model with 128k context length that outperforms LLama 3 8B [18 Jul 2024]
-  1. [Mistral OCR](https://mistral.ai/news/mistral-ocr): Precise text recognition with up to 99% accuracy. Multimodal. Browser based [6 Mar 2025]
+  - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
+  - [NeMo](https://mistral.ai/news/mistral-nemo/): 12B model with 128k context length that outperforms LLama 3 8B [18 Jul 2024]
+  - [Mistral OCR](https://mistral.ai/news/mistral-ocr): Precise text recognition with up to 99% accuracy. Multimodal. Browser based [6 Mar 2025]
 - Moonshot AI
   - Moonshot AI is a Beijing-based Chinese AI company founded in March 2023
-  1. [Kimi-K2✨](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
+  - [Kimi-K2✨](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
+  - [Kimi K2 Thinking✍️](https://moonshotai.github.io/Kimi-K2/thinking.html): The first open-source model beats GPT-5 in Agent benchmark. [7 Nov 2025]
 - NVIDIA
-  1. [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
+  - [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - [ollam](https://ollama.com/library?sort=popular): ollama-supported models
 - [Open-Sora✨](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All  [Mar 2024]
  ![**github stars**](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - OpenAI
-  1. [gpt-oss✨](https://github.com/openai/gpt-oss):💡**gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/openai/gpt-oss?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [gpt-oss✨](https://github.com/openai/gpt-oss):💡**gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/openai/gpt-oss?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Qualcomm
-  1. [Qualcomm’s on-device AI models🤗](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
+  - [Qualcomm’s on-device AI models🤗](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://alphaxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [✨](https://github.com/Tencent/Tencent-Hunyuan-Large) ![**github stars**](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -241,19 +246,20 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [The Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) [28 Oct 2024]
 - xAI
   - xAI is an American AI company founded by Elon Musk in March 2023
-  1. [Grok](https://x.ai/blog/grok-os): 314B parameter Mixture-of-Experts (MoE) model. Released under the Apache 2.0 license. Not includeded training code. Developed by JAX [✨](https://github.com/xai-org/grok) [17 Mar 2024]
+  - [Grok](https://x.ai/blog/grok-os): 314B parameter Mixture-of-Experts (MoE) model. Released under the Apache 2.0 license. Not includeded training code. Developed by JAX [✨](https://github.com/xai-org/grok) [17 Mar 2024]
  ![**github stars**](https://img.shields.io/github/stars/xai-org/grok?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [Grok-2 and Grok-2 mini](https://x.ai/blog/grok-2) [13 Aug 2024]
-  1. [Grok-3](https://x.ai/grok): 200,000 GPUs to train. Grok 3 beats GPT-4o on AIME, GPQA. Grok 3 Reasoning and Grok 3 mini Reasoning. [17 Feb 2025]
-  1. [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
-  1. [Grok-2.5](https://x.com/elonmusk/status/1959379349322313920): Grok 2.5 Goes Open Source [24 Aug 2025]
+  - [Grok-2 and Grok-2 mini](https://x.ai/blog/grok-2) [13 Aug 2024]
+  - [Grok-2.5](https://x.com/elonmusk/status/1959379349322313920): Grok 2.5 Goes Open Source [24 Aug 2025]
+  - [Grok-3](https://x.ai/grok): 200,000 GPUs to train. Grok 3 beats GPT-4o on AIME, GPQA. Grok 3 Reasoning and Grok 3 mini Reasoning. [17 Feb 2025]
+  - [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
+  - [Grok 4.1✍️](https://x.ai/news/grok-4-1) [17 Nov 2025]
 - Xiaomi
   - Founded in 2010, Xiaomi is a Chinese company known for its innovative consumer electronics and smart home products.
   - [Mimo✨](https://github.com/XiaomiMiMo/MiMo): 7B. advanced reasoning for code and math [30 Apr 2025)
 - Z.ai
   - formerly Zhipu, Beijing-based Chinese AI company founded in March 2019
-  1. [GLM-4.5✨](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
-  1. [GLM-4.6✍️](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
+  - [GLM-4.5✨](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
+  - [GLM-4.6✍️](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
 
 
 ### **LLM for Domain Specific**
@@ -275,15 +281,15 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [FrugalGPT📑](https://alphaxiv.org/abs/2305.05176): LLM with budget constraints, requests are cascaded from low-cost to high-cost LLMs. [✨](https://github.com/stanford-futuredata/FrugalGPT) [9 May 2023] ![**github stars**](https://img.shields.io/github/stars/stanford-futuredata/FrugalGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Galactica📑](https://alphaxiv.org/abs/2211.09085): A Large Language Model for Science [16 Nov 2022]
 - Gemma series
-  1. [Gemma series in Huggingface🤗](https://huggingface.co/google)
-  1. [PaliGemma📑](https://alphaxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
-  1. [DataGemma✍️](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM✍️](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
-  1. [PaliGemma 2📑](https://alphaxiv.org/abs/2412.03555): VLMs
+  - [Gemma series in Huggingface🤗](https://huggingface.co/google)
+  - [PaliGemma📑](https://alphaxiv.org/abs/2407.07726): a 3B VLM [10 Jul 2024]
+  - [DataGemma✍️](https://blog.google/technology/ai/google-datagemma-ai-llm/) [12 Sep 2024] / [NotebookLM✍️](https://blog.google/technology/ai/notebooklm-audio-overviews/): LLM-powered notebook. free to use, not open-source. [12 Jul 2023]
+  - [PaliGemma 2📑](https://alphaxiv.org/abs/2412.03555): VLMs
  at 3 different sizes (3B, 10B, 28B)  [4 Dec 2024]
-  1. [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
-  1. [Dolphin Gemma✍️](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
-  1. [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
-  1. [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025)
+  - [TxGemma](https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/): Therapeutics development [25 Mar 2025]
+  - [Dolphin Gemma✍️](https://blog.google/technology/ai/dolphingemma/): Decode dolphin communication [14 Apr 2025]
+  - [MedGemma](https://deepmind.google/models/gemma/medgemma/): Model fine-tuned for biomedical text and image understanding. [20 May 2025]
+  - [SignGemma](https://x.com/GoogleDeepMind/status/1927375853551235160): Vision-language model for sign language recognition and translation. [27 May 2025)
 - [Huggingface StarCoder: A State-of-the-Art LLM for Code🤗](https://huggingface.co/blog/starcoder): [✨🤗](https://huggingface.co/bigcode/starcoder) [May 2023]
 - [MechGPT📑](https://alphaxiv.org/abs/2310.10445): Language Modeling Strategies for Mechanics and Materials [✨](https://github.com/lamm-mit/MeLM) [16 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lamm-mit/MeLM?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [MeshGPT](https://nihalsid.github.io/mesh-gpt/): Generating Triangle Meshes with Decoder-Only Transformers [27 Nov 2023]
@@ -300,7 +306,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 ### **MLLM (multimodal large language model)**
 
 - Apple
-  1. [4M-21📑](https://alphaxiv.org/abs/2406.09406): An Any-to-Any Vision Model for Tens of Tasks and Modalities. [13 Jun 2024]
+  - [4M-21📑](https://alphaxiv.org/abs/2406.09406): An Any-to-Any Vision Model for Tens of Tasks and Modalities. [13 Jun 2024]
 - [Awesome Multimodal Large Language Models✨](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models): Latest Papers and Datasets on Multimodal Large Language Models, and Their Evaluation. [Jun 2023]
  ![**github stars**](https://img.shields.io/github/stars/BradyFU/Awesome-Multimodal-Large-Language-Models?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Benchmarking Multimodal LLMs.
@@ -318,28 +324,28 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [GroundingDINO📑](https://alphaxiv.org/abs/2303.05499): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.05499)]: DINO with Grounded Pre-Training for Open-Set Object Detection [✨](https://github.com/IDEA-Research/GroundingDINO) [9 Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/IDEA-Research/GroundingDINO?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Hugging Face
-  1. [SmolVLM🤗](https://huggingface.co/blog/smolvlm): 2B small vision language models. [🤗](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) / finetuning:[✨](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) [24 Nov 2024]
+  - [SmolVLM🤗](https://huggingface.co/blog/smolvlm): 2B small vision language models. [🤗](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) / finetuning:[✨](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) [24 Nov 2024]
 - [LLaVa📑](https://alphaxiv.org/abs/2304.08485): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.08485)]: Large Language-and-Vision Assistant [✨](https://llava-vl.github.io/) [17 Apr 2023]
   - Simple linear layer to connect image features into the word embedding space. A trainable projection matrix W is applied to the visual features Zv, transforming them into visual embedding tokens Hv. These tokens are then concatenated with the language embedding sequence Hq to form a single sequence. Note that Hv and Hq are not multiplied or added, but concatenated, both are same dimensionality.
 - [LLaVA-CoT📑](https://alphaxiv.org/abs/2411.10440): (FKA. LLaVA-o1) Let Vision Language Models Reason Step-by-Step. [✨](https://github.com/PKU-YuanGroup/LLaVA-CoT) [15 Nov 2024]
 - Meta (aka. Facebook)
-  1. [facebookresearch/ImageBind📑](https://alphaxiv.org/abs/2305.05665): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.05665)]: ImageBind One Embedding Space to Bind Them All [✨](https://github.com/facebookresearch/ImageBind) [9 May 2023]
+  - [facebookresearch/ImageBind📑](https://alphaxiv.org/abs/2305.05665): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.05665)]: ImageBind One Embedding Space to Bind Them All [✨](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [facebookresearch/segment-anything(SAM)📑](https://alphaxiv.org/abs/2304.02643): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.02643)]: The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [✨](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
+  - [facebookresearch/segment-anything(SAM)📑](https://alphaxiv.org/abs/2304.02643): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2304.02643)]: The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [✨](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  1. [facebookresearch/SeamlessM4T📑](https://alphaxiv.org/abs/2308.11596): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11596)]: SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [✍️](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/) [22 Aug 2023]
-  1. [Chameleon📑](https://alphaxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
-  1. [Models and libraries](https://ai.meta.com/resources/models-and-libraries/)
+  - [facebookresearch/SeamlessM4T📑](https://alphaxiv.org/abs/2308.11596): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.11596)]: SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [✍️](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/) [22 Aug 2023]
+  - [Chameleon📑](https://alphaxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
+  - [Models and libraries](https://ai.meta.com/resources/models-and-libraries/)
 - Microsoft
-  1. Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1📑](https://alphaxiv.org/abs/2302.14045): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.14045)] [27 Feb 2023]
-  1. [Kosmos-2📑](https://alphaxiv.org/abs/2306.14824): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.14824)]: Grounding Multimodal Large Language Models to the World [26 Jun 2023]
-  1. [Kosmos-2.5📑](https://alphaxiv.org/abs/2309.11419): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.11419)]: A Multimodal Literate Model [20 Sep 2023]
-  1. [BEiT-3📑](https://alphaxiv.org/abs/2208.10442): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2208.10442)]: Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks [22 Aug 2022]
-  1. [TaskMatrix.AI📑](https://alphaxiv.org/abs/2303.16434): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.16434)]: TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
-  1. [Florence-2📑](https://alphaxiv.org/abs/2311.06242): Advancing a unified representation for various vision tasks, demonstrating specialized models like `CLIP` for classification, `GroundingDINO` for object detection, and `SAM` for segmentation. [🤗](https://huggingface.co/microsoft/Florence-2-large) [10 Nov 2023]
-  1. [LLM2CLIP✨](https://github.com/microsoft/LLM2CLIP): Directly integrating LLMs into CLIP causes catastrophic performance drops. We propose LLM2CLIP, a caption contrastive fine-tuning method that leverages LLMs to enhance CLIP. [7 Nov 2024]
-  1. [Florence-VL📑](https://alphaxiv.org/abs/2412.04424): A multimodal large language model (MLLM) that integrates Florence-2. [5 Dec 2024]
-  1. [Magma✨](https://github.com/microsoft/Magma): Magma: A Foundation Model for Multimodal AI Agents [18 Feb 2025]
+  - Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1📑](https://alphaxiv.org/abs/2302.14045): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.14045)] [27 Feb 2023]
+  - [Kosmos-2📑](https://alphaxiv.org/abs/2306.14824): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.14824)]: Grounding Multimodal Large Language Models to the World [26 Jun 2023]
+  - [Kosmos-2.5📑](https://alphaxiv.org/abs/2309.11419): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.11419)]: A Multimodal Literate Model [20 Sep 2023]
+  - [BEiT-3📑](https://alphaxiv.org/abs/2208.10442): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2208.10442)]: Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks [22 Aug 2022]
+  - [TaskMatrix.AI📑](https://alphaxiv.org/abs/2303.16434): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.16434)]: TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
+  - [Florence-2📑](https://alphaxiv.org/abs/2311.06242): Advancing a unified representation for various vision tasks, demonstrating specialized models like `CLIP` for classification, `GroundingDINO` for object detection, and `SAM` for segmentation. [🤗](https://huggingface.co/microsoft/Florence-2-large) [10 Nov 2023]
+  - [LLM2CLIP✨](https://github.com/microsoft/LLM2CLIP): Directly integrating LLMs into CLIP causes catastrophic performance drops. We propose LLM2CLIP, a caption contrastive fine-tuning method that leverages LLMs to enhance CLIP. [7 Nov 2024]
+  - [Florence-VL📑](https://alphaxiv.org/abs/2412.04424): A multimodal large language model (MLLM) that integrates Florence-2. [5 Dec 2024]
+  - [Magma✨](https://github.com/microsoft/Magma): Magma: A Foundation Model for Multimodal AI Agents [18 Feb 2025]
 - [MiniCPM-o✨](https://github.com/OpenBMB/MiniCPM-o): A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming on Your Phone [15 Jan 2025]
 - [MiniCPM-V✨](https://github.com/OpenBMB/MiniCPM-V): MiniCPM-Llama3-V 2.5: A GPT-4V Level Multimodal LLM on Your Phone [Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -424,14 +430,12 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 1. [Skeleton Of Thought📑](https://alphaxiv.org/abs/2307.15337): Skeleton-of-Thought (SoT) reduces generation latency by first creating an answer's skeleton, then filling each skeleton point in parallel via API calls or batched decoding. [28 Jul 2023]
 1. [Tree of Thought (ToT)📑](https://alphaxiv.org/abs/2305.10601): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.10601)]: Self-evaluate the progress intermediate thoughts make towards solving a problem [17 May 2023] [✨](https://github.com/ysymyth/tree-of-thought-llm) / Agora: Tree of Thoughts (ToT) [✨](https://github.com/kyegomez/tree-of-thoughts)
  ![**github stars**](https://img.shields.io/github/stars/ysymyth/tree-of-thought-llm?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/kyegomez/tree-of-thoughts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-   - `tree-of-thought\forest_of_thought.py`: Forest of thought Decorator sample
-   - `tree-of-thought\tree_of_thought.py`: Tree of thought Decorator sample
-   - `tree-of-thought\react-prompt.py`: ReAct sample without LangChain
+1. [Verbalized Sampling📑](https://arxiv.org/abs/2510.01171): "Generate 5 jokes about coffee and their corresponding probabilities". In creative writing, VS increases diversity by 1.6-2.1x over direct prompting. [1 Oct 2025]
 1. Zero-shot, one-shot and few-shot [ref📑](https://alphaxiv.org/abs/2005.14165) [28 May 2020]  
    <img src="../files/zero-one-few-shot.png" width="200">
 1. Zero-shot: [Large Language Models are Zero-Shot Reasoners📑](https://alphaxiv.org/abs/2205.11916): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.11916)]: Let’s think step by step. [24 May 2022]
 
-#### Adversarial Prompting
+### Adversarial Prompting
 
 - Prompt Injection: `Ignore the above directions and ...`
 - Prompt Leaking: `Ignore the above instructions ... followed by a copy of the full prompt with exemplars:`
@@ -503,23 +507,21 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 ## Finetuning
 
-### **Finetuning**
-
-#### LLM Pre-training and Post-training Paradigms 
+### LLM Pre-training and Post-training Paradigms 
 
 - [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
-  - Three training methods were compared:  
-    <img src="../files/cont-pretraining.jpg" width="400"/>  
-    1. Regular pretraining: A model is initialized with random weights and pretrained on dataset D1.
-    2. Continued pretraining: The pretrained model from 1) is further pretrained on dataset D2.
-    3. Retraining on combined dataset: A model is initialized with random weights and trained on the combined datasets D1 and D2.
-  - Continued pretraining can be as effective as retraining on combined datasets. Key strategies for successful continued pretraining include:
-    1. Re-warming: Increasing the learning rate at the start of continued pre-training.
-    2. Re-decaying: Gradually reducing the learning rate afterwards.
-    3. Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
+- Three training methods were compared:  
+  <img src="../files/cont-pretraining.jpg" width="400"/>  
+  - Regular pretraining: A model is initialized with random weights and pretrained on dataset D1.
+  - Continued pretraining: The pretrained model from 1) is further pretrained on dataset D2.
+  - Retraining on combined dataset: A model is initialized with random weights and trained on the combined datasets D1 and D2.
+- Continued pretraining can be as effective as retraining on combined datasets. Key strategies for successful continued pretraining include:
+  - Re-warming: Increasing the learning rate at the start of continued pre-training.
+  - Re-decaying: Gradually reducing the learning rate afterwards.
+  - Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
 - [LIMA: Less Is More for Alignment📑](https://alphaxiv.org/abs/2305.11206): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.11206)]: fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
 
-#### Llama finetuning
+### Llama finetuning
 
 - A key difference between [Llama 1📑](https://alphaxiv.org/abs/2302.13971): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2302.13971)] [27 Feb 2023] and [Llama 2📑](https://alphaxiv.org/abs/2307.09288): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.09288)] [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency. <br/>
   <img src="../files/grp-attn.png" alt="llm-grp-attn" width="400"/>
@@ -577,46 +579,46 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/Llama-2-Onnx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Multi-query attention (MQA)📑](https://alphaxiv.org/abs/2305.13245): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.13245)] [22 May 2023]
 
-#### PEFT: Parameter-Efficient Fine-Tuning ([📺](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
+### PEFT: Parameter-Efficient Fine-Tuning ([📺](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
 
 - [PEFT🤗](https://huggingface.co/blog/peft): Parameter-Efficient Fine-Tuning. PEFT is an approach to fine tuning only a few parameters. [10 Feb 2023]
 - [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning📑](https://alphaxiv.org/abs/2303.15647): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.15647)] [28 Mar 2023]
-- Category: Represent approach - Description - Pseudo Code [✍️](https://speakerdeck.com/schulta) [22 Sep 2023]
-  1. Adapters: Adapters - Additional Layers. Inference can be slower.
-     ```python
-     def transformer_with_adapter(x):
-       residual = x
-       x = SelfAttention(x)
-       x = FFN(x) # adapter
-       x = LN(x + residual)
-       residual = x
-       x = FFN(x) # transformer FFN
-       x = FFN(x) # adapter
-       x = LN(x + residual)
-       return x
-     ```
-  1. Soft Prompts: Prompt-Tuning - Learnable text prompts. Not always desired results.
-     ```python
-     def soft_prompted_model(input_ids):
-       x = Embed(input_ids)
-       soft_prompt_embedding = SoftPromptEmbed(task_based_soft_prompt)
-       x = concat([soft_prompt_embedding, x], dim=seq)
-       return model(x)
-     ```
-  1. Selective: BitFit - Update only the bias parameters. fast but limited.
-     ```python
-     params = (p for n,p in model.named_parameters() if "bias" in n)
-     optimizer = Optimizer(params)
-     ```
-  1. Reparametrization: LoRa - Low-rank decomposition. Efficient, Complex to implement.
-     ```python
-     def lora_linear(x):
-       h = x @ W # regular linear
-       h += x @ W_A @ W_B # low_rank update
-       return scale * h
-     ```
+- PEFT Category: Pseudo Code [✍️](https://speakerdeck.com/schulta) [22 Sep 2023]
+  - Adapters: Adapters - Additional Layers. Inference can be slower.
+      ```python
+      def transformer_with_adapter(x):
+        residual = x
+        x = SelfAttention(x)
+        x = FFN(x) # adapter
+        x = LN(x + residual)
+        residual = x
+        x = FFN(x) # transformer FFN
+        x = FFN(x) # adapter
+        x = LN(x + residual)
+        return x
+      ```
+  - Soft Prompts: Prompt-Tuning - Learnable text prompts. Not always desired results.
+      ```python
+      def soft_prompted_model(input_ids):
+        x = Embed(input_ids)
+        soft_prompt_embedding = SoftPromptEmbed(task_based_soft_prompt)
+        x = concat([soft_prompt_embedding, x], dim=seq)
+        return model(x)
+      ```
+  - Selective: BitFit - Update only the bias parameters. fast but limited.
+      ```python
+      params = (p for n,p in model.named_parameters() if "bias" in n)
+      optimizer = Optimizer(params)
+      ```
+  - Reparametrization: LoRa - Low-rank decomposition. Efficient, Complex to implement.
+      ```python
+      def lora_linear(x):
+        h = x @ W # regular linear
+        h += x @ W_A @ W_B # low_rank update
+        return scale * h
+      ```
 
-#### LoRA: Low-Rank Adaptation
+### LoRA: Low-Rank Adaptation
 
 - 5 Techniques of LoRA [✍️](https://blog.dailydoseofds.com/p/5-llm-fine-tuning-techniques-explained): LoRA, LoRA-FA, VeRA, Delta-LoRA, LoRA+ [May 2024]
 - [DoRA📑](https://alphaxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
@@ -637,11 +639,11 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
     - `DoRA` splits the LoRA adapter into two components of magnitude and direction and allows to train them more independently.
     - `Delta-LoRA` changes the weights of W by the gradient of A*B.
 - [Practical Tips for Finetuning LLMs Using LoRA (Low-Rank Adaptation)✍️✍️](https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms) [19 Nov 2023]: Best practical guide of LoRA.
-  1. QLoRA saves 33% memory but increases runtime by 39%, useful if GPU memory is a constraint.
-  1. Optimizer choice for LLM finetuning isn’t crucial. Adam optimizer’s memory-intensity doesn’t significantly impact LLM’s peak memory.
-  1. Apply LoRA across all layers for maximum performance.
-  1. Adjusting the LoRA rank is essential.
-  1. Multi-epoch training on static datasets may lead to overfitting and deteriorate results.
+  - QLoRA saves 33% memory but increases runtime by 39%, useful if GPU memory is a constraint.
+  - Optimizer choice for LLM finetuning isn’t crucial. Adam optimizer’s memory-intensity doesn’t significantly impact LLM’s peak memory.
+  - Apply LoRA across all layers for maximum performance.
+  - Adjusting the LoRA rank is essential.
+  - Multi-epoch training on static datasets may lead to overfitting and deteriorate results.
 - [QLoRA: Efficient Finetuning of Quantized LLMs📑](https://alphaxiv.org/abs/2305.14314): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.14314)]: 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [✨](https://github.com/artidoro/qlora) [23 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/artidoro/qlora?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [The Expressive Power of Low-Rank Adaptation📑](https://alphaxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
@@ -652,7 +654,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More📑](https://alphaxiv.org/abs/2407.16216) [23 Jul 2024]
 - [Absolute Zero: Reinforced Self-play Reasoning with Zero Data📑](https://alphaxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
 - [Direct Preference Optimization (DPO)📑](https://alphaxiv.org/abs/2305.18290): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2305.18290)]: 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
-  - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [✍️](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [✍️](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
+- Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [✍️](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [✍️](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
 - [InstructGPT: Training language models to follow instructions with human feedback📑](https://alphaxiv.org/abs/2203.02155): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2203.02155)] is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022]  
   <img src="../files/rhlf.png" width="400" />  
   <img src="../files/rhlf2.png" width="400" />  
@@ -682,11 +684,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Supervised Reinforcement Learning (SRL)📑](https://arxiv.org/abs/2510.25992): **The Problem**: SFT imitates human actions token by token, leading to overfitting; RLVR gives rewards only when successful, with no signal when all attempts fail. **This Approach**: Each action during RL generates a short reasoning trace and receives a similarity reward at every step. [29 Oct 2025]
 - [Train your own R1 reasoning model with Unsloth (GRPO)](https://unsloth.ai/blog/r1-reasoning): Unsloth x vLLM > 20x more throughput, 50% VRAM savings. [6 Feb 2025]
 
-#### **Model Compression for Large Language Models**
-
-- A Survey on Model Compression for Large Language Models [ref📑](https://alphaxiv.org/abs/2308.07633) [15 Aug 2023]
-
-#### **Quantization Techniques**
+### **Quantization Techniques**
 
 - bitsandbytes: 8-bit optimizers [✨](https://github.com/TimDettmers/bitsandbytes) [Oct 2021]
  ![**github stars**](https://img.shields.io/github/stars/TimDettmers/bitsandbytes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
@@ -698,21 +696,21 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   | Post-training quantization  | Easy to use, no need to retrain the model                   | May result in accuracy loss                                                          |
   | Quantization-aware training | Can achieve higher accuracy than post-training quantization | Requires retraining the model, can be more complex to implement                      |
 
-#### **Pruning and Sparsification**
+### **Pruning and Sparsification**
 
 - Pruning: The process of removing some of the neurons or layers from a neural network. This can be done by identifying and eliminating neurons or layers that have little or no impact on the network's output.
 - Sparsification: A technique used to reduce the size of large language models by removing redundant parameters.
 - [Wanda Pruning📑](https://alphaxiv.org/abs/2306.11695): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2306.11695)]: A Simple and Effective Pruning Approach for Large Language Models [20 Jun 2023] [✍️](https://www.linkedin.com/pulse/efficient-model-pruning-large-language-models-wandas-ayoub-kirouane)
 
-#### **Knowledge Distillation: Reducing Model Size with Textbooks**
+### **Knowledge Distillation: Reducing Model Size with Textbooks**
 
 - Distilled Supervised Fine-Tuning (dSFT)
-  1. [Zephyr 7B📑](https://alphaxiv.org/abs/2310.16944): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO). [🤗](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) [25 Oct 2023]
-  2. [Mistral 7B📑](https://alphaxiv.org/abs/2310.06825): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [✍️](https://mistral.ai/news/announcing-mistral-7b/) [10 Oct 2023]
+  - [Zephyr 7B📑](https://alphaxiv.org/abs/2310.16944): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.16944)] Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO). [🤗](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) [25 Oct 2023]
+  - [Mistral 7B📑](https://alphaxiv.org/abs/2310.06825): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.06825)]: Outperforms Llama 2 13B on all benchmarks. Uses Grouped-query attention (GQA) for faster inference. Uses Sliding Window Attention (SWA) to handle longer sequences at smaller cost. [✍️](https://mistral.ai/news/announcing-mistral-7b/) [10 Oct 2023]
 - phi-series: [🔗](#large-language-model-collection): Textbooks Are All You Need.
 - [Orca 2📑](https://alphaxiv.org/abs/2311.11045): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2311.11045)]: Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT. [✍️](https://www.microsoft.com/en-us/research/blog/orca-2-teaching-small-language-models-how-to-reason/) [18 Nov 2023]
 
-#### **Memory Optimization**
+### **Memory Optimization**
 
 - [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. High-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
 - [Flash Attention📑](https://alphaxiv.org/abs/2205.14135): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2205.14135)] [27 May 2022]
@@ -733,7 +731,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [TokenAttention✨](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [✨](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/ModelTC/lightllm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-#### **Other techniques and LLM patterns**
+### **Other techniques and LLM patterns**
 
 - [Better & Faster Large Language Models via Multi-token Prediction📑](https://alphaxiv.org/abs/2404.19737): Suggest that training language models to predict multiple future tokens at once [30 Apr 2024]
 - [Differential Transformer📑](https://alphaxiv.org/abs/2410.05258): Amplifies attention to the relevant context while minimizing noise using two separate softmax attention mechanisms. [7 Oct 2024]
@@ -749,7 +747,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [LLM patterns](https://eugeneyan.com/writing/llm-patterns/): 🏆From data to user, from defensive to offensive [🗄️](../files/llm-patterns-og.png)
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces📑](https://alphaxiv.org/abs/2312.00752) [1 Dec 2023] [✨](https://github.com/state-spaces/mamba): 1. Structured State Space (S4) - Class of sequence models, encompassing traits from RNNs, CNNs, and classical state space models. 2. Hardware-aware (Optimized for GPU) 3. Integrating selective SSMs and eliminating attention and MLP blocks [✍️](https://www.unite.ai/mamba-redefining-sequence-modeling-and-outforming-transformers-architecture/) / A Visual Guide to Mamba and State Space Models [✍️](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state) [19 FEB 2024]
  ![**github stars**](https://img.shields.io/github/stars/state-spaces/mamba?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - [Mamba-2📑](https://alphaxiv.org/abs/2405.21060): 2-8X faster [31 May 2024]
+- [Mamba-2📑](https://alphaxiv.org/abs/2405.21060): 2-8X faster [31 May 2024]
 - [Mixture-of-Depths📑](https://alphaxiv.org/abs/2404.02258): All tokens should not require the same effort to compute. The idea is to make token passage through a block optional. Each block selects the top-k tokens for processing, and the rest skip it. [✍️](https://www.linkedin.com/embed/feed/update/urn:li:share:7181996416213372930) [2 Apr 2024]
 - [Mixture of experts models](https://mistral.ai/news/mixtral-of-experts/): Mixtral 8x7B: Sparse mixture of experts models (SMoE) [magnet](https://x.com/MistralAI/status/1706877320844509405?s=20) [Dec 2023]
   - [Huggingface Mixture of Experts Explained🤗](https://huggingface.co/blog/moe): Mixture of Experts, or MoEs for short [Dec 2023]
@@ -758,6 +756,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - [The Sparsely-Gated Mixture-of-Experts Layer📑](https://alphaxiv.org/abs/1701.06538): Introduced sparse expert gating to scale models efficiently without increasing compute cost. [23 Jan 2017]
   - [Switch Transformers📑](https://alphaxiv.org/abs/2101.03961): Used a single expert per token to simplify routing, enabling fast, scalable transformer models. `expert capacity = (total tokens / num experts) * capacity factor` [11 Jan 2021]
   - [ST-MoE (Stable Transformer MoE)📑](https://alphaxiv.org/abs/2202.08906): By stabilizing the training process, ST-MoE enables more reliable and scalable deep MoE architectures. `z-loss aims to regularize the logits z before passing into the softmax` [17 Feb 2022]
+- Model Compression for Large Language Models [ref📑](https://alphaxiv.org/abs/2308.07633) [15 Aug 2023]
 - [Model merging✍️](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54): : A technique that combines two or more large language models (LLMs) into a single model, using methods such as SLERP, TIES, DARE, and passthrough. [Jan 2024] [✨](https://github.com/cg123/mergekit): mergekit
  ![**github stars**](https://img.shields.io/github/stars/cg123/mergekit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   | Method | Pros | Cons |
@@ -765,6 +764,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   | SLERP | Preserves geometric properties, popular method | Can only merge two models, may decrease magnitude |
   | TIES | Can merge multiple models, eliminates redundant parameters | Requires a base model, may discard useful parameters |
   | DARE | Reduces overfitting, keeps expectations unchanged | May introduce noise, may not work well with large differences |
+- [Nested Learning: A new ML paradigm for continual learning✍️](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/): A self-modifying architecture. Nested Learning (HOPE) views a model and its training as multiple nested, multi-level optimization problems, each with its own “context flow,” pairing deep optimizers + continuum memory systems for continual, human-like learning. [7 Nov 2025]
 - [RouteLLM✨](https://github.com/lm-sys/RouteLLM): a framework for serving and evaluating LLM routers. [Jun 2024]
  ![**github stars**](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Sakana.ai: Evolutionary Optimization of Model Merging Recipes.📑](https://alphaxiv.org/abs/2403.13187): A Method to Combine 500,000 OSS Models. [✨](https://github.com/SakanaAI/evolutionary-model-merge) [19 Mar 2024]
@@ -773,7 +773,6 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Simplifying Transformer Blocks📑](https://alphaxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
 - [Text-to-LoRA (T2L)](https://github.com/SakanaAI/text-to-lora): Converts text prompts into LoRA models, enabling lightweight fine-tuning of AI models for custom tasks. ![**github stars**](https://img.shields.io/github/stars/SakanaAI/text-to-lora?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [01 May 2025]
 - [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/):💡A practical guide to building successful LLM products, covering the tactical, operational, and strategic.  [8 June 2024]
-
 
 ## **Large Language Model: Challenges and Solutions**
 
@@ -804,7 +803,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [We must build AI for people; not to be a person🗣️](https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming) [19 August 2025]
 - LessWrong & Alignment Forum: Extensive discussions on AGI alignment, with contributions from experts in AGI safety. [LessWrong✍️](https://www.lesswrong.com/) | [Alignment Forum✍️](https://www.alignmentforum.org/)
 
-### **OpenAI's Roadmap and Products**
+### **OpenAI's Products**
 
 #### **OpenAI's roadmap**
 
@@ -866,11 +865,13 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [gpt-image-1✍️](https://openai.com/index/image-generation-api/): Image generation model API with designing and editing [23 Apr 2025]
 - [gpt-oss✨](https://github.com/openai/gpt-oss): **gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/openai/gpt-oss?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [GPT-5✍️](https://openai.com/index/introducing-gpt-5/): Real-time router orchestrating multiple models. GPT‑5 is the new default in ChatGPT, replacing GPT‑4o, OpenAI o3, OpenAI o4-mini, GPT‑4.1, and GPT‑4.5.  [7 Aug 2025]
-  1. [GPT-5 prompting guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
-  2. [Frontend coding with GPT-5](https://cookbook.openai.com/examples/gpt-5/gpt-5_frontend)
-  3. [GPT-5 New Params and Tools](https://cookbook.openai.com/examples/gpt-5/gpt-5_new_params_and_tools)
+  - [GPT-5 prompting guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
+  - [Frontend coding with GPT-5](https://cookbook.openai.com/examples/gpt-5/gpt-5_frontend)
+  - [GPT-5 New Params and Tools](https://cookbook.openai.com/examples/gpt-5/gpt-5_new_params_and_tools)
+- [GPT 5.1✍️](https://openai.com/index/gpt-5-1/): GPT-5.1 Auto, GPT-5.1 Instant, and GPT-5.1 Thinking. Better instruction-following, More customization for tone and style. [12 Nov 2025]
+- [GPT-5.1 Codex Max✍️](https://openai.com/index/gpt-5-1-codex-max/): agentic coding model for lonng-running, detailed work. [19 Nov 2025]
 
-##### **OpenAI o series**
+#### **OpenAI o series**
 
 - [A new series of reasoning models✍️](https://openai.com/index/introducing-openai-o1-preview/): The complex reasoning-specialized model, OpenAI o1 series, excels in math, coding, and science, outperforming GPT-4o on key benchmarks. [12 Sep 2024] / [✨](https://github.com/hijkzzz/Awesome-LLM-Strawberry): Awesome LLM Strawberry (OpenAI o1)
  ![**github stars**](https://img.shields.io/github/stars/hijkzzz/Awesome-LLM-Strawberry?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -880,13 +881,12 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [o3 preview✍️](https://openai.com/12-days/): 12 Days of OpenAI [20 Dec 2024]
 - [o3/o4-mini✍️](https://openai.com/index/introducing-o3-and-o4-mini/) [16 Apr 2025]
 
-##### **GPT-4 details leaked** `unverified`
+#### **GPT-4 details leaked** `unverified`
 
 - GPT-4V(ision) system card: [✍️](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [✍️](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
 - [The Dawn of LMMs📑](https://alphaxiv.org/abs/2309.17421): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17421)]: Preliminary Explorations with GPT-4V(ision) [29 Sep 2023]
-- GPT-4 details leaked
-  - GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
-  - The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [✍️](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked) [Jul 2023]
+- `GPT-4 details leaked`: GPT-4 is a language model with approximately 1.8 trillion parameters across 120 layers, 10x larger than GPT-3. It uses a Mixture of Experts (MoE) model with 16 experts, each having about 111 billion parameters. Utilizing MoE allows for more efficient use of resources during inference, needing only about 280 billion parameters and 560 TFLOPs, compared to the 1.8 trillion parameters and 3,700 TFLOPs required for a purely dense model.
+- The model is trained on approximately 13 trillion tokens from various sources, including internet data, books, and research papers. To reduce training costs, OpenAI employs tensor and pipeline parallelism, and a large batch size of 60 million. The estimated training cost for GPT-4 is around $63 million. [✍️](https://www.reddit.com/r/LocalLLaMA/comments/14wbmio/gpt4_details_leaked) [Jul 2023]
 
 ### **Context constraints**
 
@@ -896,25 +896,25 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Leave No Context Behind📑](https://alphaxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
 - [LLM Maybe LongLM📑](https://alphaxiv.org/abs/2401.01325): Self-Extend LLM Context Window Without Tuning. With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning. [2 Jan 2024]
 - [Lost in the Middle: How Language Models Use Long Contexts📑](https://alphaxiv.org/abs/2307.03172):💡[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.03172)] [6 Jul 2023]
-  1. Best Performace when relevant information is at beginning
-  2. Too many retrieved documents will harm performance
-  3. Performacnce decreases with an increase in context
+  - Best Performace when relevant information is at beginning
+  - Too many retrieved documents will harm performance
+  - Performacnce decreases with an increase in context
 - [“Needle in a Haystack” Analysis](https://bito.ai/blog/claude-2-1-200k-context-window-benchmarks/) [21 Nov 2023]: Context Window Benchmarks; Claude 2.1 (200K Context Window) vs [GPT-4✨](https://github.com/gkamradt/LLMTest_NeedleInAHaystack); [Long context prompting for Claude 2.1✍️](https://www.anthropic.com/index/claude-2-1-prompting) `adding just one sentence, “Here is the most relevant sentence in the context:”, to the prompt resulted in near complete fidelity throughout Claude 2.1’s 200K context window.` [6 Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/gkamradt/LLMTest_NeedleInAHaystack?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Ring Attention📑](https://alphaxiv.org/abs/2310.01889): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.01889)]: 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3. we propose an enhancement to the blockwise parallel transformers (BPT) framework. [✨](https://github.com/lhao499/llm_large_context) [3 Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/lhao499/llm_large_context?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Rotary Positional Embedding (RoPE)📑](https://alphaxiv.org/abs/2104.09864):💡[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2104.09864)] / [✍️](https://blog.eleuther.ai/rotary-embeddings/) / [🗄️](../files/RoPE.pdf) [20 Apr 2021]
   - How is this different from the sinusoidal embeddings used in "Attention is All You Need"?
-    1. Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
-    2. Sinusoidal embeddings add a `cos` or `sin` term, while rotary embeddings use a multiplicative factor.
-    3. Rotary embeddings are applied to positional encoding to K and V, not to the input embeddings.
-    - [ALiBi📑](https://alphaxiv.org/abs/2203.16634): Attention with Linear Biases. ALiBi applies a bias directly to the attention scores. [27 Aug 2021]
-    - [NoPE: Transformer Language Models without Positional Encodings Still Learn Positional Information📑](https://alphaxiv.org/abs/2203.16634): No postion embedding. [30 Mar 2022]
+  - Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
+  - Sinusoidal embeddings add a `cos` or `sin` term, while rotary embeddings use a multiplicative factor.
+  - Rotary embeddings are applied to positional encoding to K and V, not to the input embeddings.
+  - [ALiBi📑](https://alphaxiv.org/abs/2203.16634): Attention with Linear Biases. ALiBi applies a bias directly to the attention scores. [27 Aug 2021]
+  - [NoPE: Transformer Language Models without Positional Encodings Still Learn Positional Information📑](https://alphaxiv.org/abs/2203.16634): No postion embedding. [30 Mar 2022]
 - [Sparse Attention: Generating Long Sequences with Sparse Transformer📑](https://alphaxiv.org/abs/1904.10509):💡Sparse attention computes scores for a subset of pairs, selected via a fixed or learned sparsity pattern, reducing calculation costs. Strided attention: image, audio / Fixed attention:text [✍️](https://openai.com/index/sparse-transformer/) / [✨](https://github.com/openai/sparse_attention) [23 Apr 2019]
  ![**github stars**](https://img.shields.io/github/stars/openai/sparse_attention?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples📑](https://alphaxiv.org/abs/2212.06713): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2212.06713)] [13 Dec 2022]
-  1. Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
-  2. This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer interns, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
+  - Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
+  - This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer interns, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
 
 ### **Numbers LLM**
 
@@ -962,7 +962,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [The Instruction Hierarchy📑](https://alphaxiv.org/abs/2404.13208): Training LLMs to Prioritize Privileged Instructions. The OpenAI highlights the need for instruction privileges in LLMs to prevent attacks and proposes training models to conditionally follow lower-level instructions based on their alignment with higher-level instructions. [19 Apr 2024]
 - [Tracing the thoughts of a large language model✍️](https://www.anthropic.com/research/tracing-thoughts-language-model):💡`Claude 3.5 Haiku` 1. `Universal Thought Processing (Multiple Languages)`: Shared concepts exist across languages and are then translated into the respective language.  2. `Advance Planning (Composing Poetry)`: Despite generating text word by word, it anticipates rhyming words in advance.  3. `Fabricated Reasoning (Math)`: Produces plausible-sounding arguments even when given an incorrect hint. [27 Mar 2025] 
 - [Trustworthy LLMs📑](https://alphaxiv.org/abs/2308.05374): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2308.05374)]: Comprehensive overview for assessing LLM trustworthiness; Reliability, safety, fairness, resistance to misuse, explainability and reasoning, adherence to social norms, and robustness. [10 Aug 2023]
-  <!-- <img src="../files/llm-trustworthiness.png" width="450"> -->
+- [Vibe Hacking✍️](https://www.anthropic.com/news/disrupting-AI-espionage): Anthropic reports vibe-hacking attempts. [14 Nov 2025]
 
 ### **Large Language Model Is: Abilities**
 
@@ -1004,7 +1004,6 @@ generated webpages are considered better than the original reference webpages` [
 
 ### **Survey on Large Language Models**
 
-#### **Overview: A Survey of LLMs**
   - [A Primer on Large Language Models and their Limitations📑](https://alphaxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
   - [A Survey of Large Language Models📑](https://alphaxiv.org/abs/2303.18223):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2303.18223)] [v1: 31 Mar 2023 - v15: 13 Oct 2024]
 - [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://alphaxiv.org/abs/2408.05109): [9 Aug 2024] [✨](https://github.com/HKUSTDial/NL2SQL_Handbook)
@@ -1022,7 +1021,7 @@ generated webpages are considered better than the original reference webpages` [
   - [Research at Microsoft 2023✍️](https://www.microsoft.com/en-us/research/blog/research-at-microsoft-2023-a-year-of-groundbreaking-ai-advances-and-discoveries/): A year of groundbreaking AI advances and discoveries
 - [Noteworthy LLM Research Papers of 2024](https://sebastianraschka.com/blog/2025/llm-research-2024.html) [23 Jan 2025]
 
-#### **Additional Topics: A Survey of LLMs**
+### **Additional Topics: A Survey of LLMs**
 
 - [Advancing Reasoning in Large Language Models: Promising Methods and Approaches📑](https://alphaxiv.org/abs/2502.03671) [5 Feb 2025]
 - [Agentic Retrieval-Augmented Generation: Agentic RAG📑](https://alphaxiv.org/abs/2501.09136) [15 Jan 2025]
@@ -1094,7 +1093,7 @@ generated webpages are considered better than the original reference webpages` [
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models📑](https://alphaxiv.org/abs/2307.15043):[[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2307.15043)] [27 Jul 2023]
 - [What is the Role of Small Models in the LLM Era: A Survey📑](https://alphaxiv.org/abs/2409.06857) [10 Sep 2024]
 
-#### **Business use cases**
+### **Business use cases**
 
 - [AI-powered success—with more than 1,000 stories of customer transformation and innovation✍️](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/)💡[24 July 2025]
 - [Anthropic Clio✍️](https://www.anthropic.com/research/clio): Privacy-preserving insights into real-world AI use [12 Dec 2024]
@@ -1157,50 +1156,38 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Umar Jamil github✨](https://github.com/hkproj):💡LLM Model explanation / building a model from scratch [📺](https://www.youtube.com/@umarjamilai)
 - [You could have designed state of the art positional encoding](https://fleetwood.dev/posts/you-could-have-designed-SOTA-positional-encoding): Binary Position Encoding, Sinusoidal positional encoding, Absolute vs Relative Position Encoding, Rotary Positional encoding [17 Nov 2024]
 
-#### Classification of Attention
+### **Classification of Attention**
 
-1. Soft Attention: Assigns continuous weights to all inputs; differentiable and widely used (e.g., neural machine translation).
-1. Hard Attention: Selects discrete subsets of inputs; non-differentiable, often trained with reinforcement learning (e.g., image captioning).
-1. Global Attention: Attends to all input tokens, capturing long-range dependencies; suitable for shorter sequences due to cost.
-1. Local Attention: Restricts focus to a region around each token; balances efficiency and context (e.g., time series).
-1. Self-Attention: Each token attends to other tokens in the same sequence; core to models like BERT.
-1. Multi-Head Self-Attention: Runs several self-attentions in parallel to capture diverse relations; essential for Transformers.
-1. Sparse Attention: Computes only a subset of similarity scores (e.g., strided, fixed); enables scaling to very long sequences (see *Performer*).
-1. Cross-Attention: Attends between two sequences (e.g., encoder–decoder in machine translation).
-1. Sliding Window Attention (SWA): Used in **Longformer**; each token attends within a fixed-size local window, reducing memory use for long texts.
+- Soft Attention: Assigns continuous weights to all inputs; differentiable and widely used (e.g., neural machine translation).
+- Hard Attention: Selects discrete subsets of inputs; non-differentiable, often trained with reinforcement learning (e.g., image captioning).
+- Global Attention: Attends to all input tokens, capturing long-range dependencies; suitable for shorter sequences due to cost.
+- Local Attention: Restricts focus to a region around each token; balances efficiency and context (e.g., time series).
+- Self-Attention: Each token attends to other tokens in the same sequence; core to models like BERT.
+- Multi-Head Self-Attention: Runs several self-attentions in parallel to capture diverse relations; essential for Transformers.
+- Sparse Attention: Computes only a subset of similarity scores (e.g., strided, fixed); enables scaling to very long sequences (see *Performer*).
+- Cross-Attention: Attends between two sequences (e.g., encoder–decoder in machine translation).
+- Sliding Window Attention (SWA): Used in **Longformer**; each token attends within a fixed-size local window, reducing memory use for long texts.
 - [✍️](https://blog.research.google/2020/10/rethinking-attention-with-performers.html) [23 Oct 2020] / [✍️](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [✍️](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  / [✨](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
-- [Efficient Streaming Language Models with Attention Sinks](http://alphaxiv.org/abs/2309.17453): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [✨](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023]
- ![**github stars**](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-
-  <img src="../files/streaming-llm.png" alt="streaming-attn"/>
-
-  - Key-Value (KV) cache is an important component in the StreamingLLM framework.
-
-  1. Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
-  2. Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
-  3. StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
-
+- [Efficient Streaming Language Models with Attention Sinks](http://alphaxiv.org/abs/2309.17453): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.17453)] 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [✨](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023] ![**github stars**](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
+  <img src="../files/streaming-llm.png" alt="streaming-attn"/>  
+  - Key-Value (KV) cache is an important component in the StreamingLLM framework.  
+  - Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
+  - Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
+  - StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
 - LongLoRA
-
-  1. [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models📑](https://alphaxiv.org/abs/2309.12307): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [✨](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023]
- ![**github stars**](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-
-  - Key Takeaways from LongLora <br/>
-    <img src="../files/longlora.png" alt="long-lora" width="350"/>
-    1. The document states that LoRA alone is not sufficient for long context extension.
-    1. Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
-    1. S2-Attn can be implemented with only two lines of code in training.
+  - [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models📑](https://alphaxiv.org/abs/2309.12307): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.12307)]: A combination of sparse local attention and LoRA [✨](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023] ![**github stars**](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)    <!-- <img src="../files/longlora.png" alt="long-lora" width="350"/>    -->  
+  - The document states that LoRA alone is not sufficient for long context extension.
+  - Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
+  - S2-Attn can be implemented with only two lines of code in training.
 <!--   2. [QA-LoRA📑](https://alphaxiv.org/abs/2309.14717): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2309.14717)]: Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [✨](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
  ![**github stars**](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat-square&label=%20&color=blue&cacheSeconds=36000) -->
 - [4 Advanced Attention Mechanisms🤗](https://huggingface.co/blog/Kseniase/attentions) [4 Apr 2025]
-  1. Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
-  1. XAttention: Uses a sparse block attention pattern with antidiagonal alignment to ensure better coverage and efficiency. -> Preserves accuracy, boosts speed (up to 13x faster). Requires careful design of block-sparse layout.
-  1. KArAt (Kolmogorov-Arnold Attention): Replaces the fixed softmax attention with a learnable function (based on Kolmogorov–Arnold representation) to better model dependencies. -> Highly expressive, adaptable to complex patterns. Higher compute cost, less mature tooling.
-  1. MTA (Multi-Token Attention): Instead of attending token-by-token, it updates *groups* of tokens together, reducing the frequency of attention calls. -> Better for tasks where context spans across groups. Introduces grouping complexity, may hurt granularity.
+  - Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
+  - XAttention: Uses a sparse block attention pattern with antidiagonal alignment to ensure better coverage and efficiency. -> Preserves accuracy, boosts speed (up to 13x faster). Requires careful design of block-sparse layout.
+  - KArAt (Kolmogorov-Arnold Attention): Replaces the fixed softmax attention with a learnable function (based on Kolmogorov–Arnold representation) to better model dependencies. -> Highly expressive, adaptable to complex patterns. Higher compute cost, less mature tooling.
+  - MTA (Multi-Token Attention): Instead of attending token-by-token, it updates *groups* of tokens together, reducing the frequency of attention calls. -> Better for tasks where context spans across groups. Introduces grouping complexity, may hurt granularity.
 
-### **LLM Materials for East Asian Languages**
-
-#### Japanese
+### **LLM Materials in Japanese**
 
 - [ChatGPTやCopilotなど各種生成AI用の日本語の Prompt のサンプル✨](https://github.com/dahatake/GenerativeAI-Prompt-Sample-Japanese) [Apr 2023]
 - [LLM 研究プロジェクト✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153006): ブログ記事一覧 [27 Jul 2023]
@@ -1231,7 +1218,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [Japanese startup Orange uses Anthropic's Claude to translate manga into English✍️](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
 - [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例✍️](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
 
-#### Korean
+### **LLM Materials in Korean**
 
 - [Machine Learning Study 혼자 해보기✨](https://github.com/teddylee777/machine-learning) [Sep 2018]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/machine-learning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
