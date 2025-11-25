@@ -25,10 +25,10 @@
    - [Deep Research](#deep-research)
  - [Top Agent Frameworks](#top-agent-frameworks)
  - [Orchestration Framework](#orchestration-framework)
-  - [LangChain](#langchain)
-  - [LlamaIndex](#llamaindex)
-  - [Semantic Kernel](#semantic-kernel)
-  - [DSPy](#dspy)
+   - [LangChain](#langchain)
+   - [LlamaIndex](#llamaindex)
+   - [Semantic Kernel](#semantic-kernel)
+   - [DSPy](#dspy)
 
 ## **RAG (Retrieval-Augmented Generation)**
 
@@ -279,7 +279,6 @@
 1. [MiniChain✨](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
 1. [mirascope✨](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Mixture Of Agents (MoA)✨](https://github.com/togethercomputer/MoA): an architecture that runs multiple LLMs in parallel, then uses a final “aggregator” model to merge their outputs into a superior combined response. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/togethercomputer/MoA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [MLAB ResearchAgent✨](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Mobile-Agent✨](https://github.com/X-PLUG/MobileAgent): The Powerful Mobile Device Operation Assistant Family. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/X-PLUG/MobileAgent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [ModelScope-Agent✨](https://github.com/modelscope/ms-agent): Lightweight Framework for Agents with Autonomous Exploration [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/modelscope/ms-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [motia✨](https://github.com/MotiaDev/motia): Modern Backend Framework that unifies APIs, background jobs, workflows, and AI agents into a single cohesive system with built-in observability and state management. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/MotiaDev/motia?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -642,6 +641,7 @@
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]
 1. [LangChain Open Deep Research✨](https://github.com/langchain-ai/open_deep_research): (formerly mAIstro) a web research assistant for generating comprehensive reports on any topic. [13 Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Manus sandbox runtime code leaked](https://x.com/jianxliao/status/1898861051183349870): Claude Sonnet with 29 tools, without multi-agent, using `browser_use`. [✨](https://gist.github.com/jlia0/db0a9695b3ca7609c9b1a08dcbf872c9) [✍️](https://manus.im/): Manus official site [10 Mar 2025]
+1. [MLAB ResearchAgent✨](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Ollama Deep Researcher✨](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/ollama-deep-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Deep Research✨](https://github.com/btahir/open-deep-research): Open source alternative to Gemini Deep Research. [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/btahir/open-deep-research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Interpreter✨](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
@@ -1070,6 +1070,22 @@ Each semantic function is defined by a unique prompt template file, developed us
       optimizer = BootstrapFewShot(metric=dspy.evaluate.answer_exact_match)
       ```
   - DSPy Compiler: Internally trace your program and then optimize it using an optimizer (teleprompter) to maximize a given metric (e.g., improve quality or cost) for your task.
+ng-hello-programming-4ca1c6ce3eb9).
+  1. Signatures: Hand-written prompts and fine-tuning are abstracted and replaced by signatures.
+      > "question -> answer" <br/>
+        "long-document -> summary"  <br/>
+        "context, question -> answer"  <br/>
+  2. Modules: Prompting techniques, such as `Chain of Thought` or `ReAct`, are abstracted and replaced by modules.
+      ```python
+      # pass a signature to ChainOfThought module
+      generate_answer = dspy.ChainOfThought("context, question -> answer")
+      ```
+  3. Optimizers (formerly Teleprompters): Manual iterations of prompt engineering is automated with optimizers (teleprompters) and a DSPy Compiler.
+      ```python
+      # Self-generate complete demonstrations. Teacher-student paradigm, `BootstrapFewShotWithOptuna`, `BootstrapFewShotWithRandomSearch` etc. which work on the same principle.
+      optimizer = BootstrapFewShot(metric=dspy.evaluate.answer_exact_match)
+      ```
+  4. DSPy Compiler: Internally trace your program and then optimize it using an optimizer (teleprompter) to maximize a given metric (e.g., improve quality or cost) for your task.
   - e.g., the DSPy compiler optimizes the initial prompt and thus eliminates the need for manual prompt tuning.
     ```python
     cot_compiled = teleprompter.compile(CoT(), trainset=trainset, valset=devset)

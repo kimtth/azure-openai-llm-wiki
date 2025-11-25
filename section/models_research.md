@@ -112,7 +112,10 @@
   - [OLMoE✨](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
   - [TÜLU 3📑](https://alphaxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [✨](https://github.com/allenai/open-instruct) / demo:[✍️](https://playground.allenai.org/) [22 Nov 2024] ![**github stars**](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Alibaba
-  - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
+  - Qwen (通义千问: Universal Intelligence that can answer a thousand questions) [✨](https://github.com/QwenLM) [Flagship Models✍️](https://qwen.ai/)
+  - [Qwen model family](https://qwen4.net/qwen-model-family/): Qwen first model released in [April 2023]
+  - [Qwen-Image-Edit](https://qwen4.net/qwen-image-edit/) [18 Aug 2025]
+  - [Qwen3-Max](https://qwen4.net/qwen3-max-is-the-most-intelligent-non-reasoning-model/): over 1 trillion parameters. 256K tokens. [5 Sep 2025]
 - Amazon
   - [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
   - [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://alphaxiv.org/abs/2506.12103) [17 Mar 2025]
@@ -1282,5 +1285,5 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
 - [What are the most influential current AI Papers?📑](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [✨](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
+
 
