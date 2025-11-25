@@ -26,11 +26,11 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 - **[→ View Complete Section](section/applications.md)**
 
 Key topics:
-- RAG: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag)
-- Application: [AI Application](section/applications.md#ai-application) ([Agent & Application](section/applications.md#agent--application), [No Code & UI](section/applications.md#no-code--user-interface), [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services), [Caching](section/applications.md#caching), [Data Processing](section/applications.md#data-processing), [Gateway](section/applications.md#gateway), [Memory](section/applications.md#memory))
-- Agent Protocols: [Agent Protocol](section/applications.md#agent-protocol) ([MCP](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer Use](section/applications.md#computer-use))
-- Coding & Research: [Coding](section/applications.md#coding), [Domain-Specific](section/applications.md#domain-specific), [Deep Research](section/applications.md#deep-research)
-- Frameworks: [Top Agent Frameworks](section/applications.md#top-agent-frameworks), [Orchestration](section/applications.md#ochestration-framework) ([LangChain](section/applications.md#langchain), [LlamaIndex](section/applications.md#llamaindex), [Semantic Kernel](section/applications.md#semantic-kernel), [DSPy](section/applications.md#dspy))
+- RAG: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag), [RAG Application](section/applications.md#rag-application), [Vector Database & Embedding](section/applications.md#vector-database--embedding)
+- Application: [AI Application](section/applications.md#ai-application) ([Agent & Application](section/applications.md#agent--application), [No Code & User Interface](section/applications.md#no-code--user-interface), [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services), [Caching](section/applications.md#caching), [Data Processing](section/applications.md#data-processing), [Gateway](section/applications.md#gateway), [Memory](section/applications.md#memory))
+- Agent Protocols: [Agent Protocol](section/applications.md#agent-protocol) ([MCP](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer use](section/applications.md#computer-use))
+- Coding & Research: [Coding & Research](section/applications.md#coding--research) ([Coding](section/applications.md#coding), [Domain-Specific Agents](section/applications.md#domain-specific-agents), [Deep Research](section/applications.md#deep-research))
+- Frameworks: [Top Agent Frameworks](section/applications.md#top-agent-frameworks), [Orchestration Framework](section/applications.md#orchestration-framework) ([LangChain](section/applications.md#langchain), [LlamaIndex](section/applications.md#llamaindex), [Semantic Kernel](section/applications.md#semantic-kernel), [DSPy](section/applications.md#dspy))
 
 ### 2. Azure OpenAI
 🌌 Microsoft's Cloud-Based AI Platform and Services
@@ -38,13 +38,13 @@ Key topics:
 - **[→ View Complete Section](section/azure.md)**
 
 Key topics:
-- Platform: [Azure OpenAI vs OpenAI](section/azure.md#azure-openai-vs-openai)
-- Framework: [Microsoft Azure OpenAI LLM Framework](section/azure.md#microsoft-azure-openai-llm-framework)
-- Copilot: [Microsoft Copilot](section/azure.md#microsoft-copilot)
-- Services: [Azure AI Services](section/azure.md#azure-ai-services)
+- Overview: [Azure OpenAI Overview](section/azure.md#azure-openai-overview)
+- Frameworks: [LLM Frameworks](section/azure.md#llm-frameworks), [Agent Frameworks](section/azure.md#agent-frameworks)
+- Tooling: [Prompt Tooling](section/azure.md#prompt-tooling), [Developer Tooling](section/azure.md#developer-tooling)
+- Products: [Microsoft Copilot Products](section/azure.md#microsoft-copilot-products), [Agent Development](section/azure.md#agent-development), [Copilot Development](section/azure.md#copilot-development)
+- Services: [Azure AI Search](section/azure.md#azure-ai-search), [Azure AI Services](section/azure.md#azure-ai-services)
 - Research: [Microsoft Research](section/azure.md#microsoft-research)
-- Architecture: [Reference Architectures](section/azure.md#azure-reference-architectures)
-- Prompting: [Prompt](section/azure.md#prompt)
+- Applications: [Azure OpenAI Application](section/azure.md#azure-openai-application), [Azure OpenAI Accelerator & Samples](section/azure.md#azure-openai-accelerator--samples), [Use Case & Architecture References](section/azure.md#use-case--architecture-references)
 
 ### 3. Research & Survey
 🧠 LLM Landscape, Prompt Engineering, Finetuning, Challenges & Surveys
@@ -52,12 +52,12 @@ Key topics:
 - **[→ View Complete Section](section/models_research.md)**
 
 Key topics:
-- Landscape: [LLM Landscape](section/models_research.md#large-language-model-landscape), [Comparison](section/models_research.md#large-language-model-comparison), [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models), [Model Collection](section/models_research.md#large-language-model-collection)
-- Prompting: [Prompt Engineering & Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
-- Finetuning: [Finetuning](section/models_research.md#finetuning), [Quantization Techniques](section/models_research.md#quantization-techniques), [Other Patterns](section/models_research.md#other-techniques-and-llm-patterns)
-- Challenges: [Context Constraints](section/models_research.md#context-constraints), [Trustworthy, Safe & Secure](section/models_research.md#trustworthy-safe-and-secure-llm), [Abilities](section/models_research.md#large-language-models-abilities)
-- Roadmap: [OpenAI's Roadmap & Products](section/models_research.md#openais-roadmap-and-products), [AGI & Social Impact](section/models_research.md#agi-discussion-and-social-impact)
-- Survey & Build: [Survey](section/models_research.md#survey-on-large-language-models), [Build from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt), [Business Use Cases](section/models_research.md#business-use-cases)
+- Landscape: [Large Language Model: Landscape](section/models_research.md#large-language-model-landscape), [Comparison](section/models_research.md#large-language-model-comparison), [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models), [Model Collection](section/models_research.md#large-language-model-collection)
+- Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
+- Finetuning: [Finetuning](section/models_research.md#finetuning), [Quantization Techniques](section/models_research.md#quantization-techniques), [Other Techniques and LLM Patterns](section/models_research.md#other-techniques-and-llm-patterns)
+- Challenges: [Large Language Model: Challenges and Solutions](section/models_research.md#large-language-model-challenges-and-solutions), [Context Constraints](section/models_research.md#context-constraints), [Trustworthy, Safe and Secure LLM](section/models_research.md#trustworthy-safe-and-secure-llm), [Large Language Model's Abilities](section/models_research.md#large-language-model-is-abilities), [Reasoning](section/models_research.md#reasoning)
+- Products & Impact: [OpenAI's Products](section/models_research.md#openais-products), [AGI Discussion and Social Impact](section/models_research.md#agi-discussion-and-social-impact)
+- Survey & Build: [Survey and Reference](section/models_research.md#survey-and-reference), [Survey on Large Language Models](section/models_research.md#survey-on-large-language-models), [Build an LLMs from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt), [Business Use Cases](section/models_research.md#business-use-cases)
 
 ### 4. Tools & Resource
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
@@ -65,9 +65,9 @@ Key topics:
 - **[→ View Complete Section](section/tools_extra.md)**
 
 Key topics:
-- Tools: [General AI Tools & Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [LLM for Robotics](section/tools_extra.md#llm-for-robotics), [Awesome Demo](section/tools_extra.md#awesome-demo)
+- Tools: [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [LLM for Robotics](section/tools_extra.md#llm-for-robotics), [Awesome Demo](section/tools_extra.md#awesome-demo)
 - Data: [Datasets for LLM Training](section/tools_extra.md#datasets-for-llm-training)
-- Evaluation: [Evaluating LLMs & LLMOps](section/tools_extra.md#evaluating-large-language-models--llmops), [Evaluating LLMs](section/tools_extra.md#evaluating-large-language-models), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations)
+- Evaluation: [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps: Large Language Model Operations](section/tools_extra.md#llmops-large-language-model-operations)
 
 ### 5. Best Practices
 📋 Curated Blogs, Patterns, and Implementation Guidelines
@@ -75,9 +75,8 @@ Key topics:
 - **[→ View Complete Section](section/best_practices.md)**
 
 Key topics:
-- RAG: [RAG Best Practices](section/best_practices.md#rag-best-practices), [The Problem with RAG](section/best_practices.md#the-problem-with-rag), [Solution Design](section/best_practices.md#rag-solution-design), [RAG Research](section/best_practices.md#rag-research)
-- Agent: [Agent Best Practices](section/best_practices.md#agent-best-practices), [Agentic Design Frameworks](section/best_practices.md#agentic-design-frameworks), [Agent Design Patterns](section/best_practices.md#agent-design-patterns)
-- Tool Use: [Tool Use](section/best_practices.md#tool-use-llm-to-master-apis)
+- RAG: [RAG Best Practices](section/best_practices.md#rag-best-practices), [The Problem with RAG](section/best_practices.md#the-problem-with-rag), [RAG Solution Design](section/best_practices.md#rag-solution-design), [RAG Research](section/best_practices.md#rag-research)
+- Agent: [Agent Best Practices](section/best_practices.md#agent-best-practices), [Agent Design Patterns](section/best_practices.md#agent-design-patterns), [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use-llm-to-master-apis)
 - Reference: [Proposals & Glossary](section/best_practices.md#proposals--glossary)
 
 ## Legend & Notation
