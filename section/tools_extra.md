@@ -193,6 +193,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 - [LLMPerf Leaderboard✨](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/ray-project/llmperf-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LLM-as-a-Judge](https://cameronrwolfe.substack.com/i/141159804/practical-takeaways):💡LLM-as-a-Judge offers a quick, cost-effective way to develop models aligned with human preferences and is easy to implement with just a prompt, but should be complemented by human evaluation to address biases.  [Jul 2024]
+- [OCR Arena](https://www.ocrarena.ai/battle): a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. [Nov 2025]
 - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models📑](https://alphaxiv.org/abs/2310.08491): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.08491)]: We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks. [12 Oct 2023]
 - [The Leaderboard Illusion📑](https://alphaxiv.org/abs/2504.20879):💡Chatbot Arena's benchmarking is skewed by selective disclosures, private testing advantages, and data access asymmetries, leading to overfitting and unfair model rankings. [29 Apr 2025]
 

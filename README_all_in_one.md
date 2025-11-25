@@ -23,9 +23,6 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 ### 1. App & Agent
 🚀 RAG Systems, LLM Applications, Agents, Frameworks & Orchestration
 
-- **[→ View Complete Section](section/applications.md)**
-
-Key topics:
 - RAG: [RAG](#rag-retrieval-augmented-generation), [Advanced RAG](#advanced-rag), [GraphRAG](#graphrag), [RAG Application](#rag-application), [Vector Database & Embedding](#vector-database--embedding)
 - Application: [AI Application](#ai-application) ([Agent & Application](#agent--application), [No Code & User Interface](#no-code--user-interface), [Infrastructure & Backend Services](#infrastructure--backend-services), [Caching](#caching), [Data Processing](#data-processing), [Gateway](#gateway), [Memory](#memory))
 - Agent Protocols: [Agent Protocol](#agent-protocol) ([MCP](#model-context-protocol-mcp), [A2A](#a2a), [Computer use](#computer-use))
@@ -35,9 +32,6 @@ Key topics:
 ### 2. Azure OpenAI
 🌌 Microsoft's Cloud-Based AI Platform and Services
 
-- **[→ View Complete Section](section/azure.md)**
-
-Key topics:
 - Overview: [Azure OpenAI Overview](#azure-openai-overview)
 - Frameworks: [LLM Frameworks](#llm-frameworks), [Agent Frameworks](#agent-frameworks)
 - Tooling: [Prompt Tooling](#prompt-tooling), [Developer Tooling](#developer-tooling)
@@ -49,9 +43,6 @@ Key topics:
 ### 3. Research & Survey
 🧠 LLM Landscape, Prompt Engineering, Finetuning, Challenges & Surveys
 
-- **[→ View Complete Section](section/models_research.md)**
-
-Key topics:
 - Landscape: [Large Language Model: Landscape](#large-language-model-landscape), [Comparison](#large-language-model-comparison), [Evolutionary Tree](#evolutionary-tree-of-large-language-models), [Model Collection](#large-language-model-collection)
 - Prompting: [Prompt Engineering and Visual Prompts](#prompt-engineering-and-visual-prompts)
 - Finetuning: [Finetuning](#finetuning), [Quantization Techniques](#quantization-techniques), [Other Techniques and LLM Patterns](#other-techniques-and-llm-patterns)
@@ -62,9 +53,6 @@ Key topics:
 ### 4. Tools & Resource
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
 
-- **[→ View Complete Section](section/tools_extra.md)**
-
-Key topics:
 - Tools: [General AI Tools and Extensions](#general-ai-tools-and-extensions), [LLM for Robotics](#llm-for-robotics), [Awesome Demo](#awesome-demo)
 - Data: [Datasets for LLM Training](#datasets-for-llm-training)
 - Evaluation: [Evaluating Large Language Models](#evaluating-large-language-models), [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
@@ -72,9 +60,6 @@ Key topics:
 ### 5. Best Practices
 📋 Curated Blogs, Patterns, and Implementation Guidelines
 
-- **[→ View Complete Section](section/best_practices.md)**
-
-Key topics:
 - RAG: [RAG Best Practices](#rag-best-practices), [The Problem with RAG](#the-problem-with-rag), [RAG Solution Design](#rag-solution-design), [RAG Research](#rag-research)
 - Agent: [Agent Best Practices](#agent-best-practices), [Agent Design Patterns](#agent-design-patterns), [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
 - Reference: [Proposals & Glossary](#proposals--glossary)
@@ -125,10 +110,10 @@ https://shields.io/badges/git-hub-created-at
    - [Deep Research](#deep-research)
  - [Top Agent Frameworks](#top-agent-frameworks)
  - [Orchestration Framework](#orchestration-framework)
-  - [LangChain](#langchain)
-  - [LlamaIndex](#llamaindex)
-  - [Semantic Kernel](#semantic-kernel)
-  - [DSPy](#dspy)
+   - [LangChain](#langchain)
+   - [LlamaIndex](#llamaindex)
+   - [Semantic Kernel](#semantic-kernel)
+   - [DSPy](#dspy)
 
 ## **RAG (Retrieval-Augmented Generation)**
 
@@ -379,7 +364,6 @@ https://shields.io/badges/git-hub-created-at
 1. [MiniChain✨](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
 1. [mirascope✨](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Mixture Of Agents (MoA)✨](https://github.com/togethercomputer/MoA): an architecture that runs multiple LLMs in parallel, then uses a final “aggregator” model to merge their outputs into a superior combined response. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/togethercomputer/MoA?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [MLAB ResearchAgent✨](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Mobile-Agent✨](https://github.com/X-PLUG/MobileAgent): The Powerful Mobile Device Operation Assistant Family. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/X-PLUG/MobileAgent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [ModelScope-Agent✨](https://github.com/modelscope/ms-agent): Lightweight Framework for Agents with Autonomous Exploration [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/modelscope/ms-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [motia✨](https://github.com/MotiaDev/motia): Modern Backend Framework that unifies APIs, background jobs, workflows, and AI agents into a single cohesive system with built-in observability and state management. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/MotiaDev/motia?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -742,6 +726,7 @@ https://shields.io/badges/git-hub-created-at
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]
 1. [LangChain Open Deep Research✨](https://github.com/langchain-ai/open_deep_research): (formerly mAIstro) a web research assistant for generating comprehensive reports on any topic. [13 Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Manus sandbox runtime code leaked](https://x.com/jianxliao/status/1898861051183349870): Claude Sonnet with 29 tools, without multi-agent, using `browser_use`. [✨](https://gist.github.com/jlia0/db0a9695b3ca7609c9b1a08dcbf872c9) [✍️](https://manus.im/): Manus official site [10 Mar 2025]
+1. [MLAB ResearchAgent✨](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Ollama Deep Researcher✨](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/ollama-deep-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Deep Research✨](https://github.com/btahir/open-deep-research): Open source alternative to Gemini Deep Research. [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/btahir/open-deep-research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Interpreter✨](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
@@ -1170,6 +1155,22 @@ Each semantic function is defined by a unique prompt template file, developed us
       optimizer = BootstrapFewShot(metric=dspy.evaluate.answer_exact_match)
       ```
   - DSPy Compiler: Internally trace your program and then optimize it using an optimizer (teleprompter) to maximize a given metric (e.g., improve quality or cost) for your task.
+ng-hello-programming-4ca1c6ce3eb9).
+  1. Signatures: Hand-written prompts and fine-tuning are abstracted and replaced by signatures.
+      > "question -> answer" <br/>
+        "long-document -> summary"  <br/>
+        "context, question -> answer"  <br/>
+  2. Modules: Prompting techniques, such as `Chain of Thought` or `ReAct`, are abstracted and replaced by modules.
+      ```python
+      # pass a signature to ChainOfThought module
+      generate_answer = dspy.ChainOfThought("context, question -> answer")
+      ```
+  3. Optimizers (formerly Teleprompters): Manual iterations of prompt engineering is automated with optimizers (teleprompters) and a DSPy Compiler.
+      ```python
+      # Self-generate complete demonstrations. Teacher-student paradigm, `BootstrapFewShotWithOptuna`, `BootstrapFewShotWithRandomSearch` etc. which work on the same principle.
+      optimizer = BootstrapFewShot(metric=dspy.evaluate.answer_exact_match)
+      ```
+  4. DSPy Compiler: Internally trace your program and then optimize it using an optimizer (teleprompter) to maximize a given metric (e.g., improve quality or cost) for your task.
   - e.g., the DSPy compiler optimizes the initial prompt and thus eliminates the need for manual prompt tuning.
     ```python
     cot_compiled = teleprompter.compile(CoT(), trainset=trainset, valset=devset)
@@ -1748,7 +1749,10 @@ Each semantic function is defined by a unique prompt template file, developed us
   - [OLMoE✨](https://github.com/allenai/OLMoE): fully-open LLM leverages sparse Mixture-of-Experts [Sep 2024]
   - [TÜLU 3📑](https://alphaxiv.org/abs/2411.15124):💡Pushing Frontiers in Open Language Model Post-Training [✨](https://github.com/allenai/open-instruct) / demo:[✍️](https://playground.allenai.org/) [22 Nov 2024] ![**github stars**](https://img.shields.io/github/stars/allenai/open-instruct?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Alibaba
-  - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
+  - Qwen (通义千问: Universal Intelligence that can answer a thousand questions) [✨](https://github.com/QwenLM) [Flagship Models✍️](https://qwen.ai/)
+  - [Qwen model family](https://qwen4.net/qwen-model-family/): Qwen first model released in [April 2023]
+  - [Qwen-Image-Edit](https://qwen4.net/qwen-image-edit/) [18 Aug 2025]
+  - [Qwen3-Max](https://qwen4.net/qwen3-max-is-the-most-intelligent-non-reasoning-model/): over 1 trillion parameters. 256K tokens. [5 Sep 2025]
 - Amazon
   - [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
   - [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://alphaxiv.org/abs/2506.12103) [17 Mar 2025]
@@ -2918,7 +2922,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
 - [What are the most influential current AI Papers?📑](https://alphaxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [✨](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/NL2G/Quaterly-Arxiv?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
+
 
 
 
@@ -3117,6 +3121,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 - [LLMPerf Leaderboard✨](https://github.com/ray-project/llmperf-leaderboard): Evaulation the performance of LLM APIs. [Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/ray-project/llmperf-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LLM-as-a-Judge](https://cameronrwolfe.substack.com/i/141159804/practical-takeaways):💡LLM-as-a-Judge offers a quick, cost-effective way to develop models aligned with human preferences and is easy to implement with just a prompt, but should be complemented by human evaluation to address biases.  [Jul 2024]
+- [OCR Arena](https://www.ocrarena.ai/battle): a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. [Nov 2025]
 - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models📑](https://alphaxiv.org/abs/2310.08491): [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2310.08491)]: We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks. [12 Oct 2023]
 - [The Leaderboard Illusion📑](https://alphaxiv.org/abs/2504.20879):💡Chatbot Arena's benchmarking is skewed by selective disclosures, private testing advantages, and data access asymmetries, leading to overfitting and unfair model rankings. [29 Apr 2025]
 
@@ -3393,6 +3398,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
  ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
 - [How Anthropic Built a Multi-Agent Research System✍️](https://blog.bytebytego.com/p/how-anthropic-built-a-multi-agent): Lead Researcher agent to coordinate specialized subagents, enabling dynamic, parallelized research and citation verification [17 Sep 2025]
+- [How to write a great agents.md: Lessons from over 2,500 repositories✍️](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/): How to write effective agents.md files for GitHub Copilot with practical tips [19 Nov 2025]
 - [How we built our multi-agent research system✍️](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 - [Hugging Face Agents Course✨](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Language Agent Tree Search Method (LATS)✨](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

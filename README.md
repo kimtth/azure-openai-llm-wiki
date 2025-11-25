@@ -23,9 +23,6 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 ### 1. App & Agent
 🚀 RAG Systems, LLM Applications, Agents, Frameworks & Orchestration
 
-- **[→ View Complete Section](section/applications.md)**
-
-Key topics:
 - RAG: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag), [RAG Application](section/applications.md#rag-application), [Vector Database & Embedding](section/applications.md#vector-database--embedding)
 - Application: [AI Application](section/applications.md#ai-application) ([Agent & Application](section/applications.md#agent--application), [No Code & User Interface](section/applications.md#no-code--user-interface), [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services), [Caching](section/applications.md#caching), [Data Processing](section/applications.md#data-processing), [Gateway](section/applications.md#gateway), [Memory](section/applications.md#memory))
 - Agent Protocols: [Agent Protocol](section/applications.md#agent-protocol) ([MCP](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer use](section/applications.md#computer-use))
@@ -35,9 +32,6 @@ Key topics:
 ### 2. Azure OpenAI
 🌌 Microsoft's Cloud-Based AI Platform and Services
 
-- **[→ View Complete Section](section/azure.md)**
-
-Key topics:
 - Overview: [Azure OpenAI Overview](section/azure.md#azure-openai-overview)
 - Frameworks: [LLM Frameworks](section/azure.md#llm-frameworks), [Agent Frameworks](section/azure.md#agent-frameworks)
 - Tooling: [Prompt Tooling](section/azure.md#prompt-tooling), [Developer Tooling](section/azure.md#developer-tooling)
@@ -49,9 +43,6 @@ Key topics:
 ### 3. Research & Survey
 🧠 LLM Landscape, Prompt Engineering, Finetuning, Challenges & Surveys
 
-- **[→ View Complete Section](section/models_research.md)**
-
-Key topics:
 - Landscape: [Large Language Model: Landscape](section/models_research.md#large-language-model-landscape), [Comparison](section/models_research.md#large-language-model-comparison), [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models), [Model Collection](section/models_research.md#large-language-model-collection)
 - Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
 - Finetuning: [Finetuning](section/models_research.md#finetuning), [Quantization Techniques](section/models_research.md#quantization-techniques), [Other Techniques and LLM Patterns](section/models_research.md#other-techniques-and-llm-patterns)
@@ -62,9 +53,6 @@ Key topics:
 ### 4. Tools & Resource
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
 
-- **[→ View Complete Section](section/tools_extra.md)**
-
-Key topics:
 - Tools: [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [LLM for Robotics](section/tools_extra.md#llm-for-robotics), [Awesome Demo](section/tools_extra.md#awesome-demo)
 - Data: [Datasets for LLM Training](section/tools_extra.md#datasets-for-llm-training)
 - Evaluation: [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps: Large Language Model Operations](section/tools_extra.md#llmops-large-language-model-operations)
@@ -72,9 +60,6 @@ Key topics:
 ### 5. Best Practices
 📋 Curated Blogs, Patterns, and Implementation Guidelines
 
-- **[→ View Complete Section](section/best_practices.md)**
-
-Key topics:
 - RAG: [RAG Best Practices](section/best_practices.md#rag-best-practices), [The Problem with RAG](section/best_practices.md#the-problem-with-rag), [RAG Solution Design](section/best_practices.md#rag-solution-design), [RAG Research](section/best_practices.md#rag-research)
 - Agent: [Agent Best Practices](section/best_practices.md#agent-best-practices), [Agent Design Patterns](section/best_practices.md#agent-design-patterns), [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use-llm-to-master-apis)
 - Reference: [Proposals & Glossary](section/best_practices.md#proposals--glossary)
