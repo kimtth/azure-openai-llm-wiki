@@ -14,57 +14,145 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 > A refined list focusing on Azure and Microsoft products.  
 > Check [**_Awesome Azure OpenAI & Copilot_**](https://github.com/kimtth/awesome-azure-openai-copilot).   
 
-## Quick Navigation
+## 📑 Quick Navigation
 
-| 🚀 App & Agent | 🌌 Azure | 🧠 Research & Survey | 🛠️ Tools | 📋 Best Practices |
+| 🚀 App & Agent | 🌌 Azure OpenAI | 🧠 Research & Survey | 🛠️ Tools & Eval | 📋 Best Practices |
 |-------------|-------|------------------|-------|----------------|
-| [1. App & Agent](#1-app--agent) | [2. Azure](#2-azure-openai) | [3. Research & Survey](#3-research--survey) | [4. Tools](#4-tools--resource) | [5. Best Practices](#5-best-practices) |
+| [1. App & Agent](#1-app--agent) | [2. Azure OpenAI](#2-azure-openai) | [3. Research & Survey <br/> (LLM Models & Services)](#3-research--survey) | [4. Tools & Eval](#4-tools--resource) | [5. Best Practices](#5-best-practices) |
 
-### 1. App & Agent
+## 1. App & Agent
 🚀 RAG Systems, LLM Applications, Agents, Frameworks & Orchestration
 
-- RAG: [RAG](#rag-retrieval-augmented-generation), [Advanced RAG](#advanced-rag), [GraphRAG](#graphrag), [RAG Application](#rag-application), [Vector Database & Embedding](#vector-database--embedding)
-- Application: [AI Application](#ai-application) ([Agent & Application](#agent--application), [No Code & User Interface](#no-code--user-interface), [Infrastructure & Backend Services](#infrastructure--backend-services), [Caching](#caching), [Data Processing](#data-processing), [Gateway](#gateway), [Memory](#memory))
-- Agent Protocols: [Agent Protocol](#agent-protocol) ([MCP](#model-context-protocol-mcp), [A2A](#a2a), [Computer use](#computer-use))
-- Coding & Research: [Coding & Research](#coding--research) ([Coding](#coding), [Domain-Specific Agents](#domain-specific-agents), [Deep Research](#deep-research))
-- Frameworks: [Top Agent Frameworks](#top-agent-frameworks), [Orchestration Framework](#orchestration-framework) ([LangChain](#langchain), [LlamaIndex](#llamaindex), [Semantic Kernel](#semantic-kernel), [DSPy](#dspy))
+- **RAG**
+  - [RAG](#rag-retrieval-augmented-generation)
+  - [Advanced RAG](#advanced-rag)
+  - [GraphRAG](#graphrag)
+  - [RAG Application](#rag-application)
+  - [Vector Database & Embedding](#vector-database--embedding)
+- **Application**
+  - [AI Application](#ai-application)
+  - [Agent & Application](#agent--application)
+  - [No Code & User Interface](#no-code--user-interface)
+  - [Infrastructure & Backend Services](#infrastructure--backend-services)
+  - [Caching](#caching)
+  - [Data Processing](#data-processing)
+  - [Gateway](#gateway)
+  - [Memory](#memory)
+- **Agent Protocols**
+  - [Agent Protocol](#agent-protocol)
+  - [MCP](#model-context-protocol-mcp)
+  - [A2A](#a2a)
+  - [Computer use](#computer-use)
+- **Coding & Research**
+  - [Coding & Research](#coding--research)
+  - [Coding](#coding)
+  - [Domain-Specific Agents](#domain-specific-agents)
+  - [Deep Research](#deep-research)
+- **Frameworks**
+  - [Top Agent Frameworks](#top-agent-frameworks)
+  - [Orchestration Framework](#orchestration-framework)
+  - [LangChain](#langchain)
+  - [LlamaIndex](#llamaindex)
+  - [Semantic Kernel](#semantic-kernel)
+  - [DSPy](#dspy)
 
-### 2. Azure OpenAI
+**[⬆ back to top](#azure-openai--llm)**
+
+## 2. Azure OpenAI
 🌌 Microsoft's Cloud-Based AI Platform and Services
 
-- Overview: [Azure OpenAI Overview](#azure-openai-overview)
-- Frameworks: [LLM Frameworks](#llm-frameworks), [Agent Frameworks](#agent-frameworks)
-- Tooling: [Prompt Tooling](#prompt-tooling), [Developer Tooling](#developer-tooling)
-- Products: [Microsoft Copilot Products](#microsoft-copilot-products), [Agent Development](#agent-development), [Copilot Development](#copilot-development)
-- Services: [Azure AI Search](#azure-ai-search), [Azure AI Services](#azure-ai-services)
-- Research: [Microsoft Research](#microsoft-research)
-- Applications: [Azure OpenAI Application](#azure-openai-application), [Azure OpenAI Accelerator & Samples](#azure-openai-accelerator--samples), [Use Case & Architecture References](#use-case--architecture-references)
+- **Overview**
+  - [Azure OpenAI Overview](#azure-openai-overview)
+- **Frameworks**
+  - [LLM Frameworks](#llm-frameworks)
+  - [Agent Frameworks](#agent-frameworks)
+- **Tooling**
+  - [Prompt Tooling](#prompt-tooling)
+  - [Developer Tooling](#developer-tooling)
+- **Products**
+  - [Microsoft Copilot Products](#microsoft-copilot-products)
+  - [Agent Development](#agent-development)
+  - [Copilot Development](#copilot-development)
+- **Services**
+  - [Azure AI Search](#azure-ai-search)
+  - [Azure AI Services](#azure-ai-services)
+- **Research**
+  - [Microsoft Research](#microsoft-research)
+- **Applications**
+  - [Azure OpenAI Application](#azure-openai-application)
+  - [Azure OpenAI Accelerator & Samples](#azure-openai-accelerator--samples)
+  - [Use Case & Architecture References](#use-case--architecture-references)
 
-### 3. Research & Survey
+**[⬆ back to top](#azure-openai--llm)**
+
+## 3. Research & Survey
 🧠 LLM Landscape, Prompt Engineering, Finetuning, Challenges & Surveys
 
-- Landscape: [Large Language Model: Landscape](#large-language-model-landscape), [Comparison](#large-language-model-comparison), [Evolutionary Tree](#evolutionary-tree-of-large-language-models), [Model Collection](#large-language-model-collection)
-- Prompting: [Prompt Engineering and Visual Prompts](#prompt-engineering-and-visual-prompts)
-- Finetuning: [Finetuning](#finetuning), [Quantization Techniques](#quantization-techniques), [Other Techniques and LLM Patterns](#other-techniques-and-llm-patterns)
-- Challenges: [Large Language Model: Challenges and Solutions](#large-language-model-challenges-and-solutions), [Context Constraints](#context-constraints), [Trustworthy, Safe and Secure LLM](#trustworthy-safe-and-secure-llm), [Large Language Model's Abilities](#large-language-model-is-abilities), [Reasoning](#reasoning)
-- Products & Impact: [OpenAI Roadmap](#openai-roadmap), [OpenAI Models](#openai-models), [OpenAI Products](#openai-products), [Anthropic Products](#anthropic-ai-products), [Google AI Products](#google-ai-products), [AGI Discussion and Social Impact](#agi-discussion-and-social-impact)
-- Survey & Build: [Survey and Reference](#survey-and-reference), [Survey on Large Language Models](#survey-on-large-language-models), [Build an LLMs from Scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt), [Business Use Cases](#business-use-cases)
+- **Landscape**
+  - [Large Language Model: Landscape](#large-language-model-landscape)
+  - [Comparison](#large-language-model-comparison)
+  - [Evolutionary Tree](#evolutionary-tree-of-large-language-models)
+  - [Model Collection](#large-language-model-collection)
+- **Prompting**
+  - [Prompt Engineering and Visual Prompts](#prompt-engineering-and-visual-prompts)
+- **Finetuning**
+  - [Finetuning](#finetuning)
+  - [Quantization Techniques](#quantization-techniques)
+  - [Other Techniques and LLM Patterns](#other-techniques-and-llm-patterns)
+- **Challenges**
+  - [Large Language Model: Challenges and Solutions](#large-language-model-challenges-and-solutions)
+  - [Context Constraints](#context-constraints)
+  - [Trustworthy, Safe and Secure LLM](#trustworthy-safe-and-secure-llm)
+  - [Large Language Model's Abilities](#large-language-model-is-abilities)
+  - [Reasoning](#reasoning)
+- **Products & Impact**
+  - [OpenAI Roadmap](#openai-roadmap)
+  - [OpenAI Models](#openai-models)
+  - [OpenAI Products](#openai-products)
+  - [Anthropic Products](#anthropic-ai-products)
+  - [Google AI Products](#google-ai-products)
+  - [AGI Discussion and Social Impact](#agi-discussion-and-social-impact)
+- **Survey & Build**
+  - [Survey and Reference](#survey-and-reference)
+  - [Survey on Large Language Models](#survey-on-large-language-models)
+  - [Build an LLMs from Scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt)
+  - [Business Use Cases](#business-use-cases)
 
-### 4. Tools & Resource
+**[⬆ back to top](#azure-openai--llm)**
+
+## 4. Tools & Resource
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
 
-- Tools: [General AI Tools and Extensions](#general-ai-tools-and-extensions), [LLM for Robotics](#llm-for-robotics), [Awesome Demo](#awesome-demo)
-- Data: [Datasets for LLM Training](#datasets-for-llm-training)
-- Evaluation: [Evaluating Large Language Models](#evaluating-large-language-models), [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
+- **Tools**
+  - [General AI Tools and Extensions](#general-ai-tools-and-extensions)
+  - [LLM for Robotics](#llm-for-robotics)
+  - [Awesome Demo](#awesome-demo)
+- **Data**
+  - [Datasets for LLM Training](#datasets-for-llm-training)
+- **Evaluation**
+  - [Evaluating Large Language Models](#evaluating-large-language-models)
+  - [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
 
-### 5. Best Practices
+**[⬆ back to top](#azure-openai--llm)**
+
+## 5. Best Practices
 📋 Curated Blogs, Patterns, and Implementation Guidelines
 
-- RAG: [RAG Best Practices](#rag-best-practices), [The Problem with RAG](#the-problem-with-rag), [RAG Solution Design](#rag-solution-design), [RAG Research](#rag-research)
-- Agent: [Agent Best Practices](#agent-best-practices), [Agent Design Patterns](#agent-design-patterns), [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
-- Reference: [Proposals & Glossary](#proposals--glossary)
+- **RAG**
+  - [RAG Best Practices](#rag-best-practices)
+  - [The Problem with RAG](#the-problem-with-rag)
+  - [RAG Solution Design](#rag-solution-design)
+  - [RAG Research](#rag-research)
+- **Agent**
+  - [Agent Best Practices](#agent-best-practices)
+  - [Agent Design Patterns](#agent-design-patterns)
+  - [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
+- **Reference**
+  - [Proposals & Glossary](#proposals--glossary)
 
-## Legend & Notation
+**[⬆ back to top](#azure-openai--llm)**
+
+## 📖 Legend & Notation
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
@@ -173,6 +261,7 @@ https://shields.io/badges/git-hub-created-at
   - [nano-graphrag✨](https://github.com/gusye1234/nano-graphrag): A simple, easy-to-hack GraphRAG implementation [Jul 2024]
 ![**github stars**](https://img.shields.io/github/stars/gusye1234/nano-graphrag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Graphiti✨](https://github.com/getzep/graphiti)
+- [GraphSearch✨](https://github.com/DataArcTech/GraphSearch): An Agentic Workflow for Graph RAG. [Oct 2025]
 - [HippoRAG✨](https://github.com/OSU-NLP-Group/HippoRAG):💡RAG + Knowledge Graphs + Personalized PageRank. [23 May 2024] ![**github stars**](https://img.shields.io/github/stars/OSU-NLP-Group/HippoRAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [How to Build a Graph RAG App✍️](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
 - [HybridRAG📑](https://alphaxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
@@ -546,6 +635,7 @@ https://shields.io/badges/git-hub-created-at
 1. [PaddleOCR✨](https://github.com/PaddlePaddle/PaddleOCR): Turn any PDF or image document into structured data. [May 2020] ![**github stars**](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [pandas-ai✨](https://github.com/Sinaptik-AI/pandas-ai): Chat with your database (SQL, CSV, pandas, polars, mongodb, noSQL, etc). [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/Sinaptik-AI/pandas-ai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Paperless-AI✨](https://github.com/clusterzx/paperless-ai): An automated document analyzer for Paperless-ngx using OpenAI API, Ollama and all OpenAI API compatible Services to automatically analyze and tag your documents. [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/clusterzx/paperless-ai?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Parsr✨](https://github.com/axa-group/Parsr): Document parsing and extraction into structured data. [Aug 2019] ![**github stars**](https://img.shields.io/github/stars/axa-group/Parsr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [pipet✨](https://github.com/bjesus/pipet): Swiss-army tool for scraping and extracting data from online [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/bjesus/pipet?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [PostgresML✨](https://github.com/postgresml/postgresml): The GPU-powered AI application database. [Apr 2022]
 ![**github stars**](https://img.shields.io/github/stars/postgresml/postgresml?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -576,6 +666,7 @@ https://shields.io/badges/git-hub-created-at
 1. [Gemini Memory✍️](https://www.shloked.com/writing/gemini-memory): Gemini uses a structured, typeed “user_context” summary with timestamps, accessed only when you explicitly ask. simpler and more unified than ChatGPT or Claude, and it rarely uses data from the Google ecosystem. [19 Nov 2025]
 1. [Graphiti✨](https://github.com/getzep/graphiti): Graphiti leverages [zep✨](https://github.com/getzep/zep)'s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/getzep/graphiti?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Letta (previously MemGPT)✨](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [✍️](https://memgpt.ai) / [git:old✨](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Making Sense of Memory in AI Agents✍️](https://leoniemonigatti.com/blog/memory-in-ai-agents.html) & [Exploring Anthropic’s Memory Tool](https://leoniemonigatti.com/blog/claude-memory-tool.html): How agents remember, recall, and (struggle to) forget information. [25 Nov 2025]
 1. [Mem0✨](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
     | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory📑](https://alphaxiv.org/abs/2504.19413) [28 Apr 2025]  
@@ -706,9 +797,11 @@ https://shields.io/badges/git-hub-created-at
 1. [landing.ai: Vision Agent✨](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Organ-Agents: Virtual Human Physiology Simulator via LLMs](https://alphaxiv.org/abs/2508.14357): Multi-agent system simulating nine human organs using fine-tuned Qwen3-8B, forecasting patient physiology up to 12 hours ahead, validated by 15 ICU specialists. [20 Aug 2025]
 1. [MLE-agent✨](https://github.com/MLSysOps/MLE-agent): LLM agent for machine learning engineers and researchers [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/MLSysOps/MLE-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [QuantAgent✨](https://github.com/Y-Research-SBU/QuantAgent): Quantitative trading agent. Multi-Agent LLMs for High-Frequency Trading. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/Y-Research-SBU/QuantAgent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [UXAgent📑](https://alphaxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
 
 #### Deep Research
+
 1. [Accelerating scientific breakthroughs with an AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/): Google introduces AI co-scientist, a multi-agent AI system built with Gemini 2.0 as a virtual scientific collaborator [19 Feb 2025]
 1. [Agent Laboratory✨](https://github.com/SamuelSchmidgall/AgentLaboratory): E2E autonomous research workflow. Using LLM Agents as Research Assistants. [8 Jan 2025] ![**github stars**](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [agenticSeek✨](https://github.com/Fosowl/agenticSeek): Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that thinks, browses the web, and code for the sole cost of electricity. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -717,6 +810,7 @@ https://shields.io/badges/git-hub-created-at
 1. [CodeScientist✨](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/allenai/codescientist?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Company Researcher✨](https://github.com/exa-labs/company-researcher): a free and open-source tool that helps you instantly understand any company inside out. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/exa-labs/company-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Deep Research Agent📑](https://alphaxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
+1. [DeepScholar](https://deep-scholar.vercel.app): an openly accessible deep research system from Berkeley and Stanford [Nov 2025]
 1. [DeepSearcher✨](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DeerFlow✨](https://github.com/bytedance/deer-flow):  Bytedance. Deep Exploration and Efficient Research Flow. a community-driven Deep Research framework that combines language models with tools like web search, crawling, and code execution.  ![**github stars**](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [May 2025]
 1. [Enterprise Deep Research (EDR)✨](https://github.com/SalesforceAIResearch/enterprise-deep-research): Salesforce Enterprise Deep Research [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/SalesforceAIResearch/enterprise-deep-research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -726,8 +820,10 @@ https://shields.io/badges/git-hub-created-at
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]
 1. [LangChain Open Deep Research✨](https://github.com/langchain-ai/open_deep_research): (formerly mAIstro) a web research assistant for generating comprehensive reports on any topic. [13 Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Manus sandbox runtime code leaked](https://x.com/jianxliao/status/1898861051183349870): Claude Sonnet with 29 tools, without multi-agent, using `browser_use`. [✨](https://gist.github.com/jlia0/db0a9695b3ca7609c9b1a08dcbf872c9) [✍️](https://manus.im/): Manus official site [10 Mar 2025]
+1. [MiniMax-M2 Deep Research Agent](https://github.com/dair-ai/m2-deep-research): Minimax M2 with interleaved thinking, Exa neural search. [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/dair-ai/m2-deep-research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MLAB ResearchAgent✨](https://github.com/snap-stanford/MLAgentBench): Evaluating Language Agents on Machine Learning Experimentation [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/snap-stanford/MLAgentBench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Ollama Deep Researcher✨](https://github.com/langchain-ai/ollama-deep-researcher): a fully local web research assistant that uses any LLM hosted by Ollama [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/langchain-ai/ollama-deep-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [OmniScientist📑](https://arxiv.org/abs/2511.16931): a dynamic contextual graph with the Omni Scientific Protocol (OSP) for transparent multi-agent collaboration and ScienceArena for continuous human-centered evaluation. [21 Nov 2025]
 1. [Open Deep Research✨](https://github.com/btahir/open-deep-research): Open source alternative to Gemini Deep Research. [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/btahir/open-deep-research?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Open Interpreter✨](https://github.com/KillianLucas/open-interpreter):💡Let language models run code on your computer. [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/KillianLucas/open-interpreter?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -746,6 +842,7 @@ https://shields.io/badges/git-hub-created-at
 1. [SlashGPT✨](https://github.com/snakajima/SlashGPT) The tool integrated with "jupyter" agent [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/snakajima/SlashGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [smolagents: Open Deep Research✨](https://github.com/huggingface/smolagents) > `examples/open_deep_research`.🤗HuggingFace [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Stanford Agentic Reviewer](https://paperreview.ai/): AI feedback on your research paper [Nov 2025]
 1. [STORM✨](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/stanford-oval/storm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search📑](https://alphaxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [✨](https://github.com/SakanaAI/AI-Scientist-v2) ![**github stars**](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Tongyi DeepResearch✨](https://github.com/Alibaba-NLP/DeepResearch): Alibaba. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1298,6 +1395,7 @@ ng-hello-programming-4ca1c6ce3eb9).
 
 - [Agent 365](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/) - ✍️Control plane for AI agents (registry, access control, visualization, interoperability, security). (18 Nov 2025)
 - [Azure SRE Agent](https://techcommunity.microsoft.com/blog/azurepaasblog/introducing-azure-sre-agent/4414569) - ✍️A cloud agent service. Site reliability engineering (SRE) covers Usage, Incident, and Performance Monitoring. (19 May 2025)
+- 🏛️[Azure SRE Agent GitHub Repository](https://github.com/microsoft/sre-agent) - ✨Official sample of Azure SRE Agent. (September 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/sre-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot) - ✍️Analytics insights assistant for session telemetry. (March 2023)
 - [Copilot Pages](https://techcommunity.microsoft.com/en-us/microsoft-365-copilot/announcing-copilot-pages-for-multiplayer-collaboration/ba-p/4242701) - ✍️Persistent collaborative canvas in Copilot chat. (16 Sep 2024)
 - [Copilot Pro](https://support.microsoft.com/en-us/copilot-pro) - ✍️Premium Copilot features, model priority, and M365 integration. (Jan 2024)
@@ -1577,8 +1675,6 @@ ng-hello-programming-4ca1c6ce3eb9).
 #### The Big LLM Architecture Comparison (in 2025)
 
 - [The Big LLM Architecture Comparison✍️](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html):💡 [19 Jul 2025]
-- [Beyond Standard LLMs✍️](https://magazine.sebastianraschka.com/p/beyond-standard-llms):💡Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers [04 Nov 2025]
-
 
   | Model                 | Parameters | Attention Type                           | MoE                             | Norm                            | Positional Encoding            | Notable Features                                                                            |
   | --------------------- | ---------- | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -1595,6 +1691,16 @@ ng-hello-programming-4ca1c6ce3eb9).
   | **Grok 2.5**          | 70B        | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard large-scale architecture                                                           |
   | **GLM-4.5**           | 130B       | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard architecture with high performance                                                 |
   | **Qwen3-Next**        | -        | Grouped-Query Attention                  | Yes                             | Pre-normalization               | RoPE                           | Expert size & number tuned, Gated DeltaNet + Gated Attention Hybrid, Multi-Token Prediction |
+
+- [Beyond Standard LLMs✍️](https://magazine.sebastianraschka.com/p/beyond-standard-llms):💡Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers [04 Nov 2025]
+
+  | **Architecture Type** | **Key Models** | **Attention Mechanism** | **Main Advantage** | **Main Limitation** | **Use Case** |
+  | --- | --- | --- | --- | --- | --- |
+  | **Standard Transformer** | GPT-5, DeepSeek V3/R1, Llama 4, Qwen3, Gemini 2.5, MiniMax-M2 | Quadratic O(n²) scaled-dot-product | Proven, SOTA performance, mature tooling | Expensive training & inference, quadratic complexity | General-purpose LLM tasks |
+  | **Linear Attention Hybrids** | Qwen3-Next, Kimi Linear, MiniMax-M1, DeepSeek V3.2 | Gated DeltaNet + Full Attention (3:1 ratio) | 75% KV cache reduction, 6× decoding throughput, linear O(n) | Trades accuracy for efficiency, added complexity | Long-context tasks, resource-constrained environments |
+  | **Text Diffusion** | LLaDA, Gemini Diffusion | Bidirectional (no causal mask) | Parallel token generation, faster responses | Can't stream, tricky tool-calling, quality degradation with fewer steps | Fast inference, on-device LLMs |
+  | **Code World Models** | CWM (32B) | Standard sliding-window attention | Simulates code execution, improves reasoning | Limited to code domain, added latency from execution traces | Code generation, debugging, test-time scaling |
+  | **Small Recursive Transformers** | TRM (7M), HRM (28M) | Standard attention with recursive refinement | Very small (7M params), strong puzzle solving, <$500 training cost | Special-purpose, limited to structured tasks (Sudoku, ARC, Maze) | Domain-specific reasoning, tool-calling modules |
 
 #### GPT-2 vs gpt-oss
 
@@ -1656,6 +1762,7 @@ ng-hello-programming-4ca1c6ce3eb9).
   - [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
   - [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
   - [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
+  - [Claude Opus 4.5✍️](https://www.anthropic.com/news/claude-opus-4-5):  SWE-bench Verified (80.9%).  $5/$25 per million tokens [25 Nov 2025]
   - [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
 - Apple
   - [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
@@ -1682,6 +1789,7 @@ ng-hello-programming-4ca1c6ce3eb9).
   - [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
   - [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [DeepSeekMath-V2✨](https://github.com/deepseek-ai/DeepSeek-Math-V2/): a Self-Verifiable Mathematical Reasoning model [27 Nov 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Math-V2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - A list of models: [✨](https://github.com/deepseek-ai)
 - EleutherAI
   - Founded in July 2020. United States tech. GPT-Neo, GPT-J, GPT-NeoX, and The Pile dataset.
@@ -3062,6 +3170,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [MBPP✨](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
 1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
 1. [SWE-Lancer✍️](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025]
+1. [Vibe Code Bench](https://www.vals.ai/benchmarks/vibe-code): Claude Sonnet 4.5 (Thinking)and GPT 5.1 are head and shoulders above the competition. GPT 5.1 stands out especially for its low cost and high performance.
 
 #### Chatbot Assistance
 
