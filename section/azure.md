@@ -100,6 +100,7 @@
 
 - [Agent 365](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/) - ✍️Control plane for AI agents (registry, access control, visualization, interoperability, security). (18 Nov 2025)
 - [Azure SRE Agent](https://techcommunity.microsoft.com/blog/azurepaasblog/introducing-azure-sre-agent/4414569) - ✍️A cloud agent service. Site reliability engineering (SRE) covers Usage, Incident, and Performance Monitoring. (19 May 2025)
+- 🏛️[Azure SRE Agent GitHub Repository](https://github.com/microsoft/sre-agent) - ✨Official sample of Azure SRE Agent. (September 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/sre-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot) - ✍️Analytics insights assistant for session telemetry. (March 2023)
 - [Copilot Pages](https://techcommunity.microsoft.com/en-us/microsoft-365-copilot/announcing-copilot-pages-for-multiplayer-collaboration/ba-p/4242701) - ✍️Persistent collaborative canvas in Copilot chat. (16 Sep 2024)
 - [Copilot Pro](https://support.microsoft.com/en-us/copilot-pro) - ✍️Premium Copilot features, model priority, and M365 integration. (Jan 2024)

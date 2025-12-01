@@ -47,8 +47,6 @@
 #### The Big LLM Architecture Comparison (in 2025)
 
 - [The Big LLM Architecture Comparison✍️](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html):💡 [19 Jul 2025]
-- [Beyond Standard LLMs✍️](https://magazine.sebastianraschka.com/p/beyond-standard-llms):💡Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers [04 Nov 2025]
-
 
   | Model                 | Parameters | Attention Type                           | MoE                             | Norm                            | Positional Encoding            | Notable Features                                                                            |
   | --------------------- | ---------- | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -65,6 +63,16 @@
   | **Grok 2.5**          | 70B        | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard large-scale architecture                                                           |
   | **GLM-4.5**           | 130B       | Grouped-Query Attention                  | Yes                              | Pre-normalization               | RoPE                           | Standard architecture with high performance                                                 |
   | **Qwen3-Next**        | -        | Grouped-Query Attention                  | Yes                             | Pre-normalization               | RoPE                           | Expert size & number tuned, Gated DeltaNet + Gated Attention Hybrid, Multi-Token Prediction |
+
+- [Beyond Standard LLMs✍️](https://magazine.sebastianraschka.com/p/beyond-standard-llms):💡Linear Attention Hybrids, Text Diffusion, Code World Models, and Small Recursive Transformers [04 Nov 2025]
+
+  | **Architecture Type** | **Key Models** | **Attention Mechanism** | **Main Advantage** | **Main Limitation** | **Use Case** |
+  | --- | --- | --- | --- | --- | --- |
+  | **Standard Transformer** | GPT-5, DeepSeek V3/R1, Llama 4, Qwen3, Gemini 2.5, MiniMax-M2 | Quadratic O(n²) scaled-dot-product | Proven, SOTA performance, mature tooling | Expensive training & inference, quadratic complexity | General-purpose LLM tasks |
+  | **Linear Attention Hybrids** | Qwen3-Next, Kimi Linear, MiniMax-M1, DeepSeek V3.2 | Gated DeltaNet + Full Attention (3:1 ratio) | 75% KV cache reduction, 6× decoding throughput, linear O(n) | Trades accuracy for efficiency, added complexity | Long-context tasks, resource-constrained environments |
+  | **Text Diffusion** | LLaDA, Gemini Diffusion | Bidirectional (no causal mask) | Parallel token generation, faster responses | Can't stream, tricky tool-calling, quality degradation with fewer steps | Fast inference, on-device LLMs |
+  | **Code World Models** | CWM (32B) | Standard sliding-window attention | Simulates code execution, improves reasoning | Limited to code domain, added latency from execution traces | Code generation, debugging, test-time scaling |
+  | **Small Recursive Transformers** | TRM (7M), HRM (28M) | Standard attention with recursive refinement | Very small (7M params), strong puzzle solving, <$500 training cost | Special-purpose, limited to structured tasks (Sudoku, ARC, Maze) | Domain-specific reasoning, tool-calling modules |
 
 #### GPT-2 vs gpt-oss
 
@@ -126,6 +134,7 @@
   - [Claude 3.7 Sonnet and Claude Code✍️](https://www.anthropic.com/news/claude-3-7-sonnet): the first hybrid reasoning model. [✍️](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf) [25 Feb 2025]
   - [Claude 4✍️](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
   - [Claude 4.5✍️](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
+  - [Claude Opus 4.5✍️](https://www.anthropic.com/news/claude-opus-4-5):  SWE-bench Verified (80.9%).  $5/$25 per million tokens [25 Nov 2025]
   - [anthropic/cookbook✨](https://github.com/anthropics/anthropic-cookbook)
 - Apple
   - [OpenELM](https://machinelearning.apple.com/research/openelm): Apple released a Transformer-based language model. Four sizes of the model: 270M, 450M, 1.1B, and 3B parameters. [April 2024]
@@ -152,6 +161,7 @@
   - [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
   - [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [DeepSeekMath-V2✨](https://github.com/deepseek-ai/DeepSeek-Math-V2/): a Self-Verifiable Mathematical Reasoning model [27 Nov 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Math-V2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - A list of models: [✨](https://github.com/deepseek-ai)
 - EleutherAI
   - Founded in July 2020. United States tech. GPT-Neo, GPT-J, GPT-NeoX, and The Pile dataset.

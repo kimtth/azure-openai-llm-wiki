@@ -223,6 +223,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [MBPP✨](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
 1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
 1. [SWE-Lancer✍️](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025]
+1. [Vibe Code Bench](https://www.vals.ai/benchmarks/vibe-code): Claude Sonnet 4.5 (Thinking)and GPT 5.1 are head and shoulders above the competition. GPT 5.1 stands out especially for its low cost and high performance.
 
 #### Chatbot Assistance
 
