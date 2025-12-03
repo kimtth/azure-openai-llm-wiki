@@ -1,4 +1,4 @@
-## **Azure OpenAI and Reference Architecture**
+## Azure OpenAI & Copilot
 
 ## Contents
 
@@ -192,26 +192,26 @@
 ## Microsoft Research
 
 - [AsyncThink](https://arxiv.org/abs/2510.26658) - ✍️Asynchronous thinking protocol with organizer/worker fork–join actions extending sequential and parallel paradigms. (30 Oct 2025)
-- [AutoGen Studio](https://alphaxiv.org/abs/2408.15247) - ✍️A No-Code Developer Tool for Building and Debugging Multi-Agent Systems. (9 Aug 2024)
+- [AutoGen Studio](https://arxiv.org/abs/2408.15247) - ✍️A No-Code Developer Tool for Building and Debugging Multi-Agent Systems. (9 Aug 2024)
 - [Azure AI Foundry Labs](https://ai.azure.com/labs/) - ✍️Research driven tools and experimental projects.
-- [Data Formulator](https://alphaxiv.org/abs/2309.10094) - ✍️AI-powered Concept-driven Visualization Authoring. (18 Sep 2023)
-- [Data Formulator 2](https://alphaxiv.org/abs/2408.16119) - ✍️Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way. (18 Sep 2023)
+- [Data Formulator](https://arxiv.org/abs/2309.10094) - ✍️AI-powered Concept-driven Visualization Authoring. (18 Sep 2023)
+- [Data Formulator 2](https://arxiv.org/abs/2408.16119) - ✍️Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way. (18 Sep 2023)
 - [Data Science Toolkit](https://www.ds-toolkit.com/) - ✍️Open-source collection of proven ML and AI implementation accelerators.
 - [Fara-7B](https://github.com/microsoft/fara) - ✨An Efficient Agentic Model for Computer Use. (24 Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/fara?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [GraphRAG (by Microsoft)](https://alphaxiv.org/abs/2404.16130) - ✍️RAG with a graph-based approach to efficiently answer both specific and broad questions over large text. (24 Apr 2024)
-- [Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion](https://alphaxiv.org/abs/2311.06318) - ✍️K-LaMP. Contextual memory layer for LLM application. (10 Nov 2023)
+- [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130) - ✍️RAG with a graph-based approach to efficiently answer both specific and broad questions over large text. (24 Apr 2024)
+- [Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion](https://arxiv.org/abs/2311.06318) - ✍️K-LaMP. Contextual memory layer for LLM application. (10 Nov 2023)
 - [Magentic-One](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/magentic-one.html) - ✍️A Generalist Multi-Agent System for Solving Complex Tasks.
 - [Magentic-UI](https://www.microsoft.com/en-us/research/blog/magentic-ui-an-experimental-human-centered-web-agent/) - ✍️Magentic-UI, built on Magentic-One, can browse the web, run Python and shell code, and process files.
 - 🏛️[MarS - A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) - Financial market simulation using generative AI. (4 Sep 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/MarS?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/) - ✍️Generative model for inorganic materials design. (13 May 2024)
-- [Microsoft AI Diagnostic Orchestrator (MAI-DxO)](https://alphaxiv.org/abs/2506.22405) - ✍️Multi-Agent System. Accurately diagnoses up to 85% of NEJM case proceedings, which is over four times the rate achieved by a group of experienced physicians.
-- [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://alphaxiv.org/abs/2306.03460) - ✍️Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. (6 Jun 2023)
-- [NL2KQL](https://alphaxiv.org/abs/2404.02933) - ✍️From Natural Language to Kusto Query. (3 Apr 2024)
-- [Optimizing Model Selection for Compound AI Systems](https://alphaxiv.org/abs/2502.14815) - ✍️A framework that automatically optimizes model selection for compound AI systems. (20 Feb 2025)
+- [Microsoft AI Diagnostic Orchestrator (MAI-DxO)](https://arxiv.org/abs/2506.22405) - ✍️Multi-Agent System. Accurately diagnoses up to 85% of NEJM case proceedings, which is over four times the rate achieved by a group of experienced physicians.
+- [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460) - ✍️Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. (6 Jun 2023)
+- [NL2KQL](https://arxiv.org/abs/2404.02933) - ✍️From Natural Language to Kusto Query. (3 Apr 2024)
+- [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815) - ✍️A framework that automatically optimizes model selection for compound AI systems. (20 Feb 2025)
 - [PromptWizard](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/) - ✍️The prompt optimization through feedback-driven self-evolving prompts. (17 Dec 2024)
-- [R&D-Agent-Quant](https://alphaxiv.org/abs/2505.15155) - ✍️R&D-Agent for Quantitative Finance, in short RD-Agent(Q), the first data-centric multi-agent framework designed to automate the full-stack research and development of quantitative strategies via coordinated factor-model co-optimization. (21 May 2025)
-- [SpreadsheetLLM](https://alphaxiv.org/abs/2407.09025) - ✍️Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens. (12 Jul 2024)
-- [VibeVoice](https://alphaxiv.org/abs/2508.19205) - ✍️Open-Source Text-to-Speech. (26 Aug 2025)
+- [R&D-Agent-Quant](https://arxiv.org/abs/2505.15155) - ✍️R&D-Agent for Quantitative Finance, in short RD-Agent(Q), the first data-centric multi-agent framework designed to automate the full-stack research and development of quantitative strategies via coordinated factor-model co-optimization. (21 May 2025)
+- [SpreadsheetLLM](https://arxiv.org/abs/2407.09025) - ✍️Introduces an efficient method to encode Excel sheets, outperforming previous approaches with 25 times fewer tokens. (12 Jul 2024)
+- [VibeVoice](https://arxiv.org/abs/2508.19205) - ✍️Open-Source Text-to-Speech. (26 Aug 2025)
 
 ## Azure OpenAI Application
 

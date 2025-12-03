@@ -1,4 +1,4 @@
-# Applications, RAG, and Agent Systems
+# App and Agent
 
 ## **Contents**
  
@@ -33,7 +33,7 @@
 ## **RAG (Retrieval-Augmented Generation)**
 
 - RAG integrates retrieval (searching) into LLM text generation, enabling models to access external information. [✍️](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7) [25 Aug 2023]
-- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks📑](https://alphaxiv.org/abs/2005.11401): Meta's 2020 framework for giving LLMs access to information beyond training data. [[🔢](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=arxiv%3A+2005.11401)] [22 May 2020]
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks📑](https://arxiv.org/abs/2005.11401): Meta's 2020 framework for giving LLMs access to information beyond training data. [22 May 2020]
   - RAG-sequence — Retrieve k documents to generate all output tokens.
   - RAG-token— Retrieve k documents per token generation.
   - RAG-sequence is the industry standard due to lower cost and simplicity. [✍️](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a) [30 Sep 2023]
@@ -44,15 +44,15 @@
 - Advanced RAG Patterns: How to improve RAG peformance [✍️](https://cloudatlas.me/why-do-rag-pipelines-fail-advanced-rag-patterns-part1-841faad8b3c2) / [✍️](https://cloudatlas.me/how-to-improve-rag-peformance-advanced-rag-patterns-part2-0c84e2df66e6) [17 Oct 2023]
   - Data quality: Clean, standardize, deduplicate, segment, annotate, augment, and update data to make it clear, consistent, and context-rich.
   - Embeddings fine-tuning: Fine-tune embeddings to domain specifics, adjust them according to context, and refresh them periodically to capture evolving semantics.
-  - Retrieval optimization: Refine chunking, embed metadata, use query routing, multi-vector retrieval, re-ranking, hybrid search, recursive retrieval, query engine, [HyDE📑](https://alphaxiv.org/abs/2212.10496) [20 Dec 2022], and vector search algorithms to improve retrieval efficiency and relevance.
+  - Retrieval optimization: Refine chunking, embed metadata, use query routing, multi-vector retrieval, re-ranking, hybrid search, recursive retrieval, query engine, [HyDE📑](https://arxiv.org/abs/2212.10496) [20 Dec 2022], and vector search algorithms to improve retrieval efficiency and relevance.
   - Synthesis techniques: Query transformations, prompt templating, prompt conditioning, function calling, and fine-tuning the generator to refine the generation step.
   - HyDE: Implemented in [LangChain: HypotheticalDocumentEmbedder✨](https://github.com/langchain-ai/langchain/blob/master/cookbook/hypothetical_document_embeddings.ipynb). A query generates hypothetical documents, which are then embedded and retrieved to provide the most relevant results. `query -> generate n hypothetical documents -> documents embedding - (avg of embeddings) -> retrieve -> final result.` [✍️](https://www.jiang.jp/posts/20230510_hyde_detailed/index.html)
-- [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG📑](https://alphaxiv.org/abs/2501.09136) [15 Jan 2025]
+- [Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG📑](https://arxiv.org/abs/2501.09136) [15 Jan 2025]
 - [Azure RAG with Vision Application Framework✨](https://github.com/Azure-Samples/rag-as-a-service-with-vision) [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/rag-as-a-service-with-vision?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Contextual Retrieval✍️](https://www.anthropic.com/news/contextual-retrieval): Contextual Retrieval enhances traditional RAG by using Contextual Embeddings and Contextual BM25 to maintain context during retrieval. [19 Sep 2024]
 - Demystifying Advanced RAG Pipelines: An LLM-powered advanced RAG pipeline built from scratch [✨](https://github.com/pchunduri6/rag-demystified) [19 Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/pchunduri6/rag-demystified?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Enhancing Ultra High Resolution Remote Sensing Imagery Analysis with ImageRAG📑](https://alphaxiv.org/abs/2411.07688): Ultra High Resolution (UHR) remote sensing imagery, such as satellite imagery and medical imaging. [12 Nov 2024]
+- [Enhancing Ultra High Resolution Remote Sensing Imagery Analysis with ImageRAG📑](https://arxiv.org/abs/2411.07688): Ultra High Resolution (UHR) remote sensing imagery, such as satellite imagery and medical imaging. [12 Nov 2024]
 - [Evaluation with Ragas✍️](https://towardsdatascience.com/visualize-your-rag-data-evaluate-your-retrieval-augmented-generation-system-with-ragas-fc2486308557): UMAP (often used to reduce the dimensionality of embeddings) with Ragas metrics for visualizing RAG results. [Mar 2024] / `Ragas provides metrics`: Context Precision, Context Relevancy, Context Recall, Faithfulness, Answer Relevance, Answer Semantic Similarity, Answer Correctness, Aspect Critique [✨](https://github.com/explodinggradients/ragas) [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/explodinggradients/ragas?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - From Simple to Advanced RAG (LlamaIndex) [✍️](https://twitter.com/jerryjliu0/status/1711419232314065288) / [🗄️](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf) /💡[✍️](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023]
@@ -63,11 +63,11 @@
 - [Multi-Modal RAG System✍️](https://machinelearningmastery.com/implementing-multi-modal-rag-systems/): Building a knowledge base with both image and audio data. [12 Feb 2025]
 - [🗣️](https://twitter.com/yi_ding/status/1721728060876300461) [7 Nov 2023] `OpenAI has put together a pretty good roadmap for building a production RAG system.` Naive RAG -> Tune Chunks -> Rerank & Classify -> Prompt Engineering. In `llama_index`... [📺](https://www.youtube.com/watch?v=ahnGLM-RC1Y)  <br/>
   <img src="../files/oai-rag-success-story.jpg" width="500">
-- [Path-RAG: Knowledge-Guided Key Region Retrieval for Open-ended Pathology Visual Question Answering📑](https://alphaxiv.org/abs/2411.17073): Using HistoCartography to improve pathology image analysis and boost PathVQA-Open performance. [26 Nov 2024]
+- [Path-RAG: Knowledge-Guided Key Region Retrieval for Open-ended Pathology Visual Question Answering📑](https://arxiv.org/abs/2411.17073): Using HistoCartography to improve pathology image analysis and boost PathVQA-Open performance. [26 Nov 2024]
 - [RAG Hallucination Detection Techniques✍️](https://machinelearningmastery.com/rag-hallucination-detection-techniques/): Hallucination metrics using the DeepEval, G-Eval. [10 Jan 2025] 
 - RAG Pipeline: 1. Indexing Stage – prepare knowledge base; 2. Querying Stage – retrieve relevant data; 3. Responding Stage – generate responses [✍️](https://learn.microsoft.com/en-us/azure/machine-learning/concept-retrieval-augmented-generation)
 - [UniversalRAG✨](https://github.com/wgcyeo/UniversalRAG) [29 Apr 2025]  ![**github stars**](https://img.shields.io/github/stars/wgcyeo/UniversalRAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [VideoRAG📑](https://alphaxiv.org/abs/2501.05874): Not only does it retrieve relevant videos from a large video corpus, but it also integrates both the visual and textual elements of videos into the answer-generation process using Large Video Language Models (LVLMs). [10 Jan 2025]
+- [VideoRAG📑](https://arxiv.org/abs/2501.05874): Not only does it retrieve relevant videos from a large video corpus, but it also integrates both the visual and textual elements of videos into the answer-generation process using Large Video Language Models (LVLMs). [10 Jan 2025]
 - [Visual RAG over PDFs with Vespa✍️](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [✨](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
 - [What is Agentic RAG](https://weaviate.io/blog/what-is-agentic-rag): The article published by Weaviate. [5 Nov 2024]
 
@@ -76,7 +76,7 @@
 - [Fast GraphRAG✨](https://github.com/circlemind-ai/fast-graphrag): 6x cost savings compared to `graphrag`, with 20% higher accuracy. Combines PageRank and GraphRAG. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/circlemind-ai/fast-graphrag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [FalkorDB✨](https://github.com/FalkorDB/FalkorDB): Graph Database. Knowledge Graph for LLM (GraphRAG). OpenCypher (query language in Neo4j). [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/FalkorDB/FalkorDB?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Graph RAG (by NebulaGraph)](https://medium.com/@nebulagraph/graph-rag-the-new-llm-stack-with-knowledge-graphs-e1e902c504ed): NebulaGraph proposes the concept of Graph RAG, which is a retrieval enhancement technique based on knowledge graphs. [demo](https://www.nebula-graph.io/demo) [8 Sep 2023]
-- [GraphRAG (by Microsoft)📑](https://alphaxiv.org/abs/2404.16130):🏆1. Global search: Original Documents -> Knowledge Graph (Community Summaries generated by LLM) -> Partial Responses -> Final Response. 2. Local Search: Utilizes vector-based search to find the nearest entities and relevant information.
+- [GraphRAG (by Microsoft)📑](https://arxiv.org/abs/2404.16130):🏆1. Global search: Original Documents -> Knowledge Graph (Community Summaries generated by LLM) -> Partial Responses -> Final Response. 2. Local Search: Utilizes vector-based search to find the nearest entities and relevant information.
 [✍️](https://microsoft.github.io/graphrag) / [✨](https://github.com/microsoft/graphrag) [24 Apr 2024]
 ![**github stars**](https://img.shields.io/github/stars/microsoft/graphrag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [DRIFT Search✍️](https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/): DRIFT search (Dynamic Reasoning and Inference with Flexible Traversal) combines global and local search methods to improve query relevance by generating sub-questions and refining the context using HyDE (Hypothetical Document Embeddings). [31 Oct 2024]
@@ -91,7 +91,7 @@
 - [GraphSearch✨](https://github.com/DataArcTech/GraphSearch): An Agentic Workflow for Graph RAG. [Oct 2025]
 - [HippoRAG✨](https://github.com/OSU-NLP-Group/HippoRAG):💡RAG + Knowledge Graphs + Personalized PageRank. [23 May 2024] ![**github stars**](https://img.shields.io/github/stars/OSU-NLP-Group/HippoRAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [How to Build a Graph RAG App✍️](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
-- [HybridRAG📑](https://alphaxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
+- [HybridRAG📑](https://arxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
 - [Neo4j GraphRAG Package for Python✨](https://github.com/neo4j/neo4j-graphrag-python) [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/neo4j/neo4j-graphrag-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
 ### **RAG Application**
@@ -111,7 +111,7 @@
 1. [llm-answer-engine✨](https://github.com/developersdigest/llm-answer-engine): Build a Perplexity-Inspired Answer Engine Using Next.js, Groq, Mixtral, LangChain, OpenAI, Brave & Serper [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/developersdigest/llm-answer-engine?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [llmware✨](https://github.com/llmware-ai/llmware): Building Enterprise RAG Pipelines with Small, Specialized Models [Sep 2023] ![**github stars**](https://img.shields.io/github/stars/llmware-ai/llmware?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Marqo✨](https://github.com/marqo-ai/marqo): Tensor search for humans [Aug 2022] ![**github stars**](https://img.shields.io/github/stars/marqo-ai/marqo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [MedGraphRAG📑](https://alphaxiv.org/abs/2408.04187): MedGraphRAG outperforms the previous SOTA model, [Medprompt📑](https://alphaxiv.org/abs/2311.16452), by 1.1%. [✨](https://github.com/medicinetoken/medical-graph-rag) [8 Aug 2024] ![**github stars**](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [MedGraphRAG📑](https://arxiv.org/abs/2408.04187): MedGraphRAG outperforms the previous SOTA model, [Medprompt📑](https://arxiv.org/abs/2311.16452), by 1.1%. [✨](https://github.com/medicinetoken/medical-graph-rag) [8 Aug 2024] ![**github stars**](https://img.shields.io/github/stars/medicinetoken/medical-graph-rag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Meilisearch✨](https://github.com/meilisearch/meilisearch): A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications. [Apr 2018] ![**github stars**](https://img.shields.io/github/stars/meilisearch/meilisearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MemFree✨](https://github.com/memfreeme/memfree): Hybrid AI Search Engine + AI Page Generator. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/memfreeme/memfree?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MindSearch✨](https://github.com/InternLM/MindSearch): An open-source AI Search Engine Framework [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/InternLM/MindSearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -128,7 +128,7 @@
 1. [RAG capabilities of LlamaIndex to QA about SEC 10-K & 10-Q documents✨](https://github.com/run-llama/sec-insights): A real world full-stack application using LlamaIndex [Sep 2023] ![**github stars**](https://img.shields.io/github/stars/run-llama/sec-insights?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [RAG-Anything✨](https://github.com/HKUDS/RAG-Anything): "RAG-Anything: All-in-One RAG System". [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/HKUDS/RAG-Anything?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [RAGApp✨](https://github.com/ragapp/ragapp): Agentic RAG. Custom GPTs, but deployable in your own cloud infrastructure using Docker. [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/ragapp/ragapp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [RAGChecker📑](https://alphaxiv.org/abs/2408.08067): A Fine-grained Framework For Diagnosing RAG [✨](https://github.com/amazon-science/RAGChecker) [15 Aug 2024] ![**github stars**](https://img.shields.io/github/stars/amazon-science/RAGChecker?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [RAGChecker📑](https://arxiv.org/abs/2408.08067): A Fine-grained Framework For Diagnosing RAG [✨](https://github.com/amazon-science/RAGChecker) [15 Aug 2024] ![**github stars**](https://img.shields.io/github/stars/amazon-science/RAGChecker?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [RAGflow✨](https://github.com/infiniflow/ragflow):💡Streamlined RAG workflow. Focusing on Deep document understanding [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [RAGFoundry✨](https://github.com/IntelLabs/RAGFoundry): A library designed to improve LLMs ability to use external information by fine-tuning models on specially created RAG-augmented datasets. [5 Aug 2024] ![**github stars**](https://img.shields.io/github/stars/IntelLabs/RAGFoundry?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [RAGLite✨](https://github.com/superlinear-ai/raglite): a Python toolkit for Retrieval-Augmented Generation (RAG) with PostgreSQL or SQLite [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/superlinear-ai/raglite?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -148,14 +148,14 @@
 
 ### **Vector Database & Embedding**
 
-- [A Comprehensive Survey on Vector Database📑](https://alphaxiv.org/abs/2310.11703): Categorizes search algorithms by their approach, such as hash-based, tree-based, graph-based, and quantization-based. [18 Oct 2023]
+- [A Comprehensive Survey on Vector Database📑](https://arxiv.org/abs/2310.11703): Categorizes search algorithms by their approach, such as hash-based, tree-based, graph-based, and quantization-based. [18 Oct 2023]
 - [A Gentle Introduction to Word Embedding and Text Vectorization✍️](https://machinelearningmastery.com/a-gentle-introduction-to-word-embedding-and-text-vectorization/): Word embedding, Text vectorization, One-hot encoding, Bag-of-words, TF-IDF, word2vec, GloVe, FastText. | [Tokenizers in Language Models✍️](https://machinelearningmastery.com/tokenizers-in-language-models/): Stemming, Lemmatization, Byte Pair Encoding (BPE), WordPiece, SentencePiece, Unigram [23 May 2025]
 - Azure Open AI Embedding API, `text-embedding-ada-002`, supports 1536 dimensions. Elastic search, Lucene based engine, supports 1024 dimensions as a max. Open search can insert 16,000 dimensions as a vector storage. Open search is available to use as a vector database with Azure Open AI Embedding API.
 - [A SQLite extension for efficient vector search, based on Faiss!✨](https://github.com/asg017/sqlite-vss) [Jan 2023]
  ![**github stars**](https://img.shields.io/github/stars/asg017/sqlite-vss?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Chroma✨](https://github.com/chroma-core/chroma): Open-source embedding database [Oct 2022]
  ![**github stars**](https://img.shields.io/github/stars/chroma-core/chroma?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Contextual Document Embedding (CDE)📑](https://alphaxiv.org/abs/2410.02525): Improve document retrieval by embedding both queries and documents within the context of the broader document corpus. [✍️](https://pub.aimind.so/unlocking-the-power-of-contextual-document-embeddings-enhancing-search-relevance-01abfa814c76) [3 Oct 2024]
+- [Contextual Document Embedding (CDE)📑](https://arxiv.org/abs/2410.02525): Improve document retrieval by embedding both queries and documents within the context of the broader document corpus. [✍️](https://pub.aimind.so/unlocking-the-power-of-contextual-document-embeddings-enhancing-search-relevance-01abfa814c76) [3 Oct 2024]
 - [Contextualized Chunk Embedding Model✍️](https://blog.voyageai.com/2025/07/23/voyage-context-3/): Rather than embedding each chunk separately, a contextualized chunk embedding model uses the whole document to create chunk embeddings that reflect the document's overall context. [✍️](https://blog.dailydoseofds.com/p/contextualized-chunk-embedding-model) [23 Jul 2025]
 - [EmbedAnything✨](https://github.com/StarlightSearch/EmbedAnything): Built by Rust. Supports BERT, CLIP, Jina, ColPali, ColBERT, ModernBERT, Reranker, Qwen. Mutilmodality. [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/StarlightSearch/EmbedAnything?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Embedding Atlas✨](https://github.com/apple/embedding-atlas): Apple. a tool that provides interactive visualizations for large embeddings. [May 2025]
@@ -165,7 +165,7 @@
 - [Fine-tuning Embeddings for Specific Domains✍️](https://blog.gopenai.com/fine-tuning-embeddings-for-specific-domains-a-comprehensive-guide-5e4298b42185): The guide discusses fine-tuning embeddings for domain-specific tasks using `sentence-transformers` [1 Oct 2024]
 - However, one exception to this is that the maximum dimension count for the Lucene engine is 1,024, compared with
   16,000 for the other engines. [✍️](https://opensearch.org/docs/latest/search-plugins/knn/approximate-knn/)
-- [Is Cosine-Similarity of Embeddings Really About Similarity?📑](https://alphaxiv.org/abs/2403.05440): Regularization in linear matrix factorization can distort cosine similarity. L2-norm regularization on (1) the product of matrices (like dropout) and (2) individual matrices (like weight decay) may lead to arbitrary similarities.  [8 Mar 2024]
+- [Is Cosine-Similarity of Embeddings Really About Similarity?📑](https://arxiv.org/abs/2403.05440): Regularization in linear matrix factorization can distort cosine similarity. L2-norm regularization on (1) the product of matrices (like dropout) and (2) individual matrices (like weight decay) may lead to arbitrary similarities.  [8 Mar 2024]
 - OpenAI Embedding models: `text-embedding-3`
 - [lancedb✨](https://github.com/lancedb/lancedb): LanceDB's core is written in Rust and is built using Lance, an open-source columnar format.  [Feb 2023] ![**github stars**](https://img.shields.io/github/stars/lancedb/lancedb?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LEANN✨](https://github.com/yichuan-w/LEANN): The smallest vector database. 97% less storage. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/yichuan-w/LEANN?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -183,7 +183,7 @@
   Smaller embedding size. The new embeddings have only 1536 dimensions, one-eighth the size of davinci-001 embeddings,
   making the new embeddings more cost effective in working with vector databases. [15 Dec 2022]
 - [The Semantic Galaxy🤗](https://huggingface.co/spaces/webml-community/semantic-galaxy): Visualize embeddings in 3D space, powered by EmbeddingGemma and Transformers.js [Sep 2025]
-- [Vector Search with OpenAI Embeddings: Lucene Is All You Need📑](https://alphaxiv.org/abs/2308.14963): For vector search applications, Lucene's HNSW implementation is a resilient and extensible solution with performance comparable to specialized vector databases like FAISS. Our experiments used Lucene 9.5.0, which limits vectors to 1024 dimensions—insufficient for OpenAI's 1536-dimensional embeddings. A fix to make vector dimensions configurable per codec has been merged to Lucene's source [here✨](https://github.com/apache/lucene/pull/12436) but was not yet released as of August 2023. [29 Aug 2023]
+- [Vector Search with OpenAI Embeddings: Lucene Is All You Need📑](https://arxiv.org/abs/2308.14963): For vector search applications, Lucene's HNSW implementation is a resilient and extensible solution with performance comparable to specialized vector databases like FAISS. Our experiments used Lucene 9.5.0, which limits vectors to 1024 dimensions—insufficient for OpenAI's 1536-dimensional embeddings. A fix to make vector dimensions configurable per codec has been merged to Lucene's source [here✨](https://github.com/apache/lucene/pull/12436) but was not yet released as of August 2023. [29 Aug 2023]
 - [Weaviate✨](https://github.com/weaviate/weaviate): Store both vectors and data objects. [Jan 2021]
  ![**github stars**](https://img.shields.io/github/stars/weaviate/weaviate?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
@@ -318,7 +318,7 @@
 1. [SakanaAI AI-Scientist✨](https://github.com/SakanaAI/AI-Scientist): Towards Fully Automated Open-Ended Scientific Discovery [Aug 2024]
 1. [screenshot-to-code✨](https://github.com/abi/screenshot-to-code): Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue) [Nov 2023]
 1. [SeeAct](https://osu-nlp-group.github.io/SeeAct): GPT-4V(ision) is a Generalist Web Agent, if Grounded [✨](https://github.com/OSU-NLP-Group/SeeAct) [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/OSU-NLP-Group/SeeAct?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Sentence Transformers📑](https://alphaxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [✨](https://github.com/UKPLab/sentence-transformers) [27 Aug 2019]
+1. [Sentence Transformers📑](https://arxiv.org/abs/1908.10084): Python framework for state-of-the-art sentence, text and image embeddings. Useful for semantic textual similar, semantic search, or paraphrase mining. [✨](https://github.com/UKPLab/sentence-transformers) [27 Aug 2019]
 1. [skyagi✨](https://github.com/litanlitudan/skyagi): Simulating believable human behaviors. Role playing [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/litanlitudan/skyagi?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [skyvern✨](https://github.com/skyvern-ai/skyvern): Automate browser-based workflows with LLMs and Computer Vision [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/skyvern-ai/skyvern?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [SolidGPT✨](https://github.com/AI-Citizen/SolidGPT): AI searching assistant for developers (VSCode Extension) [Aug 2023]
@@ -424,7 +424,7 @@
 - Strategies for caching: Caching can be based on item IDs, pairs of item IDs, constrained input, or pre-computation. Caching can also leverage embedding-based retrieval, approximate nearest neighbor search, and LLM-based evaluation. [✍️](https://eugeneyan.com/writing/llm-patterns/#caching-to-reduce-latency-and-cost)
 - GPTCache: Semantic cache for LLMs. Fully integrated with LangChain and llama_index. [✨](https://github.com/zilliztech/GPTCache) [Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/zilliztech/GPTCache?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Prompt Cache: Modular Attention Reuse for Low-Latency Inference📑](https://alphaxiv.org/abs/2311.04934): LLM inference by reusing precomputed attention states from overlapping prompts. [7 Nov 2023]
+- [Prompt Cache: Modular Attention Reuse for Low-Latency Inference📑](https://arxiv.org/abs/2311.04934): LLM inference by reusing precomputed attention states from overlapping prompts. [7 Nov 2023]
 - [Prompt caching with Claude✍️](https://www.anthropic.com/news/prompt-caching): Reducing costs by up to 90% and latency by up to 85% for long prompts. [15 Aug 2024]
 
 ### **Data Processing**
@@ -454,7 +454,7 @@
 1. [Maxun✨](https://github.com/getmaxun/maxun): Open-Source No-Code Web Data Extraction Platform [Oct 2023]
 ![**github stars**](https://img.shields.io/github/stars/getmaxun/maxun?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MegaParse✨](https://github.com/quivrhq/megaparse): a powerful and versatile parser that can handle various types of documents. Focus on having no information loss during parsing. [30 May 2024] ![**github stars**](https://img.shields.io/github/stars/quivrhq/megaparse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Nougat📑](https://alphaxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [✨](https://github.com/facebookresearch/nougat) [25 Aug 2023]
+1. [Nougat📑](https://arxiv.org/abs/2308.13418): Neural Optical Understanding for Academic Documents: The academic document PDF parser that understands LaTeX math and tables. [✨](https://github.com/facebookresearch/nougat) [25 Aug 2023]
 ![**github stars**](https://img.shields.io/github/stars/facebookresearch/nougat?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Ollama OCR✨](https://github.com/imanoop7/Ollama-OCR): A powerful OCR (Optical Character Recognition) package that uses state-of-the-art vision language models. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/imanoop7/Ollama-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [outlines✨](https://github.com/dottxt-ai/outlines): Structured Text Generation [Mar 2023]
@@ -493,10 +493,10 @@
 1. [Gemini Memory✍️](https://www.shloked.com/writing/gemini-memory): Gemini uses a structured, typeed “user_context” summary with timestamps, accessed only when you explicitly ask. simpler and more unified than ChatGPT or Claude, and it rarely uses data from the Google ecosystem. [19 Nov 2025]
 1. [Graphiti✨](https://github.com/getzep/graphiti): Graphiti leverages [zep✨](https://github.com/getzep/zep)'s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/getzep/graphiti?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Letta (previously MemGPT)✨](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [✍️](https://memgpt.ai) / [git:old✨](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Making Sense of Memory in AI Agents✍️](https://leoniemonigatti.com/blog/memory-in-ai-agents.html) & [Exploring Anthropic’s Memory Tool](https://leoniemonigatti.com/blog/claude-memory-tool.html): How agents remember, recall, and (struggle to) forget information. [25 Nov 2025]
+1. [Making Sense of Memory in AI Agents](https://leoniemonigatti.com/blog/memory-in-ai-agents.html) & [Exploring Anthropic’s Memory Tool](https://leoniemonigatti.com/blog/claude-memory-tool.html): How agents remember, recall, and (struggle to) forget information. [25 Nov 2025]
 1. [Mem0✨](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-    | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory📑](https://alphaxiv.org/abs/2504.19413) [28 Apr 2025]  
+    | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory📑](https://arxiv.org/abs/2504.19413) [28 Apr 2025]  
 1. [Memary✨](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![**github stars**](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Memori✨](https://github.com/GibsonAI/Memori): a SQL native memory engine (SQLite, PostgreSQL, MySQL) [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/GibsonAI/Memori?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [OpenMemory✨](https://github.com/CaviraOSS/OpenMemory): Long-term memory for AI systems. Open source, self-hosted, and explainable. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/CaviraOSS/OpenMemory?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -507,7 +507,7 @@
 
 #### **Model Context Protocol (MCP)**
 
-- [A Survey of AI Agent Protocols📑](https://alphaxiv.org/abs/2504.16736) [23 Apr 2025]
+- [A Survey of AI Agent Protocols📑](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
 - [Awesome MCP Servers✨](https://github.com/kimtth/awesome-mcp-servers): Original repository deleted; Redirecting to the forked repository.
 - [Docker MCP Toolkit and MCP Catalog](https://www.docker.com/products/mcp-catalog-and-toolkit): `docker mcp` [5 May 2025]
 - [Model Context Protocol (MCP)✍️](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [✨](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
@@ -553,7 +553,7 @@
 1. [OpenInterpreter starts to support Computer Use API✨](https://github.com/OpenInterpreter/open-interpreter/issues/1490)
 1. [Self-Operating Computer Framework✨](https://github.com/OthersideAI/self-operating-computer): A framework to enable multimodal models to operate a computer. [Nov 2023] ![**github stars**](https://img.shields.io/github/stars/OthersideAI/self-operating-computer?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Stagehand✨](https://github.com/browserbase/stagehand): The AI Browser Automation Framework . Stagehand lets you preview AI actions before running. Computer use models with one line of code. [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [UI-TARS📑](https://alphaxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [✨](https://github.com/bytedance/UI-TARS) / Application [✨](https://github.com/bytedance/UI-TARS-desktop) ![**github stars**](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [21 Jan 2025]
+1. [UI-TARS📑](https://arxiv.org/abs/2501.12326): An agent model built on Qwen-2-VL for seamless GUI interaction, by ByteDance. [✨](https://github.com/bytedance/UI-TARS) / Application [✨](https://github.com/bytedance/UI-TARS-desktop) ![**github stars**](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [21 Jan 2025]
 1. [UFO✨](https://github.com/microsoft/UFO): Windows Control
 
 ### **Coding & Research**
@@ -567,7 +567,7 @@
 1. [claude‑squad✨](https://github.com/smtg-ai/claude-squad): Terminal app to manage multiple AI assistants (Claude Code, Aider, Codex). [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Cline✨](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/cline/cline?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [code2prompt✨](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
-1. [Code Shaping✨](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref📑](https://alphaxiv.org/abs/2502.03719) ![**github stars**](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Code Shaping✨](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref📑](https://arxiv.org/abs/2502.03719) ![**github stars**](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
 1. [codegen✨](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [codex✨](https://github.com/openai/codex): OpenAI. Lightweight coding agent that runs in your terminal [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/openai/codex?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -613,19 +613,19 @@
 
 #### Domain-Specific Agents
 
-1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat📑](https://alphaxiv.org/abs/2311.15826) | [GEOBench-VLM📑](https://alphaxiv.org/abs/2411.19325) | [RS5M✨](https://github.com/om-ai-lab/RS5M) | [VHM✨](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
-1. [An LLM Agent for Automatic Geospatial Data Analysis📑](https://alphaxiv.org/abs/2410.18792) [24 Oct 2024]
+1. [5 Top AI Agents for Earth Snapshots](https://x.com/MaryamMiradi/status/1866527000963211754) VLMs and LLMs for Geospatial Intelligent Analysis: [GeoChat📑](https://arxiv.org/abs/2311.15826) | [GEOBench-VLM📑](https://arxiv.org/abs/2411.19325) | [RS5M✨](https://github.com/om-ai-lab/RS5M) | [VHM✨](https://github.com/opendatalab/VHM) | [EarthGPT](https://ieeexplore.ieee.org/document/10547418)
+1. [An LLM Agent for Automatic Geospatial Data Analysis📑](https://arxiv.org/abs/2410.18792) [24 Oct 2024]
 1. [AgentSociety✨](https://github.com/tsinghua-fib-lab/agentsociety): Building agents in urban simulation environments. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/tsinghua-fib-lab/agentsociety?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning📑](https://alphaxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
-1. [DeepRare📑](https://alphaxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
+1. [ChemAgent: Self-updating Library in Large Language Models Improves Chemical Reasoning📑](https://arxiv.org/abs/2501.06590): ChemAgent leverages an innovative self-improving memory system to significantly enhance performance in complex scientific tasks, with a particular focus on Chemistry. [11 Jan 2025]
+1. [DeepRare📑](https://arxiv.org/abs/2506.20430): An Agentic System for Rare Disease Diagnosis with Traceable Reasoning [25 Jun 2025]
 1. [Director✨](https://github.com/video-db/Director): Think of Director as ChatGPT for videos. AI video agents framework for video interactions and workflows. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/video-db/Director?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [DrugAgent: Automating AI-aided Drug Discovery📑](https://alphaxiv.org/abs/2411.15692) [24 Nov 2024]
-1. [FinRobot: AI Agent for Equity Research and Valuation📑](https://alphaxiv.org/abs/2411.08804) [13 Nov 2024]
+1. [DrugAgent: Automating AI-aided Drug Discovery📑](https://arxiv.org/abs/2411.15692) [24 Nov 2024]
+1. [FinRobot: AI Agent for Equity Research and Valuation📑](https://arxiv.org/abs/2411.08804) [13 Nov 2024]
 1. [landing.ai: Vision Agent✨](https://github.com/landing-ai/vision-agent): A agent frameworks to generate code to solve your vision task. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/landing-ai/vision-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Organ-Agents: Virtual Human Physiology Simulator via LLMs](https://alphaxiv.org/abs/2508.14357): Multi-agent system simulating nine human organs using fine-tuned Qwen3-8B, forecasting patient physiology up to 12 hours ahead, validated by 15 ICU specialists. [20 Aug 2025]
+1. [Organ-Agents: Virtual Human Physiology Simulator via LLMs](https://arxiv.org/abs/2508.14357): Multi-agent system simulating nine human organs using fine-tuned Qwen3-8B, forecasting patient physiology up to 12 hours ahead, validated by 15 ICU specialists. [20 Aug 2025]
 1. [MLE-agent✨](https://github.com/MLSysOps/MLE-agent): LLM agent for machine learning engineers and researchers [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/MLSysOps/MLE-agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [QuantAgent✨](https://github.com/Y-Research-SBU/QuantAgent): Quantitative trading agent. Multi-Agent LLMs for High-Frequency Trading. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/Y-Research-SBU/QuantAgent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [UXAgent📑](https://alphaxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
+1. [UXAgent📑](https://arxiv.org/abs/2502.12561): An LLM Agent-Based Usability Testing Framework for Web Design [18 Feb 2025]
 
 #### Deep Research
 
@@ -636,7 +636,7 @@
 1. [Azure Container Apps Dynamic Sessions✍️](https://aka.ms/AAtnnj8): Secure environment for running AI-generated code in Azure.
 1. [CodeScientist✨](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/allenai/codescientist?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Company Researcher✨](https://github.com/exa-labs/company-researcher): a free and open-source tool that helps you instantly understand any company inside out. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/exa-labs/company-researcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Deep Research Agent📑](https://alphaxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
+1. [Deep Research Agent📑](https://arxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
 1. [DeepScholar](https://deep-scholar.vercel.app): an openly accessible deep research system from Berkeley and Stanford [Nov 2025]
 1. [DeepSearcher✨](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DeerFlow✨](https://github.com/bytedance/deer-flow):  Bytedance. Deep Exploration and Efficient Research Flow. a community-driven Deep Research framework that combines language models with tools like web search, crawling, and code execution.  ![**github stars**](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [May 2025]
@@ -662,7 +662,7 @@
 1. [OSS Code Interpreter✨](https://github.com/shroominic/codeinterpreter-api) A LangChain implementation of the ChatGPT Code Interpreter. [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/shroominic/codeinterpreter-api?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Paper2Agent✨](https://github.com/jmiao24/Paper2Agent): a multi-agent AI system that converts research papers into interactive agents with minimal human input [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/jmiao24/Paper2Agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning📑](https://alphaxiv.org/abs/2504.17192): a multi-agent LLM framework that transforms machine learning papers into functional code repositories. [24 Apr 2025] [✨](https://github.com/going-doer/Paper2Code) ![**github stars**](https://img.shields.io/github/stars/going-doer/Paper2Code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning📑](https://arxiv.org/abs/2504.17192): a multi-agent LLM framework that transforms machine learning papers into functional code repositories. [24 Apr 2025] [✨](https://github.com/going-doer/Paper2Code) ![**github stars**](https://img.shields.io/github/stars/going-doer/Paper2Code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Perplexity Deep Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research) [14 Feb 2025]
 1. [SakanaAI AI-Scientist✨](https://github.com/SakanaAI/AI-Scientist) [Aug 2024]
  ![**github stars**](https://img.shields.io/github/stars/SakanaAI/AI-Scientist?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -671,7 +671,7 @@
 1. [smolagents: Open Deep Research✨](https://github.com/huggingface/smolagents) > `examples/open_deep_research`.🤗HuggingFace [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/huggingface/smolagents?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Stanford Agentic Reviewer](https://paperreview.ai/): AI feedback on your research paper [Nov 2025]
 1. [STORM✨](https://github.com/stanford-oval/storm): Simulating Expert Q&A, iterative research, structured outline creation, and grounding in trusted sources to generate Wikipedia-like reports. [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/stanford-oval/storm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search📑](https://alphaxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [✨](https://github.com/SakanaAI/AI-Scientist-v2) ![**github stars**](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search📑](https://arxiv.org/abs/2504.08066): AgentManager handles Agentic Tree Search [10 Apr 2025] [✨](https://github.com/SakanaAI/AI-Scientist-v2) ![**github stars**](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Tongyi DeepResearch✨](https://github.com/Alibaba-NLP/DeepResearch): Alibaba. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Universal Deep Research (UDR)✨](https://github.com/NVlabs/UniversalDeepResearch): NVDIA. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/NVlabs/UniversalDeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [WebThinker✨](https://github.com/RUC-NLPIR/WebThinker): WebThinker allows the reasoning model itself to perform actions during thinking, achieving end-to-end task execution in a single generation. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -710,9 +710,9 @@
 
 ## **Orchestration Framework**
 
-- [Prompting Framework (PF)📑](https://alphaxiv.org/abs/2311.12785): Prompting Frameworks for Large Language Models: A Survey [✨](https://github.com/lxx0628/Prompting-Framework-Survey)
+- [Prompting Framework (PF)📑](https://arxiv.org/abs/2311.12785): Prompting Frameworks for Large Language Models: A Survey [✨](https://github.com/lxx0628/Prompting-Framework-Survey)
  ![**github stars**](https://img.shields.io/github/stars/lxx0628/Prompting-Framework-Survey?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [What Are Tools Anyway?📑](https://alphaxiv.org/abs/2403.15452): Analysis of tool usage in LLMs. Key findings: 1) For 5-10 tools, LMs can directly select from context; for hundreds of tools, retrieval is necessary. 2) Tools enable creation and reuse but are less useful for translation, summarization, and sentiment analysis. 3) Includes evaluation metrics [18 Mar 2024]  
+- [What Are Tools Anyway?📑](https://arxiv.org/abs/2403.15452): Analysis of tool usage in LLMs. Key findings: 1) For 5-10 tools, LMs can directly select from context; for hundreds of tools, retrieval is necessary. 2) Tools enable creation and reuse but are less useful for translation, summarization, and sentiment analysis. 3) Includes evaluation metrics [18 Mar 2024]  
 - **Micro-Orchestration**: Detailed management of LLM interactions, focusing on data flow within tasks
   - [LangChain](https://www.langchain.com)
   - [LlamaIndex](https://www.llamaindex.ai)
@@ -803,8 +803,8 @@
 -  If you're using a text LLM, first try `zero-shot-react-description`.
 -  If you're using a Chat Model, try `chat-zero-shot-react-description`.
 -  If you're using a Chat Model and want to use memory, try `conversational-react-description`.
--  `self-ask-with-search`: [Measuring and Narrowing the Compositionality Gap in Language Models📑](https://alphaxiv.org/abs/2210.03350) [7 Oct 2022]
--  `react-docstore`: [ReAct: Synergizing Reasoning and Acting in Language Models📑](https://alphaxiv.org/abs/2210.03629) [6 Oct 2022]
+-  `self-ask-with-search`: [Measuring and Narrowing the Compositionality Gap in Language Models📑](https://arxiv.org/abs/2210.03350) [7 Oct 2022]
+-  `react-docstore`: [ReAct: Synergizing Reasoning and Acting in Language Models📑](https://arxiv.org/abs/2210.03629) [6 Oct 2022]
 -  Agent Type
     ```python
     class AgentType(str, Enum):
@@ -822,7 +822,7 @@
         OPENAI_FUNCTIONS = "openai-functions"
         OPENAI_MULTI_FUNCTIONS = "openai-multi-functions"
     ```
-- [ReAct📑](https://alphaxiv.org/abs/2210.03629) vs [MRKL📑](https://alphaxiv.org/abs/2205.00445) (miracle)
+- [ReAct📑](https://arxiv.org/abs/2210.03629) vs [MRKL📑](https://arxiv.org/abs/2205.00445) (miracle)
   - ReAct is inspired by the synergies between "acting" and "reasoning" which allow humans to learn new tasks and make decisions or reasoning.
   - MRKL stands for Modular Reasoning, Knowledge and Language and is a neuro-symbolic architecture that combines large language models, external knowledge sources, and discrete reasoning
   > 🗣️: [✨](https://github.com/langchain-ai/langchain/issues/2284#issuecomment-1526879904) [28 Apr 2023] <br/>
@@ -895,7 +895,7 @@
 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. High-Level Concept: [✍️](https://docs.llamaindex.ai/en/latest/getting_started/concepts.html) / doc:[✍️](https://gpt-index.readthedocs.io/en/latest/index.html) / blog:[✍️](https://www.llamaindex.ai/blog) / [✨](https://github.com/run-llama/llama_index) [Nov 2022]
  ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_index?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [🗣️](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading📑](https://alphaxiv.org/abs/2310.05029)  
+  > Fun fact this core idea was the initial inspiration for GPT Index (the former name of LlamaIndex) 11/8/2022 - almost a year ago!. [🗣️](https://twitter.com/jerryjliu0/status/1711817419592008037) / [Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading📑](https://arxiv.org/abs/2310.05029)  
   > -   Build a data structure (memory tree)  
   > -   Transverse it via LLM prompting  
 - [AgentWorkflow](https://www.llamaindex.ai/blog/introducing-agentworkflow-a-powerful-system-for-building-ai-agent-systems): To build and orchestrate AI agent systems [22 Jan 2025]
@@ -933,7 +933,7 @@
   - Sub Question Query Engine: Break down the complex question into sub-questions
   - Recursive Retriever + Query Engine: Reference node relationships, rather than only finding a node (chunk) that is most relevant.
   - Self Correcting Query Engines: Use an LLM to evaluate its own output.  
-- [A Cheat Sheet and Some Recipes For Building Advanced RAG✍️](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b) RAG cheat sheet shared above was inspired by [RAG survey paper📑](https://alphaxiv.org/abs/2312.10997). [🗄️](../files/advanced-rag-diagram-llama-index.png) [Jan 2024]
+- [A Cheat Sheet and Some Recipes For Building Advanced RAG✍️](https://blog.llamaindex.ai/a-cheat-sheet-and-some-recipes-for-building-advanced-rag-803a9d94c41b) RAG cheat sheet shared above was inspired by [RAG survey paper📑](https://arxiv.org/abs/2312.10997). [🗄️](../files/advanced-rag-diagram-llama-index.png) [Jan 2024]
 - [Building and Productionizing RAG](https://docs.google.com/presentation/d/1rFQ0hPyYja3HKRdGEgjeDxr0MSE8wiQ2iu4mDtwR6fc/edit#slide=id.p): [🗄️](../files/archive/LlamaIndexTalk_PyDataGlobal.pdf): Optimizing RAG Systems 1. Table Stakes 2. Advanced Retrieval: Small-to-Big 3. Agents 4. Fine-Tuning 5. Evaluation [Nov 2023]
 <!-- - [CallbackManager (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-003-callback-manager/) [27 May 2023] / [Customize TokenTextSplitter (Japanese)](https://dev.classmethod.jp/articles/llamaindex-tutorial-002-text-splitter/) [27 May 2023] / --> 
 - [Chat engine ReAct mode](https://gpt-index.readthedocs.io/en/stable/examples/chat_engine/chat_engine_react.html), [FLARE Query engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/flare_query_engine.html)
@@ -1050,7 +1050,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 
 ### **DSPy**
 
-- [DSPy📑](https://alphaxiv.org/abs/2310.03714): Compiling Declarative Language Model Calls into Self-Improving Pipelines [5 Oct 2023] / [✨](https://github.com/stanfordnlp/dspy)
+- [DSPy📑](https://arxiv.org/abs/2310.03714): Compiling Declarative Language Model Calls into Self-Improving Pipelines [5 Oct 2023] / [✨](https://github.com/stanfordnlp/dspy)
 - [Prompt Like a Data Scientist: Auto Prompt Optimization and Testing with DSPy✍️](https://towardsdatascience.com/prompt-like-a-data-scientist-auto-prompt-optimization-and-testing-with-dspy-ff699f030cb7) [6 May 2024]
 - Automatically iterate until the best result is achieved: 1. Collect Data -> 2. Write DSPy Program -> 3. Define validtion logic -> 4. Compile DSPy program
 - DSPy (Declarative Self-improving Language Programs, pronounced “dee-es-pie”) / doc:[✍️](https://dspy-docs.vercel.app) / [✨](https://github.com/stanfordnlp/dspy) ![**github stars**](https://img.shields.io/github/stars/stanfordnlp/dspy?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

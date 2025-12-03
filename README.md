@@ -18,7 +18,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 | 🚀 App & Agent | 🌌 Azure OpenAI | 🧠 Research & Survey | 🛠️ Tools & Eval | 📋 Best Practices |
 |-------------|-------|------------------|-------|----------------|
-| [1. App & Agent](#1-app--agent) | [2. Azure OpenAI](#2-azure-openai) | [3. Research & Survey <br/> (LLM Models & Services)](#3-research--survey) | [4. Tools & Eval](#4-tools--resource) | [5. Best Practices](#5-best-practices) |
+| [1. App & Agent](#1-app--agent) | [2. Azure OpenAI & Copilot](#2-azure-openai) | [3. Research & Survey <br/> (LLM Models & Services)](#3-research--survey) | [4. Tools & Eval](#4-tools--resource) | [5. Best Practices & Papers <br/> (RAG & Agent)](#5-best-practices) |
 
 ## 1. App & Agent
 🚀 RAG Systems, LLM Applications, Agents, Frameworks & Orchestration
@@ -58,7 +58,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 **[⬆ back to top](#azure-openai--llm)**
 
-## 2. Azure OpenAI
+## 2. Azure OpenAI & Copilot
 🌌 Microsoft's Cloud-Based AI Platform and Services
 
 - **Overview**
@@ -92,7 +92,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Large Language Model: Landscape](section/models_research.md#large-language-model-landscape)
   - [Comparison](section/models_research.md#large-language-model-comparison)
   - [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models)
-  - [Model Collection](section/models_research.md#large-language-model-collection)
+  - [LLM Collection](section/models_research.md#large-language-model-collection)
 - **Prompting**
   - [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
 - **Finetuning**
@@ -120,7 +120,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 **[⬆ back to top](#azure-openai--llm)**
 
-## 4. Tools & Resource
+## 4. Tools, Datasets, and Evaluation
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
 
 - **Tools**
@@ -143,9 +143,13 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [The Problem with RAG](section/best_practices.md#the-problem-with-rag)
   - [RAG Solution Design](section/best_practices.md#rag-solution-design)
   - [RAG Research](section/best_practices.md#rag-research)
+  - [RAG Research (Ranked by cite count >=100)](section/best_practices.md#rag-research-ranked-by-cite-count-100)
 - **Agent**
   - [Agent Best Practices](section/best_practices.md#agent-best-practices)
   - [Agent Design Patterns](section/best_practices.md#agent-design-patterns)
+  - [Agent Research](section/best_practices.md#agent-research)
+  - [Agent Research (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
+  - [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration)
   - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use-llm-to-master-apis)
 - **Reference**
   - [Proposals & Glossary](section/best_practices.md#proposals--glossary)
@@ -157,9 +161,8 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
 | ✍️ | Blog post / Documentation | ✨ | GitHub repository |
-| 🗄️ | Archived files | 🔗 | Cross reference |
+| 🗄️ | Archived files | 💡🏆 | Recommend |
 | 🗣️ | Source citation | 📺 | Video content |
-| 🔢 | Citation count | 💡🏆 | Recommend |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
 <!-- 
