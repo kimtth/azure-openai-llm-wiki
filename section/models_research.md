@@ -26,12 +26,8 @@
 
 ## **Large Language Model: Landscape**
 
-#### Large Language Models (in 2023)
-
-1. Change in perspective is necessary because some abilities only emerge at a certain scale. Some conclusions from the past are invalidated and we need to constantly unlearn intuitions built on top of such ideas.
-1. From first-principles, scaling up the Transformer amounts to efficiently doing matrix multiplications with many, many machines.
-1. Further scaling (think 10000x GPT-4 scale). It entails finding the inductive bias that is the bottleneck in further scaling.
-> [🗣️](https://twitter.com/hwchung27/status/1710003293223821658) / [📺](https://t.co/vumzAtUvBl) / [✍️](https://t.co/IidLe4JfrC) [6 Oct 2023]
+1. [The best NLP papers from 2015 to now](https://thebestnlppapers.com/nlp/papers/all/)
+1. In 2023: As abilities emerge only at scale, we must unlearn outdated intuitions, scale Transformers via massive distributed matrix multiplications, and discover the inductive bias needed to push ~10,000× beyond GPT-4. [🗣️](https://twitter.com/hwchung27/status/1710003293223821658) / [📺](https://t.co/vumzAtUvBl) / [✍️](https://t.co/IidLe4JfrC) [6 Oct 2023]
 
 #### Large Language Model Comparison
 
@@ -159,6 +155,7 @@
   - [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
   - [DeepSeek-Prover-V2✨](https://github.com/deepseek-ai/DeepSeek-Prover-V2): Mathematical reasoning [30 Apr 2025]
   - [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
+  - [DeepSeek-V3.2📑](https://arxiv.org/abs/2512.02556): DeepSeek Sparse Attention (DSA) cuts complexity from O(L²) to O(Lk). [12 Dec 2025]
   - [DeepSeek-V3.2-Exp✨](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [DeepSeek-OCR✨](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   - [DeepSeekMath-V2✨](https://github.com/deepseek-ai/DeepSeek-Math-V2/): a Self-Verifiable Mathematical Reasoning model [27 Nov 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Math-V2?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -786,6 +783,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Scaling Synthetic Data Creation with 1,000,000,000 Personas📑](https://arxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
 - [Simplifying Transformer Blocks📑](https://arxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
 - [Text-to-LoRA (T2L)](https://github.com/SakanaAI/text-to-lora): Converts text prompts into LoRA models, enabling lightweight fine-tuning of AI models for custom tasks. ![**github stars**](https://img.shields.io/github/stars/SakanaAI/text-to-lora?style=flat-square&label=%20&color=blue&cacheSeconds=36000) [01 May 2025]
+- [Titans + MIRAS](https://x.com/akshay_pachaar/status/1997654015631651194): Titans + MIRAS let models update themselves while running by using a human-like surprise metric that skips familiar info and stores only pattern-breaking moments into long-term memory. persistent (fixed knowledge), contextual (on-the-fly), and core-attention (short-term) layers. [✍️](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/) [4 Dec 2025]
 - [What We’ve Learned From A Year of Building with LLMs](https://applied-llms.org/):💡A practical guide to building successful LLM products, covering the tactical, operational, and strategic.  [8 June 2024]
 
 ## **Large Language Model: Challenges and Solutions**
@@ -864,6 +862,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
   - [GPT-5 New Params and Tools](https://cookbook.openai.com/examples/gpt-5/gpt-5_new_params_and_tools)
 - [GPT 5.1✍️](https://openai.com/index/gpt-5-1/): GPT-5.1 Auto, GPT-5.1 Instant, and GPT-5.1 Thinking. Better instruction-following, More customization for tone and style. [12 Nov 2025]
 - [GPT-5.1 Codex Max✍️](https://openai.com/index/gpt-5-1-codex-max/): agentic coding model for lonng-running, detailed work. [19 Nov 2025]
+- [GPT 5.2✍️](https://openai.com/index/introducing-gpt-5-2): 70.9% GDPval (knowledge work vs professionals), major gains over GPT-5.1 on SWE-Bench, GPQA Diamond, AIME 2025, ARC-AGI reasoning, and advanced coding/vision tasks. [11 Dec 2025]
 
 ### **OpenAI Products**
 
@@ -971,6 +970,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Extracting Concepts from GPT-4✍️](https://openai.com/index/extracting-concepts-from-gpt-4/): Sparse Autoencoders identify key features, enhancing the interpretability of language models like GPT-4. They extract 16 million interpretable features using GPT-4's outputs as input for training. [6 Jun 2024]
 - [FactTune📑](https://arxiv.org/abs/2311.08401): A procedure that enhances the factuality of LLMs without the need for human feedback. The process involves the fine-tuning of a separated LLM using methods such as DPO and RLAIF, guided by preferences generated by [FActScore✨](https://github.com/shmsw25/FActScore). [14 Nov 2023] `FActScore` works by breaking down a generation into a series of atomic facts and then computing the percentage of these atomic facts by a reliable knowledge source. ![**github stars**](https://img.shields.io/github/stars/shmsw25/FActScore?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/): Google DeepMind, Frontier Safety Framework, a set of protocols designed to identify and mitigate potential harms from future AI systems. [17 May 2024]
+- [Google SAIF✍️](https://www.saif.google/): Secure AI Framework for managing AI security risks. [05 Nov 2025]
 - [Guardrails Hub](https://hub.guardrailsai.com): Guardrails for common LLM validation use cases
 - [Hallucination Index](https://www.galileo.ai/hallucinationindex): w.r.t. RAG, Testing LLMs with short (≤5k), medium (5k–25k), and long (40k–100k) contexts to evaluate improved RAG performance　[Nov 2023]
 - [Hallucination Leaderboard✨](https://github.com/vectara/hallucination-leaderboard/): Evaluate how often an LLM introduces hallucinations when summarizing a document. [Nov 2023]
@@ -1078,6 +1078,7 @@ denses the reasoning process into minimal, abstract
 - [Evaluation of LLM-based Agents📑](https://arxiv.org/abs/2503.16416) [20 Mar 2025]
 - [Foundation Models in Vision📑](https://arxiv.org/abs/2307.13721):[25 Jul 2023]
 - [From Google Gemini to OpenAI Q* (Q-Star)📑](https://arxiv.org/abs/2312.10868): Reshaping the Generative Artificial Intelligence (AI) Research Landscape:[18 Dec 2023]
+- [From Code Foundation Models to Agents and Applications📑](https://arxiv.org/abs/2511.18538): Comprehensive survey and guide to code intelligence. [23 Nov 2025]
 - [GUI Agents: A Survey📑](https://arxiv.org/abs/2412.13501) [18 Dec 2024]
 - [Hallucination in LLMs📑](https://arxiv.org/abs/2311.05232):[9 Nov 2023]
 - [Hallucination in Natural Language Generation📑](https://arxiv.org/abs/2202.03629):[8 Feb 2022]

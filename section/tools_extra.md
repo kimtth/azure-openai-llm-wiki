@@ -22,6 +22,7 @@
   - [oo.ai](https://oo.ai): Open Research. Fastest AI Search.
 - AI Tools: <https://aitoolmall.com/>
 - [Ai2 Playground](https://playground.allenai.org/)
+- [Awesome AI Tools](https://github.com/aliammari1/awesome-ai-tools): Curated collection of 100+ AI tools. [Jun 2023]
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [AlphaXiv](https://www.arxiv.org): an interactive extension of arXiv
 - [AniDoc✨](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/) ![**github stars**](https://img.shields.io/github/stars/yihao-meng/AniDoc?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -207,8 +208,6 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 ![**github stars**](https://img.shields.io/github/stars/google/BIG-bench?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [GLUE](https://gluebenchmark.com/leaderboard) & [SuperGLUE](https://super.gluebenchmark.com/leaderboard/): GLUE (General Language Understanding Evaluation)
 1. [HELM📑](https://arxiv.org/abs/2211.09110): Evaluation scenarios like reasoning and disinformation using standardized metrics like accuracy, calibration, robustness, and fairness. The top-down approach; experts curate and decide what tasks to evaluate models on. [✨](https://github.com/stanford-crfm/helm) [16 Nov 2022] ![**github stars**](https://img.shields.io/github/stars/stanford-crfm/helm?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [HumanEval📑](https://arxiv.org/abs/2107.03374): Hand-Written Evaluation Set for Code Generation Bechmark. 164 Human written Programming Problems. [✍️](https://paperswithcode.com/task/code-generation) / [✨](https://github.com/openai/human-eval) [7 Jul 2021]
-![**github stars**](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MMLU (Massive Multitask Language Understanding)✨](https://github.com/hendrycks/test): Over 15,000 questions across 57 diverse tasks. [Published in 2021]
 ![**github stars**](https://img.shields.io/github/stars/hendrycks/test?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MMLU (Massive Multi-task Language Understanding)📑](https://arxiv.org/abs/2009.03300): LLM performance across 57 tasks including elementary mathematics, US history, computer science, law, and more. [7 Sep 2020]
@@ -221,9 +220,10 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [HumanEval✨](https://github.com/openai/human-eval): Challenges coding skills. [Published in 2021]
 ![**github stars**](https://img.shields.io/github/stars/openai/human-eval?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MBPP✨](https://github.com/google-research/google-research/tree/master/mbpp): Mostly Basic Python Programming. [Published in 2021]
-1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub.
-1. [SWE-Lancer✍️](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025]
+1. [SWE-bench](https://www.swebench.com/): Software Engineering Benchmark. Real-world software issues sourced from GitHub. (GPT-5.2: 55.6% Pro, 80% Verified; Gemini 3: 76.2%)
+1. [SWE-Lancer✍️](https://openai.com/index/swe-lancer/): OpenAI. full engineering stack, from UI/UX to systems design, and include a range of task types, from $50 bug fixes to $32,000 feature implementations. [18 Feb 2025] (GPT-5.2: 74.6% IC Diamond)
 1. [Vibe Code Bench](https://www.vals.ai/benchmarks/vibe-code): Claude Sonnet 4.5 (Thinking)and GPT 5.1 are head and shoulders above the competition. GPT 5.1 stands out especially for its low cost and high performance.
+1. [LiveCodeBench Pro✍️](https://huggingface.co/spaces/LiveCodeBench/leaderboard): Algorithmic coding problems. (Gemini 3: Elo 2,439)
 
 #### Chatbot Assistance
 
@@ -231,15 +231,35 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [MT Bench✨](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge): Multi-turn open-ended questions
   - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena📑](https://arxiv.org/abs/2306.05685) [9 Jun 2023]
 
+#### Vision & Multimodal
+
+1. [CharXiv Reasoning✍️](https://arxiv.org/abs/2406.18521): Scientific chart reasoning. (GPT-5.2: 88.7% with Python, 82.1% without tools)
+1. [ScreenSpot-Pro✍️](https://arxiv.org/abs/2504.07981): UI screenshot understanding. (GPT-5.2: 86.3% with Python, 64.2% without tools; Gemini 3: high performance)
+1. [MMMU-Pro✍️](https://mmmu-benchmark.github.io/): Multimodal reasoning. (GPT-5.2: 80.4% with Python, 79.5% without tools; Gemini 3: 81.0%)
+1. [Video-MMMU✍️](https://mmmu-benchmark.github.io/): Video understanding. (GPT-5.2: 85.9%; Gemini 3: 87.6%)
+
+#### Long Context
+
+1. [OpenAI MRCRv2📑](https://huggingface.co/datasets/openai/mrcr): Multi-round co-reference resolution. (GPT-5.2: 77.0% at 128k-256k tokens; Gemini 3: 77.0% at 128k)
+1. [BrowseComp✍️](https://openai.com/index/browsecomp/): Long context web browsing (128k, 256k). (GPT-5.2: 92.0% at 128k, 89.8% at 256k; Gemini 3: reference available)
+
+#### Tool Calling & Agentic
+
+1. [Tau2-bench📑](https://arxiv.org/pdf/2506.07982): Multi-turn tool usage in customer support. (GPT-5.2: 98.7% Telecom, 82.0% Retail)
+1. [Vending-Bench 2✍️](https://www.vellum.ai/blog/google-gemini-3-benchmarks): Year-long business simulation. (Gemini 3: $5,478.16 mean net worth, 272% higher than GPT-5.1)
+1. [LiveCodeBench Pro✍️](https://huggingface.co/spaces/LiveCodeBench/leaderboard): Algorithmic coding problems. (Gemini 3: Elo 2,439)
+
 #### Reasoning
 
-1. [ARC (AI2 Reasoning Challenge)✨](https://github.com/fchollet/ARC): Measures general fluid intelligence.
+1. [ARC (AI2 Reasoning Challenge)✨](https://github.com/fchollet/ARC): Measures general fluid intelligence. (GPT-5.2: 86.2% ARC-AGI-1, 52.9% ARC-AGI-2; Gemini 3: 31.1% ARC-AGI-2, 45.1% with Deep Think)
 ![**github stars**](https://img.shields.io/github/stars/fchollet/ARC?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DROP🤗](https://huggingface.co/datasets/drop): Evaluates discrete reasoning.
 1. [HellaSwag✨](https://github.com/rowanz/hellaswag): Commonsense reasoning. [Published in 2019]
 ![**github stars**](https://img.shields.io/github/stars/rowanz/hellaswag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [LogicQA✨](https://github.com/lgw863/LogiQA-dataset): Evaluates logical reasoning skills.
 ![**github stars**](https://img.shields.io/github/stars/lgw863/LogiQA-dataset?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [GPQA Diamond✍️](https://arxiv.org/abs/2311.12022): PhD-level scientific knowledge. (GPT-5.2: 92.4%; Gemini 3: 91.9%, 93.8% with Deep Think)
+1. [Humanity's Last Exam✍️](https://huggingface.co/spaces/allenai/WildBench): Hardest reasoning benchmark. (GPT-5.2: 45.5% with search/Python; Gemini 3: 37.5%, 40%+ with Deep Think)
 
 #### Translation
 
@@ -251,6 +271,9 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 ![**github stars**](https://img.shields.io/github/stars/openai/grade-school-math?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [MATH✨](https://github.com/hendrycks/math): Tests ability to solve math problems. [Published in 2021]
 ![**github stars**](https://img.shields.io/github/stars/hendrycks/math?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [AIME 2025✍️](https://www.maa.org/): Competition math benchmark. (GPT-5.2: 100%; Gemini 3: 100% with code, 95% without tools)
+1. [FrontierMath✍️](https://epoch.ai/frontiermath): Expert-level mathematics. (GPT-5.2: 40.3% Tier 1-3, 14.6% Tier 4; Gemini 3: >20x improvement on MathArena Apex)
+1. [HMMT✍️](https://www.hmmt.org/): High school math tournament. (GPT-5.2: 99.4% Feb 2025)
 
  #### Other Benchmarks
 
@@ -291,7 +314,6 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [DeepEval✨](https://github.com/confident-ai/deepeval): LLM evaluation framework. similar to Pytest but specialized for unit testing LLM outputs. [Aug 2023]
  ![**github stars**](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DeepTeam✨](https://github.com/confident-ai/deepteam): A LLM Red Teaming Framework. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/confident-ai/deepteam?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [promptfoo✨](https://github.com/promptfoo/promptfoo): LLM red teaming and evaluation framework for testing jailbreaks, prompt injection, and vulnerabilities. CI/CD integration. [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Giskard✨](https://github.com/Giskard-AI/giskard): The testing framework for ML models, from tabular to LLMs [Mar 2022] ![**github stars**](https://img.shields.io/github/stars/Giskard-AI/giskard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Langfuse](https://langfuse.com): [✨](https://github.com/langfuse/langfuse) LLMOps platform that helps teams to collaboratively monitor, evaluate and debug AI applications. [May 2023] 
  ![**github stars**](https://img.shields.io/github/stars/langfuse/langfuse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

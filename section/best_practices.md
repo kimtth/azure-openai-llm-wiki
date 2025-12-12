@@ -156,6 +156,8 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
 - [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 - [Agent Leaderboard v2✨](https://github.com/rungalileo/agent-leaderboard) ![**github stars**](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [How AI is transforming work at Anthropic✍️](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic): Claude Code covers ~60% of engineering work with ~50% productivity gain. [3 Dec 2025]
+- [We Got Claude to Fine-Tune an Open Source LLM✍️](https://huggingface.co/blog/hf-skills-training): 🤗 Hugging Face skill for training an LLM. [4 Dec 2025]
 
 ### **Agent Design Patterns**
 
@@ -164,6 +166,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [A Practical Guide to Building AI Agents✍️](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf): 💡OpenAI. [11 Mar 2025]
 - [Agent Factory: The new era of agentic AI—common use cases and design patterns✍️](https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/):💡Tool use, Reflection, Planning,  Multi-agent, ReAct (Reason + Act) Patterns [13 Aug 2025]
 - [Agentic AI Architecture Framework for Enterprises ✍️](https://www.infoq.com/articles/agentic-ai-architecture-framework/):💡Tier 1: Foundation: Establishing Controlled Intelligence, Tier 2: Workflow, Tier 3: Autonomous (experimental) [11 Jul 2025]
+- [Agentic Design Patterns✨](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns): Jupyter notebook hands-on guide to building agents. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/sarwarbeing-ai/Agentic_Design_Patterns?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Agentic Architectures for Retrieval-intensive Applications](https://weaviate.io/ebooks/agentic-architectures): Published by Weviate [Mar 2025]
 - [Agentic Design Patterns✍️](https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0#heading=h.pxcur8v2qagu): Google Docs. A Hands-On Guide to Building Intelligent Systems. [🗄️](../files/archive/Agentic_Design_Patterns.docx) [May 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
@@ -193,6 +196,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [Agent-as-a-Judge📑](https://arxiv.org/abs/2410.10934): Evaluate agents with agents; DevAI benchmark of 55 development tasks. [Oct 2024]
 1. [AgentBench📑](https://arxiv.org/abs/2308.03688): Evaluates LLM-as-Agent reasoning and decision-making. [Aug 2023]
 1. [Agentic Context Engineering📑](https://arxiv.org/abs/2510.04618): ACE lets models self-improve by evolving contexts without fine-tuning. [Oct 2025]
+1. [AgentQ📑](https://arxiv.org/abs/2408.07199): Off-policy policy gradient for multi-step agent planning. [13 Aug 2024]
 1. [Agents Are Not Enough📑](https://arxiv.org/abs/2412.16241): Proposes ecosystem of agents, sims, and assistants. [Dec 2024]
 1. [AI Agents That Matter📑](https://arxiv.org/abs/2407.01502): Agent evaluations for accuracy and cost optimization. [Jul 2024]
 1. [Automated Design of Agentic Systems📑](https://arxiv.org/abs/2408.08435): ADAS auto-creates agentic designs with novel building blocks. [Aug 2024]
@@ -252,23 +256,23 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 ### **Reflection, Tool Use, Planning and Multi-agent collaboration**
 
 - Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
-  - Reflection: LLM self-evaluates to improve.
-    - [Self-Refine📑](https://arxiv.org/abs/2303.17651) [30 Mar 2023]
-    - [Reflexion📑](https://arxiv.org/abs/2303.11366) [20 Mar 2023]
-    - [CRITIC📑](https://arxiv.org/abs/2305.11738) [19 May 2023]
-  - Tool use: LLM uses tools for information gathering, action, or data processing.
-    - [Gorilla📑](https://arxiv.org/abs/2305.15334) [24 May 2023]
-    - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
-    - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
-    - [Executable Code Actions Elicit Better LLM Agents📑](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
-  - Planning: LLM devises and executes multistep plans to reach goals.
-    - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://arxiv.org/abs/2201.11903) [28 Jan 2022]
-    - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
-    - [Understanding the planning of LLM agents: A survey📑](https://arxiv.org/abs/2402.02716) [5 Feb 2024]
-  - Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
-    - [Communicative Agents for Software Development📑](https://arxiv.org/abs/2307.07924) [16 Jul 2023]
-    - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://arxiv.org/abs/2308.08155) [16 Aug 2023]
-    - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://arxiv.org/abs/2308.00352) [1 Aug 2023]
+- Reflection: LLM self-evaluates to improve.
+  - [Self-Refine📑](https://arxiv.org/abs/2303.17651) [30 Mar 2023]
+  - [Reflexion📑](https://arxiv.org/abs/2303.11366) [20 Mar 2023]
+  - [CRITIC📑](https://arxiv.org/abs/2305.11738) [19 May 2023]
+- Tool use: LLM uses tools for information gathering, action, or data processing.
+  - [Gorilla📑](https://arxiv.org/abs/2305.15334) [24 May 2023]
+  - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
+  - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
+  - [Executable Code Actions Elicit Better LLM Agents📑](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
+- Planning: LLM devises and executes multistep plans to reach goals.
+  - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://arxiv.org/abs/2201.11903) [28 Jan 2022]
+  - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
+  - [Understanding the planning of LLM agents: A survey📑](https://arxiv.org/abs/2402.02716) [5 Feb 2024]
+- Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
+  - [Communicative Agents for Software Development📑](https://arxiv.org/abs/2307.07924) [16 Jul 2023]
+  - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://arxiv.org/abs/2308.08155) [16 Aug 2023]
+  - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://arxiv.org/abs/2308.00352) [1 Aug 2023]
 
 ### **Tool Use: LLM to Master APIs**
 
