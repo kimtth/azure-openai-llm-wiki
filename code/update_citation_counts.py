@@ -85,7 +85,7 @@ def update_ranked_sections(file_path: str):
     print(f"\nProcessed {total_papers} papers")
     
     if replacements:
-        print(f"\nUpdates needed:")
+        print("\nUpdates needed:")
         for i, r in enumerate(replacements, 1):
             print(f"{i}. {r['title'][:50]}... ({r['arxiv_id']}): {r['old_count']} → {r['new_count']}")
         

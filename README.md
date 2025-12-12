@@ -18,7 +18,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 | 🚀 App & Agent | 🌌 Azure OpenAI | 🧠 Research & Survey | 🛠️ Tools & Eval | 📋 Best Practices |
 |-------------|-------|------------------|-------|----------------|
-| [1. App & Agent](#1-app--agent) | [2. Azure OpenAI & Copilot](#2-azure-openai) | [3. Research & Survey <br/> (LLM Models & Services)](#3-research--survey) | [4. Tools & Eval](#4-tools--resource) | [5. Best Practices & Papers <br/> (RAG & Agent)](#5-best-practices) |
+| [1. App & Agent](#1-app--agent) | [2. Azure OpenAI & Copilot](#2-azure-openai--copilot) | [3. Research & Survey <br/> (LLM Models & Services)](#3-research--survey) | [4. Tools, Datasets, and Evaluation](#4-tools-datasets-and-evaluation) | [5. Best Practices & Papers <br/> (RAG & Agent)](#5-best-practices) |
 
 ## 1. App & Agent
 🚀 RAG Systems, LLM Applications, Agents, Frameworks & Orchestration
