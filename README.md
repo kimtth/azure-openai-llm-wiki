@@ -131,6 +131,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Datasets for LLM Training](section/tools_extra.md#datasets-for-llm-training)
 - **Evaluation**
   - [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models)
+  - [LLM Evalution Benchmarks](section/tools_extra.md#llm-evalution-benchmarks)
   - [LLMOps: Large Language Model Operations](section/tools_extra.md#llmops-large-language-model-operations)
 
 **[⬆ back to top](#azure-openai--llm)**

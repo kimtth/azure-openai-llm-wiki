@@ -131,6 +131,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Datasets for LLM Training](#datasets-for-llm-training)
 - **Evaluation**
   - [Evaluating Large Language Models](#evaluating-large-language-models)
+  - [LLM Evalution Benchmarks](#llm-evalution-benchmarks)
   - [LLMOps: Large Language Model Operations](#llmops-large-language-model-operations)
 
 **[⬆ back to top](#azure-openai--llm)**
@@ -2186,64 +2187,6 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - Re-decaying: Gradually reducing the learning rate afterwards.
   - Data Mixing: Adding a small portion (e.g., 5%) of the original pretraining data (D1) to the new dataset (D2) to prevent catastrophic forgetting.
 - [LIMA: Less Is More for Alignment📑](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
-
-### Llama finetuning
-
-- A key difference between [Llama 1📑](https://arxiv.org/abs/2302.13971): [27 Feb 2023] and [Llama 2📑](https://arxiv.org/abs/2307.09288): [18 Jul 2023] is the architectural change of attention layer, in which Llama 2 takes advantage of Grouped Query Attention (GQA) mechanism to improve efficiency. <br/>
-  <img src="./files/grp-attn.png" alt="llm-grp-attn" width="400"/>
-- Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm [📺](https://www.youtube.com/watch?v=oM4VmoabDAI) / [✨](https://github.com/hkproj/pytorch-llama) [03 Sep 2023] <br/>
- ![**github stars**](https://img.shields.io/github/stars/hkproj/pytorch-llama?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-  - KV Cache, Grouped Query Attention, Rotary PE  
-    <img src="./files/llama2.png" width="300" />    
-  <details>
-  <summary>Pytorch code</summary>
-  
-  - Rotary PE
-    ```python
-    def apply_rotary_embeddings(x: torch.Tensor, freqs_complex: torch.Tensor, device: str):
-        # Separate the last dimension pairs of two values, representing the real and imaginary parts of the complex number
-        # Two consecutive values will become a single complex number
-        # (B, Seq_Len, H, Head_Dim) -> (B, Seq_Len, H, Head_Dim/2)
-        x_complex = torch.view_as_complex(x.float().reshape(*x.shape[:-1], -1, 2))
-        # Reshape the freqs_complex tensor to match the shape of the x_complex tensor. So we need to add the batch dimension and the head dimension
-        # (Seq_Len, Head_Dim/2) --> (1, Seq_Len, 1, Head_Dim/2)
-        freqs_complex = freqs_complex.unsqueeze(0).unsqueeze(2)
-        # Multiply each complex number in the x_complex tensor by the corresponding complex number in the freqs_complex tensor
-        # Which results in the rotation of the complex number as shown in the Figure 1 of the paper
-        # (B, Seq_Len, H, Head_Dim/2) * (1, Seq_Len, 1, Head_Dim/2) = (B, Seq_Len, H, Head_Dim/2)
-        x_rotated = x_complex * freqs_complex
-        # Convert the complex number back to the real number
-        # (B, Seq_Len, H, Head_Dim/2) -> (B, Seq_Len, H, Head_Dim/2, 2)
-        x_out = torch.view_as_real(x_rotated)
-        # (B, Seq_Len, H, Head_Dim/2, 2) -> (B, Seq_Len, H, Head_Dim)
-        x_out = x_out.reshape(*x.shape)
-        return x_out.type_as(x).to(device)
-    ```  
-  - KV Cache, Grouped Query Attention
-    ```python
-      # Replace the entry in the cache
-      self.cache_k[:batch_size, start_pos : start_pos + seq_len] = xk
-      self.cache_v[:batch_size, start_pos : start_pos + seq_len] = xv
-
-      # (B, Seq_Len_KV, H_KV, Head_Dim)
-      keys = self.cache_k[:batch_size, : start_pos + seq_len]
-      # (B, Seq_Len_KV, H_KV, Head_Dim)
-      values = self.cache_v[:batch_size, : start_pos + seq_len]
-
-      # Since every group of Q shares the same K and V heads, just repeat the K and V heads for every Q in the same group.
-
-      # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
-      keys = repeat_kv(keys, self.n_rep)
-      # (B, Seq_Len_KV, H_KV, Head_Dim) --> (B, Seq_Len_KV, H_Q, Head_Dim)
-      values = repeat_kv(values, self.n_rep)
-    ```  
-    </details>
-- [Comprehensive Guide for LLaMA with RLHF🤗](https://huggingface.co/blog/stackllama): StackLLaMA: A hands-on guide to train LLaMA with RLHF [5 Apr 2023]  
-- Official LLama Recipes incl. Finetuning: [✨](https://github.com/facebookresearch/llama-recipes)
- ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama-recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)  
-- Llama 2 ONNX [✨](https://github.com/microsoft/Llama-2-Onnx) [Jul 2023]: ONNX, or Open Neural Network Exchange, is an open standard for machine learning interoperability. It allows AI developers to use models across various frameworks, tools, runtimes, and compilers.
- ![**github stars**](https://img.shields.io/github/stars/microsoft/Llama-2-Onnx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-- [Multi-query attention (MQA)📑](https://arxiv.org/abs/2305.13245): [22 May 2023]
 
 ### PEFT: Parameter-Efficient Fine-Tuning ([📺](https://youtu.be/Us5ZFp16PaU)) [24 Apr 2023]
 
