@@ -330,6 +330,7 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 1. [Opik✨](https://github.com/comet-ml/opik): an open-source platform for evaluating, testing and monitoring LLM applications. Built by Comet. [2 Sep 2024] ![**github stars**](https://img.shields.io/github/stars/comet-ml/opik?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Pezzo✨](https://github.com/pezzolabs/pezzo): Open-source, developer-first LLMOps platform [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/pezzolabs/pezzo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [phoenix✨](https://github.com/Arize-ai/phoenix): AI Observability & Evaluation [Nov 2022] ![**github stars**](https://img.shields.io/github/stars/Arize-ai/phoenix?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [promptfoo✨](https://github.com/promptfoo/promptfoo): Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality. [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/promptfoo/promptfoo?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [PromptTools✨](https://github.com/hegelai/prompttools/): Open-source tools for prompt testing [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/hegelai/prompttools?style=flat-square&label=%20&color=blue&cacheSeconds=36000)

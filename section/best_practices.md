@@ -154,6 +154,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 ## **Agent Best Practices**
 
 - [AIAgentToolkit.xyz](https://www.aiagenttoolkit.xyz): A curated list of AI agent frameworks, launchpads, tools, tutorials, & resources.
+- [AI Engineering Guidebook](https://blog.dailydoseofds.com/p/the-ai-engineering-guidebook): 💡350+ pages. Daily Dose of Data Science. [26 Dec 2025]
 - [Agent Leaderboard🤗](https://huggingface.co/spaces/galileo-ai/agent-leaderboard)
 - [Agent Leaderboard v2✨](https://github.com/rungalileo/agent-leaderboard) ![**github stars**](https://img.shields.io/github/stars/rungalileo/agent-leaderboard?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [How AI is transforming work at Anthropic✍️](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic): Claude Code covers ~60% of engineering work with ~50% productivity gain. [3 Dec 2025]

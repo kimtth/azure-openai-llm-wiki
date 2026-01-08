@@ -46,6 +46,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 - **Coding & Research**
   - [Coding & Research](section/applications.md#coding--research)
   - [Coding](section/applications.md#coding)
+  - [Skill](section/applications.md#skill)
   - [Domain-Specific Agents](section/applications.md#domain-specific-agents)
   - [Deep Research](section/applications.md#deep-research)
 - **Frameworks**
