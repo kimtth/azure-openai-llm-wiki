@@ -206,9 +206,10 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [AgentCoder📑](https://arxiv.org/abs/2312.13010): Multi-agent code generation with iterative testing. [Dec 2023]
 1. [LDB📑](https://arxiv.org/abs/2402.16906): LLM debugger verifying runtime execution step by step. [Feb 2024]
 1. [Generative Agent Simulations of 1,000 People📑](https://arxiv.org/abs/2411.10109): Simulates 1,000 real individuals; 85% General Social Survey accuracy. [Nov 2024]
+1. [Recursive Language Models (RLMs), a general inference strategy📑](https://arxiv.org/abs/2512.24601): A new general inference strategy that lets large language models process arbitrarily long inputs by treating the entire prompt as an external environment and programmatically decomposing and recursively calling the model on pieces of the input. [Dec 2025]
 1. [Solving a Million-Step LLM Task with Zero Errors📑](https://arxiv.org/abs/2511.09030): MDAP framework with MAKER decomposition and error correction. [Nov 2025]
 1. [The Rise and Potential of LLM-Based Agents📑](https://arxiv.org/abs/2309.07864): Survey of LLM-based agents. [Sep 2023]
-
+1. [Towards a Science of Scaling Agent Systems📑](https://arxiv.org/abs/2512.08296): Adding agents doesn’t guarantee better performance—multi‑agent AI can drop up to 70% depending on task, coordination, and architecture (Google & MIT, 15,000 trials). [Dec 2025]
 
 ### **Agent Research (Ranked by cite count >=100)**
 
