@@ -1,4 +1,4 @@
-# Azure OpenAI + LLM
+# Awesome Azure OpenAI + LLM
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/kimtth/awesome-azure-openai-llm?label=commit&color=hotpink&style=flat-square)
 ![Azure OpenAI](https://img.shields.io/badge/llm-azure_openai-blue?style=flat-square)
