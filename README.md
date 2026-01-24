@@ -97,8 +97,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 - **Prompting**
   - [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
 - **Finetuning**
-  - [Finetuning](section/models_research.md#finetuning)
-  - [Quantization Techniques](section/models_research.md#quantization-techniques)
+  - [Pre-training and Post-training](section/models_research.md#finetuning)
   - [Other Techniques and LLM Patterns](section/models_research.md#other-techniques-and-llm-patterns)
 - **Challenges**
   - [Large Language Model: Challenges and Solutions](section/models_research.md#large-language-model-challenges-and-solutions)
