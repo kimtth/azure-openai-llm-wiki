@@ -524,6 +524,8 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 ## Finetuning
 
+- [The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs📑](https://arxiv.org/abs/2408.13296): An Exhaustive Review of Technologies, Research, Best Practices  [23 Aug 2024]
+
 ### LLM Pre-training and Post-training Paradigms 
 
 - [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
@@ -836,6 +838,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [OpenAI DevDay 2024✍️](https://openai.com/devday/): Real-time API (speech-to-speech), Vision Fine-Tuning, Prompt Caching, and Distillation (fine-tuning a small language model using a large language model). [✍️](https://community.openai.com/t/devday-2024-san-francisco-live-ish-news/963456) [1 Oct 2024]
 - [OpenAI DevDay 2025✍️](https://openai.com/devday): ChatGPT Apps + SDK, AgentKit, GPT-5 Pro, Sora 2 video API, upgraded Codex [✍️](https://openai.com/index/announcing-devday-2025/) [6 Oct 2025]
 - [Operator✍️](https://openai.com/index/introducing-operator/): GUI Agent. Operates embedded virtual environments. Specialized model (Computer-Using Agent). [23 Jan 2025]
+- [Prism✍️](https://openai.com/index/introducing-prism/): AI-native workspace for scientists to write and collaborate on research. [27 Jan 2026]
 - [SearchGPT✍️](https://openai.com/index/searchgpt-prototype/): AI search [25 Jul 2024] > [ChatGPT Search✍️](https://openai.com/index/introducing-chatgpt-search/) [31 Oct 2024]
 - [Sora✍️](https://openai.com/sora) Text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user’s prompt. [15 Feb 2024]
 - [Structured Outputs in the API✍️](https://openai.com/index/introducing-structured-outputs-in-the-api/): a new feature designed to ensure model-generated outputs will exactly match JSON Schemas provided by developers. [6 Aug 2024]
@@ -846,6 +849,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Anthropic CLI (Claude Code)](https://www.npmjs.com/package/@anthropic-ai/claude-code): The official command-line interface that lives in your project directory, enabling natural-language code generation, refactoring, and Git automation. [24 Feb 2025]
 - [Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk): A toolkit for building multi-step, tool-using agents using the Claude API. [29 Sep 2025]
 - [Constitutional AI (CAI)](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback): Anthropic’s training framework using a “constitution” (AI‑generated rules) to align models toward harmlessness. [15 Dec 2022]
+- [Cowork](https://claude.com/product/cowork): AI agent that accesses local files to automate multi-step desktop tasks like organizing, reporting, and data extraction. [Jan 2026]
 - [Frontier AI Safety Research](https://www.anthropic.com/transparency): Foundational research into AI risks, alignment, and interpretability.
 - [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): An open standard for connecting AI assistants to external systems (data, tools, etc.) securely and scalably. [25 Nov 2024]
 - [Programmatic Tool Calling](https://www.anthropic.com/engineering/advanced-tool-use): Enables Claude to write orchestration code (e.g., Python) to call multiple tools in a sequence, improving efficiency. [24 Nov 2025]
@@ -869,6 +873,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 ### **Context constraints**
 
 - [Context Rot: How Increasing Input Tokens Impacts LLM Performance✨](https://github.com/chroma-core/context-rot) [14 Jul 2025]
+- [DroPE✍️](https://pub.sakana.ai/DroPE): Extends LLM context by dropping positional embeddings and brief recalibration, improving long-context performance without retraining. Sakana AI. [13 Dec 2025]
 - [Giraffe📑](https://arxiv.org/abs/2308.10882): Adventures in Expanding Context Lengths in LLMs. A new truncation strategy for modifying the basis for the position encoding.  [✍️](https://blog.abacus.ai/blog/2023/08/22/giraffe-long-context-llms/) [2 Jan 2024]
 - [Introducing 100K Context Windows✍️](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 - [Leave No Context Behind📑](https://arxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
@@ -1005,6 +1010,7 @@ denses the reasoning process into minimal, abstract
 ### **Additional Topics: A Survey of LLMs**
 
 - [Advancing Reasoning in Large Language Models: Promising Methods and Approaches📑](https://arxiv.org/abs/2502.03671) [5 Feb 2025]
+- [Agentic Reasoning for Large Language Models📑](https://arxiv.org/abs/2601.12538) [18 Jan 2026]
 - [Agentic Retrieval-Augmented Generation: Agentic RAG📑](https://arxiv.org/abs/2501.09136) [15 Jan 2025]
 - [AI Agent Protocols📑](https://arxiv.org/abs/2504.16736) [23 Apr 2025]
 - [AI-Generated Content (AIGC)📑](https://arxiv.org/abs/2303.04226): A History of Generative AI from GAN to ChatGPT:[7 Mar 2023]

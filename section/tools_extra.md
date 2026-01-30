@@ -179,10 +179,10 @@ databricks-dolly-15k: Instruction-Tuned [✨🤗](https://huggingface.co/dataset
 ## **Evaluating Large Language Models**
 
 - [Artificial Analysis LLM Performance Leaderboard🤗](https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard): Performance benchmarks & pricing across API providers of LLMs
-- Awesome LLMs Evaluation Papers: Evaluating Large Language Models: A Comprehensive Survey [✨](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers) [Oct 2023]
- ![**github stars**](https://img.shields.io/github/stars/tjunlp-lab/Awesome-LLMs-Evaluation-Papers?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- Awesome LLMs Evaluation Papers: Evaluating Large Language Models: A Comprehensive Survey [✨](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers) [Oct 2023] ![**github stars**](https://img.shields.io/github/stars/tjunlp-lab/Awesome-LLMs-Evaluation-Papers?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Can Large Language Models Be an Alternative to Human Evaluations?📑](https://arxiv.org/abs/2305.01937) [3 May 2023]
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?📑](https://arxiv.org/abs/2311.16989): Open-Source LLMs vs. ChatGPT; Benchmarks and Performance of LLMs [28 Nov 2023]
+- [Docker cagent✨](https://github.com/docker/cagent): Deterministic, replayable flows: the vcr (vcr.py) pattern records/replays http calls, making LLM and agent tests fast, reliable, and CI-friendly. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/docker/cagent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - Evaluation of Large Language Models: [A Survey on Evaluation of Large Language Models📑](https://arxiv.org/abs/2307.03109): [6 Jul 2023]
 - [Evaluation Papers for ChatGPT✨](https://github.com/THU-KEG/EvaluationPapers4ChatGPT) [28 Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/THU-KEG/EvaluationPapers4ChatGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
