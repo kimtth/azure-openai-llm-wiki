@@ -1,9 +1,20 @@
+from __future__ import annotations
+
 # Check for unused files in the files directory and move them to bak directory
 # This script scans all markdown files and checks if files in 'files' directory are referenced
 
+import argparse
 import os
 import re
 import shutil
+import sys
+from pathlib import Path
+
+CODE_DIR = Path(__file__).resolve().parent
+if str(CODE_DIR) not in sys.path:
+    sys.path.insert(0, str(CODE_DIR))
+
+from utils.path_utils import get_repo_root
 
 def get_all_markdown_files(root_dir):
     """Get all markdown files in the repository."""
@@ -172,33 +183,39 @@ def move_unused_files(root_dir, files_dir, dry_run=True, check_archive=False):
         for file in sorted(used_files):
             print(f"  ✓ {file}")
 
-if __name__ == "__main__":
-    import sys
-    
-    # Get the root directory (parent of code directory)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.dirname(script_dir)
-    files_dir = os.path.join(root_dir, 'files')
-    
-    # Parse arguments
-    dry_run = True
-    check_archive = False
-    
-    for arg in sys.argv[1:]:
-        if arg == '--execute':
-            dry_run = False
-        elif arg == '--archive':
-            check_archive = True
-    
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Find and move unused files referenced by markdown.")
+    parser.add_argument("--root", help="Repository root directory (defaults to repo root).")
+    parser.add_argument("--files-dir", help="Files directory (defaults to <root>/files).")
+    parser.add_argument("--archive", action="store_true", help="Check files/archive instead of files/.")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--execute", action="store_true", help="Move unused files to bak/.")
+    mode.add_argument("--dry-run", action="store_true", help="Preview moves without writing (default).")
+    return parser
+
+
+def main() -> None:
+    parser = build_parser()
+    args = parser.parse_args()
+
+    root_dir = Path(args.root) if args.root else get_repo_root(__file__)
+    files_dir = Path(args.files_dir) if args.files_dir else root_dir / "files"
+
+    dry_run = not args.execute
+
     if dry_run:
         print("DRY RUN MODE: No files will be moved. Use --execute to move files.")
     else:
         print("EXECUTE MODE: Files will be moved!")
-    
-    if check_archive:
+
+    if args.archive:
         print("Checking archive directory...")
-    
+
     print(f"\nRoot directory: {root_dir}")
     print(f"Files directory: {files_dir}\n")
-    
-    move_unused_files(root_dir, files_dir, dry_run, check_archive)
+
+    move_unused_files(str(root_dir), str(files_dir), dry_run, args.archive)
+
+
+if __name__ == "__main__":
+    main()

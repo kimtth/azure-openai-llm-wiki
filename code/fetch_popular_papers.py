@@ -1,8 +1,19 @@
-import requests
-import time
+from __future__ import annotations
+
+import argparse
 import re
-from typing import List, Dict, Optional, Tuple
+import sys
+import time
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
+
+CODE_DIR = Path(__file__).resolve().parent
+if str(CODE_DIR) not in sys.path:
+    sys.path.insert(0, str(CODE_DIR))
+
+from utils.http_utils import create_session, get_json
+from utils.path_utils import get_repo_root
 
 
 def infer_arxiv_date(arxiv_id: str) -> Optional[Tuple[int, int]]:
@@ -22,59 +33,63 @@ def format_month_year(year: int, month: int) -> str:
     return f"[{months[month-1]} {year}]"
 
 class SemanticScholarFetcher:
-    """Fetch popular papers from Semantic Scholar API"""
-    
+    """Fetch popular papers from Semantic Scholar API."""
+
     BASE_URL = "https://api.semanticscholar.org/graph/v1"
-    
-    def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Academic-Research-Tool/1.0'
-        })
-    
-    def search_papers(self, query: str, limit: int = 50, fields: List[str] = None) -> List[Dict]:
+
+    def __init__(self, *, user_agent: Optional[str], timeout: int, max_retries: int, backoff: float):
+        self.session = create_session(user_agent)
+        self.timeout = timeout
+        self.max_retries = max_retries
+        self.backoff = backoff
+
+    def search_papers(self, query: str, limit: int = 50, fields: List[str] | None = None) -> List[Dict]:
         """Search papers by query and return results."""
         if fields is None:
-            fields = ['paperId', 'title', 'authors', 'year', 'citationCount', 
-                     'abstract', 'venue', 'url', 'externalIds', 'fieldsOfStudy']
-        
+            fields = [
+                "paperId",
+                "title",
+                "authors",
+                "year",
+                "citationCount",
+                "abstract",
+                "venue",
+                "url",
+                "externalIds",
+                "fieldsOfStudy",
+            ]
+
         params = {
-            'query': query,
-            'limit': min(limit, 100),
-            'fields': ','.join(fields)
+            "query": query,
+            "limit": min(limit, 100),
+            "fields": ",".join(fields),
         }
-        
-        backoff = 1.0
-        for attempt in range(5):
-            try:
-                response = self.session.get(f"{self.BASE_URL}/paper/search", params=params, timeout=30)
-                if response.status_code == 429:
-                    wait = float(response.headers.get('Retry-After', backoff))
-                    time.sleep(wait)
-                    backoff = min(backoff * 2, 30)
-                    continue
-                response.raise_for_status()
-                return response.json().get('data', [])
-            except requests.exceptions.RequestException as e:
-                status = getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None
-                if status and 500 <= status < 600 and attempt < 4:
-                    time.sleep(backoff)
-                    backoff = min(backoff * 2, 30)
-                    continue
-                return []
-        return []
-    
-    def get_papers_sorted_by_citations(self, query: str, top_n: int = 30) -> List[Dict]:
+
+        data = get_json(
+            self.session,
+            f"{self.BASE_URL}/paper/search",
+            params=params,
+            timeout=self.timeout,
+            max_retries=self.max_retries,
+            backoff=self.backoff,
+        )
+        if not data:
+            return []
+        return data.get("data", [])
+
+    def get_papers_sorted_by_citations(self, query: str, top_n: int = 30, min_citations: int = 100) -> List[Dict]:
         """Get top N papers sorted by citation count."""
         papers = self.search_papers(query, limit=100)
-        
+
         cs_papers = [
-            p for p in papers
-            if p.get('fieldsOfStudy') and 'Computer Science' in p.get('fieldsOfStudy', []) 
-            and p.get('citationCount', 0) >= 100
+            p
+            for p in papers
+            if p.get("fieldsOfStudy")
+            and "Computer Science" in p.get("fieldsOfStudy", [])
+            and p.get("citationCount", 0) >= min_citations
         ]
-        
-        sorted_papers = sorted(cs_papers, key=lambda x: x.get('citationCount', 0), reverse=True)
+
+        sorted_papers = sorted(cs_papers, key=lambda x: x.get("citationCount", 0), reverse=True)
         time.sleep(1)
         return sorted_papers[:top_n]
 
@@ -153,10 +168,24 @@ def save_to_markdown(topic: str, papers: List[Dict], filename: str):
             f.write("---\n\n")
 
 
-def main():
-    """Main function to fetch and display papers"""
-    fetcher = SemanticScholarFetcher()
-    
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Fetch top-cited RAG/agent papers from Semantic Scholar.")
+    parser.add_argument("--output", help="Output markdown file path.")
+    parser.add_argument("--min-citations", type=int, default=100, help="Minimum citation threshold.")
+    parser.add_argument("--top-n", type=int, default=30, help="Top N papers per query.")
+    parser.add_argument("--timeout", type=int, default=30, help="Request timeout in seconds.")
+    parser.add_argument("--max-retries", type=int, default=5, help="Max retries for API calls.")
+    parser.add_argument("--backoff", type=float, default=1.0, help="Initial backoff in seconds.")
+    parser.add_argument("--user-agent", default="Academic-Research-Tool/1.0", help="Custom User-Agent.")
+    args = parser.parse_args()
+
+    fetcher = SemanticScholarFetcher(
+        user_agent=args.user_agent,
+        timeout=args.timeout,
+        max_retries=args.max_retries,
+        backoff=args.backoff,
+    )
+
     topics = {
         "RAG (Retrieval-Augmented Generation)": [
             "Retrieval-Augmented Generation",
@@ -172,10 +201,8 @@ def main():
         ]
     }
     
-    import os
-    parent_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.dirname(parent_dir)
-    output_file = os.path.join(root_dir, "section", "x_popular_papers.md")
+    root_dir = get_repo_root(__file__)
+    output_file = args.output or str(root_dir / "section" / "x_popular_papers.md")
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("# Popular Papers on RAG & AI Agents (Computer Science)\n\n")
@@ -187,7 +214,7 @@ def main():
         
         all_papers = []
         for query in queries:
-            all_papers.extend(fetcher.get_papers_sorted_by_citations(query, top_n=30))
+            all_papers.extend(fetcher.get_papers_sorted_by_citations(query, top_n=args.top_n, min_citations=args.min_citations))
         
         # Remove duplicates
         seen_ids = set()
@@ -199,7 +226,7 @@ def main():
                 unique_papers.append(paper)
         
         # Filter and sort
-        filtered_papers = [p for p in unique_papers if p.get('citationCount', 0) >= 100]
+        filtered_papers = [p for p in unique_papers if p.get('citationCount', 0) >= args.min_citations]
         filtered_papers.sort(key=lambda x: x.get('citationCount', 0), reverse=True)
         
         for idx, paper in enumerate(filtered_papers, 1):

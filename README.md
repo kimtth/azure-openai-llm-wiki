@@ -174,3 +174,15 @@ https://shields.io/badges/git-hub-created-at
 -->
 
 **[`^        back to top        ^`](#azure-openai--llm)**
+
+<!-- 
+#### AGENT_TOOLS
+- add_github_stars.py: Append GitHub star badges to markdown lines containing GitHub repo links.
+- check_unused_files.py: Scan markdown for file references and move unreferenced files to files/bak (dry-run default).
+- fetch_github_description.py: Fetch GitHub repo descriptions and append them after repo links in markdown.
+- fetch_popular_papers.py: Query Semantic Scholar for top-cited RAG/agent papers and write section/x_popular_papers.md.
+- get_github_dates.py: Append GitHub repo creation month/year to markdown lines with GitHub links.
+- merge_readme.py: Merge README.md with section/*.md into README_all_in_one.md, normalizing links.
+- update_azure_dates.py: Copy dates from snapshot/azure_old.md into section/azure.md and normalize date tokens.
+- update_citation_counts.py: Update citation counts for ranked paper sections via Semantic Scholar API.
+-->

@@ -1,46 +1,23 @@
-import re
-import requests
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+
+CODE_DIR = Path(__file__).resolve().parent
+if str(CODE_DIR) not in sys.path:
+    sys.path.insert(0, str(CODE_DIR))
+
+from utils.github_api import get_repo_description
+from utils.http_utils import create_session
+from utils.io_utils import read_text_input, write_text_output
+from utils.markdown_utils import GITHUB_REPO_URL_WITH_COLON_PATTERN, clean_repo_name
 
 # Fetch repository descriptions from GitHub API
 # Extracts clean, informative descriptions from GitHub repos
 
-def get_repo_description(owner, repo):
-    """
-    Fetch GitHub repository description via API.
-    Returns the description string or a fallback message if unavailable.
-    """
-    api_url = f"https://api.github.com/repos/{owner}/{repo}"
-    
-    try:
-        response = requests.get(api_url, timeout=10)
-        if response.status_code != 200:
-            print(f"  Failed to fetch {owner}/{repo}: HTTP {response.status_code}")
-            return None
-        
-        data = response.json()
-        description = data.get('description')
-        
-        if not description:
-            # Try to use the name or topics as fallback
-            topics = data.get('topics', [])
-            if topics:
-                return f"Repository for {', '.join(topics)}"
-            return None
-        
-        # Clean up description: remove URLs, extra whitespace
-        description = description.strip()
-        # Limit to first sentence or 150 chars
-        if len(description) > 150:
-            description = description[:150].rsplit(' ', 1)[0] + '.'
-        
-        return description
-    
-    except Exception as e:
-        print(f"  Error fetching {owner}/{repo}: {e}")
-        return None
 
-
-def process_text_with_descriptions(text):
+def process_text_with_descriptions(text: str, *, session, timeout: int, max_retries: int) -> str:
     """
     Process markdown text and add GitHub repository descriptions after links.
     Preserves existing descriptions if present.
@@ -52,8 +29,8 @@ def process_text_with_descriptions(text):
     output = []
     
     # Pattern to match GitHub links and check if description already exists
-    link_pattern = re.compile(r'\(https://github\.com/([^/\s]+)/([^/\s)]+)\):?\s*')
-    
+    link_pattern = GITHUB_REPO_URL_WITH_COLON_PATTERN
+
     for line in lines:
         match = link_pattern.search(line)
         
@@ -61,8 +38,7 @@ def process_text_with_descriptions(text):
             output.append(line)
             continue
         
-        owner, repo = match.group(1), match.group(2)
-        repo = repo.rstrip('.')  # Remove trailing punctuation
+        owner, repo = match.group(1), clean_repo_name(match.group(2))
         
         # Check if description already exists (after the colon)
         after_link = line[match.end():].strip()
@@ -71,8 +47,8 @@ def process_text_with_descriptions(text):
             continue
         
         # Fetch description
-        print(f"Fetching description for: {owner}/{repo}")
-        description = get_repo_description(owner, repo)
+        print(f"Fetching description for: {owner}/{repo}", file=sys.stderr)
+        description = get_repo_description(owner, repo, session=session, timeout=timeout, max_retries=max_retries)
         
         if description:
             # Insert description after the link
@@ -86,21 +62,36 @@ def process_text_with_descriptions(text):
         else:
             output.append(line)
     
-    return '\n'.join(output)
+    return "\n".join(output)
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Append GitHub repository descriptions to markdown lines.")
+    parser.add_argument("--input", help="Input markdown file path (or '-' for stdin).")
+    parser.add_argument("--output", help="Output file path (or '-' for stdout).")
+    parser.add_argument("--in-place", action="store_true", help="Overwrite the input file.")
+    parser.add_argument("--timeout", type=int, default=10, help="Request timeout in seconds.")
+    parser.add_argument("--max-retries", type=int, default=3, help="Max retries for API calls.")
+    parser.add_argument("--user-agent", default="awesome-azure-openai-llm/1.0", help="Custom User-Agent for GitHub API.")
+    return parser
+
+
+def main() -> None:
+    parser = build_parser()
+    args = parser.parse_args()
+
+    text = read_text_input(args.input)
+
+    session = create_session(args.user_agent)
+    result = process_text_with_descriptions(text, session=session, timeout=args.timeout, max_retries=args.max_retries)
+
+    if args.in_place:
+        if not args.input or args.input == "-":
+            parser.error("--in-place requires --input with a file path.")
+        Path(args.input).write_text(result, encoding="utf-8")
+    else:
+        write_text_output(result, args.output)
 
 
 if __name__ == "__main__":
-    # Test with sample input
-    test_input = """- [ ] [Agent-R1✨](https://github.com/0russwest0/Agent-R1):
-- [ ] [ralph✨](https://github.com/snarktank/ralph):
-- [ ] [SciSciGPT✨](https://github.com/Northwestern-CSSI/SciSciGPT):
-- [ ] [superpowers✨](https://github.com/obra/superpowers):
-- [ ] [Universal-Commerce-Protocol/ucp✨](https://github.com/Universal-Commerce-Protocol/ucp):
-- [ ] [ART✨](https://github.com/OpenPipe/ART):"""
-    
-    print("Fetching repository descriptions...\n")
-    result = process_text_with_descriptions(test_input)
-    print("\n" + "="*80)
-    print("Result:")
-    print("="*80)
-    print(result)
+    main()
