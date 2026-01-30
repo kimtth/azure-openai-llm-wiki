@@ -1,28 +1,45 @@
-"""
-Update citation counts for papers in the Ranked by cite count sections.
-Uses Semantic Scholar API to fetch real-time citation counts.
-"""
+"""Update citation counts for papers in the Ranked by cite count sections."""
 
+from __future__ import annotations
+
+import argparse
 import re
+import sys
 import time
-import requests
-from typing import Tuple, List
+from pathlib import Path
+from typing import List, Tuple
 
-def get_citation_count(arxiv_id: str) -> int:
+CODE_DIR = Path(__file__).resolve().parent
+if str(CODE_DIR) not in sys.path:
+    sys.path.insert(0, str(CODE_DIR))
+
+from utils.http_utils import create_session, get_json
+from utils.path_utils import get_repo_root
+
+
+def get_citation_count(
+    arxiv_id: str,
+    *,
+    session,
+    timeout: int,
+    max_retries: int,
+    backoff: float,
+) -> int | None:
     """Fetch citation count from Semantic Scholar API."""
-    url = f'https://api.semanticscholar.org/graph/v1/paper/arXiv:{arxiv_id}'
-    params = {'fields': 'citationCount'}
-    
-    try:
-        response = requests.get(url, params=params, timeout=10)
-        if response.status_code == 200:
-            return response.json().get('citationCount', 0)
-        elif response.status_code == 429:
-            time.sleep(60)
-            return get_citation_count(arxiv_id)
+    url = f"https://api.semanticscholar.org/graph/v1/paper/arXiv:{arxiv_id}"
+    params = {"fields": "citationCount"}
+
+    data = get_json(
+        session,
+        url,
+        params=params,
+        timeout=timeout,
+        max_retries=max_retries,
+        backoff=backoff,
+    )
+    if not data:
         return None
-    except Exception:
-        return None
+    return data.get("citationCount", 0)
 
 def extract_papers_from_ranked_section(content: str, section_name: str) -> List[Tuple[str, str, int, str]]:
     """Extract papers from a ranked section."""
@@ -42,11 +59,17 @@ def extract_papers_from_ranked_section(content: str, section_name: str) -> List[
         for match in re.finditer(paper_pattern, section_content)
     ]
 
-def update_ranked_sections(file_path: str):
+def update_ranked_sections(
+    file_path: Path,
+    *,
+    timeout: int,
+    max_retries: int,
+    sleep_s: float,
+    dry_run: bool,
+) -> int:
     """Update citation counts in ranked sections."""
-    
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+
+    content = file_path.read_text(encoding="utf-8")
     
     sections = [
         'RAG Research (Ranked by cite count >=100)',
@@ -56,13 +79,21 @@ def update_ranked_sections(file_path: str):
     replacements = []
     total_papers = 0
     
+    session = create_session("awesome-azure-openai-llm/1.0")
+
     for section_name in sections:
         papers = extract_papers_from_ranked_section(content, section_name)
         total_papers += len(papers)
         
         for idx, (_, title, arxiv_id, current_citations, original_text) in enumerate(papers, 1):
             print(f"[{idx}/{len(papers)}] Checking {arxiv_id}...", end='\r')
-            new_citations = get_citation_count(arxiv_id)
+            new_citations = get_citation_count(
+                arxiv_id,
+                session=session,
+                timeout=timeout,
+                max_retries=max_retries,
+                backoff=max(1.0, sleep_s),
+            )
             
             if new_citations is not None and new_citations != current_citations:
                 new_text = original_text.replace(
@@ -80,7 +111,7 @@ def update_ranked_sections(file_path: str):
                 })
                 print(f"[{idx}/{len(papers)}] {arxiv_id}: {current_citations} → {new_citations}")
             
-            time.sleep(0.5)
+            time.sleep(sleep_s)
     
     print(f"\nProcessed {total_papers} papers")
     
@@ -93,12 +124,43 @@ def update_ranked_sections(file_path: str):
         for r in replacements:
             updated_content = updated_content.replace(r['old'], r['new'])
         
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(updated_content)
-        
-        print(f"\n✓ Updated {len(replacements)} papers")
+        if dry_run:
+            print("\nDRY RUN: No files written.")
+        else:
+            file_path.write_text(updated_content, encoding="utf-8")
+            print(f"\n✓ Updated {len(replacements)} papers")
     else:
         print("✓ All up to date")
 
-if __name__ == '__main__':
-    update_ranked_sections('section/best_practices.md')
+    return len(replacements)
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Update citation counts in ranked paper sections.")
+    parser.add_argument(
+        "--file",
+        help="Target markdown file (default: section/best_practices.md).",
+    )
+    parser.add_argument("--timeout", type=int, default=10, help="Request timeout in seconds.")
+    parser.add_argument("--max-retries", type=int, default=3, help="Max retries for API calls.")
+    parser.add_argument("--sleep", type=float, default=0.5, help="Sleep between API calls in seconds.")
+    parser.add_argument("--dry-run", action="store_true", help="Preview updates without writing.")
+    return parser
+
+def main() -> None:
+    parser = build_parser()
+    args = parser.parse_args()
+
+    root = get_repo_root(__file__)
+    file_path = Path(args.file) if args.file else root / "section" / "best_practices.md"
+    update_ranked_sections(
+        file_path,
+        timeout=args.timeout,
+        max_retries=args.max_retries,
+        sleep_s=args.sleep,
+        dry_run=args.dry_run,
+    )
+
+
+if __name__ == "__main__":
+    main()
