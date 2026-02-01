@@ -218,7 +218,7 @@
 - [Azure AI Foundry SDK](https://aka.ms/aifoundrysdk/reference) - ✍️Unified SDK with pre-built app templates. (19 Nov 2024)
 - [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service) - ✍️Deep Research capabilities in Azure AI Foundry Agent Service. (7 Jul 2025)
 - [Responses API](https://devblogs.microsoft.com/foundry/introducing-new-tools-and-features-in-the-responses-api-in-azure-ai-foundry/) - ✍️Chat Completions API with the advanced tool-calling capabilities.
-- [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership) - Fine-Tuning with ✍️Weights & Biases and Azure OpenAI.
+- [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership) - ✍️Fine-Tuning with Weights & Biases and Azure OpenAI.
 
 ## Microsoft Research
 
