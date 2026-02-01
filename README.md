@@ -33,6 +33,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [AI Application](section/applications.md#ai-application)
   - [Agent & Application](section/applications.md#agent--application)
   - [No Code & User Interface](section/applications.md#no-code--user-interface)
+  - [Personal AI assistant & desktop](section/applications.md#personal-ai-assistant--desktop)
   - [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services)
   - [Caching](section/applications.md#caching)
   - [Data Processing](section/applications.md#data-processing)
