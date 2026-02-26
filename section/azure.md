@@ -55,6 +55,7 @@
 - 🏛️[Agent Lightning](https://github.com/microsoft/agent-lightning) - ✨Train and optimize agents (including RL, prompt‑optimization, multi‑agent workflows)  (Jun 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-lightning?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [AIOpsLab](https://www.microsoft.com/en-us/research/blog/aiopslab-building-ai-agents-for-autonomous-clouds/) - ✍️Research-driven AI agents for cloud incident analysis and root cause automation.
 - 🏛️[Autogen](https://github.com/microsoft/autogen) - ✨Customizable multi-agent conversation and tool orchestration framework (community AG2 and Microsoft variants). (Mar 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/autogen?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Copilot SDK](https://github.com/github/copilot-sdk) - ✨Multi-platform SDK for integrating GitHub Copilot Agent into apps and services (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/github/copilot-sdk?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[ExACT](https://github.com/microsoft/ExACT) - ✨Adaptive retrieval and planning using interaction memory and Monte Carlo Tree Search. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ExACT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[EvalsforAgentsInterop](https://github.com/microsoft/EvalsforAgentsInterop) - ✨Evaluates LLM-powered productivity agents through realistic scenario simulations. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/EvalsforAgentsInterop?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - 🏛️[JARVIS](https://github.com/microsoft/JARVIS) - ✨Bridge connecting LLMs with specialized AI models for composite task execution. (Mar 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/JARVIS?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -242,6 +243,7 @@
 - [Data Science Toolkit](https://www.ds-toolkit.com/) - ✍️Open-source collection of proven ML and AI implementation accelerators.
 - [E5](https://www.microsoft.com/en-us/research/publication/multilingual-e5-text-embeddings-a-technical-report) - ✍️Embedding model for Multilingual and Mutitask. Contrastive Pre-training (CCPairs dataset — millions of high-quality pairs of related texts (e.g., paraphrases or semantically similar sentences). (Dec 2022)
 - [Fara-7B](https://github.com/microsoft/fara) - ✨An Efficient Agentic Model for Computer Use. (24 Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/fara?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [GeoMind](https://www.microsoft.com/en-us/research/video/geomind-a-multi-agent-framework-for-geospatial-decision-support) - ✍️A multi-agent system that lets non-experts query complex geospatial data in natural language (28 Jan 2026)
 - [GraphRAG (by Microsoft)](https://arxiv.org/abs/2404.16130) - ✍️RAG with a graph-based approach to efficiently answer both specific and broad questions over large text. (24 Apr 2024)
 - [Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion](https://arxiv.org/abs/2311.06318) - ✍️K-LaMP. Contextual memory layer for LLM application. (10 Nov 2023)
 - [Magentic-One](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/magentic-one.html) - ✍️A Generalist Multi-Agent System for Solving Complex Tasks.
@@ -250,6 +252,7 @@
 - [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/) - ✍️Generative model for inorganic materials design. (13 May 2024)
 - [Microsoft AI Diagnostic Orchestrator (MAI-DxO)](https://arxiv.org/abs/2506.22405) - ✍️Multi-Agent System. Accurately diagnoses up to 85% of NEJM case proceedings, which is over four times the rate achieved by a group of experienced physicians.
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460) - ✍️Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. (6 Jun 2023)
+- [Mnesis](https://github.com/microsoft/Mnemis) - ✨A memory framework for LLMs combining similarity search with Global Selection, using a base graph for fast retrieval and a hierarchical graph for top-down semantic traversal. (17 Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/Mnemis?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [NL2KQL](https://arxiv.org/abs/2404.02933) - ✍️From Natural Language to Kusto Query. (3 Apr 2024)
 - [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815) - ✍️A framework that automatically optimizes model selection for compound AI systems. (20 Feb 2025)
 - 🏛️[PIKE-RAG](https://github.com/microsoft/PIKE-RAG) - ✨Specialized Knowledge & Rationale Augmentation Generation. (20 Jan 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/PIKE-RAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -404,4 +407,3 @@
 <!--
 > npx awesome-lint README.md
 -->
-
