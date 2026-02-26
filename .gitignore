@@ -30,3 +30,7 @@ azure-openai-llm-vector-langchain.sln
 awesome-azure-openai-llm.sln
 todo.md
 code/process_links.py
+pyproject.toml
+.python-version
+temp_entries.md
+uv.lock
