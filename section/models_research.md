@@ -21,6 +21,8 @@
   - [AGI Discussion and Social Impact](#agi-discussion-and-social-impact)
 - [Survey and Reference](#survey-and-reference)
   - [Survey on Large Language Models](#survey-on-large-language-models)
+  - [Additional Topics: A Survey of LLMs](#additional-topics-a-survey-of-llms)
+  - [LLM Research (Ranked by cite count ≥150)](#llm-research-ranked-by-cite-count-150)
   - [Build an LLMs from Scratch](#build-an-llms-from-scratch-picogpt-and-lit-gpt)
   - [Business Use Cases](#business-use-cases)
 
@@ -1089,6 +1091,10 @@ denses the reasoning process into minimal, abstract
 - [Trustworthy LLMs📑](https://arxiv.org/abs/2308.05374):[10 Aug 2023]
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models📑](https://arxiv.org/abs/2307.15043):[27 Jul 2023]
 - [What is the Role of Small Models in the LLM Era: A Survey📑](https://arxiv.org/abs/2409.06857) [10 Sep 2024]
+
+### **LLM Research (Ranked by cite count >=150)**
+
+- [LLM Papers (≥150 citations)📑](./x_llm_papers.md): High-citation CS papers (≥150 citations) across 35 LLM topic areas — reasoning, RAG, agents, PEFT, RLHF, scaling laws, multimodal, and more — fetched from Semantic Scholar and ranked by citation count.
 
 ### **Business use cases**
 

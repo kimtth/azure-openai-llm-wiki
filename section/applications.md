@@ -1,47 +1,52 @@
 ﻿# App and Agent
 
-## **Contents**
+## Contents
  
- - [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
-   - [Advanced RAG](#advanced-rag)
-   - [GraphRAG](#graphrag)
-   - [RAG Application](#rag-application)
-   - [Vector Database & Embedding](#vector-database--embedding)
- - [AI Application](#ai-application)
-    - [Top Agent Frameworks](#top-agent-frameworks)
-    - [Orchestration Framework](#orchestration-framework)
-    - [Frameworks / SDKs / Building Blocks](#frameworks--sdks--building-blocks)
-      - [Multi-Agent & Swarm Frameworks](#multi-agent--swarm-frameworks)
-      - [General Agent Frameworks](#general-agent-frameworks)
-      - [Official Vendor SDKs](#official-vendor-sdks)
-      - [Tool Integration & Infrastructure](#tool-integration--infrastructure)
-      - [Monitoring, Training & Optimization](#monitoring-training--optimization)
-      - [NLP & ML Libraries](#nlp--ml-libraries)
-    - [Apps / Demos / Ready-to-use Agents](#apps--demos--ready-to-use-agents)
-      - [General Autonomous Agents](#general-autonomous-agents)
-      - [Coding & Development](#coding--development)
-      - [Research, Web & Knowledge Tools](#research-web--knowledge-tools)
-      - [Productivity & Personal Assistants](#productivity--personal-assistants)
-      - [Data, Finance & Analytics](#data-finance--analytics)
-      - [Specialized Agents](#specialized-agents)
-   - [No Code & User Interface](#no-code--user-interface)
-   - [Personal AI assistant & desktop](#personal-ai-assistant--desktop)
-   - [Infrastructure & Backend Services](#infrastructure--backend-services)
-   - [Caching](#caching)
-   - [Data Processing](#data-processing)
-   - [Gateway](#gateway)
-   - [Memory](#memory)
- - [Agent Protocol](#agent-protocol)
-   - [Model Context Protocol (MCP)](#model-context-protocol-mcp)
-   - [A2A](#a2a)
-   - [Computer use](#computer-use)
- - [Coding & Research](#coding--research)
-   - [Coding](#coding)
-   - [Skill](#skill)
-   - [Domain-Specific Agents](#domain-specific-agents)
-   - [Deep Research](#deep-research)
+- [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
+  - [Advanced RAG](#advanced-rag)
+  - [GraphRAG](#graphrag)
+  - [RAG Application](#rag-application)
+  - [Vector Database \& Embedding](#vector-database--embedding)
+- [AI Application](#ai-application)
+  - [Top Agent Frameworks](#top-agent-frameworks)
+  - [Orchestration Framework](#orchestration-framework)
+  - [Frameworks / SDKs / Building Blocks](#frameworks--sdks--building-blocks)
+    - [Multi-Agent \& Swarm Frameworks](#multi-agent--swarm-frameworks)
+    - [General Agent Frameworks](#general-agent-frameworks)
+    - [Official Vendor SDKs](#official-vendor-sdks)
+    - [Tool Integration \& Infrastructure](#tool-integration--infrastructure)
+    - [Monitoring, Training \& Optimization](#monitoring-training--optimization)
+    - [NLP \& ML Libraries](#nlp--ml-libraries)
+  - [Apps / Demos / Ready-to-use Agents](#apps--demos--ready-to-use-agents)
+    - [General Autonomous Agents](#general-autonomous-agents)
+    - [Coding \& Development](#coding--development)
+    - [Research, Web \& Knowledge Tools](#research-web--knowledge-tools)
+    - [Productivity \& Personal Assistants](#productivity--personal-assistants)
+    - [Data, Finance \& Analytics](#data-finance--analytics)
+    - [Specialized Agents](#specialized-agents)
+  - [No Code \& User Interface](#no-code--user-interface)
+  - [Personal AI assistant \& desktop](#personal-ai-assistant--desktop)
+  - [Infrastructure \& Backend Services](#infrastructure--backend-services)
+  - [Caching](#caching)
+  - [Data Processing](#data-processing)
+  - [Gateway](#gateway)
+  - [Memory](#memory)
+- [Agent Protocol](#agent-protocol)
+  - [Model Context Protocol (MCP)](#model-context-protocol-mcp)
+  - [A2A](#a2a)
+  - [Computer use](#computer-use)
+- [Coding \& Research](#coding--research)
+  - [Coding](#coding)
+  - [Skill](#skill)
+  - [Domain-Specific Agents](#domain-specific-agents)
+  - [Deep Research](#deep-research)
+- [Orchestration Framework](#orchestration-framework-1)
+  - [LangChain](#langchain)
+  - [LlamaIndex](#llamaindex)
+  - [Semantic Kernel](#semantic-kernel)
+  - [DSPy](#dspy)
 
-## **RAG (Retrieval-Augmented Generation)**
+### **RAG (Retrieval-Augmented Generation)**
 
 - RAG integrates retrieval (searching) into LLM text generation, enabling models to access external information. [✍️](https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7) [25 Aug 2023]
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks📑](https://arxiv.org/abs/2005.11401): Meta's 2020 framework for giving LLMs access to information beyond training data. [22 May 2020]
@@ -49,7 +54,7 @@
   - RAG-token— Retrieve k documents per token generation.
   - RAG-sequence is the industry standard due to lower cost and simplicity. [✍️](https://towardsdatascience.com/add-your-own-data-to-an-llm-using-retrieval-augmented-generation-rag-b1958bf56a5a) [30 Sep 2023]
 
-### **Advanced RAG**
+#### **Advanced RAG**
 
 - [9 Effective Techniques To Boost Retrieval Augmented Generation (RAG) Systems✍️](https://towardsdatascience.com/9-effective-techniques-to-boost-retrieval-augmented-generation-rag-systems-210ace375049) [🗄️](9-effective-rag-techniques.png): ReRank, Prompt Compression, Hypothetical Document Embedding (HyDE), Query Rewrite and Expansion, Enhance Data Quality, Optimize Index Structure, Add Metadata, Align Query with Documents, Mixed Retrieval (Hybrid Search) [2 Jan 2024]
 - Advanced RAG Patterns: How to improve RAG peformance [✍️](https://cloudatlas.me/why-do-rag-pipelines-fail-advanced-rag-patterns-part1-841faad8b3c2) / [✍️](https://cloudatlas.me/how-to-improve-rag-peformance-advanced-rag-patterns-part2-0c84e2df66e6) [17 Oct 2023]
@@ -80,7 +85,7 @@
 - [Visual RAG over PDFs with Vespa✍️](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [✨](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
 - [What is Agentic RAG](https://weaviate.io/blog/what-is-agentic-rag): The article published by Weaviate. [5 Nov 2024]
 
-### **GraphRAG**
+#### **GraphRAG**
 
 - [Fast GraphRAG✨](https://github.com/circlemind-ai/fast-graphrag): 6x cost savings compared to `graphrag`, with 20% higher accuracy. Combines PageRank and GraphRAG. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/circlemind-ai/fast-graphrag?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [FalkorDB✨](https://github.com/FalkorDB/FalkorDB): Graph Database. Knowledge Graph for LLM (GraphRAG). OpenCypher (query language in Neo4j). [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/FalkorDB/FalkorDB?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -105,7 +110,7 @@
 - [HybridRAG📑](https://arxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
 - [Neo4j GraphRAG Package for Python✨](https://github.com/neo4j/neo4j-graphrag-python) [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/neo4j/neo4j-graphrag-python?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-### **RAG Application**
+#### **RAG Application**
 
 1. [AutoRAG✨](https://github.com/Marker-Inc-Korea/AutoRAG): RAG AutoML tool for automatically finds an optimal RAG pipeline for your data. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/Marker-Inc-Korea/AutoRAG?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Canopy✨](https://github.com/pinecone-io/canopy): open-source RAG framework and context engine built on top of the Pinecone vector database. [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/pinecone-io/canopy?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -160,7 +165,7 @@
 1. [WeKnora✨](https://github.com/Tencent/WeKnora): LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/Tencent/WeKnora?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Xyne✨](https://github.com/xynehq/xyne): an AI-first Search & Answer Engine for work. We're an OSS alternative to Glean, Gemini and MS Copilot. [Sep 2024] ![**github stars**](https://img.shields.io/github/stars/xynehq/xyne?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-### **Vector Database & Embedding**
+#### **Vector Database & Embedding**
 
 - [A Comprehensive Survey on Vector Database📑](https://arxiv.org/abs/2310.11703): Categorizes search algorithms by their approach, such as hash-based, tree-based, graph-based, and quantization-based. [18 Oct 2023]
 - [A Gentle Introduction to Word Embedding and Text Vectorization✍️](https://machinelearningmastery.com/a-gentle-introduction-to-word-embedding-and-text-vectorization/): Word embedding, Text vectorization, One-hot encoding, Bag-of-words, TF-IDF, word2vec, GloVe, FastText. | [Tokenizers in Language Models✍️](https://machinelearningmastery.com/tokenizers-in-language-models/): Stemming, Lemmatization, Byte Pair Encoding (BPE), WordPiece, SentencePiece, Unigram [23 May 2025]
@@ -390,7 +395,6 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [daggr✨](https://github.com/gradio-app/daggr): Gradio-based AI workflow builder with interactive node visualizations. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/gradio-app/daggr?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [DemoGPT✨](https://github.com/melih-unsal/DemoGPT): Automatic generation of LangChain code [Jun 2023]
 1. [Devon✨](https://github.com/entropy-research/Devon): An open-source pair programmer. [Mar 2024] ![**github stars**](https://img.shields.io/github/stars/entropy-research/Devon?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
-1. [Dify✨](https://github.com/langgenius/dify): an open-source platform for building applications with LLMs, featuring an intuitive interface for AI workflows and model management. [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/langgenius/dify?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [GPT Pilot✨](https://github.com/Pythagora-io/gpt-pilot): The first real AI developer. Dev tool that writes scalable apps from scratch while the developer oversees the implementation [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/Pythagora-io/gpt-pilot?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Integuru✨](https://github.com/Integuru-AI/Integuru): An AI agent that generates integration code by reverse-engineering platforms' internal APIs. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/Integuru-AI/Integuru?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [monty✨](https://github.com/pydantic/monty): Secure Rust-based Python sandbox for LLM-generated code — microsecond startup. [May 2023] ![**github stars**](https://img.shields.io/github/stars/pydantic/monty?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -465,6 +469,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [Strix✨](https://github.com/usestrix/strix): Open-source AI Hackers to secure your Apps. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/usestrix/strix?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [TEN Agent✨](https://github.com/TEN-framework/TEN-Agent): The world's first real-time multimodal agent integrated with the OpenAI Realtime API. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [UpSonic✨](https://github.com/Upsonic/UpSonic): (previously GPT Computer Assistant(GCA)) an AI agent framework designed to make computer use. [May 2024]
+
 #### No Code & User Interface
 
 1. [1code✨](https://github.com/21st-dev/1code): Best UI for Claude Code [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/21st-dev/1code?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -481,6 +486,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [CopilotKit✨](https://github.com/CopilotKit/CopilotKit): Built-in React UI components [Jun 2023]
 1. [coze-studio✨](https://github.com/coze-dev/coze-studio): An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/coze-dev/coze-studio?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [dataline✨](https://github.com/RamiAwar/dataline): Chat with your data - AI data analysis and visualization [Apr 2023]
+1. [Dify✨](https://github.com/langgenius/dify): an open-source platform for building applications with LLMs, featuring an intuitive interface for AI workflows and model management. [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/langgenius/dify?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Deepnote✨](https://github.com/deepnote/deepnote): A successor of Jupyter. a data notebook for the AI. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepnote/deepnote?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [ElevenLabs UI✨](https://github.com/elevenlabs/ui): a component library built on top of shadcn/ui to help you build audio & agentic applications [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/elevenlabs/ui?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [FastGPT✨](https://github.com/labring/FastGPT): Open-source GPT wrapper. [Feb 2023] ![**github stars**](https://img.shields.io/github/stars/labring/FastGPT?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -488,7 +494,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [generative-ui✨](https://github.com/CopilotKit/generative-ui): Generative UI examples for AG-UI, A2UI/Open-JSON-UI, and MCP Apps patterns. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/CopilotKit/generative-ui?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Google Workspace Studio](https://workspace.google.com/studio/): No-code builder for Workspace chat apps, add-ons, and automations powered by Gemini. [Sep 2024]
 1. [Google Workspace Studio with Agents✍️](https://workspaceupdates.googleblog.com/2025/12/workspace-studio.html): Adds agent creation to automate work inside Workspace Studio. [3 Dec 2025]
-1. [GPT 学术优化 (GPT Academic)✨](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1.  [GPT 学术优化 (GPT Academic)✨](https://github.com/binary-husky/gpt_academic): UI Platform for Academic & Coding Tasks. Optimized for paper reading, writing, and editing. [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/binary-husky/gpt_academic?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [Gradio✨](https://github.com/gradio-app/gradio): Build Machine Learning Web Apps - in Python [Mar 2023]
 1. [Kiln✨](https://github.com/Kiln-AI/Kiln): Desktop Apps for for fine-tuning LLM models, synthetic data generation, and collaborating on datasets. [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/Kiln-AI/Kiln?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [knowledge✨](https://github.com/KnowledgeCanvas/knowledge): Tool for saving, searching, accessing, and exploring websites and files. Electron based app, built-in Chromium browser, knowledge graph [Jul 2021] ![**github stars**](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -865,9 +871,9 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [Universal Deep Research (UDR)✨](https://github.com/NVlabs/UniversalDeepResearch): NVDIA. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/NVlabs/UniversalDeepResearch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [WebThinker✨](https://github.com/RUC-NLPIR/WebThinker): WebThinker allows the reasoning model itself to perform actions during thinking, achieving end-to-end task execution in a single generation. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-## **Orchestration Framework**
+### **Orchestration Framework**
 
-### **LangChain**
+#### **LangChain**
 
 - LangChain is a framework for developing applications powered by language models. (1) Be data-aware: connect a language model to other sources of data.
   (2) Be agentic: Allow a language model to interact with its environment. doc:[✍️](https://docs.langchain.com/docs) / blog:[✍️](https://blog.langchain.dev) / [✨](https://github.com/langchain-ai/langchain)
@@ -893,7 +899,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
   - Imperative (programmatic) approach: The Runnable interface (formerly LLMChain) for flexible, programmatic chain building.
   - Declarative approach: LangChain Expression Language (LCEL) offers a declarative syntax for chain composition, enabling features like async, batch, and streaming operations with the | operator for combining functionalities.
 
-#### **LangChain Feature Matrix & Cheetsheet**
+##### **LangChain Feature Matrix & Cheetsheet**
 
 - [Awesome LangChain✨](https://github.com/kyrolabs/awesome-langchain): Curated list of tools and projects using LangChain.
  ![**github stars**](https://img.shields.io/github/stars/kyrolabs/awesome-langchain?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -911,7 +917,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 - [RAG From Scratch✨](https://github.com/langchain-ai/rag-from-scratch)💡[Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-#### **LangChain features and related libraries**
+##### **LangChain features and related libraries**
 
 - [LangChain Expression Language](https://python.langchain.com/docs/guides/expression_language/): A declarative way to easily compose chains together [Aug 2023]
 - [LangChain Template✨](https://github.com/langchain-ai/langchain/tree/master/templates): LangChain Reference architectures and samples. e.g., `RAG Conversation Template` [Oct 2023]
@@ -922,7 +928,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 - [OpenGPTs✨](https://github.com/langchain-ai/opengpts): An open source effort to create a similar experience to OpenAI's GPTs [Nov 2023]
  ![**github stars**](https://img.shields.io/github/stars/langchain-ai/opengpts?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 
-#### **LangChain chain type: Chains & Summarizer**
+##### **LangChain chain type: Chains & Summarizer**
 
 - Chains [✨](https://github.com/RutamBhagat/LangChainHCCourse1/blob/main/course_1/chains.ipynb)
   - SimpleSequentialChain: A sequence of steps with single input and output. Output of one step is input for the next.
@@ -934,7 +940,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
   - refine: (Summary + Next document) => Summary
   - map_rerank: Ranks by score and summarizes to important points.
 
-#### LangChain Agent
+##### LangChain Agent
 
 -  If you're using a text LLM, first try `zero-shot-react-description`.
 -  If you're using a Chat Model, try `chat-zero-shot-react-description`.
@@ -966,7 +972,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
   `react-docstore`: Uses ReAct to manage a docstore with two required tools: _Search_ and _Lookup_. These tools must be named exactly as specified. It follows the original ReAct paper's example from Wikipedia.  
   MRKL in LangChain uses `zero-shot-react-description`, implementing ReAct. The original ReAct framework is used in the `react-docstore` agent. MRKL was published on May 1, 2022, earlier than ReAct on October 6, 2022.
 
-#### LangChain Memory
+##### LangChain Memory
 
 -  `ConversationBufferMemory`: Stores the entire conversation history.
 -  `ConversationBufferWindowMemory`: Stores recent messages from the conversation history.
@@ -977,7 +983,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 -  `ConversationTokenBufferMemory`: Stores tokens from the conversation.
 -  `VectorStore-Backed Memory`: Leverages vector space models for storing and retrieving information.
 
-#### **Criticism to LangChain**
+##### **Criticism to LangChain**
 
 - [How to Build Ridiculously Complex LLM Pipelines with LangGraph!](https://newsletter.theaiedge.io/p/how-to-build-ridiculously-complex) [17 Sep 2024 ]
   > LangChain does too much, and as a consequence, it does many things badly. Scaling beyond the basic use cases with LangChain is a challenge that is often better served with building things from scratch by using the underlying APIs.
@@ -988,13 +994,13 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
  ![**github stars**](https://img.shields.io/github/stars/minimaxir/langchain-problems?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - What’s your biggest complaint about langchain?: [✍️](https://www.reddit.com/r/LangChain/comments/139bu99/whats_your-biggest_complaint_about_langchain/) [May 2023]
 
-#### **LangChain vs LlamaIndex**
+##### **LangChain vs LlamaIndex**
 
 - Basically LlamaIndex is a smart storage mechanism, while LangChain is a tool to bring multiple tools together. [🗣️](https://community.openai.com/t/llamaindex-vs-langchain-which-one-should-be-used/163139) [14 Apr 2023]
 
 - LangChain offers many features and focuses on using chains and agents to connect with external APIs. In contrast, LlamaIndex is more specialized and excels at indexing data and retrieving documents.
 
-#### **LangChain vs Semantic Kernel**
+##### **LangChain vs Semantic Kernel**
 
 | LangChain | Semantic Kernel                                                                |
 | --------- | ------------------------------------------------------------------------------ |
@@ -1005,7 +1011,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 | Chain     | Steps, Pipeline                                                                |
 | Tool      | Connector (Deprecated) -> Plugin                                                                     |
 
-#### **LangChain vs Semantic Kernel vs Azure Machine Learning Prompt flow**
+##### **LangChain vs Semantic Kernel vs Azure Machine Learning Prompt flow**
 
 - What's the difference between LangChain and Semantic Kernel?
   - LangChain has many agents, tools, plugins etc. out of the box. More over, LangChain has 10x more popularity, so has about 10x more developer activity to improve it. On other hand, **Semantic Kernel architecture and quality is better**, that's quite promising for Semantic Kernel. [✨](https://github.com/microsoft/semantic-kernel/discussions/1326) [11 May 2023]
@@ -1015,7 +1021,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 - Promptflow is not intended to replace chat conversation flow. Instead, it’s an optimized solution for integrating Search and Open Source Language Models. By default, it supports Python, LLM, and the Prompt tool as its fundamental building blocks.
 - Using Prompt flow with Semantic Kernel: [✍️](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/planners/evaluate-and-deploy-planners/) [07 Sep 2023]
 
-#### **Prompt Template Language**
+##### **Prompt Template Language**
 
 |                   | Handlebars.js                                                                 | Jinja2                                                                                 | Prompt Template                                                                                    |
 | ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -1027,7 +1033,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 - Semantic Kernel supports HandleBars and Jinja2. [Mar 2024]
 
 
-### **LlamaIndex**
+#### **LlamaIndex**
 
 - LlamaIndex (formerly GPT Index) is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. The high-level API allows users to ingest and query their data in a few lines of code. High-Level Concept: [✍️](https://docs.llamaindex.ai/en/latest/getting_started/concepts.html) / doc:[✍️](https://gpt-index.readthedocs.io/en/latest/index.html) / blog:[✍️](https://www.llamaindex.ai/blog) / [✨](https://github.com/run-llama/llama_index) [Nov 2022]
  ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_index?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -1042,14 +1048,14 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 ![**github stars**](https://img.shields.io/github/stars/run-llama/llama_parse?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [LlamaIndex showcase✨](https://github.com/run-llama/llamacloud-demo) > `examples` [✍️](https://www.llamaindex.ai/blog/introducing-agentic-document-workflows): e.g., Contract Review, Patient Case Summary, and Auto Insurance Claims Workflow. [9 Jan 2025]
 
-#### LlamaIndex integration with Azure AI
+##### LlamaIndex integration with Azure AI
 
 - [AI App Template Gallery✍️](https://azure.github.io/ai-app-templates/repo/azure-samples/llama-index-javascript/)
 - [LlamaIndex integration with Azure AI](https://www.llamaindex.ai/blog/announcing-the-llamaindex-integration-with-azure-ai):  [19 Nov 2024]
 - Storage and memory: [Azure Table Storage as a Docstore](https://docs.llamaindex.ai/en/stable/examples/docstore/AzureDocstoreDemo/) or Azure Cosmos DB.
 - Workflow example: [Azure Code Interpreter](https://docs.llamaindex.ai/en/stable/examples/tools/azure_code_interpreter/)
 
-#### High-Level Concepts
+##### High-Level Concepts
 
 - Query engine vs Chat engine
 
@@ -1062,7 +1068,8 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
   -  Storage Context is responsible for the storage and retrieval of data in Llama Index, while the Service Context helps in incorporating external context to enhance the search experience.
   -  The Service Context is not directly involved in the storage or retrieval of data, but it helps in providing a more context-aware and accurate search experience.
 
-#### LlamaIndex Tutorial
+##### LlamaIndex Tutorial
+
 - 4 RAG techniques implemented in `llama_index` / [🗣️](https://x.com/ecardenas300/status/1704188276565795079) [20 Sep 2023] / [✨](https://github.com/weaviate/recipes)
  ![**github stars**](https://img.shields.io/github/stars/weaviate/recipes?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
   -  SQL Router Query Engine: Query router that can reference your vector database or SQL database
@@ -1080,7 +1087,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 
 
 
-### **Semantic Kernel**
+#### **Semantic Kernel**
 
 - [A Guide to Microsoft’s Semantic Kernel Process Framework✍️](https://devblogs.microsoft.com/semantic-kernel/guest-blog-revolutionize-business-automation-with-ai-a-guide-to-microsofts-semantic-kernel-process-framework/)  [11 April 2025]
 - [Agent Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent): A module for AI agents, and agentic patterns / [Process Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/process/process-framework): A module for creating a structured sequence of activities or tasks. [Oct 2024]
@@ -1099,7 +1106,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 <!-- <img src="../files/mind-and-body-of-semantic-kernel.png" alt="sk" width="130"/> -->
 <!-- <img src="../files/sk-flow.png" alt="sk" width="500"/> -->
 
-#### **Code Recipes**
+##### **Code Recipes**
 
 - [A Pythonista’s Intro to Semantic Kernel✍️](https://towardsdatascience.com/a-pythonistas-intro-to-semantic-kernel-af5a1a39564d)💡[3 Sep 2023]
 - Deploy Semantic Kernel with Bot Framework [✍️](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/deploy-semantic-kernel-with-bot-framework/ba-p/3928101) [✨](https://github.com/Azure/semantic-kernel-bot-in-a-box) [26 Oct 2023]
@@ -1118,7 +1125,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 - [Step-by-Step Guide to Building a Powerful AI Monitoring Dashboard with Semantic Kernel and Azure Monitor✍️](https://devblogs.microsoft.com/semantic-kernel/step-by-step-guide-to-building-a-powerful-ai-monitoring-dashboard-with-semantic-kernel-and-azure-monitor/): Step-by-step guide to building an AI monitoring dashboard using Semantic Kernel and Azure Monitor to track token usage and custom metrics. [23 Aug 2024]
 - [Working with Audio in Semantic Kernel Python✍️](https://devblogs.microsoft.com/semantic-kernel/working-with-audio-in-semantic-kernel-python/) [15 Nov 2024]
 
-#### **Semantic Kernel Planner [deprecated]**
+##### **Semantic Kernel Planner [deprecated]**
 
 - Semantic Kernel Planner [✍️](https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-planners-actionplanner/) [24 Jul 2023]
 
@@ -1141,7 +1148,7 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 
 - [The future of Planners in Semantic Kernel✍️](https://devblogs.microsoft.com/semantic-kernel/the-future-of-planners-in-semantic-kernel/) [23 July 2024]
 
-#### **Semantic Function**
+##### **Semantic Function**
 
 - Semantic Kernel Functions vs. Plugins: 
   - Function:  Individual units of work that perform specific tasks. Execute actions based on user requests. [✍️](https://devblogs.microsoft.com/semantic-kernel/transforming-semantic-kernel-functions/) [12 Nov 2024]
@@ -1167,7 +1174,7 @@ Each semantic function is defined by a unique prompt template file, developed us
     ... {{ 'no need to "escape" ' }} ...
 ```
 
-#### **Semantic Kernel Glossary**
+##### **Semantic Kernel Glossary**
 
 - [Glossary in Git✨](https://github.com/microsoft/semantic-kernel/blob/main/docs/GLOSSARY.md) / [Glossary in MS Doc](https://learn.microsoft.com/en-us/semantic-kernel/whatissk#sk-is-a-kit-of-parts-that-interlock)
 
@@ -1184,7 +1191,7 @@ Each semantic function is defined by a unique prompt template file, developed us
 - [Architecting AI Apps with Semantic Kernel✍️](https://devblogs.microsoft.com/semantic-kernel/architecting-ai-apps-with-semantic-kernel/) How you could recreate Microsoft Word Copilot [6 Mar 2024]  
   <img src="../files/semantic-kernel-with-word-copilot.png" height="500">  
 
-### **DSPy**
+#### **DSPy**
 
 - [DSPy📑](https://arxiv.org/abs/2310.03714): Compiling Declarative Language Model Calls into Self-Improving Pipelines [5 Oct 2023] / [✨](https://github.com/stanfordnlp/dspy)
 - [Prompt Like a Data Scientist: Auto Prompt Optimization and Testing with DSPy✍️](https://towardsdatascience.com/prompt-like-a-data-scientist-auto-prompt-optimization-and-testing-with-dspy-ff699f030cb7) [6 May 2024]
@@ -1197,7 +1204,7 @@ Each semantic function is defined by a unique prompt template file, developed us
   - Building blocks such as ChainOfThought or Retrieve and compiling the program, optimizing the prompts based on specific metrics. Unifying strategies for both prompting and fine-tuning in one tool, Pythonic operations, prioritizing and tracing program execution. These features distinguish it from other LMP frameworks such as LangChain, and LlamaIndex. [✍️](https://towardsai.net/p/machine-learning/inside-dspy-the-new-language-model-programming-framework-you-need-to-know-about) [Jan 2023]
   <img src="../files/dspy-workflow.jpg" width="400" alt="workflow">  
 
-#### **DSPy Glossary**
+##### **DSPy Glossary**
 
 - Glossary reference to the [✍️](https:/towardsdatascience.com/intro-to-dspy-goodbye-prompting-hello-programming-4ca1c6ce3eb9).
   - Signatures: Hand-written prompts and fine-tuning are abstracted and replaced by signatures.
@@ -1237,7 +1244,7 @@ ng-hello-programming-4ca1c6ce3eb9).
     cot_compiled.save('turbo_gsm8k.json')
     ```
 
-#### DSPy optimizer
+##### DSPy optimizer
 
 - Automatic Few-Shot Learning
   - As a rule of thumb, if you don't know where to start, use `BootstrapFewShotWithRandomSearch`.
