@@ -115,6 +115,8 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [AGI Discussion and Social Impact](section/models_research.md#agi-discussion-and-social-impact)
 - **Survey & Build**
   - [Survey on Large Language Models](section/models_research.md#survey-on-large-language-models)
+  - [Additional Topics: A Survey of LLMs](section/models_research.md#additional-topics-a-survey-of-llms)
+  - [LLM Research (Ranked by cite count ≥150)](section/models_research.md#llm-research-ranked-by-cite-count-150)
   - [Build an LLMs from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt)
   - [Business Use Cases](section/models_research.md#business-use-cases)
 

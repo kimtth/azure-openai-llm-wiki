@@ -34,3 +34,4 @@ pyproject.toml
 .python-version
 temp_entries.md
 uv.lock
+x_llm_papers.checkpoint.json
