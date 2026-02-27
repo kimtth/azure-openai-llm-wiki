@@ -31,7 +31,10 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Vector Database & Embedding](section/applications.md#vector-database--embedding)
 - **Application**
   - [AI Application](section/applications.md#ai-application)
-  - [Agent & Application](section/applications.md#agent--application)
+    - [Top Agent Frameworks](section/applications.md#top-agent-frameworks)
+    - [Orchestration Framework](section/applications.md#orchestration-framework)
+    - [Frameworks / SDKs / Building Blocks](section/applications.md#frameworks--sdks--building-blocks)
+    - [Apps / Demos / Ready-to-use Agents](section/applications.md#apps--demos--ready-to-use-agents)
   - [No Code & User Interface](section/applications.md#no-code--user-interface)
   - [Personal AI assistant & desktop](section/applications.md#personal-ai-assistant--desktop)
   - [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services)
