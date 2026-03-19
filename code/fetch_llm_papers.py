@@ -532,41 +532,6 @@ def _flush_output(output_file: str, papers: List[Dict], min_citations: int) -> L
     return compact_lines
 
 
-def insert_into_section(target_file: str, section_heading: str, lines: List[str]) -> None:
-    """Replace the (empty) body of *section_heading* with *lines* in *target_file*.
-
-    The section body is the text between *section_heading* and the next heading
-    of equal or higher level (same number of leading `#` chars).
-    """
-    heading_level = len(section_heading) - len(section_heading.lstrip("#"))
-
-    with open(target_file, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    heading_pos = content.find(section_heading)
-    if heading_pos == -1:
-        print(f"  [WARN] Section not found: {section_heading!r} in {target_file}")
-        return
-
-    # Find the end of the heading line
-    heading_end = content.find("\n", heading_pos) + 1
-
-    # Find the start of the next same-or-higher-level heading
-    search_from = heading_end
-    next_pos = len(content)  # default: end of file
-    for match in re.finditer(r"^(#{1,6}) ", content[search_from:], re.MULTILINE):
-        level = len(match.group(1))
-        if level <= heading_level:
-            next_pos = search_from + match.start()
-            break
-
-    body = "\n".join(lines) + "\n\n"
-    new_content = content[:heading_end] + body + content[next_pos:]
-    with open(target_file, "w", encoding="utf-8") as f:
-        f.write(new_content)
-    print(f"  -> Inserted {len(lines)} entries into '{section_heading}' in {target_file}")
-
-
 def write_markdown_section(f, topic: str, papers: List[Dict]) -> None:
     f.write(f"\n## {topic}\n\n")
     f.write(f"*Retrieved: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*  \n")
@@ -636,25 +601,8 @@ def main() -> None:
         help="Limit to specific topic names (substring match, case-insensitive)."
     )
     parser.add_argument(
-        "--target-file",
-        help="Markdown file to inject compact entries into (e.g. section/models_research.md)."
-    )
-    parser.add_argument(
-        "--target-section",
-        default="### **LLM Research (Ranked by cite count >=100)**",
-        help="Section heading in --target-file to populate with compact entries."
-    )
-    parser.add_argument(
         "--reset", action="store_true",
         help="Ignore any existing checkpoint and start from scratch."
-    )
-    parser.add_argument(
-        "--target-top-n", type=int, default=30,
-        help="Number of top papers (by citation) to inject into --target-file (default: 30)."
-    )
-    parser.add_argument(
-        "--inject-only", action="store_true",
-        help="Skip fetching; read existing --output file and inject top --target-top-n entries into --target-file."
     )
     args = parser.parse_args()
 
@@ -682,22 +630,6 @@ def main() -> None:
     root_dir = get_repo_root(__file__)
     output_file = args.output or str(root_dir / "section" / "x_llm_papers.md")
     checkpoint_file = str(Path(output_file).with_suffix(".checkpoint.json"))
-
-    # --inject-only: read existing output file and inject without re-fetching
-    if args.inject_only:
-        if not args.target_file:
-            print("  [ERROR] --inject-only requires --target-file.")
-            return
-        raw_lines = [
-            line for line in Path(output_file).read_text(encoding="utf-8").splitlines()
-            if re.match(r"^\d+\. \[", line)
-        ]
-        # Re-number in case file was written with old all-1. format
-        compact_lines = [re.sub(r"^\d+\.", f"{i + 1}.", line) for i, line in enumerate(raw_lines)]
-        top_lines = compact_lines[: args.target_top_n]
-        print(f"  [inject-only] {len(compact_lines)} entries in {output_file}, injecting top {len(top_lines)}.")
-        insert_into_section(args.target_file, args.target_section, top_lines)
-        return
 
     # Load or reset checkpoint
     if args.reset and Path(checkpoint_file).exists():
@@ -740,11 +672,6 @@ def main() -> None:
     if Path(checkpoint_file).exists():
         Path(checkpoint_file).unlink()
         print("  [done] Checkpoint removed.")
-
-    # Optionally inject top N compact entries into a target section
-    if args.target_file:
-        top_lines = compact_lines[: args.target_top_n]
-        insert_into_section(args.target_file, args.target_section, top_lines)
 
 
 if __name__ == "__main__":

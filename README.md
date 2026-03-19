@@ -35,6 +35,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
     - [Orchestration Framework](section/applications.md#orchestration-framework)
     - [Frameworks / SDKs / Building Blocks](section/applications.md#frameworks--sdks--building-blocks)
     - [Apps / Demos / Ready-to-use Agents](section/applications.md#apps--demos--ready-to-use-agents)
+    - [**Popular LLM Applications** (Ranked by GitHub star count ≥1000)](section/applications.md#popular-llm-applications-ranked-by-github-star-count-1000)
   - [No Code & User Interface](section/applications.md#no-code--user-interface)
   - [Personal AI assistant & desktop](section/applications.md#personal-ai-assistant--desktop)
   - [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services)
@@ -116,7 +117,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 - **Survey & Build**
   - [Survey on Large Language Models](section/models_research.md#survey-on-large-language-models)
   - [Additional Topics: A Survey of LLMs](section/models_research.md#additional-topics-a-survey-of-llms)
-  - [LLM Research (Ranked by cite count ≥150)](section/models_research.md#llm-research-ranked-by-cite-count-150)
+  - [**LLM Research** (Ranked by cite count ≥150)](section/models_research.md#llm-research-ranked-by-cite-count-150)
   - [Build an LLMs from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt)
   - [Business Use Cases](section/models_research.md#business-use-cases)
 
