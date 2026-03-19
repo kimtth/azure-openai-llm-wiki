@@ -1,0 +1,16 @@
+name: Gitleaks Secret Scan
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  gitleaks:
+    name: Scan for secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2

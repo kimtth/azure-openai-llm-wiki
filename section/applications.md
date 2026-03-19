@@ -24,6 +24,7 @@
     - [Productivity \& Personal Assistants](#productivity--personal-assistants)
     - [Data, Finance \& Analytics](#data-finance--analytics)
     - [Specialized Agents](#specialized-agents)
+  - [Popular LLM Applications (Ranked by GitHub star count ≥1000)](#popular-llm-applications-ranked-by-github-star-count-1000)
   - [No Code \& User Interface](#no-code--user-interface)
   - [Personal AI assistant \& desktop](#personal-ai-assistant--desktop)
   - [Infrastructure \& Backend Services](#infrastructure--backend-services)
@@ -469,6 +470,10 @@ Context management for Claude Code. Hooks maintain state via ledgers and handoff
 1. [Strix✨](https://github.com/usestrix/strix): Open-source AI Hackers to secure your Apps. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/usestrix/strix?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [TEN Agent✨](https://github.com/TEN-framework/TEN-Agent): The world's first real-time multimodal agent integrated with the OpenAI Realtime API. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 1. [UpSonic✨](https://github.com/Upsonic/UpSonic): (previously GPT Computer Assistant(GCA)) an AI agent framework designed to make computer use. [May 2024]
+
+###### Popular LLM Applications (Ranked by GitHub star count ≥1000)
+
+- [Popular LLM Applications (Ranked by GitHub star count ≥1000)✨](./x_llm_apps.md): High-star GitHub apps, agent platforms, chat UIs, workflow builders, and ready-to-use assistants, deduplicated across LLM-related topics and ranked by star count.
 
 #### No Code & User Interface
 
