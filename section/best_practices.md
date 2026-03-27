@@ -14,7 +14,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
   - [Agent Research](#agent-research)
   - [Agent Research (Ranked by cite count >=100)](#agent-research-ranked-by-cite-count-100)
   - [Reflection, Tool Use, Planning and Multi-agent collaboration](#reflection-tool-use-planning-and-multi-agent-collaboration)
-  - [Tool Use: LLM to Master APIs](#tool-use-llm-to-master-apis)
+  - [Tool Use: LLM to Master APIs](#tool-use)
 - [Proposals & Glossary](#proposals--glossary)
 
 ## **RAG Best Practices**
@@ -181,9 +181,13 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Agentic Design Patterns✍️](https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0#heading=h.pxcur8v2qagu): Google Docs. A Hands-On Guide to Building Intelligent Systems. [🗄️](../files/archive/Agentic_Design_Patterns.docx) [May 2025]
 - [Agents](https://huyenchip.com/2025/01/07/agents.html):💡Chip Huyen [7 Jan 2025]
 - [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns):💡Sequential, Concurrent, Group chat, Handoff, Magentic orchestration [17 Jun 2025]
+- [AI Coding Assistants Haven’t Sped up Delivery Because Coding Was Never the Bottleneck✍️](https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/): AI shifts bottlenecks upstream to specification, alignment, and verification. [Mar 2026]
 - [Azure AI Foundry Agent Ochestration Patterns ](https://aifoundry.app/patterns): Prompt Chaining, Routing, Parallelization, Orchestrator, Evaluator-optimizer
+- [Decision Matrix: API vs MCP Tools✍️](https://techcommunity.microsoft.com/blog/azurearchitectureblog/decision-matrix-api-vs-mcp-tools-%E2%80%94-the-great-integration-showdown-%F0%9F%A5%8A/4499385): Tradeoffs between REST APIs, SDKs, and MCP tools. [Jul 2025]
 - [Beyond the Gang of Four: Practical Design Patterns for Modern AI Systems✍️](https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/): **Prompting & Context:** Few-Shot Prompting, Role Prompting, Chain-of-Thought, RAG; **Responsible AI:** Output Guardrails, Model Critic; **UX:** Contextual Guidance, Editable Output, Iterative Exploration; **AI-Ops:** Metrics-Driven AI-Ops, Prompt-Model-Config Versioning; **Optimization:** Prompt Caching, Dynamic Batching, Intelligent Model Routing. [15 My 2025]
 - [Building effective agents✍️](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
+- [Enterprise Spec-Driven Development✍️](https://www.infoq.com/articles/enterprise-spec-driven-development): Specs as the source of truth for enterprise AI delivery. [Feb 2026]
+- [Evaluating AI Agents✍️](https://www.infoq.com/articles/evaluating-ai-agents-lessons-learned): Practical evaluation lessons for quality, safety, and reliability. [2026]
 - [Exploring Generative AI (martinfowler.com)](https://martinfowler.com/articles/exploring-gen-ai.html): Memos on how LLMs are being used to enhance software delivery practices, including Toochain, Test-Driven Development (TDD) with GitHub Copilot, pair programming, and multi-file editing. [26 Jul 2023 ~ ]
 - [Generative AI Design Patterns for Agentic AI Systems✨](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -203,8 +207,11 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 
 1. [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs📑](https://arxiv.org/abs/2505.23006): DAG-based workflows for e-commerce tasks with response and loss masking. [May 2025]
 1. [Advances and Challenges in Foundation Agents📑](https://arxiv.org/abs/2504.01990): Brain-inspired to evolutionary, collaborative, and safe agent systems. [Mar 2025]
+1. [Codified Context: Infrastructure for AI Agents in a Complex Codebase📑](https://arxiv.org/abs/2602.20478): Persistent memory, specialist agents, and spec docs for large codebases. [Feb 2026]
 1. [Agent-as-a-Judge📑](https://arxiv.org/abs/2410.10934): Evaluate agents with agents; DevAI benchmark of 55 development tasks. [Oct 2024]
 1. [AgentBench📑](https://arxiv.org/abs/2308.03688): Evaluates LLM-as-Agent reasoning and decision-making. [Aug 2023]
+1. [Awesome-LLM-Reasoning-Failures✨](https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures): Curated papers on discovery, analysis, and mitigation of LLM reasoning failures. ![**github stars**](https://img.shields.io/github/stars/Peiyang-Song/Awesome-LLM-Reasoning-Failures?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+1. [AutoHarness📑](https://arxiv.org/abs/2603.03329): Auto-synthesized code harnesses eliminate illegal agent actions. [Mar 2026]
 1. [Agentic Context Engineering📑](https://arxiv.org/abs/2510.04618): ACE lets models self-improve by evolving contexts without fine-tuning. [Oct 2025]
 1. [Agentic Reasoning for Large Language Models📑](https://arxiv.org/abs/2601.12538): Survey of agentic reasoning: planning, self-evolution, and multi-agent collaboration. [Jan 2026]
 1. [AgentQ📑](https://arxiv.org/abs/2408.07199): Off-policy policy gradient for multi-step agent planning. [13 Aug 2024]
@@ -217,6 +224,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [AgentCoder📑](https://arxiv.org/abs/2312.13010): Multi-agent code generation with iterative testing. [Dec 2023]
 1. [LDB📑](https://arxiv.org/abs/2402.16906): LLM debugger verifying runtime execution step by step. [Feb 2024]
 1. [Generative Agent Simulations of 1,000 People📑](https://arxiv.org/abs/2411.10109): Simulates 1,000 real individuals; 85% General Social Survey accuracy. [Nov 2024]
+1. [Hyperagents📑](https://arxiv.org/abs/2603.19461): Self-referential agents. Metacognitive self-improvement, where AI rewrites its own improvement process—achieving cross-domain gains (e.g., 0→0.71 in review tasks). [Mar 2026]
 1. [Recursive Language Models (RLMs), a general inference strategy📑](https://arxiv.org/abs/2512.24601): A new general inference strategy that lets large language models process arbitrarily long inputs by treating the entire prompt as an external environment and programmatically decomposing and recursively calling the model on pieces of the input. [Dec 2025]
 1. [Solving a Million-Step LLM Task with Zero Errors📑](https://arxiv.org/abs/2511.09030): MDAP framework with MAKER decomposition and error correction. [Nov 2025]
 1. [The Rise and Potential of LLM-Based Agents📑](https://arxiv.org/abs/2309.07864): Survey of LLM-based agents. [Sep 2023]
@@ -269,7 +277,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [Mem0📑](https://arxiv.org/abs/2504.19413): Scalable long-term memory framework enabling personalized, production-ready AI agents. [Apr 2025] (Citations: 160)
 1. [Magma📑](https://arxiv.org/abs/2502.13130): Microsoft foundation model for multimodal AI agents across digital and physical environments. [Feb 2025] (Citations: 103)
 
-### **Reflection, Tool Use, Planning and Multi-agent collaboration**
+### **Tool Use**
 
 - Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
 - Reflection: LLM self-evaluates to improve.
@@ -315,13 +323,14 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [AGENTS.md](https://agents.md/): AGENTS.md as a README for agents. [✨](https://github.com/openai/agents.md) [Aug 2025]
 - Defensive UX: A design strategy that aims to prevent and handle errors in user interactions with machine learning or LLM-based products. Why defensive UX?: Machine learning and LLMs can produce inaccurate or inconsistent output, which can affect user trust and satisfaction. Defensive UX can help by increasing accessibility, trust, and UX quality.
 - [Guidelines for Human-AI Interaction✍️](https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/): Microsoft: Based on a survey of 168 potential guidelines from various sources, they narrowed it down to 18 action rules organized by user interaction stages.
+- [Harness engineering](https://openai.com/index/harness-engineering/): Treat eval, test, and orchestration harnesses as first-class engineering artifacts. [11 Feb 2026]
 - [Human Interface Guidelines for Machine Learning](https://developer.apple.com/design/human-interface-guidelines/machine-learning): Apple: Based on practitioner knowledge and experience, emphasizing aspects of UI rather than model functionality4.
 - [/llms.txt](https://llmstxt.org/): Proposal for an `/llms.txt` file to guide LLMs in using websites during inference. [✨](https://github.com/answerdotai/llms-txt) [3 Sep 2024]
  ![**github stars**](https://img.shields.io/github/stars/answerdotai/llms-txt?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Model Context Protocol (MCP)✍️](https://www.anthropic.com/news/model-context-protocol): Anthropic proposes an open protocol for seamless LLM integration with external data and tools. [✨](https://github.com/modelcontextprotocol/servers) [26 Nov 2024]
  ![**github stars**](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square&label=%20&color=blue&cacheSeconds=36000) 
 - [People + AI Guidebook](https://pair.withgoogle.com/guidebook/): Google: Google's product teams and academic research, they provide 23 patterns grouped by common questions during the product development process.
-- [Spec-Driven Development✨](https://github.com/github/spec-kit): Unlike conventional coding where specs are just guides, it makes specifications executable, directly producing working implementations. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/github/spec-kit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [Spec-Driven Development✨](https://github.com/github/spec-kit): Spec-Driven. Unlike conventional coding where specs are just guides, it makes specifications executable, directly producing working implementations. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/github/spec-kit?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [The future of AI agents—and why OAuth must evolve✍️](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/the-future-of-ai-agents%E2%80%94and-why-oauth-must-evolve/3827391): OAuth 2.0 wasn’t built for autonomous AI agents—Microsoft proposes evolving it with agent identities, dynamic permissions, and cross-agent trust. [28 May 2025]
 - [Unmetered Intelligence](https://www.zackkass.com/publications): Always-on, unlimited, adaptive intelligence — not bound by usage limits or fixed capacities.
 - [Vibe Coding](https://en.wikipedia.org/wiki/Vibe_coding): a method where programmers explain their goals in simple language, and AI creates the code. Suggested by Andrej Karpathy in February 2025, it changes the programmer's role to guiding, testing, and improving the AI's work. [Feb 2025]

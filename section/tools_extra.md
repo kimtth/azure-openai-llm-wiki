@@ -69,6 +69,7 @@
 - [Same.dev](https://same.new/): Clone Any Website in Minutes
 - [skywork.ai](https://skywork.ai): Deep Research is a multimodal generalist agent that can create documents, slides, and spreadsheets.
 - [Smartsub](https://smartsub.ai/): AI-powered transcription, translation, and subtitle creation
+- [Terence Tao + Claude Code📺](https://youtu.be/JHEO7cplfk8): Video discussion of Claude Code in advanced research workflows. [Mar 2026]
 - [TEXT-TO-CAD](https://zoo.dev/text-to-cad): Generate CAD from text prompts
 - The leader: <http://openai.com>
 - The runner-up: <http://bard.google.com> -> <https://gemini.google.com>
