@@ -152,7 +152,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Agent Research](section/best_practices.md#agent-research)
   - [Agent Research (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
   - [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration)
-  - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use-llm-to-master-apis)
+  - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use)
 - **Reference**
   - [Proposals & Glossary](section/best_practices.md#proposals--glossary)
 

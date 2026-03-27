@@ -45,6 +45,8 @@
 #### The Big LLM Architecture Comparison (in 2025)
 
 - [The Big LLM Architecture Comparison✍️](https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html):💡 [19 Jul 2025]
+- [LLM Architecture Gallery✍️](https://sebastianraschka.com/llm-architecture-gallery/): Visual guide to modern LLM architectures and design tradeoffs. [26 Mar 2026]
+
 
   | Model                 | Parameters | Attention Type                           | MoE                             | Norm                            | Positional Encoding            | Notable Features                                                                            |
   | --------------------- | ---------- | ---------------------------------------- | ------------------------------- | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -122,6 +124,7 @@
 - Alibaba
   - Qwen (通义千问: Universal Intelligence that can answer a thousand questions) [✨](https://github.com/QwenLM) [Flagship Models✍️](https://qwen.ai/)
   - [Qwen model family](https://qwen4.net/qwen-model-family/): Qwen first model released in [April 2023]
+  - [Qwen3 Technical Report📑](https://arxiv.org/abs/2505.09388): Unified thinking and non-thinking modes across dense and MoE models. [May 2025]
   - [Qwen-Image-Edit](https://qwen4.net/qwen-image-edit/) [18 Aug 2025]
   - [Qwen3-Max](https://qwen4.net/qwen3-max-is-the-most-intelligent-non-reasoning-model/): over 1 trillion parameters. 256K tokens. [5 Sep 2025]
 - Amazon
@@ -147,11 +150,11 @@
   - [Command R+🤗](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
   - [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
 - Databricks
-  - [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [✨](https://github.com/databricks/dbrx) [27 Mar 2024]
- ![**github stars**](https://img.shields.io/github/stars/databricks/dbrx?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+  - [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [27 Mar 2024]
 - Deepseek
   - Founded in 2023, is a Chinese company dedicated to AGI.
   - [DeepSeek-V3✨](https://github.com/deepseek-ai/DeepSeek-V3): Mixture-of-Experts (MoE) with 671B. [26 Dec 2024]
+  - [DeepSeek-V3 Technical Report📑](https://arxiv.org/abs/2412.19437): 671B MoE model with MLA and auxiliary-loss-free load balancing. [Dec 2024]
   - [DeepSeek-R1✨](https://github.com/deepseek-ai/DeepSeek-R1):💡an open source reasoning model. Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025] [ref📑](https://arxiv.org/abs/2503.11486): A Review of DeepSeek Models' Key Innovative Techniques [14 Mar 2025]
   - [Janus✨](https://github.com/deepseek-ai/Janus): Multimodal understanding and visual generation. [28 Jan 2025]
   - [DeepSeek-V3🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3): 671B. Top-tier performance in coding and reasoning tasks [25 Mar 2025]
@@ -242,6 +245,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
   - [NeMo](https://mistral.ai/news/mistral-nemo/): 12B model with 128k context length that outperforms LLama 3 8B [18 Jul 2024]
   - [Mistral OCR](https://mistral.ai/news/mistral-ocr): Precise text recognition with up to 99% accuracy. Multimodal. Browser based [6 Mar 2025]
+  - [Mistral Large 3✍️](https://mistral.ai/news/mistral-3): Flagship multimodal model for reasoning, coding, and enterprise assistants. [Mar 2025]
 - Moonshot AI
   - Moonshot AI is a Beijing-based Chinese AI company founded in March 2023
   - [Kimi-K2✨](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
@@ -318,6 +322,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [Qwen2-Math✨](https://github.com/QwenLM/Qwen2-Math): math-specific LLM / [Qwen2-Audio✨](https://github.com/QwenLM/Qwen2-Audio): large-scale audio-language model [Aug 2024] / [Qwen 2.5-Coder✨](https://github.com/QwenLM/Qwen2.5-Coder) [18 Sep 2024]
  ![**github stars**](https://img.shields.io/github/stars/QwenLM/Qwen2-Math?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/QwenLM/Qwen2-Audio?style=flat-square&label=%20&color=blue&cacheSeconds=36000) ![**github stars**](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Coder?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [Qwen3-Coder✨](https://github.com/QwenLM/Qwen3-Coder): Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team, Alibaba Cloud. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/QwenLM/Qwen3-Coder?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
+- [GLM-5🤗](https://huggingface.co/zai-org/GLM-5): Model card for Z.ai's latest GLM family release.
 - [SaulLM-7B📑](https://arxiv.org/abs/2403.03883): A pioneering Large Language Model for Law [6 Mar 2024]
 - [TimeGPT](https://nixtla.github.io/nixtla/): The First Foundation Model for Time Series Forecasting [✨](https://github.com/Nixtla/neuralforecast) [Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/Nixtla/neuralforecast?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
@@ -746,10 +751,12 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 - AGI: Artificial General Intelligence
 - [AI 2027🗣️](https://ai-2027.com/summary): a speculative scenario, "AI 2027," created by the AI Futures Project. It predicts the rapid evolution of AI, culminating in the emergence of artificial superintelligence (ASI) by 2027. [3 Apr 2025]
+- [AI+HW 2035: Shaping the Next Decade📑](https://arxiv.org/abs/2603.05225): Ten-year roadmap for co-designing AI algorithms, systems, and hardware. [Mar 2026]
 - [AI isn’t replacing radiologists✍️](https://www.worksinprogress.news/p/why-ai-isnt-replacing-radiologists): Why AI diagnostic tools are transforming medicine slower than expected. [Feb 2026]
 - Anthropic's CEO, Dario Amodei, predicts AGI between 2026 and 2027. [✍️](https://techcrunch.com/2024/11/13/this-week-in-ai-anthropics-ceo-talks-scaling-up-ai-and-google-predicts-floods/) [13 Nov 2024]
 - Artificial General Intelligence Society: a central hub for AGI research, publications, and conference details. [✍️](https://agi-society.org/resources/)
 - [Artificial General Intelligence: Concept, State of the Art, and Future Prospects📑](https://www.researchgate.net/publication/271390398_Artificial_General_Intelligence_Concept_State_of_the_Art_and_Future_Prospects) [Jan 2014]
+- [Claude Code is the Inflection Point✍️](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point): Analysis of AI-authored commits and software engineering workflow shifts. 4% of GitHub public commits are being authored by Claude Code. [Feb 2026]
 - [Creating Scalable AGI: the Open General Intelligence Framework📑](https://arxiv.org/abs/2411.15832): a new AI architecture designed to enhance flexibility and scalability by dynamically managing specialized AI modules. [24 Nov 2024]
 - [How Far Are We From AGI📑](https://arxiv.org/abs/2405.10313): A survey discussing AGI's goals, developmental trajectory, and alignment technologies, providing a roadmap for AGI realization. [16 May 2024]
 - [Investigating Affective Use and Emotional Well-being on ChatGPT✍️](https://www.media.mit.edu/publications/investigating-affective-use-and-emotional-well-being-on-chatgpt/): The MIT study found that higher ChatGPT usage correlated with increased loneliness, dependence, and lower socialization. [21 Mar 2025]
@@ -767,6 +774,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [There is no Artificial General Intelligence📑](https://arxiv.org/abs/1906.05833): A critical perspective arguing that human-like conversational intelligence cannot be mathematically modeled or replicated by current AGI theories. [9 Jun 2019]
 - [Thousands of AI Authors on the Future of AI📑](https://arxiv.org/abs/2401.02843): A survey of 2,778 AI researchers predicts a 50 % likelihood of machines achieving multiple human-level capabilities by 2028, with wide disagreement about long-term risks and timelines. [5 Jan 2024]
 - [Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise📑](https://arxiv.org/abs/2410.03017): Tutor CoPilot can scale real-time expertise in education, enhancing outcomes even with less experienced tutors. It is cost-effective, priced at $20 per tutor annually. [3 Oct 2024]
+- [US Job Market Visualizer✨](https://github.com/karpathy/jobs): Visual exploration of AI exposure across 342 US occupations. ![**github stars**](https://img.shields.io/github/stars/karpathy/jobs?style=flat-square&label=%20&color=blue&cacheSeconds=36000)
 - [We must build AI for people; not to be a person🗣️](https://mustafa-suleyman.ai/seemingly-conscious-ai-is-coming) [19 August 2025]
 - LessWrong & Alignment Forum: Extensive discussions on AGI alignment, with contributions from experts in AGI safety. [LessWrong✍️](https://www.lesswrong.com/) | [Alignment Forum✍️](https://www.alignmentforum.org/)
 
@@ -818,6 +826,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [GPT 5.1✍️](https://openai.com/index/gpt-5-1/): GPT-5.1 Auto, GPT-5.1 Instant, and GPT-5.1 Thinking. Better instruction-following, More customization for tone and style. [12 Nov 2025]
 - [GPT-5.1 Codex Max✍️](https://openai.com/index/gpt-5-1-codex-max/): agentic coding model for lonng-running, detailed work. [19 Nov 2025]
 - [GPT 5.2✍️](https://openai.com/index/introducing-gpt-5-2): 70.9% GDPval (knowledge work vs professionals), major gains over GPT-5.1 on SWE-Bench, GPQA Diamond, AIME 2025, ARC-AGI reasoning, and advanced coding/vision tasks. [11 Dec 2025]
+- [GPT-5.4✍️](https://openai.com/index/introducing-gpt-5-4/): Thinking, coding, and native computer-use in a single model. [Mar 2026]
 
 ### **OpenAI Products**
 
@@ -853,6 +862,8 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 
 - [Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills): A way to package instructions, scripts, and resources into “skills” that Claude agents can dynamically load. [16 Oct 2025]
 - [Anthropic CLI (Claude Code)](https://www.npmjs.com/package/@anthropic-ai/claude-code): The official command-line interface that lives in your project directory, enabling natural-language code generation, refactoring, and Git automation. [24 Feb 2025]
+- [Bringing Code Review to Claude Code✍️](https://claude.com/blog/code-review): Multi-agent PR review dispatches parallel agents and verifies bugs before posting findings. [9 Mar 2026]
+- [Put Claude to work on your computer✍️](https://claude.com/blog/dispatch-and-computer-use): Dispatch carries tasks across phone and desktop while Claude operates your computer. [23 Mar 2026]
 - [Anthropic killed Tool calling📺](https://www.youtube.com/watch?v=3wglqgskzjQ): Programmatic Tool Calling / Dynamic Filtering — what changed in Anthropic’s API. [Feb 2026]
 - [Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk): A toolkit for building multi-step, tool-using agents using the Claude API. [29 Sep 2025]
 - [Claude Opus 4.6✍️](https://www.anthropic.com/news/claude-opus-4-6): Advanced reasoning and coding flagship model. [5 Feb 2026]
@@ -876,6 +887,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Gemini Code Assist for GitHub](https://developers.google.com/gemini-code-assist/docs/review-github-code): A specialized agent that acts as a code reviewer on Pull Requests, identifying bugs, style issues, and suggesting fixes automatically. [20 May 2025]
 - [Google AI for Developers](https://ai.google.dev/): A suite of research tools including AI-powered documentation search and code explanation to accelerate learning and implementation. [Jul 2024]
 - [Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity): An "agent-first" IDE platform announced with Gemini 3 that gives autonomous agents direct control over editors, terminals, and browsers to build and verify software. [18 Nov 2025]
+- [Introducing "vibe design" with Stitch✍️](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/): AI-native design canvas for turning prompts and images into UI drafts. [18 Mar 2026]
 - [Jules](https://jules.google/): An autonomous coding agent that integrates with GitHub to plan, execute, and verify multi-step coding tasks like bug fixing and dependency management. [20 May 2025]
 - [NotebookLM](https://notebooklm.google/): An AI-powered research and thinking partner that synthesizes complex information and automates online research using the **Deep Research** agent feature. [13 Nov 2025]
 - [SIMA 2](https://deepmind.google/models/): (Scalable Instructable Multiworld Agent) A research agent that explores and learns to play across a variety of 3D video game environments, aimed at general-purpose robotics. [13 Nov 2025]
@@ -884,6 +896,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 ### **Context constraints**
 
 - [Context Rot: How Increasing Input Tokens Impacts LLM Performance✨](https://github.com/chroma-core/context-rot) [14 Jul 2025]
+- [Doc-to-LoRA: Learning to Instantly Internalize Contexts📑](https://arxiv.org/abs/2602.15902): Generates LoRA adapters from long context to cut repeated context cost. [Feb 2026]
 - [DroPE✍️](https://pub.sakana.ai/DroPE): Extends LLM context by dropping positional embeddings and brief recalibration, improving long-context performance without retraining. Sakana AI. [13 Dec 2025]
 - [Giraffe📑](https://arxiv.org/abs/2308.10882): Adventures in Expanding Context Lengths in LLMs. A new truncation strategy for modifying the basis for the position encoding.  [✍️](https://blog.abacus.ai/blog/2023/08/22/giraffe-long-context-llms/) [2 Jan 2024]
 - [Introducing 100K Context Windows✍️](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
@@ -909,6 +922,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples📑](https://arxiv.org/abs/2212.06713): [13 Dec 2022]
   - Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
   - This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer interns, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
+- [Zig-Zag Ring Attention✍️](https://dzone.com/articles/how-llms-reach-1-million-token-context-windows): Long-context attention pattern for more memory-efficient distributed inference and training. [18 Mar 2026]
 
 ### **Numbers LLM**
 
