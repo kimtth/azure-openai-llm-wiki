@@ -220,7 +220,7 @@ def normalize_repo(raw: dict[str, Any]) -> dict[str, Any]:
 
 def format_compact_entry(repo: dict[str, Any], rank: int) -> str:
     title = repo.get("full_name") or repo.get("name") or "unknown"
-    entry = f"{rank}. [{title}✨]({repo.get('url', '#')})"
+    entry = f"{rank}. [{title}]({repo.get('url', '#')})"
 
     description = repo.get("description", "")
     if description:

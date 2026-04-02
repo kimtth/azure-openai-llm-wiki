@@ -27,7 +27,7 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 - [OPTIONAL_PREFIX][Name](url) - SYMBOL_Description. (Mon YYYY) ![stars](...)
 ```
 
-- The legend symbol (✨, ✍️, etc.) is placed **before the description**, separated by a space from the dash.
+- The legend symbol (✍️, etc.) is placed **before the description**, separated by a space from the dash.
 - Optional prefix emoji (🏛️ for Microsoft OSS, 🏬 for Azure-Samples) goes **before the link text**, outside the brackets.
 - Date is in `(Mon YYYY)` parentheses format with no brackets.
 - Star badge goes at the end of the line, after the date.
@@ -36,13 +36,13 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 
 ```markdown
 - [Azure ML Prompt Flow](https://learn.microsoft.com/...) - ✍️Visual designer for prompt orchestration and evaluation. (Jun 2023)
-- 🏬[APIM-Sample](https://github.com/Azure-Samples/APIM-Sample) - ✨Single APIM endpoint for multiple models. (Jan 2026) ![**github stars**](...)
+- 🏬[APIM-Sample](https://github.com/Azure-Samples/APIM-Sample) - Single APIM endpoint for multiple models. (Jan 2026) ![**github stars**](...)
 ```
 
 ### `applications.md`, `models_research.md`, `best_practices.md` — numbered list (or dash), symbol appended to link text
 
 ```
-1. [Name✨](url): Description. [Mon YYYY] ![stars](...)
+1. [Name](url): Description. [Mon YYYY] ![stars](...)
 ```
 or (for entries that use dash bullets in that section):
 ```
@@ -57,7 +57,7 @@ or (for entries that use dash bullets in that section):
 **Examples:**
 
 ```markdown
-1. [Auto-Claude✨](https://github.com/AndyMik90/Auto-Claude): Autonomous multi-session AI coding. [Dec 2025] ![**github stars**](...)
+1. [Auto-Claude](https://github.com/AndyMik90/Auto-Claude): Autonomous multi-session AI coding. [Dec 2025] ![**github stars**](...)
 1. [Towards AI Search Paradigm📑](https://arxiv.org/abs/2506.17188): Modular 4-agent system using DAGs for retrieval-intensive search. [Jun 2025]
 - [Claude Code Security✍️](https://www.anthropic.com/news/claude-code-security): Claude Code on the web for scanning codebases. [Feb 2026]
 ```
@@ -66,7 +66,6 @@ or (for entries that use dash bullets in that section):
 
 | Symbol | Meaning |
 |--------|---------|
-| ✨ | GitHub repository (OSS) |
 | ✍️ | Blog post / documentation / web page |
 | 📑 | Academic paper (arXiv) |
 | 📺 | Video content |
@@ -146,7 +145,7 @@ python code/add_github_stars.py --input temp_with_desc.md --in-place
 
 ## Common Pitfalls (Lessons Learned)
 
-1. **Wrong legend placement:** In `azure.md` the symbol (✨, ✍️) precedes the description text after ` - `. In all other files the symbol is appended to the link name inside `[Name✨]`. Never mix these two formats.
+1. **Wrong legend placement:** In `azure.md` the symbol (✍️, etc.) precedes the description text after ` - `. In all other files the symbol is appended to the link name inside `[Name✍️]`. Never mix these two formats.
 
 2. **Wrong section names:** Section labels in `temp_entries.md` must match the actual heading text in the target file exactly. Check the file before assigning. Do not invent new section names.
 

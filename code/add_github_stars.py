@@ -16,7 +16,7 @@ from utils.markdown_utils import (
 )
 
 # Process text and add GitHub star badge lines after repository links
-BADGE_TEMPLATE = "![**github stars**](https://img.shields.io/github/stars/{owner}/{repo}?style=flat-square&label=%20&color=blue&cacheSeconds=36000)"
+BADGE_TEMPLATE = "![**github stars**](https://img.shields.io/github/stars/{owner}/{repo}?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)"
 
 
 def add_github_stars(text: str) -> tuple[str, int]:
