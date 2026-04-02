@@ -22,8 +22,8 @@ def process_text_with_descriptions(text: str, *, session, timeout: int, max_retr
     Process markdown text and add GitHub repository descriptions after links.
     Preserves existing descriptions if present.
     
-    Example input: "- [ ] [Agent-R1✨](https://github.com/0russwest0/Agent-R1):"
-    Example output: "- [ ] [Agent-R1✨](https://github.com/0russwest0/Agent-R1): End-to-End reinforcement learning..."
+    Example input: "- [ ] [Agent-R1](https://github.com/0russwest0/Agent-R1):"
+    Example output: "- [ ] [Agent-R1](https://github.com/0russwest0/Agent-R1): End-to-End reinforcement learning..."
     """
     lines = text.strip().split('\n')
     output = []

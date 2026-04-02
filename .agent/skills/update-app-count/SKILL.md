@@ -96,7 +96,7 @@ If the output is intentionally narrowed to a subset such as `gemini claude azure
 Each entry in `section/x_llm_apps.md` follows this compact format:
 
 ```markdown
-1. [owner/repo✨](https://github.com/owner/repo): Short GitHub description. [Mon YYYY] (GitHub stars: 12,345)
+1. [owner/repo](https://github.com/owner/repo): Short GitHub description. [Mon YYYY] (GitHub stars: 12,345)
 ```
 
 - Entries are sorted by GitHub stars descending.

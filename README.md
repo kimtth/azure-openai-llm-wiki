@@ -30,12 +30,11 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [RAG Application](section/applications.md#rag-application)
   - [Vector Database & Embedding](section/applications.md#vector-database--embedding)
 - **Application**
-  - [AI Application](section/applications.md#ai-application)
-    - [Top Agent Frameworks](section/applications.md#top-agent-frameworks)
-    - [Orchestration Framework](section/applications.md#orchestration-framework)
-    - [Frameworks / SDKs / Building Blocks](section/applications.md#frameworks--sdks--building-blocks)
-    - [Apps / Demos / Ready-to-use Agents](section/applications.md#apps--demos--ready-to-use-agents)
-    - [**Popular LLM Applications** (Ranked by GitHub star count ≥1000)](section/applications.md#popular-llm-applications-ranked-by-github-star-count-1000)
+  - [Top Agent Frameworks](section/applications.md#top-agent-frameworks)
+  - [Orchestration Framework](section/applications.md#orchestration-framework)
+  - [Frameworks / SDKs / Building Blocks](section/applications.md#frameworks--sdks--building-blocks)
+  - [Apps / Demos / Ready-to-use Agents](section/applications.md#apps--demos--ready-to-use-agents)
+  - [**Popular LLM Applications** (Ranked by GitHub star count ≥1000)](section/applications.md#popular-llm-applications-ranked-by-github-star-count-1000)
   - [No Code & User Interface](section/applications.md#no-code--user-interface)
   - [Personal AI assistant & desktop](section/applications.md#personal-ai-assistant--desktop)
   - [Infrastructure & Backend Services](section/applications.md#infrastructure--backend-services)
@@ -52,13 +51,6 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [Skill](section/applications.md#skill)
   - [Domain-Specific Agents](section/applications.md#domain-specific-agents)
   - [Deep Research](section/applications.md#deep-research)
-- **Frameworks**
-  - [Top Agent Frameworks](section/applications.md#top-agent-frameworks)
-  - [Orchestration Framework](section/applications.md#orchestration-framework)
-  - [LangChain](section/applications.md#langchain)
-  - [LlamaIndex](section/applications.md#llamaindex)
-  - [Semantic Kernel](section/applications.md#semantic-kernel)
-  - [DSPy](section/applications.md#dspy)
 
 **[⬆ back to top](#azure-openai--llm)**
 
@@ -146,11 +138,11 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
   - [The Problem with RAG](section/best_practices.md#the-problem-with-rag)
   - [RAG Solution Design](section/best_practices.md#rag-solution-design)
   - [RAG Research](section/best_practices.md#rag-research)
-  - [RAG Research (Ranked by cite count >=100)](section/best_practices.md#rag-research-ranked-by-cite-count-100)
+  - [**RAG Research** (Ranked by cite count >=100)](section/best_practices.md#rag-research-ranked-by-cite-count-100)
 - **Agent**
   - [Agent Design Patterns](section/best_practices.md#agent-design-patterns)
   - [Agent Research](section/best_practices.md#agent-research)
-  - [Agent Research (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
+  - [**Agent Research** (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
   - [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration)
   - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use)
 - **Reference**
@@ -162,7 +154,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| ✍️ | Blog post / Documentation | ✨ | GitHub repository |
+| ✍️ | Blog post / Documentation | ![**github**](https://img.shields.io/github/stars/kimtth/awesome-azure-openai-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) | GitHub repository |
 | 🗄️ | Archived files | 💡🏆 | Recommend |
 | 🗣️ | Source citation | 📺 | Video content |
 | 📑 |  Academic paper | 🤗 | Huggingface |
