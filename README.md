@@ -8,7 +8,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 🔹Concise Summaries: Each resource is briefly described for quick understanding  
 🔹Chronological Organization: Resources appended with date (first commit, publication, or paper release)  
-🔹Active Tracking: Regular updates to capture the latest developments  
+🔹Monthly Updates: The list is updated monthly; candidate entries before the update are tracked in the issue.  
 
 > [!TIP]
 > A refined list focusing on Azure and Microsoft products.  
