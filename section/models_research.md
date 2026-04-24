@@ -1175,34 +1175,9 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 ### **Classification of Attention**
 
-- Soft Attention: Assigns continuous weights to all inputs; differentiable and widely used (e.g., neural machine translation).
-- Hard Attention: Selects discrete subsets of inputs; non-differentiable, often trained with reinforcement learning (e.g., image captioning).
-- Global Attention: Attends to all input tokens, capturing long-range dependencies; suitable for shorter sequences due to cost.
-- Local Attention: Restricts focus to a region around each token; balances efficiency and context (e.g., time series).
-- Self-Attention: Each token attends to other tokens in the same sequence; core to models like BERT.
-- Multi-Head Self-Attention: Runs several self-attentions in parallel to capture diverse relations; essential for Transformers.
-- Sparse Attention: Computes only a subset of similarity scores (e.g., strided, fixed); enables scaling to very long sequences (see *Performer*).
-- Cross-Attention: Attends between two sequences (e.g., encoder–decoder in machine translation).
-- Sliding Window Attention (SWA): Used in **Longformer**; each token attends within a fixed-size local window, reducing memory use for long texts.
-- [✍️](https://blog.research.google/2020/10/rethinking-attention-with-performers.html) [23 Oct 2020] / [✍️](https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture) / [✍️](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) [9 Feb 2023]  / [git](https://github.com/mistralai/mistral-src#sliding-window-to-speed-up-inference-and-reduce-memory-pressure)
-- [Efficient Streaming Language Models with Attention Sinks](http://arxiv.org/abs/2309.17453): 1. StreamingLLM, an efficient framework that enables LLMs trained with a finite length attention window to generalize to infinite sequence length without any fine-tuning. 2. We neither expand the LLMs' context window nor enhance their long-term memory. [git](https://github.com/mit-han-lab/streaming-llm) [29 Sep 2023] ![**github stars**](https://img.shields.io/github/stars/mit-han-lab/streaming-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
-  <img src="../files/streaming-llm.png" alt="streaming-attn"/>  
-  - Key-Value (KV) cache is an important component in the StreamingLLM framework.  
-  - Window Attention: Only the most recent Key and Value states (KVs) are cached. This approach fails when the text length surpasses the cache size.
-  - Sliding Attention /w Re-computation: Rebuilds the Key-Value (KV) states from the recent tokens for each new token. Evicts the oldest part of the cache.
-  - StreamingLLM: One of the techniques used is to add a placeholder token (yellow-colored) as a dedicated attention sink during pre-training. This attention sink attracts the model’s attention and helps it generalize to longer sequences. Outperforms the sliding window with re-computation baseline by up to a remarkable 22.2× speedup.
-- LongLoRA
-  - [LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models📑](https://arxiv.org/abs/2309.12307): A combination of sparse local attention and LoRA [git](https://github.com/dvlab-research/LongLoRA) [21 Sep 2023] ![**github stars**](https://img.shields.io/github/stars/dvlab-research/LongLoRA?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)    <!-- <img src="../files/longlora.png" alt="long-lora" width="350"/>    -->  
-  - The document states that LoRA alone is not sufficient for long context extension.
-  - Although dense global attention is needed during inference, fine-tuning the model can be done by sparse local attention, shift short attention (S2-Attn).
-  - S2-Attn can be implemented with only two lines of code in training.
-<!--   2. [QA-LoRA📑](https://arxiv.org/abs/2309.14717): Quantization-Aware Low-Rank Adaptation of Large Language Models. A method that integrates quantization and low-rank adaptation for large language models. [git](https://github.com/yuhuixu1993/qa-lora) [26 Sep 2023]
- ![**github stars**](https://img.shields.io/github/stars/yuhuixu1993/qa-lora?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) -->
-- [4 Advanced Attention Mechanisms🤗](https://huggingface.co/blog/Kseniase/attentions) [4 Apr 2025]
-  - Slim Attention: Stores only keys (K) during decoding and reconstructs values (V) from K when needed, reducing memory usage. -> Up to 2x memory savings, faster inference. Slight compute overhead from reconstructing V.
-  - XAttention: Uses a sparse block attention pattern with antidiagonal alignment to ensure better coverage and efficiency. -> Preserves accuracy, boosts speed (up to 13x faster). Requires careful design of block-sparse layout.
-  - KArAt (Kolmogorov-Arnold Attention): Replaces the fixed softmax attention with a learnable function (based on Kolmogorov–Arnold representation) to better model dependencies. -> Highly expressive, adaptable to complex patterns. Higher compute cost, less mature tooling.
-  - MTA (Multi-Token Attention): Instead of attending token-by-token, it updates *groups* of tokens together, reducing the frequency of attention calls. -> Better for tasks where context spans across groups. Introduces grouping complexity, may hurt granularity.
+- [13+ Attention Mechanisms You Should Know](https://www.turingpost.com/p/attention-types): [19 Apr 2026]
+
+<img src="../files/visual-attention.png" width="650" alt="visual attention" />
 
 ### **LLM Materials in Japanese**
 
