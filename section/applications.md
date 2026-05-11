@@ -659,6 +659,7 @@
 1. [operant-mcp](https://github.com/operantlabs/operant-mcp): Open-source MCP server with 51 security testing tools for pentesting, vulnerability scanning, and security auditing (SQLi, XSS, SSRF, IDOR, auth bypass, CORS, recon, PCAP analysis, cloud security, and more) [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/operantlabs/operant-mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Postman launches full support for Model Context Protocol (MCP)✍️](https://blog.postman.com/postman-launches-full-support-for-model-context-protocol-mcp-build-better-ai-agents-faster/) [1 May 2025]
 1. [Programmatic Tool Calling (PTC) Demo](https://github.com/Chen-zexi/open-ptc-agent): An open source implementation of code execution with MCP (Programatic Tool Calling) [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/Chen-zexi/open-ptc-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset): MCP server that routes image-generation prompts to 30+ models (DALL-E, Stable Diffusion, Flux, Ideogram, and more) through a single interface. [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/MohamedAbdallah-14/prompt-to-asset?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 #### **A2A**
 
