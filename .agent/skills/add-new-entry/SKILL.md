@@ -14,29 +14,28 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 2. **Fetch descriptions** — use `code/fetch_github_description.py` for GitHub repos. For arXiv papers and blog/web links, use `fetch_webpage` to extract a one-sentence description.
 3. **Fetch creation dates** — use `code/get_github_dates.py` for GitHub repos. For arXiv, derive the date from the ID prefix (e.g., `2602.xxxxx` → Feb 2026). For blog posts, read from the page.
 4. **Add star badges** — use `code/add_github_stars.py` for all GitHub links.
-5. **Apply legend symbols** — see the **Legend Format** section below. The format differs between `azure.md` and all other files.
+5. **Apply legend symbols** — see the **Legend Format** section below. `azure.md` should not use emoji markers.
 6. **Shorten descriptions** — keep each description to ≤15 words. One punchy sentence. Do not repeat the link name.
 
 ---
 
 ## Legend Format
 
-### `azure.md` — dash-bullet, symbol before description
+### `azure.md` — dash-bullet, no emojis
 
 ```
-- [OPTIONAL_PREFIX][Name](url) - SYMBOL_Description. (Mon YYYY) ![stars](...)
+- [Name](url) - Description. (Mon YYYY) ![stars](...)
 ```
 
-- The legend symbol (✍️, etc.) is placed **before the description**, separated by a space from the dash.
-- Optional prefix emoji (🏛️ for Microsoft OSS, 🏬 for Azure-Samples) goes **before the link text**, outside the brackets.
+- Do not use emoji markers in `azure.md` (no link-prefix emojis and no description-prefix emojis).
 - Date is in `(Mon YYYY)` parentheses format with no brackets.
 - Star badge goes at the end of the line, after the date.
 
 **Examples:**
 
 ```markdown
-- [Azure ML Prompt Flow](https://learn.microsoft.com/...) - ✍️Visual designer for prompt orchestration and evaluation. (Jun 2023)
-- 🏬[APIM-Sample](https://github.com/Azure-Samples/APIM-Sample) - Single APIM endpoint for multiple models. (Jan 2026) ![**github stars**](...)
+- [Azure ML Prompt Flow](https://learn.microsoft.com/...) - Visual designer for prompt orchestration and evaluation. (Jun 2023)
+- [APIM-Sample](https://github.com/Azure-Samples/APIM-Sample) - Single APIM endpoint for multiple models. (Jan 2026) ![**github stars**](...)
 ```
 
 ### `applications.md`, `models_research.md`, `best_practices.md` — numbered list (or dash), symbol appended to link text
@@ -70,8 +69,6 @@ or (for entries that use dash bullets in that section):
 | 📑 | Academic paper (arXiv) |
 | 📺 | Video content |
 | 🤗 | Hugging Face resource |
-| 🏛️ | Microsoft official OSS (azure.md prefix only) |
-| 🏬 | Azure-Samples org (azure.md prefix only) |
 
 ---
 
@@ -145,7 +142,7 @@ python code/add_github_stars.py --input temp_with_desc.md --in-place
 
 ## Common Pitfalls (Lessons Learned)
 
-1. **Wrong legend placement:** In `azure.md` the symbol (✍️, etc.) precedes the description text after ` - `. In all other files the symbol is appended to the link name inside `[Name✍️]`. Never mix these two formats.
+1. **Wrong legend placement:** In `azure.md`, do not use emoji markers at all. In all other files, the symbol is appended to the link name inside `[Name✍️]`. Never mix these two formats.
 
 2. **Wrong section names:** Section labels in `temp_entries.md` must match the actual heading text in the target file exactly. Check the file before assigning. Do not invent new section names.
 

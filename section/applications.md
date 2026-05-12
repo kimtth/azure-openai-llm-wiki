@@ -35,7 +35,7 @@
   - [Computer use](#computer-use)
 - [Coding \& Research](#coding--research)
   - [Coding](#coding)
-  - [Skill](#skill)
+  - [Skill](#skill) / [Harness](#harness)
   - [Domain-Specific Agents](#domain-specific-agents)
   - [Deep Research](#deep-research)
 
@@ -76,6 +76,7 @@
 - [RAG Hallucination Detection Techniques✍️](https://machinelearningmastery.com/rag-hallucination-detection-techniques/): Hallucination metrics using the DeepEval, G-Eval. [10 Jan 2025] - [UniversalRAG](https://github.com/wgcyeo/UniversalRAG) [29 Apr 2025]  ![**github stars**](https://img.shields.io/github/stars/wgcyeo/UniversalRAG?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [VideoRAG📑](https://arxiv.org/abs/2501.05874): Not only does it retrieve relevant videos from a large video corpus, but it also integrates both the visual and textual elements of videos into the answer-generation process using Large Video Language Models (LVLMs). [10 Jan 2025]
 - [Visual RAG over PDFs with Vespa✍️](https://blog.vespa.ai/visual-rag-in-practice/): a demo showcasing Visual RAG over PDFs using ColPali embeddings in Vespa [git](https://github.com/vespa-engine/sample-apps/tree/master/visual-retrieval-colpali) [19 Nov 2024]
+- [WFGY Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap#readme): A comprehensive RAG debugging framework covering 16 reproducible failure modes (hallucination, retrieval collapse, context drift, memory breaks, entropy collapse, etc.)
 - [What is Agentic RAG](https://weaviate.io/blog/what-is-agentic-rag): The article published by Weaviate. [5 Nov 2024]
 
 #### **GraphRAG**
@@ -102,6 +103,8 @@
 - [How to Build a Graph RAG App✍️](https://towardsdatascience.com/how-to-build-a-graph-rag-app-b323fc33ba06): Using knowledge graphs and AI to retrieve, filter, and summarize medical journal articles [30 Dec 2024]
 - [HybridRAG📑](https://arxiv.org/abs/2408.04948): Integrating VectorRAG and GraphRAG with financial earnings call transcripts in Q&A format. [9 Aug 2024]
 - [Neo4j GraphRAG Package for Python](https://github.com/neo4j/neo4j-graphrag-python) [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/neo4j/neo4j-graphrag-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [trustgraph](https://github.com/trustgraph-ai/trustgraph): GraphRAG → Context Graph. Agent runtime platform powered by context graphs. ![**github stars**](https://img.shields.io/github/stars/trustgraph-ai/trustgraph?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [trustgraph - Context Graphs✍️](https://trustgraph.ai/guides/key-concepts/context-graphs/): Three-layer context graph architecture combining system of intelligence, system of records, and temporal feedback loop. [May 2026]
 
 #### **RAG Application**
 
@@ -202,8 +205,10 @@
 ### **AI Application**
 
 - [900 most popular open source AI tools](https://huyenchip.com/2024/03/14/ai-oss.html):🏆What I learned from looking at 900 most popular open source AI tools [list](https://huyenchip.com/llama-police) [Mar 2024]
+- [all-agentic-architectures](https://github.com/FareedKhan-dev/all-agentic-architectures): Implementations of 17+ agentic architectures for practical AI-system development. ![**github stars**](https://img.shields.io/github/stars/FareedKhan-dev/all-agentic-architectures?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps):💡A curated collection of awesome LLM apps built with RAG and AI agents. [Apr 2024]
  ![**github stars**](https://img.shields.io/github/stars/Shubhamsaboo/awesome-llm-apps?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [awesome-ai-apps](https://github.com/Arindam200/awesome-ai-apps): Curated projects showcasing RAG, agents, workflows, and AI use cases. ![**github stars**](https://img.shields.io/github/stars/Arindam200/awesome-ai-apps?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure OpenAI Samples](https://github.com/kimtth/azure-openai-cookbook): 🐳 Azure OpenAI (OpenAI) Sample Collection - 🪂 100+ Code Cookbook 🧪 [Mar 2025]
 - [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents):🏆Tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. [Sep 2024]
  ![**github stars**](https://img.shields.io/github/stars/NirDiamant/GenAI_Agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -323,6 +328,7 @@
 1. [GPT4All](https://github.com/nomic-ai/gpt4all): Open-source large language models that run locally on your CPU [Mar 2023]
 1. [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/av/harbor?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [lemonade](https://github.com/lemonade-sdk/lemonade): Runtime for discovering and running local AI apps with optimized LLM serving on GPUs and NPUs. ![**github stars**](https://img.shields.io/github/stars/lemonade-sdk/lemonade?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [ollama](https://github.com/jmorganca/ollama):💡Running with Large language models locally [Jun 2023]
 1. [vLLM](https://github.com/vllm-project/vllm): Easy-to-use library for LLM inference and serving. [Feb 2023]
 1. [vllm-omni](https://github.com/vllm-project/vllm-omni): A framework for efficient model inference with omni-modality models [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/vllm-project/vllm-omni?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -339,6 +345,7 @@
 1. [Llama Stack](https://github.com/meta-llama/llama-stack):💡building blocks for Large Language Model (LLM) development [Jun 2024]
 1. [mirascope](https://github.com/Mirascope/mirascope): a library that simplifies working with LLMs via a unified interface for multiple providers. [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/Mirascope/mirascope?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [MiniChain](https://github.com/srush/MiniChain): A tiny library for coding with llm [Feb 2023]
+1. [obscura](https://github.com/h4ckf0r0day/obscura): Headless browser for AI agents and web scraping. ![**github stars**](https://img.shields.io/github/stars/h4ckf0r0day/obscura?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Open AI Assistant API](https://platform.openai.com/docs/assistants/overview) [6 Nov 2023]
 1. [OpenAI Agents SDK & Response API](https://github.com/openai/openai-agents-python):🏆Responses API (Chat Completions + Assistants API), Built-in tools (web search, file search, computer use), Agents SDK for multi-agent workflows, agent workflow observability tools [11 Mar 2025] ![**github stars**](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Semantic Router](https://github.com/aurelio-labs/semantic-router): Decision routing for LLMs and agents using semantic vector intelligence. [Oct 2023] ![**github stars**](https://img.shields.io/github/stars/aurelio-labs/semantic-router?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -387,7 +394,9 @@
 1. [Magentic-One✏️](https://aka.ms/magentic-one): A Generalist Multi-Agent System for Solving Complex Tasks [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/TEN-framework/TEN-Agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [paperclip](https://github.com/paperclipai/paperclip): Open-source orchestration for zero-human companies, coordinating teams of AI agents with goals, budgets, governance, and cost tracking. ![**github stars**](https://img.shields.io/github/stars/paperclipai/paperclip?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [OpenDAN : Your Personal AIOS](https://github.com/fiatrete/OpenDAN-Personal-AI-OS): OpenDAN, an open-source Personal AI OS consolidating various AI modules in one place [May 2023] ![**github stars**](https://img.shields.io/github/stars/fiatrete/OpenDAN-Personal-AI-OS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [onyx](https://github.com/onyx-dot-app/onyx): Self-hostable AI chat platform with agents, web search, RAG, MCP, deep research, and connectors. ![**github stars**](https://img.shields.io/github/stars/onyx-dot-app/onyx?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Project Astra](https://deepmind.google/technologies/gemini/project-astra/): Google DeepMind, A universal AI agent that is helpful in everyday life [14 May 2024]
+1. [rowboat](https://github.com/rowboatlabs/rowboat): Open-source AI coworker with memory. ![**github stars**](https://img.shields.io/github/stars/rowboatlabs/rowboat?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Suna](https://github.com/kortix-ai/suna): a fully open source AI assistant that helps you accomplish real-world tasks [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/kortix-ai/suna?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [XAgent](https://github.com/OpenBMB/XAgent): Autonomous LLM Agent for complex task solving like data analysis, recommendation, and model training [Oct 2023] ![**github stars**](https://img.shields.io/github/stars/OpenBMB/XAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
@@ -409,6 +418,7 @@
 1. [SeeAct](https://osu-nlp-group.github.io/SeeAct): GPT-4V(ision) is a Generalist Web Agent, if Grounded [git](https://github.com/OSU-NLP-Group/SeeAct) [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/OSU-NLP-Group/SeeAct?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [skyvern](https://github.com/skyvern-ai/skyvern): Automate browser-based workflows with LLMs and Computer Vision [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/skyvern-ai/skyvern?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [SurfSense](https://github.com/MODSetter/SurfSense): Open-source alternative to NotebookLM, Perplexity, and Glean — integrates with your personal knowledge base, search engines, Slack, Linear, Notion, YouTube, and GitHub. ![**github stars**](https://img.shields.io/github/stars/MODSetter/SurfSense?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) [July 2024]
+1. [tolaria](https://github.com/refactoringhq/tolaria): Desktop app for managing markdown knowledge bases. ![**github stars**](https://img.shields.io/github/stars/refactoringhq/tolaria?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 ###### Productivity & Personal Assistants
 
@@ -425,6 +435,7 @@
 1. [LlamaFS](https://github.com/iyaja/llama-fs): Automatically renames and organizes your files based on their contents [May 2024]
 1. [Meetily](https://github.com/Zackriya-Solutions/meeting-minutes): Open source Ai Assistant for taking meeting notes [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/Zackriya-Solutions/meeting-minutes?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Postiz](https://github.com/gitroomhq/postiz-app): AI social media scheduling tool. An alternative to: Buffer.com, Hypefury, Twitter Hunter. [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/gitroomhq/postiz-app?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [ppt-master](https://github.com/hugohe3/ppt-master): Generates natively editable PowerPoint decks from documents with real PPTX shapes and animations. ![**github stars**](https://img.shields.io/github/stars/hugohe3/ppt-master?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Riona-AI-Agent](https://github.com/David-patrick-chuks/Riona-AI-Agent): automation tool designed for Instagram to automate social media interactions such as posting, liking, and commenting. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/David-patrick-chuks/Riona-AI-Agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 ###### Data, Finance & Analytics
@@ -454,6 +465,7 @@
 1. [BIG-AGI](https://github.com/enricoros/big-agi) FKA nextjs-chatgpt-app [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/enricoros/big-agi?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Botpress Cloud](https://github.com/botpress/botpress): The open-source hub to build & deploy GPT/LLM Agents. [Nov 2016] ![**github stars**](https://img.shields.io/github/stars/botpress/botpress?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [browser-use](https://github.com/browser-use/browser-use): Make websites accessible for AI agents. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/browser-use/browser-use?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [CADAM](https://github.com/Adam-CAD/CADAM): Open-source text-to-CAD web application. ![**github stars**](https://img.shields.io/github/stars/Adam-CAD/CADAM?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [ChainForge](https://github.com/ianarawjo/ChainForge): An open-source visual programming environment for battle-testing prompts to LLMs. [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/ianarawjo/ChainForge?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [chainlit](https://github.com/Chainlit/chainlit):💡Build production-ready Conversational AI applications in minutes. [Mar 2023]
 1. [ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web): Open-source GPT wrapper. [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/ChatGPTNextWeb/ChatGPT-Next-Web?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -561,7 +573,9 @@
 1. [Instructor](https://github.com/jxnl/instructor): Structured outputs for LLMs, easily map LLM outputs to structured data. [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/jxnl/instructor?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): A polyglot document intelligence framework with a Rust core. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/kreuzberg-dev/kreuzberg?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [kordoc](https://github.com/chrisryugj/kordoc): Korean document parser converting HWP, HWPX, PDF, XLSX, and DOCX to Markdown with CLI and MCP server support. ![**github stars**](https://img.shields.io/github/stars/chrisryugj/kordoc?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [langextract](https://github.com/google/langextract): Google. A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/google/langextract?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [liteparse](https://github.com/run-llama/liteparse): Fast open-source document parser from the LlamaIndex ecosystem. ![**github stars**](https://img.shields.io/github/stars/run-llama/liteparse?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [LLM Scraper](https://github.com/mishushakov/llm-scraper): a TypeScript library that allows you to extract structured data from any webpage using LLMs. [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/mishushakov/llm-scraper?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Marker](https://github.com/VikParuchuri/marker): converts PDF to markdown [Oct 2023]
 ![**github stars**](https://img.shields.io/github/stars/VikParuchuri/marker?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -618,12 +632,14 @@
 1. [Graphiti](https://github.com/getzep/graphiti): Graphiti leverages [zep](https://github.com/getzep/zep)'s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/getzep/graphiti?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [I Reverse Engineered **ChatGPT's Memory** System✍️](https://manthanguptaa.in/posts/chatgpt_memory/): A non–vector-DB log of past chats: a lightweight layyered system—session metadata, long-term user facts, recent-chat summaries, and current messages—built to provide personalization and context without storing full conversation histories. [9 Dec 2025]
 1. [Letta (previously MemGPT)](https://github.com/letta-ai/letta): Virtual context management to extend the limited context of LLM. A tiered memory system and a set of functions that allow it to manage its own memory. [✍️](https://memgpt.ai) / [git:old](https://github.com/cpacker/MemGPT) [12 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/letta-ai/letta?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [LLM Wiki✍️](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): Karpathy's pattern for LLM-maintained personal knowledge bases built from immutable raw sources, interlinked markdown synthesis, schema files, logs, and periodic linting. [2026]
 1. [Making Sense of Memory in AI Agents](https://leoniemonigatti.com/blog/memory-in-ai-agents.html) & [Exploring Anthropic’s Memory Tool](https://leoniemonigatti.com/blog/claude-memory-tool.html): How agents remember, recall, and (struggle to) forget information. [25 Nov 2025]
 1. [Mem0](https://github.com/mem0ai/mem0):💡A self-improving memory layer for personalized AI experiences. [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/mem0ai/mem0?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory📑](https://arxiv.org/abs/2504.19413) [28 Apr 2025]  
 1. [Memary](https://github.com/kingjulio8238/Memary): memary mimics how human memory evolves and learns over time. The memory module comprises the Memory Stream and Entity Knowledge Store. [May 2024] ![**github stars**](https://img.shields.io/github/stars/kingjulio8238/Memary?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Memori](https://github.com/GibsonAI/Memori): a SQL native memory engine (SQLite, PostgreSQL, MySQL) [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/GibsonAI/Memori?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [mempalace](https://github.com/milla-jovovich/mempalace): Local-first AI memory system with verbatim storage, scoped semantic search, knowledge graph support, MCP tools, and published LongMemEval results. ![**github stars**](https://img.shields.io/github/stars/MemPalace/mempalace?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [OpenMemory](https://github.com/CaviraOSS/OpenMemory): Long-term memory for AI systems. Open source, self-hosted, and explainable. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/CaviraOSS/OpenMemory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [supermemory](https://github.com/supermemoryai/supermemory): Memory engine and app that is extremely fast, scalable. [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/supermemoryai/supermemory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![**github stars**](https://img.shields.io/github/stars/getzep/zep?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) [May 2023]
@@ -648,7 +664,9 @@
 1. [fastapi_mcp](https://github.com/tadata-org/fastapi_mcp): automatically exposing FastAPI endpoints as Model Context Protocol (MCP) [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/tadata-org/fastapi_mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) 
 1. [goose](https://github.com/block/goose):💡An open-source, extensible AI agent with support for the Model Context Protocol (MCP). Developed by Block, a company founded in 2009 by Jack Dorsey. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/block/goose?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Hugging Face MCP Course🤗](https://huggingface.co/mcp-course): Model Context Protocol (MCP) Course
+1. [korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp): MCP server exposing Korean legal APIs with search, citation verification, impact graphs, time-travel diffs, and action plans. ![**github stars**](https://img.shields.io/github/stars/chrisryugj/korean-law-mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [mcp-agent](https://github.com/lastmile-ai/mcp-agent): Build effective agents using Model Context Protocol and simple workflow patterns [Dec 2024] ![**github stars**](https://img.shields.io/github/stars/lastmile-ai/mcp-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) 
+1. [MCP Apps✍️](https://modelcontextprotocol.io/extensions/apps/overview): MCP extension for interactive HTML apps that render inside chat hosts through sandboxed iframes and postMessage. [2026]
 1. [MCP Registry](https://github.com/mcp): Github. centralizes Model Context Protocol (MCP) servers, facilitating the discovery and integration of AI tools with external data sources and services. [16 Sep 2025]
 1. [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 1. [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan): Auto-discover MCP Security Vulnerabilities. [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/invariantlabs-ai/mcp-scan?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -701,7 +719,22 @@
 1. [ChatDev](https://github.com/OpenBMB/ChatDev): Virtual software company. Create Customized Software using LLM-powered Multi-Agent Collaboration [Sep 2023] ![**github stars**](https://img.shields.io/github/stars/OpenBMB/ChatDev?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Claude sub-agents collection](https://github.com/wshobson/agents): A collection of production-ready subagents for Claude Code. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/wshobson/agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [claude-code](https://github.com/anthropics/claude-code): a terminal-based agentic coding tool that understands your codebase and speeds up development by executing tasks, explaining code, and managing git—all via natural language commands. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. **Claude Code Philosophy**: Collaboration-first. Give the agent full local context, track progress in artifacts, and iterate incrementally. vs **Codex Philosophy**: Isolation-first. Run in a secure container, rely on repo state, and enforce correctness with automated checks. [2026]
+    - LLM = **CPU** / Harness = **Operating System**
+      - **Self-healing loop** : Continuous execution with retry, resume, and fallback (no hard failure)
+      - **Memory system** : Index + external files + background “dream” consolidation to keep context small
+      - **Context compaction** : Removes low-value history to control quadratic attention cost
+      - **Structured tool** : Replace raw shell with typed functions (e.g., grep, readFile, writeFile), enforce schemas (inputs/outputs) and safe execution
+      - **Concurrency control** : Read operations run in parallel while write operations are serialized for consistency
+      - **KV-cache optimization** : Alphabetically sorted tool lists + stable prompt structure → cache hits → skip prefill → faster and cheaper
+      - **Self-auditing** : System determines completion and stops execution to avoid infinite loops and cost waste
+    - Hackable implementations of Claude Code
+      - [claw-code](https://github.com/instructkr/claw-code)
+      - [claude-code](https://github.com/claude-code-best/claude-code)
+      - [openclaude](https://github.com/Gitlawb/openclaude)
+      - [free-claude-code](https://github.com/Alishahryar1/free-claude-code)
+      - [claude-code](https://github.com/Nietzsche-Ubermensch/claude-code)
+      - [claude-code recovered source tree](https://github.com/mehmoodosman/claude-code/)
+    - **Claude Code Philosophy**: Collaboration-first. Give the agent full local context, track progress in artifacts, and iterate incrementally. vs **Codex Philosophy**: Isolation-first. Run in a secure container, rely on repo state, and enforce correctness with automated checks. [2026]
 1. [claude‑squad](https://github.com/smtg-ai/claude-squad): Terminal app to manage multiple AI assistants (Claude Code, Aider, Codex). [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [CLI-Anything](https://github.com/HKUDS/CLI-Anything): CLI-native agent for automating terminal-centric tasks. ![**github stars**](https://img.shields.io/github/stars/HKUDS/CLI-Anything?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Cline](https://github.com/cline/cline): CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/cline/cline?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -754,6 +787,7 @@
 1. [OpenSpec](https://github.com/Fission-AI/OpenSpec): Spec-driven development for AI coding assistants. ![**github stars**](https://img.shields.io/github/stars/Fission-AI/OpenSpec?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [opendev](https://github.com/opendev-to/opendev): Open-Source Coding Agent in the terminal. ![**github stars**](https://img.shields.io/github/stars/opendev-to/opendev?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [pi](https://github.com/badlogic/pi-mono): A terminal-friendly coding agent with minimal, clean design. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/badlogic/pi-mono?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [pi / coding-agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent): a minimal terminal coding harness. ![**github stars**](https://img.shields.io/github/stars/badlogic/pi-mono?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [plannotator](https://github.com/backnotprop/plannotator?tab=readme-ov-file): Annotate and review coding agent plans visually, share with your team, send feedback with one click. [Dec 2025] ![**github stars**](https://img.shields.io/github/stars/backnotprop/plannotator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Potpie](https://github.com/potpie-ai/potpie): Prompt-To-Agent : Create custom engineering agents for your codebase [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/potpie-ai/potpie?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [PR-Agent](https://github.com/Codium-ai/pr-agent): Efficient code review and handle pull requests, by providing AI feedbacks and suggestions [Jan 2023] ![**github stars**](https://img.shields.io/github/stars/Codium-ai/pr-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -774,47 +808,70 @@
 1. [vanna](https://github.com/vanna-ai/vanna): Chat with your SQL database. Accurate Text-to-SQL Generation via LLMs using RAG. [May 2023]
 1. [Vercel AI](https://github.com/vercel/ai) Vercel AI Toolkit for TypeScript [May 2023] ![**github stars**](https://img.shields.io/github/stars/vercel/ai?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [void](https://github.com/voideditor/void) OSS Cursor alternative. a fork of vscode [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/voideditor/void?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [warp](https://github.com/warpdotdev/warp): Agentic development environment built around the terminal. ![**github stars**](https://img.shields.io/github/stars/warpdotdev/warp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [WebAgent](https://github.com/Alibaba-NLP/WebAgent): WebAgent for Information Seeking built by Tongyi Lab: WebWalker & WebDancer & WebSailor & WebShaper. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [What Claude Code Actually Chooses✍️](https://amplifying.ai/research/claude-code-picks/report): Systematic survey of 2,430 Claude Code tool picks across models, repos, categories, and prompt phrasings. [Feb 2026]
 1. [Windsurf editor](https://codeium.com/windsurf): Flows = Agents + Copilots. Cascades (a specific implementation of AI Flows. Advanced chat interface). [13 Nov 2024]
 1. [Zed](https://github.com/zed-industries/zed): a high-performance, multiplayer code editor. the creators of Atom and Tree-sitter. [Feb 2021] ![**github stars**](https://img.shields.io/github/stars/zed-industries/zed?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 #### Skill
 
+1. [agent-skills](https://github.com/addyosmani/agent-skills): Production-grade engineering skills for AI coding agents. ![**github stars**](https://img.shields.io/github/stars/addyosmani/agent-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering): A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management. [Dec 2025] ![**github stars**](https://img.shields.io/github/stars/muratcankoylan/Agent-Skills-for-Context-Engineering?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [agentskill.sh](https://agentskill.sh/): Registry for agent skills and reusable AI workflows.
 1. [agentskills](https://github.com/agentskills/agentskills): Specification and documentation for Agent Skills [Dec 2025] ![**github stars**](https://img.shields.io/github/stars/agentskills/agentskills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills): Karpathy-inspired CLAUDE.md with four principles: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/forrestchang/andrej-karpathy-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills): 946+ agentic skills for Claude Code, Gemini CLI, Cursor, Copilot — one-command install via npx. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills): Security-oriented skills for Anthropic and Claude-based agents. ![**github stars**](https://img.shields.io/github/stars/mukul975/Anthropic-Cybersecurity-Skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills): A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills): 946+ agentic skills for Claude Code, Gemini CLI, Cursor, Copilot — one-command install via npx. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/sickn33/antigravity-awesome-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot): 💡Community-contributed instructions, prompts, and skills, configurations [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/github/awesome-copilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): A set of ready to use scientific skills for Claude [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/K-Dense-AI/claude-scientific-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills): A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [awesome-design-md](https://github.com/VoltAgent/awesome-design-md): Curated DESIGN.md files inspired by popular brand design systems. ![**github stars**](https://img.shields.io/github/stars/VoltAgent/awesome-design-md?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [Claude Skills](https://github.com/anthropics/skills): 💡Official repository for Skills. Skills teach Claude how to complete specific tasks in a repeatable way. [Sep 2025] [✍️](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) ![**github stars**](https://img.shields.io/github/stars/anthropics/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice): Claude Code best practices, prompts, and workflow rules. ![**github stars**](https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [claude-forge](https://github.com/sangrokjung/claude-forge): About
 Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills. ![**github stars**](https://img.shields.io/github/stars/sangrokjung/claude-forge?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [Claude Skills](https://github.com/anthropics/skills): 💡Official repository for Skills. Skills teach Claude how to complete specific tasks in a repeatable way. [Sep 2025] [✍️](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) ![**github stars**](https://img.shields.io/github/stars/anthropics/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): A set of ready to use scientific skills for Claude [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/K-Dense-AI/claude-scientific-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [clawhub.ai✍️](https://clawhub.ai/): Community hub for sharing Claude skills.
 1. [context-hub](https://github.com/andrewyng/context-hub): Curated, versioned docs and skills for coding agents. ![**github stars**](https://img.shields.io/github/stars/andrewyng/context-hub?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [design.md](https://github.com/google-labs-code/design.md): Format specification for describing a visual identity to coding agents. ![**github stars**](https://img.shields.io/github/stars/google-labs-code/design.md?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [everything-claude-code](https://github.com/affaan-m/everything-claude-code): Complete Claude Code configuration collection - agents, skills, hooks, commands, rules, MCPs. Battle-tested configs from an Anthropic hackathon winner. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [getsentry/skills](https://github.com/getsentry/skills): Skills for integrating Sentry workflows into coding agents. ![**github stars**](https://img.shields.io/github/stars/getsentry/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins): 11 role-specific Cowork plugins (sales, legal, finance) with skills and MCP connectors. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/anthropics/knowledge-work-plugins?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [graphify](https://github.com/safishamsi/graphify): Skill that turns code, schemas, docs, papers, images, or videos into queryable knowledge graphs. ![**github stars**](https://img.shields.io/github/stars/safishamsi/graphify?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [huggingface/skills🤗](https://github.com/huggingface/skills): Hugging Face skills for model training, evaluation, and Gradio UIs — compatible with Claude Code, Codex, Gemini CLI. [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/huggingface/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [kimoring-ai-skills](https://github.com/codefactory-co/kimoring-ai-skills): Skill packs for Kimoring AI workflows and assistants. ![**github stars**](https://img.shields.io/github/stars/codefactory-co/kimoring-ai-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins): 11 role-specific Cowork plugins (sales, legal, finance) with skills and MCP connectors. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/anthropics/knowledge-work-plugins?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [last30days-skill](https://github.com/mvanhorn/last30days-skill): Time-window retrieval skill for recent knowledge and updates. ![**github stars**](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [LobeHub Skills](https://lobehub.com/skills): Skill marketplace and directory for LobeHub-compatible agent capabilities.
 1. [mattpocock/skills](https://github.com/mattpocock/skills): TypeScript-heavy skills for coding agents and web apps. ![**github stars**](https://img.shields.io/github/stars/mattpocock/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [mmx-cli](https://github.com/MiniMax-AI/cli): CLI skill for MiniMax AI platform — text, image, video, speech, and music generation via SKILL.md standard. ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/cli?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill): NotebookLM integration skill for research and note synthesis. ![**github stars**](https://img.shields.io/github/stars/PleasePrompto/notebooklm-skill?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [obsidian-skills](https://github.com/kepano/obsidian-skills): A collection of skills and smart blocks for extending Obsidian functionality. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/kepano/obsidian-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [open-design](https://github.com/nexu-io/open-design): Local-first open design tool with design systems, skills, sandboxed previews, and export workflows. ![**github stars**](https://img.shields.io/github/stars/nexu-io/open-design?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [openai/skills](https://github.com/openai/skills): Skills Catalog for Codex [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/openai/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [pg-aiguide](https://github.com/timescale/pg-aiguide): MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/timescale/pg-aiguide?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Planning with Files](https://github.com/OthmanAdi/planning-with-files): Claude Code skill implementing Manus-style persistent markdown planning [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Plugins Directory for Claude Code ](https://github.com/anthropics/claude-plugins-official): A curated directory of high-quality plugins for Claude Code. [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/timescale/pg-aiguide?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-1. [pg-aiguide](https://github.com/timescale/pg-aiguide): MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code. [Jul 2025] ![**github stars**](https://img.shields.io/github/stars/timescale/pg-aiguide?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [pm-skills](https://github.com/phuryn/pm-skills): Product management skills for planning and execution agents. ![**github stars**](https://img.shields.io/github/stars/phuryn/pm-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [ruleskill.com✍️](https://ruleskill.com/): Platform for sharing AI agent rules and skills.
-1. [skills.sh✍️](https://skills.sh/): Searchable registry for discoverable AI skills.
-1. [skills](https://github.com/openai/skills): Skills Catalog for Codex [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/openai/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [simulink/skills](https://github.com/simulink/skills): Collection of skills for AI agents. ![**github stars**](https://img.shields.io/github/stars/simulink/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [SkillHub✍️](https://skills.palebluedot.live/): Community directory for AI skills and reusable agent capabilities.
-1. [skills🤗](https://github.com/huggingface/skills): Hugging Face skills for model training, evaluation, and Gradio UIs — compatible with Claude Code, Codex, Gemini CLI. [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/huggingface/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [skills.sh✍️](https://skills.sh/): Searchable registry for discoverable AI skills.
+1. [skillsmp.com](https://skillsmp.com/): Directory for discovering reusable AI agent skills.
 1. [superpowers](https://github.com/obra/superpowers): An agentic skills framework & software development methodology that works. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/obra/superpowers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/nextlevelbuilder/ui-ux-pro-max-skill?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [vercel-agent-skills](https://github.com/vercel-labs/agent-skills): Vercel's official collection of agent skills [Dec 2025] ![**github stars**](https://img.shields.io/github/stars/vercel-labs/agent-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+
+#### Harness
+
+1. [12 Agentic Harness Patterns from Claude Code✍️](https://generativeprogrammer.com/p/12-agentic-harness-patterns-from): Reusable memory, orchestration, permission, and hook patterns for agent harness design. [Apr 2026]
+1. [Anthropic Designs Three-Agent Harness Supports Long-Running Full-Stack AI Development✍️](https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/): Summary of Anthropic's planning, generation, and evaluator-agent harness for multi-hour app-building loops. [Apr 2026]
+1. [GenericAgent](https://github.com/lsdefine/GenericAgent): Self-evolving agent that grows a skill tree from a compact seed program. ![**github stars**](https://img.shields.io/github/stars/lsdefine/GenericAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [Harness Design for Long-Running Apps✍️](https://www.anthropic.com/engineering/harness-design-long-running-apps): Anthropic engineering write-up on harnesses for long-running app design and full-stack generation. [2026]
+1. [Harness engineering for coding agent users✍️](https://martinfowler.com/articles/harness-engineering.html): Mental model for coding-agent feedforward guides, feedback sensors, and computational vs inferential controls. [Apr 2026]
+1. [hermes-agent](https://github.com/NousResearch/hermes-agent): Self-improving agent from Nous Research. ![**github stars**](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [OpenHarness](https://github.com/HKUDS/OpenHarness): Open agent harness with a built-in personal agent. ![**github stars**](https://img.shields.io/github/stars/HKUDS/OpenHarness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [revfactory/harness](https://github.com/revfactory/harness): Meta-skill that designs domain-specific agent teams and generates the skills they use. ![**github stars**](https://img.shields.io/github/stars/revfactory/harness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [The Anatomy of an Agent Harness✍️](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness): Defines Agent = Model + Harness and surveys harness primitives such as filesystem, tools, sandboxing, memory, search, and compaction. [Mar 2026]
 
 #### Domain-Specific Agents
 
@@ -862,12 +919,14 @@ Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills. ![**github s
 1. [CodeScientist](https://github.com/allenai/codescientist): An automated scientific discovery system for code-based experiments. AllenAI. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/allenai/codescientist?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Company Researcher](https://github.com/exa-labs/company-researcher): a free and open-source tool that helps you instantly understand any company inside out. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/exa-labs/company-researcher?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Deep Research Agent📑](https://arxiv.org/abs/2506.18096):💡Survey. A Systematic Examination And Roadmap [22 Jun 2025]
+1. [DRACO: a Cross-Domain Benchmark for Deep Research Accuracy, Completeness, and Objectivity📑](https://arxiv.org/abs/2602.11685): Benchmark of complex deep-research tasks across 10 domains and sources from 40 countries. [Feb 2026]
 1. [DeepScholar](https://deep-scholar.vercel.app): an openly accessible deep research system from Berkeley and Stanford [Nov 2025]
 1. [DeepSearcher](https://github.com/zilliztech/deep-searcher): DeepSearcher integrates LLMs and Vector Databases for precise search, evaluation, and reasoning on private data, providing accurate answers and detailed reports. [Feb 2025] ![**github stars**](https://img.shields.io/github/stars/zilliztech/deep-searcher?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [DeerFlow](https://github.com/bytedance/deer-flow):  Bytedance. Deep Exploration and Efficient Research Flow. a community-driven Deep Research framework that combines language models with tools like web search, crawling, and code execution.  ![**github stars**](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) [May 2025]
 1. [Enterprise Deep Research (EDR)](https://github.com/SalesforceAIResearch/enterprise-deep-research): Salesforce Enterprise Deep Research [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/SalesforceAIResearch/enterprise-deep-research?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Felo.ai Deep Research✍️](https://felo.ai/blog/free-deepseek-r1-ai-search/) [8 Feb 2025]
 1. [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) An open source implementation of OpenAI's ChatGPT Code interpreter. [May 2023]
+1. [local-deep-research](https://github.com/LearningCircuit/local-deep-research): Local and encrypted deep-research system supporting local/cloud LLMs and multiple search engines. ![**github stars**](https://img.shields.io/github/stars/LearningCircuit/local-deep-research?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
  ![**github stars**](https://img.shields.io/github/stars/ricklamers/gpt-code-ui?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [GPT Researcher](https://github.com/assafelovic/gpt-researcher): Autonomous agent designed for comprehensive online research [Jul 2023] / [GPT Newspaper](https://github.com/assafelovic/gpt-newspaper): Autonomous agent designed to create personalized newspapers [Jan 2024]
 1. [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/): Kimi Researcher is an AI-powered tool that assists with document analysis, literature review, and knowledge extraction. Moonshot AI (Chinese name: 月之暗面, meaning "The Dark Side of the Moon") is a Beijing-based company founded in March 2023. [20 Jun 2025]

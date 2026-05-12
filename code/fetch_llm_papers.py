@@ -14,19 +14,22 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import random
 import re
+import subprocess
 import sys
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Callable, Dict, List, Optional, Tuple
 
 CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
     sys.path.insert(0, str(CODE_DIR))
 
-from utils.http_utils import create_session, get_json
-from utils.path_utils import get_repo_root
+from utils.http_utils import create_session, get_json  # noqa: E402
+from utils.path_utils import get_repo_root  # noqa: E402
 
 
 # ---------------------------------------------------------------------------
@@ -93,6 +96,13 @@ TOPICS: Dict[str, List[str]] = {
         "context engineering large language models",
         "long context large language models",
         "retrieval augmented generation context window",
+    ],
+    "LLM Memory & Personalization": [
+        "memory mechanism large language model agents",
+        "long-term memory LLM agents",
+        "personalized large language models memory",
+        "conversation memory large language models agents",
+        "agent memory large language models",
     ],
     "Efficient LLMs: Training & Inference": [
         "efficient training transformers",
@@ -317,6 +327,85 @@ TOPICS: Dict[str, List[str]] = {
 }
 
 
+STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "based", "by", "for", "from", "in", "is", "it", "model",
+    "models", "large", "language", "llm", "llms", "of", "on", "or", "the", "to", "towards", "using",
+    "via", "with",
+}
+
+CORE_RELEVANCE_TERMS = (
+    "large language model", "large language models", "llm", "llms", "language model", "language models",
+    "chatgpt", "gpt-4", "gpt4", "foundation model", "foundation models", "transformer",
+    "transformers", "pretrained language", "pre-trained language", "instruction tuning", "prompt tuning",
+    "retrieval-augmented", "retrieval augmented", "vision-language", "multimodal", "tool use",
+    "agent", "agents", "text-to-sql", "code generation", "mixture-of-experts", "mixture of experts",
+    "lora", "quantization", "embedding", "state space model", "mamba", "rlhf", "alignment",
+)
+
+TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
+    "Reasoning in LLMs": (
+        "reasoning", "chain-of-thought", "chain of thought", "tree of thoughts", "math reasoning",
+        "logical reasoning", "test-time compute", "process reward", "verifiable reward",
+    ),
+    "LLM Agents": ("agent", "agents", "autonomous", "planning", "multi-agent", "agentic"),
+    "Retrieval-Augmented Generation (RAG)": ("retrieval-augmented", "retrieval augmented", "rag", "dense retrieval"),
+    "GUI Agents": ("gui", "computer use", "web agent", "screen", "ui agent"),
+    "Hallucination in LLMs": ("hallucination", "hallucinations", "factuality", "faithfulness", "sycophancy"),
+    "Prompt Engineering & In-Context Learning": (
+        "prompt", "prompting", "in-context", "few-shot", "demonstrations", "prompt engineering",
+    ),
+    "Context Engineering": ("long context", "context window", "context engineering", "prompt compression"),
+    "LLM Memory & Personalization": (
+        "memory", "long-term memory", "conversation memory", "personalized", "personalization",
+        "user preference", "agent memory",
+    ),
+    "Efficient LLMs: Training & Inference": (
+        "efficient", "inference", "serving", "compression", "quantization", "pruning", "distillation",
+        "speculative decoding", "flashattention", "pagedattention",
+    ),
+    "Alignment & RLHF": ("alignment", "rlhf", "human feedback", "preference", "reward model", "dpo"),
+    "Evaluation of LLMs & Agents": ("evaluation", "benchmark", "bench", "leaderboard", "judge"),
+    "Multimodal LLMs": ("multimodal", "vision-language", "vision language", "video", "image", "audio"),
+    "Small Language Models": ("small language", "slm", "mobilellm", "phi", "on-device"),
+    "Mixture of Experts": ("mixture of experts", "mixture-of-experts", "moe", "routing"),
+    "LLMs for Healthcare & Science": ("healthcare", "clinical", "medical", "medicine", "science", "chemistry", "biology"),
+    "LLMs for Code": ("code", "program synthesis", "code generation", "software engineering", "verilog"),
+    "Tabular Data & NL2SQL": ("tabular", "table", "text-to-sql", "nl2sql", "sql"),
+    "Data for LLMs": ("data", "dataset", "pretraining data", "synthetic data", "data curation"),
+    "Trustworthy & Secure LLMs": (
+        "trustworthy", "security", "safety", "jailbreak", "red-teaming", "adversarial", "privacy",
+    ),
+    "LLM Overview & History": ("survey", "overview", "history", "foundation models", "aigc", "chatgpt"),
+    "AIOps & Observability": ("aiops", "observability", "monitoring", "logs", "anomaly"),
+    "Federated & Personalized AI": ("federated", "personalized", "personalization", "private data"),
+    "Self-Supervised & Representation Learning": (
+        "self-supervised", "self supervised", "representation learning", "contrastive", "masked language",
+    ),
+    "GraphRAG & Knowledge Graphs": ("graphrag", "knowledge graph", "graph rag", "graph retrieval"),
+    "Embeddings & Vector Search": ("embedding", "embeddings", "vector", "semantic similarity", "dense retrieval"),
+    "Function Calling & Tool Use": ("tool", "tools", "function calling", "api", "tool learning"),
+    "LLM for Robotics & Embodied AI": (
+        "robot", "robotics", "embodied", "vision-language-action", "vla", "physical world",
+        "grounded language", "parse and perceive",
+    ),
+    "LLMOps & Model Serving": ("llmops", "serving", "deployment", "continuous batching", "pagedattention"),
+    "PEFT & LoRA": ("lora", "qlora", "adapter", "parameter-efficient", "peft", "prefix tuning"),
+    "Instruction Tuning & SFT": ("instruction tuning", "instruction following", "sft", "self-instruct", "alpaca"),
+    "RLAIF & Constitutional AI": ("rlaif", "constitutional ai", "ai feedback", "harmless"),
+    "RLVR & Process Reward Models": ("rlvr", "process reward", "verifiable reward", "grpo", "reward shaping"),
+    "Inference-Time Scaling & Test-Time Compute": (
+        "test-time", "inference-time", "thinking", "best-of-n", "self-consistency", "verifier",
+    ),
+    "Scaling Laws": ("scaling law", "scaling laws", "compute-optimal", "chinchilla", "emergent abilities"),
+    "LLM Architecture Innovations": (
+        "architecture", "attention", "mamba", "rwkv", "rope", "gqa", "state space", "retnet", "kv cache",
+    ),
+    "Continual Learning & Model Merging": (
+        "continual", "catastrophic forgetting", "model merging", "model soup", "knowledge editing", "lifelong",
+    ),
+}
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -337,6 +426,83 @@ def format_month_year(year: int, month: int) -> str:
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     return f"[{months[month - 1]} {year}]"
+
+
+def _paper_text(paper: Dict) -> str:
+    return " ".join(
+        str(paper.get(key) or "") for key in ("title", "abstract", "venue")
+    ).lower()
+
+
+def _contains_term(text: str, term: str) -> bool:
+    term = term.lower()
+    if len(term) <= 4 and term.isalnum():
+        return bool(re.search(rf"\b{re.escape(term)}\b", text))
+    return term in text
+
+
+def _has_core_relevance(paper: Dict) -> bool:
+    text = _paper_text(paper)
+    return any(_contains_term(text, term) for term in CORE_RELEVANCE_TERMS)
+
+
+def _topic_score(paper: Dict, topic: str) -> float:
+    text = _paper_text(paper)
+    score = 0.0
+
+    for keyword in TOPIC_KEYWORDS.get(topic, ()):
+        if _contains_term(text, keyword):
+            score += 3.0 if " " in keyword or "-" in keyword else 1.5
+
+    for query in TOPICS.get(topic, []):
+        tokens = [t for t in re.findall(r"[a-z0-9]+", query.lower()) if t not in STOPWORDS and len(t) > 2]
+        if not tokens:
+            continue
+        hits = sum(1 for token in tokens if _contains_term(text, token))
+        if hits >= min(2, len(tokens)):
+            score += hits / len(tokens)
+
+    return score
+
+
+def infer_paper_topics(paper: Dict, max_topics: int = 3) -> List[str]:
+    """Infer likely topic tags from title/abstract text for compact output."""
+    existing = paper.get("topics") or []
+    if existing:
+        return list(dict.fromkeys(existing))[:max_topics]
+
+    scored = [
+        (topic, _topic_score(paper, topic))
+        for topic in TOPICS
+    ]
+    topics = [topic for topic, score in sorted(scored, key=lambda item: item[1], reverse=True) if score > 0]
+    if not topics and _has_core_relevance(paper):
+        topics = ["LLM Overview & History"]
+    return topics[:max_topics]
+
+
+def _is_relevant_paper(paper: Dict, topic: str) -> bool:
+    """Keep broad Semantic Scholar searches from drifting away from the LLM landscape."""
+    fields = paper.get("fieldsOfStudy") or []
+    if "Computer Science" not in fields:
+        return False
+    if not _has_core_relevance(paper):
+        return False
+    return _topic_score(paper, topic) > 0
+
+
+class QueryFetchError(RuntimeError):
+    """Raised when a Semantic Scholar query cannot be fetched after retries."""
+
+
+class TopicFetchIncomplete(RuntimeError):
+    """Raised when a topic has partial results but one or more queries failed."""
+
+    def __init__(self, topic: str, papers: List[Dict], failed_queries: List[str]) -> None:
+        super().__init__(f"{topic}: {len(failed_queries)} query/query(s) failed")
+        self.topic = topic
+        self.papers = papers
+        self.failed_queries = failed_queries
 
 
 # ---------------------------------------------------------------------------
@@ -363,14 +529,21 @@ class SemanticScholarFetcher:
         self,
         *,
         user_agent: Optional[str],
+        api_key: Optional[str],
         timeout: int,
         max_retries: int,
         backoff: float,
+        request_delay: float,
+        jitter: float,
     ) -> None:
         self.session = create_session(user_agent)
+        if api_key:
+            self.session.headers.update({"x-api-key": api_key})
         self.timeout = timeout
         self.max_retries = max_retries
         self.backoff = backoff
+        self.request_delay = request_delay
+        self.jitter = jitter
 
     def search_papers(self, query: str, limit: int = 100) -> List[Dict]:
         params = {
@@ -386,20 +559,43 @@ class SemanticScholarFetcher:
             max_retries=self.max_retries,
             backoff=self.backoff,
         )
-        time.sleep(1)  # be polite to the API
+        if self.request_delay > 0:
+            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
         if not data:
-            return []
+            raise QueryFetchError(f"Semantic Scholar query failed after retries: {query}")
         return data.get("data", [])
 
     def fetch_topic(
-        self, queries: List[str], top_n: int, min_citations: int
+        self,
+        topic: str,
+        queries: List[str],
+        top_n: int,
+        min_citations: int,
+        query_cache: Dict[str, List[Dict]],
+        cache_updated: Optional[Callable[[], None]] = None,
     ) -> List[Dict]:
         """Aggregate results for multiple queries, deduplicate, filter, sort."""
         seen: set = set()
         papers: List[Dict] = []
+        failed_queries: List[str] = []
 
         for query in queries:
-            for paper in self.search_papers(query):
+            cache_key = query.strip().lower()
+            if cache_key in query_cache:
+                search_results = query_cache[cache_key]
+                print(f"  [cache] {query}")
+            else:
+                try:
+                    search_results = self.search_papers(query)
+                except QueryFetchError as exc:
+                    print(f"  [WARN] {exc}")
+                    failed_queries.append(query)
+                    break
+                query_cache[cache_key] = search_results
+                if cache_updated:
+                    cache_updated()
+
+            for paper in search_results:
                 pid = paper.get("paperId")
                 if pid and pid not in seen:
                     seen.add(pid)
@@ -408,10 +604,16 @@ class SemanticScholarFetcher:
         filtered = [
             p for p in papers
             if p.get("citationCount", 0) >= min_citations
-            and p.get("fieldsOfStudy")
-            and "Computer Science" in p.get("fieldsOfStudy", [])
+            and _is_relevant_paper(p, topic)
         ]
         filtered.sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+
+        for paper in filtered:
+            paper["topics"] = list(dict.fromkeys([*(paper.get("topics") or []), topic]))
+
+        if failed_queries:
+            raise TopicFetchIncomplete(topic, filtered[:top_n], failed_queries)
+
         return filtered[:top_n]
 
 
@@ -425,7 +627,13 @@ def _paper_arxiv_url(paper: Dict) -> Optional[str]:
     return f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else None
 
 
+def _paper_link(paper: Dict) -> str:
+    return _paper_arxiv_url(paper) or paper.get("link") or paper.get("url") or "#"
+
+
 def _paper_date_str(paper: Dict) -> str:
+    if paper.get("date_str"):
+        return paper["date_str"]
     ext = paper.get("externalIds") or {}
     arxiv_id = ext.get("ArXiv")
     if arxiv_id:
@@ -462,6 +670,8 @@ def format_paper_console(paper: Dict, rank: int) -> str:
 
 def _short_description(paper: Dict) -> str:
     """Return a short description from the abstract (first sentence, max 200 chars)."""
+    if paper.get("description"):
+        return paper["description"].strip()
     abstract = (paper.get("abstract") or "").strip()
     if not abstract:
         return ""
@@ -480,11 +690,11 @@ def _short_description(paper: Dict) -> str:
 def format_compact_entry(paper: Dict, rank: int = 0) -> str:
     """Format: N. [Title📑](url): description. [Mon YYYY] (Citations: NNN)"""
     title = paper.get("title", "No title")
-    arxiv_url = _paper_arxiv_url(paper)
-    link = arxiv_url or paper.get("url", "#")
+    link = _paper_link(paper)
     desc = _short_description(paper)
     date_str = _paper_date_str(paper)
     citations = paper.get("citationCount", 0)
+    topics = infer_paper_topics(paper)
 
     prefix = f"{rank}." if rank > 0 else "1."
     entry = f"{prefix} [{title}📑]({link})"
@@ -492,30 +702,138 @@ def format_compact_entry(paper: Dict, rank: int = 0) -> str:
         entry += f": {desc}"
     if date_str:
         entry += f" {date_str}"
-    entry += f" (Citations: {citations:,})"
+    topic_str = f"; Topics: {', '.join(topics)}" if topics else ""
+    entry += f" (Citations: {citations:,}{topic_str})"
     return entry
 
 
-def _load_checkpoint(checkpoint_file: str) -> tuple[List[Dict], set, List[str]]:
-    """Load checkpoint: returns (papers, seen_ids, completed_topics)."""
+def _parse_compact_entry(line: str) -> Optional[Dict]:
+    if not re.match(r"^\d+\. ", line):
+        return None
+
+    citation_match = re.search(r" \(Citations: ([\d,]+)(?:; Topics: (.*))?\)$", line)
+    if not citation_match:
+        return None
+
+    body = line[: citation_match.start()]
+    link_match = re.match(r"^\d+\. \[(.+?)\]\(([^)]+)\)(.*)$", body)
+    if not link_match:
+        return None
+
+    title, link, remainder = link_match.groups()
+    title = re.sub(r"(?:📑|≡ƒôæ)$", "", title).strip()
+    date_str = ""
+    date_match = re.search(r" (\[[A-Z][a-z]{2} \d{4}\])$", remainder)
+    if date_match:
+        date_str = date_match.group(1)
+        remainder = remainder[: date_match.start()]
+
+    abstract = remainder[2:].strip() if remainder.startswith(": ") else ""
+    topics = []
+    if citation_match.group(2):
+        topics = [topic.strip() for topic in citation_match.group(2).split(",") if topic.strip()]
+
+    paper = {
+        "paperId": link,
+        "title": title,
+        "link": link,
+        "url": link,
+        "abstract": abstract,
+        "description": abstract,
+        "date_str": date_str,
+        "citationCount": int(citation_match.group(1).replace(",", "")),
+        "topics": topics,
+    }
+    if not topics:
+        paper["topics"] = infer_paper_topics(paper)
+    return paper
+
+
+def _compact_entry_blocks(markdown_text: str) -> List[str]:
+    blocks: List[str] = []
+    current: List[str] = []
+
+    for line in markdown_text.splitlines():
+        if re.match(r"^\d+\. ", line):
+            if current:
+                blocks.append(" ".join(part.strip() for part in current if part.strip()))
+            current = [line]
+        elif current and not line.startswith("#") and line.strip():
+            current.append(line)
+
+    if current:
+        blocks.append(" ".join(part.strip() for part in current if part.strip()))
+    return blocks
+
+
+def _load_existing_markdown(output_file: str, source_file: Optional[str] = None) -> List[Dict]:
+    if source_file == "-":
+        markdown_text = sys.stdin.read()
+    elif source_file and source_file.startswith("git:"):
+        repo_root = get_repo_root(__file__)
+        markdown_bytes = subprocess.check_output(
+            ["git", "show", source_file.removeprefix("git:")],
+            cwd=repo_root,
+        )
+        markdown_text = markdown_bytes.decode("utf-8")
+    else:
+        path = Path(source_file or output_file)
+        if not path.exists():
+            return []
+        markdown_text = path.read_text(encoding="utf-8")
+
+    papers = []
+    for line in _compact_entry_blocks(markdown_text):
+        paper = _parse_compact_entry(line)
+        if paper:
+            papers.append(paper)
+    return papers
+
+
+def _topic_counts(papers: List[Dict]) -> Dict[str, int]:
+    counts: Dict[str, int] = {}
+    for paper in papers:
+        for topic in infer_paper_topics(paper):
+            counts[topic] = counts.get(topic, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
+
+
+def _load_checkpoint(checkpoint_file: str) -> tuple[List[Dict], set, List[str], Dict[str, List[Dict]], List[str]]:
+    """Load checkpoint with backward compatibility for older checkpoint files."""
     path = Path(checkpoint_file)
     if not path.exists():
-        return [], set(), []
+        return [], set(), [], {}, []
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         papers = data.get("papers", [])
         completed = data.get("completed_topics", [])
+        query_cache = data.get("query_cache", {})
+        failed_queries = data.get("failed_queries", [])
         seen = {p["paperId"] for p in papers if p.get("paperId")}
-        print(f"  [resume] Loaded {len(papers)} papers, {len(completed)} completed topics from checkpoint.")
-        return papers, seen, completed
+        print(
+            f"  [resume] Loaded {len(papers)} papers, {len(completed)} completed topics, "
+            f"{len(query_cache)} cached queries from checkpoint."
+        )
+        return papers, seen, completed, query_cache, failed_queries
     except Exception as exc:
         print(f"  [WARN] Could not read checkpoint ({exc}); starting fresh.")
-        return [], set(), []
+        return [], set(), [], {}, []
 
 
-def _save_checkpoint(checkpoint_file: str, papers: List[Dict], completed_topics: List[str]) -> None:
+def _save_checkpoint(
+    checkpoint_file: str,
+    papers: List[Dict],
+    completed_topics: List[str],
+    query_cache: Dict[str, List[Dict]],
+    failed_queries: List[str],
+) -> None:
     """Persist current state to checkpoint JSON."""
-    data = {"completed_topics": completed_topics, "papers": papers}
+    data = {
+        "completed_topics": completed_topics,
+        "failed_queries": failed_queries,
+        "query_cache": query_cache,
+        "papers": papers,
+    }
     Path(checkpoint_file).write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
 
@@ -526,8 +844,14 @@ def _flush_output(output_file: str, papers: List[Dict], min_citations: int) -> L
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("# LLM Landscape Papers (Citation \u2265 {})\n\n".format(min_citations))
         f.write(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*  \n")
-        f.write("*Source: Semantic Scholar API \u2014 Computer Science papers only*  \n")
+        f.write("*Source: Semantic Scholar API and local topic inference \u2014 Computer Science papers only*  \n")
         f.write(f"*Total papers: {len(sorted_papers)}*\n\n")
+        counts = _topic_counts(sorted_papers)
+        if counts:
+            f.write("## Topic Coverage\n\n")
+            for topic, count in counts.items():
+                f.write(f"- {topic}: {count}\n")
+            f.write("\n## Papers\n\n")
         f.write("\n".join(compact_lines) + "\n")
     return compact_lines
 
@@ -593,6 +917,18 @@ def main() -> None:
     parser.add_argument("--max-retries", type=int, default=5)
     parser.add_argument("--backoff", type=float, default=1.0)
     parser.add_argument(
+        "--request-delay", type=float, default=2.0,
+        help="Delay between Semantic Scholar requests in seconds (default: 2.0)."
+    )
+    parser.add_argument(
+        "--jitter", type=float, default=0.5,
+        help="Random extra delay between requests in seconds (default: 0.5)."
+    )
+    parser.add_argument(
+        "--api-key-env", default="S2_API_KEY",
+        help="Environment variable containing a Semantic Scholar API key, if available."
+    )
+    parser.add_argument(
         "--user-agent", default="Academic-Research-Tool/1.0",
         help="HTTP User-Agent header."
     )
@@ -604,13 +940,36 @@ def main() -> None:
         "--reset", action="store_true",
         help="Ignore any existing checkpoint and start from scratch."
     )
+    parser.add_argument(
+        "--annotate-existing", action="store_true",
+        help="Rewrite the existing output with inferred topic tags and coverage without calling the API."
+    )
+    parser.add_argument(
+        "--annotate-source",
+        help="Optional markdown source for --annotate-existing; use '-' for stdin or 'git:<rev>:<path>'."
+    )
     args = parser.parse_args()
+
+    root_dir = get_repo_root(__file__)
+    output_file = args.output or str(root_dir / "section" / "x_llm_papers.md")
+
+    if args.annotate_existing:
+        existing_papers = _load_existing_markdown(output_file, args.annotate_source)
+        if not existing_papers:
+            print(f"No compact paper entries found in: {output_file}")
+            return
+        _flush_output(output_file, existing_papers, args.min_citations)
+        print(f"Annotated {len(existing_papers)} existing papers with inferred topics: {output_file}")
+        return
 
     fetcher = SemanticScholarFetcher(
         user_agent=args.user_agent,
+        api_key=os.environ.get(args.api_key_env),
         timeout=args.timeout,
         max_retries=args.max_retries,
         backoff=args.backoff,
+        request_delay=args.request_delay,
+        jitter=args.jitter,
     )
 
     # Optionally filter topics
@@ -627,8 +986,6 @@ def main() -> None:
                 print(f"  {t}")
             return
 
-    root_dir = get_repo_root(__file__)
-    output_file = args.output or str(root_dir / "section" / "x_llm_papers.md")
     checkpoint_file = str(Path(output_file).with_suffix(".checkpoint.json"))
 
     # Load or reset checkpoint
@@ -636,7 +993,27 @@ def main() -> None:
         Path(checkpoint_file).unlink()
         print("  [reset] Checkpoint deleted.")
 
-    global_papers, global_seen, completed_topics = _load_checkpoint(checkpoint_file)
+    global_papers, global_seen, completed_topics, query_cache, failed_queries = _load_checkpoint(checkpoint_file)
+
+    def persist_progress() -> None:
+        _save_checkpoint(checkpoint_file, global_papers, completed_topics, query_cache, failed_queries)
+
+    def merge_papers(papers: List[Dict], topic_name: str) -> int:
+        added = 0
+        by_id = {paper.get("paperId"): paper for paper in global_papers if paper.get("paperId")}
+        for paper in papers:
+            pid = paper.get("paperId")
+            if not pid:
+                continue
+            if pid in by_id:
+                existing_topics = by_id[pid].get("topics") or []
+                by_id[pid]["topics"] = list(dict.fromkeys([*existing_topics, topic_name]))
+            elif pid not in global_seen:
+                paper["topics"] = list(dict.fromkeys([*(paper.get("topics") or []), topic_name]))
+                global_seen.add(pid)
+                global_papers.append(paper)
+                added += 1
+        return added
 
     # Collect all papers across every topic into a single deduplicated pool
     for topic_name, queries in topics_to_run.items():
@@ -645,21 +1022,37 @@ def main() -> None:
             continue
 
         print(f"\n[{topic_name}] Querying {len(queries)} search term(s)...")
-        papers = fetcher.fetch_topic(queries, top_n=args.top_n, min_citations=args.min_citations)
-        for paper in papers:
-            pid = paper.get("paperId")
-            if pid and pid not in global_seen:
-                global_seen.add(pid)
-                global_papers.append(paper)
+        try:
+            papers = fetcher.fetch_topic(
+                topic_name,
+                queries,
+                top_n=args.top_n,
+                min_citations=args.min_citations,
+                query_cache=query_cache,
+                cache_updated=persist_progress,
+            )
+        except TopicFetchIncomplete as exc:
+            added = merge_papers(exc.papers, topic_name)
+            failed_queries.extend(exc.failed_queries)
+            persist_progress()
+            _flush_output(output_file, global_papers, args.min_citations)
+            print(
+                f"  [pause] {topic_name} incomplete: {len(exc.failed_queries)} failed query/query(s), "
+                f"{added} partial paper(s) added. Re-run without --reset to resume."
+            )
+            return
+
+        added = merge_papers(papers, topic_name)
         completed_topics.append(topic_name)
-        print(f"  -> {len(papers)} papers (pool size: {len(global_papers)})")
+        failed_queries = []
+        print(f"  -> {len(papers)} papers, {added} new (pool size: {len(global_papers)})")
 
         # Persist progress after every topic so we can resume on interruption
-        _save_checkpoint(checkpoint_file, global_papers, completed_topics)
+        persist_progress()
         _flush_output(output_file, global_papers, args.min_citations)
 
     # Final flush (updates timestamp)
-    compact_lines = _flush_output(output_file, global_papers, args.min_citations)
+    _flush_output(output_file, global_papers, args.min_citations)
 
     # Print to console
     sorted_papers = sorted(global_papers, key=lambda p: p.get("citationCount", 0), reverse=True)

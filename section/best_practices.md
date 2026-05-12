@@ -104,6 +104,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Searching for Best Practices in Retrieval-Augmented Generation📑](https://arxiv.org/abs/2407.01219): `Best Performance Practice`: Query Classification, Hybrid with HyDE (retrieval), monoT5 (reranking), Reverse (repacking), Recomp (summarization). `Balanced Efficiency Practice`: Query Classification, Hybrid (retrieval), TILDEv2 (reranking), Reverse (repacking), Recomp (summarization). [1 Jul 2024]
 - [Self-RAG💡](https://arxiv.org/pdf/2310.11511.pdf): Critic tokens (IsREL/IsSUP/IsUse) guide retrieval and generation; adaptive on-demand retrieval. [Oct 2023] [git](https://github.com/AkariAsai/self-rag)
  ![**github stars**](https://img.shields.io/github/stars/AkariAsai/self-rag?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Skill-RAG📑](https://arxiv.org/abs/2604.15771): Failure-state-aware retrieval augmentation using hidden-state probing and skill routing. [Apr 2026]
 - [Sufficient Context: A New Lens on Retrieval Augmented Generation Systems📑](https://arxiv.org/abs/2411.06037): Use Gemini 1.5 Pro (1-shot) as a `Sufficient Context AutoRater` to verify if enough context is provided. Larger models perform well with sufficient context but often make wrong guesses when information is missing. Accuracy improves by combining `Model Self-Rated Confidence` with the `Sufficient Context AutoRater`. [9 Nov 2024]
 - [The Power of Noise: Redefining Retrieval for RAG Systems📑](https://arxiv.org/abs/2401.14887): No more than 2-5 relevant docs + some amount of random noise to the LLM context maximizes the accuracy of the RAG. [26 Jan 2024]
 - [Towards AI Search Paradigm📑](https://arxiv.org/abs/2506.17188): Modular 4-agent system (orchestrator, planner, executor, writer) using DAGs for retrieval-intensive search. [Jun 2025]
@@ -115,48 +116,48 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [Retrieval-Augmented Generation for Large Language Models: A Survey📑](https://arxiv.org/abs/2312.10997): Comprehensive review of Naive/Advanced/Modular RAG paradigms and evaluation frameworks. [Dec 2023] (Citations: 2,570)
 1. [Self-RAG📑](https://arxiv.org/abs/2310.11511): Trains LMs to retrieve on-demand and generate reflection tokens to control factuality. [Oct 2023] (Citations: 1,203)
 1. [GraphRAG📑](https://arxiv.org/abs/2404.16130): Builds an entity graph + community summaries to answer global, corpus-level questions. [Apr 2024] (Citations: 835)
-1. [RAG Meets LLMs: Survey📑](https://arxiv.org/abs/2405.06211): Surveys Retrieval-Augmented LLMs (RA-LLMs), limitations, and future directions. [May 2024] (Citations: 531)
-1. [Active Retrieval Augmented Generation (FLARE)📑](https://arxiv.org/abs/2305.06983): Iteratively anticipates future content and retrieves when confidence is low for long-form tasks. [May 2023] (Citations: 522)
+1. [RAG Meets LLMs: Survey📑](https://arxiv.org/abs/2405.06211): Surveys Retrieval-Augmented LLMs (RA-LLMs), limitations, and future directions. [May 2024] (Citations: 835)
+1. [Active Retrieval Augmented Generation (FLARE)📑](https://arxiv.org/abs/2305.06983): Iteratively anticipates future content and retrieves when confidence is low for long-form tasks. [May 2023] (Citations: 634)
+1. [RAG for AIGC Survey📑](https://arxiv.org/abs/2402.19473): Surveys RAG foundations and applications for AI-generated content across modalities. [Feb 2024] (Citations: 571)
+1. [Medical RAG Benchmark (MIRAGE)📑](https://arxiv.org/abs/2402.13178): 7,663 medical QA questions; toolkit shows RAG combos boosting accuracy up to 18%. [Feb 2024] (Citations: 491)
 1. [Benchmarking LLMs in RAG (RGB)📑](https://arxiv.org/abs/2309.01431): Benchmarks noise robustness, negative rejection, integration, and counterfactual robustness. [Sep 2023] (Citations: 481)
 1. [RAGAs📑](https://arxiv.org/abs/2309.15217): Reference-free evaluation metrics for retrieval and generation fidelity in RAG pipelines. [Sep 2023] (Citations: 470)
-1. [Medical RAG Benchmark (MIRAGE)📑](https://arxiv.org/abs/2402.13178): 7,663 medical QA questions; toolkit shows RAG combos boosting accuracy up to 18%. [Feb 2024] (Citations: 404)
-1. [Adaptive-RAG📑](https://arxiv.org/abs/2403.14403): Dynamically selects RAG strategies based on query complexity. [Mar 2024] (Citations: 369)
-1. [RAG for AIGC Survey📑](https://arxiv.org/abs/2402.19473): Surveys RAG foundations and applications for AI-generated content across modalities. [Feb 2024] (Citations: 497)
+1. [Adaptive-RAG📑](https://arxiv.org/abs/2403.14403): Dynamically selects RAG strategies based on query complexity. [Mar 2024] (Citations: 459)
+1. [The Power of Noise📑](https://arxiv.org/abs/2401.14887): 2-5 relevant docs + random noise maximizes RAG accuracy. [Jan 2024] (Citations: 384)
+1. [Domain Adaptation for RAG📑](https://arxiv.org/abs/2210.02627): Joint training of retriever and generator for domain-specific knowledge bases. [Oct 2022] (Citations: 329)
 1. [RAFT📑](https://arxiv.org/abs/2403.10131): Fine-tuning with distractor documents improves domain-specific RAG open-book in-domain QA. [Mar 2024] (Citations: 312)
-1. [The Power of Noise📑](https://arxiv.org/abs/2401.14887): 2-5 relevant docs + random noise maximizes RAG accuracy. [Jan 2024] (Citations: 329)
-1. [Domain Adaptation for RAG📑](https://arxiv.org/abs/2210.02627): Joint training of retriever and generator for domain-specific knowledge bases. [Oct 2022] (Citations: 258)
 1. [Graph RAG Survey📑](https://arxiv.org/abs/2408.08921): Comprehensive survey of GraphRAG methodologies and applications. [Aug 2024] (Citations: 306)
-1. [Evaluation of RAG: A Survey📑](https://arxiv.org/abs/2405.07437): Unifies evaluation metrics and benchmarks for retrieval and generation components. [May 2024] (Citations: 218)
-1. [MultiHop-RAG📑](https://arxiv.org/abs/2401.15391): Benchmark for multi-hop queries requiring multi-evidence retrieval and reasoning. [Jan 2024] (Citations: 206)
+1. [Agentic RAG Survey📑](https://arxiv.org/abs/2501.09136): Taxonomy and design patterns for Agentic RAG workflows. [Jan 2025] (Citations: 280)
+1. [LightRAG📑](https://arxiv.org/abs/2410.05779): Graph-based indexing and incremental updates for fast, accurate RAG. [Oct 2024] (Citations: 268)
+1. [Evaluation of RAG: A Survey📑](https://arxiv.org/abs/2405.07437): Unifies evaluation metrics and benchmarks for retrieval and generation components. [May 2024] (Citations: 257)
+1. [G-Retriever📑](https://arxiv.org/abs/2402.07630): Prize-Collecting Steiner Tree formulation for textual graph RAG QA. [Feb 2024] (Citations: 251)
+1. [KG RAG for Customer Support📑](https://arxiv.org/abs/2404.17723): Builds KG from tickets to improve retrieval and QA quality. [Apr 2024] (Citations: 219)
+1. [Chain of Agents (long-context)📑](https://arxiv.org/abs/2406.02818): Multi-agent chain processes long inputs via segmented reading and synthesis. [Jun 2024] (Citations: 219)
 1. [RAGTruth📑](https://arxiv.org/abs/2401.00396): Word-level hallucination corpus for RAG responses across domains and tasks. [Jan 2024] (Citations: 209)
-1. [G-Retriever📑](https://arxiv.org/abs/2402.07630): Prize-Collecting Steiner Tree formulation for textual graph RAG QA. [Feb 2024] (Citations: 202)
-1. [Seven Failure Points in RAG📑](https://arxiv.org/abs/2401.05856): Engineering failures and lessons learned across domains. [Jan 2024] (Citations: 186)
-1. [KG RAG for Customer Support📑](https://arxiv.org/abs/2404.17723): Builds KG from tickets to improve retrieval and QA quality. [Apr 2024] (Citations: 152)
+1. [MultiHop-RAG📑](https://arxiv.org/abs/2401.15391): Benchmark for multi-hop queries requiring multi-evidence retrieval and reasoning. [Jan 2024] (Citations: 206)
+1. [CRAG📑](https://arxiv.org/abs/2401.15884): Retrieval evaluator triggers web search and decompose-recompose filtering. [Jan 2024] (Citations: 199)
 1. [RankRAG📑](https://arxiv.org/abs/2407.02485): Instruction-tunes one LLM for both context ranking and answer generation. [Jul 2024] (Citations: 196)
-1. [Chain of Agents (long-context)📑](https://arxiv.org/abs/2406.02818): Multi-agent chain processes long inputs via segmented reading and synthesis. [Jun 2024] (Citations: 180)
-1. [RAG Privacy📑](https://arxiv.org/abs/2402.16893): Analyzes privacy risks in RAG databases and LLM training data leakage. [Feb 2024] (Citations: 133)
-1. [RAG vs Fine-tuning📑](https://arxiv.org/abs/2401.08406): Compares RAG and fine-tuning pipelines with agriculture case study. [Jan 2024] (Citations: 148)
-1. [RQ-RAG📑](https://arxiv.org/abs/2404.00610): Learns to rewrite, decompose, and disambiguate queries to improve retrieval. [Apr 2024] (Citations: 157)
-1. [Agentic RAG Survey📑](https://arxiv.org/abs/2501.09136): Taxonomy and design patterns for Agentic RAG workflows. [Jan 2025] (Citations: 202)
-1. [CRAG📑](https://arxiv.org/abs/2401.15884): Retrieval evaluator triggers web search and decompose-recompose filtering. [Jan 2024] (Citations: 158)
-1. [GNN-RAG📑](https://arxiv.org/abs/2405.20139): Combines GNN reasoning and LLM RAG for KGQA; excels on multi-hop queries. [May 2024] (Citations: 152)
-1. [eRAG📑](https://arxiv.org/abs/2404.13781): Document-level downstream evaluation correlates better with end-to-end RAG. [Apr 2024] (Citations: 150)
+1. [RAG Privacy📑](https://arxiv.org/abs/2402.16893): Analyzes privacy risks in RAG databases and LLM training data leakage. [Feb 2024] (Citations: 187)
+1. [Seven Failure Points in RAG📑](https://arxiv.org/abs/2401.05856): Engineering failures and lessons learned across domains. [Jan 2024] (Citations: 186)
+1. [VisRAG📑](https://arxiv.org/abs/2410.10594): Vision-based page-as-image retrieval for multimodal document RAG; outperforms text-only pipelines. [Oct 2024] (Citations: 183)
+1. [RQ-RAG📑](https://arxiv.org/abs/2404.00610): Learns to rewrite, decompose, and disambiguate queries to improve retrieval. [Apr 2024] (Citations: 181)
+1. [HybridRAG📑](https://arxiv.org/abs/2408.04948): Combines GraphRAG + VectorRAG; outperforms both for finance Q&A. [Aug 2024] (Citations: 178)
+1. [Blended RAG📑](https://arxiv.org/abs/2404.07220): Hybrid dense+sparse retrievers with query strategies improve IR and QA. [Apr 2024] (Citations: 162)
+1. [PoisonedRAG📑](https://arxiv.org/abs/2402.07867): Knowledge corpus poisoning attacks against RAG achieve high attack success rates. [Feb 2024] (Citations: 157)
 1. [FlashRAG📑](https://arxiv.org/abs/2405.13576): Modular toolkit implementing 16 RAG methods and 38 benchmarks. [May 2024] (Citations: 157)
-1. [HybridRAG📑](https://arxiv.org/abs/2408.04948): Combines GraphRAG + VectorRAG; outperforms both for finance Q&A. [Aug 2024] (Citations: 149)
-1. [Clinical RAG for Hepatology📑](https://www.semanticscholar.org/paper/965a0969b460f9246158d88fb28e21c5d80d0a8b): Structured guideline reformatting + prompt engineering boosts CDSS accuracy. [—] (Citations: 118)
-1. [Blended RAG📑](https://arxiv.org/abs/2404.07220): Hybrid dense+sparse retrievers with query strategies improve IR and QA. [Apr 2024] (Citations: 115)
-1. [LightRAG📑](https://arxiv.org/abs/2410.05779): Graph-based indexing and incremental updates for fast, accurate RAG. [Oct 2024] (Citations: 108)
+1. [RAG vs Fine-tuning📑](https://arxiv.org/abs/2401.08406): Compares RAG and fine-tuning pipelines with agriculture case study. [Jan 2024] (Citations: 156)
+1. [GNN-RAG📑](https://arxiv.org/abs/2405.20139): Combines GNN reasoning and LLM RAG for KGQA; excels on multi-hop queries. [May 2024] (Citations: 152)
 1. [GraphRAG Survey (2025)📑](https://arxiv.org/abs/2501.00309): Holistic framework and domain-tailored designs for GraphRAG. [Jan 2025] (Citations: 151)
-1. [Structured Output RAG📑](https://arxiv.org/abs/2404.08189): RAG reduces hallucinations in structured workflow generation. [Apr 2024] (Citations: 133)
+1. [eRAG📑](https://arxiv.org/abs/2404.13781): Document-level downstream evaluation correlates better with end-to-end RAG. [Apr 2024] (Citations: 150)
+1. [Best Practices in RAG📑](https://arxiv.org/abs/2407.01219): Query classification + hybrid + HyDE + monoT5 reranking + Recomp summarization. [Jul 2024] (Citations: 148)
+1. [ColPali📑](https://arxiv.org/abs/2407.01449): Vision-Language Models for efficient document page retrieval outperform text-only OCR pipelines. [Jul 2024] (Citations: 138)
 1. [HippoRAG📑](https://arxiv.org/abs/2405.14831): KG + Personalized PageRank for efficient long-term memory integration. [May 2024] (Citations: 136)
-1. [VisRAG📑](https://arxiv.org/abs/2410.10594): Vision-based page-as-image retrieval for multimodal document RAG; outperforms text-only pipelines. [Oct 2024] (Citations: 135)
+1. [RAG vs Long-Context LLMs📑](https://arxiv.org/abs/2407.16833): Long-context consistently outperforms RAG on average; RAG retains cost advantage. [Jul 2024] (Citations: 136)
+1. [Structured Output RAG📑](https://arxiv.org/abs/2404.08189): RAG reduces hallucinations in structured workflow generation. [Apr 2024] (Citations: 133)
+1. [RAG for NLP Survey📑](https://arxiv.org/abs/2407.13193): Survey of RAG frameworks across NLP tasks: modules, training, and adaptation. [Jul 2024] (Citations: 132)
 1. [Medical Graph RAG📑](https://arxiv.org/abs/2408.04187): Hierarchical knowledge graph for safe medical LLM RAG on clinical notes. [Aug 2024] (Citations: 122)
-1. [Best Practices in RAG📑](https://arxiv.org/abs/2407.01219): Query classification + hybrid + HyDE + monoT5 reranking + Recomp summarization. [Jul 2024] (Citations: 120)
-1. [PoisonedRAG📑](https://arxiv.org/abs/2402.07867): Knowledge corpus poisoning attacks against RAG achieve high attack success rates. [Feb 2024] (Citations: 111)
-1. [RAG vs Long-Context LLMs📑](https://arxiv.org/abs/2407.16833): Long-context consistently outperforms RAG on average; RAG retains cost advantage. [Jul 2024] (Citations: 110)
-1. [RAG for NLP Survey📑](https://arxiv.org/abs/2407.13193): Survey of RAG frameworks across NLP tasks: modules, training, and adaptation. [Jul 2024] (Citations: 108)
+1. [Clinical RAG for Hepatology📑](https://www.semanticscholar.org/paper/965a0969b460f9246158d88fb28e21c5d80d0a8b): Structured guideline reformatting + prompt engineering boosts CDSS accuracy. [—] (Citations: 118)
 1. [RAG Text Generation Survey📑](https://arxiv.org/abs/2404.10981): Comprehensive survey on retrieval-augmented text generation methods and benchmarks. [Apr 2024] (Citations: 101)
-1. [ColPali📑](https://arxiv.org/abs/2407.01449): Vision-Language Models for efficient document page retrieval outperform text-only OCR pipelines. [Jul 2024] (Citations: 100)
 
 ---
 
@@ -207,6 +208,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 
 1. [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs📑](https://arxiv.org/abs/2505.23006): DAG-based workflows for e-commerce tasks with response and loss masking. [May 2025]
 1. [Advances and Challenges in Foundation Agents📑](https://arxiv.org/abs/2504.01990): Brain-inspired to evolutionary, collaborative, and safe agent systems. [Mar 2025]
+1. [Agentic World Modeling📑](https://arxiv.org/pdf/2604.22748): Survey of world-model foundations, capabilities, laws, and agentic applications. [Apr 2026]
 1. [Codified Context: Infrastructure for AI Agents in a Complex Codebase📑](https://arxiv.org/abs/2602.20478): Persistent memory, specialist agents, and spec docs for large codebases. [Feb 2026]
 1. [Agent-as-a-Judge📑](https://arxiv.org/abs/2410.10934): Evaluate agents with agents; DevAI benchmark of 55 development tasks. [Oct 2024]
 1. [AgentBench📑](https://arxiv.org/abs/2308.03688): Evaluates LLM-as-Agent reasoning and decision-making. [Aug 2023]
@@ -220,61 +222,65 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [Automated Design of Agentic Systems📑](https://arxiv.org/abs/2408.08435): ADAS auto-creates agentic designs with novel building blocks. [Aug 2024]
 1. [Cognitive Architectures for Language Agents📑](https://arxiv.org/abs/2309.02427): CoALA with procedural, semantic, and episodic memory. [Sep 2023]
 1. [Darwin Godel Machine📑](https://arxiv.org/abs/2505.22954): Self-modifying agents evolve via SWE-bench/Polyglot validation. [May 2025]
+1. **Darwin Gödel Machine (DGM)**: **Humans direct agents** through fixed prompts, evaluation logic, and self-improvement rules, while agents recursively improve themselves within this human-designed framework.
+**Darwin Gödel Machine-Hyperagents (DGM-H)**: **Agents direct agents**, forming self-organizing internal societies that evolve their own coordination, memory, and improvement strategies.
 1. [Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?📑](https://arxiv.org/abs/2602.11988): AGENTS.md often reduces agent success rates and increases cost — keep them minimal. [Feb 2026]
 1. [AgentCoder📑](https://arxiv.org/abs/2312.13010): Multi-agent code generation with iterative testing. [Dec 2023]
 1. [LDB📑](https://arxiv.org/abs/2402.16906): LLM debugger verifying runtime execution step by step. [Feb 2024]
 1. [Generative Agent Simulations of 1,000 People📑](https://arxiv.org/abs/2411.10109): Simulates 1,000 real individuals; 85% General Social Survey accuracy. [Nov 2024]
 1. [Hyperagents📑](https://arxiv.org/abs/2603.19461): Self-referential agents. Metacognitive self-improvement, where AI rewrites its own improvement process—achieving cross-domain gains (e.g., 0→0.71 in review tasks). [Mar 2026]
 1. [Recursive Language Models (RLMs), a general inference strategy📑](https://arxiv.org/abs/2512.24601): A new general inference strategy that lets large language models process arbitrarily long inputs by treating the entire prompt as an external environment and programmatically decomposing and recursively calling the model on pieces of the input. [Dec 2025]
+1. [Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets📑](https://arxiv.org/pdf/2604.02460): Shows single-agent systems can match or outperform multi-agent systems when test-time compute is normalized. [Apr 2026]
 1. [Solving a Million-Step LLM Task with Zero Errors📑](https://arxiv.org/abs/2511.09030): MDAP framework with MAKER decomposition and error correction. [Nov 2025]
+1. [The Semi-Executable Stack📑](https://arxiv.org/abs/2604.15468): Argues software engineering is expanding from code into prompts, specs, orchestration, controls, coordination, and context. [Apr 2026]
 1. [The Rise and Potential of LLM-Based Agents📑](https://arxiv.org/abs/2309.07864): Survey of LLM-based agents. [Sep 2023]
 1. [Towards a Science of Scaling Agent Systems📑](https://arxiv.org/abs/2512.08296): Adding agents doesn’t guarantee better performance—multi‑agent AI can drop up to 70% depending on task, coordination, and architecture (Google & MIT, 15,000 trials). [Dec 2025]
 
 ### **Agent Research (Ranked by cite count >=100)**
 
-1. [AutoGen Framework📑](https://arxiv.org/abs/2308.08155): Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework. (Citations: 832)
-1. [Mind2Web📑](https://arxiv.org/abs/2306.06070): Generalist web agents dataset with 2,000 tasks across 137 sites. [Jun 2023] (Citations: 852)
-1. [ChatEval📑](https://arxiv.org/abs/2308.07201): Towards Better LLM-based Evaluators through Multi-Agent Debate. [Aug 2023] (Citations: 777)
-1. [SWE-agent📑](https://arxiv.org/abs/2405.15793): Agent-computer interfaces enable autonomous repo navigation, editing, and testing. [May 2024] (Citations: 569)
-1. [Multi-Agent Collaboration📑](https://arxiv.org/abs/2306.03314): Framework analyzing Auto-GPT/BabyAGI; collaboration improves task handling. [Jun 2023] (Citations: 369)
+1. [AutoGen Framework📑](https://arxiv.org/abs/2308.08155): Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework. (Citations: 1520)
+1. [Mind2Web📑](https://arxiv.org/abs/2306.06070): Generalist web agents dataset with 2,000 tasks across 137 sites. [Jun 2023] (Citations: 1026)
+1. [SWE-agent📑](https://arxiv.org/abs/2405.15793): Agent-computer interfaces enable autonomous repo navigation, editing, and testing. [May 2024] (Citations: 1005)
+1. [ChatEval📑](https://arxiv.org/abs/2308.07201): Towards Better LLM-based Evaluators through Multi-Agent Debate. [Aug 2023] (Citations: 875)
+1. [ExpeL📑](https://arxiv.org/abs/2308.10144): Agents learn from experiences without param updates; strong transfer. [Aug 2023](Citations: 483)
+1. [A-MEM📑](https://arxiv.org/abs/2502.12110): Zettelkasten-inspired adaptive agentic memory organization. [Feb 2025] (Citations: 458)
+1. [LATS📑](https://arxiv.org/abs/2310.04406): MCTS-based search unifies reasoning, acting, planning in LM agents. [Oct 2023](Citations: 444)
+1. [Planning Survey📑](https://arxiv.org/abs/2402.02716): Taxonomy of agent planning: decomposition, selection, external modules, memory. [Feb 2024](Citations: 421)
 1. [Character-LLM📑](https://arxiv.org/abs/2310.10158): A Trainable Agent for Role-Playing. [Oct 2023] (Citations: 374)
-1. [Planning Survey📑](https://arxiv.org/abs/2402.02716): Taxonomy of agent planning: decomposition, selection, external modules, memory. [Feb 2024](Citations: 373)
-1. [ExpeL📑](https://arxiv.org/abs/2308.10144): Agents learn from experiences without param updates; strong transfer. [Aug 2023](Citations: 381)
-1. [LATS📑](https://arxiv.org/abs/2310.04406): MCTS-based search unifies reasoning, acting, planning in LM agents. [Oct 2023](Citations: 377)
-1. [PLMs for Decision-Making📑](https://arxiv.org/abs/2202.01771): LM-initialized policies for sequential decision tasks. [Feb 2022](Citations: 299)
+1. [Multi-Agent Collaboration📑](https://arxiv.org/abs/2306.03314): Framework analyzing Auto-GPT/BabyAGI; collaboration improves task handling. [Jun 2023] (Citations: 369)
 1. [CodeAct📑](https://arxiv.org/abs/2402.01030): Executable Python actions unify tool use; improves success on API-Bank. [Feb 2024](Citations: 356)
-1. [OpenHands📑](https://arxiv.org/abs/2407.16741): Open platform for developer agents with sandboxing and benchmarks. [Jul 2024](Citations: 281)
+1. [Agentless📑](https://arxiv.org/abs/2407.01489): Simple three-phase approach rivals complex SWE agents. [Jul 2024](Citations: 339)
+1. [AI Agents vs Agentic AI📑](https://arxiv.org/abs/2505.10468): Conceptual taxonomy, applications, and challenges. [May 2025](Citations: 325)
+1. [Agent Laboratory📑](https://arxiv.org/abs/2501.04227): Autonomous end-to-end research pipeline with human-in-the-loop. [Jan 2025](Citations: 320)
+1. [RepairAgent📑](https://arxiv.org/abs/2403.17134): An Autonomous, LLM-Based Agent for Program Repair. [Mar 2024] (Citations: 304)
+1. [PLMs for Decision-Making📑](https://arxiv.org/abs/2202.01771): LM-initialized policies for sequential decision tasks. [Feb 2022](Citations: 299)
 1. [Personal LLM Agents Survey📑](https://arxiv.org/abs/2401.05459): Architecture, capability, efficiency, security of personal agents. [Jan 2024](Citations: 295)
-1. [Agentless📑](https://arxiv.org/abs/2407.01489): Simple three-phase approach rivals complex SWE agents. [Jul 2024](Citations: 276)
-1. [Collaboration Mechanisms📑](https://arxiv.org/abs/2310.02124): Social-psychology-inspired multi-agent societies (debate, reflection). [Oct 2023](Citations: 229)
-1. [RepairAgent📑](https://arxiv.org/abs/2403.17134): An Autonomous, LLM-Based Agent for Program Repair. [Mar 2024] (Citations: 242)
-1. [Biomedical Agents📑](https://arxiv.org/abs/2404.02831): Agents accelerate biomedical discovery; integration pathways. [Apr 2024] (Citations: 182)
-1. [ToolEmu Risk Sandbox📑](https://arxiv.org/abs/2309.15817): LM-emulated tool execution for agent risk analysis. [Sep 2023] (Citations: 217)
-1. [Agents as Models📑](https://arxiv.org/abs/2212.01681): LMs infer communicative intentions; building blocks for intentional agents. [Dec 2022](Citations: 170)
-1. [MACHIAVELLI📑](https://arxiv.org/abs/2304.03279): Benchmarks trade-offs between reward and ethical behavior. [Apr 2023](Citations: 176)
+1. [Mem0📑](https://arxiv.org/abs/2504.19413): Scalable long-term memory framework enabling personalized, production-ready AI agents. [Apr 2025] (Citations: 285)
+1. [OpenHands📑](https://arxiv.org/abs/2407.16741): Open platform for developer agents with sandboxing and benchmarks. [Jul 2024](Citations: 281)
 1. [LoCoMo Memory📑](https://arxiv.org/abs/2402.17753): Very long-term conversational memory benchmark (300 turns). [Feb 2024](Citations: 270)
+1. [Collaboration Mechanisms📑](https://arxiv.org/abs/2310.02124): Social-psychology-inspired multi-agent societies (debate, reflection). [Oct 2023](Citations: 252)
+1. [ToolEmu Risk Sandbox📑](https://arxiv.org/abs/2309.15817): LM-emulated tool execution for agent risk analysis. [Sep 2023] (Citations: 217)
 1. [AgentPoison📑](https://arxiv.org/abs/2407.12784): Backdoor poisoning of agent memory/RAG KB; high attack success. [Jul 2024](Citations: 211)
-1. [Agent Laboratory📑](https://arxiv.org/abs/2501.04227): Autonomous end-to-end research pipeline with human-in-the-loop. [Jan 2025](Citations: 160)
+1. [Data Interpreter📑](https://arxiv.org/abs/2402.18679): An LLM Agent For Data Science. [Feb 2024] (Citations: 205)
+1. [RAGEN📑](https://arxiv.org/abs/2504.20073): Multi-turn RL framework (StarPO) and agent self-evolution. [Apr 2025](Citations: 200)
+1. [Biomedical Agents📑](https://arxiv.org/abs/2404.02831): Agents accelerate biomedical discovery; integration pathways. [Apr 2024] (Citations: 182)
+1. [Agent Q📑](https://arxiv.org/abs/2408.07199): MCTS + self-critique + off-policy DPO for multi-step reasoning. [Aug 2024] (Citations: 182)
+1. [Small LMs for Agentic AI📑](https://arxiv.org/abs/2506.02153): Small language models outperform large models in specialized, tool-use agentic tasks. [Jun 2025] (Citations: 182)
+1. [MACHIAVELLI📑](https://arxiv.org/abs/2304.03279): Benchmarks trade-offs between reward and ethical behavior. [Apr 2023](Citations: 176)
+1. [Agents as Models📑](https://arxiv.org/abs/2212.01681): LMs infer communicative intentions; building blocks for intentional agents. [Dec 2022](Citations: 170)
+1. [ETO📑](https://arxiv.org/abs/2403.02502): Learn from exploration failures via contrastive trajectory optimization. [Mar 2024] (Citations: 169)
+1. [Rethinking LLM Reasoning Bounds📑](https://arxiv.org/abs/2402.18272): Are Multi-Agent Discussions the Key? [Feb 2024] (Citations: 167)
 1. [TPTU📑](https://www.semanticscholar.org/paper/5ce94181ea702f69c3651dce721d6bd8026b8106): Task planning and tool usage taxonomy for LLM agents.(Citations: 158)
+1. [Agents Under Threat📑](https://arxiv.org/abs/2406.02630): Survey of key security challenges for AI agents. [Jun 2024](Citations: 152)
 1. [Bots with Feelings📑](https://www.semanticscholar.org/paper/a79707c7646debe27f1a5188996237f11763592c): Customer service outcomes with AI-expressed positive emotion.(Citations: 150)
-1. [Data Interpreter📑](https://arxiv.org/abs/2402.18679): An LLM Agent For Data Science. [Feb 2024] (Citations: 164)
-1. [A-MEM📑](https://arxiv.org/abs/2502.12110): Zettelkasten-inspired adaptive agentic memory organization. [Feb 2025] (Citations: 267)
+1. [AgentHarm📑](https://arxiv.org/abs/2410.09024): Malicious agent tasks benchmark; jailbreak compliance analysis. [Oct 2024](Citations: 149)
+1. [AgentBoard📑](https://arxiv.org/abs/2401.13178): Analytical evaluation board with fine-grained progress metrics. [Jan 2024] (Citations: 146)
 1. [Dynamic LLM-Agent Network📑](https://www.semanticscholar.org/paper/98ce7af921e7c52d81df64d632d34eb09522cd75): An LLM-agent Collaboration Framework with Agent Team Optimization. (Citations: 134)
-1. [Agent Q📑](https://arxiv.org/abs/2408.07199): MCTS + self-critique + off-policy DPO for multi-step reasoning. [Aug 2024] (Citations: 132)
 1. [Mental Models📑](https://www.semanticscholar.org/paper/a109274aa61679a5d95058b4bd20fa7acba0df52): How users form mental models of AI agents.(Citations: 131)
 1. [R-Judge📑](https://arxiv.org/abs/2401.10019): Safety risk awareness benchmark for agent interactions. [Jan 2024](Citations: 131)
-1. [Rethinking LLM Reasoning Bounds📑](https://arxiv.org/abs/2402.18272): Are Multi-Agent Discussions the Key? [Feb 2024] (Citations: 146)
-1. [ETO📑](https://arxiv.org/abs/2403.02502): Learn from exploration failures via contrastive trajectory optimization. [Mar 2024] (Citations: 144)
-1. [AgentBoard📑](https://arxiv.org/abs/2401.13178): Analytical evaluation board with fine-grained progress metrics. [Jan 2024] (Citations: 146)
-1. [AutoDefense📑](https://arxiv.org/abs/2403.04783): Multi-Agent LLM Defense against Jailbreak Attacks. [Mar 2024] (Citations: 114)
-1. [AgentHarm📑](https://arxiv.org/abs/2410.09024): Malicious agent tasks benchmark; jailbreak compliance analysis. [Oct 2024](Citations: 149)
 1. [Search Agents📑](https://arxiv.org/abs/2407.01476): Best-first tree search improves web agents; scales with compute. [Jul 2024](Citations: 128)
-1. [AI Agents vs Agentic AI📑](https://arxiv.org/abs/2505.10468): Conceptual taxonomy, applications, and challenges. [May 2025](Citations: 109)
-1. [Agents Under Threat📑](https://arxiv.org/abs/2406.02630): Survey of key security challenges for AI agents. [Jun 2024](Citations: 152)
 1. [One-day Vulnerabilities📑](https://arxiv.org/abs/2404.08144): Autonomous exploitation capability constraints and risks. [Apr 2024](Citations: 125)
-1. [RAGEN📑](https://arxiv.org/abs/2504.20073): Multi-turn RL framework (StarPO) and agent self-evolution. [Apr 2025](Citations: 101)
-1. [Small LMs for Agentic AI📑](https://arxiv.org/abs/2506.02153): Small language models outperform large models in specialized, tool-use agentic tasks. [Jun 2025] (Citations: 182)
-1. [Mem0📑](https://arxiv.org/abs/2504.19413): Scalable long-term memory framework enabling personalized, production-ready AI agents. [Apr 2025] (Citations: 160)
+1. [AutoDefense📑](https://arxiv.org/abs/2403.04783): Multi-Agent LLM Defense against Jailbreak Attacks. [Mar 2024] (Citations: 114)
 1. [Magma📑](https://arxiv.org/abs/2502.13130): Microsoft foundation model for multimodal AI agents across digital and physical environments. [Feb 2025] (Citations: 103)
 
 ### **Tool Use**
