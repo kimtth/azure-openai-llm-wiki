@@ -75,7 +75,7 @@ def format_month_year(date_str: str) -> str:
 
 
 def clean_description(text: str, max_len: int = 220) -> str:
-    description = " ".join((text or "").strip().split())
+    description = " ".join((text or "").replace("\u2728", "").strip().split())
     if not description:
         return ""
 

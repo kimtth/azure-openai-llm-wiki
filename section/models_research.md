@@ -127,6 +127,7 @@
   - [Qwen3 Technical Report📑](https://arxiv.org/abs/2505.09388): Unified thinking and non-thinking modes across dense and MoE models. [May 2025]
   - [Qwen-Image-Edit](https://qwen4.net/qwen-image-edit/) [18 Aug 2025]
   - [Qwen3-Max](https://qwen4.net/qwen3-max-is-the-most-intelligent-non-reasoning-model/): over 1 trillion parameters. 256K tokens. [5 Sep 2025]
+  - [Qwen 3.6✍️](https://qwen.ai/blog?id=qwen3.6): Qwen model release notes for the 3.6 generation. [Apr 2026]
 - Amazon
   - [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
   - [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://arxiv.org/abs/2506.12103) [17 Mar 2025]
@@ -162,6 +163,7 @@
   - [DeepSeek-v3.1🤗](https://huggingface.co/deepseek-ai/DeepSeek-V3.1): Think/Non‑Think hybrid reasoning. 128K and MoE. Agent abilities.  [19 Aug 2025]
   - [DeepSeek-V3.2📑](https://arxiv.org/abs/2512.02556): DeepSeek Sparse Attention (DSA) cuts complexity from O(L²) to O(Lk). [12 Dec 2025]
   - [DeepSeek-V3.2-Exp](https://github.com/deepseek-ai/DeepSeek-V3.2-Exp) [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3.2-Exp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+  - [DeepSeek-V4-Pro🤗](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro): 1.6T-parameter MoE model with 49B activated parameters, 1M context, and hybrid compressed attention. [2026]
   - [DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR): Convert long text into an image, compresses it into visual tokens, and sends those to the LLM — cutting cost and expanding context capacity. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-OCR?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [DeepSeekMath-V2](https://github.com/deepseek-ai/DeepSeek-Math-V2/): a Self-Verifiable Mathematical Reasoning model [27 Nov 2025] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Math-V2?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [mHC (Manifold-Constrained Hyper-Connections)📑](https://arxiv.org/abs/2512.24880) [31 Dec 2025]
@@ -188,6 +190,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
   - [Gemini 2.5✍️](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025] -> [I/O 2025✍️](https://blog.google/technology/ai/io-2025-keynote) Deep Think, 1M-token context, Native audio output, Project Mariner: AI-powered computer control. [20 May 2025] [Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities.📑](https://arxiv.org/abs/2507.06261)
   - [Gemma 3n](https://developers.googleblog.com/en/introducing-gemma-3n/): The next generation of Gemini Nano. Gemma 3n uses DeepMind’s Per-Layer Embeddings (PLE) to run 5B/8B models at 2GB/3GB RAM. [20 May 2025]
+  - [Gemma 4✍️](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/): Apache-2.0 open model family for reasoning, coding, multimodal, agentic workflows, and edge deployment. [Apr 2026]
   - [gemini/cookbook](https://github.com/google-gemini/cookbook)
   - [Gemini 3 Pro✍️](https://blog.google/products/gemini/gemini-3/): Deep Think reasoning, Advanced  multimodal understanding, spatial reasoning, and agentic capabilities up 30% from 2.5 Pro — reaching 37.5% on Humanity’s Last Exam (41% in Deep Think mode). [18 Nov 2025]
 - Groq
@@ -223,6 +226,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [NotebookLlama](https://github.com/meta-llama/llama-recipes/tree/main/recipes/quickstart/NotebookLlama): An Open Source version of NotebookLM [28 Oct 2024]
   - [Llama 3.3](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/): a text-only 70B instruction-tuned model. Llama 3.3 70B approaches the performance of Llama 3.1 405B. [6 Dec 2024]
   - [Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/):  Mixture of Experts (MoE). Llama 4 Scout (actived 17b / total 109b, 10M Context, single GPU), Llama 4 Maverick (actived 17b / total 400b, 1M Context) [git](https://github.com/meta-llama/llama-models/tree/main/models/llama4): Model Card [5 Apr 2025] 
+  - [Muse Spark✍️](https://ai.meta.com/blog/introducing-muse-spark-msl): Meta's multimodal reasoning model with tool use, visual chain-of-thought, and multi-agent Contemplating mode. [Apr 2026]
 - [ModernBERT📑](https://arxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
 - Microsoft
   - [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
@@ -251,6 +255,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [Kimi-K2](https://github.com/MoonshotAI/Kimi-K2): 1T parameter MoE model. MuonClip Optimizer. Agentic Intelligence. [11 Jul 2025]
   - [Kimi K2 Thinking✍️](https://moonshotai.github.io/Kimi-K2/thinking.html): The first open-source model beats GPT-5 in Agent benchmark. [7 Nov 2025]
   - [Kimi-K2.5](https://github.com/MoonshotAI/Kimi-K2.5): Open-source multimodal agentic model by Moonshot AI. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/MoonshotAI/Kimi-K2.5?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+  - [Kimi K2.6✍️](https://www.kimi.com/blog/kimi-k2-6): Open-source coding model with long-horizon execution, coding-driven design, agent swarms, and proactive agent workflows. [Apr 2026]
 - NVIDIA
   - [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 - [ollam](https://ollama.com/library?sort=popular): ollama-supported models
@@ -277,6 +282,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [Grok-3](https://x.ai/grok): 200,000 GPUs to train. Grok 3 beats GPT-4o on AIME, GPQA. Grok 3 Reasoning and Grok 3 mini Reasoning. [17 Feb 2025]
   - [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
   - [Grok 4.1✍️](https://x.ai/news/grok-4-1) [17 Nov 2025]
+  - [Grok 4.3 Beta✍️](https://grok.com/release-notes/apr-17-2026): Pretrained Grok model update with computer access for creating presentations, documents, and spreadsheets. [Apr 2026]
 - Xiaomi
   - Founded in 2010, Xiaomi is a Chinese company known for its innovative consumer electronics and smart home products.
   - [Mimo](https://github.com/XiaomiMiMo/MiMo): 7B. advanced reasoning for code and math [30 Apr 2025)
@@ -447,8 +453,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 1. [Recursively Criticizes and Improves (RCI)📑](https://arxiv.org/abs/2303.17491): [30 Mar 2023]
    - Critique: Review your previous answer and find problems with your answer.
    - Improve: Based on the problems you found, improve your answer.
-1. [Reflexion📑](https://arxiv.org/abs/2303.11366): Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement` to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM. [20 Mar 2023] / [git](https://github.com/noahshinn024/reflexion)
- ![**github stars**](https://img.shields.io/github/stars/noahshinn024/reflexion?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [Reflexion📑](https://arxiv.org/abs/2303.11366): Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement` to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM. [20 Mar 2023]
 1. [Retrieval Augmented Generation (RAG)📑](https://arxiv.org/abs/2005.11401): To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model. [22 May 2020]
 1. [Self-Consistency (CoT-SC)📑](https://arxiv.org/abs/2203.11171): The three steps in the self-consistency method: 1) prompt the language model using CoT prompting, 2) sample a diverse set of reasoning paths from the language model, and 3) marginalize out reasoning paths to aggregate final answers and choose the most consistent answer. [21 Mar 2022]
 1. [Self-Refine📑](https://arxiv.org/abs/2303.17651), which enables an agent to reflect on its own output [30 Mar 2023]
@@ -624,6 +629,12 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Absolute Zero: Reinforced Self-play Reasoning with Zero Data📑](https://arxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
 - [Direct Preference Optimization (DPO)📑](https://arxiv.org/abs/2305.18290): 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
 - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [✍️](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [✍️](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
+- [How to Beat GRPO Without Touching Model Weights✍️](https://blog.dailydoseofds.com/p/how-to-beat-grpo-without-touching): Explains GEPA as trace-reading prompt evolution for compound AI systems, contrasting it with GRPO and scalar-reward RL. [May 2026]
+- [How Top AI Labs Are Building RL Agents✍️](https://blog.dailydoseofds.com/p/how-top-ai-labs-are-building-rl-agents): Overview of RL agent training patterns, reward design, and verifier-driven loops.
+  - **PPO**: policy + reward model + critic → learned evaluator, heavy, costly
+  - **GRPO (RLVR)**: policy + verifier → no reward model, no critic, group comparison
+  - **problems**: reward models are costly + weak on exact correctness → shift works for verifiable tasks, but needs task-specific checks, struggles with subjective tasks, ignores step quality
+  - **solutions**: LLM-as-judge + hybrid rewards → verifier combine verifier (objective correctness) + judge (subjective quality) + consistency signals
 - [InstructGPT: Training language models to follow instructions with human feedback📑](https://arxiv.org/abs/2203.02155): is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022]  
   <img src="../files/rhlf.png" width="400" />  
   <img src="../files/rhlf2.png" width="400" />  
@@ -827,6 +838,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [GPT-5.1 Codex Max✍️](https://openai.com/index/gpt-5-1-codex-max/): agentic coding model for lonng-running, detailed work. [19 Nov 2025]
 - [GPT 5.2✍️](https://openai.com/index/introducing-gpt-5-2): 70.9% GDPval (knowledge work vs professionals), major gains over GPT-5.1 on SWE-Bench, GPQA Diamond, AIME 2025, ARC-AGI reasoning, and advanced coding/vision tasks. [11 Dec 2025]
 - [GPT-5.4✍️](https://openai.com/index/introducing-gpt-5-4/): Thinking, coding, and native computer-use in a single model. [Mar 2026]
+- [GPT-5.5✍️](https://openai.com/index/introducing-gpt-5-5/): OpenAI model for agentic coding, computer use, knowledge work, and scientific research with 1M API context. [Apr 2026]
 
 ### **OpenAI Products**
 
@@ -836,6 +848,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [ChatGPT can now see, hear, and speak✍️](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak): It has recently been updated to support multimodal capabilities, including voice and image. [25 Sep 2023] [Whisper](https://github.com/openai/whisper) / [CLIP](https://github.com/openai/Clip)
  ![**github stars**](https://img.shields.io/github/stars/openai/whisper?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) ![**github stars**](https://img.shields.io/github/stars/openai/Clip?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ChatGPT Function calling](https://platform.openai.com/docs/guides/gpt/function-calling) [Jun 2023] > Azure OpenAI supports function calling. [✍️](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling#using-function-in-the-chat-completions-api)
+- [ChatGPT Images 2.0✍️](https://openai.com/index/introducing-chatgpt-images-2-0/): New ChatGPT image-generation system focused on precision, multilingual text, richer styles, and visual reasoning. [Apr 2026]
 - [ChatGPT Memory✍️](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
 - [ChatGPT Plugin✍️](https://openai.com/blog/chatgpt-plugins) [23 Mar 2023]
 - [CriticGPT✍️](https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/): a version of GPT-4 fine-tuned to critique code generated by ChatGPT [27 Jun 2024]
@@ -866,7 +879,10 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Put Claude to work on your computer✍️](https://claude.com/blog/dispatch-and-computer-use): Dispatch carries tasks across phone and desktop while Claude operates your computer. [23 Mar 2026]
 - [Anthropic killed Tool calling📺](https://www.youtube.com/watch?v=3wglqgskzjQ): Programmatic Tool Calling / Dynamic Filtering — what changed in Anthropic’s API. [Feb 2026]
 - [Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk): A toolkit for building multi-step, tool-using agents using the Claude API. [29 Sep 2025]
+- [Claude Design✍️](https://www.anthropic.com/news/claude-design-anthropic-labs): Anthropic Labs design experience for AI-assisted product and interface creation. [2026]
+- [Claude Mythos Preview System Card✍️](https://www.anthropic.com/claude-mythos-preview-system-card): Anthropic system card for Mythos Preview and its safety/evaluation profile. [2026]
 - [Claude Opus 4.6✍️](https://www.anthropic.com/news/claude-opus-4-6): Advanced reasoning and coding flagship model. [5 Feb 2026]
+- [Claude Opus 4.7✍️](https://www.anthropic.com/news/claude-opus-4-7): Anthropic model release focused on advanced software engineering, long-running tasks, higher-resolution vision, and Claude Code xhigh defaults. [Apr 2026]
 - [Claude Sonnet 4.6✍️](https://www.anthropic.com/news/claude-sonnet-4-6): Balanced performance and speed model. [17 Feb 2026]
 - [Constitutional AI (CAI)](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback): Anthropic’s training framework using a “constitution” (AI‑generated rules) to align models toward harmlessness. [15 Dec 2022]
 - [Cowork](https://claude.com/product/cowork): AI agent that accesses local files to automate multi-step desktop tasks like organizing, reporting, and data extraction. [Jan 2026]
@@ -908,6 +924,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
   - Performacnce decreases with an increase in context
 - [“Needle in a Haystack” Analysis](https://bito.ai/blog/claude-2-1-200k-context-window-benchmarks/) [21 Nov 2023]: Context Window Benchmarks; Claude 2.1 (200K Context Window) vs [GPT-4](https://github.com/gkamradt/LLMTest_NeedleInAHaystack); [Long context prompting for Claude 2.1✍️](https://www.anthropic.com/index/claude-2-1-prompting) `adding just one sentence, “Here is the most relevant sentence in the context:”, to the prompt resulted in near complete fidelity throughout Claude 2.1’s 200K context window.` [6 Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/gkamradt/LLMTest_NeedleInAHaystack?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Recursive Language Models📑](https://arxiv.org/abs/2512.24601): Inference paradigm that treats long prompts as an external environment for processing arbitrarily long context. [Dec 2025]
 - [Ring Attention📑](https://arxiv.org/abs/2310.01889): 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3. we propose an enhancement to the blockwise parallel transformers (BPT) framework. [git](https://github.com/lhao499/llm_large_context) [3 Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/lhao499/llm_large_context?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Rotary Positional Embedding (RoPE)📑](https://arxiv.org/abs/2104.09864):💡/ [✍️](https://blog.eleuther.ai/rotary-embeddings/) / [🗄️](../files/RoPE.pdf) [20 Apr 2021]
@@ -994,6 +1011,7 @@ generated webpages are considered better than the original reference webpages` [
 
 ### **Reasoning**
 
+- [Beyond Synthetic Benchmarks📑](https://arxiv.org/abs/2510.26130): Finds LLMs score much lower on real-world class-level code generation than on synthetic benchmarks. [Oct 2025]
 - [Chain of Draft: Thinking Faster by Writing Less📑](https://arxiv.org/abs/2502.18600): Chain-of-Draft prompting con-
 denses the reasoning process into minimal, abstract
 - [Comment on The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity📑](https://arxiv.org/abs/2506.09250):💡The `Illusion of Thinking` findings primarily reflect experimental design limitations rather than fundamental reasoning failures. Output token limits, flawed evaluation methods, and unsolvable River Crossing problems. [10 Jun 2025]
@@ -1002,6 +1020,7 @@ denses the reasoning process into minimal, abstract
 - [Inference-Time Computations for LLM Reasoning and Planning: A Benchmark and Insights📑](https://arxiv.org/abs/2502.12521): Evaluate Chain-of-Thought, Tree-of-Thought, and Reasoning as Planning across 11 tasks. While scaling inference-time computation enhances reasoning, no single technique consistently outperforms the others. [18 Feb 2025]
 - [Is Chain-of-Thought Reasoning of LLMs a Mirage?📑](https://arxiv.org/abs/2508.01191): The paper concludes that CoT is largely a mimic rather than true reasoning. Using DataAlchemy—`atom` = A–Z; `element` = e.g., APPLE; `transform` = (1) ROT (rotation), (2) position shift; `compositional transform` = combinations of transforms—the model is fine-tuned and evaluated on its ability to generalize to unlearned patterns.
 - [Mini-R1✍️](https://www.philschmid.de/mini-deepseek-r1): Reproduce Deepseek R1 „aha moment“ a RL tutorial [30 Jan 2025]
+- [OpenMythos](https://github.com/kyegomez/OpenMythos): Theoretical reconstruction of Claude Mythos architecture from public research literature. ![**github stars**](https://img.shields.io/github/stars/kyegomez/OpenMythos?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Open R1](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
 - [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025]
 - [Reasoning LLMs Guide](https://www.promptingguide.ai/guides/reasoning-llms): The Reasoning LLMs Guide shows how to use advanced AI models for step-by-step thinking, planning, and decision-making in complex tasks.
@@ -1015,8 +1034,9 @@ denses the reasoning process into minimal, abstract
 
 ### **Survey on Large Language Models**
 
-  - [A Primer on Large Language Models and their Limitations📑](https://arxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
-  - [A Survey of Large Language Models📑](https://arxiv.org/abs/2303.18223):[v1: 31 Mar 2023 - v15: 13 Oct 2024]
+- [10 Breakthrough Technologies 2026✍️](https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/): MIT Technology Review roundup of AI trends and research directions for 2026. [Apr 2026]
+- [A Primer on Large Language Models and their Limitations📑](https://arxiv.org/abs/2412.04503): A primer on LLMs, their strengths, limits, applications, and research, for academia and industry use. [3 Dec 2024]
+- [A Survey of Large Language Models📑](https://arxiv.org/abs/2303.18223):[v1: 31 Mar 2023 - v15: 13 Oct 2024]
 - [A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?📑](https://arxiv.org/abs/2408.05109): [9 Aug 2024] [git](https://github.com/HKUSTDial/NL2SQL_Handbook)
 ![**github stars**](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [A Survey of Transformers📑](https://arxiv.org/abs/2106.04554):[8 Jun 2021]
@@ -1105,6 +1125,7 @@ denses the reasoning process into minimal, abstract
 - [Trustworthy LLMs📑](https://arxiv.org/abs/2308.05374):[10 Aug 2023]
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models📑](https://arxiv.org/abs/2307.15043):[27 Jul 2023]
 - [What is the Role of Small Models in the LLM Era: A Survey📑](https://arxiv.org/abs/2409.06857) [10 Sep 2024]
+- [World model survey📑](https://arxiv.org/pdf/2604.22748): Agentic world-model survey covering environment modeling, long-horizon interaction, and embodied/agentic settings. [Apr 2026]
 
 ### **LLM Research (Ranked by cite count >=150)**
 
@@ -1230,6 +1251,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 - [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
 - [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
+- [AI Engineering Book](https://github.com/chiphuyen/aie-book): Resources for AI engineers and supporting materials for Chip Huyen's AI Engineering book. ![**github stars**](https://img.shields.io/github/stars/chiphuyen/aie-book?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Anti-hype LLM reading list](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
 - [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): 🏆 The Transformer,
   based solely on attention mechanisms, dispensing with recurrence and convolutions
