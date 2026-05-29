@@ -34,6 +34,7 @@
 #### Large Language Model Comparison
 
 - [AI Model Review](https://aimodelreview.com/): Compare 75 AI Models on 200+ Prompts Side By Side.
+- [AI IQ✍️](https://www.aiiq.org/): Benchmark-derived IQ, EQ, and cost comparisons for AI models. [May 2026]
 - [Artificial Analysis](https://artificialanalysis.ai/):💡Independent analysis of AI models and API providers.
 - [Inside language models (from GPT to Olympus)](https://lifearchitect.ai/models/)
 - [LiveBench](https://livebench.ai): a benchmark for LLMs designed with test set contamination.
@@ -128,6 +129,7 @@
   - [Qwen-Image-Edit](https://qwen4.net/qwen-image-edit/) [18 Aug 2025]
   - [Qwen3-Max](https://qwen4.net/qwen3-max-is-the-most-intelligent-non-reasoning-model/): over 1 trillion parameters. 256K tokens. [5 Sep 2025]
   - [Qwen 3.6✍️](https://qwen.ai/blog?id=qwen3.6): Qwen model release notes for the 3.6 generation. [Apr 2026]
+  - [Qwen3.7-Max✍️](https://qwen.ai/blog?id=qwen3.7): Agent-focused model for coding, office automation, and long-horizon workflows. [May 2026]
 - Amazon
   - [Amazon Nova Foundation Models](https://aws.amazon.com/de/ai/generative-ai/nova/): Text only - Micro, Multimodal - Light, Pro [3 Dec 2024]
   - [The Amazon Nova Family of Models: Technical Report and Model Card📑](https://arxiv.org/abs/2506.12103) [17 Mar 2025]
@@ -150,6 +152,8 @@
   - Founded in 2019. Canadian multinational tech.
   - [Command R+🤗](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
   - [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Playground](https://dashboard.cohere.com/playground)
+- Cursor
+  - [Composer 2.5✍️](https://cursor.com/blog/composer-2-5): Cursor coding model trained with targeted textual RL feedback. [May 2026]
 - Databricks
   - [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm): MoE, open, general-purpose LLM created by Databricks. [27 Mar 2024]
 - Deepseek
@@ -193,6 +197,8 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [Gemma 4✍️](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/): Apache-2.0 open model family for reasoning, coding, multimodal, agentic workflows, and edge deployment. [Apr 2026]
   - [gemini/cookbook](https://github.com/google-gemini/cookbook)
   - [Gemini 3 Pro✍️](https://blog.google/products/gemini/gemini-3/): Deep Think reasoning, Advanced  multimodal understanding, spatial reasoning, and agentic capabilities up 30% from 2.5 Pro — reaching 37.5% on Humanity’s Last Exam (41% in Deep Think mode). [18 Nov 2025]
+  - [Gemini 3.5 Flash✍️](https://deepmind.google/models/gemini/): Frontier-speed agentic coding and multimodal model from Google. [May 2026]
+  - [Gemini Omni✍️](https://deepmind.google/models/gemini-omni/): Any-input generative media model starting with video. [May 2026]
 - Groq
   - Founded in 2016. low-latency AI inference H/W. American tech.
   - [Llama-3-Groq-Tool-Use](https://wow.groq.com/introducing-llama-3-groq-tool-use-models/): a model optimized for function calling [Jul 2024]
@@ -541,6 +547,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 ### LLM Pre-training and Post-training Paradigms 
 
+- [A Bitter Lesson for Data Filtering📑](https://arxiv.org/abs/2605.19407): Large models can benefit from unfiltered low-quality data. [May 2026]
 - [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
 - Three training methods were compared:  
   <img src="../files/cont-pretraining.jpg" width="400"/>  
@@ -660,6 +667,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
 - [Reinforcement Learning with Verifiable Rewards✍️](https://www.promptfoo.dev/blog/rlvr-explained): Practical RLVR Tutorial [Oct 24 2025]
 - [SFT vs RL📑](https://arxiv.org/abs/2501.17161): SFT Memorizes, RL Generalizes. RL enhances generalization across text and vision, while SFT tends to memorize and overfit. [git](https://github.com/LeslieTrue/SFTvsRL) [28 Jan 2025]
+- [Self-Distillation Enables Continual Learning📑](https://arxiv.org/abs/2601.19897): SDFT learns new skills while reducing catastrophic forgetting. [Jan 2026] / [✍️](https://venturebeat.com/orchestration/mits-new-fine-tuning-method-lets-llms-learn-new-skills-without-losing-old) [Feb 2026]
 - `Supervised Fine-Tuning (SFT)` fine-tuning a pre-trained model on a specific task or domain using labeled data. This can cause more significant shifts in the model’s behavior compared to RLHF. <br/>
   <img src="../files/rlhf-dpo.png" width="400" />  
 - [Supervised Reinforcement Learning (SRL)📑](https://arxiv.org/abs/2510.25992): **The Problem**: SFT imitates human actions token by token, leading to overfitting; RLVR gives rewards only when successful, with no signal when all attempts fail. **This Approach**: Each action during RL generates a short reasoning trace and receives a similarity reward at every step. [29 Oct 2025]
@@ -918,6 +926,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Introducing 100K Context Windows✍️](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 - [Leave No Context Behind📑](https://arxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
 - [LLM Maybe LongLM📑](https://arxiv.org/abs/2401.01325): Self-Extend LLM Context Window Without Tuning. With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning. [2 Jan 2024]
+- [Long Context Pre-Training with Lighthouse Attention📑](https://arxiv.org/abs/2605.06554): Training-only hierarchical attention for faster long-context pretraining. [May 2026]
 - [Lost in the Middle: How Language Models Use Long Contexts📑](https://arxiv.org/abs/2307.03172):💡[6 Jul 2023]
   - Best Performace when relevant information is at beginning
   - Too many retrieved documents will harm performance
@@ -1016,10 +1025,12 @@ generated webpages are considered better than the original reference webpages` [
 denses the reasoning process into minimal, abstract
 - [Comment on The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity📑](https://arxiv.org/abs/2506.09250):💡The `Illusion of Thinking` findings primarily reflect experimental design limitations rather than fundamental reasoning failures. Output token limits, flawed evaluation methods, and unsolvable River Crossing problems. [10 Jun 2025]
 - [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1):💡Group Relative Policy Optimization (GRPO). Base -> RL -> SFT -> RL -> SFT -> RL [20 Jan 2025]
+- [Generative Recursive Reasoning📑](https://arxiv.org/abs/2605.19376):  KAIST's 10M-param reasoning model hits 97% on Sudoku and 52% on ARC-AGI-1. GRAM samples multiple stochastic latent reasoning trajectories. [May 2026]
 - [Illusion of Thinking📑](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf): Large Reasoning Models (LRMs) are evaluated using controlled puzzles, where complexity depends on the size of `N`. Beyond a certain complexity threshold, LRM accuracy collapses, and reasoning effort paradoxically decreases. LRMs outperform standard LLMs on medium-complexity tasks, perform worse on low-complexity ones, and both fail on high-complexity. Apple. [May 2025]
 - [Inference-Time Computations for LLM Reasoning and Planning: A Benchmark and Insights📑](https://arxiv.org/abs/2502.12521): Evaluate Chain-of-Thought, Tree-of-Thought, and Reasoning as Planning across 11 tasks. While scaling inference-time computation enhances reasoning, no single technique consistently outperforms the others. [18 Feb 2025]
 - [Is Chain-of-Thought Reasoning of LLMs a Mirage?📑](https://arxiv.org/abs/2508.01191): The paper concludes that CoT is largely a mimic rather than true reasoning. Using DataAlchemy—`atom` = A–Z; `element` = e.g., APPLE; `transform` = (1) ROT (rotation), (2) position shift; `compositional transform` = combinations of transforms—the model is fine-tuned and evaluated on its ability to generalize to unlearned patterns.
 - [Mini-R1✍️](https://www.philschmid.de/mini-deepseek-r1): Reproduce Deepseek R1 „aha moment“ a RL tutorial [30 Jan 2025]
+- [OpenAI Disproves Discrete Geometry Conjecture✍️](https://openai.com/index/model-disproves-discrete-geometry-conjecture/): General-purpose reasoning model solves a longstanding Erdős unit-distance conjecture. [May 2026]
 - [OpenMythos](https://github.com/kyegomez/OpenMythos): Theoretical reconstruction of Claude Mythos architecture from public research literature. ![**github stars**](https://img.shields.io/github/stars/kyegomez/OpenMythos?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Open R1](https://github.com/huggingface/open-r1): A fully open reproduction of DeepSeek-R1. [25 Jan 2025]
 - [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025]
@@ -1252,6 +1263,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [AI by Hand | Special Lecture - DeepSeek](https://www.youtube.com/watch?v=idF6TiTGYsE):🏆MoE, Latent Attention implemented in DeepSeek [git](https://github.com/ImagineAILab/ai-by-hand-excel) [30 Jan 2025]
 - [AI-Crash-Course](https://github.com/henrythe9th/AI-Crash-Course): AI Crash Course to help busy builders catch up to the public frontier of AI research in 2 weeks [Jan 2025]
 - [AI Engineering Book](https://github.com/chiphuyen/aie-book): Resources for AI engineers and supporting materials for Chip Huyen's AI Engineering book. ![**github stars**](https://img.shields.io/github/stars/chiphuyen/aie-book?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch): Practical AI engineering curriculum for building and shipping systems. [Mar 2026] ![**github stars**](https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Anti-hype LLM reading list](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
 - [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf): 🏆 The Transformer,
   based solely on attention mechanisms, dispensing with recurrence and convolutions

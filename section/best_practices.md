@@ -37,6 +37,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
   - [GPT-RAG](https://github.com/Azure/GPT-RAG): Enterprise RAG Solution Accelerator [Jun 2023]
 ![**github stars**](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [bRAG](https://github.com/bRAGAI/bRAG-langchain/): Everything you need to know to build your own RAG application [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/bRAGAI/bRAG-langchain?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Confidence-Aware RAG✍️](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/confidence-aware-rag-teaching-your-ai-pipeline-to-acknowledge-uncertainty/4515061): Adds retrieval confidence, citation validation, and abstention judging. [May 2026]
 - [Evaluating LLMs and RAG Systems✍️](https://dzone.com/articles/evaluating-llms-and-rag-systems): Best Practices for Evaluating LLMs and RAG Systems [27 Jan 2025]
 - [From Zero to Hero: Proven Methods to Optimize RAG for Production✍️](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/from-zero-to-hero-proven-methods-to-optimize-rag-for-production/4450040): ColBERT (Token-level embedding), [CoPali](https://huggingface.co/vidore/colpali-v1.2)(Extends ColBERT's multi-vector retrieval and late interaction from text to vision), RAPTOR, HyDE, Re-Ranking and Fusion [Sep 2025]
 - [Galileo eBook](https://www.rungalileo.io/mastering-rag): 200 pages content. Mastering RAG. [🗄️](../files/archive/Mastering%20RAG-compressed.pdf) [Sep 2024]
@@ -86,6 +87,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Hyde📑](https://arxiv.org/abs/2212.10496): Hypothetical Document Embeddings. `zero-shot (generate a hypothetical document) -> embedding -> avg vectors -> retrieval` [20 Dec 2022]
 - [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning📑](https://arxiv.org/abs/2401.06532): INTERS covers 21 search tasks across three categories: query understanding, document understanding, and query-document relationship understanding. The dataset is designed for instruction tuning, a method that fine-tunes LLMs on natural language instructions. [git](https://github.com/DaoD/INTERS) [12 Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/DaoD/INTERS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Is Grep All You Need?📑](https://arxiv.org/abs/2605.15184): Agent harness study comparing grep and vector retrieval. [May 2026]
 - [Medical RAG Benchmark (MIRAGE)📑💡](https://arxiv.org/abs/2402.13178): MedRAG toolkit; RAG improves LLM accuracy up to 18% with mixed corpora/retrievers. [Feb 2024]
 - [OP-RAG: Order-preserve RAG📑](https://arxiv.org/abs/2409.01666): Unlike traditional RAG, which sorts retrieved chunks by relevance, we keep them in their original order from the text.  [3 Sep 2024]
 - [PlanRAG📑](https://arxiv.org/abs/2406.12430): Decision Making. Decision QA benchmark, DQA. Plan -> Retrieve -> Make a decision (PlanRAG) [git](https://github.com/myeon9h/PlanRAG) [18 Jun 2024]
@@ -227,8 +229,10 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?📑](https://arxiv.org/abs/2602.11988): AGENTS.md often reduces agent success rates and increases cost — keep them minimal. [Feb 2026]
 1. [AgentCoder📑](https://arxiv.org/abs/2312.13010): Multi-agent code generation with iterative testing. [Dec 2023]
 1. [LDB📑](https://arxiv.org/abs/2402.16906): LLM debugger verifying runtime execution step by step. [Feb 2024]
+1. [LLMs Corrupt Your Documents When You Delegate📑](https://arxiv.org/abs/2604.15597): DELEGATE-52 benchmark shows long delegated workflows silently corrupt documents. [Apr 2026]
 1. [Generative Agent Simulations of 1,000 People📑](https://arxiv.org/abs/2411.10109): Simulates 1,000 real individuals; 85% General Social Survey accuracy. [Nov 2024]
 1. [Hyperagents📑](https://arxiv.org/abs/2603.19461): Self-referential agents. Metacognitive self-improvement, where AI rewrites its own improvement process—achieving cross-domain gains (e.g., 0→0.71 in review tasks). [Mar 2026]
+1. [Recursive Multi-Agent Systems📑](https://recursivemas.github.io/): Latent-space recursive collaboration improves accuracy while reducing tokens. [May 2026]
 1. [Recursive Language Models (RLMs), a general inference strategy📑](https://arxiv.org/abs/2512.24601): A new general inference strategy that lets large language models process arbitrarily long inputs by treating the entire prompt as an external environment and programmatically decomposing and recursively calling the model on pieces of the input. [Dec 2025]
 1. [Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets📑](https://arxiv.org/pdf/2604.02460): Shows single-agent systems can match or outperform multi-agent systems when test-time compute is normalized. [Apr 2026]
 1. [Solving a Million-Step LLM Task with Zero Errors📑](https://arxiv.org/abs/2511.09030): MDAP framework with MAKER decomposition and error correction. [Nov 2025]

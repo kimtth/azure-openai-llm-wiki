@@ -384,10 +384,7 @@ TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
     "GraphRAG & Knowledge Graphs": ("graphrag", "knowledge graph", "graph rag", "graph retrieval"),
     "Embeddings & Vector Search": ("embedding", "embeddings", "vector", "semantic similarity", "dense retrieval"),
     "Function Calling & Tool Use": ("tool", "tools", "function calling", "api", "tool learning"),
-    "LLM for Robotics & Embodied AI": (
-        "robot", "robotics", "embodied", "vision-language-action", "vla", "physical world",
-        "grounded language", "parse and perceive",
-    ),
+    "LLM for Robotics & Embodied AI": ("robot", "robotics", "embodied", "vision-language-action", "vla"),
     "LLMOps & Model Serving": ("llmops", "serving", "deployment", "continuous batching", "pagedattention"),
     "PEFT & LoRA": ("lora", "qlora", "adapter", "parameter-efficient", "peft", "prefix tuning"),
     "Instruction Tuning & SFT": ("instruction tuning", "instruction following", "sft", "self-instruct", "alpaca"),
