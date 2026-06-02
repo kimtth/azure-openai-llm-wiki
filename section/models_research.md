@@ -69,8 +69,8 @@
 
   | **Architecture Type** | **Key Models** | **Attention Mechanism** | **Main Advantage** | **Main Limitation** | **Use Case** |
   | --- | --- | --- | --- | --- | --- |
-  | **Standard Transformer** | GPT-5, DeepSeek V3/R1, Llama 4, Qwen3, Gemini 2.5, MiniMax-M2 | Quadratic O(n²) scaled-dot-product | Proven, SOTA performance, mature tooling | Expensive training & inference, quadratic complexity | General-purpose LLM tasks |
-  | **Linear Attention Hybrids** | Qwen3-Next, Kimi Linear, MiniMax-M1, DeepSeek V3.2 | Gated DeltaNet + Full Attention (3:1 ratio) | 75% KV cache reduction, 6× decoding throughput, linear O(n) | Trades accuracy for efficiency, added complexity | Long-context tasks, resource-constrained environments |
+  | **Standard Transformer** | GPT-5, DeepSeek V3/R1, Llama 4, Qwen3, Gemini 2.5, MiniMax-M3 | Quadratic O(n²) scaled-dot-product | Proven, SOTA performance, mature tooling | Expensive training & inference, quadratic complexity | General-purpose LLM tasks |
+  | **Linear Attention Hybrids** | Qwen3-Next, Kimi Linear, DeepSeek V3.2 | Gated DeltaNet + Full Attention (3:1 ratio) | 75% KV cache reduction, 6× decoding throughput, linear O(n) | Trades accuracy for efficiency, added complexity | Long-context tasks, resource-constrained environments |
   | **Text Diffusion** | LLaDA, Gemini Diffusion | Bidirectional (no causal mask) | Parallel token generation, faster responses | Can't stream, tricky tool-calling, quality degradation with fewer steps | Fast inference, on-device LLMs |
   | **Code World Models** | CWM (32B) | Standard sliding-window attention | Simulates code execution, improves reasoning | Limited to code domain, added latency from execution traces | Code generation, debugging, test-time scaling |
   | **Small Recursive Transformers** | TRM (7M), HRM (28M) | Standard attention with recursive refinement | Very small (7M params), strong puzzle solving, <$500 training cost | Special-purpose, limited to structured tasks (Sudoku, ARC, Maze) | Domain-specific reasoning, tool-calling modules |
@@ -249,7 +249,8 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [Phi-4-mini-flash-reasoning✍️](https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/): 3.8B, 64K context, Single GPU, Decoder-Hybrid-Decoder architecture  [9 Jul 2025]
 - MiniMaxAI
   - Founded in Dec 2021. Shanghai, China.
-  - [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2): Coding and Agent tasks, 230B (10B Active), MoE, a new high ahead of DeepSeek-V3.2 and Kimi K2 ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M2?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+  - [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2): Coding and Agent tasks, 230B (10B Active), MoE, a new high ahead of DeepSeek-V3.2 and Kimi K2. ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M2?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+  - [MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3): New flagship model with 512K context window, 128K max output, image input, available via OpenAI- and Anthropic-compatible APIs. ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M3?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - Mistral
   - Founded in April 2023. French tech.
   - Model overview [✍️](https://docs.mistral.ai/getting-started/models/)
