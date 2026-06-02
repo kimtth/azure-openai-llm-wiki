@@ -2,41 +2,41 @@
 
 ## Contents
 
-- [Azure OpenAI Overview](#azure-openai-overview)
-- [LLM Frameworks](#llm-frameworks)
-- [Prompt Tooling](#prompt-tooling)
+- [Azure OpenAI & Foundry Overview](#azure-openai--foundry-overview)
+- [Orchestration Frameworks](#orchestration-frameworks)
+- [Prompt Engineering & Tooling](#prompt-engineering--tooling)
 - [Agent Frameworks](#agent-frameworks)
-- [Deep Learning](#deep-learning)
-- [Risk & LLMOps](#risk--llmops)
-- [Data Processing](#data-processing)
-- [Developer Tooling](#developer-tooling)
-- [Microsoft Copilot Products](#microsoft-copilot-products)
-- [Agent Development](#agent-development)
-- [Copilot Development](#copilot-development)
+- [Model Training & Inference](#model-training--inference)
+- [Safety, Security & LLMOps](#safety-security--llmops)
+- [Data Processing & Memory](#data-processing--memory)
+- [Dev Tools, MCP & Extensions](#dev-tools-mcp--extensions)
+- [Copilot Product Catalog](#copilot-product-catalog)
+- [Microsoft Foundry & AI Services](#microsoft-foundry--ai-services)
 - [Azure AI Search](#azure-ai-search)
-- [Azure AI Services](#azure-ai-services)
+- [Agent Development](#agent-development)
+- [Microsoft 365 Agent Development](#microsoft-365-agent-development)
+- [Learning Resources & Workshops](#learning-resources--workshops)
 - [Microsoft Research](#microsoft-research)
-- [Azure OpenAI Application](#azure-openai-application)
-- [Azure OpenAI Accelerator](#azure-openai-accelerator)
-- [Azure OpenAI Samples](#azure-openai-samples)
-- [Use Case & Architecture References](#use-case--architecture-references)
+- [Sample Applications](#sample-applications)
+- [Solution Accelerators](#solution-accelerators)
+- [Code Samples & Workshops](#code-samples--workshops)
+- [Architecture Patterns & Use Cases](#architecture-patterns--use-cases)
 
-## Azure OpenAI Overview
+## Azure OpenAI & Foundry Overview
 
 - [Abuse Monitoring](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy) - Data handling and retention policy for abuse detection in Azure OpenAI.
 - [Azure OpenAI Models](https://ai.azure.com/explore/models) - Catalog of foundation and reasoning models available from Azure OpenAI.
 - [OpenAI Models](https://platform.openai.com/docs/models) - Catalog of foundation and reasoning models available from OpenAI.
 - [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview) - Overview of Azure-hosted OpenAI capabilities, security and integration features.
 
-## LLM Frameworks
+## Orchestration Frameworks
 
 - [Artificial Intelligence Controller Interface (AICI)](https://github.com/microsoft/aici) - Secure sandboxed controllers for structured real-time LLM output control. (Sep 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/aici?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure ML Prompt Flow](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow) - Visual designer for prompt orchestration and evaluation supporting Jinja templates. (Jun 2023)
-- [Kernel Memory](https://github.com/microsoft/kernel-memory) - Service and plugins for scalable ingestion, hybrid embedding, and memory pipelines. (Jul 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/kernel-memory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Unified SDK (Semantic Kernel & AutoGen), Graph-based Workflows, DevUI, Built-in connectors, MCP + A2A + OpenAPI. (Apr 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-framework?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - SDK for orchestrating AI services, functions, memory, and planners across languages. (Feb 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Prompt Tooling
+## Prompt Engineering & Tooling
 
 - [GenAIScript](https://github.com/microsoft/genaiscript) - JavaScript framework to orchestrate LLM calls, tools, and data in unified scripts. (Aug 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/genaiscript?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [guidance](https://github.com/microsoft/guidance) - DSL for structured prompting and controlled generation with chain-of-thought patterns. (Nov 2022) ![**github stars**](https://img.shields.io/github/stars/microsoft/guidance?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -53,12 +53,10 @@
 
 - [AGDebugger](https://github.com/microsoft/agdebugger) - Visual tool for AutoGen-based multi-agent debugging. (Jan 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agdebugger?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Agent Lightning](https://github.com/microsoft/agent-lightning) - Train and optimize agents (including RL, prompt‑optimization, multi‑agent workflows).  (Jun 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-lightning?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) - Policy enforcement, identity, and sandboxing for secure enterprise agents. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AIOpsLab](https://www.microsoft.com/en-us/research/blog/aiopslab-building-ai-agents-for-autonomous-clouds/) - Research-driven AI agents for cloud incident analysis and root cause automation.
 - [Autogen](https://github.com/microsoft/autogen) - Customizable multi-agent conversation and tool orchestration framework (community AG2 and Microsoft variants). (Mar 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/autogen?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Copilot SDK](https://github.com/github/copilot-sdk) - Multi-platform SDK for integrating GitHub Copilot Agent into apps and services. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/github/copilot-sdk?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ExACT](https://github.com/microsoft/ExACT) - Adaptive retrieval and planning using interaction memory and Monte Carlo Tree Search. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ExACT?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [EvalsforAgentsInterop](https://github.com/microsoft/EvalsforAgentsInterop) - Evaluates LLM-powered productivity agents through realistic scenario simulations. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/EvalsforAgentsInterop?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [JARVIS](https://github.com/microsoft/JARVIS) - Bridge connecting LLMs with specialized AI models for composite task execution. (Mar 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/JARVIS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Magentic-Marketplace](https://github.com/microsoft/multi-agent-marketplace) - Market simulation using agents. (27 Oct 2025) [](https://arxiv.org/pdf/2510.25779) ![**github stars**](https://img.shields.io/github/stars/microsoft/multi-agent-marketplace?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Magentic-One](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/) - Generalist multi-agent system for complex multi-step automation.
@@ -68,12 +66,13 @@
 - [Semantic Workbench](https://github.com/microsoft/semanticworkbench) - Development environment for intelligent multi-agent scenario design and debugging. (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/semanticworkbench?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [TaskWeaver](https://github.com/microsoft/TaskWeaver) - Code-first natural language to executable workflow translation with rich data planning. (Sep 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/TaskWeaver?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [TinyTroupe](https://github.com/microsoft/TinyTroupe) - Multi-agent persona simulation for scenario exploration and insight generation. (Mar 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/TinyTroupe?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [TypeAgent](https://github.com/microsoft/TypeAgent) - Personal-agent architecture using structured prompting, action schemas, and Structured RAG memory. (Jul 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/TypeAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [UFO](https://github.com/microsoft/UFO) - UI-centric Windows interaction agent for system-level task automation. (Mar 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/UFO?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Vanilla AI Agents](https://github.com/Azure-Samples/vanilla-aiagents) - Minimal agent patterns without heavy framework abstractions. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/vanilla-aiagents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Webwright](https://github.com/microsoft/Webwright) - Terminal-driven browser agent framework with Playwright and reusable scripts. (May 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/Webwright?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) - Benchmarking and evaluation platform for multimodal Windows desktop agents. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/WindowsAgentArena?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Deep Learning
+## Model Training & Inference
 
 - [BitNet](https://github.com/microsoft/BitNet) - Inference framework for ultra-low precision (1-bit) large language models. (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/BitNet?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [DeepSpeed](https://github.com/microsoft/DeepSpeed) - Distributed training and inference optimization library featuring ZeRO optimizations. (May 2020) ![**github stars**](https://img.shields.io/github/stars/microsoft/DeepSpeed?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -82,24 +81,30 @@
 - [Tutel](https://github.com/microsoft/Tutel) - Optimized Mixture-of-Experts (MoE) library with FP8/NVFP4/MXFP4 support. (Aug 2021) ![**github stars**](https://img.shields.io/github/stars/microsoft/Tutel?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [UniLM (Foundation Models)](https://github.com/microsoft/unilm) - Collection of large-scale pretrained architectures for multimodal and language tasks. (Mar 2020) ![**github stars**](https://img.shields.io/github/stars/microsoft/unilm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Risk & LLMOps
+## Safety, Security & LLMOps
 
+- [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) - Policy enforcement, identity, and sandboxing for secure enterprise agents. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI Central](https://github.com/microsoft/AICentral) - Control plane for authenticated, resilient access to multiple OpenAI endpoints. (Oct 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/AICentral?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/evaluate-sdk) - Evaluation tooling for generative AI quality and safety metrics. (Oct 2024)
+- [EvalsforAgentsInterop](https://github.com/microsoft/EvalsforAgentsInterop) - Evaluates LLM-powered productivity agents through realistic scenario simulations. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/EvalsforAgentsInterop?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [MDASH](https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/) - Multi-model agentic security harness for vulnerability discovery and proof. (May 2026)
+- [Microsoft Entra Agent ID](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392) - Central registration and governance for organizational AI agents. (20 May 2025)
+- [Presidio](https://github.com/microsoft/presidio) - Context-aware, pluggable PII detection and de-identification for text and images. (Oct 2019) ![**github stars**](https://img.shields.io/github/stars/microsoft/presidio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Presidio Research](https://github.com/microsoft/presidio-research) - Data science tools for developing and evaluating Presidio PII recognizers. (Jan 2020) ![**github stars**](https://img.shields.io/github/stars/microsoft/presidio-research?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [PyRIT](https://github.com/Azure/PyRIT) - Risk identification toolkit targeting robustness, safety, and adversarial prompt detection. (Dec 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/PyRIT?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Securing MCP: A Control Plane for Agent Tool Execution](https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution) - Introduces Agent Governance Toolkit for MCP tool definition scanning, policy enforcement, response inspection, identity, and audit logs. [Apr 2026]
 
-## Data Processing
+## Data Processing & Memory
 
 - [Azure HorizonDB](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-azure-horizondb/4469710) - New PostgreSQL service with advanced DiskANN vector indexing and large-scale replication. (19 Nov 2025)
+- [Data Formulator](https://github.com/microsoft/data-formulator) - Iterative AI-assisted creation and transformation of data visualizations. (18 Sep 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/data-formulator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [DiskANN](https://github.com/microsoft/DiskANN) - Graph-based indices for scalable and fast approximate nearest neighbor search. (Jun 2020) ![**github stars**](https://img.shields.io/github/stars/microsoft/DiskANN?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Kernel Memory](https://github.com/microsoft/kernel-memory) - Service and plugins for scalable ingestion, hybrid embedding, and memory pipelines. (Jul 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/kernel-memory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [markitdown](https://github.com/microsoft/markitdown) - Conversion utility for office and structured documents to Markdown. (14 Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/markitdown?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) - Unified platform combining data integration, engineering, warehousing, and BI. (May 2023)
 - [NLWeb](https://github.com/microsoft/NLWeb) - Conversational interfaces for web data with MCP, Schema.org, and RSS support. (Apr 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/NLWeb?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Presidio](https://github.com/microsoft/presidio) - Context-aware, pluggable PII detection and de-identification for text and images. (Oct 2019) ![**github stars**](https://img.shields.io/github/stars/microsoft/presidio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Presidio Research](https://github.com/microsoft/presidio-research) - Data science tools for developing and evaluating Presidio PII recognizers. (Jan 2020) ![**github stars**](https://img.shields.io/github/stars/microsoft/presidio-research?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Developer Tooling
+## Dev Tools, MCP & Extensions
 
 - [agent-skills](https://github.com/microsoft/agent-skills) - 131 skills, MCP configs, and agents for Azure SDK and AI Foundry development. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/agent-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Agent365-devTools](https://github.com/microsoft/Agent365-devTools) - CLI for developing, deploying, and managing Microsoft Agent 365 applications. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-devTools?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -111,7 +116,6 @@
 - [azure-skills](https://github.com/microsoft/azure-skills) - Official agent plugin with Azure skills and MCP server configurations. (Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Claude Code + MS Foundry](https://devblogs.microsoft.com/all-things-azure/claude-code-microsoft-foundry-enterprise-ai-coding-agent-setup/) - Claude Code + Microsoft Foundry enterprise setup on Azure. (Jan 2026)
 - [Cosmos DB Agent Kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit) - A collection of skills for AI coding agents working with Azure Cosmos DB. ![**github stars**](https://img.shields.io/github/stars/AzureCosmosDB/cosmosdb-agent-kit?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) (Jan 2026)
-- [Data Formulator](https://github.com/microsoft/data-formulator) - Iterative AI-assisted creation and transformation of data visualizations. (18 Sep 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/data-formulator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [dotnet/skills](https://github.com/dotnet/skills/) - Skill packs and templates for .NET-focused AI coding and agent workflows. (Feb 2026) ![**github stars**](https://img.shields.io/github/stars/dotnet/skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ExcelMcp - MCP Server for Microsoft Excel](https://github.com/sbroenne/mcp-server-excel) - MCP server that lets AI assistants (e.g. via GitHub Copilot or other LLM-based agents) control Microsoft Excel — automate Power Query, VBA, DAX, formatting, and more. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/sbroenne/mcp-server-excel?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Foundry-Local](https://github.com/microsoft/Foundry-Local) - Local-first dev setup for Microsoft Foundry projects. (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Foundry-Local?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -119,37 +123,39 @@
 - [GitHub Copilot CLI](https://github.com/github/copilot-cli) - AI-powered coding assistance in your terminal. ![**github stars**](https://img.shields.io/github/stars/github/copilot-cli?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [github-copilot-office](https://github.com/patniko/github-copilot-office) - GitHub Copilot add-in for Word, Excel, and PowerPoint. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/patniko/github-copilot-office?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [hve-core](https://github.com/microsoft/hve-core) - Hypervelocity Engineering assets: agents, instructions, prompts, and Copilot workflows. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/hve-core?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Introducing Skills in Azure API Center](https://techcommunity.microsoft.com/blog/integrationsonazureblog/introducing-skills-in-azure-api-center/4506014) - Govern reusable AI skills alongside APIs and MCP servers. (Mar 2026)
 - [MCP Gateway](https://github.com/microsoft/mcp-gateway) - Reverse proxy and management layer for MCP servers with Kubernetes lifecycle support. (May 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/mcp-gateway?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft MCP](https://github.com/microsoft/mcp) - Catalog of official Microsoft MCP (Model Context Protocol) server implementations for AI data access and tool integration. (Apr 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Playwright CLI for AI Agents](https://testdino.com/blog/playwright-cli) - Browser automation CLI with lower token cost than MCP browser sessions. (Feb 2026)
 - [Power BI Modeling MCP Server](https://github.com/microsoft/powerbi-modeling-mcp) - Power BI semantic modeling capabilities to your AI agents through a local MCP server. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/powerbi-modeling-mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [power-platform-skills](https://github.com/microsoft/power-platform-skills) - Skill marketplace for Claude Code, Copilot, Power Apps, and Power Pages. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/power-platform-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [SWE-bench-Live](https://github.com/microsoft/SWE-bench-Live) - Evaluating your AI system on latest software engineering tasks. (NeurIPS 2025 D&B). (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/SWE-bench-Live?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [vscode-copilotstudio](https://github.com/microsoft/vscode-copilotstudio) - VS Code extension for authoring and syncing Copilot Studio agents. (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/vscode-copilotstudio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [vscode-chat-customizations-evaluation](https://github.com/microsoft/vscode-chat-customizations-evaluation) - VS Code extension for LLM-powered analysis of prompt, agent, skill, and instruction files. (Apr 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/vscode-chat-customizations-evaluation?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [vscode-copilotstudio](https://github.com/microsoft/vscode-copilotstudio) - VS Code extension for authoring and syncing Copilot Studio agents. (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/vscode-copilotstudio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [wassette](https://github.com/microsoft/wassette) - Runs WebAssembly Components as MCP tools with Wasmtime sandbox isolation. (Jul 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/wassette?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [waza](https://github.com/microsoft/waza) - Go CLI for creating, testing, measuring, and improving agent skills and custom agents. (Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/waza?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [WorkIQ CLI and MCP](https://github.com/microsoft/work-iq-mcp) - MCP Server and CLI for accessing Work IQ. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/work-iq-mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Microsoft Copilot Products
+## Copilot Product Catalog
 
+- [A closer look at Work IQ](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/a-closer-look-at-work-iq/4499789) - Microsoft 365 Copilot intelligence layer combining tenant data, semantic index, memory, skills, tools, and business context. [Mar 2026]
 - [Agent 365](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/) - Control plane for AI agents (registry, access control, visualization, interoperability, security). (18 Nov 2025)
 - [Agent 365 Governance Maturity Heatmap](https://techcommunity.microsoft.com/blog/agent-365-blog/microsoft-365-e7--agent365-from-where-you-are-to-enterprise-ai-at-scale/4519969) - Maps Agent 365 governance maturity across Entra, Defender, and Purview. (May 2026)
 - [Agent365](https://techcommunity.microsoft.com/blog/agent-365-blog/agent365-the-identity-first-control-plane-for-scalable-ai-agents/4519921) - Identity-first control plane for governing enterprise AI agents. (May 2026)
-- [A closer look at Work IQ](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/a-closer-look-at-work-iq/4499789) - Microsoft 365 Copilot intelligence layer combining tenant data, semantic index, memory, skills, tools, and business context. [Mar 2026]
 - [Azure Copilot Migration Agent](https://techcommunity.microsoft.com/blog/azuremigrationblog/azure-copilot-migration-agent/4501292) - Azure Migrate agent for discovery, 6R recommendations, landing-zone automation, wave planning, and GitHub Copilot modernization handoff. [Mar 2026]
 - [Azure SRE Agent](https://techcommunity.microsoft.com/blog/azurepaasblog/introducing-azure-sre-agent/4414569) - A cloud agent service. Site reliability engineering (SRE) covers Usage, Incident, and Performance Monitoring. (19 May 2025)
 - [Azure SRE Agent GitHub Repository](https://github.com/microsoft/sre-agent) - Official sample of Azure SRE Agent. (September 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/sre-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot) - Analytics insights assistant for session telemetry. (March 2023)
 - [Copilot Checkout and Brand Agents](https://about.ads.microsoft.com/en/blog/post/january-2026/conversations-that-convert-copilot-checkout-and-brand-agents) - In-chat purchases and automated brand interactions. (6 Jan 2026)
 - [Copilot Health](https://microsoft.ai/news/introducing-copilot-health) - Health-focused Copilot combining records, wearables, and proactive guidance. (Mar 2026)
-- [Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot) - Analytics insights assistant for session telemetry. (March 2023)
+- [Copilot in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum) - Quantum workload guidance with Copilot integration. (June 2023)
+- [Copilot in Windows](https://learn.microsoft.com/en-us/copilot/copilot) - System-level AI integration in Windows. (Sep 2023)
 - [Copilot Pages](https://techcommunity.microsoft.com/en-us/microsoft-365-copilot/announcing-copilot-pages-for-multiplayer-collaboration/ba-p/4242701) - Persistent collaborative canvas in Copilot chat. (16 Sep 2024)
 - [Copilot Pro](https://support.microsoft.com/en-us/copilot-pro) - Premium Copilot features, model priority, and M365 integration. (Jan 2024)
 - [Copilot Scenario Library](https://adoption.microsoft.com/en-us/copilot-scenario-library/) - Examples of Copilot business use cases.
 - [Copilot Tasks](https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/02/26/copilot-tasks-from-answers-to-actions/) - Copilot executes delegated tasks like booking, research, and purchasing. (Feb 2026)
 - [Copilot Usage Report 2025](https://microsoft.ai/news/its-about-time-the-copilot-usage-report-2025) - Health queries dominate mobile use, programming peaks on weekdays and gaming on weekends, and February sees a Valentine's Day spike in relationship and personal growth conversations. (10 Dec 2025)
 - [Copilot Vision](https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/12/05/copilot-vision-now-in-preview-a-new-way-to-browse/) - Edge experience for browsing with on-page visual grounding. (05 Dec 2024)
-- [Copilot in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum) - Quantum workload guidance with Copilot integration. (June 2023)
-- [Copilot in Windows](https://learn.microsoft.com/en-us/copilot/copilot) - System-level AI integration in Windows. (Sep 2023)
 - [Copilot+ PC](https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/) - Windows PCs with integrated NPUs for AI workloads. (May 2024)
 - [Dynamics 365 Copilot](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/copilot-for-dynamics365) - Embedded generative assistance across Dynamics workloads. (March 2023)
 - [Fabric Copilot](https://learn.microsoft.com/en-us/fabric/get-started/copilot-fabric-overview) - Copilot features for Fabric. (March 2024)
@@ -158,9 +164,9 @@
 - [Introducing multi-model intelligence in Researcher](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-multi-model-intelligence-in-researcher/4506011) - Researcher adds Critique and Council workflows that combine generation, review, and model comparison for higher-quality deep research. [Mar 2026]
 - [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) - Cross-suite productivity AI assistance. (Nov 2023)
 - [Microsoft 365 Copilot Chat](https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat/) - Chat experience (free tier) and pay-as-you-go agents.
+- [Microsoft already has 80 different products called Copilot](https://www.google.com/amp/s/mezha.ua/en/news/u-microsoft-ye-vzhe-80-riznih-produktiv-iz-nazvoyu-copilot-310076/amp/) - Overview of Microsoft's expanding Copilot product naming footprint. (2026)
 - [Microsoft Copilot](https://copilot.microsoft.com/) - Web-based AI assistant (formerly Bing Chat Enterprise). (Nov 2023)
 - [Microsoft Copilot for Azure](https://learn.microsoft.com/en-us/azure/copilot) - AI-assisted cloud operations for management and optimization. (Nov 2023)
-- [Microsoft already has 80 different products called Copilot](https://www.google.com/amp/s/mezha.ua/en/news/u-microsoft-ye-vzhe-80-riznih-produktiv-iz-nazvoyu-copilot-310076/amp/) - Overview of Microsoft's expanding Copilot product naming footprint. (2026)
 - [Nuance DAX Copilot](https://www.nuance.com/healthcare/dragon-ai-clinical-solutions/dax-copilot.html) - Clinical documentation automation. (18 Jan 2024)
 - [Power Apps AI Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview) - Copilot feature in Power Apps AI. (March 2023)
 - [Power Automate Copilot](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot) - Copilot feature in Power Automate cloud flows. (March 2023)
@@ -174,66 +180,21 @@
 - [Word, Excel, and PowerPoint Agents in Microsoft 365](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-word-excel-and-powerpoint-agents-in-microsoft-365-copilot/4470604) - Dedicated agents that help users create documents, spreadsheets, and presentations. (19 Nov 2025)
 - [Work IQ](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/) - Enterprise intelligence layer behind Microsoft 365 Copilot agents (Fabric IQ, Foundry IQ). (18 Nov 2025)
 
-## Agent Development
+## Microsoft Foundry & AI Services
 
-- [Agent 365 SDK - C# /.NET](https://github.com/microsoft/Agent365-dotnet) - .NET samples for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-dotnet?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Agent 365 SDK - Python](https://github.com/microsoft/Agent365-python) - Python samples for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Agent 365 SDK Samples and Prompts](https://github.com/microsoft/Agent365-Samples) - Sample scenarios for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-Samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Agent builder & Plan designer in Power Apps](https://www.microsoft.com/en-us/power-platform/blog/power-apps/build-user-focused-intelligent-solutions-in-power-apps-start-with-a-plan/) - Design and configure intelligent solutions in Power Apps.
-- [Agents in Power Platform](https://www.microsoft.com/en-us/power-platform/blog/2024/11/19/redefine-development-ai-first-innovation-with-agents-and-microsoft-copilot-in-power-platform/) - AI first no-code development with Copilot agents in Power Platform. (19 Nov 2024)
-- [agentic-platform-engineering](https://github.com/microsoftgbb/agentic-platform-engineering) - Platform engineering patterns using GitHub Copilot agents and golden paths. (Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoftgbb/agentic-platform-engineering?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners) - Ten-lesson introduction to building AI agents for Beginners. (Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI BAST Agents Library](https://github.com/microsoft/aibast-agents-library) - AI BAST Specialist Team agents library. Rapid Agent Prototype Pattern (RAPP). (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/aibast-agents-library?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI Developer](https://github.com/microsoft/ai-developer) - Challenges for Learning Azure AI Foundry and Semantic Kernel Fundamentals. (Oct 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-developer?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI fluency](https://github.com/microsoft/AIFluency) - Learning resources and challenges for AI fluency. (Apr 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/AIFluency?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AKS-Lab-GitHubCopilot](https://github.com/microsoft/AKS-Lab-GitHubCopilot) - ZavaShop multi-agent retail lab using MAF, Copilot SDK, AKS, and ACA. (May 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/AKS-Lab-GitHubCopilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Adding Aspire to a Python RAG Application](https://devblogs.microsoft.com/aspire/adding-aspire-to-a-python-rag-application/) - Use Aspire for local orchestration and observability in Python RAG apps. (Jan 2026)
-- [AgenticOps with AKS-Lab-GitHubCopilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916) - Field guide for scoped Copilot custom coding agents. (May 2026)
-- [Aspire Azure Enterprise Networking](https://devblogs.microsoft.com/aspire/aspire-azure-enterprise-networking/) - Enterprise networking guidance for Aspire-hosted Azure applications. (May 2026)
-- [Automated Compliance Agents Hackathon](https://github.com/microsoft/azure-trust-agents) - Hands-on hackathon challenges for multi-agent financial compliance workflows. (Sep 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-trust-agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Artificial Intelligence Architecture Design](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) - Overview of Azure AI services and solution patterns.
+- [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940) - Code Interpreter, Function calling, Knowledge retrieval tool, and Threads. (06 Feb 2024)
 - [Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) - Managed agent service in Azure AI Foundry. (19 Nov 2024)
-- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio) - Portal and SDK for building generative AI solutions.
-- [Azure AI Foundry & Agents Workshop](https://github.com/microsoft/agentic-ai-lab) - Workshop materials for building agents with Azure AI Foundry. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agentic-ai-lab?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows](https://devblogs.microsoft.com/agent-framework/ag-ui-multi-agent-workflow-demo/) - MAF Python workflow sample streaming handoffs, interrupts, and human approvals to a React UI via AG-UI. [Apr 2026]
-- [Combine Copilot Agents with Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/) - Enhance Copilot with Office add-in actions for natural language interaction with Office documents. (22 May 2025)
-- [Deploy MAF agents with Foundry Hosted Agents](https://devblogs.microsoft.com/agent-framework/from-local-to-production-deploy-your-microsoft-agent-framework-agent-with-foundry-hosted-agents/) - Production deployment path for Microsoft Agent Framework agents. (May 2026)
-- [FoundryIQ-and-Agent-Framework-demo](https://github.com/leyredelacalzada/FoundryIQ-and-Agent-Framework-demo) - Multi-agent demo using Microsoft Agent Framework SDK and Azure AI Foundry with FoundryIQ. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/leyredelacalzada/FoundryIQ-and-Agent-Framework-demo?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Foundry Agents and Custom Engine Agents through the Corporate Firewall](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agents-and-custom-engine-agents-through-the-corporate-firewall/4502218) - APIM/YARP pattern for exposing private Foundry and custom agents to Teams and Copilot with Bot JWT validation. [Apr 2026]
-- [Hybrid AI Agents in Python](https://techcommunity.microsoft.com/blog/educatordeveloperblog/hybrid-ai-agents-in-python-routing-between-foundry-local-and-microsoft-foundry/4522979) - Routes private or simple prompts locally and complex prompts to Foundry. (May 2026)
-- [Introducing Skills in Azure API Center](https://techcommunity.microsoft.com/blog/integrationsonazureblog/introducing-skills-in-azure-api-center/4506014) - Govern reusable AI skills alongside APIs and MCP servers. (Mar 2026)
-- [Introducing Copilot Actions, new agents, Copilot Control System](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/) - New agent capabilities and management tools for IT teams.
-- [Microsoft 365 Agents SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-365-agents-sdk/) - The evolution of the Bot Framework to build AI Agents. (19 Nov 2024)
-- [Microsoft 365 Agents SDK - C# /.NET](https://github.com/microsoft/Agents-for-net) - Microsoft 365 Agent SDK components for .NET. (Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-for-net?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Microsoft 365 Agents SDK - Python](https://github.com/microsoft/Agents-for-python) - Microsoft 365 Agent SDK components for Python. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-for-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Microsoft Agent Factory](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-microsoft-agent-factory/4470732) - Program for building agents with Work IQ, Fabric IQ, Foundry IQ via Microsoft Foundry & Copilot Studio. (19 Nov 2025)
-- [Microsoft Discovery](https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/) - Graph-based scientific co-reasoning. Specialized discovery agents for conducting research. (19 May 2025)
-- [Microsoft Entra Agent ID](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392) - Central registration and governance for organizational AI agents. (20 May 2025)
+- [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - Transforming Multimodal Data into Insights.
+- [Azure AI Foundry](https://ai.azure.com/) - Portal for building, evaluating, and managing AI applications and agents. (19 Nov 2024)
+- [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems. (20 May 2025)
+- [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - Reinforcement Fine-Tuning (RFT) with o4-mini. (20 May 2025)
+- [Azure AI Foundry SDK](https://aka.ms/aifoundrysdk/reference) - Unified SDK with pre-built app templates. (19 Nov 2024)
+- [Azure Blob Storage and Run:ai Model Streamer](https://devblogs.microsoft.com/azure-sdk/eliminate-llm-cold-starts-load-models-up-to-6x-faster-with-azure-blob-storage-and-runai-model-streamer/) - Streams model weights from Blob Storage to cut cold starts. (May 2026)
+- [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service) - Deep Research capabilities in Azure AI Foundry Agent Service. (7 Jul 2025)
 - [Microsoft Foundry](https://devblogs.microsoft.com/foundry/) - Azure AI Foundry rebranded as Microsoft Foundry. Blog with recent updates. (18 Nov 2025)
-- [microsoft-gbb](https://github.com/microsoftgbb) - Microsoft Global Black Belt GitHub organization for Azure AI patterns, accelerators, and field engineering samples.
-- [Model Mondays](https://github.com/microsoft/model-mondays) - Weekly livestream and office hours on generative AI models and model selection. (Feb 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/model-mondays?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Power Apps MCP closed-loop learning](https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/) - Agent corrections become organization-scoped memory and optimized instructions. (May 2026)
-- [PowerPlatform-DataverseClient-Python](https://github.com/microsoft/PowerPlatform-DataverseClient-Python) - Python client for Microsoft Dataverse — CRUD, SQL queries, and file uploads. (Aug 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/PowerPlatform-DataverseClient-Python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [project-nighthawk](https://github.com/microsoftgbb/project-nighthawk) - AI-powered deep technical research pipeline for AKS and Azure Red Hat OpenShift. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoftgbb/project-nighthawk?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Securing MCP: A Control Plane for Agent Tool Execution](https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution) - Introduces Agent Governance Toolkit for MCP tool definition scanning, policy enforcement, response inspection, identity, and audit logs. [Apr 2026]
-- [SharePoint Agent](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/ignite-2024-agents-in-sharepoint-now-in-general-availability/4298746) - Turn SharePoint sites and documents into interactive agents.
-- [TypeAgent](https://github.com/microsoft/TypeAgent) - Personal-agent architecture using structured prompting, action schemas, and Structured RAG memory. (Jul 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/TypeAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [WorkIQ CLI and MCP](https://github.com/microsoft/work-iq-mcp) - MCP Server and CLI for accessing Work IQ. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/work-iq-mcp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-
-## Copilot Development
-
-- [Agent Evaluation in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-smarter-test-smarter-agent-evaluation-in-microsoft-copilot-studio/) - Structured, automated testing solution directly in Copilot Studio.
-- [Community contributed samples for the Microsoft 365 Copilot](https://github.com/pnp/copilot-pro-dev-samples) - Samples for extending Microsoft 365 Copilot features. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-pro-dev-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Copilot Developer Camp](https://github.com/microsoft/copilot-camp) - Hands-on labs for extending Microsoft 365 Copilot and building custom agents. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/copilot-camp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Copilot Studio Labs](https://microsoft.github.io/mcs-labs/) - Hands-on labs for building AI agents with Microsoft Copilot Studio.
-- [Copilot Studio March 2025 Update](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/) - Added autonomous agents, deep reasoning, and MCP integration. (31 Mar 2025)
-- [Copilot Studio Monthly updates](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/cs-content-type/monthly-updates/) - Copilot Studio news and features for the last month.
-- [Copilot System Overview (video)](https://www.youtube.com/watch?v=E5g20qmeKpg) - Copilot Architecture explanation video. (Mar 2023)
-- [Copilot Tuning](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-tuning/4414762) - Low-code model tuning and grounded agent creation. (May 2025)
-- [Deploying Agentic Services to Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deploying-existing-agentic-services-to-microsoft-365-copilot-via-gateway-and-obo/4504265) - Gateway and OBO pattern for existing agentic services. (May 2026)
-- [Microsoft 365 Copilot - App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - Build working apps & workflows using natural language.
-- [Microsoft 365 Copilot APIs Client Libraries](https://github.com/microsoft/Agents-M365Copilot) - Client libraries for Microsoft 365 Copilot APIs. (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-M365Copilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Customization and orchestration environment (formerly Power Virtual Agents). (Nov 2023)
-- [Power CAT](https://microsoft.github.io/powercat/) - Microsoft Power CAT tools for Power Platform and Copilot Studio adoption. (Feb 2026)
+- [Responses API](https://devblogs.microsoft.com/foundry/introducing-new-tools-and-features-in-the-responses-api-in-azure-ai-foundry/) - Chat Completions API with the advanced tool-calling capabilities.
+- [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership) - Fine-Tuning with Weights & Biases and Azure OpenAI.
 
 ## Azure AI Search
 
@@ -242,10 +203,10 @@
 - [Azure AI Search Demos using Jupyter Notebook](https://github.com/Azure-Samples/rag-with-azure-ai-search-notebooks) - Jupyter notebooks that demonstrate vector search, hybrid search, image search, RAG, and evaluation. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/rag-with-azure-ai-search-notebooks?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Search Documentation](https://learn.microsoft.com/en-us/azure/search/) - Official product documentation and tutorials for Azure AI Search.
 - [Azure AI Search Multimodal Sample](https://github.com/Azure-Samples/azure-ai-search-multimodal-sample) - Demonstrates multimodal ingestion and retrieval patterns. (May 2025) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-ai-search-multimodal-sample?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Azure AI Search OpenAI Purview Data Security Demo](https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity) - Demo integrating Azure Search, OpenAI, and Purview data security. (Jun 2025) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo-purviewdatasecurity?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) - Custom skills for Azure AI Search. (Jun 2019) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-power-skills?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Search Python Playground](https://github.com/farzad528/azure-ai-search-python-playground) - A collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search. (Feb 2024) ![**github stars**](https://img.shields.io/github/stars/farzad528/azure-ai-search-python-playground?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Search Samples](https://github.com/Azure-Samples/azureai-samples) - Official sample code for Azure AI Search. ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azureai-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Azure AI Search OpenAI Purview Data Security Demo](https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity) - Demo integrating Azure Search, OpenAI, and Purview data security. (Jun 2025) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo-purviewdatasecurity?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Search: Outperforming vector search with hybrid retrieval and reranking](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) - Vector search with hybrid retrieval and reranking. (18 Sep 2023)
 - [Document-level access control](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview) - Document-level access helps restrict content visibility to authorized users, based on predefined access rules. (20 May 2025)
 - [Integrated vectorization](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836) - Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization. (24 Aug 2024)
@@ -257,19 +218,68 @@
 - [SPTAG](https://github.com/microsoft/SPTAG) - Vector search library behind SPANN and billion-scale ANN retrieval. (Nov 2021) ![**github stars**](https://img.shields.io/github/stars/microsoft/SPTAG?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Vector Search Sample Code](https://github.com/Azure/azure-search-vector-samples) - Sample code demonstrating Azure AI Search vector capabilities. (Oct 2019) ![**github stars**](https://img.shields.io/github/stars/Azure/azure-search-vector-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Azure AI Services
+## Agent Development
 
-- [Artificial Intelligence Architecture Design](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) - Overview of Azure AI services and solution patterns.
-- [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940) - Code Interpreter, Function calling, Knowledge retrieval tool, and Threads. (06 Feb 2024)
-- [Azure Blob Storage and Run:ai Model Streamer](https://devblogs.microsoft.com/azure-sdk/eliminate-llm-cold-starts-load-models-up-to-6x-faster-with-azure-blob-storage-and-runai-model-streamer/) - Streams model weights from Blob Storage to cut cold starts. (May 2026)
-- [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - Transforming Multimodal Data into Insights.
-- [Azure AI Foundry](https://ai.azure.com/) - Portal for building, evaluating, and managing AI applications and agents. (19 Nov 2024)
-- [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems. (20 May 2025)
-- [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - Reinforcement Fine-Tuning (RFT) with o4-mini. (20 May 2025)
-- [Azure AI Foundry SDK](https://aka.ms/aifoundrysdk/reference) - Unified SDK with pre-built app templates. (19 Nov 2024)
-- [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service) - Deep Research capabilities in Azure AI Foundry Agent Service. (7 Jul 2025)
-- [Responses API](https://devblogs.microsoft.com/foundry/introducing-new-tools-and-features-in-the-responses-api-in-azure-ai-foundry/) - Chat Completions API with the advanced tool-calling capabilities.
-- [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership) - Fine-Tuning with Weights & Biases and Azure OpenAI.
+- [Adding Aspire to a Python RAG Application](https://devblogs.microsoft.com/aspire/adding-aspire-to-a-python-rag-application/) - Use Aspire for local orchestration and observability in Python RAG apps. (Jan 2026)
+- [agentic-platform-engineering](https://github.com/microsoftgbb/agentic-platform-engineering) - Platform engineering patterns using GitHub Copilot agents and golden paths. (Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoftgbb/agentic-platform-engineering?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AgenticOps with AKS-Lab-GitHubCopilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916) - Field guide for scoped Copilot custom coding agents. (May 2026)
+- [AI BAST Agents Library](https://github.com/microsoft/aibast-agents-library) - AI BAST Specialist Team agents library. Rapid Agent Prototype Pattern (RAPP). (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/aibast-agents-library?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AKS-Lab-GitHubCopilot](https://github.com/microsoft/AKS-Lab-GitHubCopilot) - ZavaShop multi-agent retail lab using MAF, Copilot SDK, AKS, and ACA. (May 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/AKS-Lab-GitHubCopilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Aspire Azure Enterprise Networking](https://devblogs.microsoft.com/aspire/aspire-azure-enterprise-networking/) - Enterprise networking guidance for Aspire-hosted Azure applications. (May 2026)
+- [Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework](https://techcommunity.microsoft.com/blog/appsonazureblog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825) - Multi-Agent Workflow Travel Planner With WebJob.
+- [Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows](https://devblogs.microsoft.com/agent-framework/ag-ui-multi-agent-workflow-demo/) - MAF Python workflow sample streaming handoffs, interrupts, and human approvals to a React UI via AG-UI. [Apr 2026]
+- [Deploy MAF agents with Foundry Hosted Agents](https://devblogs.microsoft.com/agent-framework/from-local-to-production-deploy-your-microsoft-agent-framework-agent-with-foundry-hosted-agents/) - Production deployment path for Microsoft Agent Framework agents. (May 2026)
+- [Foundry Agents and Custom Engine Agents through the Corporate Firewall](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agents-and-custom-engine-agents-through-the-corporate-firewall/4502218) - APIM/YARP pattern for exposing private Foundry and custom agents to Teams and Copilot with Bot JWT validation. [Apr 2026]
+- [FoundryIQ-and-Agent-Framework-demo](https://github.com/leyredelacalzada/FoundryIQ-and-Agent-Framework-demo) - Multi-agent demo using Microsoft Agent Framework SDK and Azure AI Foundry with FoundryIQ. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/leyredelacalzada/FoundryIQ-and-Agent-Framework-demo?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Hybrid AI Agents in Python](https://techcommunity.microsoft.com/blog/educatordeveloperblog/hybrid-ai-agents-in-python-routing-between-foundry-local-and-microsoft-foundry/4522979) - Routes private or simple prompts locally and complex prompts to Foundry. (May 2026)
+- [Microsoft Agent Factory](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-microsoft-agent-factory/4470732) - Program for building agents with Work IQ, Fabric IQ, Foundry IQ via Microsoft Foundry & Copilot Studio. (19 Nov 2025)
+- [Microsoft Discovery](https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/) - Graph-based scientific co-reasoning. Specialized discovery agents for conducting research. (19 May 2025)
+- [microsoft-gbb](https://github.com/microsoftgbb) - Microsoft Global Black Belt GitHub organization for Azure AI patterns, accelerators, and field engineering samples.
+- [project-nighthawk](https://github.com/microsoftgbb/project-nighthawk) - AI-powered deep technical research pipeline for AKS and Azure Red Hat OpenShift. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoftgbb/project-nighthawk?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+
+## Microsoft 365 Agent Development
+
+- [Agent 365 SDK - C# /.NET](https://github.com/microsoft/Agent365-dotnet) - .NET samples for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-dotnet?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Agent 365 SDK - Python](https://github.com/microsoft/Agent365-python) - Python samples for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Agent 365 SDK Samples and Prompts](https://github.com/microsoft/Agent365-Samples) - Sample scenarios for Microsoft Agent 365. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent365-Samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Agent builder & Plan designer in Power Apps](https://www.microsoft.com/en-us/power-platform/blog/power-apps/build-user-focused-intelligent-solutions-in-power-apps-start-with-a-plan/) - Design and configure intelligent solutions in Power Apps.
+- [Agent Evaluation in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-smarter-test-smarter-agent-evaluation-in-microsoft-copilot-studio/) - Structured, automated testing solution directly in Copilot Studio.
+- [Agents in Power Platform](https://www.microsoft.com/en-us/power-platform/blog/2024/11/19/redefine-development-ai-first-innovation-with-agents-and-microsoft-copilot-in-power-platform/) - AI first no-code development with Copilot agents in Power Platform. (19 Nov 2024)
+- [Combine Copilot Agents with Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/) - Enhance Copilot with Office add-in actions for natural language interaction with Office documents. (22 May 2025)
+- [Community contributed samples for the Microsoft 365 Copilot](https://github.com/pnp/copilot-pro-dev-samples) - Samples for extending Microsoft 365 Copilot features. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/pnp/copilot-pro-dev-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Copilot Studio March 2025 Update](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/) - Added autonomous agents, deep reasoning, and MCP integration. (31 Mar 2025)
+- [Copilot Studio Monthly updates](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/cs-content-type/monthly-updates/) - Copilot Studio news and features for the last month.
+- [Copilot Tuning](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-tuning/4414762) - Low-code model tuning and grounded agent creation. (May 2025)
+- [Deploying Agentic Services to Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deploying-existing-agentic-services-to-microsoft-365-copilot-via-gateway-and-obo/4504265) - Gateway and OBO pattern for existing agentic services. (May 2026)
+- [Introducing Copilot Actions, new agents, Copilot Control System](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/) - New agent capabilities and management tools for IT teams.
+- [Microsoft 365 Agents SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-365-agents-sdk/) - The evolution of the Bot Framework to build AI Agents. (19 Nov 2024)
+- [Microsoft 365 Agents SDK - C# /.NET](https://github.com/microsoft/Agents-for-net) - Microsoft 365 Agent SDK components for .NET. (Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-for-net?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Microsoft 365 Agents SDK - Python](https://github.com/microsoft/Agents-for-python) - Microsoft 365 Agent SDK components for Python. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-for-python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Microsoft 365 Copilot - App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - Build working apps & workflows using natural language.
+- [Microsoft 365 Copilot APIs Client Libraries](https://github.com/microsoft/Agents-M365Copilot) - Client libraries for Microsoft 365 Copilot APIs. (Mar 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agents-M365Copilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Customization and orchestration environment (formerly Power Virtual Agents). (Nov 2023)
+- [Power Apps MCP closed-loop learning](https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/) - Agent corrections become organization-scoped memory and optimized instructions. (May 2026)
+- [Power CAT](https://microsoft.github.io/powercat/) - Microsoft Power CAT tools for Power Platform and Copilot Studio adoption. (Feb 2026)
+- [PowerPlatform-DataverseClient-Python](https://github.com/microsoft/PowerPlatform-DataverseClient-Python) - Python client for Microsoft Dataverse — CRUD, SQL queries, and file uploads. (Aug 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/PowerPlatform-DataverseClient-Python?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [SharePoint Agent](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/ignite-2024-agents-in-sharepoint-now-in-general-availability/4298746) - Turn SharePoint sites and documents into interactive agents.
+
+## Learning Resources & Workshops
+
+- [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners) - Ten-lesson introduction to building AI agents for Beginners. (Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI Developer](https://github.com/microsoft/ai-developer) - Challenges for Learning Azure AI Foundry and Semantic Kernel Fundamentals. (Oct 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-developer?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI fluency](https://github.com/microsoft/AIFluency) - Learning resources and challenges for AI fluency. (Apr 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/AIFluency?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Automated Compliance Agents Hackathon](https://github.com/microsoft/azure-trust-agents) - Hands-on hackathon challenges for multi-agent financial compliance workflows. (Sep 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-trust-agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Azure AI Foundry & Agents Workshop](https://github.com/microsoft/agentic-ai-lab) - Workshop materials for building agents with Azure AI Foundry. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agentic-ai-lab?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Build AI Solutions with Azure AI Foundry](https://github.com/microsoft/aitour-concept-to-creation-ai-studio) - Sample code and materials for building generative-AI solutions with Azure AI Foundry / Azure AI Studio, including prompt-engineering examples and workflows. (Jul 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/aitour-concept-to-creation-ai-studio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Copilot Developer Camp](https://github.com/microsoft/copilot-camp) - Hands-on labs for extending Microsoft 365 Copilot and building custom agents. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/copilot-camp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Copilot Studio Labs](https://microsoft.github.io/mcs-labs/) - Hands-on labs for building AI agents with Microsoft Copilot Studio.
+- [Copilot System Overview (video)](https://www.youtube.com/watch?v=E5g20qmeKpg) - Copilot Architecture explanation video. (Mar 2023)
+- [EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners) - Small Language Models (SLMs) optimized samples for On-device inference. (Jun 2025)
+- [Microsoft AI Tour](https://github.com/microsoft/aitour-repo-principal-list) - A session and workshop how to best leverage AI. (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/aitour-repo-principal-list?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Model Context Protocol Curriculum for Beginners](https://github.com/microsoft/mcp-for-beginners) - Introductory MCP course. (Apr 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Model Mondays](https://github.com/microsoft/model-mondays) - Weekly livestream and office hours on generative AI models and model selection. (Feb 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/model-mondays?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Partner Resources: AI & ML Academy](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy) - Comprehensive learning resources for partners and developers.
+- [Semantic Kernel Cookbook](https://github.com/microsoft/SemanticKernelCookBook) - Example recipes and tutorials for working with Semantic Kernel. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/SemanticKernelCookBook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 ## Microsoft Research
 
@@ -289,12 +299,12 @@
 - [lida](https://github.com/microsoft/lida) - LLM-powered data visualization and infographic generation from structured data. (Oct 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/lida?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Magentic-One](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/magentic-one.html) - A Generalist Multi-Agent System for Solving Complex Tasks.
 - [Magentic-UI](https://www.microsoft.com/en-us/research/blog/magentic-ui-an-experimental-human-centered-web-agent/) - Experimental human-centered web agent that can browse the web, run code, and process files.
-- [MarS - A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) - Financial market simulation using generative AI. (4 Sep 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/MarS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [MAI-Transcribe-1](https://microsoft.ai/news/state-of-the-art-speech-recognition-with-mai-transcribe-1/) - Microsoft speech-to-text model with strong multilingual WER, noisy-audio robustness, and Microsoft Foundry availability. [Apr 2026]
+- [MarS - A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) - Financial market simulation using generative AI. (4 Sep 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/MarS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/) - Generative model for inorganic materials design. (13 May 2024)
+- [memento](https://github.com/microsoft/memento) - Extends effective output length by summarizing reasoning blocks and evicting old blocks from the KV cache. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/memento?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft AI Diagnostic Orchestrator (MAI-DxO)](https://arxiv.org/abs/2506.22405) - Multi-Agent System. Accurately diagnoses up to 85% of NEJM case proceedings, which is over four times the rate achieved by a group of experienced physicians.
 - [Microsoft Office Copilot: Natural Language Commanding via Program Synthesis](https://arxiv.org/abs/2306.03460) - Semantic Interpreter, a natural language-friendly AI system for productivity software such as Microsoft Office that leverages large language models (LLMs) to execute user intent across application features. (6 Jun 2023)
-- [memento](https://github.com/microsoft/memento) - Extends effective output length by summarizing reasoning blocks and evicting old blocks from the KV cache. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/memento?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Mnesis](https://github.com/microsoft/Mnemis) - A memory framework for LLMs combining similarity search with Global Selection, using a base graph for fast retrieval and a hierarchical graph for top-down semantic traversal. (17 Feb 2026) ![**github stars**](https://img.shields.io/github/stars/microsoft/Mnemis?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [NL2KQL](https://arxiv.org/abs/2404.02933) - From Natural Language to Kusto Query. (3 Apr 2024)
 - [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815) - A framework that automatically optimizes model selection for compound AI systems. (20 Feb 2025)
@@ -309,7 +319,7 @@
 - [VeriTrail](https://www.microsoft.com/en-us/research/blog/veritrail-detecting-hallucination-and-tracing-provenance-in-multi-step-ai-workflows/) - Detecting hallucination and tracing provenance in multi-step AI workflows. (5 Aug 2025)
 - [VibeVoice](https://arxiv.org/abs/2508.19205) - Open-Source Text-to-Speech. (26 Aug 2025)
 
-## Azure OpenAI Application
+## Sample Applications
 
 - [AI Dev Gallery](https://github.com/microsoft/ai-dev-gallery) - Windows application featuring interactive samples powered by local AI models. (Nov 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/ai-dev-gallery?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [An open-source template gallery](https://azure.github.io/awesome-azd/?tags=aicollection) - Collection of Azure templates, including AI-focused starter projects.
@@ -319,12 +329,11 @@
 - [Azure OpenAI Embeddings QnA](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna) - Embeddings-powered Q&A sample. (Apr 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-open-ai-embeddings-qna?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure Video Indexer demo](https://aka.ms/viopenaidemo) - Sample showing Azure Video Indexer integrated with OpenAI. (Apr 2023)
 - [azurechat](https://github.com/microsoft/azurechat) - Azure OpenAI chat accelerator with managed identities and enterprise controls. (Jan 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/azurechat?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Call center AI](https://github.com/microsoft/call-center-ai) - Initiate phone calls from an AI agent via API or direct dialing. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/call-center-ai?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [C# ChatGPT + Enterprise Data](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) - C# reference app using Azure AI Search and Azure OpenAI. (Apr 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo-csharp?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Call center AI](https://github.com/microsoft/call-center-ai) - Initiate phone calls from an AI agent via API or direct dialing. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/call-center-ai?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Chat with Your Data Accelerator](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator) - Accelerator for grounding chat on custom data sources. (Feb 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/chat-with-your-data-solution-accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ChatGPT + Enterprise Data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) - Enterprise RAG sample integrating Azure OpenAI and Azure AI Search. (Feb 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-search-openai-demo?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ChatGPT Plugin Quickstart using Python and FastAPI](https://github.com/Azure-Samples/openai-plugin-fastapi) - Sample plugin implementation using Python and FastAPI. (May 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-plugin-fastapi?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners) - Small Language Models (SLMs) optimized samples for On-device inference. (Jun 2025)
 - [eShopSupport](https://github.com/dotnet/eshopsupport) - A reference .NET application using AI for a customer support ticketing system. (Apr 2024) ![**github stars**](https://img.shields.io/github/stars/dotnet/eshopsupport?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [GPT-Azure-Search-Engine](https://github.com/pablomarin/GPT-Azure-Search-Engine) - Integration of Azure Bot Service with LangChain. (Feb 2023) ![**github stars**](https://img.shields.io/github/stars/pablomarin/GPT-Azure-Search-Engine?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Miyagi](https://github.com/Azure-Samples/miyagi) - Integration demo spanning multiple LangChain libraries. (Apr 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/miyagi?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -333,7 +342,7 @@
 - [Smart Components](https://github.com/dotnet-smartcomponents/smartcomponents) - Experimental, end-to-end AI features for .NET apps. (Mar 2024) ![**github stars**](https://img.shields.io/github/stars/dotnet-smartcomponents/smartcomponents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [VoiceRAG](https://github.com/Azure-Samples/aisearch-openai-rag-audio) - Voice-enabled RAG using Azure AI Search and GPT-4o Realtime. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/aisearch-openai-rag-audio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Azure OpenAI Accelerator
+## Solution Accelerators
 
 - [accelerators.ms](https://accelerators.ms/) - Microsoft catalog of accelerators, reference apps, and AI solution starters.
 - [Agentic Applications for Unified Data Foundation](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator) - Agentic AI accelerator combining Microsoft Fabric, Azure AI Foundry agents, and Semantic Kernel. (Sep 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -341,9 +350,9 @@
 - [AI Solution Accelerators](https://github.com/Azure/ai-solution-accelerators-list) - List of Azure AI Solution Accelerators for demonstration and simplified deployment. (Sep 2022) ![**github stars**](https://img.shields.io/github/stars/Azure/ai-solution-accelerators-list?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI-in-a-Box](https://github.com/Azure/AI-in-a-Box) - Reference implementations for common Azure AI and machine learning scenarios. (Sep 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/AI-in-a-Box?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure Accelerator Repos](https://github.com/orgs/Azure/repositories?q=accelerator+sort%3Astars) - Collection of official Azure accelerators.
+- [Azure Landing Zones Accelerator](https://aka.ms/LZAccelerators) - Collection of Azure Landing Zones Accelerator.
 - [Azure Multimodal AI + LLM Processing Accelerator](https://github.com/Azure/multimodal-ai-llm-processing-accelerator) - Build multimodal data processing pipelines with Azure AI Services + LLMs. (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/Azure/multimodal-ai-llm-processing-accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) - Proof of Concept (POC) for a Generative AI Multi-Agent Architecture using Azure Services. (May 2023) ![**github stars**](https://img.shields.io/github/stars/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Azure Landing Zones Accelerator](https://aka.ms/LZAccelerators) - Collection of Azure Landing Zones Accelerator.
 - [Azure-Samples Accelerators](https://github.com/orgs/Azure-samples/repositories?q=accelerator+sort%3Astars) - Community driven sample accelerators.
 - [Azure-samples: Accelerator Collection](https://github.com/orgs/Azure-samples/repositories?q=quick+sort%3Astars) - Accelerator Collection sorted by stars count.
 - [Build Your Own Copilot Solution Accelerator](https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator) - Solution Accelerator to show how to build your own copilot. (Mar 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Build-your-own-copilot-Solution-Accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -357,15 +366,14 @@
 - [Multi Agent Custom Automation Engine Solution Accelerator](https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator) - AI-driven multi-agent automation reference solution built on Microsoft Agent Framework, Azure Foundry, and Azure Cosmos DB. (Dec 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Unified data foundation with Fabric solution accelerator](https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator) - Unified Data Foundation accelerator using Microsoft Fabric with Databricks and Purview integration options. (Aug 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/unified-data-foundation-with-fabric-solution-accelerator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Azure OpenAI Samples
+## Code Samples & Workshops
 
 - [Agent-Framework-Samples](https://github.com/microsoft/Agent-Framework-Samples) - Sample projects demonstrating Microsoft Agent Framework usage. (Sep 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Agent-Framework-Samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI Hub Gateway](https://aka.ms/ai-hub-gateway) - Reference architecture and accelerator for a central enterprise AI gateway. (Dec 2025)
 - [AI Samples for .NET](https://github.com/dotnet/ai-samples) - Official .NET AI samples (evaluation, integration). (Feb 2024) ![**github stars**](https://img.shields.io/github/stars/dotnet/ai-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI-in-a-Box - Generative AI Bot Quickstart](https://github.com/Azure-Samples/gen-ai-bot-in-a-box) - A template deploys a Generative AI Virtual Assistant using Azure OpenAI and Bot Framework.  (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/gen-ai-bot-in-a-box?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI-in-One-Dashboard](https://github.com/microsoft/AI-in-One-Dashboard) - Power BI template for comprehensive AI usage analytics. (Oct 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/AI-in-One-Dashboard?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI Hub Gateway](https://aka.ms/ai-hub-gateway) - Reference architecture and accelerator for a central enterprise AI gateway. (Dec 2025)
 - [APIM-Unified-AI-Gateway-Sample](https://github.com/Azure-Samples/APIM-Unified-AI-Gateway-Sample) - Single APIM endpoint for Phi-4, GPT-4.1, and Gemini with centralized governance. (Jan 2026) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/APIM-Unified-AI-Gateway-Sample?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Azure OpenAI Using PTUs/TPMs With API Management](https://github.com/Azure/aoai-apim) - Scaling Azure OpenAI using APIM. (Sep 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/aoai-apim?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure AI Foundry Baseline](https://github.com/Azure-Samples/azure-ai-foundry-baseline) - Baseline setup for Azure AI Foundry projects. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-ai-foundry-baseline?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure Container Apps dynamic sessions samples](https://github.com/Azure-Samples/container-apps-dynamic-sessions-samples) - On-demand, short-lived container sessions using Azure Container Apps Dynamic Sessions. (May 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/container-apps-dynamic-sessions-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure Functions OpenAI Extension](https://github.com/Azure/azure-functions-openai-extension) - OpenAI bindings for Azure Functions (C#). (Nov 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/azure-functions-openai-extension?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -376,11 +384,11 @@
 - [Azure OpenAI Network Latency Test Script](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) - Python script for measuring Azure OpenAI network latency. (Jun 2023)
 - [Azure OpenAI RAFT](https://github.com/Azure-Samples/azure-openai-raft ) - RAFT Fine-Tuning for RAG Using Azure OpenAI. (Sep 2024)
 - [Azure OpenAI RAG workshop](https://github.com/Azure-Samples/azure-openai-rag-workshop) - RAG using LangChain.js and OpenAI. Hosted on Azure Static Web Apps and Azure Container Apps, with Azure AI Search as the vector database. (8 Nov 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-openai-rag-workshop?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Azure OpenAI Using PTUs/TPMs With API Management](https://github.com/Azure/aoai-apim) - Scaling Azure OpenAI using APIM. (Sep 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/aoai-apim?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure OpenAI with AKS by Terraform (simple version)](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) - Terraform sample for deploying Azure OpenAI with AKS. (May 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-openai-terraform-deployment-sample?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure OpenAI workshop](https://github.com/microsoft/OpenAIWorkshop) - Workshop materials to build intelligent solutions on Open AI. (Feb 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/OpenAIWorkshop?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure SQL DB + AOAI](https://github.com/Azure-Samples/SQL-AI-samples) - AI applications built on data from an Azure SQL Database. (Oct 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/SQL-AI-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure-Samples](https://github.com/Azure-Samples) - GitHub organization for official Azure sample projects.
-- [Build AI Solutions with Azure AI Foundry](https://github.com/microsoft/aitour-concept-to-creation-ai-studio) - Sample code and materials for building generative-AI solutions with Azure AI Foundry / Azure AI Studio, including prompt-engineering examples and workflows. (Jul 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/aitour-concept-to-creation-ai-studio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Build Your Own Copilot](https://github.com/Azure/BuildYourOwnCopilot) - RAG demo using Cosmos DB, AKS, Semantic Kernel. (Dec 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/BuildYourOwnCopilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform](https://github.com/Azure-Samples/container-apps-openai/) - ChatGPT-like application in Azure Container Apps using Terraform. (Jul 2023)
 - [Design and Evaluation of RAG Solutions](https://github.com/Azure-Samples/Design-and-evaluation-of-RAG-solutions) - Resources for designing and evaluating RAG solutions. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/Design-and-evaluation-of-RAG-solutions?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -395,28 +403,25 @@
 - [GPT RAG Ingestion](https://github.com/Azure/gpt-rag-ingestion) - GPT-based RAG ingestion utilities. (Sep 2024) ![**github stars**](https://img.shields.io/github/stars/Azure/gpt-rag-ingestion?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [GPT-RAG](https://github.com/Azure/GPT-RAG) - Enterprise RAG solution accelerator. (Jun 2023) ![**github stars**](https://img.shields.io/github/stars/Azure/GPT-RAG?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Legal Research Copilot Example](https://github.com/Azure-Samples/graphrag-legalcases-postgres) - GraphRAG on Azure Database for PostgreSQL. Use U.S. Case Law dataset of 0.5 million legal cases. (17 Sep 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/graphrag-legalcases-postgres?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Microsoft AI Tour](https://github.com/microsoft/aitour-repo-principal-list) - A session and workshop how to best leverage AI. (Aug 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/aitour-repo-principal-list?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft Copilot Studio Samples](https://github.com/microsoft/CopilotStudioSamples) - Samples and artifacts for Microsoft Copilot Studio. (Oct 2019) ![**github stars**](https://img.shields.io/github/stars/microsoft/CopilotStudioSamples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Microsoft.Extensions.AI](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/) - Unified C# abstractions for models, embeddings, and middleware. (8 Oct 2024)
-- [Model Context Protocol Curriculum for Beginners](https://github.com/microsoft/mcp-for-beginners) - Introductory MCP course. (Apr 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/mcp-for-beginners?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [OpenAI Chat Application with Microsoft Entra Authentication](https://github.com/Azure-Samples/openai-chat-app-entra-auth-builtin) - Authenticated chat starter with Microsoft Entra ID. (May 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-chat-app-entra-auth-builtin?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [RAG for Azure Data](https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples) - Retrieval Augmented Generation (RAG) for Azure Data. (Jun 2023) ![**github stars**](https://img.shields.io/github/stars/microsoft/AzureDataRetrievalAugmentedGenerationSamples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Semantic Kernel Cookbook](https://github.com/microsoft/SemanticKernelCookBook) - Example recipes and tutorials for working with Semantic Kernel. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/microsoft/SemanticKernelCookBook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Setting up Azure OpenAI with Azure API Management](https://github.com/Azure/enterprise-azureai) - Azure AI to your application developers in a secure & manageable way with Azure API Management. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/Azure/enterprise-azureai?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Smart Load Balancing for Azure OpenAI](https://github.com/Azure-Samples/openai-aca-lb) - Intelligent routing across multiple Azure OpenAI deployments. (Jan 2024) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/openai-aca-lb?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Vector similarity search with Azure SQL & Azure OpenAI](https://github.com/Azure-Samples/azure-sql-db-openai) - Samples on how to use Azure SQL database with Azure OpenAI. (May 2023) ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/azure-sql-db-openai?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-## Use Case & Architecture References
+## Architecture Patterns & Use Cases
 
 - [AI Agent-Driven Auto Insurance Claims RAG Pipeline](https://techcommunity.microsoft.com/t5/azure-architecture-blog/exploring-ai-agent-driven-auto-insurance-claims-rag-pipeline/ba-p/4233779) - Agent-driven claims processing reference. (09 Sep 2024)
 - [AI decision tree](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/strategy) - Selecting the most suitable tools and platforms for your generative and nongenerative AI use cases.
 - [AI Feed](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI) - Azure AI news, events, and discussions.
 - [AI gateway capabilities in Azure API Management](https://techcommunity.microsoft.com/blog/integrationsonazureblog/ai-gateway-enhancements-llm-policies-real-time-api-support-content-safety-and-mo/4409828) - Semantic Caching. Azure AI Content Safety. LLM policies (llm-token-limit, llm-emit-metric, llm-content-safety). (01 May 2025)
-- [AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones) - Reference architecture for secure, scalable Azure AI apps and agents. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/Azure/AI-Landing-Zones?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI Landing Zones Guardrails for Azure Machine Learning](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-MachineLearning.html) - Recommended Azure Policy initiative for Azure Machine Learning guardrails.
 - [AI Landing Zones Guardrails for Bot Service](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-BotService.html) - Recommended Azure Policy initiative for Bot Service guardrails.
 - [AI Landing Zones Guardrails for Cognitive Services](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-CognitiveServices.html) - Recommended Azure Policy initiative for Cognitive Services guardrails.
 - [AI Landing Zones Guardrails for OpenAI](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-OpenAI.html) - Recommended Azure Policy initiative for Azure OpenAI guardrails.
+- [AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones) - Reference architecture for secure, scalable Azure AI apps and agents. (Mar 2026) ![**github stars**](https://img.shields.io/github/stars/Azure/AI-Landing-Zones?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [An Introduction to LLMOps](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/an-introduction-to-llmops-operationalizing-and-managing-large/ba-p/3910996) - Operationalizing and Managing Large Language Models using Azure ML. (27 Aug 2023)
 - [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) - Authentication in AI applications with Entra ID and Azure AI Search. (09 Jan 2024)
 - [Azure AI Foundry Blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog) - News and updates about Azure AI Foundry and related platform capabilities.
@@ -429,7 +434,6 @@
 - [Baseline Agentic AI Systems Architecture](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/baseline-agentic-ai-systems-architecture/ba-p/4207137) - Agentic AI Systems Architecture to build multiple conversable agents system. (20 Aug 2024)
 - [Baseline OpenAI end-to-end chat reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat) - Azure AI Foundry chat reference architecture.
 - [Build language model pipelines with memory](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/guide/language-model-pipelines) - Baseline Azure AI Foundry chat reference architecture.
-- [Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework](https://techcommunity.microsoft.com/blog/appsonazureblog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825) - Multi-Agent Workflow Travel Planner With WebJob.
 - [CAIRA](https://github.com/microsoft/CAIRA) - Composable AI Reference Architectures (CAIRA). (Jul 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/CAIRA?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Chat with your Azure DevOps data](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/chat-with-your-azure-devops-data/ba-p/4017784) - The solution leverages Azure DevOps CLI to periodically export ADO Work Items as JSON and store them in Azure Blob storage. (10 Jan 2024)
 - [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/) - Improving Large Language Models with External Knowledge and Automated Feedback. (07 Mar 2023)
@@ -446,7 +450,6 @@
 - [Microsoft-AI-Decision-Framework](https://github.com/microsoft/Microsoft-AI-Decision-Framework) - Decision framework for selecting Microsoft AI technologies across Copilot and Azure AI. (Nov 2025) ![**github stars**](https://img.shields.io/github/stars/microsoft/Microsoft-AI-Decision-Framework?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [NL to SQL Architecture Alternative](https://techcommunity.microsoft.com/t5/azure-architecture-blog/nl-to-sql-architecture-alternatives/ba-p/4136387) - LLM to dynamically generate SQL queries, execute those SQL queries. (14 May 2024)
 - [Optimize Azure OpenAI Applications with Semantic Caching](https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-openai-applications-with-semantic-caching/ba-p/4106867) - Semantic cache pattern for latency and cost reduction. (09 Apr 2024)
-- [Partner Resources: AI & ML Academy](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy) - Comprehensive learning resources for partners and developers.
 - [Responsible AI Transparency Report](https://www.microsoft.com/en-us/corporate-responsibility/responsible-ai-transparency-report) - Overview of Microsoft's responsible AI tools, policies, and practices.
 - [Retrieval Augmented Fine Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/retrieval-augmented-fine-tuning-use-gpt-4o-to-fine-tune-gpt-4o/ba-p/4248861) - RAFT: Combining the best parts of RAG and fine-tuning (SFT). (25 Sep 2024)
 - [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087) - One of well-known RAG application sample utilizing Azure. (09 Mar 2023)
