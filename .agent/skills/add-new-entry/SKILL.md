@@ -10,7 +10,7 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 
 **Steps in order:**
 
-1. **Classify each URL** → determine which section file (`azure.md`, `applications.md`, `models_research.md`, `best_practices.md`) and which section heading it belongs to.
+1. **Classify each URL** → determine which section file (`azure.md`, `applications.md`, `models_research.md`, `best_practices.md`, `tools_extra.md`) and which current section heading it belongs to.
 2. **Fetch descriptions** — use `code/fetch_github_description.py` for GitHub repos. For arXiv papers and blog/web links, use `fetch_webpage` to extract a one-sentence description.
 3. **Fetch creation dates** — use `code/get_github_dates.py` for GitHub repos. For arXiv, derive the date from the ID prefix (e.g., `2602.xxxxx` → Feb 2026). For blog posts, read from the page.
 4. **Add star badges** — use `code/add_github_stars.py` for all GitHub links.
@@ -77,42 +77,95 @@ or (for entries that use dash bullets in that section):
 Use **exact** heading names when labeling entries in `temp_entries.md`. Format: `## <filename> - <Section Name>:`.
 
 ### `azure.md`
-- Developer Tooling
+- Azure OpenAI & Foundry Overview
+- Orchestration Frameworks
+- Prompt Engineering & Tooling
 - Agent Frameworks
+- Model Training & Inference
+- Safety, Security & LLMOps
+- Data Processing & Memory
+- Dev Tools, MCP & Extensions
+- Copilot Product Catalog
+- Microsoft Foundry & AI Services
+- Azure AI Search
 - Agent Development
-- Microsoft Copilot Products
-- Azure OpenAI Samples
-- Azure OpenAI Application
-- Azure OpenAI Accelerator & Samples
-- LLM Frameworks
-- Prompt Tooling
-- Microsoft Copilot Products
-- Copilot Development
-- Azure AI Search / Azure AI Services
+- Microsoft 365 Agent Development
+- Learning Resources & Workshops
 - Microsoft Research
-- Risk & LLMOps
+- Sample Applications
+- Solution Accelerators
+- Code Samples & Workshops
+- Architecture Patterns & Use Cases
 
 ### `applications.md`
-- AI Application → `### **AI Application**` (contains `#### Agent & Application`, `#### Skill`, `#### Coding`, `#### Deep Research`, `#### Memory`, `#### Gateway`, `#### Caching`, `#### Data Processing`)
-- Agent Protocol → `### **Agent Protocol**` (contains `#### Model Context Protocol (MCP)`, `#### A2A`, `#### Computer use`)
-- Vector Database & Embedding → `### **Vector Database & Embedding**`
-- RAG (Retrieval-Augmented Generation) → `## **RAG ...`
+- RAG (Retrieval-Augmented Generation)
+- Advanced RAG
+- GraphRAG
+- RAG Application
+- Vector Database & Embedding
+- Top Agent Frameworks
+- Additional Agent Framework
+- Cache
+- Data & Analytics Agents
+- Data Processing & OCR
+- Desktop AI assistant
+- Memory
+- Model Gateway
+- Model Serving & Local Runtimes
+- Observability & LLMOps
+- SDKs, Integration & ML Libraries
+- Training & Fine-tuning
+- UI & No-Code Tool
+- A2A
+- Computer use
+- Model Context Protocol (MCP)
+- Coding
+- Deep Research
+- Domain-Specific Agents
+- Skill
+- Harness
 
-> **Tip:** The sub-sections under `AI Application` (Agent & Application, Skill, Coding, Deep Research) are `####` headings. Use the exact name, e.g., `applications.md - Skill`, `applications.md - Coding`, `applications.md - Agent & Application`, `applications.md - Deep Research`, `applications.md - Model Context Protocol (MCP)`.
+> **Tip:** Do not add hand-curated entries to generated index sections such as `Popular LLM Applications (GitHub Stars >= 1000)`; update the generator skill instead.
 
 ### `models_research.md`
+- Large Language Model: Landscape
+- Large Language Model Comparison
+- Evolutionary Tree of Large Language Models
 - OpenAI Products → `### **OpenAI Products**`
 - Anthropic AI Products → `### **Anthropic AI Products**`
 - Google AI Products → `### **Google AI Products**`
-- AGI Discussion and Social Impact (no explicit heading — look for related entries near end of file)
+- AGI Discussion and Social Impact
 - Large Language Model Collection
+- Prompt Engineering and Visual Prompts
+- Finetuning
+- Context Constraints
+- Trustworthy, Safe and Secure LLM
+- Large Language Model's Abilities
 - Reasoning
+- Survey on Large Language Models
+- Additional Topics: A Survey of LLMs
+- Business Use Cases
+- Build an LLMs from Scratch
 
 ### `best_practices.md`
+- The Problem with RAG
+- RAG Solution Design
 - Agent Research → `### **Agent Research**`
 - RAG Research → `### **RAG Research**`
 - Agent Design Patterns → `### **Agent Design Patterns**`
-- Reflection, Tool Use, Planning and Multi-agent collaboration
+- Tool Use
+- Tool Use: LLM to Master APIs
+- Proposals & Glossary
+
+### `tools_extra.md`
+- General AI Tools and Extensions
+- LLM for Robotics
+- Awesome demo
+- Datasets for LLM Training
+- Evaluating Large Language Models
+- LLM Evalution Benchmarks
+- Evaluation Metrics
+- LLMOps: Large Language Model Operations
 
 ---
 
@@ -125,7 +178,7 @@ All tools are in `code/`. Run with `python code/<script>.py`.
 | `fetch_github_description.py` | Fetch GitHub repo descriptions; appends after the link colon. Skips lines that already have a description. |
 | `get_github_dates.py` | Fetch GitHub repo creation date; appends `[Mon YYYY]` or `(Mon YYYY)`. Skips lines already dated. |
 | `add_github_stars.py` | Append star badge to lines with GitHub links. Skips duplicates. |
-| `fetch_popular_papers.py` | Query Semantic Scholar for top-cited papers; writes `section/x_popular_papers.md`. |
+| `fetch_popular_papers.py` | Query Semantic Scholar for review-only RAG/agent paper candidates; not part of normal entry insertion. |
 | `update_citation_counts.py` | Update citation counts for ranked paper sections via Semantic Scholar. |
 | `check_unused_files.py` | Scan markdown for file refs; move unreferenced files to `files/_bak/`. |
 

@@ -7,7 +7,7 @@ description: "Workflow for updating the LLM landscape paper pool (section/x_llm_
 
 The pool file `section/x_llm_papers.md` is a compact list of high-citation CS papers covering the LLM landscape, fetched from the Semantic Scholar API and ranked by citation count. It includes a topic coverage summary and per-paper topic tags. It is generated and maintained by `code/fetch_llm_papers.py`.
 
-The section `### **LLM Research (Ranked by cite count >=100)**` in `section/models_research.md` links to this file with a single descriptive line.
+The section `### **LLM Research (Ranked by cite count >=150)**` in `section/models_research.md` links to this file with a single descriptive line.
 
 ---
 

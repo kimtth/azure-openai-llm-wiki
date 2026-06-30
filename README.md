@@ -19,8 +19,8 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 | Layer / Era | What it controls | Jump to sections |
 |-------------|----------------------------------------|-------------|
 | **Weights** <br/> 2022-2023 | Parametric knowledge baked into the model. <br/> `Themes: Pretraining, Scaling Laws, Fine-tuning, RLHF, Alignment, Instruction-following, Few-shot` | Foundations: [Landscape](section/models_research.md#large-language-model-landscape), [Comparison](section/models_research.md#large-language-model-comparison), [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models), [LLM Collection](section/models_research.md#large-language-model-collection) <br/> Training: [Finetuning](section/models_research.md#finetuning), [Other Techniques and LLM Patterns](section/models_research.md#other-techniques-and-llm-patterns), [Training & Fine-tuning](section/applications.md#training--fine-tuning) <br/> Behavior and safety: [Trustworthy, Safe and Secure LLM](section/models_research.md#trustworthy-safe-and-secure-llm), [Abilities](section/models_research.md#large-language-model-is-abilities), [Reasoning](section/models_research.md#reasoning), [Orchestration Frameworks](section/azure.md#orchestration-frameworks) |
-| **Context** <br/> 2023-2024 | What the model sees at inference time. <br/> `Themes: Prompting, Chain-of-Thought, RAG, Memory, Long Context, Knowledge Injection, Context Engineering` | Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts), [Prompt Engineering & Tooling](section/azure.md#prompt-engineering--tooling) <br/> Retrieval: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag), [RAG Application](section/applications.md#rag-application), [Vector Database & Embedding](section/applications.md#vector-database--embedding), [Azure AI Search](section/azure.md#azure-ai-search) <br/> Memory and context windows: [Memory](section/applications.md#memory), [Context Constraints](section/models_research.md#context-constraints), [Caching](section/applications.md#caching), [RAG Solution Design](section/best_practices.md#rag-solution-design), [RAG Research](section/best_practices.md#rag-research) |
-| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [Top Agent Frameworks](section/applications.md#top-agent-frameworks), [Orchestration Framework](section/applications.md#orchestration-framework), [Frameworks / SDKs](section/applications.md#frameworks--sdks), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development) <br/> Protocols and tools: [Model Context Protocol (MCP)](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer use](section/applications.md#computer-use), [Skill](section/applications.md#skill), [Harness](section/applications.md#harness), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions), [Coding](section/applications.md#coding) <br/> Ops and governance: [Apps / Ready-to-use Agents](section/applications.md#apps--ready-to-use-agents), [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLM Evalution Benchmarks](section/tools_extra.md#llm-evalution-benchmarks), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Agent Design Patterns](section/best_practices.md#agent-design-patterns), [Agent Research](section/best_practices.md#agent-research), [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration), [Proposals & Glossary](section/best_practices.md#proposals--glossary) |
+| **Context** <br/> 2023-2024 | What the model sees at inference time. <br/> `Themes: Prompting, Chain-of-Thought, RAG, Memory, Long Context, Knowledge Injection, Context Engineering` | Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts), [Prompt Engineering & Tooling](section/azure.md#prompt-engineering--tooling) <br/> Retrieval: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Advanced RAG](section/applications.md#advanced-rag), [GraphRAG](section/applications.md#graphrag), [RAG Application](section/applications.md#rag-application), [Vector Database & Embedding](section/applications.md#vector-database--embedding), [Azure AI Search](section/azure.md#azure-ai-search) <br/> Memory and context windows: [Memory](section/applications.md#memory), [Cache](section/applications.md#cache), [Context Constraints](section/models_research.md#context-constraints), [RAG Solution Design](section/best_practices.md#rag-solution-design), [RAG Research](section/best_practices.md#rag-research) |
+| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [Top Agent Frameworks](section/applications.md#top-agent-frameworks), [Additional Agent Framework](section/applications.md#additional-agent-framework), [SDKs, Integration & ML Libraries](section/applications.md#sdks-integration--ml-libraries), [Model Serving & Local Runtimes](section/applications.md#model-serving--local-runtimes), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development) <br/> Protocols and tools: [Model Context Protocol (MCP)](section/applications.md#model-context-protocol-mcp), [A2A](section/applications.md#a2a), [Computer use](section/applications.md#computer-use), [Skill](section/applications.md#skill), [Harness](section/applications.md#harness), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions), [Coding](section/applications.md#coding) <br/> Apps and operations: [Desktop AI assistant](section/applications.md#desktop-ai-assistant), [UI & No-Code Tool](section/applications.md#ui--no-code-tool), [Data & Analytics Agents](section/applications.md#data--analytics-agents), [Data Processing & OCR](section/applications.md#data-processing--ocr), [Model Gateway](section/applications.md#model-gateway), [Observability & LLMOps](section/applications.md#observability--llmops), [Popular LLM Applications](section/applications.md#popular-llm-applications-github-stars--1000), [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLM Evalution Benchmarks](section/tools_extra.md#llm-evalution-benchmarks), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Agent Design Patterns](section/best_practices.md#agent-design-patterns), [Agent Research](section/best_practices.md#agent-research), [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration), [Proposals & Glossary](section/best_practices.md#proposals--glossary) |
 
 Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dailydoseofds.com/p/evolution-of-agent-landscape-from)
 
@@ -35,25 +35,28 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Vector Database & Embedding](section/applications.md#vector-database--embedding)
 - **Application**
   - [Top Agent Frameworks](section/applications.md#top-agent-frameworks)
-  - [Orchestration Framework](section/applications.md#orchestration-framework)
-  - [Frameworks / SDKs](section/applications.md#frameworks--sdks)
-  - [Apps / Ready-to-use Agents](section/applications.md#apps--ready-to-use-agents)
-  - [**Popular LLM Applications** (Ranked by GitHub star count ≥1000)](section/applications.md#popular-llm-applications-ranked-by-github-star-count-1000)
-  - [No Code & User Interface](section/applications.md#no-code--user-interface)
-  - [Personal AI assistant & desktop](section/applications.md#personal-ai-assistant--desktop)
-  - [Caching](section/applications.md#caching)
-  - [Data Processing](section/applications.md#data-processing)
-  - [Gateway](section/applications.md#gateway)
+  - [Additional Agent Framework](section/applications.md#additional-agent-framework)
+  - [Cache](section/applications.md#cache)
+  - [Data & Analytics Agents](section/applications.md#data--analytics-agents)
+  - [Data Processing & OCR](section/applications.md#data-processing--ocr)
+  - [Desktop AI assistant](section/applications.md#desktop-ai-assistant)
   - [Memory](section/applications.md#memory)
+  - [Model Gateway](section/applications.md#model-gateway)
+  - [Model Serving & Local Runtimes](section/applications.md#model-serving--local-runtimes)
+  - [Observability & LLMOps](section/applications.md#observability--llmops)
+  - [**Popular LLM Applications** (GitHub Stars >= 1000)](section/applications.md#popular-llm-applications-github-stars--1000)
+  - [SDKs, Integration & ML Libraries](section/applications.md#sdks-integration--ml-libraries)
+  - [Training & Fine-tuning](section/applications.md#training--fine-tuning)
+  - [UI & No-Code Tool](section/applications.md#ui--no-code-tool)
 - **Agent Protocols**
-  - [MCP](section/applications.md#model-context-protocol-mcp)
   - [A2A](section/applications.md#a2a)
   - [Computer use](section/applications.md#computer-use)
+  - [Model Context Protocol (MCP)](section/applications.md#model-context-protocol-mcp)
 - **Coding & Research**
   - [Coding](section/applications.md#coding)
-  - [Skill](section/applications.md#skill) / [Harness](section/applications.md#harness)
-  - [Domain-Specific Agents](section/applications.md#domain-specific-agents)
   - [Deep Research](section/applications.md#deep-research)
+  - [Domain-Specific Agents](section/applications.md#domain-specific-agents)
+  - [Skill](section/applications.md#skill) / [Harness](section/applications.md#harness)
 
 **[⬆ back to top](#azure-openai--llm)**
 
@@ -113,6 +116,8 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Survey on Large Language Models](section/models_research.md#survey-on-large-language-models)
   - [Additional Topics: A Survey of LLMs](section/models_research.md#additional-topics-a-survey-of-llms)
   - [**LLM Research** (Ranked by cite count ≥150)](section/models_research.md#llm-research-ranked-by-cite-count-150)
+  - [LLM Materials in Japanese](section/models_research.md#llm-materials-in-japanese)
+  - [LLM Materials in Korean](section/models_research.md#llm-materials-in-korean)
   - [Build an LLMs from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt)
   - [Business Use Cases](section/models_research.md#business-use-cases)
 
@@ -161,6 +166,8 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
 | 🗄️ | Archived files | 💡🏆 | Recommend |
 | 🗣️ | Source citation | 📺 | Video content |
 | 📑 |  Academic paper | 🤗 | Huggingface |
+
+Info: Previous application index is archived in [applications.old.md](section/applications.old.md).
 
 <!-- 
 All rights reserved © `kimtth` 

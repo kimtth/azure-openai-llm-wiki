@@ -236,6 +236,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [ModernBERT📑](https://arxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
 - Microsoft
   - [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
+  - [MAI model family✍️](https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/): Seven in-house Microsoft models; MAI-Thinking-1 is a 35B-active/~1T MoE, and MAI-Code-1-Flash is a 5B-active Copilot/VS Code coding model. [Jun 2026]
   - phi-series: cost-effective small language models (SLMs) [✍️](https://azure.microsoft.com/en-us/products/phi) [git](https://aka.ms/Phicookbook): Cookbook
   - [Phi-1📑](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [✍️](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
   - [Phi-1.5📑](https://arxiv.org/abs/2309.05463): Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
@@ -270,8 +271,11 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
  ![**github stars**](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - OpenAI
   - [gpt-oss](https://github.com/openai/gpt-oss):💡**gpt-oss-120b** and **gpt-oss-20b** are two open-weight language models by OpenAI. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/openai/gpt-oss?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [OpenRouter Fusion✍️](https://openrouter.ai/blog/announcements/fusion-beats-frontier/): Server-side model-panel fusion; Fable 5 + GPT-5.5 synthesized by Opus 4.8 scored 69.0% on DRACO, beating solo frontier models. [Jun 2026]
 - Qualcomm
   - [Qualcomm’s on-device AI models🤗](https://huggingface.co/qualcomm): Bring generative AI to mobile devices [Feb 2024]
+- Sakana AI
+  - [Sakana AI Fugu✍️](https://sakana.ai/fugu-beta/): OpenAI-compatible multi-agent orchestration model with Mini/Ultra variants; coordinates frontier model pools and reports GPQAD 95.1, LCBv6 93.2, SWEPro 54.2. [Apr 2026]
 - Tencent
   - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
   - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![**github stars**](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -292,11 +296,13 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - [Grok 4.3 Beta✍️](https://grok.com/release-notes/apr-17-2026): Pretrained Grok model update with computer access for creating presentations, documents, and spreadsheets. [Apr 2026]
 - Xiaomi
   - Founded in 2010, Xiaomi is a Chinese company known for its innovative consumer electronics and smart home products.
+  - [MiMo-Code](https://github.com/XiaomiMiMo/MiMo-Code): Xiaomi MiMo coding model and agent ecosystem. [Jun 2026] ![**github stars**](https://img.shields.io/github/stars/XiaomiMiMo/MiMo-Code?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [Mimo](https://github.com/XiaomiMiMo/MiMo): 7B. advanced reasoning for code and math [30 Apr 2025)
 - Z.ai
   - formerly Zhipu, Beijing-based Chinese AI company founded in March 2019
   - [GLM-4.5](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
   - [GLM-4.6✍️](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
+  - [GLM-5.2✍️](https://z.ai/blog/glm-5.2): Open MIT long-horizon model with solid 1M context, IndexShare sparse attention, 81.0 Terminal-Bench 2.1, 62.1 SWE-bench Pro, and top open-source long-horizon coding results. [Jun 2026]
 
 
 ### **LLM for Domain Specific**
@@ -720,6 +726,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
 - [TokenAttention](https://github.com/ModelTC/lightllm) an attention mechanism that manages key and value caching at the token level. [git](https://github.com/ModelTC/lightllm/blob/main/docs/TokenAttention.md) [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/ModelTC/lightllm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [TriAttention✍️](https://ai-tldr.dev/releases/nvidia-triattention): **PagedAttention** stores KV in fixed-size blocks (e.g., 16 tokens/block), **FlashAttention** splits keys into tiles and computes attention tile-by-tile without materializing the full attention matrix, and **TriAttention** solves both limitations by predicting important KV from Q-K geometry (without full attention scores) and rearranging surviving KV into contiguous blocks to enable whole-block eviction by the memory allocator. [Apr 2026] ([NVIDIA infra note](https://research.nvidia.com/labs/eai/blogs/kv-cache-compression-and-its-infra-problems/))
 
 ### **Other techniques and LLM patterns**
 
@@ -779,6 +786,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Claude Code is the Inflection Point✍️](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point): Analysis of AI-authored commits and software engineering workflow shifts. 4% of GitHub public commits are being authored by Claude Code. [Feb 2026]
 - [Creating Scalable AGI: the Open General Intelligence Framework📑](https://arxiv.org/abs/2411.15832): a new AI architecture designed to enhance flexibility and scalability by dynamically managing specialized AI modules. [24 Nov 2024]
 - [How Far Are We From AGI📑](https://arxiv.org/abs/2405.10313): A survey discussing AGI's goals, developmental trajectory, and alignment technologies, providing a roadmap for AGI realization. [16 May 2024]
+- [How People Are Really Using AI in 2026✍️](https://hbr.org/2026/06/how-people-are-really-using-ai-in-2026): 12,637-use-case study: therapy remains #1; troubleshooting, technical software use, agentic operations, and vibe coding rise; warns about “thinkslop” and shadow AI at work. [Jun 2026]
 - [Investigating Affective Use and Emotional Well-being on ChatGPT✍️](https://www.media.mit.edu/publications/investigating-affective-use-and-emotional-well-being-on-chatgpt/): The MIT study found that higher ChatGPT usage correlated with increased loneliness, dependence, and lower socialization. [21 Mar 2025]
 - [Key figures and their predicted AGI timelines🗣️](https://x.com/slow_developer/status/1858877008375152805):💡AGI might be emerging between 2025 to 2030. [19 Nov 2024]
 - [Levels of AGI for Operationalizing Progress on the Path to AGI📑](https://arxiv.org/abs/2311.02462): Provides a comprehensive discussion on AGI's progress and proposes metrics and benchmarks for assessing AGI systems. [4 Nov 2023]
@@ -848,6 +856,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [GPT 5.2✍️](https://openai.com/index/introducing-gpt-5-2): 70.9% GDPval (knowledge work vs professionals), major gains over GPT-5.1 on SWE-Bench, GPQA Diamond, AIME 2025, ARC-AGI reasoning, and advanced coding/vision tasks. [11 Dec 2025]
 - [GPT-5.4✍️](https://openai.com/index/introducing-gpt-5-4/): Thinking, coding, and native computer-use in a single model. [Mar 2026]
 - [GPT-5.5✍️](https://openai.com/index/introducing-gpt-5-5/): OpenAI model for agentic coding, computer use, knowledge work, and scientific research with 1M API context. [Apr 2026]
+- [GPT-5.6 Sol✍️](https://openai.com/index/previewing-gpt-5-6-sol): Limited-preview flagship with `max` reasoning, `ultra` subagents, SOTA Terminal-Bench 2.1, GeneBench/cyber gains, and $5/M input, $30/M output. [Jun 2026]
 
 ### **OpenAI Products**
 
@@ -889,9 +898,11 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Anthropic killed Tool calling📺](https://www.youtube.com/watch?v=3wglqgskzjQ): Programmatic Tool Calling / Dynamic Filtering — what changed in Anthropic’s API. [Feb 2026]
 - [Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk): A toolkit for building multi-step, tool-using agents using the Claude API. [29 Sep 2025]
 - [Claude Design✍️](https://www.anthropic.com/news/claude-design-anthropic-labs): Anthropic Labs design experience for AI-assisted product and interface creation. [2026]
+- [Claude Fable 5 and Mythos 5✍️](https://www.anthropic.com/news/claude-fable-5-mythos-5): Mythos-class models for long-horizon coding, vision, finance, and science; $10/M input, $50/M output, with staged safeguards/access. [Jun 2026]
 - [Claude Mythos Preview System Card✍️](https://www.anthropic.com/claude-mythos-preview-system-card): Anthropic system card for Mythos Preview and its safety/evaluation profile. [2026]
 - [Claude Opus 4.6✍️](https://www.anthropic.com/news/claude-opus-4-6): Advanced reasoning and coding flagship model. [5 Feb 2026]
 - [Claude Opus 4.7✍️](https://www.anthropic.com/news/claude-opus-4-7): Anthropic model release focused on advanced software engineering, long-running tasks, higher-resolution vision, and Claude Code xhigh defaults. [Apr 2026]
+- [Claude Opus 4.8✍️](https://www.anthropic.com/news/claude-opus-4-8): Stronger agentic coding and browser/computer-use model; early testers cite better judgment, tool use, and reliability. [May 2026]
 - [Claude Sonnet 4.6✍️](https://www.anthropic.com/news/claude-sonnet-4-6): Balanced performance and speed model. [17 Feb 2026]
 - [Constitutional AI (CAI)](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback): Anthropic’s training framework using a “constitution” (AI‑generated rules) to align models toward harmlessness. [15 Dec 2022]
 - [Cowork](https://claude.com/product/cowork): AI agent that accesses local files to automate multi-step desktop tasks like organizing, reporting, and data extraction. [Jan 2026]
@@ -946,6 +957,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
   - [NoPE: Transformer Language Models without Positional Encodings Still Learn Positional Information📑](https://arxiv.org/abs/2203.16634): No postion embedding. [30 Mar 2022]
 - [Sparse Attention: Generating Long Sequences with Sparse Transformer📑](https://arxiv.org/abs/1904.10509):💡Sparse attention computes scores for a subset of pairs, selected via a fixed or learned sparsity pattern, reducing calculation costs. Strided attention: image, audio / Fixed attention:text [✍️](https://openai.com/index/sparse-transformer/) / [git](https://github.com/openai/sparse_attention) [23 Apr 2019]
  ![**github stars**](https://img.shields.io/github/stars/openai/sparse_attention?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [SubQ✍️](https://subq.ai/introducing-subq): SubQ 1M-Preview uses fully subquadratic attention; claims 95.6% RULER 128K, 52x faster sparse attention, 81.8 SWE-Bench Verified, and 12M-token research runs. [May 2026]
 - [Structured Prompting: Scaling In-Context Learning to 1,000 Examples📑](https://arxiv.org/abs/2212.06713): [13 Dec 2022]
   - Microsoft's Structured Prompting allows thousands of examples, by first concatenating examples into groups, then inputting each group into the LM. The hidden key and value vectors of the LM's attention modules are cached. Finally, when the user's unaltered input prompt is passed to the LM, the cached attention vectors are injected into the hidden layers of the LM.
   - This approach wouldn't work with OpenAI's closed models. because this needs to access [keys] and [values] in the transformer interns, which they do not expose. You could implement yourself on OSS ones. [✍️](https://www.infoq.com/news/2023/02/microsoft-lmops-tools/) [07 Feb 2023]
@@ -1079,6 +1091,7 @@ denses the reasoning process into minimal, abstract
 - [Automatic Prompt Optimization Techniques📑](https://arxiv.org/abs/2502.16923) [24 Feb 2025]
 - [Challenges & Application of LLMs📑](https://arxiv.org/abs/2306.07303):[11 Jun 2023]
 - [ChatGPT’s One-year Anniversary: Are Open-Source Large Language Models Catching up?📑](https://arxiv.org/abs/2311.16989): Open-Source LLMs vs. ChatGPT; Benchmarks and Performance of LLMs [28 Nov 2023]
+- [Code as Agent Harness📑](https://arxiv.org/abs/2605.18747): Survey of code-as-harness patterns for agents. [May 2026]
 - [Compression Algorithms for Language Models📑](https://arxiv.org/abs/2401.15347) [27 Jan 2024]
 - [Context Engineering for Large Language Models📑](https://arxiv.org/abs/2507.13334) [17 Jul 2025]
 - [Context Engineering 2.0](https://arxiv.org/abs/2510.26493) [30 Oct 2025]
@@ -1214,50 +1227,51 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 
 ### **LLM Materials in Japanese**
 
-- [ChatGPTやCopilotなど各種生成AI用の日本語の Prompt のサンプル](https://github.com/dahatake/GenerativeAI-Prompt-Sample-Japanese) [Apr 2023]
-- [LLM 研究プロジェクト✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153006): ブログ記事一覧 [27 Jul 2023]
-- [ブレインパッド社員が投稿した Qiita 記事まとめ✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153055): ブレインパッド社員が投稿した Qiita 記事まとめ [Jul 2023]
-- [rinna🤗](https://huggingface.co/rinna): rinna の 36 億パラメータの日本語 GPT 言語モデル: 3.6 billion parameter Japanese GPT language model [17 May 2023]
-- [rinna: bilingual-gpt-neox-4b🤗](https://huggingface.co/rinna/bilingual-gpt-neox-4b): 日英バイリンガル大規模言語モデル [17 May 2023]
-- [法律:生成 AI の利用ガイドライン](https://storialaw.jp/blog/9414): Legal: Guidelines for the Use of Generative AI
-- [New Era of Computing - ChatGPT がもたらした新時代✍️](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718) [May 2023]
-- [大規模言語モデルで変わる ML システム開発✍️](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models [Mar 2023]
-- [GPT-4 登場以降に出てきた ChatGPT/LLM に関する論文や技術の振り返り✍️](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4 [Jun 2023]
-- [LLM を制御するには何をするべきか？✍️](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM [Jun 2023]
 - [1. 生成 AI のマルチモーダルモデルでできること✍️](https://blog.brainpad.co.jp/entry/2023/06/06/160003): What can be done with multimodal models of generative AI [2. 生成 AI のマルチモーダリティに関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/10/18/153000) [Jun 2023]
-- [LLM の推論を効率化する量子化技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/01/153003): Survey of quantization techniques to improve efficiency of LLM reasoning [Sep 2023]
-- [LLM の出力制御や新モデルについて✍️](https://blog.brainpad.co.jp/entry/2023/09/08/155352): About LLM output control and new models [Sep 2023]
-- [Azure OpenAI を活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ [Jun 2023]
- ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/jp-azureopenai-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [生成 AI・LLM のツール拡張に関する論文の動向調査✍️](https://blog.brainpad.co.jp/entry/2023/09/22/150341): Survey of trends in papers on tool extensions for generative AI and LLM [Sep 2023]
-- [LLM の学習・推論の効率化・高速化に関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference [Sep 2023]
-- [日本語LLMまとめ - Overview of Japanese LLMs](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ [Jul 2023]
- ![**github stars**](https://img.shields.io/github/stars/llm-jp/awesome-japanese-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/) [Apr 2024]
+- [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例✍️](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
 - [Azure OpenAI Service で始める ChatGPT/LLM システム構築入門](https://github.com/shohei1029/book-azureopenai-sample): サンプルプログラム [Aug 2023]
  ![**github stars**](https://img.shields.io/github/stars/shohei1029/book-azureopenai-sample?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure OpenAI と Azure Cognitive Search の組み合わせを考える](https://qiita.com/nohanaga/items/59e07f5e00a4ced1e840) [24 May 2023]
-- [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [✍️](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [🗄️](../files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
-- [AI事業者ガイドライン](https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/) [Apr 2024]
-- [LLMにまつわる"評価"を整理する✍️](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
-- [コード生成を伴う LLM エージェント✍️](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
+- [Azure OpenAI を活用したアプリケーション実装のリファレンス](https://github.com/Azure-Samples/jp-azureopenai-samples): 日本マイクロソフト リファレンスアーキテクチャ [Jun 2023]
+ ![**github stars**](https://img.shields.io/github/stars/Azure-Samples/jp-azureopenai-samples?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [ChatGPTやCopilotなど各種生成AI用の日本語の Prompt のサンプル](https://github.com/dahatake/GenerativeAI-Prompt-Sample-Japanese) [Apr 2023]
+- [GPT-4 登場以降に出てきた ChatGPT/LLM に関する論文や技術の振り返り✍️](https://blog.brainpad.co.jp/entry/2023/06/05/153034): Review of ChatGPT/LLM papers and technologies that have emerged since the advent of GPT-4 [Jun 2023]
 - [Japanese startup Orange uses Anthropic's Claude to translate manga into English✍️](https://www.technologyreview.com/2024/12/02/1107562/this-manga-publisher-is-using-anthropics-ai-to-translate-japanese-comics-into-english/): [02 Dec 2024]
-- [AWS で実現する安全な生成 AI アプリケーション – OWASP Top 10 for LLM Applications 2025 の活用例✍️](https://aws.amazon.com/jp/blogs/news/secure-gen-ai-applications-on-aws-refer-to-owasp-top-10-for-llm-applications/) [31 Jan 2025]
+- [LLM の学習・推論の効率化・高速化に関する技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/28/170010): Technical survey on improving the efficiency and speed of LLM learning and inference [Sep 2023]
+- [LLM の出力制御や新モデルについて✍️](https://blog.brainpad.co.jp/entry/2023/09/08/155352): About LLM output control and new models [Sep 2023]
+- [LLM の推論を効率化する量子化技術調査✍️](https://blog.brainpad.co.jp/entry/2023/09/01/153003): Survey of quantization techniques to improve efficiency of LLM reasoning [Sep 2023]
+- [LLM を制御するには何をするべきか？✍️](https://blog.brainpad.co.jp/entry/2023/06/08/161643): How to control LLM [Jun 2023]
+- [LLM 研究プロジェクト✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153006): ブログ記事一覧 [27 Jul 2023]
+- [LLMにまつわる"評価"を整理する✍️](https://zenn.dev/seya/articles/dd0010601b3136) [06 Jun 2024]
+- [Matsuo Lab](https://weblab.t.u-tokyo.ac.jp/en/): 人工知能・深層学習を学ぶためのロードマップ [✍️](https://weblab.t.u-tokyo.ac.jp/人工知能・深層学習を学ぶためのロードマップ/) / [🗄️](../files/archive/Matsuo_Lab_LLM_2023_Slide_pdf.7z) [Dec 2023]
+- [Matsuo Lab: LLM 2025✍️](https://x.gd/8Pnpk) - Japanese-language LLM learning resource collection. [2025]
+- [New Era of Computing - ChatGPT がもたらした新時代✍️](https://speakerdeck.com/dahatake/new-era-of-computing-chatgpt-gamotarasitaxin-shi-dai-3836814a-133a-4879-91e4-1c036b194718) [May 2023]
+- [rinna🤗](https://huggingface.co/rinna): rinna の 36 億パラメータの日本語 GPT 言語モデル: 3.6 billion parameter Japanese GPT language model [17 May 2023]
+- [rinna: bilingual-gpt-neox-4b🤗](https://huggingface.co/rinna/bilingual-gpt-neox-4b): 日英バイリンガル大規模言語モデル [17 May 2023]
+- [ブレインパッド社員が投稿した Qiita 記事まとめ✍️](https://blog.brainpad.co.jp/entry/2023/07/27/153055): ブレインパッド社員が投稿した Qiita 記事まとめ [Jul 2023]
+- [コード生成を伴う LLM エージェント✍️](https://speakerdeck.com/smiyawaki0820)  [18 Jul 2024]
+- [生成 AI・LLM のツール拡張に関する論文の動向調査✍️](https://blog.brainpad.co.jp/entry/2023/09/22/150341): Survey of trends in papers on tool extensions for generative AI and LLM [Sep 2023]
+- [大規模言語モデルで変わる ML システム開発✍️](https://speakerdeck.com/hirosatogamo/da-gui-mo-yan-yu-moderudebian-warumlsisutemukai-fa): ML system development that changes with large-scale language models [Mar 2023]
+- [日本語LLMまとめ - Overview of Japanese LLMs](https://github.com/llm-jp/awesome-japanese-llm): 一般公開されている日本語LLM（日本語を中心に学習されたLLM）および日本語LLM評価ベンチマークに関する情報をまとめ [Jul 2023]
+ ![**github stars**](https://img.shields.io/github/stars/llm-jp/awesome-japanese-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [法律:生成 AI の利用ガイドライン](https://storialaw.jp/blog/9414): Legal: Guidelines for the Use of Generative AI
 
 ### **LLM Materials in Korean**
 
-- [Machine Learning Study 혼자 해보기](https://github.com/teddylee777/machine-learning) [Sep 2018]
- ![**github stars**](https://img.shields.io/github/stars/teddylee777/machine-learning?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용✍️](https://techblog.woowahan.com/18144/) [Jul 2024]
+- [Harness를 이용해 LLM 애플리케이션 평가 자동화하기✍️](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
+- [HyperCLOVA X SEED🤗](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
+- [Kanana](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
 - [LangChain 한국어 튜토리얼](https://github.com/teddylee777/langchain-kr) [Feb 2024]
  ![**github stars**](https://img.shields.io/github/stars/teddylee777/langchain-kr?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [AI 데이터 분석가 ‘물어보새’ 등장 – RAG와 Text-To-SQL 활용✍️](https://techblog.woowahan.com/18144/) [Jul 2024]
 - [LLM, 더 저렴하게, 더 빠르게, 더 똑똑하게✍️](https://tech.kakao.com/posts/633) [09 Sep 2024]
-- [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기✍️](https://techblog.woowahan.com/19915/) [07 Nov 2024]
-- [Harness를 이용해 LLM 애플리케이션 평가 자동화하기✍️](https://techblog.lycorp.co.jp/ko/automating-llm-application-evaluation-with-harness) [16 Nov 2024]
-- [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례✍️](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
 - [LLM 앱의 제작에서 테스트와 배포까지, LLMOps 구축 사례 소개✍️](https://techblog.lycorp.co.jp/ko/building-llmops-for-creating-testing-deploying-of-llm-apps) [14 Feb 2025]
-- [Kanana](https://github.com/kakao/kanana): Kanana, a series of bilingual language models (developed by Kakao) [26 Feb 2025]
-- [HyperCLOVA X SEED🤗](https://huggingface.co/collections/naver-hyperclovax): Lightweight open-source lineup with a strong focus on Korean language [23 Apr 2025]
+- [Machine Learning Study 혼자 해보기](https://github.com/teddylee777/machine-learning) [Sep 2018]
+ ![**github stars**](https://img.shields.io/github/stars/teddylee777/machine-learning?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [모두를 위한 LLM 애플리케이션 개발 환경 구축 사례✍️](https://techblog.lycorp.co.jp/ko/building-a-development-environment-for-llm-apps-for-everyone)  [7 Feb 2025]
 - [문의 대응을 효율화하기 위한 RAG 기반 봇 도입하기✍️](https://techblog.lycorp.co.jp/ko/rag-based-bot-for-streamlining-inquiry-responses) [23 May 2025]
+- [생성형 AI 서비스: 게이트웨이로 쉽게 시작하기✍️](https://techblog.woowahan.com/19915/) [07 Nov 2024]
 
 ### **Learning and Supplementary Materials**
 
@@ -1304,6 +1318,7 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
  ![**github stars**](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
+- [Sophon✍️](https://sophon.at/papers): Trending AI research catalog organized by domains, benchmarks, methods, and models. [Jun 2026]
 - [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [🗄️](../files/ml_rsc.pdf) [20 Aug 2017]
 - [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]

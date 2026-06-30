@@ -104,26 +104,61 @@
 
 ## **Datasets for LLM Training**
 
-- LLM-generated datasets:
-  - [Self-Instruct📑](https://arxiv.org/abs/2212.10560): Seed task pool with a set of human-written instructions. [20 Dec 2022]
-  - [Self-Alignment with Instruction Backtranslation📑](https://arxiv.org/abs/2308.06259): Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation. [11 Aug 2023]
+##### Dataset Catalogs and Collections
+
 - [LLMDataHub: Awesome Datasets for LLM Training](https://github.com/Zjh-819/LLMDataHub): A quick guide (especially) for trending instruction finetuning datasets
  ![**github stars**](https://img.shields.io/github/stars/Zjh-819/LLMDataHub?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Open LLMs and Datasets](https://github.com/eugeneyan/open-llms): A list of open LLMs available for commercial use.
  ![**github stars**](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/): The Stanford Question Answering Dataset (SQuAD), a set of Wikipedia articles, 100,000+ question-answer pairs on 500+ articles. [16 Jun 2016]
-- [Synthetic Data Vault (SDV) ](https://github.com/sdv-dev/SDV): Synthetic data generation for tabular data [May 2018] ![**github stars**](https://img.shields.io/github/stars/sdv-dev/SDV?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [RedPajama](https://together.ai/blog/redpajama): LLaMA training dataset of over 1.2 trillion tokens [git](https://github.com/togethercomputer/RedPajama-Data) [17 Apr 2023]
- ![**github stars**](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [FineWeb🤗](https://huggingface.co/datasets/HuggingFaceFW/fineweb):🤗HuggingFace. crawled 15 trillion tokens of high-quality web data from the summer of 2013 to March 2024. [Apr 2024]
-- [MS MARCO Web Search](https://github.com/microsoft/MS-MARCO-Web-Search): A large-scale information-rich web dataset, featuring millions of real clicked query-document labels [Apr 2024]
- ![**github stars**](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+
+##### Synthetic / LLM-Generated Datasets
+
 - [Nemotron-Personas-Japan: Synthesized Data for Sovereign AI🤗](https://huggingface.co/blog/nvidia/nemotron-personas-japan): The first open synthetic dataset that captures Japan's demographic, geographic, and cultural spectrum.  [23 Sep 2025]
+- [Self-Alignment with Instruction Backtranslation📑](https://arxiv.org/abs/2308.06259): Without human seeding, use LLM to produce instruction-response pairs. The process involves two steps: self-augmentation and self-curation. [11 Aug 2023]
+- [Self-Instruct📑](https://arxiv.org/abs/2212.10560): Seed task pool with a set of human-written instructions. [20 Dec 2022]
 - [Synthetic Data of LLMs](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data): A reading list on LLM based Synthetic Data Generation [Oct 2024]
  ![**github stars**](https://img.shields.io/github/stars/wasiahmad/Awesome-LLM-Synthetic-Data?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Synthetic Data Vault (SDV) ](https://github.com/sdv-dev/SDV): Synthetic data generation for tabular data [May 2018] ![**github stars**](https://img.shields.io/github/stars/sdv-dev/SDV?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+
+##### QA and Search Datasets
+
+- [MS MARCO Web Search](https://github.com/microsoft/MS-MARCO-Web-Search): A large-scale information-rich web dataset, featuring millions of real clicked query-document labels [Apr 2024]
+ ![**github stars**](https://img.shields.io/github/stars/microsoft/MS-MARCO-Web-Search?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/): The Stanford Question Answering Dataset (SQuAD), a set of Wikipedia articles, 100,000+ question-answer pairs on 500+ articles. [16 Jun 2016]
+
+##### Pretraining
+
+- [arXiv Bulk Data Access](https://info.arxiv.org/help/bulk_data_s3.html) - Bulk scientific and technical paper corpus.
+- [C4🤗](https://huggingface.co/datasets/allenai/c4) - Cleaned web corpus introduced for T5 pretraining.
+- [Common Crawl](https://commoncrawl.org) - Raw web-scale corpus used for many LLM training datasets.
+- [Dolma🤗](https://huggingface.co/datasets/allenai/dolma) - Multi-trillion-token open corpus from AI2.
+- [FineWeb🤗](https://huggingface.co/datasets/HuggingFaceFW/fineweb):🤗HuggingFace. crawled 15 trillion tokens of high-quality web data from the summer of 2013 to March 2024. [Apr 2024]
+- [GitHub Archive Program](https://archiveprogram.github.com) - Public source-code archive used for programming corpora.
+- [RefinedWeb🤗](https://huggingface.co/datasets/tiiuae/falcon-refinedweb) - Filtered Common Crawl derivative used in Falcon models.
+- [RedPajama](https://together.ai/blog/redpajama): LLaMA training dataset of over 1.2 trillion tokens [git](https://github.com/togethercomputer/RedPajama-Data) [17 Apr 2023]
+ ![**github stars**](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [The Pile](https://pile.eleuther.ai) - Curated mixture of 22 diverse text sources.
+- [Wikipedia Dumps](https://dumps.wikimedia.org) - Encyclopedic source commonly included in pretraining mixtures.
+
+##### Mid-Training
+
+- [Dolmino Mix🤗](https://huggingface.co/datasets/allenai/dolmino-mix-1124) - Capability-improvement dataset mixture after pretraining.
+- [Longmino Mix🤗](https://huggingface.co/datasets/allenai/dolma3_longmino_mix-100B-1125) - Long-context and advanced reasoning dataset mixture.
+- [MegaMath-Web-Pro-Max🤗](https://huggingface.co/datasets/OctoThinker/MegaMath-Web-Pro-Max) - Mathematics and reasoning-focused training dataset.
+
+##### Supervised Fine-Tuning (SFT)
+
+- [Alpaca🤗](https://huggingface.co/datasets/tatsu-lab/alpaca) - Instruction-following prompt-response dataset from self-instruct methods.
+- [Dolci-Think-SFT🤗](https://huggingface.co/datasets/allenai/Dolci-Think-SFT-32B) - Reasoning-oriented supervised fine-tuning dataset.
+- [MathInstruct🤗](https://huggingface.co/datasets/TIGER-Lab/MathInstruct) - Mathematical instruction-following dataset for SFT.
 - [Open Thoughts](https://github.com/open-thoughts/open-thoughts): Fully Open Data Curation for Thinking Models [28 Jan 2025] ![**github stars**](https://img.shields.io/github/stars/open-thoughts/open-thoughts?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
-Pretrain for a base model
+##### Preference Optimization / Alignment
+
+- [Dolci-Think-DPO-7B🤗](https://huggingface.co/datasets/allenai/Dolci-Think-DPO-7B) - Reasoning-focused preference optimization dataset.
+- [UltraFeedback🤗](https://huggingface.co/datasets/openbmb/UltraFeedback) - Large-scale preference ranking dataset for DPO and RLHF.
+
+##### Pretrain for a base model
 
 ```json
 {
@@ -156,26 +191,24 @@ databricks-dolly-15k: Instruction-Tuned [🤗](https://huggingface.co/datasets/d
 ```
 
 <!-- - [大規模言語モデルのデータセットまとめ](https://note.com/npaka/n/n686d987adfb1): 大規模言語モデルのデータセットまとめ [Apr 2023] -->
-- Dataset example
+<!-- - [Dataset example](https://docs.argilla.io/) -->
 
-  [🗣️](https://docs.argilla.io/)
+##### SFT Dataset
 
-  ### SFT Dataset
+| Category | Instruction | Context | Response |
+| --- | --- | --- | --- |
+| 0 | Open QA | How do I get rid of mosquitos in my house? | You can get rid of mosquitos in your house by ... |
+| 1 | Classification | Classify each country as "African" or "European" | Nigeria: African<br>Rwanda: African<br>Portugal: European |
+| 2 | Information Extraction | Extract the unique names of composers from the text. | To some extent, European and the US traditions... Pierre Boulez, Luigi Nono, Karlheinz Stockhausen |
+| 3 | General QA | Should investors time the market? | Timing the market is based on predictions of t... |
 
-  | Category | Instruction | Context | Response |
-  | --- | --- | --- | --- |
-  | 0 | Open QA | How do I get rid of mosquitos in my house? | You can get rid of mosquitos in your house by ... |
-  | 1 | Classification | Classify each country as "African" or "European" | Nigeria: African<br>Rwanda: African<br>Portugal: European |
-  | 2 | Information Extraction | Extract the unique names of composers from the text. | To some extent, European and the US traditions... Pierre Boulez, Luigi Nono, Karlheinz Stockhausen |
-  | 3 | General QA | Should investors time the market? | Timing the market is based on predictions of t... |
+##### RLHF Dataset
 
-  ### RLHF Dataset
-
-  | Instruction | Chosen Response | Rejected Response |
-  | --- | --- | --- |
-  | What is Depreciation | Depreciation is the drop in value of an asset ... | What is Depreciation – 10 Important Facts to K... |
-  | What do you know about the city of Aberdeen in Scotland? | Aberdeen is a city located in the North East of Scotland. It is known for its granite architecture and its offshore oil industry. | As an AI language model, I don't have personal knowledge or experiences about Aberdeen. |
-  | Describe thunderstorm season in the United States and Canada. | Thunderstorm season in the United States and Canada typically occurs during the spring and summer months, when warm, moist air collides with cooler, drier air, creating the conditions for thunderstorms to form. | Describe thunderstorm season in the United States and Canada. |
+| Instruction | Chosen Response | Rejected Response |
+| --- | --- | --- |
+| What is Depreciation | Depreciation is the drop in value of an asset ... | What is Depreciation – 10 Important Facts to K... |
+| What do you know about the city of Aberdeen in Scotland? | Aberdeen is a city located in the North East of Scotland. It is known for its granite architecture and its offshore oil industry. | As an AI language model, I don't have personal knowledge or experiences about Aberdeen. |
+| Describe thunderstorm season in the United States and Canada. | Thunderstorm season in the United States and Canada typically occurs during the spring and summer months, when warm, moist air collides with cooler, drier air, creating the conditions for thunderstorms to form. | Describe thunderstorm season in the United States and Canada. |
 
 ## **Evaluating Large Language Models**
 
