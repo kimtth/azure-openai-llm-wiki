@@ -104,7 +104,7 @@
 
 ### **A Taxonomy of Natural Language Processing**
 
-- An overview of different fields of study and recent developments in NLP. [🗄️](../files/taxonomy-nlp.pdf) / [✍️](https://towardsdatascience.com/a-taxonomy-of-natural-language-processing-dfc790cb4c01) [24 Sep 2023]
+- An overview of different fields of study and recent developments in NLP. [✍️](https://towardsdatascience.com/a-taxonomy-of-natural-language-processing-dfc790cb4c01) [24 Sep 2023]
   Exploring the Landscape of Natural Language Processing Research [ref📑](https://arxiv.org/abs/2307.10652) [20 Jul 2023]
   <img src="../files/taxonomy-nlp.png" width="650" />  
  - NLP taxonomy  
@@ -545,7 +545,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Screen AI✍️](https://blog.research.google/2024/03/screenai-visual-language-model-for-ui.html): ScreenAI, a model designed for understanding and interacting with user interfaces (UIs) and infographics. [Mar 2024]
 - [Visual Prompting📑](https://arxiv.org/abs/2211.11635) [21 Nov 2022]
 - [What is Visual Grounding](https://paperswithcode.com/task/visual-grounding): Visual Grounding (VG) aims to locate the most relevant object or region in an image, based on a natural language query.
-- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [🗄️](../files/vPrompt.pdf) [26 Apr 2023]
+- [What is Visual prompting](https://landing.ai/what-is-visual-prompting/): Similarly to what has happened in NLP, large pre-trained vision transformers have made it possible for us to implement Visual Prompting. [26 Apr 2023]
 
 
 ## Finetuning
@@ -610,7 +610,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 - 5 Techniques of LoRA [✍️](https://blog.dailydoseofds.com/p/5-llm-fine-tuning-techniques-explained): LoRA, LoRA-FA, VeRA, Delta-LoRA, LoRA+ [May 2024]
 - [DoRA📑](https://arxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
-- [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [🗄️](../files/Fine-tuning_a_GPT_LoRA.pdf) [20 Jun 2023]
+- [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [20 Jun 2023]
 - [LoRA: Low-Rank Adaptation of Large Language Models📑](https://arxiv.org/abs/2106.09685): LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA) [17 Jun 2021]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/LoRA?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [LoRA learns less and forgets less📑](https://arxiv.org/abs/2405.09673): Compared to full training, LoRA has less learning but better retention of original knowledge. [15 May 2024]  
@@ -719,7 +719,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
   - [FlashAttention-2📑](https://arxiv.org/abs/2307.08691): [17 Jul 2023]: An method that reorders the attention computation and leverages classical techniques (tiling, recomputation). Instead of storing each intermediate result, use kernel fusion and run every operation in a single kernel in order to avoid memory read/write overhead. [git](https://github.com/Dao-AILab/flash-attention) -> Compared to a standard attention implementation in PyTorch, FlashAttention-2 can be up to 9x faster
  ![**github stars**](https://img.shields.io/github/stars/Dao-AILab/flash-attention?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [FlashAttention-3📑](https://arxiv.org/abs/2407.08608) [11 Jul 2024]
-- [PagedAttention📑](https://arxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference [🗄️](../files/vLLM_pagedattention.pdf). [✍️](https://vllm.ai/): vllm [12 Sep 2023]  
+- [PagedAttention📑](https://arxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference. [✍️](https://vllm.ai/): vllm [12 Sep 2023]  
   <img src="../files/pagedattn.png" width="390">  
   - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
   - Transformer cache key-value tensors of context tokens into GPU memory to facilitate fast generation of the next token. However, these caches occupy significant GPU memory. The unpredictable nature of cache size, due to the variability in the length of each request, exacerbates the issue, resulting in significant memory fragmentation in the absence of a suitable memory management mechanism.
@@ -809,7 +809,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 ### **OpenAI Roadmap**
 
 - [AMA (ask me anything) with OpenAI on Reddit🗣️](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/) [1 Nov 2024]
-- [Humanloop Interview 2023🗣️](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) : [🗄️](../files/openai-plans.pdf) [29 May 2023]
+- [Humanloop Interview 2023🗣️](https://web.archive.org/web/20230531203946/https://humanloop.com/blog/openai-plans) [29 May 2023]
 - Model Spec: Desired behavior for the models in the OpenAI API and ChatGPT [✍️](https://cdn.openai.com/spec/model-spec-2024-05-08.html) [8 May 2024] [✍️](https://twitter.com/yi_ding/status/1788281765637038294): takeaway
 - [o3/o4-mini/GPT-5🗣️](https://x.com/sama/status/1908167621624856998): `we are going to release o3 and o4-mini after all, probably in a couple of weeks, and then do GPT-5 in a few months.` [4 Apr 2025]
 - OpenAI’s CEO Says the Age of Giant AI Models Is Already Over [✍️](https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giant-ai-models-is-already-over/) [17 Apr 2023]
@@ -948,7 +948,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Recursive Language Models📑](https://arxiv.org/abs/2512.24601): Inference paradigm that treats long prompts as an external environment for processing arbitrarily long context. [Dec 2025]
 - [Ring Attention📑](https://arxiv.org/abs/2310.01889): 1. Ring Attention, which leverages blockwise computation of self-attention to distribute long sequences across multiple devices while overlapping the communication of key-value blocks with the computation of blockwise attention. 2. Ring Attention can reduce the memory requirements of Transformers, enabling us to train more than 500 times longer sequence than prior memory efficient state-of-the-arts and enables the training of sequences that exceed 100 million in length without making approximations to attention. 3. we propose an enhancement to the blockwise parallel transformers (BPT) framework. [git](https://github.com/lhao499/llm_large_context) [3 Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/lhao499/llm_large_context?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Rotary Positional Embedding (RoPE)📑](https://arxiv.org/abs/2104.09864):💡/ [✍️](https://blog.eleuther.ai/rotary-embeddings/) / [🗄️](../files/RoPE.pdf) [20 Apr 2021]
+- [Rotary Positional Embedding (RoPE)📑](https://arxiv.org/abs/2104.09864):💡/ [✍️](https://blog.eleuther.ai/rotary-embeddings/) [20 Apr 2021]
   - How is this different from the sinusoidal embeddings used in "Attention is All You Need"?
   - Sinusoidal embeddings apply to each coordinate individually, while rotary embeddings mix pairs of coordinates
   - Sinusoidal embeddings add a `cos` or `sin` term, while rotary embeddings use a multiplicative factor.
@@ -965,7 +965,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 
 ### **Numbers LLM**
 
-- [5 Approaches To Solve LLM Token Limits✍️](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) : [🗄️](../files/token-limits-5-approaches.pdf) [2023]
+- [5 Approaches To Solve LLM Token Limits✍️](https://dholmes.co.uk/blog/5-approaches-to-solve-llm-token-limits/) [2023]
 - [Byte-Pair Encoding (BPE)📑](https://arxiv.org/abs/1508.07909): P.2015. The most widely used tokenization algorithm for text today. BPE adds an end token to words, splits them into characters, and merges frequent byte pairs iteratively until a stop criterion. The final tokens form the vocabulary for new data encoding and decoding. [31 Aug 2015] / [✍️](https://towardsdatascience.com/byte-pair-encoding-subword-based-tokenization-algorithm-77828a70bee0) [13 Aug 2021]
 - [Numbers every LLM Developer should know](https://github.com/ray-project/llm-numbers) [18 May 2023] ![**github stars**](https://img.shields.io/github/stars/ray-project/llm-numbers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
   <img src="../files/llm-numbers.png" height="360">
@@ -1312,14 +1312,14 @@ x = x @ w_fc # [n_seq, n_embd] @ [n_embd, 3*n_embd] -> [n_seq, 3*n_embd]
  ![**github stars**](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![**github stars**](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) : [🗄️](../files/top-cited-2020-2021-2022-papers.pdf) [8 Mar 2023]
+- [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) [8 Mar 2023]
 - [Open Problem and Limitation of RLHF📑](https://arxiv.org/abs/2307.15217): Provides an overview of open problems and the limitations of RLHF [27 Jul 2023]
-<!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [🗄️](../files/aifire.pdf) [2023] -->
+<!-- - [Ai Fire](https://www.aifire.co/c/ai-learning-resources): AI Fire Learning resources [2023] -->
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook) Examples and guides for using the OpenAI API
  ![**github stars**](https://img.shields.io/github/stars/openai/openai-cookbook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [oumi: Open Universal Machine Intelligence](https://github.com/oumi-ai/oumi): Everything you need to build state-of-the-art foundation models, end-to-end. [Oct 2024]
 - [Sophon✍️](https://sophon.at/papers): Trending AI research catalog organized by domains, benchmarks, methods, and models. [Jun 2026]
-- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) : [🗄️](../files/ml_rsc.pdf) [20 Aug 2017]
+- [The Best Machine Learning Resources](https://medium.com/machine-learning-for-humans/how-to-learn-machine-learning-24d53bb64aa1) [20 Aug 2017]
 - [The Big Book of Large Language Models](https://book.theaiedge.io/) by Damien Benveniste [30 Jan 2025]
 - [The Illustrated GPT-OSS](https://newsletter.languagemodels.co/p/the-illustrated-gpt-oss) [19 Aug 2025]
 - [What are the most influential current AI Papers?📑](https://arxiv.org/abs/2308.04889): NLLG Quarterly arXiv Report 06/23 [git](https://github.com/NL2G/Quaterly-Arxiv) [31 Jul 2023]
