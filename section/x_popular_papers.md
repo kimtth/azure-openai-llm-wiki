@@ -1,16 +1,17 @@
 # Popular Papers on RAG & AI Agents (Computer Science)
 
-*Generated: 2026-05-12 17:12:12*
+*Generated: 2026-07-01 10:55:39*
+*Source: Semantic Scholar batch API refresh of existing paper IDs*
 *Filtered for Computer Science papers only*
 
 ## RAG (Retrieval-Augmented Generation)
 
-*Retrieved: 2026-05-12 17:13:13*
+*Retrieved: 2026-07-01 10:55:39*
 
 ### 1. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
 
 **Authors:** Patrick Lewis, Ethan Perez, Aleksandara Piktus, et al.  
-**Year:** 2020 | **Citations:** 13,606 | **Venue:** Neural Information Processing Systems  
+**Year:** 2020 | **Citations:** 15,276 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [May 2020]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/659bf9ce7175e1ec266ff54359e2bd76e0b7ff31](https://www.semanticscholar.org/paper/659bf9ce7175e1ec266ff54359e2bd76e0b7ff31)  
@@ -23,7 +24,7 @@
 ### 2. Retrieval-Augmented Generation for Large Language Models: A Survey
 
 **Authors:** Yunfan Gao, Yun Xiong, Xinyu Gao, et al.  
-**Year:** 2023 | **Citations:** 3,267 | **Venue:** arXiv.org  
+**Year:** 2023 | **Citations:** 3,557 | **Venue:** arXiv.org  
 **Year Month:** [Dec 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/46f9f7b8f88f72e12cbdb21e3311f995eb6e65c5](https://www.semanticscholar.org/paper/46f9f7b8f88f72e12cbdb21e3311f995eb6e65c5)  
@@ -36,7 +37,7 @@
 ### 3. RAGAs: Automated Evaluation of Retrieval Augmented Generation
 
 **Authors:** ES Shahul, J. James, Luis Espinosa Anke, et al.  
-**Year:** 2023 | **Citations:** 636 | **Venue:** Conference of the European Chapter of the Association for Computational Linguistics  
+**Year:** 2023 | **Citations:** 754 | **Venue:** Conference of the European Chapter of the Association for Computational Linguistics  
 **Year Month:** [Sep 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/f5e9e5bbe22f0263be1f1ce88c66978a2b927772](https://www.semanticscholar.org/paper/f5e9e5bbe22f0263be1f1ce88c66978a2b927772)  
@@ -49,7 +50,7 @@
 ### 4. Active Retrieval Augmented Generation
 
 **Authors:** Zhengbao Jiang, Frank F. Xu, Luyu Gao, et al.  
-**Year:** 2023 | **Citations:** 634 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2023 | **Citations:** 704 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [May 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/88884b8806262a4095036041e3567d450dba39f7](https://www.semanticscholar.org/paper/88884b8806262a4095036041e3567d450dba39f7)  
@@ -62,7 +63,7 @@
 ### 5. Retrieval-Augmented Generation for AI-Generated Content: A Survey
 
 **Authors:** Penghao Zhao, Hailin Zhang, Qinhan Yu, et al.  
-**Year:** 2024 | **Citations:** 571 | **Venue:** Data Science and Engineering  
+**Year:** 2024 | **Citations:** 614 | **Venue:** Data Science and Engineering  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/ab15463babf98fffc6f683fe2026de0725b5e1a9](https://www.semanticscholar.org/paper/ab15463babf98fffc6f683fe2026de0725b5e1a9)  
@@ -75,7 +76,7 @@
 ### 6. Benchmarking Large Language Models in Retrieval-Augmented Generation
 
 **Authors:** Jiawei Chen, Hongyu Lin, Xianpei Han, et al.  
-**Year:** 2023 | **Citations:** 532 | **Venue:** AAAI Conference on Artificial Intelligence  
+**Year:** 2023 | **Citations:** 566 | **Venue:** AAAI Conference on Artificial Intelligence  
 **Year Month:** [Sep 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/28e2ecb4183ebc0eec504b12dddc677f8aef8745](https://www.semanticscholar.org/paper/28e2ecb4183ebc0eec504b12dddc677f8aef8745)  
@@ -88,7 +89,7 @@
 ### 7. Benchmarking Retrieval-Augmented Generation for Medicine
 
 **Authors:** Guangzhi Xiong, Qiao Jin, Zhiyong Lu, et al.  
-**Year:** 2024 | **Citations:** 491 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
+**Year:** 2024 | **Citations:** 543 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/b798cf6af813638fab09a8af6ad0f3df6c241485](https://www.semanticscholar.org/paper/b798cf6af813638fab09a8af6ad0f3df6c241485)  
@@ -101,7 +102,7 @@
 ### 8. Graph Retrieval-Augmented Generation: A Survey
 
 **Authors:** Boci Peng, Yun Zhu, Yongchao Liu, et al.  
-**Year:** 2024 | **Citations:** 381 | **Venue:** ACM Trans. Inf. Syst.  
+**Year:** 2024 | **Citations:** 450 | **Venue:** ACM Trans. Inf. Syst.  
 **Year Month:** [Aug 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/9ab45aa875b56335303398e84a59a3756cd9d530](https://www.semanticscholar.org/paper/9ab45aa875b56335303398e84a59a3756cd9d530)  
@@ -111,23 +112,10 @@
 
 ---
 
-### 9. Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG
-
-**Authors:** Aditi Singh, Abul Ehtesham, Saket Kumar, et al.  
-**Year:** 2025 | **Citations:** 280 | **Venue:** arXiv.org  
-**Year Month:** [Jan 2025]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7](https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7)  
-**arXiv:** [https://arxiv.org/abs/2501.09136](https://arxiv.org/abs/2501.09136)  
-
-**Abstract:** Large Language Models (LLMs) have advanced artificial intelligence by enabling human-like text generation and natural language understanding. However, their reliance on static training data limits their ability to respond to dynamic, real-time queries, resulting in outdated or inaccurate outputs. Retrieval-Augmented Generation (RAG) has emerged as a solution, enhancing LLMs by integrating real-time data retrieval to provide contextually relevant and up-to-date responses. Despite its promise, traditional RAG systems are constrained by static workflows and lack the adaptability required for multi-step reasoning and complex task management. Agentic Retrieval-Augmented Generation (Agentic RAG) transcends these limitations by embedding autonomous AI agents into the RAG pipeline. These agents leverage agentic design patterns reflection, planning, tool use, and multi-agent collaboration to dynamically manage retrieval strategies, iteratively refine contextual understanding, and adapt workflows through operational structures ranging from sequential steps to adaptive collaboration. This integration enables Agentic RAG systems to deliver flexibility, scalability, and context-awareness across diverse applications. This paper presents an analytical survey of Agentic RAG systems. It traces the evolution of RAG paradigms, introduces a principled taxonomy of Agentic RAG architectures based on agent cardinality, control structure, autonomy, and knowledge representation, and provides a comparative analysis of design trade-offs across existing frameworks. The survey examines applications in healthcare, finance, education, and enterprise document processing, and distills practical lessons for system designers and practitioners. Finally, it identifies key open research challenges related to evaluation, coordination, memory management, efficiency, and governance, outlining directions for future research.
-
----
-
-### 10. LightRAG: Simple and Fast Retrieval-Augmented Generation
+### 9. LightRAG: Simple and Fast Retrieval-Augmented Generation
 
 **Authors:** Zirui Guo, Lianghao Xia, Yanhua Yu, et al.  
-**Year:** 2024 | **Citations:** 268 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2024 | **Citations:** 347 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [Oct 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1ea143c34b9bc359780f79ba4d68dee68bcc1129](https://www.semanticscholar.org/paper/1ea143c34b9bc359780f79ba4d68dee68bcc1129)  
@@ -137,23 +125,23 @@
 
 ---
 
-### 11. MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries
+### 10. Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG
 
-**Authors:** Yixuan Tang, Yi Yang  
-**Year:** 2024 | **Citations:** 262 | **Venue:** arXiv.org  
-**Year Month:** [Jan 2024]  
+**Authors:** Aditi Singh, Abul Ehtesham, Saket Kumar, et al.  
+**Year:** 2025 | **Citations:** 332 | **Venue:** arXiv.org  
+**Year Month:** [Jan 2025]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239](https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239)  
-**arXiv:** [https://arxiv.org/abs/2401.15391](https://arxiv.org/abs/2401.15391)  
+**URL:** [https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7](https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7)  
+**arXiv:** [https://arxiv.org/abs/2501.09136](https://arxiv.org/abs/2501.09136)  
 
-**Abstract:** Retrieval-augmented generation (RAG) augments large language models (LLM) by retrieving relevant knowledge, showing promising potential in mitigating LLM hallucinations and enhancing response quality, thereby facilitating the great adoption of LLMs in practice. However, we find that existing RAG systems are inadequate in answering multi-hop queries, which require retrieving and reasoning over multiple pieces of supporting evidence. Furthermore, to our knowledge, no existing RAG benchmarking dataset focuses on multi-hop queries. In this paper, we develop a novel dataset, MultiHop-RAG, which consists of a knowledge base, a large collection of multi-hop queries, their ground-truth answers, and the associated supporting evidence. We detail the procedure of building the dataset, utilizing an English news article dataset as the underlying RAG knowledge base. We demonstrate the benchmarking utility of MultiHop-RAG in two experiments. The first experiment compares different embedding models for retrieving evidence for multi-hop queries. In the second experiment, we examine the capabilities of various state-of-the-art LLMs, including GPT-4, PaLM, and Llama2-70B, in reasoning and answering multi-hop queries given the evidence. Both experiments reveal that existing RAG methods perform unsatisfactorily in retrieving and answering multi-hop queries. We hope MultiHop-RAG will be a valuable resource for the community in developing effective RAG systems, thereby facilitating greater adoption of LLMs in practice. The MultiHop-RAG and implemented RAG system is publicly available at https://github.com/yixuantt/MultiHop-RAG/.
+**Abstract:** Large Language Models (LLMs) have advanced artificial intelligence by enabling human-like text generation and natural language understanding. However, their reliance on static training data limits their ability to respond to dynamic, real-time queries, resulting in outdated or inaccurate outputs. Retrieval-Augmented Generation (RAG) has emerged as a solution, enhancing LLMs by integrating real-time data retrieval to provide contextually relevant and up-to-date responses. Despite its promise, traditional RAG systems are constrained by static workflows and lack the adaptability required for multi-step reasoning and complex task management. Agentic Retrieval-Augmented Generation (Agentic RAG) transcends these limitations by embedding autonomous AI agents into the RAG pipeline. These agents leverage agentic design patterns reflection, planning, tool use, and multi-agent collaboration to dynamically manage retrieval strategies, iteratively refine contextual understanding, and adapt workflows through operational structures ranging from sequential steps to adaptive collaboration. This integration enables Agentic RAG systems to deliver flexibility, scalability, and context-awareness across diverse applications. This paper presents an analytical survey of Agentic RAG systems. It traces the evolution of RAG paradigms, introduces a principled taxonomy of Agentic RAG architectures based on agent cardinality, control structure, autonomy, and knowledge representation, and provides a comparative analysis of design trade-offs across existing frameworks. The survey examines applications in healthcare, finance, education, and enterprise document processing, and distills practical lessons for system designers and practitioners. Finally, it identifies key open research challenges related to evaluation, coordination, memory management, efficiency, and governance, outlining directions for future research.
 
 ---
 
-### 12. G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering
+### 11. G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering
 
 **Authors:** Xiaoxin He, Yijun Tian, Yifei Sun, et al.  
-**Year:** 2024 | **Citations:** 251 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 296 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/a41d4a3b005c8ec4f821e6ee96672d930ca9596c](https://www.semanticscholar.org/paper/a41d4a3b005c8ec4f821e6ee96672d930ca9596c)  
@@ -163,10 +151,23 @@
 
 ---
 
+### 12. MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries
+
+**Authors:** Yixuan Tang, Yi Yang  
+**Year:** 2024 | **Citations:** 293 | **Venue:** arXiv.org  
+**Year Month:** [Jan 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239](https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239)  
+**arXiv:** [https://arxiv.org/abs/2401.15391](https://arxiv.org/abs/2401.15391)  
+
+**Abstract:** Retrieval-augmented generation (RAG) augments large language models (LLM) by retrieving relevant knowledge, showing promising potential in mitigating LLM hallucinations and enhancing response quality, thereby facilitating the great adoption of LLMs in practice. However, we find that existing RAG systems are inadequate in answering multi-hop queries, which require retrieving and reasoning over multiple pieces of supporting evidence. Furthermore, to our knowledge, no existing RAG benchmarking dataset focuses on multi-hop queries. In this paper, we develop a novel dataset, MultiHop-RAG, which consists of a knowledge base, a large collection of multi-hop queries, their ground-truth answers, and the associated supporting evidence. We detail the procedure of building the dataset, utilizing an English news article dataset as the underlying RAG knowledge base. We demonstrate the benchmarking utility of MultiHop-RAG in two experiments. The first experiment compares different embedding models for retrieving evidence for multi-hop queries. In the second experiment, we examine the capabilities of various state-of-the-art LLMs, including GPT-4, PaLM, and Llama2-70B, in reasoning and answering multi-hop queries given the evidence. Both experiments reveal that existing RAG methods perform unsatisfactorily in retrieving and answering multi-hop queries. We hope MultiHop-RAG will be a valuable resource for the community in developing effective RAG systems, thereby facilitating greater adoption of LLMs in practice. The MultiHop-RAG and implemented RAG system is publicly available at https://github.com/yixuantt/MultiHop-RAG/.
+
+---
+
 ### 13. RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs
 
 **Authors:** Yue Yu, Wei Ping, Zihan Liu, et al.  
-**Year:** 2024 | **Citations:** 246 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 282 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/80478de9c7a81561e2f3dac9b8b1ef3df389ff2d](https://www.semanticscholar.org/paper/80478de9c7a81561e2f3dac9b8b1ef3df389ff2d)  
@@ -179,7 +180,7 @@
 ### 14. Seven Failure Points When Engineering a Retrieval Augmented Generation System
 
 **Authors:** Scott Barnett, Stefanus Kurniawan, Srikanth Thudumu, et al.  
-**Year:** 2024 | **Citations:** 228 | **Venue:** 2024 IEEE/ACM 3rd International Conference on AI Engineering – Software Engineering for AI (CAIN)  
+**Year:** 2024 | **Citations:** 254 | **Venue:** 2024 IEEE/ACM 3rd International Conference on AI Engineering – Software Engineering for AI (CAIN)  
 **Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/ba454ba8c594dfb86c25dff2e265c8a2686aa037](https://www.semanticscholar.org/paper/ba454ba8c594dfb86c25dff2e265c8a2686aa037)  
@@ -192,7 +193,7 @@
 ### 15. Corrective Retrieval Augmented Generation
 
 **Authors:** Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, et al.  
-**Year:** 2024 | **Citations:** 199 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 232 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/5bbc2b5aa6c63c6a2cfccf095d6020b063ad47ac](https://www.semanticscholar.org/paper/5bbc2b5aa6c63c6a2cfccf095d6020b063ad47ac)  
@@ -205,7 +206,7 @@
 ### 16. Retrieval-Augmented Generation with Graphs (GraphRAG)
 
 **Authors:** Haoyu Han, Yu Wang, Harry Shomer, et al.  
-**Year:** 2024 | **Citations:** 199 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 224 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/12fb0a058ad69f85a2b59cf7a52a29cbb01d8a0b](https://www.semanticscholar.org/paper/12fb0a058ad69f85a2b59cf7a52a29cbb01d8a0b)  
@@ -215,62 +216,10 @@
 
 ---
 
-### 17. The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)
-
-**Authors:** Shenglai Zeng, Jiankun Zhang, Pengfei He, et al.  
-**Year:** 2024 | **Citations:** 187 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
-**Year Month:** [Feb 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8](https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8)  
-**arXiv:** [https://arxiv.org/abs/2402.16893](https://arxiv.org/abs/2402.16893)  
-
-**Abstract:** Retrieval-augmented generation (RAG) is a powerful technique to facilitate language model with proprietary and private data, where data privacy is a pivotal concern. Whereas extensive research has demonstrated the privacy risks of large language models (LLMs), the RAG technique could potentially reshape the inherent behaviors of LLM generation, posing new privacy issues that are currently under-explored. In this work, we conduct extensive empirical studies with novel attack methods, which demonstrate the vulnerability of RAG systems on leaking the private retrieval database. Despite the new risk brought by RAG on the retrieval data, we further reveal that RAG can mitigate the leakage of the LLMs' training data. Overall, we provide new insights in this paper for privacy protection of retrieval-augmented LLMs, which benefit both LLMs and RAG systems builders. Our code is available at https://github.com/phycholosogy/RAG-privacy.
-
----
-
-### 18. VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents
-
-**Authors:** Shi Yu, Chaoyue Tang, Bokai Xu, et al.  
-**Year:** 2024 | **Citations:** 183 | **Venue:** International Conference on Learning Representations  
-**Year Month:** [Oct 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58](https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58)  
-**arXiv:** [https://arxiv.org/abs/2410.10594](https://arxiv.org/abs/2410.10594)  
-
-**Abstract:** Retrieval-augmented generation (RAG) is an effective technique that enables large language models (LLMs) to utilize external knowledge sources for generation. However, current RAG systems are solely based on text, rendering it impossible to utilize vision information like layout and images that play crucial roles in real-world multi-modality documents. In this paper, we introduce VisRAG, which tackles this issue by establishing a vision-language model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the document to obtain text, the document is directly embedded using a VLM as an image and then retrieved to enhance the generation of a VLM. Compared to traditional text-based RAG, VisRAG maximizes the retention and utilization of the data information in the original documents, eliminating the information loss introduced during the parsing process. We collect both open-source and synthetic data to train the retriever in VisRAG and explore a variety of generation methods. Experiments demonstrate that VisRAG outperforms traditional RAG in both the retrieval and generation stages, achieving a 20--40% end-to-end performance gain over traditional text-based RAG pipeline. Further analysis reveals that VisRAG is efficient in utilizing training data and demonstrates strong generalization capability, positioning it as a promising solution for RAG on multi-modality documents. Our code and data are available at https://github.com/openbmb/visrag.
-
----
-
-### 19. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation
-
-**Authors:** Chi-Min Chan, Chunpu Xu, Ruibin Yuan, et al.  
-**Year:** 2024 | **Citations:** 181 | **Venue:** arXiv.org  
-**Year Month:** [Apr 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a](https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a)  
-**arXiv:** [https://arxiv.org/abs/2404.00610](https://arxiv.org/abs/2404.00610)  
-
-**Abstract:** Large Language Models (LLMs) exhibit remarkable capabilities but are prone to generating inaccurate or hallucinatory responses. This limitation stems from their reliance on vast pretraining datasets, making them susceptible to errors in unseen scenarios. To tackle these challenges, Retrieval-Augmented Generation (RAG) addresses this by incorporating external, relevant documents into the response generation process, thus leveraging non-parametric knowledge alongside LLMs' in-context learning abilities. However, existing RAG implementations primarily focus on initial input for context retrieval, overlooking the nuances of ambiguous or complex queries that necessitate further clarification or decomposition for accurate responses. To this end, we propose learning to Refine Query for Retrieval Augmented Generation (RQ-RAG) in this paper, endeavoring to enhance the model by equipping it with capabilities for explicit rewriting, decomposition, and disambiguation. Our experimental results indicate that our method, when applied to a 7B Llama2 model, surpasses the previous state-of-the-art (SOTA) by an average of 1.9\% across three single-hop QA datasets, and also demonstrates enhanced performance in handling complex, multi-hop QA datasets. Our code is available at https://github.com/chanchimin/RQ-RAG.
-
----
-
-### 20. FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research
-
-**Authors:** Jiajie Jin, Yutao Zhu, Xinyu Yang, et al.  
-**Year:** 2024 | **Citations:** 180 | **Venue:** The Web Conference  
-**Year Month:** [May 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07](https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07)  
-**arXiv:** [https://arxiv.org/abs/2405.13576](https://arxiv.org/abs/2405.13576)  
-
-**Abstract:** With the advent of large language models (LLMs) and multimodal large language models (MLLMs), the potential of retrieval-augmented generation (RAG) has attracted considerable research attention. However, the absence of a standardized framework for implementation, coupled with the inherently complex RAG process, makes it challenging and time-consuming for researchers to compare and evaluate these approaches in a consistent environment. In response to this challenge, we develop FlashRAG, an efficient and modular open-source toolkit designed to assist researchers in reproducing and comparing existing RAG methods and developing their own algorithms within a unified framework. Our toolkit has implemented 16 advanced RAG methods and gathered and organized 38 benchmark datasets. It has various features, including a customizable modular framework, a rich collection of pre-implemented RAG works, comprehensive datasets, efficient auxiliary pre-processing scripts, and extensive and standard evaluation metrics. Our toolkit and resources are available at https://github.com/RUC-NLPIR/FlashRAG.
-
----
-
-### 21. PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models
+### 17. PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models
 
 **Authors:** Wei Zou, Runpeng Geng, Binghui Wang, et al.  
-**Year:** 2024 | **Citations:** 157 | **Venue:** USENIX Security Symposium  
+**Year:** 2024 | **Citations:** 219 | **Venue:** USENIX Security Symposium  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/f4e06256ab07727ff4e0465deea83fcf45012354](https://www.semanticscholar.org/paper/f4e06256ab07727ff4e0465deea83fcf45012354)  
@@ -280,23 +229,62 @@
 
 ---
 
-### 22. Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach
+### 18. The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)
 
-**Authors:** Zhuowan Li, Cheng Li, Mingyang Zhang, et al.  
-**Year:** 2024 | **Citations:** 136 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
-**Year Month:** [Jul 2024]  
+**Authors:** Shenglai Zeng, Jiankun Zhang, Pengfei He, et al.  
+**Year:** 2024 | **Citations:** 216 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
+**Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d](https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d)  
-**arXiv:** [https://arxiv.org/abs/2407.16833](https://arxiv.org/abs/2407.16833)  
+**URL:** [https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8](https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8)  
+**arXiv:** [https://arxiv.org/abs/2402.16893](https://arxiv.org/abs/2402.16893)  
 
-**Abstract:** Retrieval Augmented Generation (RAG) has been a powerful tool for Large Language Models (LLMs) to efficiently process overly lengthy contexts. However, recent LLMs like Gemini-1.5 and GPT-4 show exceptional capabilities to understand long contexts directly. We conduct a comprehensive comparison between RAG and long-context (LC) LLMs, aiming to leverage the strengths of both. We benchmark RAG and LC across various public datasets using three latest LLMs. Results reveal that when resourced sufficiently, LC consistently outperforms RAG in terms of average performance. However, RAG’s significantly lower cost remains a distinct advantage. Based on this observation, we propose Self-Route, a simple yet effective method that routes queries to RAG or LC based on model self-reflection. Self-Route significantly reduces the computation cost while maintaining a comparable performance to LC. Our findings provide a guideline for long-context applications of LLMs using RAG and LC.
+**Abstract:** Retrieval-augmented generation (RAG) is a powerful technique to facilitate language model with proprietary and private data, where data privacy is a pivotal concern. Whereas extensive research has demonstrated the privacy risks of large language models (LLMs), the RAG technique could potentially reshape the inherent behaviors of LLM generation, posing new privacy issues that are currently under-explored. In this work, we conduct extensive empirical studies with novel attack methods, which demonstrate the vulnerability of RAG systems on leaking the private retrieval database. Despite the new risk brought by RAG on the retrieval data, we further reveal that RAG can mitigate the leakage of the LLMs' training data. Overall, we provide new insights in this paper for privacy protection of retrieval-augmented LLMs, which benefit both LLMs and RAG systems builders. Our code is available at https://github.com/phycholosogy/RAG-privacy.
 
 ---
 
-### 23. MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
+### 19. VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents
+
+**Authors:** Shi Yu, Chaoyue Tang, Bokai Xu, et al.  
+**Year:** 2024 | **Citations:** 215 | **Venue:** International Conference on Learning Representations  
+**Year Month:** [Oct 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58](https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58)  
+**arXiv:** [https://arxiv.org/abs/2410.10594](https://arxiv.org/abs/2410.10594)  
+
+**Abstract:** Retrieval-augmented generation (RAG) is an effective technique that enables large language models (LLMs) to utilize external knowledge sources for generation. However, current RAG systems are solely based on text, rendering it impossible to utilize vision information like layout and images that play crucial roles in real-world multi-modality documents. In this paper, we introduce VisRAG, which tackles this issue by establishing a vision-language model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the document to obtain text, the document is directly embedded using a VLM as an image and then retrieved to enhance the generation of a VLM. Compared to traditional text-based RAG, VisRAG maximizes the retention and utilization of the data information in the original documents, eliminating the information loss introduced during the parsing process. We collect both open-source and synthetic data to train the retriever in VisRAG and explore a variety of generation methods. Experiments demonstrate that VisRAG outperforms traditional RAG in both the retrieval and generation stages, achieving a 20--40% end-to-end performance gain over traditional text-based RAG pipeline. Further analysis reveals that VisRAG is efficient in utilizing training data and demonstrates strong generalization capability, positioning it as a promising solution for RAG on multi-modality documents. Our code and data are available at https://github.com/openbmb/visrag.
+
+---
+
+### 20. FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research
+
+**Authors:** Jiajie Jin, Yutao Zhu, Xinyu Yang, et al.  
+**Year:** 2024 | **Citations:** 202 | **Venue:** The Web Conference  
+**Year Month:** [May 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07](https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07)  
+**arXiv:** [https://arxiv.org/abs/2405.13576](https://arxiv.org/abs/2405.13576)  
+
+**Abstract:** With the advent of large language models (LLMs) and multimodal large language models (MLLMs), the potential of retrieval-augmented generation (RAG) has attracted considerable research attention. However, the absence of a standardized framework for implementation, coupled with the inherently complex RAG process, makes it challenging and time-consuming for researchers to compare and evaluate these approaches in a consistent environment. In response to this challenge, we develop FlashRAG, an efficient and modular open-source toolkit designed to assist researchers in reproducing and comparing existing RAG methods and developing their own algorithms within a unified framework. Our toolkit has implemented 16 advanced RAG methods and gathered and organized 38 benchmark datasets. It has various features, including a customizable modular framework, a rich collection of pre-implemented RAG works, comprehensive datasets, efficient auxiliary pre-processing scripts, and extensive and standard evaluation metrics. Our toolkit and resources are available at https://github.com/RUC-NLPIR/FlashRAG.
+
+---
+
+### 21. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation
+
+**Authors:** Chi-Min Chan, Chunpu Xu, Ruibin Yuan, et al.  
+**Year:** 2024 | **Citations:** 190 | **Venue:** arXiv.org  
+**Year Month:** [Apr 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a](https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a)  
+**arXiv:** [https://arxiv.org/abs/2404.00610](https://arxiv.org/abs/2404.00610)  
+
+**Abstract:** Large Language Models (LLMs) exhibit remarkable capabilities but are prone to generating inaccurate or hallucinatory responses. This limitation stems from their reliance on vast pretraining datasets, making them susceptible to errors in unseen scenarios. To tackle these challenges, Retrieval-Augmented Generation (RAG) addresses this by incorporating external, relevant documents into the response generation process, thus leveraging non-parametric knowledge alongside LLMs' in-context learning abilities. However, existing RAG implementations primarily focus on initial input for context retrieval, overlooking the nuances of ambiguous or complex queries that necessitate further clarification or decomposition for accurate responses. To this end, we propose learning to Refine Query for Retrieval Augmented Generation (RQ-RAG) in this paper, endeavoring to enhance the model by equipping it with capabilities for explicit rewriting, decomposition, and disambiguation. Our experimental results indicate that our method, when applied to a 7B Llama2 model, surpasses the previous state-of-the-art (SOTA) by an average of 1.9\% across three single-hop QA datasets, and also demonstrates enhanced performance in handling complex, multi-hop QA datasets. Our code is available at https://github.com/chanchimin/RQ-RAG.
+
+---
+
+### 22. MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot
 
 **Authors:** Xuejiao Zhao, Siyan Liu, Su-Yin Yang, et al.  
-**Year:** 2025 | **Citations:** 135 | **Venue:** The Web Conference  
+**Year:** 2025 | **Citations:** 163 | **Venue:** The Web Conference  
 **Year Month:** [Feb 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/da83852315c884c73dc527a4b7bc1209fbb037c3](https://www.semanticscholar.org/paper/da83852315c884c73dc527a4b7bc1209fbb037c3)  
@@ -306,10 +294,10 @@
 
 ---
 
-### 24. Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation
+### 23. Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation
 
 **Authors:** Satyapriya Krishna, Kalpesh Krishna, Anhad Mohananey, et al.  
-**Year:** 2024 | **Citations:** 133 | **Venue:** North American Chapter of the Association for Computational Linguistics  
+**Year:** 2024 | **Citations:** 157 | **Venue:** North American Chapter of the Association for Computational Linguistics  
 **Year Month:** [Sep 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/46ff7e02fd4ff5fdfb9f85bc7071725b8089061f](https://www.semanticscholar.org/paper/46ff7e02fd4ff5fdfb9f85bc7071725b8089061f)  
@@ -319,10 +307,23 @@
 
 ---
 
+### 24. Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach
+
+**Authors:** Zhuowan Li, Cheng Li, Mingyang Zhang, et al.  
+**Year:** 2024 | **Citations:** 155 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year Month:** [Jul 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d](https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d)  
+**arXiv:** [https://arxiv.org/abs/2407.16833](https://arxiv.org/abs/2407.16833)  
+
+**Abstract:** Retrieval Augmented Generation (RAG) has been a powerful tool for Large Language Models (LLMs) to efficiently process overly lengthy contexts. However, recent LLMs like Gemini-1.5 and GPT-4 show exceptional capabilities to understand long contexts directly. We conduct a comprehensive comparison between RAG and long-context (LC) LLMs, aiming to leverage the strengths of both. We benchmark RAG and LC across various public datasets using three latest LLMs. Results reveal that when resourced sufficiently, LC consistently outperforms RAG in terms of average performance. However, RAG’s significantly lower cost remains a distinct advantage. Based on this observation, we propose Self-Route, a simple yet effective method that routes queries to RAG or LC based on model self-reflection. Self-Route significantly reduces the computation cost while maintaining a comparable performance to LC. Our findings provide a guideline for long-context applications of LLMs using RAG and LC.
+
+---
+
 ### 25. Improving large language model applications in biomedicine with retrieval-augmented generation: a systematic review, meta-analysis, and clinical development guidelines
 
 **Authors:** Siru Liu, Allison B. McCoy, Adam Wright  
-**Year:** 2025 | **Citations:** 118 | **Venue:** J. Am. Medical Informatics Assoc.  
+**Year:** 2025 | **Citations:** 140 | **Venue:** J. Am. Medical Informatics Assoc.  
 **Fields:** Computer Science, Medicine  
 **URL:** [https://www.semanticscholar.org/paper/83939671534dc3d374c9bc4e3e03b5ec2c7ba301](https://www.semanticscholar.org/paper/83939671534dc3d374c9bc4e3e03b5ec2c7ba301)  
 
@@ -330,23 +331,10 @@
 
 ---
 
-### 26. xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token
-
-**Authors:** Xin Cheng, Xun Wang, Xingxing Zhang, et al.  
-**Year:** 2024 | **Citations:** 107 | **Venue:** Neural Information Processing Systems  
-**Year Month:** [May 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/38fcc3667a907d6c94267c674aad114aae68441e](https://www.semanticscholar.org/paper/38fcc3667a907d6c94267c674aad114aae68441e)  
-**arXiv:** [https://arxiv.org/abs/2405.13792](https://arxiv.org/abs/2405.13792)  
-
-**Abstract:** This paper introduces xRAG, an innovative context compression method tailored for retrieval-augmented generation. xRAG reinterprets document embeddings in dense retrieval--traditionally used solely for retrieval--as features from the retrieval modality. By employing a modality fusion methodology, xRAG seamlessly integrates these embeddings into the language model representation space, effectively eliminating the need for their textual counterparts and achieving an extreme compression rate. In xRAG, the only trainable component is the modality bridge, while both the retriever and the language model remain frozen. This design choice allows for the reuse of offline-constructed document embeddings and preserves the plug-and-play nature of retrieval augmentation. Experimental results demonstrate that xRAG achieves an average improvement of over 10% across six knowledge-intensive tasks, adaptable to various language model backbones, ranging from a dense 7B model to an 8x7B Mixture of Experts configuration. xRAG not only significantly outperforms previous context compression methods but also matches the performance of uncompressed models on several datasets, while reducing overall FLOPs by a factor of 3.53. Our work pioneers new directions in retrieval-augmented generation from the perspective of multimodality fusion, and we hope it lays the foundation for future efficient and scalable retrieval-augmented systems
-
----
-
-### 27. RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation
+### 26. RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation
 
 **Authors:** Chao Jin, Zili Zhang, Xu Jiang, et al.  
-**Year:** 2024 | **Citations:** 106 | **Venue:** ACM Transactions on Computer Systems  
+**Year:** 2024 | **Citations:** 122 | **Venue:** ACM Transactions on Computer Systems  
 **Year Month:** [Apr 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/7326329c09c11aac423ef4910222a16952bb01dc](https://www.semanticscholar.org/paper/7326329c09c11aac423ef4910222a16952bb01dc)  
@@ -356,10 +344,10 @@
 
 ---
 
-### 28. A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models
+### 27. A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models
 
 **Authors:** Qinggang Zhang, Shengyuan Chen, Yuan-Qi Bei, et al.  
-**Year:** 2025 | **Citations:** 101 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 117 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/908d45b0d2b88ba72ee501c368eb618d29d61ce0](https://www.semanticscholar.org/paper/908d45b0d2b88ba72ee501c368eb618d29d61ce0)  
@@ -369,28 +357,28 @@
 
 ---
 
+### 28. xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token
 
-## AI Agents
-
-*Retrieved: 2026-05-12 17:14:14*
-
-### 1. Mind2Web: Towards a Generalist Agent for the Web
-
-**Authors:** Xiang Deng, Yu Gu, Boyuan Zheng, et al.  
-**Year:** 2023 | **Citations:** 1,026 | **Venue:** Neural Information Processing Systems  
-**Year Month:** [Jun 2023]  
+**Authors:** Xin Cheng, Xun Wang, Xingxing Zhang, et al.  
+**Year:** 2024 | **Citations:** 116 | **Venue:** Neural Information Processing Systems  
+**Year Month:** [May 2024]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/58f8925a8b87054ad0635a6398a7fe24935b1604](https://www.semanticscholar.org/paper/58f8925a8b87054ad0635a6398a7fe24935b1604)  
-**arXiv:** [https://arxiv.org/abs/2306.06070](https://arxiv.org/abs/2306.06070)  
+**URL:** [https://www.semanticscholar.org/paper/38fcc3667a907d6c94267c674aad114aae68441e](https://www.semanticscholar.org/paper/38fcc3667a907d6c94267c674aad114aae68441e)  
+**arXiv:** [https://arxiv.org/abs/2405.13792](https://arxiv.org/abs/2405.13792)  
 
-**Abstract:** We introduce Mind2Web, the first dataset for developing and evaluating generalist agents for the web that can follow language instructions to complete complex tasks on any website. Existing datasets for web agents either use simulated websites or only cover a limited set of websites and tasks, thus not suitable for generalist web agents. With over 2,000 open-ended tasks collected from 137 websites spanning 31 domains and crowdsourced action sequences for the tasks, Mind2Web provides three necessary ingredients for building generalist web agents: 1) diverse domains, websites, and tasks, 2) use of real-world websites instead of simulated and simplified ones, and 3) a broad spectrum of user interaction patterns. Based on Mind2Web, we conduct an initial exploration of using large language models (LLMs) for building generalist web agents. While the raw HTML of real-world websites are often too large to be fed to LLMs, we show that first filtering it with a small LM significantly improves the effectiveness and efficiency of LLMs. Our solution demonstrates a decent level of performance, even on websites or entire domains the model has never seen before, but there is still a substantial room to improve towards truly generalizable agents. We open-source our dataset, model implementation, and trained models (https://osu-nlp-group.github.io/Mind2Web) to facilitate further research on building a generalist agent for the web.
+**Abstract:** This paper introduces xRAG, an innovative context compression method tailored for retrieval-augmented generation. xRAG reinterprets document embeddings in dense retrieval--traditionally used solely for retrieval--as features from the retrieval modality. By employing a modality fusion methodology, xRAG seamlessly integrates these embeddings into the language model representation space, effectively eliminating the need for their textual counterparts and achieving an extreme compression rate. In xRAG, the only trainable component is the modality bridge, while both the retriever and the language model remain frozen. This design choice allows for the reuse of offline-constructed document embeddings and preserves the plug-and-play nature of retrieval augmentation. Experimental results demonstrate that xRAG achieves an average improvement of over 10% across six knowledge-intensive tasks, adaptable to various language model backbones, ranging from a dense 7B model to an 8x7B Mixture of Experts configuration. xRAG not only significantly outperforms previous context compression methods but also matches the performance of uncompressed models on several datasets, while reducing overall FLOPs by a factor of 3.53. Our work pioneers new directions in retrieval-augmented generation from the perspective of multimodality fusion, and we hope it lays the foundation for future efficient and scalable retrieval-augmented systems
 
 ---
 
-### 2. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
+
+## AI Agents
+
+*Retrieved: 2026-07-01 10:55:39*
+
+### 1. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
 
 **Authors:** John Yang, Carlos E. Jimenez, Alexander Wettig, et al.  
-**Year:** 2024 | **Citations:** 1,005 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 1,317 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [May 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1c3c531fc0fbe79f97f367ed3648de8467caeeaa](https://www.semanticscholar.org/paper/1c3c531fc0fbe79f97f367ed3648de8467caeeaa)  
@@ -400,10 +388,23 @@
 
 ---
 
+### 2. Mind2Web: Towards a Generalist Agent for the Web
+
+**Authors:** Xiang Deng, Yu Gu, Boyuan Zheng, et al.  
+**Year:** 2023 | **Citations:** 1,213 | **Venue:** Neural Information Processing Systems  
+**Year Month:** [Jun 2023]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/58f8925a8b87054ad0635a6398a7fe24935b1604](https://www.semanticscholar.org/paper/58f8925a8b87054ad0635a6398a7fe24935b1604)  
+**arXiv:** [https://arxiv.org/abs/2306.06070](https://arxiv.org/abs/2306.06070)  
+
+**Abstract:** We introduce Mind2Web, the first dataset for developing and evaluating generalist agents for the web that can follow language instructions to complete complex tasks on any website. Existing datasets for web agents either use simulated websites or only cover a limited set of websites and tasks, thus not suitable for generalist web agents. With over 2,000 open-ended tasks collected from 137 websites spanning 31 domains and crowdsourced action sequences for the tasks, Mind2Web provides three necessary ingredients for building generalist web agents: 1) diverse domains, websites, and tasks, 2) use of real-world websites instead of simulated and simplified ones, and 3) a broad spectrum of user interaction patterns. Based on Mind2Web, we conduct an initial exploration of using large language models (LLMs) for building generalist web agents. While the raw HTML of real-world websites are often too large to be fed to LLMs, we show that first filtering it with a small LM significantly improves the effectiveness and efficiency of LLMs. Our solution demonstrates a decent level of performance, even on websites or entire domains the model has never seen before, but there is still a substantial room to improve towards truly generalizable agents. We open-source our dataset, model implementation, and trained models (https://osu-nlp-group.github.io/Mind2Web) to facilitate further research on building a generalist agent for the web.
+
+---
+
 ### 3. Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models
 
 **Authors:** Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, et al.  
-**Year:** 2023 | **Citations:** 444 | **Venue:** International Conference on Machine Learning  
+**Year:** 2023 | **Citations:** 533 | **Venue:** International Conference on Machine Learning  
 **Year Month:** [Oct 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b](https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b)  
@@ -413,73 +414,10 @@
 
 ---
 
-### 4. Enhanced Moth-flame optimizer with mutation strategy for global optimization
-
-**Authors:** Yueting Xu, Huiling Chen, Jie Luo, et al.  
-**Year:** 2019 | **Citations:** 390 | **Venue:** Information Sciences  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/86494f58ce119d97cd0a07a5a2f5084048936af6](https://www.semanticscholar.org/paper/86494f58ce119d97cd0a07a5a2f5084048936af6)  
-
-**Abstract:** Abstract Moth-flame optimization (MFO) is a widely used nature-inspired algorithm characterized by a simple structure with simple parameters. However, for some complex optimization tasks, especially the high dimensional and multimodal problems, MFO may have problems with convergence or tend to fall into local optima. To overcome these limitations, here a series of new variants of MFO are proposed by combining MFO with Gaussian mutation (GM), Cauchy mutation (CM), Levy mutation (LM) or the combination of GM, CM and LM. Specifically, GM is introduced into the basic MFO to improve neighborhood-informed capability. Then, CM with a large mutation step is adopted to enhance global exploration ability. Finally, LM is embedded to increase the randomness of search agents’ movement. The best variant of MFO was compared to 15 state-of-the-art algorithms and 4 well-known advanced optimization approaches on a comprehensive set of 23 benchmark problems and 30 CEC2017 benchmark tasks. The experimental results demonstrate that the three strategies can signiﬁcantly boost exploration and exploitation capabilities of the basic MFO.
-
----
-
-### 5. AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges
-
-**Authors:** Ranjan Sapkota, Konstantinos I. Roumeliotis, Manoj Karkee  
-**Year:** 2025 | **Citations:** 325 | **Venue:** Information Fusion  
-**Year Month:** [May 2025]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf](https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf)  
-**arXiv:** [https://arxiv.org/abs/2505.10468](https://arxiv.org/abs/2505.10468)  
-
-**Abstract:** This review critically distinguishes between AI Agents and Agentic AI, offering a structured, conceptual taxonomy, application mapping, and analysis of opportunities and challenges to clarify their divergent design philosophies and capabilities. We begin by outlining the search strategy and foundational definitions, characterizing AI Agents as modular systems driven and enabled by LLMs and LIMs for taskspecific automation. Generative AI is positioned as a precursor providing the foundation, with AI agents advancing through tool integration, prompt engineering, and reasoning enhancements. We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy. Through a chronological evaluation of architectural evolution, operational mechanisms, interaction styles, and autonomy levels, we present a comparative analysis across both AI agents and agentic AI paradigms. Application domains enabled by AI Agents such as customer support, scheduling, and data summarization are then contrasted with Agentic AI deployments in research automation, robotic coordination, and medical decision support. We further examine unique challenges in each paradigm including hallucination, brittleness, emergent behavior, and coordination failure, and propose targeted solutions such as ReAct loops, retrieval-augmented generation (RAG), automation coordination layers, and causal modeling. This work aims to provide a roadmap for developing robust, scalable, and explainable AI-driven systems.  
-
----
-
-### 6. Pre-Trained Language Models for Interactive Decision-Making
-
-**Authors:** Shuang Li, Xavier Puig, Yilun Du, et al.  
-**Year:** 2022 | **Citations:** 324 | **Venue:** Neural Information Processing Systems  
-**Year Month:** [Feb 2022]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef](https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef)  
-**arXiv:** [https://arxiv.org/abs/2202.01771](https://arxiv.org/abs/2202.01771)  
-
-**Abstract:** Language model (LM) pre-training is useful in many language processing tasks. But can pre-trained LMs be further leveraged for more general machine learning problems? We propose an approach for using LMs to scaffold learning and generalization in general sequential decision-making problems. In this approach, goals and observations are represented as a sequence of embeddings, and a policy network initialized with a pre-trained LM predicts the next action. We demonstrate that this framework enables effective combinatorial generalization across different environments and supervisory modalities. We begin by assuming access to a set of expert demonstrations, and show that initializing policies with LMs and fine-tuning them via behavior cloning improves task completion rates by 43.6% in the VirtualHome environment. Next, we integrate an active data gathering procedure in which agents iteratively interact with the environment, relabel past"failed"experiences with new goals, and update their policies in a self-supervised loop. Active data gathering further improves combinatorial generalization, outperforming the best baseline by 25.1%. Finally, we explain these results by investigating three possible factors underlying the effectiveness of the LM-based policy. We find that sequential input representations (vs. fixed-dimensional feature vectors) and LM-based weight initialization are both important for generalization. Surprisingly, however, the format of the policy inputs encoding (e.g. as a natural language string vs. an arbitrary sequential encoding) has little influence. Together, these results suggest that language modeling induces representations that are useful for modeling not just language, but also goals and plans; these representations can aid learning and generalization even outside of language processing.
-
----
-
-### 7. Empowering Biomedical Discovery with AI Agents
-
-**Authors:** Shanghua Gao, Ada Fang, Yepeng Huang, et al.  
-**Year:** 2024 | **Citations:** 294 | **Venue:** Cell  
-**Year Month:** [Apr 2024]  
-**Fields:** Computer Science, Medicine  
-**URL:** [https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c](https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c)  
-**arXiv:** [https://arxiv.org/abs/2404.02831](https://arxiv.org/abs/2404.02831)  
-
-**Abstract:** We envision "AI scientists" as systems capable of skeptical learning and reasoning that empower biomedical research through collaborative agents that integrate AI models and biomedical tools with experimental platforms. Rather than taking humans out of the discovery process, biomedical AI agents combine human creativity and expertise with AI's ability to analyze large datasets, navigate hypothesis spaces, and execute repetitive tasks. AI agents are poised to be proficient in various tasks, planning discovery workflows and performing self-assessment to identify and mitigate gaps in their knowledge. These agents use large language models and generative models to feature structured memory for continual learning and use machine learning tools to incorporate scientific knowledge, biological principles, and theories. AI agents can impact areas ranging from virtual cell simulation, programmable control of phenotypes, and the design of cellular circuits to developing new therapies.
-
----
-
-### 8. Identifying the Risks of LM Agents with an LM-Emulated Sandbox
-
-**Authors:** Yangjun Ruan, Honghua Dong, Andrew Wang, et al.  
-**Year:** 2023 | **Citations:** 294 | **Venue:** International Conference on Learning Representations  
-**Year Month:** [Sep 2023]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564](https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564)  
-**arXiv:** [https://arxiv.org/abs/2309.15817](https://arxiv.org/abs/2309.15817)  
-
-**Abstract:** Recent advances in Language Model (LM) agents and tool use, exemplified by applications like ChatGPT Plugins, enable a rich set of capabilities but also amplify potential risks - such as leaking private data or causing financial losses. Identifying these risks is labor-intensive, necessitating implementing the tools, setting up the environment for each test scenario manually, and finding risky cases. As tools and agents become more complex, the high cost of testing these agents will make it increasingly difficult to find high-stakes, long-tailed risks. To address these challenges, we introduce ToolEmu: a framework that uses an LM to emulate tool execution and enables the testing of LM agents against a diverse range of tools and scenarios, without manual instantiation. Alongside the emulator, we develop an LM-based automatic safety evaluator that examines agent failures and quantifies associated risks. We test both the tool emulator and evaluator through human evaluation and find that 68.8% of failures identified with ToolEmu would be valid real-world agent failures. Using our curated initial benchmark consisting of 36 high-stakes tools and 144 test cases, we provide a quantitative risk analysis of current LM agents and identify numerous failures with potentially severe outcomes. Notably, even the safest LM agent exhibits such failures 23.9% of the time according to our evaluator, underscoring the need to develop safer LM agents for real-world deployment.
-
----
-
-### 9. Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory
+### 4. Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory
 
 **Authors:** P. Chhikara, Dev Khant, Saket Aryan, et al.  
-**Year:** 2025 | **Citations:** 285 | **Venue:** European Conference on Artificial Intelligence  
+**Year:** 2025 | **Citations:** 441 | **Venue:** European Conference on Artificial Intelligence  
 **Year Month:** [Apr 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382](https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382)  
@@ -489,10 +427,73 @@
 
 ---
 
+### 5. AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges
+
+**Authors:** Ranjan Sapkota, Konstantinos I. Roumeliotis, Manoj Karkee  
+**Year:** 2025 | **Citations:** 404 | **Venue:** Information Fusion  
+**Year Month:** [May 2025]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf](https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf)  
+**arXiv:** [https://arxiv.org/abs/2505.10468](https://arxiv.org/abs/2505.10468)  
+
+**Abstract:** This review critically distinguishes between AI Agents and Agentic AI, offering a structured, conceptual taxonomy, application mapping, and analysis of opportunities and challenges to clarify their divergent design philosophies and capabilities. We begin by outlining the search strategy and foundational definitions, characterizing AI Agents as modular systems driven and enabled by LLMs and LIMs for taskspecific automation. Generative AI is positioned as a precursor providing the foundation, with AI agents advancing through tool integration, prompt engineering, and reasoning enhancements. We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy. Through a chronological evaluation of architectural evolution, operational mechanisms, interaction styles, and autonomy levels, we present a comparative analysis across both AI agents and agentic AI paradigms. Application domains enabled by AI Agents such as customer support, scheduling, and data summarization are then contrasted with Agentic AI deployments in research automation, robotic coordination, and medical decision support. We further examine unique challenges in each paradigm including hallucination, brittleness, emergent behavior, and coordination failure, and propose targeted solutions such as ReAct loops, retrieval-augmented generation (RAG), automation coordination layers, and causal modeling. This work aims to provide a roadmap for developing robust, scalable, and explainable AI-driven systems.  
+
+---
+
+### 6. Identifying the Risks of LM Agents with an LM-Emulated Sandbox
+
+**Authors:** Yangjun Ruan, Honghua Dong, Andrew Wang, et al.  
+**Year:** 2023 | **Citations:** 396 | **Venue:** International Conference on Learning Representations  
+**Year Month:** [Sep 2023]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564](https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564)  
+**arXiv:** [https://arxiv.org/abs/2309.15817](https://arxiv.org/abs/2309.15817)  
+
+**Abstract:** Recent advances in Language Model (LM) agents and tool use, exemplified by applications like ChatGPT Plugins, enable a rich set of capabilities but also amplify potential risks - such as leaking private data or causing financial losses. Identifying these risks is labor-intensive, necessitating implementing the tools, setting up the environment for each test scenario manually, and finding risky cases. As tools and agents become more complex, the high cost of testing these agents will make it increasingly difficult to find high-stakes, long-tailed risks. To address these challenges, we introduce ToolEmu: a framework that uses an LM to emulate tool execution and enables the testing of LM agents against a diverse range of tools and scenarios, without manual instantiation. Alongside the emulator, we develop an LM-based automatic safety evaluator that examines agent failures and quantifies associated risks. We test both the tool emulator and evaluator through human evaluation and find that 68.8% of failures identified with ToolEmu would be valid real-world agent failures. Using our curated initial benchmark consisting of 36 high-stakes tools and 144 test cases, we provide a quantitative risk analysis of current LM agents and identify numerous failures with potentially severe outcomes. Notably, even the safest LM agent exhibits such failures 23.9% of the time according to our evaluator, underscoring the need to develop safer LM agents for real-world deployment.
+
+---
+
+### 7. Enhanced Moth-flame optimizer with mutation strategy for global optimization
+
+**Authors:** Yueting Xu, Huiling Chen, Jie Luo, et al.  
+**Year:** 2019 | **Citations:** 393 | **Venue:** Information Sciences  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/86494f58ce119d97cd0a07a5a2f5084048936af6](https://www.semanticscholar.org/paper/86494f58ce119d97cd0a07a5a2f5084048936af6)  
+
+**Abstract:** Abstract Moth-flame optimization (MFO) is a widely used nature-inspired algorithm characterized by a simple structure with simple parameters. However, for some complex optimization tasks, especially the high dimensional and multimodal problems, MFO may have problems with convergence or tend to fall into local optima. To overcome these limitations, here a series of new variants of MFO are proposed by combining MFO with Gaussian mutation (GM), Cauchy mutation (CM), Levy mutation (LM) or the combination of GM, CM and LM. Specifically, GM is introduced into the basic MFO to improve neighborhood-informed capability. Then, CM with a large mutation step is adopted to enhance global exploration ability. Finally, LM is embedded to increase the randomness of search agents’ movement. The best variant of MFO was compared to 15 state-of-the-art algorithms and 4 well-known advanced optimization approaches on a comprehensive set of 23 benchmark problems and 30 CEC2017 benchmark tasks. The experimental results demonstrate that the three strategies can signiﬁcantly boost exploration and exploitation capabilities of the basic MFO.
+
+---
+
+### 8. Empowering Biomedical Discovery with AI Agents
+
+**Authors:** Shanghua Gao, Ada Fang, Yepeng Huang, et al.  
+**Year:** 2024 | **Citations:** 336 | **Venue:** Cell  
+**Year Month:** [Apr 2024]  
+**Fields:** Computer Science, Medicine  
+**URL:** [https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c](https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c)  
+**arXiv:** [https://arxiv.org/abs/2404.02831](https://arxiv.org/abs/2404.02831)  
+
+**Abstract:** We envision "AI scientists" as systems capable of skeptical learning and reasoning that empower biomedical research through collaborative agents that integrate AI models and biomedical tools with experimental platforms. Rather than taking humans out of the discovery process, biomedical AI agents combine human creativity and expertise with AI's ability to analyze large datasets, navigate hypothesis spaces, and execute repetitive tasks. AI agents are poised to be proficient in various tasks, planning discovery workflows and performing self-assessment to identify and mitigate gaps in their knowledge. These agents use large language models and generative models to feature structured memory for continual learning and use machine learning tools to incorporate scientific knowledge, biological principles, and theories. AI agents can impact areas ranging from virtual cell simulation, programmable control of phenotypes, and the design of cellular circuits to developing new therapies.
+
+---
+
+### 9. Pre-Trained Language Models for Interactive Decision-Making
+
+**Authors:** Shuang Li, Xavier Puig, Yilun Du, et al.  
+**Year:** 2022 | **Citations:** 334 | **Venue:** Neural Information Processing Systems  
+**Year Month:** [Feb 2022]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef](https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef)  
+**arXiv:** [https://arxiv.org/abs/2202.01771](https://arxiv.org/abs/2202.01771)  
+
+**Abstract:** Language model (LM) pre-training is useful in many language processing tasks. But can pre-trained LMs be further leveraged for more general machine learning problems? We propose an approach for using LMs to scaffold learning and generalization in general sequential decision-making problems. In this approach, goals and observations are represented as a sequence of embeddings, and a policy network initialized with a pre-trained LM predicts the next action. We demonstrate that this framework enables effective combinatorial generalization across different environments and supervisory modalities. We begin by assuming access to a set of expert demonstrations, and show that initializing policies with LMs and fine-tuning them via behavior cloning improves task completion rates by 43.6% in the VirtualHome environment. Next, we integrate an active data gathering procedure in which agents iteratively interact with the environment, relabel past"failed"experiences with new goals, and update their policies in a self-supervised loop. Active data gathering further improves combinatorial generalization, outperforming the best baseline by 25.1%. Finally, we explain these results by investigating three possible factors underlying the effectiveness of the LM-based policy. We find that sequential input representations (vs. fixed-dimensional feature vectors) and LM-based weight initialization are both important for generalization. Surprisingly, however, the format of the policy inputs encoding (e.g. as a natural language string vs. an arbitrary sequential encoding) has little influence. Together, these results suggest that language modeling induces representations that are useful for modeling not just language, but also goals and plans; these representations can aid learning and generalization even outside of language processing.
+
+---
+
 ### 10. Small Language Models are the Future of Agentic AI
 
 **Authors:** Peter Belcák, Greg Heinrich, Shizhe Diao, et al.  
-**Year:** 2025 | **Citations:** 246 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 288 | **Venue:** arXiv.org  
 **Year Month:** [Jun 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/f1d477ccd20b3e90611fc46b1951b3708651a425](https://www.semanticscholar.org/paper/f1d477ccd20b3e90611fc46b1951b3708651a425)  
@@ -502,23 +503,10 @@
 
 ---
 
-### 11. Generative AI Agents With Large Language Model for Satellite Networks via a Mixture of Experts Transmission
-
-**Authors:** Ruichen Zhang, Hongyang Du, Yinqiu Liu, et al.  
-**Year:** 2024 | **Citations:** 208 | **Venue:** IEEE Journal on Selected Areas in Communications  
-**Year Month:** [Apr 2024]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/6d533b0f318fd22d664356b56b68023560d3c60f](https://www.semanticscholar.org/paper/6d533b0f318fd22d664356b56b68023560d3c60f)  
-**arXiv:** [https://arxiv.org/abs/2404.09134](https://arxiv.org/abs/2404.09134)  
-
-**Abstract:** In response to the needs of 6G global communications, satellite communication networks have emerged as a key solution. However, the large-scale development of satellite communication networks is constrained by complex system models, whose modeling is challenging for massive users. Moreover, transmission interference between satellites and users seriously affects communication performance. To solve these problems, this paper develops generative artificial intelligence (AI) agents for model formulation and then applies a mixture of experts (MoE) approach to design transmission strategies. Specifically, we leverage large language models (LLMs) to build an interactive modeling paradigm and utilize retrieval-augmented generation (RAG) to extract satellite expert knowledge that supports mathematical modeling. Afterward, by integrating the expertise of multiple specialized components, we propose an MoE-proximal policy optimization (PPO) approach to solve the formulated problem. Each expert can optimize the optimization variables at which it excels through specialized training through its own network and then aggregate them through the gating network to perform joint optimization. The simulation results validate the accuracy and effectiveness of employing a generative agent for problem formulation. Furthermore, the superiority of the proposed MoE-ppo approach over other benchmarks is confirmed in solving the formulated problem. The adaptability of MoE-PPO to various customized modeling problems has also been demonstrated.
-
----
-
-### 12. AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways
+### 11. AI Agents Under Threat: A Survey of Key Security Challenges and Future Pathways
 
 **Authors:** Zehang Deng, Yongjian Guo, Changzhou Han, et al.  
-**Year:** 2024 | **Citations:** 208 | **Venue:** ACM Computing Surveys  
+**Year:** 2024 | **Citations:** 239 | **Venue:** ACM Computing Surveys  
 **Year Month:** [Jun 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/5aacf780ec16a29bdbe283a14f5a9e6b7e1f292d](https://www.semanticscholar.org/paper/5aacf780ec16a29bdbe283a14f5a9e6b7e1f292d)  
@@ -528,10 +516,23 @@
 
 ---
 
+### 12. Generative AI Agents With Large Language Model for Satellite Networks via a Mixture of Experts Transmission
+
+**Authors:** Ruichen Zhang, Hongyang Du, Yinqiu Liu, et al.  
+**Year:** 2024 | **Citations:** 232 | **Venue:** IEEE Journal on Selected Areas in Communications  
+**Year Month:** [Apr 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/6d533b0f318fd22d664356b56b68023560d3c60f](https://www.semanticscholar.org/paper/6d533b0f318fd22d664356b56b68023560d3c60f)  
+**arXiv:** [https://arxiv.org/abs/2404.09134](https://arxiv.org/abs/2404.09134)  
+
+**Abstract:** In response to the needs of 6G global communications, satellite communication networks have emerged as a key solution. However, the large-scale development of satellite communication networks is constrained by complex system models, whose modeling is challenging for massive users. Moreover, transmission interference between satellites and users seriously affects communication performance. To solve these problems, this paper develops generative artificial intelligence (AI) agents for model formulation and then applies a mixture of experts (MoE) approach to design transmission strategies. Specifically, we leverage large language models (LLMs) to build an interactive modeling paradigm and utilize retrieval-augmented generation (RAG) to extract satellite expert knowledge that supports mathematical modeling. Afterward, by integrating the expertise of multiple specialized components, we propose an MoE-proximal policy optimization (PPO) approach to solve the formulated problem. Each expert can optimize the optimization variables at which it excels through specialized training through its own network and then aggregate them through the gating network to perform joint optimization. The simulation results validate the accuracy and effectiveness of employing a generative agent for problem formulation. Furthermore, the superiority of the proposed MoE-ppo approach over other benchmarks is confirmed in solving the formulated problem. The adaptability of MoE-PPO to various customized modeling problems has also been demonstrated.
+
+---
+
 ### 13. Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark
 
 **Authors:** Alexander Pan, C. Shern, Andy Zou, et al.  
-**Year:** 2023 | **Citations:** 200 | **Venue:** International Conference on Machine Learning  
+**Year:** 2023 | **Citations:** 223 | **Venue:** International Conference on Machine Learning  
 **Year Month:** [Apr 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/5da2d404d789aeff266b63a760d07fe8bc31ba23](https://www.semanticscholar.org/paper/5da2d404d789aeff266b63a760d07fe8bc31ba23)  
@@ -541,23 +542,10 @@
 
 ---
 
-### 14. Language Models as Agent Models
-
-**Authors:** Jacob Andreas  
-**Year:** 2022 | **Citations:** 185 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
-**Year Month:** [Dec 2022]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b](https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b)  
-**arXiv:** [https://arxiv.org/abs/2212.01681](https://arxiv.org/abs/2212.01681)  
-
-**Abstract:** Language models (LMs) are trained on collections of documents, written by individual human agents to achieve specific goals in an outside world. During training, LMs have access only to text of these documents, with no direct evidence of the internal states of the agents that produced them -- a fact often used to argue that LMs are incapable of modeling goal-directed aspects of human language production and comprehension. Can LMs trained on text learn anything at all about the relationship between language and use? I argue that LMs are models of intentional communication in a specific, narrow sense. When performing next word prediction given a textual context, an LM can infer and represent properties of an agent likely to have produced that context. These representations can in turn influence subsequent LM generation in the same way that agents' communicative intentions influence their language. I survey findings from the recent literature showing that -- even in today's non-robust and error-prone models -- LMs infer and use representations of fine-grained communicative intentions and more abstract beliefs and goals. Despite the limited nature of their training data, they can thus serve as building blocks for systems that communicate and act intentionally.
-
----
-
-### 15. Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents
+### 14. Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents
 
 **Authors:** Pranav Putta, Edmund Mills, Naman Garg, et al.  
-**Year:** 2024 | **Citations:** 182 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 201 | **Venue:** arXiv.org  
 **Year Month:** [Aug 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/b393f619a87c5b6aa63c7abc7118263205b6aa62](https://www.semanticscholar.org/paper/b393f619a87c5b6aa63c7abc7118263205b6aa62)  
@@ -567,50 +555,18 @@
 
 ---
 
-### 16. TPTU: Task Planning and Tool Usage of Large Language Model-based AI Agents
-
-**Authors:** Jingqing Ruan, Yihong Chen, Bin Zhang, et al.  
-**Year:** 2023 | **Citations:** 182 | **Venue:** arXiv.org  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/5ce94181ea702f69c3651dce721d6bd8026b8106](https://www.semanticscholar.org/paper/5ce94181ea702f69c3651dce721d6bd8026b8106)  
----
-
-### 17. The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies
+### 15. The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies
 
 **Authors:** Kyle Swanson, Wesley Wu, Nash L. Bulaong, et al.  
-**Year:** 2025 | **Citations:** 169 | **Venue:** Nature  
+**Year:** 2025 | **Citations:** 201 | **Venue:** Nature  
 **Fields:** Medicine, Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/d24e37aafcf48c76aca30430670bad9a61cd0fca](https://www.semanticscholar.org/paper/d24e37aafcf48c76aca30430670bad9a61cd0fca)  
 ---
 
-### 18. From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review
-
-**Authors:** M. Ferrag, N. Tihanyi, M. Debbah  
-**Year:** 2025 | **Citations:** 149 | **Venue:** arXiv.org  
-**Year Month:** [Apr 2025]  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/6758a6db1bfb6ebc5134aea9ce0fc28dd2e031a4](https://www.semanticscholar.org/paper/6758a6db1bfb6ebc5134aea9ce0fc28dd2e031a4)  
-**arXiv:** [https://arxiv.org/abs/2504.19678](https://arxiv.org/abs/2504.19678)  
-
-**Abstract:** Large language models and autonomous AI agents have evolved rapidly, resulting in a diverse array of evaluation benchmarks, frameworks, and collaboration protocols. Driven by the growing need for standardized evaluation and integration, we systematically consolidate these fragmented efforts into a unified framework. However, the landscape remains fragmented and lacks a unified taxonomy or comprehensive survey. Therefore, we present a side-by-side comparison of benchmarks developed between 2019 and 2025 that evaluate these models and agents across multiple domains. In addition, we propose a taxonomy of approximately 60 benchmarks that cover general and academic knowledge reasoning, mathematical problem-solving, code generation and software engineering, factual grounding and retrieval, domain-specific evaluations, multimodal and embodied tasks, task orchestration, and interactive assessments. Furthermore, we review AI-agent frameworks introduced between 2023 and 2025 that integrate large language models with modular toolkits to enable autonomous decision-making and multi-step reasoning. Moreover, we present real-world applications of autonomous AI agents in materials science, biomedical research, academic ideation, software engineering, synthetic data generation, chemical reasoning, mathematical problem-solving, geographic information systems, multimedia, healthcare, and finance. We then survey key agent-to-agent collaboration protocols, namely the Agent Communication Protocol (ACP), the Model Context Protocol (MCP), and the Agent-to-Agent Protocol (A2A). Finally, we discuss recommendations for future research, focusing on advanced reasoning strategies, failure modes in multi-agent LLM systems, automated scientific discovery, dynamic tool integration via reinforcement learning, integrated search capabilities, and security vulnerabilities in agent protocols.
-
----
-
-### 19. AI Agents as Team Members: Effects on Satisfaction, Conflict, Trustworthiness, and Willingness to Work With
-
-**Authors:** A. Dennis, Akshat Lakhiwal, Agrim Sachdeva  
-**Year:** 2023 | **Citations:** 149 | **Venue:** Journal of Management Information Systems  
-**Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/d783617b40a8113719671e106c476cee0feef3e8](https://www.semanticscholar.org/paper/d783617b40a8113719671e106c476cee0feef3e8)  
-
-**Abstract:** ABSTRACT Organizations are beginning to deploy artificial intelligence (AI) agents as members of virtual teams to help manage information, coordinate team processes, and perform simple tasks. How will team members perceive these AI team members and will they be willing to work with them? We conducted a 2 x  2 x 2 lab experiment that manipulated the type of team member (human or AI), their performance (high or low), and the performance of other team members (high or low). AI team members were perceived to have higher ability and integrity but lower benevolence, which led to no differences in trustworthiness or willingness to work with them. However, the presence of an AI team member resulted in lower process satisfaction. When the AI team member performed well, participants perceived less conflict compared to a human team member with the same performance, but there were no differences in perceived conflict when it performed poorly. There were no other interactions with performance, indicating that the AI team member was judged similarly to humans, irrespective of variations in performance; there was no evidence of algorithm aversion. Our research suggests that AI team members are likely to be accepted into teams, meaning that many old collaboration research questions may need to be reexamined to consider AI team members.
-
----
-
-### 20. Memory in the Age of AI Agents
+### 16. Memory in the Age of AI Agents
 
 **Authors:** Yuyang Hu, Shichun Liu, Yanwei Yue, et al.  
-**Year:** 2025 | **Citations:** 135 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 196 | **Venue:** arXiv.org  
 **Year Month:** [Dec 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/d362b7619fcd2df4241696a19aec95961b8a729c](https://www.semanticscholar.org/paper/d362b7619fcd2df4241696a19aec95961b8a729c)  
@@ -620,23 +576,31 @@
 
 ---
 
-### 21. Tree Search for Language Model Agents
+### 17. Language Models as Agent Models
 
-**Authors:** Jing Yu Koh, S. McAleer, Daniel Fried, et al.  
-**Year:** 2024 | **Citations:** 135 | **Venue:** Trans. Mach. Learn. Res.  
-**Year Month:** [Jul 2024]  
+**Authors:** Jacob Andreas  
+**Year:** 2022 | **Citations:** 194 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year Month:** [Dec 2022]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588](https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588)  
-**arXiv:** [https://arxiv.org/abs/2407.01476](https://arxiv.org/abs/2407.01476)  
+**URL:** [https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b](https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b)  
+**arXiv:** [https://arxiv.org/abs/2212.01681](https://arxiv.org/abs/2212.01681)  
 
-**Abstract:** Autonomous agents powered by language models (LMs) have demonstrated promise in their ability to perform decision-making tasks such as web automation. However, a key limitation remains: LMs, primarily optimized for natural language understanding and generation, struggle with multi-step reasoning, planning, and using environmental feedback when attempting to solve realistic computer tasks. Towards addressing this, we propose an inference-time search algorithm for LM agents to explicitly perform exploration and multi-step planning in interactive web environments. Our approach is a form of best-first tree search that operates within the actual environment space, and is complementary with most existing state-of-the-art agents. It is the first tree search algorithm for LM agents that shows effectiveness on realistic web tasks. On the challenging VisualWebArena benchmark, applying our search algorithm on top of a GPT-4o agent yields a 39.7% relative increase in success rate compared to the same baseline without search, setting a state-of-the-art success rate of 26.4%. On WebArena, search also yields a 28.0% relative improvement over a baseline agent, setting a competitive success rate of 19.2%. Our experiments highlight the effectiveness of search for web agents, and we demonstrate that performance scales with increased test-time compute. We conduct a thorough analysis of our results to highlight improvements from search, limitations, and promising directions for future work. Our code and models are publicly released at https://jykoh.com/search-agents.
+**Abstract:** Language models (LMs) are trained on collections of documents, written by individual human agents to achieve specific goals in an outside world. During training, LMs have access only to text of these documents, with no direct evidence of the internal states of the agents that produced them -- a fact often used to argue that LMs are incapable of modeling goal-directed aspects of human language production and comprehension. Can LMs trained on text learn anything at all about the relationship between language and use? I argue that LMs are models of intentional communication in a specific, narrow sense. When performing next word prediction given a textual context, an LM can infer and represent properties of an agent likely to have produced that context. These representations can in turn influence subsequent LM generation in the same way that agents' communicative intentions influence their language. I survey findings from the recent literature showing that -- even in today's non-robust and error-prone models -- LMs infer and use representations of fine-grained communicative intentions and more abstract beliefs and goals. Despite the limited nature of their training data, they can thus serve as building blocks for systems that communicate and act intentionally.
 
 ---
 
-### 22. SWE-smith: Scaling Data for Software Engineering Agents
+### 18. TPTU: Task Planning and Tool Usage of Large Language Model-based AI Agents
+
+**Authors:** Jingqing Ruan, Yihong Chen, Bin Zhang, et al.  
+**Year:** 2023 | **Citations:** 192 | **Venue:** arXiv.org  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/5ce94181ea702f69c3651dce721d6bd8026b8106](https://www.semanticscholar.org/paper/5ce94181ea702f69c3651dce721d6bd8026b8106)  
+---
+
+### 19. SWE-smith: Scaling Data for Software Engineering Agents
 
 **Authors:** John Yang, Kilian Adriano Lieret, Carlos E. Jimenez, et al.  
-**Year:** 2025 | **Citations:** 131 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 177 | **Venue:** arXiv.org  
 **Year Month:** [Apr 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/cbdfe7c75676b6ba85f66bdffe162f5991d6f536](https://www.semanticscholar.org/paper/cbdfe7c75676b6ba85f66bdffe162f5991d6f536)  
@@ -646,10 +610,47 @@
 
 ---
 
+### 20. From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review
+
+**Authors:** M. Ferrag, N. Tihanyi, M. Debbah  
+**Year:** 2025 | **Citations:** 175 | **Venue:** IEEE Access  
+**Year Month:** [Apr 2025]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/6758a6db1bfb6ebc5134aea9ce0fc28dd2e031a4](https://www.semanticscholar.org/paper/6758a6db1bfb6ebc5134aea9ce0fc28dd2e031a4)  
+**arXiv:** [https://arxiv.org/abs/2504.19678](https://arxiv.org/abs/2504.19678)  
+
+**Abstract:** Large language models and autonomous AI agents have evolved rapidly, resulting in a diverse array of evaluation benchmarks, frameworks, and collaboration protocols. Driven by the growing need for standardized evaluation and integration, we systematically consolidate these fragmented efforts into a unified framework. However, the landscape remains fragmented and lacks a unified taxonomy or comprehensive survey. Therefore, we present a side-by-side comparison of benchmarks developed between 2019 and 2025 that evaluate these models and agents across multiple domains. In addition, we propose a taxonomy of approximately 60 benchmarks that cover general and academic knowledge reasoning, mathematical problem-solving, code generation and software engineering, factual grounding and retrieval, domain-specific evaluations, multimodal and embodied tasks, task orchestration, and interactive assessments. Furthermore, we review AI-agent frameworks introduced between 2023 and 2025 that integrate large language models with modular toolkits to enable autonomous decision-making and multi-step reasoning. Moreover, we present real-world applications of autonomous AI agents in materials science, biomedical research, academic ideation, software engineering, synthetic data generation, chemical reasoning, mathematical problem-solving, geographic information systems, multimedia, healthcare, and finance. We then survey key agent-to-agent collaboration protocols, namely the Agent Communication Protocol (ACP), the Model Context Protocol (MCP), and the Agent-to-Agent Protocol (A2A). Finally, we discuss recommendations for future research, focusing on advanced reasoning strategies, failure modes in multi-agent LLM systems, automated scientific discovery, dynamic tool integration via reinforcement learning, integrated search capabilities, and security vulnerabilities in agent protocols.
+
+---
+
+### 21. AI Agents as Team Members: Effects on Satisfaction, Conflict, Trustworthiness, and Willingness to Work With
+
+**Authors:** A. Dennis, Akshat Lakhiwal, Agrim Sachdeva  
+**Year:** 2023 | **Citations:** 167 | **Venue:** Journal of Management Information Systems  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/d783617b40a8113719671e106c476cee0feef3e8](https://www.semanticscholar.org/paper/d783617b40a8113719671e106c476cee0feef3e8)  
+
+**Abstract:** ABSTRACT Organizations are beginning to deploy artificial intelligence (AI) agents as members of virtual teams to help manage information, coordinate team processes, and perform simple tasks. How will team members perceive these AI team members and will they be willing to work with them? We conducted a 2 x  2 x 2 lab experiment that manipulated the type of team member (human or AI), their performance (high or low), and the performance of other team members (high or low). AI team members were perceived to have higher ability and integrity but lower benevolence, which led to no differences in trustworthiness or willingness to work with them. However, the presence of an AI team member resulted in lower process satisfaction. When the AI team member performed well, participants perceived less conflict compared to a human team member with the same performance, but there were no differences in perceived conflict when it performed poorly. There were no other interactions with performance, indicating that the AI team member was judged similarly to humans, irrespective of variations in performance; there was no evidence of algorithm aversion. Our research suggests that AI team members are likely to be accepted into teams, meaning that many old collaboration research questions may need to be reexamined to consider AI team members.
+
+---
+
+### 22. PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action
+
+**Authors:** Yijia Shao, Tianshi Li, Weiyan Shi, et al.  
+**Year:** 2024 | **Citations:** 157 | **Venue:** Neural Information Processing Systems  
+**Year Month:** [Sep 2024]  
+**Fields:** Computer Science  
+**URL:** [https://www.semanticscholar.org/paper/6c95608b50d360fc9b2043d5caf89ce804ed5696](https://www.semanticscholar.org/paper/6c95608b50d360fc9b2043d5caf89ce804ed5696)  
+**arXiv:** [https://arxiv.org/abs/2409.00138](https://arxiv.org/abs/2409.00138)  
+
+**Abstract:** As language models (LMs) are widely utilized in personalized communication scenarios (e.g., sending emails, writing social media posts) and endowed with a certain level of agency, ensuring they act in accordance with the contextual privacy norms becomes increasingly critical. However, quantifying the privacy norm awareness of LMs and the emerging privacy risk in LM-mediated communication is challenging due to (1) the contextual and long-tailed nature of privacy-sensitive cases, and (2) the lack of evaluation approaches that capture realistic application scenarios. To address these challenges, we propose PrivacyLens, a novel framework designed to extend privacy-sensitive seeds into expressive vignettes and further into agent trajectories, enabling multi-level evaluation of privacy leakage in LM agents' actions. We instantiate PrivacyLens with a collection of privacy norms grounded in privacy literature and crowdsourced seeds. Using this dataset, we reveal a discrepancy between LM performance in answering probing questions and their actual behavior when executing user instructions in an agent setup. State-of-the-art LMs, like GPT-4 and Llama-3-70B, leak sensitive information in 25.68% and 38.69% of cases, even when prompted with privacy-enhancing instructions. We also demonstrate the dynamic nature of PrivacyLens by extending each seed into multiple trajectories to red-team LM privacy leakage risk. Dataset and code are available at https://github.com/SALT-NLP/PrivacyLens.
+
+---
+
 ### 23. Magma: A Foundation Model for Multimodal AI Agents
 
 **Authors:** Jianwei Yang, Reuben Tan, Qianhui Wu, et al.  
-**Year:** 2025 | **Citations:** 128 | **Venue:** Computer Vision and Pattern Recognition  
+**Year:** 2025 | **Citations:** 152 | **Venue:** Computer Vision and Pattern Recognition  
 **Year Month:** [Feb 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/512b311213c905087ab439b5c303db2e382a7518](https://www.semanticscholar.org/paper/512b311213c905087ab439b5c303db2e382a7518)  
@@ -662,7 +663,7 @@
 ### 24. AI Agents That Matter
 
 **Authors:** Sayash Kapoor, Benedikt Stroebl, Zachary S. Siegel, et al.  
-**Year:** 2024 | **Citations:** 126 | **Venue:** Trans. Mach. Learn. Res.  
+**Year:** 2024 | **Citations:** 151 | **Venue:** Trans. Mach. Learn. Res.  
 **Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/edae954314571eb2913209a7e9825cdc14fd4c58](https://www.semanticscholar.org/paper/edae954314571eb2913209a7e9825cdc14fd4c58)  
@@ -672,23 +673,23 @@
 
 ---
 
-### 25. PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action
+### 25. Tree Search for Language Model Agents
 
-**Authors:** Yijia Shao, Tianshi Li, Weiyan Shi, et al.  
-**Year:** 2024 | **Citations:** 125 | **Venue:** Neural Information Processing Systems  
-**Year Month:** [Sep 2024]  
+**Authors:** Jing Yu Koh, S. McAleer, Daniel Fried, et al.  
+**Year:** 2024 | **Citations:** 147 | **Venue:** Trans. Mach. Learn. Res.  
+**Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/6c95608b50d360fc9b2043d5caf89ce804ed5696](https://www.semanticscholar.org/paper/6c95608b50d360fc9b2043d5caf89ce804ed5696)  
-**arXiv:** [https://arxiv.org/abs/2409.00138](https://arxiv.org/abs/2409.00138)  
+**URL:** [https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588](https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588)  
+**arXiv:** [https://arxiv.org/abs/2407.01476](https://arxiv.org/abs/2407.01476)  
 
-**Abstract:** As language models (LMs) are widely utilized in personalized communication scenarios (e.g., sending emails, writing social media posts) and endowed with a certain level of agency, ensuring they act in accordance with the contextual privacy norms becomes increasingly critical. However, quantifying the privacy norm awareness of LMs and the emerging privacy risk in LM-mediated communication is challenging due to (1) the contextual and long-tailed nature of privacy-sensitive cases, and (2) the lack of evaluation approaches that capture realistic application scenarios. To address these challenges, we propose PrivacyLens, a novel framework designed to extend privacy-sensitive seeds into expressive vignettes and further into agent trajectories, enabling multi-level evaluation of privacy leakage in LM agents' actions. We instantiate PrivacyLens with a collection of privacy norms grounded in privacy literature and crowdsourced seeds. Using this dataset, we reveal a discrepancy between LM performance in answering probing questions and their actual behavior when executing user instructions in an agent setup. State-of-the-art LMs, like GPT-4 and Llama-3-70B, leak sensitive information in 25.68% and 38.69% of cases, even when prompted with privacy-enhancing instructions. We also demonstrate the dynamic nature of PrivacyLens by extending each seed into multiple trajectories to red-team LM privacy leakage risk. Dataset and code are available at https://github.com/SALT-NLP/PrivacyLens.
+**Abstract:** Autonomous agents powered by language models (LMs) have demonstrated promise in their ability to perform decision-making tasks such as web automation. However, a key limitation remains: LMs, primarily optimized for natural language understanding and generation, struggle with multi-step reasoning, planning, and using environmental feedback when attempting to solve realistic computer tasks. Towards addressing this, we propose an inference-time search algorithm for LM agents to explicitly perform exploration and multi-step planning in interactive web environments. Our approach is a form of best-first tree search that operates within the actual environment space, and is complementary with most existing state-of-the-art agents. It is the first tree search algorithm for LM agents that shows effectiveness on realistic web tasks. On the challenging VisualWebArena benchmark, applying our search algorithm on top of a GPT-4o agent yields a 39.7% relative increase in success rate compared to the same baseline without search, setting a state-of-the-art success rate of 26.4%. On WebArena, search also yields a 28.0% relative improvement over a baseline agent, setting a competitive success rate of 19.2%. Our experiments highlight the effectiveness of search for web agents, and we demonstrate that performance scales with increased test-time compute. We conduct a thorough analysis of our results to highlight improvements from search, limitations, and promising directions for future work. Our code and models are publicly released at https://jykoh.com/search-agents.
 
 ---
 
 ### 26. AI Agents and Agentic Systems: A Multi-Expert Analysis
 
 **Authors:** Laurie Hughes, Yogesh K. Dwivedi, Tegwen Malik, et al.  
-**Year:** 2025 | **Citations:** 120 | **Venue:** Journal of Computational Information Systems  
+**Year:** 2025 | **Citations:** 143 | **Venue:** Journal of Computational Information Systems  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/46ddc757d49a5cacb0b50f6716a953c0bbea41f9](https://www.semanticscholar.org/paper/46ddc757d49a5cacb0b50f6716a953c0bbea41f9)  
 
@@ -696,23 +697,23 @@
 
 ---
 
-### 27. Understanding Nonlinear Collaboration between Human and AI Agents: A Co-design Framework for Creative Design
+### 27. Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models
 
-**Authors:** Jiayi Zhou, Renzhong Li, Junxiu Tang, et al.  
-**Year:** 2024 | **Citations:** 104 | **Venue:** International Conference on Human Factors in Computing Systems  
-**Year Month:** [Jan 2024]  
+**Authors:** Andy K. Zhang, Neil Perry, Riya Dulepet, et al.  
+**Year:** 2024 | **Citations:** 130 | **Venue:**   
+**Year Month:** [Aug 2024]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/feacb3129097876863b3e25f5d750454a58e73b7](https://www.semanticscholar.org/paper/feacb3129097876863b3e25f5d750454a58e73b7)  
-**arXiv:** [https://arxiv.org/abs/2401.07312](https://arxiv.org/abs/2401.07312)  
+**URL:** [https://www.semanticscholar.org/paper/cb4b0bba67466c22bbc99bbf973dce5e1d9a48b6](https://www.semanticscholar.org/paper/cb4b0bba67466c22bbc99bbf973dce5e1d9a48b6)  
+**arXiv:** [https://arxiv.org/abs/2408.08926](https://arxiv.org/abs/2408.08926)  
 
-**Abstract:** Creative design is a nonlinear process where designers generate diverse ideas in the pursuit of an open-ended goal and converge towards consensus through iterative remixing. In contrast, AI-powered design tools often employ a linear sequence of incremental and precise instructions to approximate design objectives. Such operations violate customary creative design practices and thus hinder AI agents’ ability to complete creative design tasks. To explore better human-AI co-design tools, we first summarize human designers’ practices through a formative study with 12 design experts. Taking graphic design as a representative scenario, we formulate a nonlinear human-AI co-design framework and develop a proof-of-concept prototype, OptiMuse. We evaluate OptiMuse and validate the nonlinear framework through a comparative study. We notice a subconscious change in people’s attitudes towards AI agents, shifting from perceiving them as mere executors to regarding them as opinionated colleagues. This shift effectively fostered the exploration and reflection processes of individual designers.
+**Abstract:** Language Model (LM) agents for cybersecurity that are capable of autonomously identifying vulnerabilities and executing exploits have potential to cause real-world impact. Policymakers, model providers, and researchers in the AI and cybersecurity communities are interested in quantifying the capabilities of such agents to help mitigate cyberrisk and investigate opportunities for penetration testing. Toward that end, we introduce Cybench, a framework for specifying cybersecurity tasks and evaluating agents on those tasks. We include 40 professional-level Capture the Flag (CTF) tasks from 4 distinct CTF competitions, chosen to be recent, meaningful, and spanning a wide range of difficulties. Each task includes its own description, starter files, and is initialized in an environment where an agent can execute commands and observe outputs. Since many tasks are beyond the capabilities of existing LM agents, we introduce subtasks for each task, which break down a task into intermediary steps for a more detailed evaluation. To evaluate agent capabilities, we construct a cybersecurity agent and evaluate 8 models: GPT-4o, OpenAI o1-preview, Claude 3 Opus, Claude 3.5 Sonnet, Mixtral 8x22b Instruct, Gemini 1.5 Pro, Llama 3 70B Chat, and Llama 3.1 405B Instruct. For the top performing models (GPT-4o and Claude 3.5 Sonnet), we further investigate performance across 4 agent scaffolds (structed bash, action-only, pseudoterminal, and web search). Without subtask guidance, agents leveraging Claude 3.5 Sonnet, GPT-4o, OpenAI o1-preview, and Claude 3 Opus successfully solved complete tasks that took human teams up to 11 minutes to solve. In comparison, the most difficult task took human teams 24 hours and 54 minutes to solve. All code and data are publicly available at https://cybench.github.io.
 
 ---
 
 ### 28. Visibility into AI Agents
 
 **Authors:** Alan Chan, Carson Ezell, Max Kaufmann, et al.  
-**Year:** 2024 | **Citations:** 103 | **Venue:** Conference on Fairness, Accountability and Transparency  
+**Year:** 2024 | **Citations:** 123 | **Venue:** Conference on Fairness, Accountability and Transparency  
 **Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/e6170d1936bd0e8bcfa4382b001ef2cf137e7e66](https://www.semanticscholar.org/paper/e6170d1936bd0e8bcfa4382b001ef2cf137e7e66)  
@@ -725,7 +726,7 @@
 ### 29. Dissecting Adversarial Robustness of Multimodal LM Agents
 
 **Authors:** Chen Henry Wu, Jing Yu Koh, Ruslan Salakhutdinov, et al.  
-**Year:** 2024 | **Citations:** 102 | **Venue:** International Conference on Learning Representations  
+**Year:** 2024 | **Citations:** 114 | **Venue:** International Conference on Learning Representations  
 **Year Month:** [Jun 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/4f27fc2ea3d3491deded642a5de247d167a03d15](https://www.semanticscholar.org/paper/4f27fc2ea3d3491deded642a5de247d167a03d15)  
@@ -735,16 +736,16 @@
 
 ---
 
-### 30. Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models
+### 30. Understanding Nonlinear Collaboration between Human and AI Agents: A Co-design Framework for Creative Design
 
-**Authors:** Andy K. Zhang, Neil Perry, Riya Dulepet, et al.  
-**Year:** 2024 | **Citations:** 101 | **Venue:**   
-**Year Month:** [Aug 2024]  
+**Authors:** Jiayi Zhou, Renzhong Li, Junxiu Tang, et al.  
+**Year:** 2024 | **Citations:** 112 | **Venue:** International Conference on Human Factors in Computing Systems  
+**Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
-**URL:** [https://www.semanticscholar.org/paper/cb4b0bba67466c22bbc99bbf973dce5e1d9a48b6](https://www.semanticscholar.org/paper/cb4b0bba67466c22bbc99bbf973dce5e1d9a48b6)  
-**arXiv:** [https://arxiv.org/abs/2408.08926](https://arxiv.org/abs/2408.08926)  
+**URL:** [https://www.semanticscholar.org/paper/feacb3129097876863b3e25f5d750454a58e73b7](https://www.semanticscholar.org/paper/feacb3129097876863b3e25f5d750454a58e73b7)  
+**arXiv:** [https://arxiv.org/abs/2401.07312](https://arxiv.org/abs/2401.07312)  
 
-**Abstract:** Language Model (LM) agents for cybersecurity that are capable of autonomously identifying vulnerabilities and executing exploits have potential to cause real-world impact. Policymakers, model providers, and researchers in the AI and cybersecurity communities are interested in quantifying the capabilities of such agents to help mitigate cyberrisk and investigate opportunities for penetration testing. Toward that end, we introduce Cybench, a framework for specifying cybersecurity tasks and evaluating agents on those tasks. We include 40 professional-level Capture the Flag (CTF) tasks from 4 distinct CTF competitions, chosen to be recent, meaningful, and spanning a wide range of difficulties. Each task includes its own description, starter files, and is initialized in an environment where an agent can execute commands and observe outputs. Since many tasks are beyond the capabilities of existing LM agents, we introduce subtasks for each task, which break down a task into intermediary steps for a more detailed evaluation. To evaluate agent capabilities, we construct a cybersecurity agent and evaluate 8 models: GPT-4o, OpenAI o1-preview, Claude 3 Opus, Claude 3.5 Sonnet, Mixtral 8x22b Instruct, Gemini 1.5 Pro, Llama 3 70B Chat, and Llama 3.1 405B Instruct. For the top performing models (GPT-4o and Claude 3.5 Sonnet), we further investigate performance across 4 agent scaffolds (structed bash, action-only, pseudoterminal, and web search). Without subtask guidance, agents leveraging Claude 3.5 Sonnet, GPT-4o, OpenAI o1-preview, and Claude 3 Opus successfully solved complete tasks that took human teams up to 11 minutes to solve. In comparison, the most difficult task took human teams 24 hours and 54 minutes to solve. All code and data are publicly available at https://cybench.github.io.
+**Abstract:** Creative design is a nonlinear process where designers generate diverse ideas in the pursuit of an open-ended goal and converge towards consensus through iterative remixing. In contrast, AI-powered design tools often employ a linear sequence of incremental and precise instructions to approximate design objectives. Such operations violate customary creative design practices and thus hinder AI agents’ ability to complete creative design tasks. To explore better human-AI co-design tools, we first summarize human designers’ practices through a formative study with 12 design experts. Taking graphic design as a representative scenario, we formulate a nonlinear human-AI co-design framework and develop a proof-of-concept prototype, OptiMuse. We evaluate OptiMuse and validate the nonlinear framework through a comparative study. We notice a subconscious change in people’s attitudes towards AI agents, shifting from perceiving them as mere executors to regarding them as opinionated colleagues. This shift effectively fostered the exploration and reflection processes of individual designers.
 
 ---
 

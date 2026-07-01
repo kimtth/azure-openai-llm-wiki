@@ -17,6 +17,7 @@ import json
 import os
 import random
 import re
+import requests
 import subprocess
 import sys
 import time
@@ -28,7 +29,7 @@ CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
     sys.path.insert(0, str(CODE_DIR))
 
-from utils.http_utils import create_session, get_json  # noqa: E402
+from utils.http_utils import create_session  # noqa: E402
 from utils.path_utils import get_repo_root  # noqa: E402
 
 
@@ -548,19 +549,101 @@ class SemanticScholarFetcher:
             "limit": min(limit, 100),
             "fields": ",".join(self._FIELDS),
         }
-        data = get_json(
-            self.session,
-            f"{self.BASE_URL}/paper/search",
-            params=params,
-            timeout=self.timeout,
-            max_retries=self.max_retries,
-            backoff=self.backoff,
-        )
+        url = f"{self.BASE_URL}/paper/search"
+        backoff = self.backoff
+        last_error = "no response"
+
+        for attempt in range(self.max_retries):
+            try:
+                response = self.session.get(url, params=params, timeout=self.timeout)
+            except requests.RequestException as exc:
+                last_error = f"{type(exc).__name__}: {exc}"
+            else:
+                if response.status_code == 200:
+                    if self.request_delay > 0:
+                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
+                    return response.json().get("data", [])
+
+                message = ""
+                try:
+                    payload = response.json()
+                    message = str(payload.get("message") or payload.get("error") or "").strip()
+                except ValueError:
+                    message = response.text[:200].strip()
+                last_error = f"HTTP {response.status_code}"
+                if message:
+                    last_error += f": {message}"
+
+                if response.status_code not in {429, 500, 502, 503, 504}:
+                    break
+
+                retry_after = response.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        backoff = max(backoff, float(retry_after))
+                    except ValueError:
+                        pass
+                elif response.status_code == 429:
+                    backoff = max(backoff, 60.0)
+
+            if attempt < self.max_retries - 1:
+                time.sleep(backoff)
+                backoff = min(backoff * 2, 300.0)
+
         if self.request_delay > 0:
             time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
-        if not data:
-            raise QueryFetchError(f"Semantic Scholar query failed after retries: {query}")
-        return data.get("data", [])
+        raise QueryFetchError(f"Semantic Scholar query failed after retries ({last_error}): {query}")
+
+    def batch_papers(self, ids: List[str]) -> List[Optional[Dict]]:
+        """Fetch papers by stable IDs in one low-volume API request."""
+        if not ids:
+            return []
+
+        url = f"{self.BASE_URL}/paper/batch"
+        params = {"fields": ",".join(self._FIELDS)}
+        backoff = self.backoff
+        last_error = "no response"
+
+        for attempt in range(self.max_retries):
+            try:
+                response = self.session.post(url, params=params, json={"ids": ids}, timeout=self.timeout)
+            except requests.RequestException as exc:
+                last_error = f"{type(exc).__name__}: {exc}"
+            else:
+                if response.status_code == 200:
+                    if self.request_delay > 0:
+                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
+                    return response.json()
+
+                message = ""
+                try:
+                    payload = response.json()
+                    message = str(payload.get("message") or payload.get("error") or "").strip()
+                except ValueError:
+                    message = response.text[:200].strip()
+                last_error = f"HTTP {response.status_code}"
+                if message:
+                    last_error += f": {message}"
+
+                if response.status_code not in {429, 500, 502, 503, 504}:
+                    break
+
+                retry_after = response.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        backoff = max(backoff, float(retry_after))
+                    except ValueError:
+                        pass
+                elif response.status_code == 429:
+                    backoff = max(backoff, 60.0)
+
+            if attempt < self.max_retries - 1:
+                time.sleep(backoff)
+                backoff = min(backoff * 2, 300.0)
+
+        if self.request_delay > 0:
+            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
+        raise QueryFetchError(f"Semantic Scholar batch fetch failed after retries ({last_error})")
 
     def fetch_topic(
         self,
@@ -626,6 +709,20 @@ def _paper_arxiv_url(paper: Dict) -> Optional[str]:
 
 def _paper_link(paper: Dict) -> str:
     return _paper_arxiv_url(paper) or paper.get("link") or paper.get("url") or "#"
+
+
+def _paper_lookup_id(paper: Dict) -> Optional[str]:
+    ext = paper.get("externalIds") or {}
+    arxiv_id = ext.get("ArXiv")
+    if arxiv_id:
+        return f"ARXIV:{arxiv_id}"
+
+    link = paper.get("link") or paper.get("url") or ""
+    if "arxiv.org/abs/" in link:
+        return "ARXIV:" + link.rsplit("/abs/", 1)[1].strip()
+    if "semanticscholar.org/paper/" in link:
+        return link.rsplit("/paper/", 1)[1].split("/", 1)[0].strip()
+    return None
 
 
 def _paper_date_str(paper: Dict) -> str:
@@ -761,6 +858,45 @@ def _compact_entry_blocks(markdown_text: str) -> List[str]:
     if current:
         blocks.append(" ".join(part.strip() for part in current if part.strip()))
     return blocks
+
+
+def refresh_existing_papers(fetcher: SemanticScholarFetcher, output_file: str, min_citations: int) -> None:
+    existing_papers = _load_existing_markdown(output_file)
+    if not existing_papers:
+        print(f"No compact paper entries found in: {output_file}")
+        return
+
+    lookup_ids = [_paper_lookup_id(paper) for paper in existing_papers]
+    refreshed_by_id: Dict[str, Optional[Dict]] = {}
+    for start in range(0, len(lookup_ids), 450):
+        chunk = [paper_id for paper_id in lookup_ids[start:start + 450] if paper_id]
+        if not chunk:
+            continue
+        print(f"[batch] Fetching {len(chunk)} papers ({start + 1}-{start + len(chunk)})")
+        results = fetcher.batch_papers(chunk)
+        refreshed_by_id.update(zip(chunk, results))
+
+    refreshed: List[Dict] = []
+    updated = 0
+    missing = 0
+    for original, lookup_id in zip(existing_papers, lookup_ids):
+        live = refreshed_by_id.get(lookup_id or "")
+        if live:
+            topics = original.get("topics") or infer_paper_topics(original)
+            live["topics"] = topics
+            refreshed.append(live)
+            if live.get("citationCount") != original.get("citationCount"):
+                updated += 1
+        else:
+            refreshed.append(original)
+            missing += 1
+
+    refreshed = [paper for paper in refreshed if paper.get("citationCount", 0) >= min_citations]
+    _flush_output(output_file, refreshed, min_citations)
+    print(
+        f"Refreshed {len(refreshed)} existing papers from Semantic Scholar batch API: "
+        f"{updated} citation count(s) changed, {missing} missing response(s)."
+    )
 
 
 def _load_existing_markdown(output_file: str, source_file: Optional[str] = None) -> List[Dict]:
@@ -942,6 +1078,10 @@ def main() -> None:
         help="Rewrite the existing output with inferred topic tags and coverage without calling the API."
     )
     parser.add_argument(
+        "--refresh-existing", action="store_true",
+        help="Refresh existing output entries from Semantic Scholar batch API without running search queries."
+    )
+    parser.add_argument(
         "--annotate-source",
         help="Optional markdown source for --annotate-existing; use '-' for stdin or 'git:<rev>:<path>'."
     )
@@ -968,6 +1108,10 @@ def main() -> None:
         request_delay=args.request_delay,
         jitter=args.jitter,
     )
+
+    if args.refresh_existing:
+        refresh_existing_papers(fetcher, output_file, args.min_citations)
+        return
 
     # Optionally filter topics
     topics_to_run = TOPICS
@@ -1032,10 +1176,9 @@ def main() -> None:
             added = merge_papers(exc.papers, topic_name)
             failed_queries.extend(exc.failed_queries)
             persist_progress()
-            _flush_output(output_file, global_papers, args.min_citations)
             print(
                 f"  [pause] {topic_name} incomplete: {len(exc.failed_queries)} failed query/query(s), "
-                f"{added} partial paper(s) added. Re-run without --reset to resume."
+                f"{added} partial paper(s) saved to checkpoint. Re-run without --reset to resume."
             )
             return
 
@@ -1046,7 +1189,6 @@ def main() -> None:
 
         # Persist progress after every topic so we can resume on interruption
         persist_progress()
-        _flush_output(output_file, global_papers, args.min_citations)
 
     # Final flush (updates timestamp)
     _flush_output(output_file, global_papers, args.min_citations)
