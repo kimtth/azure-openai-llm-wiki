@@ -48,7 +48,6 @@
 - [Contextual Retrieval✍️](https://www.anthropic.com/news/contextual-retrieval): Contextual Retrieval enhances traditional RAG by using Contextual Embeddings and Contextual BM25 to maintain context during retrieval. [19 Sep 2024]
 - [Enhancing Ultra High Resolution Remote Sensing Imagery Analysis with ImageRAG📑](https://arxiv.org/abs/2411.07688): Ultra High Resolution (UHR) remote sensing imagery, such as satellite imagery and medical imaging. [12 Nov 2024]
 - From Simple to Advanced RAG (LlamaIndex) [✍️](https://twitter.com/jerryjliu0/status/1711419232314065288) / 💡[✍️](https://aiconference.com/speakers/jerry-liu-2023/) [10 Oct 2023]
-  <!-- <img src="../files/advanced-rag.png" width="430"> -->
 - [How to improve RAG Piplines](https://www.linkedin.com/posts/damienbenveniste_how-to-improve-rag-pipelines-activity-7241497046631776256-vwOc?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy): LangGraph implementation with Self-RAG, Adaptive-RAG, Corrective RAG. [Oct 2024]
 - How to optimize RAG pipeline: [Indexing optimization](https://newsletter.theaiedge.io/p/how-to-optimize-your-rag-pipelines) [24 Oct 2023]
 - [Multi-Modal RAG System✍️](https://machinelearningmastery.com/implementing-multi-modal-rag-systems/): Building a knowledge base with both image and audio data. [12 Feb 2025]
@@ -452,6 +451,7 @@
 1. [new-api](https://github.com/QuantumNous/new-api): Unified AI model hub for aggregation and distribution. [Nov 2023] ![**github stars**](https://img.shields.io/github/stars/QuantumNous/new-api?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [one-api](https://github.com/songquanpeng/one-api): LLM API management and redistribution system for mainstream model providers. [Apr 2023] ![**github stars**](https://img.shields.io/github/stars/songquanpeng/one-api?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [plano](https://github.com/katanemo/plano): AI-native proxy for agentic apps — model routing, observability, and guardrails, built on Envoy. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/katanemo/plano?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+1. [RouteLLM](https://github.com/lm-sys/RouteLLM): Framework for serving and evaluating LLM routers. [Jun 2024] ![**github stars**](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [rtk](https://github.com/rtk-ai/rtk): CLI proxy that reduces LLM token consumption by 60-90% on common development commands. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 #### Model Serving & Local Runtimes

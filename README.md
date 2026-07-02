@@ -18,9 +18,9 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 
 | Layer / Era | What it controls | Jump to sections |
 |-------------|----------------------------------------|-------------|
-| **Weights** <br/> 2022-2023 | Parametric knowledge baked into the model. <br/> `Themes: Pretraining, Scaling Laws, Fine-tuning, RLHF, Alignment, Instruction-following, Few-shot` | Foundations: [Large Language Model: Landscape](section/models_research.md#large-language-model-landscape) <br/> Training: [Finetuning](section/models_research.md#finetuning), [AI Application](section/applications.md#ai-application) <br/> Behavior and safety: [Large Language Model: Challenges and Solutions](section/models_research.md#large-language-model-challenges-and-solutions), [Orchestration Frameworks](section/azure.md#orchestration-frameworks) |
-| **Context** <br/> 2023-2024 | What the model sees at inference time. <br/> `Themes: Prompting, Chain-of-Thought, RAG, Memory, Long Context, Knowledge Injection, Context Engineering` | Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts), [Prompt Engineering & Tooling](section/azure.md#prompt-engineering--tooling) <br/> Retrieval: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Azure AI Search](section/azure.md#azure-ai-search) <br/> Memory and context windows: [AI Application](section/applications.md#ai-application), [Large Language Model: Challenges and Solutions](section/models_research.md#large-language-model-challenges-and-solutions), [RAG Best Practices](section/best_practices.md#rag-best-practices) |
-| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [AI Application](section/applications.md#ai-application), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development) <br/> Protocols and tools: [Agent Protocol](section/applications.md#agent-protocol), [Coding & Research](section/applications.md#coding--research), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) <br/> Apps and operations: [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Agent Best Practices](section/best_practices.md#agent-best-practices) |
+| **Weights** <br/> 2022-2023 | Parametric knowledge baked into the model. <br/> `Themes: Pretraining, Scaling Laws, Fine-tuning, RLHF, Alignment, Instruction-following, Few-shot` | Foundations: [Large Language Model Landscape](section/models_research.md#large-language-model-landscape), [Large Language Model Collection](section/models_research.md#large-language-model-collection), [Foundation Model Providers](section/models_research.md#foundation-model-providers) <br/> Training: [Large Language Model Training and Optimization](section/models_research.md#large-language-model-training-and-optimization), [Model Training & Inference](section/azure.md#model-training--inference), [Training & Fine-tuning](section/applications.md#training--fine-tuning) <br/> Behavior and safety: [Trust, Safety, and Security](section/models_research.md#trust-safety-and-security), [Safety, Security & LLMOps](section/azure.md#safety-security--llmops) |
+| **Context** <br/> 2023-2024 | What the model sees at inference time. <br/> `Themes: Prompting, Chain-of-Thought, RAG, Memory, Long Context, Knowledge Injection, Context Engineering` | Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts), [Prompt Engineering & Tooling](section/azure.md#prompt-engineering--tooling) <br/> Retrieval: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Azure AI Search](section/azure.md#azure-ai-search), [RAG Best Practices](section/best_practices.md#rag-best-practices) <br/> Memory and context windows: [Context and Long-Context Limits](section/models_research.md#context-and-long-context-limits), [Memory](section/applications.md#memory), [Data Processing & Memory](section/azure.md#data-processing--memory) |
+| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [AI Application](section/applications.md#ai-application), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development), [Agent Best Practices](section/best_practices.md#agent-best-practices) <br/> Protocols and tools: [Agent Protocol](section/applications.md#agent-protocol), [Coding & Research](section/applications.md#coding--research), [Skill](section/applications.md#skill), [Harness](section/applications.md#harness), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) <br/> Apps and operations: [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Learning Resources & Workshops](section/azure.md#learning-resources--workshops), [Code Samples & Workshops](section/azure.md#code-samples--workshops) |
 
 Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dailydoseofds.com/p/evolution-of-agent-landscape-from)
 
@@ -43,7 +43,7 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Model Gateway](section/applications.md#model-gateway)
   - [Model Serving & Local Runtimes](section/applications.md#model-serving--local-runtimes)
   - [Observability & LLMOps](section/applications.md#observability--llmops)
-  - [**Popular LLM Applications** (GitHub Stars >= 1000)](section/applications.md#popular-llm-applications-github-stars--1000)
+  - [**Popular LLM Applications** (GitHub Stars >= 1000)](section/x_llm_apps.md)
   - [SDKs, Integration & ML Libraries](section/applications.md#sdks-integration--ml-libraries)
   - [Training & Fine-tuning](section/applications.md#training--fine-tuning)
   - [UI & No-Code Tool](section/applications.md#ui--no-code-tool)
@@ -57,7 +57,7 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Domain-Specific Agents](section/applications.md#domain-specific-agents)
   - [Skill](section/applications.md#skill) / [Harness](section/applications.md#harness)
 
-**[⬆ back to top](#azure-openai--llm)**
+**[⬆ back to top](#azure-openai--llm-wiki)**
 
 ## 2. Azure OpenAI & Copilot
 🌌 Microsoft's Cloud-Based AI Platform and Services
@@ -84,43 +84,35 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Solution Accelerators](section/azure.md#solution-accelerators)
   - [Architecture Patterns & Use Cases](section/azure.md#architecture-patterns--use-cases)
 
-**[⬆ back to top](#azure-openai--llm)**
+**[⬆ back to top](#azure-openai--llm-wiki)**
 
 ## 3. Research & Survey
 🧠 LLM Landscape, Prompt Engineering, Finetuning, Challenges & Surveys
 
 - **Landscape**
-  - [Large Language Model: Landscape](section/models_research.md#large-language-model-landscape)
-  - [Comparison](section/models_research.md#large-language-model-comparison)
-  - [Evolutionary Tree](section/models_research.md#evolutionary-tree-of-large-language-models)
-  - [LLM Collection](section/models_research.md#large-language-model-collection)
+  - [Large Language Model Landscape](section/models_research.md#large-language-model-landscape)
+  - [Large Language Model Collection](section/models_research.md#large-language-model-collection)
+  - [Foundation Model Providers](section/models_research.md#foundation-model-providers)
+  - [Domain-Specific and Specialized LLMs](section/models_research.md#domain-specific-and-specialized-llms)
 - **Prompting**
   - [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts)
-- **Finetuning**
-  - [Pre-training and Post-training](section/models_research.md#finetuning)
-  - [Other Techniques and LLM Patterns](section/models_research.md#other-techniques-and-llm-patterns)
-- **Challenges**
-  - [Context Constraints](section/models_research.md#context-constraints)
-  - [Trustworthy, Safe and Secure LLM](section/models_research.md#trustworthy-safe-and-secure-llm)
-  - [Large Language Model's Abilities](section/models_research.md#large-language-model-is-abilities)
-  - [Reasoning](section/models_research.md#reasoning)
-- **Products & Impact**
-  - [OpenAI Roadmap](section/models_research.md#openai-roadmap)
-  - [OpenAI Models](section/models_research.md#openai-models)
+- **Training & Optimization**
+  - [Large Language Model Training and Optimization](section/models_research.md#large-language-model-training-and-optimization)
+  - [Pre-training and Data Preparation](section/models_research.md#pre-training-and-data-preparation)
+  - [Architecture and Inference Patterns](section/models_research.md#architecture-and-inference-patterns)
+  - [Post-training and Fine-Tuning](section/models_research.md#post-training-and-fine-tuning)
+- **Impact & Products**
+  - [AI Adoption, Impact, and Society](section/models_research.md#ai-adoption-impact-and-society)
   - [OpenAI Products](section/models_research.md#openai-products)
-  - [Anthropic Products](section/models_research.md#anthropic-ai-products)
+  - [Anthropic AI Products](section/models_research.md#anthropic-ai-products)
   - [Google AI Products](section/models_research.md#google-ai-products)
-  - [AGI Discussion and Social Impact](section/models_research.md#agi-discussion-and-social-impact)
-- **Survey & Build**
-  - [Survey on Large Language Models](section/models_research.md#survey-on-large-language-models)
+- **Survey & Reference**
+  - [Survey and Reference](section/models_research.md#survey-and-reference)
   - [Additional Topics: A Survey of LLMs](section/models_research.md#additional-topics-a-survey-of-llms)
-  - [**LLM Research** (Ranked by cite count ≥150)](section/models_research.md#llm-research-ranked-by-cite-count-150)
-  - [LLM Materials in Japanese](section/models_research.md#llm-materials-in-japanese)
-  - [LLM Materials in Korean](section/models_research.md#llm-materials-in-korean)
-  - [Build an LLMs from Scratch](section/models_research.md#build-an-llms-from-scratch-picogpt-and-lit-gpt)
-  - [Business Use Cases](section/models_research.md#business-use-cases)
+  - [**LLM Research** (Ranked by cite count ≥150)](section/x_llm_papers.md)
+  - [Learning Resources, Implementations, and Regional Materials](section/models_research.md#learning-resources-implementations-and-regional-materials)
 
-**[⬆ back to top](#azure-openai--llm)**
+**[⬆ back to top](#azure-openai--llm-wiki)**
 
 ## 4. Tools, Datasets, and Evaluation
 🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
@@ -136,7 +128,7 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [LLM Evalution Benchmarks](section/tools_extra.md#llm-evalution-benchmarks)
   - [LLMOps: Large Language Model Operations](section/tools_extra.md#llmops-large-language-model-operations)
 
-**[⬆ back to top](#azure-openai--llm)**
+**[⬆ back to top](#azure-openai--llm-wiki)**
 
 ## 5. Best Practices
 📋 Curated Blogs, Patterns, and Implementation Guidelines
@@ -150,12 +142,11 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Agent Design Patterns](section/best_practices.md#agent-design-patterns)
   - [Agent Research](section/best_practices.md#agent-research)
   - [**Agent Research** (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
-  - [Reflection, Tool Use, Planning and Multi-agent collaboration](section/best_practices.md#reflection-tool-use-planning-and-multi-agent-collaboration)
   - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use)
 - **Reference**
   - [Proposals & Glossary](section/best_practices.md#proposals--glossary)
 
-**[⬆ back to top](#azure-openai--llm)**
+**[⬆ back to top](#azure-openai--llm-wiki)**
 
 ## 📖 Legend & Notation
 
@@ -175,4 +166,4 @@ All rights reserved © `kimtth`
 https://shields.io/badges/git-hub-created-at
 -->
 
-**[`^        back to top        ^`](#azure-openai--llm)**
+**[`^        back to top        ^`](#azure-openai--llm-wiki)**
