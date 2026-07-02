@@ -99,7 +99,6 @@ Use **exact** heading names when labeling entries in `temp_entries.md`. Format: 
 
 ### `applications.md`
 - RAG (Retrieval-Augmented Generation)
-- Advanced RAG
 - GraphRAG
 - RAG Application
 - Vector Database & Embedding
@@ -128,24 +127,54 @@ Use **exact** heading names when labeling entries in `temp_entries.md`. Format: 
 > **Tip:** Do not add hand-curated entries to generated index sections such as `Popular LLM Applications (GitHub Stars >= 1000)`; update the generator skill instead.
 
 ### `models_research.md`
-- Large Language Model: Landscape
+- Large Language Model Landscape
 - Large Language Model Comparison
-- Evolutionary Tree of Large Language Models
-- OpenAI Products → `### **OpenAI Products**`
-- Anthropic AI Products → `### **Anthropic AI Products**`
-- Google AI Products → `### **Google AI Products**`
-- AGI Discussion and Social Impact
+- Taxonomy of Natural Language Processing
+- LLM Evolution and Model Timelines
+- NLP Taxonomy and Research Fields
 - Large Language Model Collection
+- Architecture Comparisons
+- Foundation Model Providers
+- Domain-Specific and Specialized LLMs
+- Multimodal Models
 - Prompt Engineering and Visual Prompts
-- Finetuning
-- Context Constraints
-- Trustworthy, Safe and Secure LLM
-- Large Language Model's Abilities
+- Prompt Engineering
+- Adversarial Prompting
+- Prompt Tuner and Optimizer
+- Prompt Guides and Prompt Libraries
+- Visual Prompting and Visual Grounding
+- Large Language Model Training and Optimization
+- Pre-training and Data Preparation
+- Architecture and Inference Patterns
+- Architecture Variants, Attention, and Sparse Computation
+- Context and Long-Context Limits
+- Tokenization and LLM Numbers
+- Capabilities and Evaluation
 - Reasoning
+- Post-training and Fine-Tuning
+- Model Merging and Continual Adaptation
+- Parameter-Efficient Fine-Tuning
+- LoRA: Low-Rank Adaptation
+- Alignment and Preference Optimization
+- Quantization Techniques
+- Pruning and Sparsification
+- Knowledge Distillation
+- Memory Optimization
+- AI Adoption, Impact, and Society
+- AGI, Society, and Long-Term Impact
+- Trust, Safety, and Security
+- Business Adoption and Use Cases
+- Model Roadmaps and Products
+- OpenAI Products
+- Anthropic AI Products
+- Google AI Products
 - Survey on Large Language Models
 - Additional Topics: A Survey of LLMs
-- Business Use Cases
-- Build an LLMs from Scratch
+- LLM Research (Ranked by cite count >=150)
+- Learning Resources, Implementations, and Regional Materials
+- Build LLMs from Scratch
+- Japanese and Korean-Language Materials
+- General Learning and Supplementary Materials
 
 ### `best_practices.md`
 - The Problem with RAG
