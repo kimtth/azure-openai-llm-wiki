@@ -1,5 +1,15 @@
 ﻿# Research & Survey
 
+**Navigation Guide:**
+
+| If | Begin With |
+|---|---|
+| Learning LLM Foundations and History | [Large Language Model Landscape](#large-language-model-landscape) |
+| Comparing Model Architectures or Providers | [Large Language Model Collection](#large-language-model-collection) |
+| Improving Model Inputs and Outputs | [Prompt Engineering and Visual Prompts](#prompt-engineering-and-visual-prompts) |
+| Training, Fine-Tuning, or Optimizing Models | [Large Language Model Training and Optimization](#large-language-model-training-and-optimization) |
+| Finding Surveys, Research, or Learning Materials | [Survey and Reference](#survey-and-reference) |
+
 ### **Contents**
 
 - [Large Language Model Landscape](#large-language-model-landscape)
@@ -192,7 +202,7 @@
 
 #### **Chatbot Arena**
 
-- [Chatbot Arena🤗](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard): Benchmarking LLMs in the Wild with Elo Ratings
+- [Chatbot Arena🤗](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard):💡Benchmarking LLMs in the Wild with Elo Ratings
 
 #### **Cohere**
 
@@ -234,7 +244,7 @@
 #### **EleutherAI**
 
 - Founded in July 2020. United States tech. GPT-Neo, GPT-J, GPT-NeoX, and The Pile dataset.
-- [Pythia📑](https://arxiv.org/abs/2304.01373): How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [git](https://github.com/EleutherAI/pythia) [Apr 2023]
+- [Pythia📑](https://arxiv.org/abs/2304.01373):💡How do large language models (LLMs) develop and evolve over the course of training and change as models scale? A suite of decoder-only autoregressive language models ranging from 70M to 12B parameters [git](https://github.com/EleutherAI/pythia) [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/EleutherAI/pythia?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 #### **Google**
@@ -246,7 +256,7 @@
 - [Gemma 3](https://developers.googleblog.com/en/introducing-gemma3/):  Single GPU. Context
 length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf) [12 Mar 2025]
 - [Gemini](https://gemini.google.com/app): Rebranding: Bard -> Gemini [8 Feb 2024]
-- [Gemini 1.5✍️](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024): 1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
+- [Gemini 1.5✍️](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024):💡1 million token context window, 1 hour of video, 11 hours of audio, codebases with over 30,000 lines of code or over 700,000 words. [Feb 2024]
 - [Gemini 2 Flash✍️](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/): Multimodal LLM with multilingual inputs/outputs, real-time capabilities (Project Astra), complex task handling (Project Mariner), and developer tools (Jules) [11 Dec 2024]
 - Gemini 2.0 Flash Thinking Experimental [19 Dec 2024]
 - [Gemini 2.5✍️](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/): strong reasoning and code. 1 million token context [25 Mar 2025] -> [I/O 2025✍️](https://blog.google/technology/ai/io-2025-keynote) Deep Think, 1M-token context, Native audio output, Project Mariner: AI-powered computer control. [20 May 2025] [Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities.📑](https://arxiv.org/abs/2507.06261)
@@ -286,7 +296,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 
 #### **Meta**
 
-- Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama) / [✍️](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
+- Most OSS LLM models have been built on the [Llama](https://github.com/facebookresearch/llama)🏆 / [✍️](https://ai.meta.com/llama) / [git](https://github.com/meta-llama/llama-models)
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/llama?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) ![**github stars**](https://img.shields.io/github/stars/meta-llama/llama-models?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Llama 2🤗](https://huggingface.co/blog/llama2): 1) 40% more data than Llama. 2)7B, 13B, and 70B. 3) Trained on over 1 million human annotations. 4) double the context length of Llama 1: 4K 5) Grouped Query Attention, KV Cache, and Rotary Positional Embedding were introduced in Llama 2 [18 Jul 2023] [demo🤗](https://huggingface.co/blog/llama2#demo)
 - [Llama 3](https://llama.meta.com/llama3/): 1) 7X more data than Llama 2. 2) 8B, 70B, and 400B. 3) 8K context length [18 Apr 2024]
@@ -304,7 +314,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
 - [MAI-1✍️](https://microsoft.ai/news/two-new-in-house-models/): MAI-Voice-1, MAI-1-preview. Microsoft in-house models. [28 Aug 2025]
 - [MAI model family✍️](https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/): Seven in-house Microsoft models; MAI-Thinking-1 is a 35B-active/~1T MoE, and MAI-Code-1-Flash is a 5B-active Copilot/VS Code coding model. [Jun 2026]
 - phi-series: cost-effective small language models (SLMs) [✍️](https://azure.microsoft.com/en-us/products/phi) [git](https://aka.ms/Phicookbook): Cookbook
-- [Phi-1📑](https://arxiv.org/abs/2306.11644): Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [✍️](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
+- [Phi-1📑](https://arxiv.org/abs/2306.11644):💡Despite being small in size, phi-1 attained 50.6% on HumanEval and 55.5% on MBPP. Textbooks Are All You Need. [✍️](https://analyticsindiamag.com/microsoft-releases-1-3-bn-parameter-language-model-outperforms-llama/) [20 Jun 2023]
 - [Phi-1.5📑](https://arxiv.org/abs/2309.05463): Textbooks Are All You Need II. Phi 1.5 is trained solely on synthetic data. Despite having a mere 1 billion parameters compared to Llama 7B's much larger model size, Phi 1.5 often performs better in benchmark tests. [11 Sep 2023]
 - phi-2: open source, and 50% better at mathematical reasoning. [🤗](https://huggingface.co/microsoft/phi-2) [Dec 2023]
 - phi-3-vision (multimodal), phi-3-small, phi-3 (7b), phi-sillica (Copilot+PC designed for NPUs)
@@ -469,25 +479,25 @@ length of 128K tokens, SigLIP encoder, Reasoning [✍️](https://storage.google
   - LLaVA-1.5 achieves SoTA on a broad range of 11 tasks incl. SEED-Bench.
   - [SEED-Bench📑](https://arxiv.org/abs/2307.16125): Benchmarking Multimodal LLMs [git](https://github.com/AILab-CVC/SEED-Bench) [30 Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/AILab-CVC/SEED-Bench?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
-- [BLIP-2📑](https://arxiv.org/abs/2301.12597) [30 Jan 2023]: Salesforce Research, Querying Transformer (Q-Former) / [git](https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip2_models/blip2_qformer.py) / [🤗](https://huggingface.co/blog/blip-2) / [📺](https://www.youtube.com/watch?v=k0DAtZCCl1w) / [BLIP📑](https://arxiv.org/abs/2201.12086): [git](https://github.com/salesforce/BLIP) [28 Jan 2022]
+- [BLIP-2📑](https://arxiv.org/abs/2301.12597) [30 Jan 2023]:💡Salesforce Research, Querying Transformer (Q-Former) / [git](https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip2_models/blip2_qformer.py) / [🤗](https://huggingface.co/blog/blip-2) / [📺](https://www.youtube.com/watch?v=k0DAtZCCl1w) / [BLIP📑](https://arxiv.org/abs/2201.12086): [git](https://github.com/salesforce/BLIP) [28 Jan 2022]
  ![**github stars**](https://img.shields.io/github/stars/salesforce/BLIP?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - `Q-Former (Querying Transformer)`: A transformer model that consists of two submodules that share the same self-attention layers: an image transformer that interacts with a frozen image encoder for visual feature extraction, and a text transformer that can function as both a text encoder and a text decoder.
   - Q-Former is a lightweight transformer which employs a set of learnable query vectors to extract visual features from the frozen image encoder. It acts as an information bottleneck between the frozen image encoder and the frozen LLM.
-- [CLIP📑](https://arxiv.org/abs/2103.00020): CLIP (Contrastive Language-Image Pretraining), Trained on a large number of internet text-image pairs and can be applied to a wide range of tasks with zero-shot learning. [git](https://github.com/openai/CLIP) [26 Feb 2021]
+- [CLIP📑](https://arxiv.org/abs/2103.00020):🏆CLIP (Contrastive Language-Image Pretraining), Trained on a large number of internet text-image pairs and can be applied to a wide range of tasks with zero-shot learning. [git](https://github.com/openai/CLIP) [26 Feb 2021]
  ![**github stars**](https://img.shields.io/github/stars/openai/CLIP?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Drag Your GAN📑](https://arxiv.org/abs/2305.10973): Interactive Point-based Manipulation on the Generative Image Manifold [git](https://github.com/Zeqiang-Lai/DragGAN) [18 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/Zeqiang-Lai/DragGAN?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [GroundingDINO📑](https://arxiv.org/abs/2303.05499): DINO with Grounded Pre-Training for Open-Set Object Detection [git](https://github.com/IDEA-Research/GroundingDINO) [9 Mar 2023]
+- [GroundingDINO📑](https://arxiv.org/abs/2303.05499):💡DINO with Grounded Pre-Training for Open-Set Object Detection [git](https://github.com/IDEA-Research/GroundingDINO) [9 Mar 2023]
  ![**github stars**](https://img.shields.io/github/stars/IDEA-Research/GroundingDINO?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - Hugging Face
   - [SmolVLM🤗](https://huggingface.co/blog/smolvlm): 2B small vision language models. [🤗](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) / finetuning:[git](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) [24 Nov 2024]
-- [LLaVa📑](https://arxiv.org/abs/2304.08485): Large Language-and-Vision Assistant [git](https://llava-vl.github.io/) [17 Apr 2023]
+- [LLaVa📑](https://arxiv.org/abs/2304.08485):💡Large Language-and-Vision Assistant [git](https://llava-vl.github.io/) [17 Apr 2023]
   - Simple linear layer to connect image features into the word embedding space. A trainable projection matrix W is applied to the visual features Zv, transforming them into visual embedding tokens Hv. These tokens are then concatenated with the language embedding sequence Hq to form a single sequence. Note that Hv and Hq are not multiplied or added, but concatenated, both are same dimensionality.
 - [LLaVA-CoT📑](https://arxiv.org/abs/2411.10440): (FKA. LLaVA-o1) Let Vision Language Models Reason Step-by-Step. [git](https://github.com/PKU-YuanGroup/LLaVA-CoT) [15 Nov 2024]
 - Meta (aka. Facebook)
   - [facebookresearch/ImageBind📑](https://arxiv.org/abs/2305.05665): ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-  - [facebookresearch/segment-anything(SAM)📑](https://arxiv.org/abs/2304.02643): The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
+  - [facebookresearch/segment-anything(SAM)📑](https://arxiv.org/abs/2304.02643):🏆The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
   - [facebookresearch/SeamlessM4T📑](https://arxiv.org/abs/2308.11596): SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [✍️](https://about.fb.com/news/2023/08/seamlessm4t-ai-translation-model/) [22 Aug 2023]
   - [Chameleon📑](https://arxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
@@ -546,7 +556,7 @@ representations. `Think step by step, but only keep a minimum draft for each thi
     1. "assistant" messages as previous chat responses from the assistant.   
     - Presumably, the model is trained to treat the user messages as human messages, system messages as some system level configuration, and assistant messages as previous chat responses from the assistant. [✍️](https://blog.langchain.dev/using-chatgpt-api-to-evaluate-chatgpt/) [2 Mar 2023]
 1. [Does Prompt Formatting Have Any Impact on LLM Performance?📑](https://arxiv.org/abs/2411.10541): GPT-3.5-turbo's performance in code translation varies by 40% depending on the prompt template, while GPT-4 is more robust. [15 Nov 2024]
-1. Few-shot: [Open AI: Language Models are Few-Shot Learners📑](https://arxiv.org/abs/2005.14165): [28 May 2020]
+1. Few-shot: [Open AI: Language Models are Few-Shot Learners📑](https://arxiv.org/abs/2005.14165):🏆[28 May 2020]
 1. [FireAct📑](https://arxiv.org/abs/2310.05915): Toward Language Agent Fine-tuning. 1. This work takes an initial step to show multiple advantages of fine-tuning LMs for agentic uses. 2. Duringfine-tuning, The successful trajectories are then converted into the ReAct format to fine-tune a smaller LM. 3. This work is an initial step toward language agent fine-tuning,
 and is constrained to a single type of task (QA) and a single tool (Google search). / [git](https://fireact-agent.github.io/) [9 Oct 2023]
 1. [Graph of Thoughts (GoT)📑](https://arxiv.org/abs/2308.09687): Solving Elaborate Problems with Large Language Models [git](https://github.com/spcl/graph-of-thoughts) [18 Aug 2023]
@@ -575,22 +585,22 @@ and is constrained to a single type of task (QA) and a single tool (Google searc
 1. [RankPrompt📑](https://arxiv.org/abs/2403.12373): Self-ranking method. Direct Scoring
 independently assigns scores to each candidate, whereas RankPrompt ranks candidates through a
 systematic, step-by-step comparative evaluation. [19 Mar 2024]
-1. [ReAct📑](https://arxiv.org/abs/2210.03629): Grounding with external sources. (Reasoning and Act): Combines reasoning and acting [✍️](https://react-lm.github.io/) [6 Oct 2022]
+1. [ReAct📑](https://arxiv.org/abs/2210.03629):🏆Grounding with external sources. (Reasoning and Act): Combines reasoning and acting [✍️](https://react-lm.github.io/) [6 Oct 2022]
 1. [Re-Reading Improves Reasoning in Large Language Models📑](https://arxiv.org/abs/2309.06275): RE2 (Re-Reading), which involves re-reading the question as input to enhance the LLM's understanding of the problem. `Read the question again` [12 Sep 2023]
 1. [Recursively Criticizes and Improves (RCI)📑](https://arxiv.org/abs/2303.17491): [30 Mar 2023]
    - Critique: Review your previous answer and find problems with your answer.
    - Improve: Based on the problems you found, improve your answer.
 1. [Reflexion📑](https://arxiv.org/abs/2303.11366): Language Agents with Verbal Reinforcement Learning. 1. Reflexion that uses `verbal reinforcement` to help agents learn from prior failings. 2. Reflexion converts binary or scalar feedback from the environment into verbal feedback in the form of a textual summary, which is then added as additional context for the LLM agent in the next episode. 3. It is lightweight and doesn’t require finetuning the LLM. [20 Mar 2023]
-1. [Retrieval Augmented Generation (RAG)📑](https://arxiv.org/abs/2005.11401): To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model. [22 May 2020]
-1. [Self-Consistency (CoT-SC)📑](https://arxiv.org/abs/2203.11171): The three steps in the self-consistency method: 1) prompt the language model using CoT prompting, 2) sample a diverse set of reasoning paths from the language model, and 3) marginalize out reasoning paths to aggregate final answers and choose the most consistent answer. [21 Mar 2022]
+1. [Retrieval Augmented Generation (RAG)📑](https://arxiv.org/abs/2005.11401):🏆To address such knowledge-intensive tasks. RAG combines an information retrieval component with a text generator model. [22 May 2020]
+1. [Self-Consistency (CoT-SC)📑](https://arxiv.org/abs/2203.11171):💡The three steps in the self-consistency method: 1) prompt the language model using CoT prompting, 2) sample a diverse set of reasoning paths from the language model, and 3) marginalize out reasoning paths to aggregate final answers and choose the most consistent answer. [21 Mar 2022]
 1. [Self-Refine📑](https://arxiv.org/abs/2303.17651), which enables an agent to reflect on its own output [30 Mar 2023]
 1. [Skeleton Of Thought📑](https://arxiv.org/abs/2307.15337): Skeleton-of-Thought (SoT) reduces generation latency by first creating an answer's skeleton, then filling each skeleton point in parallel via API calls or batched decoding. [28 Jul 2023]
-1. [Tree of Thought (ToT)📑](https://arxiv.org/abs/2305.10601): Self-evaluate the progress intermediate thoughts make towards solving a problem [17 May 2023] [git](https://github.com/ysymyth/tree-of-thought-llm) / Agora: Tree of Thoughts (ToT) [git](https://github.com/kyegomez/tree-of-thoughts)
+1. [Tree of Thought (ToT)📑](https://arxiv.org/abs/2305.10601):💡Self-evaluate the progress intermediate thoughts make towards solving a problem [17 May 2023] [git](https://github.com/ysymyth/tree-of-thought-llm) / Agora: Tree of Thoughts (ToT) [git](https://github.com/kyegomez/tree-of-thoughts)
  ![**github stars**](https://img.shields.io/github/stars/ysymyth/tree-of-thought-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) ![**github stars**](https://img.shields.io/github/stars/kyegomez/tree-of-thoughts?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
 1. [Verbalized Sampling📑](https://arxiv.org/abs/2510.01171): "Generate 5 jokes about coffee and their corresponding probabilities". In creative writing, VS increases diversity by 1.6-2.1x over direct prompting. [1 Oct 2025]
 1. Zero-shot, one-shot and few-shot [ref📑](https://arxiv.org/abs/2005.14165) [28 May 2020]  
    <img src="../files/zero-one-few-shot.png" width="200">
-1. Zero-shot: [Large Language Models are Zero-Shot Reasoners📑](https://arxiv.org/abs/2205.11916): Let’s think step by step. [24 May 2022]
+1. Zero-shot: [Large Language Models are Zero-Shot Reasoners📑](https://arxiv.org/abs/2205.11916):💡Let’s think step by step. [24 May 2022]
 
 ### **Adversarial Prompting**
 
@@ -666,8 +676,11 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 ### **Pre-training and Data Preparation**
 
 - [A Bitter Lesson for Data Filtering📑](https://arxiv.org/abs/2605.19407): Large models can benefit from unfiltered low-quality data. [May 2026]
+- [Datasheets for Datasets📑](https://arxiv.org/abs/1803.09010): Proposal to document dataset motivation, composition, collection, intended uses, maintenance, and limitations. [Mar 2018]
 - [How to continue pretraining an LLM on new data](https://x.com/rasbt/status/1768629533509370279): `Continued pretraining` can be as effective as `retraining on combined datasets`. [13 Mar 2024]
+- [Scaling Laws for Neural Language Models📑](https://arxiv.org/abs/2001.08361): Establishes empirical compute, data, and parameter scaling relationships for autoregressive language models. [Jan 2020]
 - [Scaling Synthetic Data Creation with 1,000,000,000 Personas📑](https://arxiv.org/abs/2406.20094) A persona-driven data synthesis methodology using Text-to-Persona and Persona-to-Persona. [28 Jun 2024]
+- [Training Compute-Optimal Large Language Models📑](https://arxiv.org/abs/2203.15556): Chinchilla shows that compute-optimal training requires scaling model parameters and training tokens together. [Mar 2022]
 
 ### **Architecture and Inference Patterns**
 
@@ -752,6 +765,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Design2Code📑](https://arxiv.org/abs/2403.03163): How Far Are We From Automating Front-End Engineering? `64% of cases GPT-4V
 generated webpages are considered better than the original reference webpages` [5 Mar 2024]
 - [Emergent Abilities of Large Language Models📑](https://arxiv.org/abs/2206.07682): Large language models can develop emergent abilities, which are not explicitly trained but appear at scale and are not present in smaller models. . These abilities can be enhanced using few-shot and augmented prompting techniques. [✍️](https://www.jasonwei.net/blog/emergence) [15 Jun 2022]
+- [Holistic Evaluation of Language Models (HELM)📑](https://arxiv.org/abs/2211.09110): Broad, reproducible evaluation across accuracy, robustness, fairness, bias, toxicity, efficiency, and calibration. [Nov 2022] [leaderboards](https://crfm.stanford.edu/helm/)
 - [Improving mathematical reasoning with process supervision✍️](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision) [31 May 2023]
 - [Language Modeling Is Compression📑](https://arxiv.org/abs/2309.10668): Lossless data compression, while trained primarily on text, compresses ImageNet patches to 43.4% and LibriSpeech samples to 16.4% of their raw size, beating domain-specific compressors like PNG (58.5%) or FLAC (30.3%). [19 Sep 2023]
 - [Large Language Models for Software Engineering📑](https://arxiv.org/abs/2310.03533): Survey and Open Problems, Large Language Models (LLMs) for Software Engineering (SE) applications, such as code generation, testing, repair, and documentation. [5 Oct 2023]
@@ -787,7 +801,7 @@ denses the reasoning process into minimal, abstract
 
 ### **Post-training and Fine-Tuning**
 
-- [LIMA: Less Is More for Alignment📑](https://arxiv.org/abs/2305.11206): fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
+- [LIMA: Less Is More for Alignment📑](https://arxiv.org/abs/2305.11206):💡fine-tuned with the standard supervised loss on `only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling.` LIMA demonstrates remarkably strong performance, either equivalent or strictly preferred to GPT-4 in 43% of cases. [18 May 2023]
 
 #### **Model Merging and Continual Adaptation**
 
@@ -850,7 +864,7 @@ denses the reasoning process into minimal, abstract
 - [5 Techniques of LoRA ✍️](https://blog.dailydoseofds.com/p/5-llm-fine-tuning-techniques-explained): LoRA, LoRA-FA, VeRA, Delta-LoRA, LoRA+ [May 2024]
 - [DoRA📑](https://arxiv.org/abs/2402.09353): Weight-Decomposed Low-Rank Adaptation. Decomposes pre-trained weight into two components, magnitude and direction, for fine-tuning. [14 Feb 2024]
 - [Fine-tuning a GPT - LoRA](https://dataman-ai.medium.com/fine-tune-a-gpt-lora-e9b72ad4ad3): Comprehensive guide for LoRA [20 Jun 2023]
-- [LoRA: Low-Rank Adaptation of Large Language Models📑](https://arxiv.org/abs/2106.09685): LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA) [17 Jun 2021]
+- [LoRA: Low-Rank Adaptation of Large Language Models📑](https://arxiv.org/abs/2106.09685):🏆LoRA is one of PEFT technique. To represent the weight updates with two smaller matrices (called update matrices) through low-rank decomposition. [git](https://github.com/microsoft/LoRA) [17 Jun 2021]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/LoRA?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [LoRA learns less and forgets less📑](https://arxiv.org/abs/2405.09673): Compared to full training, LoRA has less learning but better retention of original knowledge. [15 May 2024]  
 - [LoRA+📑](https://arxiv.org/abs/2402.12354): Improves LoRA’s performance and fine-tuning speed by setting different learning rates for the LoRA adapter matrices. [19 Feb 2024]
@@ -870,7 +884,7 @@ denses the reasoning process into minimal, abstract
   - Apply LoRA across all layers for maximum performance.
   - Adjusting the LoRA rank is essential.
   - Multi-epoch training on static datasets may lead to overfitting and deteriorate results.
-- [QLoRA: Efficient Finetuning of Quantized LLMs📑](https://arxiv.org/abs/2305.14314): 4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [23 May 2023]
+- [QLoRA: Efficient Finetuning of Quantized LLMs📑](https://arxiv.org/abs/2305.14314):🏆4-bit quantized pre-trained language model into Low Rank Adapters (LoRA). [23 May 2023]
 - [The Expressive Power of Low-Rank Adaptation📑](https://arxiv.org/abs/2310.17513): Theoretically analyzes the expressive power of LoRA. [26 Oct 2023]
 - [Training language models to follow instructions with human feedback📑](https://arxiv.org/abs/2203.02155): [4 Mar 2022]
 
@@ -878,7 +892,7 @@ denses the reasoning process into minimal, abstract
 
 - [A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More📑](https://arxiv.org/abs/2407.16216) [23 Jul 2024]
 - [Absolute Zero: Reinforced Self-play Reasoning with Zero Data📑](https://arxiv.org/abs/2505.03335): Autonomous AI systems capable of self-improvement without human-curated data, using interpreter feedback for code generation and math problem solving. [6 May 2025]
-- [Direct Preference Optimization (DPO)📑](https://arxiv.org/abs/2305.18290): 1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
+- [Direct Preference Optimization (DPO)📑](https://arxiv.org/abs/2305.18290):🏆1. RLHF can be complex because it requires fitting a reward model and performing significant hyperparameter tuning. On the other hand, DPO directly solves a classification problem on human preference data in just one stage of policy training. DPO more stable, efficient, and computationally lighter than RLHF. 2. `Your Language Model Is Secretly a Reward Model`  [29 May 2023]
 - Direct Preference Optimization (DPO) uses two models: a trained model (or policy model) and a reference model (copy of trained model). The goal is to have the trained model output higher probabilities for preferred answers and lower probabilities for rejected answers compared to the reference model.  [✍️](https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac): RHLF vs DPO [Jan 2, 2024] / [✍️](https://pakhapoomsarapat.medium.com/forget-rlhf-because-dpo-is-what-you-actually-need-f10ce82c9b95) [1 Jul 2023]
 - [How to Beat GRPO Without Touching Model Weights✍️](https://blog.dailydoseofds.com/p/how-to-beat-grpo-without-touching): Explains GEPA as trace-reading prompt evolution for compound AI systems, contrasting it with GRPO and scalar-reward RL. [May 2026]
 - [How Top AI Labs Are Building RL Agents✍️](https://blog.dailydoseofds.com/p/how-top-ai-labs-are-building-rl-agents):💡Overview of RL agent training patterns, reward design, and verifier-driven loops.
@@ -886,7 +900,7 @@ denses the reasoning process into minimal, abstract
   - **GRPO (RLVR)**: policy + verifier → no reward model, no critic, group comparison
   - **problems**: reward models are costly + weak on exact correctness → shift works for verifiable tasks, but needs task-specific checks, struggles with subjective tasks, ignores step quality
   - **solutions**: LLM-as-judge + hybrid rewards → verifier combine verifier (objective correctness) + judge (subjective quality) + consistency signals
-- [InstructGPT: Training language models to follow instructions with human feedback📑](https://arxiv.org/abs/2203.02155): is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022]  
+- [InstructGPT: Training language models to follow instructions with human feedback📑](https://arxiv.org/abs/2203.02155):🏆is a model trained by OpenAI to follow instructions using human feedback. [4 Mar 2022]  
 - Libraries: [TRL🤗](https://huggingface.co/docs/trl/index): from the Supervised Fine-tuning step (SFT), Reward Modeling step (RM) to the Proximal Policy Optimization (PPO) step, [trlX](https://github.com/CarperAI/trlx), [Argilla](https://docs.argilla.io/en/latest/tutorials/libraries/colab.html) ![**github stars**](https://img.shields.io/github/stars/CarperAI/trlx?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) 1. pre-training on large web-scale data, 2. supervised fine-tuning on instruction data (instruction tuning), and 3. RLHF. [✍️](https://aman.ai/primers/ai/RLHF/)  
 - OpenAI Spinning Up in Deep RL!: An educational resource to help anyone learn deep reinforcement learning. [git](https://github.com/openai/spinningup) [Nov 2018] ![**github stars**](https://img.shields.io/github/stars/openai/spinningup?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ORPO (odds ratio preference optimization)📑](https://arxiv.org/abs/2403.07691): Monolithic Preference Optimization without Reference Model. New method that `combines supervised fine-tuning and preference alignment into one process` [git](https://github.com/xfactlab/orpo) [12 Mar 2024] [Fine-tune Llama 3 with ORPO✍️](https://towardsdatascience.com/fine-tune-llama-3-with-orpo-56cfab2f9ada) [Apr 2024]  
@@ -899,7 +913,7 @@ denses the reasoning process into minimal, abstract
   - `ORPO (Odds Ratio Preference Optimization)` : Combines instruction tuning and preference optimization into one training process, which is cheaper and faster.
   - `TPO (Thought Preference Optimization)`: This method generates thoughts before the final response, which are then evaluated by a Judge model for preference using Direct Preference Optimization (DPO). [14 Oct 2024]
 - [Reinforcement Learning from AI Feedback (RLAF)📑](https://arxiv.org/abs/2309.00267): Uses AI feedback to generate instructions for the model. TLDR: CoT (Chain-of-Thought, Improved), Few-shot (Not improved). Only explores the task of summarization. After training on a few thousand examples, performance is close to training on the full dataset. RLAIF vs RLHF: In many cases, the two policies produced similar summaries. [1 Sep 2023]
-- [Reinforcement Learning from Human Feedback (RLHF)📑](https://arxiv.org/abs/1909.08593)) is a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [18 Sep 2019] [🤗](https://huggingface.co/blog/rlhf) [9 Dec 2022]
+- [Reinforcement Learning from Human Feedback (RLHF)📑](https://arxiv.org/abs/1909.08593):🏆a process of pretraining and retraining a language model using human feedback to develop a scoring algorithm that can be reapplied at scale for future training and refinement. As the algorithm is refined to match the human-provided grading, direct human feedback is no longer needed, and the language model continues learning and improving using algorithmic grading alone. [18 Sep 2019] [🤗](https://huggingface.co/blog/rlhf) [9 Dec 2022]
   - `Proximal Policy Optimization (PPO)` is a reinforcement learning method using first-order optimization. It modifies the objective function to penalize large policy changes, specifically those that move the probability ratio away from 1. Aiming for TRPO (Trust Region Policy Optimization)-level performance without its complexity which requires second-order optimization.
 - [Reinforcement Learning with Verifiable Rewards✍️](https://www.promptfoo.dev/blog/rlvr-explained): Practical RLVR Tutorial [Oct 24 2025]
 - [SFT vs RL📑](https://arxiv.org/abs/2501.17161): SFT Memorizes, RL Generalizes. RL enhances generalization across text and vision, while SFT tends to memorize and overfit. [git](https://github.com/LeslieTrue/SFTvsRL) [28 Jan 2025]
@@ -937,7 +951,7 @@ denses the reasoning process into minimal, abstract
 #### **Memory Optimization**
 
 - [CPU vs GPU vs TPU](https://newsletter.theaiedge.io/p/how-to-scale-model-training): The threads are grouped into thread blocks. Each of the thread blocks has access to a fast shared memory (SRAM). All the thread blocks can also share a large global memory. High-bandwidth memories (HBM). `HBM Bandwidth: 1.5-2.0TB/s vs SRAM Bandwidth: 19TB/s ~ 10x HBM` [27 May 2024]
-- [Flash Attention📑](https://arxiv.org/abs/2205.14135): [27 May 2022]
+- [Flash Attention📑](https://arxiv.org/abs/2205.14135):🏆[27 May 2022]
   - In a GPU, A thread is the smallest execution unit, and a group of threads forms a block.
   - A block executes the same kernel (function, to simplify), with threads sharing fast SRAM memory.
   - All blocks can access the shared global HBM memory.
@@ -950,7 +964,7 @@ denses the reasoning process into minimal, abstract
 - [Lamini Memory Tuning](https://github.com/lamini-ai/Lamini-Memory-Tuning): Mixture of Millions of Memory Experts (MoME). 95% LLM Accuracy, 10x Fewer Hallucinations. [✍️](https://www.lamini.ai/blog/lamini-memory-tuning) [Jun 2024]
  ![**github stars**](https://img.shields.io/github/stars/lamini-ai/Lamini-Memory-Tuning?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Large Transformer Model Inference Optimization](https://lilianweng.github.io/posts/2023-01-10-inference-optimization/): Besides the increasing size of SoTA models, there are two main factors contributing to the inference challenge ... [10 Jan 2023]
-- [PagedAttention📑](https://arxiv.org/abs/2309.06180) : vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference. [✍️](https://vllm.ai/): vllm [12 Sep 2023]  
+- [PagedAttention📑](https://arxiv.org/abs/2309.06180):🏆vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention, 24x Faster LLM Inference. [✍️](https://vllm.ai/): vllm [12 Sep 2023]  
   - PagedAttention for a prompt “the cat is sleeping in the kitchen and the dog is”. Key-Value pairs of tensors for attention computation are stored in virtual contiguous blocks mapped to non-contiguous blocks in the GPU memory.
   - Transformer cache key-value tensors of context tokens into GPU memory to facilitate fast generation of the next token. However, these caches occupy significant GPU memory. The unpredictable nature of cache size, due to the variability in the length of each request, exacerbates the issue, resulting in significant memory fragmentation in the absence of a suitable memory management mechanism.
   - To alleviate this issue, PagedAttention was proposed to store the KV cache in non-contiguous memory spaces. It partitions the KV cache of each sequence into multiple blocks, with each block containing the keys and values for a fixed number of tokens.
@@ -1014,14 +1028,16 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [LLMs Will Always Hallucinate, and We Need to Live With This📑](https://arxiv.org/abs/2409.05746):💡LLMs cannot completely eliminate hallucinations through architectural improvements, dataset enhancements, or fact-checking mechanisms due to fundamental mathematical and logical limitations. [9 Sep 2024]
 - [Machine unlearning](https://en.m.wikipedia.org/wiki/Machine_unlearning): Machine unlearning: techniques to remove specific data from trained machine learning models.
 - [Mapping the Mind of a Large Language Model](https://cdn.sanity.io/files/4zrzovbb/website/e2ae0c997653dfd8a7cf23d06f5f06fd84ccfd58.pdf): Anthrophic, A technique called "dictionary learning" can help understand model behavior by identifying which features respond to a particular input, thus providing insight into the model's "reasoning." [✍️](https://www.anthropic.com/research/mapping-mind-language-model) [21 May 2024]
+- [Model Cards for Model Reporting📑](https://arxiv.org/abs/1810.03993):🏆Standardizes model documentation for intended use, performance characteristics, caveats, and fairness considerations. [Oct 2018]
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building Trustworthy, Safe and Secure LLM Conversational Systems [Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework/ai-rmf-development): NIST released the first complete version of the NIST AI RMF Playbook on March 30, 2023
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework/ai-rmf-development):🏆NIST released the first complete version of the NIST AI RMF Playbook on March 30, 2023
 - [OpenAI Weak-to-strong generalization📑](https://arxiv.org/abs/2312.09390):💡In the superalignment problem, humans must supervise models that are much smarter than them. The paper discusses supervising a GPT-4 or 3.5-level model using a GPT-2-level model. It finds that while strong models supervised by weak models can outperform the weak models, they still don’t perform as well as when supervised by ground truth. [git](https://github.com/openai/weak-to-strong) [14 Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/openai/weak-to-strong?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Political biases of LLMs📑](https://arxiv.org/abs/2305.08283): From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models. [15 May 2023] <br/>
   <img src="../files/political-llm.png" width="450">
 - Red Teaming: The term red teaming has historically described systematic adversarial attacks for testing security vulnerabilities. LLM red teamers should be a mix of people with diverse social and professional backgrounds, demographic groups, and interdisciplinary expertise that fits the deployment context of your AI system. [✍️](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
+- [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?📑](https://dl.acm.org/doi/10.1145/3442188.3445922):🏆Examines environmental, data-provenance, representational-harm, and deployment risks of large language models. [Mar 2021]
 - [The Foundation Model Transparency Index📑](https://arxiv.org/abs/2310.12941): A comprehensive assessment of the transparency of foundation model developers [✍️](https://crfm.stanford.edu/fmti/) [19 Oct 2023]
 - [The Instruction Hierarchy📑](https://arxiv.org/abs/2404.13208): Training LLMs to Prioritize Privileged Instructions. The OpenAI highlights the need for instruction privileges in LLMs to prevent attacks and proposes training models to conditionally follow lower-level instructions based on their alignment with higher-level instructions. [19 Apr 2024]
 - [Tracing the thoughts of a large language model✍️](https://www.anthropic.com/research/tracing-thoughts-language-model):💡`Claude 3.5 Haiku` 1. `Universal Thought Processing (Multiple Languages)`: Shared concepts exist across languages and are then translated into the respective language.  2. `Advance Planning (Composing Poetry)`: Despite generating text word by word, it anticipates rhyming words in advance.  3. `Fabricated Reasoning (Math)`: Produces plausible-sounding arguments even when given an incorrect hint. [27 Mar 2025] 
@@ -1085,10 +1101,10 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
  ![**github stars**](https://img.shields.io/github/stars/openai/finetune-transformer-lm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - GPT 2: Increased model size and parameters. 1.5 billion. [14 Feb 2019] [git](https://github.com/openai/gpt-2)
  ![**github stars**](https://img.shields.io/github/stars/openai/gpt-2?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- GPT 3: Introduced few-shot learning. 175B. [11 Jun 2020] [git](https://github.com/openai/gpt-3)
+- GPT 3: 🏆Introduced few-shot learning. 175B. [11 Jun 2020] [git](https://github.com/openai/gpt-3)
  ![**github stars**](https://img.shields.io/github/stars/openai/gpt-3?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - GPT 3.5: 3 variants each with 1.3B, 6B, and 175B parameters. [15 Mar 2022] Estimate the embedding size of OpenAI's gpt-3.5-turbo to be about 4,096
-- ChatGPT: GPT-3 fine-tuned with RLHF. 20B or 175B. `unverified` [✍️](https://www.reddit.com/r/LocalLLaMA/comments/17lvquz/clearing_up_confusion_gpt_35turbo_may_not_be_20b/) [30 Nov 2022]
+- ChatGPT: 🏆GPT-3 fine-tuned with RLHF. 20B or 175B. `unverified` [✍️](https://www.reddit.com/r/LocalLLaMA/comments/17lvquz/clearing_up_confusion_gpt_35turbo_may_not_be_20b/) [30 Nov 2022]
 - GPT 4: Mixture of Experts (MoE). 8 models with 220 billion parameters each, for a total of about 1.76 trillion parameters. `unverified` [✍️](https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/) [14 Mar 2023]
 - GPT-4V(ision) system card: [✍️](https://openai.com/research/gpt-4v-system-card) [25 Sep 2023] / [✍️](https://cdn.openai.com/papers/GPTV_System_Card.pdf)
 - [GPT-4: The Dawn of LMMs📑](https://arxiv.org/abs/2309.17421): Preliminary Explorations with GPT-4V(ision) [29 Sep 2023]
@@ -1164,12 +1180,12 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Claude Opus 4.7✍️](https://www.anthropic.com/news/claude-opus-4-7): Anthropic model release focused on advanced software engineering, long-running tasks, higher-resolution vision, and Claude Code xhigh defaults. [Apr 2026]
 - [Claude Opus 4.8✍️](https://www.anthropic.com/news/claude-opus-4-8): Stronger agentic coding and browser/computer-use model; early testers cite better judgment, tool use, and reliability. [May 2026]
 - [Claude Sonnet 4.6✍️](https://www.anthropic.com/news/claude-sonnet-4-6): Balanced performance and speed model. [17 Feb 2026]
-- [Constitutional AI (CAI)](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback): Anthropic’s training framework using a “constitution” (AI‑generated rules) to align models toward harmlessness. [15 Dec 2022]
+- [Constitutional AI (CAI)](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback):🏆Anthropic’s training framework using a “constitution” (AI‑generated rules) to align models toward harmlessness. [15 Dec 2022]
 - [Cowork](https://claude.com/product/cowork): AI agent that accesses local files to automate multi-step desktop tasks like organizing, reporting, and data extraction. [Jan 2026]
 - [Claude Code Security✍️](https://www.anthropic.com/news/claude-code-security): Claude Code on the web for scanning codebases and suggesting security patches. [Feb 2026]
 - [Detecting and preventing distillation attacks✍️](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks): 16M+ fraudulent exchanges scraped from Claude; Anthropic’s detection and prevention. [Feb 2026]
 - [Frontier AI Safety Research](https://www.anthropic.com/transparency): Foundational research into AI risks, alignment, and interpretability.
-- [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol): An open standard for connecting AI assistants to external systems (data, tools, etc.) securely and scalably. [25 Nov 2024]
+- [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol):🏆An open standard for connecting AI assistants to external systems (data, tools, etc.) securely and scalably. [25 Nov 2024]
 - [Programmatic Tool Calling](https://www.anthropic.com/engineering/advanced-tool-use): Enables Claude to write orchestration code (e.g., Python) to call multiple tools in a sequence, improving efficiency. [24 Nov 2025]
 - [Tool Use & Agent Orchestration](https://www.anthropic.com/engineering/advanced-tool-use): Advanced tool‑use framework for Claude agents, allowing dynamic API discovery and execution in complex tasks. [24 Nov 2025]
 
@@ -1400,6 +1416,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [Deep Learning cheatsheets for Stanford's CS 230](https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en): Super VIP Cheetsheet: Deep Learning [Nov 2019]
 - [DeepLearning.ai Short courses](https://www.deeplearning.ai/short-courses/): DeepLearning.ai Short courses [2023]
 - [eugeneyan blog](https://eugeneyan.com/start-here/):💡Lessons from A year of Building with LLMs, Patterns for LLM Systems. [git](https://github.com/eugeneyan/applied-ml) ![**github stars**](https://img.shields.io/github/stars/eugeneyan/applied-ml?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners): Microsoft’s 21-lesson course for building with generative AI. [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/microsoft/generative-ai-for-beginners?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Foundational concepts like Transformers, Attention, and Vector Database](https://www.linkedin.com/posts/alphasignal_can-foundational-concepts-like-transformers-activity-7163890641054232576-B1ai) [Feb 2024]
 - [Foundations of Large Language Models📑](https://arxiv.org/abs/2501.09223): a book about large language models: pre-training, generative models, prompting techniques, and alignment methods. [16 Jan 2025]
 - [gpt4free](https://github.com/xtekky/gpt4free) for educational purposes only [Mar 2023]

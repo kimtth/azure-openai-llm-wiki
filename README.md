@@ -20,7 +20,7 @@ A comprehensive, curated collection of resources for Azure OpenAI, Large Languag
 |-------------|----------------------------------------|-------------|
 | **Weights** <br/> 2022-2023 | Parametric knowledge baked into the model. <br/> `Themes: Pretraining, Scaling Laws, Fine-tuning, RLHF, Alignment, Instruction-following, Few-shot` | Foundations: [Large Language Model Landscape](section/models_research.md#large-language-model-landscape), [Large Language Model Collection](section/models_research.md#large-language-model-collection), [Foundation Model Providers](section/models_research.md#foundation-model-providers) <br/> Training: [Large Language Model Training and Optimization](section/models_research.md#large-language-model-training-and-optimization), [Model Training & Inference](section/azure.md#model-training--inference), [Training & Fine-tuning](section/applications.md#training--fine-tuning) <br/> Behavior and safety: [Trust, Safety, and Security](section/models_research.md#trust-safety-and-security), [Safety, Security & LLMOps](section/azure.md#safety-security--llmops) |
 | **Context** <br/> 2023-2024 | What the model sees at inference time. <br/> `Themes: Prompting, Chain-of-Thought, RAG, Memory, Long Context, Knowledge Injection, Context Engineering` | Prompting: [Prompt Engineering and Visual Prompts](section/models_research.md#prompt-engineering-and-visual-prompts), [Prompt Engineering & Tooling](section/azure.md#prompt-engineering--tooling) <br/> Retrieval: [RAG](section/applications.md#rag-retrieval-augmented-generation), [Azure AI Search](section/azure.md#azure-ai-search), [RAG Best Practices](section/best_practices.md#rag-best-practices) <br/> Memory and context windows: [Context and Long-Context Limits](section/models_research.md#context-and-long-context-limits), [Memory](section/applications.md#memory), [Data Processing & Memory](section/azure.md#data-processing--memory) |
-| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [AI Application](section/applications.md#ai-application), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development), [Agent Best Practices](section/best_practices.md#agent-best-practices) <br/> Protocols and tools: [Agent Protocol](section/applications.md#agent-protocol), [Coding & Research](section/applications.md#coding--research), [Skill](section/applications.md#skill), [Harness](section/applications.md#harness), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) <br/> Apps and operations: [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions), [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Learning Resources & Workshops](section/azure.md#learning-resources--workshops), [Code Samples & Workshops](section/azure.md#code-samples--workshops) |
+| **Harness** <br/> 2025-2026 | How the agent acts in the real world. <br/> `Themes: Function Calling, Tool Ecosystems, MCP, Skills, Workflow Graphs, Multi-agent, A2A protocols, Orchestration, Agent Infrastructure, Security` | Agent runtime: [AI Application](section/applications.md#ai-application), [Agent Frameworks](section/azure.md#agent-frameworks), [Agent Development](section/azure.md#agent-development), [Agent Best Practices](section/best_practices.md#agent-best-practices) <br/> Protocols and tools: [Agent Protocol](section/applications.md#agent-protocol), [Coding & Research](section/applications.md#coding--research), [Skill](section/applications.md#skill), [Harness](section/applications.md#harness), [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) <br/> Apps and operations: [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models), [LLMOps](section/tools_extra.md#llmops-large-language-model-operations), [Learning Resources & Workshops](section/azure.md#learning-resources--workshops), [Code Samples & Workshops](section/azure.md#code-samples--workshops) |
 
 Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dailydoseofds.com/p/evolution-of-agent-landscape-from)
 
@@ -38,7 +38,7 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Cache](section/applications.md#cache)
   - [Data & Analytics Agents](section/applications.md#data--analytics-agents)
   - [Data Processing & OCR](section/applications.md#data-processing--ocr)
-  - [Desktop AI assistant](section/applications.md#desktop-ai-assistant)
+  - [Desktop AI Assistant](section/applications.md#desktop-ai-assistant)
   - [Memory](section/applications.md#memory)
   - [Model Gateway](section/applications.md#model-gateway)
   - [Model Serving & Local Runtimes](section/applications.md#model-serving--local-runtimes)
@@ -114,19 +114,18 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
 
 **[⬆ back to top](#azure-openai--llm-wiki)**
 
-## 4. Tools, Datasets, and Evaluation
-🛠️ AI Tools, Training Data, Datasets & Evaluation Methods
+## 4. Datasets, Evaluation, and Extras
+🛠️ Training Data, Datasets & Evaluation Methods
 
-- **Tools**
-  - [General AI Tools and Extensions](section/tools_extra.md#general-ai-tools-and-extensions)
-  - [LLM for Robotics](section/tools_extra.md#llm-for-robotics)
-  - [Awesome Demo](section/tools_extra.md#awesome-demo)
 - **Data**
   - [Datasets for LLM Training](section/tools_extra.md#datasets-for-llm-training)
 - **Evaluation**
   - [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models)
-  - [LLM Evalution Benchmarks](section/tools_extra.md#llm-evalution-benchmarks)
+  - [LLM Evaluation Benchmarks](section/tools_extra.md#llm-evaluation-benchmarks)
   - [LLMOps: Large Language Model Operations](section/tools_extra.md#llmops-large-language-model-operations)
+- **Extras**
+  - [LLM for Robotics](section/tools_extra.md#llm-for-robotics)
+  - [Awesome Demo](section/tools_extra.md#awesome-demo)
 
 **[⬆ back to top](#azure-openai--llm-wiki)**
 
@@ -147,6 +146,27 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Proposals & Glossary](section/best_practices.md#proposals--glossary)
 
 **[⬆ back to top](#azure-openai--llm-wiki)**
+
+## 🧭 Start Here
+
+| Category | Goal | Suggested path |
+|----------|------|----------------|
+| RAG | Explore RAG patterns | [RAG](section/applications.md#rag-retrieval-augmented-generation) → [GraphRAG](section/applications.md#graphrag) → [RAG Application](section/applications.md#rag-application) → [RAG Best Practices](section/best_practices.md#rag-best-practices) → [RAG Research](section/best_practices.md#rag-research) |
+| AI Engineering | Build an AI Engineering Workflow | [RAG](section/applications.md#rag-retrieval-augmented-generation) → [AI Application](section/applications.md#ai-application) → [Agent Protocol](section/applications.md#agent-protocol) → [Coding](section/applications.md#coding) → [Deep Research](section/applications.md#deep-research) → [Domain-Specific Agents](section/applications.md#domain-specific-agents) → [Skill](section/applications.md#skill) → [Harness](section/applications.md#harness) |
+| Skills & Harnesses | Extend a Coding Agent | [Skill](section/applications.md#skill) → [Harness](section/applications.md#harness) → [Coding](section/applications.md#coding) → [Tool Use](section/best_practices.md#tool-use) → [Evaluation Metrics](section/tools_extra.md#evaluation-metrics) |
+| Agents | Design an agent workflow | [Top Agent Frameworks](section/applications.md#top-agent-frameworks) → [Agent Design Patterns](section/best_practices.md#agent-design-patterns) → [Tool Use](section/best_practices.md#tool-use) → [Memory](section/applications.md#memory) → [Agent Research](section/best_practices.md#agent-research) |
+| Data & Analytics | Build a data or analytics agent | [Data & Analytics Agents](section/applications.md#data--analytics-agents) → [Data Processing & OCR](section/applications.md#data-processing--ocr) → [Memory](section/applications.md#memory) → [Tool Use](section/best_practices.md#tool-use) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) |
+| Local LLMs | Build a local or self-hosted LLM application | [Large Language Model Collection](section/models_research.md#large-language-model-collection) → [Model Serving & Local Runtimes](section/applications.md#model-serving--local-runtimes) → [Model Gateway](section/applications.md#model-gateway) → [UI & No-Code Tool](section/applications.md#ui--no-code-tool) → [Observability & LLMOps](section/applications.md#observability--llmops) |
+| MCP & Integration | Build MCP-enabled tools | [Model Context Protocol](section/applications.md#model-context-protocol-mcp) → [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) → [Safety, Security & LLMOps](section/azure.md#safety-security--llmops) → [Agent Best Practices](section/best_practices.md#agent-best-practices) |
+| Developer Agents | Build coding or research agents | [Coding](section/applications.md#coding) → [Deep Research](section/applications.md#deep-research) → [Skill](section/applications.md#skill) → [Harness](section/applications.md#harness) → [Tool Calling & Agentic](section/tools_extra.md#tool-calling--agentic) |
+| Azure / RAG | Build an Azure RAG application | [Azure OpenAI & Foundry Overview](section/azure.md#azure-openai--foundry-overview) → [Azure AI Search](section/azure.md#azure-ai-search) → [RAG Solution Design](section/best_practices.md#rag-solution-design) → [Sample Applications](section/azure.md#sample-applications) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) |
+| Azure / Agents | Build an Azure agent | [Agent Frameworks](section/azure.md#agent-frameworks) → [Agent Design Patterns](section/best_practices.md#agent-design-patterns) → [Model Context Protocol](section/applications.md#model-context-protocol-mcp) → [Agent Development](section/azure.md#agent-development) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) |
+| Microsoft 365 | Build a Microsoft 365 agent | [Microsoft 365 Agent Development](section/azure.md#microsoft-365-agent-development) → [Copilot Product Catalog](section/azure.md#copilot-product-catalog) → [Dev Tools, MCP & Extensions](section/azure.md#dev-tools-mcp--extensions) → [Agent Development](section/azure.md#agent-development) |
+| Production | Operate an AI application in production | [Architecture Patterns & Use Cases](section/azure.md#architecture-patterns--use-cases) → [Safety, Security & LLMOps](section/azure.md#safety-security--llmops) → [LLMOps](section/tools_extra.md#llmops-large-language-model-operations) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) |
+| Research | Learn the LLM landscape | [Large Language Model Landscape](section/models_research.md#large-language-model-landscape) → [Survey and Reference](section/models_research.md#survey-and-reference) → [LLM Research](section/models_research.md#llm-research-ranked-by-cite-count-150) |
+| Model Development | Train or fine-tune a model | [Large Language Model Collection](section/models_research.md#large-language-model-collection) → [Model Training & Inference](section/azure.md#model-training--inference) → [Training & Fine-tuning](section/applications.md#training--fine-tuning) → [Datasets for LLM Training](section/tools_extra.md#datasets-for-llm-training) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) |
+| Multimodal | Build a multimodal application | [Multimodal Models](section/models_research.md#multimodal-models) → [Data Processing & OCR](section/applications.md#data-processing--ocr) → [RAG Application](section/applications.md#rag-application) → [Vision & Multimodal](section/tools_extra.md#vision--multimodal) |
+| Evaluation | Choose and benchmark a model | [Large Language Model Collection](section/models_research.md#large-language-model-collection) → [Architecture Comparisons](section/models_research.md#architecture-comparisons) → [Evaluating Large Language Models](section/tools_extra.md#evaluating-large-language-models) → [LLM Evaluation Benchmarks](section/tools_extra.md#llm-evaluation-benchmarks) → [Evaluation Metrics](section/tools_extra.md#evaluation-metrics) |
 
 ## 📖 Legend & Notation
 
