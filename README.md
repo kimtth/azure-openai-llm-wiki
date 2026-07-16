@@ -172,9 +172,8 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
 
 | Symbol | Meaning | Symbol | Meaning |
 |--------|---------|--------|---------|
-| ✍️ | Blog post / Documentation | ![**github**](https://img.shields.io/github/stars/kimtth/awesome-azure-openai-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) | GitHub repository |
-| 🗄️ | Archived files | 💡🏆 | Recommend |
-| 🗣️ | Source citation | 📺 | Video content |
+| ![**github**](https://img.shields.io/github/stars/kimtth/awesome-azure-openai-llm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) | GitHub repository | 🗄️ | Archived files |
+| 💡🏆 | Recommend | 📺 | Video content |
 | 📑 |  Academic paper | 🤗 | Huggingface |
 
 > **Info:** Applications that have been archived or have had no commits for more than 12 months are listed in [applications.old.md](section/applications.old.md).

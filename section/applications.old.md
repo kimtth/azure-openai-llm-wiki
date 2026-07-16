@@ -20,9 +20,9 @@ Moved from `tools_extra.md` because these entries are stale or outside this repo
 - [Awesome AI Tools](https://github.com/aliammari1/awesome-ai-tools): Curated collection of 100+ AI tools. [Jun 2023]
 - Airtable list: [Generative AI Index](https://airtable.com/appssJes9NF1i5xCn/shrH4REIgddv8SzUo/tbl5dsXdD1P859QLO) | [AI Startups](https://airtable.com/appSpVXpylJxMZiWS/shr6nfE9FOHp17IjG/tblL3ekHZfkm3p6YT)
 - [AlphaXiv](https://www.arxiv.org): an interactive extension of arXiv
-- [AniDoc](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [✍️](https://yihao-meng.github.io/AniDoc_demo/) ![**github stars**](https://img.shields.io/github/stars/yihao-meng/AniDoc?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [AniDoc](https://github.com/yihao-meng/AniDoc): Animation Creation Made Easier [Ani Doc demo](https://yihao-meng.github.io/AniDoc_demo/) ![**github stars**](https://img.shields.io/github/stars/yihao-meng/AniDoc?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Cherry Studio](https://github.com/CherryHQ/cherry-studio): a desktop client that supports multiple LLM providers. ![**github stars**](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- Content writing: <http://jasper.ai/chat> / [🗣️](https://twitter.com/slow_developer/status/1671530676045094915)
+- Content writing: <http://jasper.ai/chat> / [Twitter Post](https://twitter.com/slow_developer/status/1671530676045094915)
 - [Duck.ai](https://www.duck.ai/):💡Private, Useful, and Optional AI: DuckDuckGo offers free access to popular AI chatbots at Duck.ai
 - Edge and Chrome Extension & Plugin
   - [MaxAI.me](https://www.maxai.me/)

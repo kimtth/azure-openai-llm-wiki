@@ -45,7 +45,7 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 ```
 or (for entries that use dash bullets in that section):
 ```
-- [Name✍️](url): Description. [Mon YYYY]
+- [Name](url): Description. [Mon YYYY]
 ```
 
 - The legend symbol is appended **inside the link text**, immediately after the name (no space before the symbol).
@@ -58,14 +58,14 @@ or (for entries that use dash bullets in that section):
 ```markdown
 1. [Auto-Claude](https://github.com/AndyMik90/Auto-Claude): Autonomous multi-session AI coding. [Dec 2025] ![**github stars**](...)
 1. [Towards AI Search Paradigm📑](https://arxiv.org/abs/2506.17188): Modular 4-agent system using DAGs for retrieval-intensive search. [Jun 2025]
-- [Claude Code Security✍️](https://www.anthropic.com/news/claude-code-security): Claude Code on the web for scanning codebases. [Feb 2026]
+- [Claude Code Security](https://www.anthropic.com/news/claude-code-security): Claude Code on the web for scanning codebases. [Feb 2026]
 ```
 
 ### Legend Symbols
 
 | Symbol | Meaning |
 |--------|---------|
-| ✍️ | Blog post / documentation / web page |
+|  | Blog post / documentation / web page |
 | 📑 | Academic paper (arXiv) |
 | 📺 | Video content |
 | 🤗 | Hugging Face resource |
@@ -223,7 +223,7 @@ python code/add_github_stars.py --input temp_with_desc.md --in-place
 
 ## Common Pitfalls (Lessons Learned)
 
-1. **Wrong legend placement:** In `azure.md`, do not use emoji markers at all. In all other files, the symbol is appended to the link name inside `[Name✍️]`. Never mix these two formats.
+1. **Wrong legend placement:** In `azure.md`, do not use emoji markers at all. In all other files, the symbol is appended to the link name inside `[Name]`. Never mix these two formats.
 
 2. **Wrong section names:** Section labels in `temp_entries.md` must match the actual heading text in the target file exactly. Check the file before assigning. Do not invent new section names.
 
