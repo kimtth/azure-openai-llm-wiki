@@ -1,6 +1,12 @@
 # Best Practices
 
-This file curates blogs (✍️), best practices, architectural guidance, and implementation tips from across all LLM topics.
+**Navigation Guide:**
+
+| If | Begin With |
+|---|---|
+| Designing a RAG System | [The Problem with RAG](#the-problem-with-rag) → [RAG Solution Design](#rag-solution-design) → [RAG Research](#rag-research) |
+| Designing an Agent System | [Agent Design Patterns](#agent-design-patterns) → [Agent Research](#agent-research) → [Tool Use](#tool-use) |
+| Preparing an Application for Production | [RAG Solution Design](#rag-solution-design) or [Agent Design Patterns](#agent-design-patterns) → [Tool Use](#tool-use) → [LLMOps](tools_extra.md#llmops-large-language-model-operations) |
 
 ### **Contents**
 
@@ -24,10 +30,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Seven Failure Points When Engineering a Retrieval Augmented Generation System📑](https://arxiv.org/abs/2401.05856): 1. Missing Content, 2. Missed the Top Ranked Documents, 3. Not in Context, 4. Not Extracted, 5. Wrong Format, 6. Incorrect Specificity, 7. Lack of Thorough Testing [11 Jan 2024]
 - Solving the core challenges of Retrieval-Augmented Generation [✍️](https://towardsdatascience.com/12-rag-pain-points-and-proposed-solutions-43709939a28c) [Feb 2024] <br/>
   <img src="../files/rag-12-pain-points-solutions.jpg" width="500">
-- The Problem with RAG
-  - A question is not semantically similar to its answers. Cosine similarity may favor semantically similar texts that do not contain the answer.
-  - Semantic similarity gets diluted if the document is too long. Cosine similarity may favor short documents with only the relevant information.
-  - The information needs to be contained in one or a few documents. Information that requires aggregations by scanning the whole data.
+- The Problem with RAG 📑💡: Traditional RAG struggles because 1. questions are often not semantically similar to their answers, 2. long documents dilute embedding similarity, and 3. retrieval assumes the answer exists within one or a few documents rather than requiring aggregation across many documents.
 
 ### **RAG Solution Design**
 
@@ -42,7 +45,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [From Zero to Hero: Proven Methods to Optimize RAG for Production✍️](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/from-zero-to-hero-proven-methods-to-optimize-rag-for-production/4450040): ColBERT (Token-level embedding), [CoPali](https://huggingface.co/vidore/colpali-v1.2)(Extends ColBERT's multi-vector retrieval and late interaction from text to vision), RAPTOR, HyDE, Re-Ranking and Fusion [Sep 2025]
 - [Galileo eBook](https://www.rungalileo.io/mastering-rag): 200 pages content. Mastering RAG. [Sep 2024]
 - [Genie: Uber's Gen AI On-Call Copilot✍️](https://www.uber.com/blog/genie-ubers-gen-ai-on-call-copilot/) [10 Oct 2024]
-- [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html): The official website for the classic textbook (free to read online) "Introduction to Information Retrieval" by Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
+- [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html):🏆The official website for the classic textbook (free to read online) "Introduction to Information Retrieval" by Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
 - [Introduction to Large-Scale Similarity Search: HNSW, IVF, LSH✍️](https://blog.gopenai.com/introduction-to-large-scale-similarity-search-part-one-hnsw-ivf-lsh-677bf193ab07) [28 Sep 2024]
 - [LangChain RAG from scratch](https://github.com/langchain-ai/rag-from-scratch) [📺](https://youtube.com/playlist?list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x&feature=shared) [Jan 2024]
 ![**github stars**](https://img.shields.io/github/stars/langchain-ai/rag-from-scratch?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -50,9 +53,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [LlamIndex Building Performant RAG Applications for Production](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/#building-performant-rag-applications-for-production)
 - [Papers with code](https://paperswithcode.com/method/rag): RAG
 - [RAG at scale✍️](https://medium.com/@neum_ai/retrieval-augmented-generation-at-scale-building-a-distributed-system-for-synchronizing-and-eaa29162521): Building a distributed system for synchronizing and ingesting billions of text embeddings [28 Sep 2023]
-- RAG context relevancy metric: Ragas, TruLens, DeepEval [✍️](https://towardsdatascience.com/the-challenges-of-retrieving-and-evaluating-relevant-context-for-rag-e362f6eaed34) [Jun 2024]
-  - `Context Relevancy (in Ragas) = S / Total number of sentences in retrieved context`
-  - `Contextual Relevancy (in DeepEval) = Number of Relevant Statements / Total Number of Statements`
+- [RAG context relevancy metrics✍️](https://towardsdatascience.com/the-challenges-of-retrieving-and-evaluating-relevant-context-for-rag-e362f6eaed34): **Ragas**, **TruLens**, and **DeepEval** measure retrieval quality using context relevancy, e.g., **Ragas**: `Relevant Sentences / Total Retrieved Sentences` and **DeepEval**: `Relevant Statements / Total Statements` [Jun 2024]
 - [RAG-driven Generative AI](https://github.com/Denis2054/RAG-Driven-Generative-AI): Retrieval Augmented Generation (RAG) code for Generative AI with LlamaIndex, Deep Lake, and Pinecone [Apr 2024] ![**github stars**](https://img.shields.io/github/stars/Denis2054/RAG-Driven-Generative-AI?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [What AI Engineers Should Know about Search](https://softwaredoug.com/blog/2024/06/25/what-ai-engineers-need-to-know-search) [25 Jun 2024]
 
@@ -64,19 +65,11 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Active Retrieval Augmented Generation📑💡](https://arxiv.org/abs/2305.06983) : FLARE anticipates next sentences; retrieves/regenerates when token confidence is low. [May 2023] [git](https://github.com/jzbjyb/FLARE/blob/main/src/templates.py)
 - [ARAG📑](https://arxiv.org/abs/2506.21931): Agentic Retrieval Augmented Generation for Personalized Recommendation [27 Jun 2025]
 - [Astute RAG📑](https://arxiv.org/abs/2410.07176): adaptively extracts essential information from LLMs, consolidates internal and external knowledge with source awareness, and finalizes answers based on reliability. [9 Oct 2024]
-- [Benchmarking Large Language Models in Retrieval-Augmented Generation📑💡](https://arxiv.org/abs/2309.01431): Retrieval-Augmented Generation Benchmark (RGB) assesses 4 key abilities. [Sep 2023]:
-  - <details>
-    <summary>Expand</summary>
-
-    1. Noise robustness (External documents contain noises, struggled with noise above 80%)  
-    1. Negative rejection (External documents are all noises, Highest rejection rate was only 45%)  
-    1. Information integration (Difficulty in summarizing across multiple documents, Highest accuracy was 60-67%)  
-    1. Counterfactual robustness (Failed to detect factual errors in counterfactual external documents.)  
-    </details>
-1. [Beyond RAG for Agent Memory: Retrieval by Decoupling and Aggregation📑](https://arxiv.org/abs/2602.02007): xMemory — decouples and aggregates agent memories for compact, non-redundant retrieval. [Feb 2026]
+- [Benchmarking Large Language Models in Retrieval-Augmented Generation📑💡](https://arxiv.org/abs/2309.01431): The Retrieval-Augmented Generation Benchmark (RGB) evaluates four key RAG capabilities—noise robustness (performance degrades with >80% noisy documents), negative rejection (best rejection rate: 45%), information integration (best accuracy: 60–67% across multiple documents), and counterfactual robustness (models consistently failed to detect factual errors in counterfactual retrieved documents) [Sep 2023]:
+- [Beyond RAG for Agent Memory: Retrieval by Decoupling and Aggregation📑](https://arxiv.org/abs/2602.02007): xMemory — decouples and aggregates agent memories for compact, non-redundant retrieval. [Feb 2026]
 - [CAG: Cache-Augmented Generation📑](https://arxiv.org/abs/2412.15605): Preloading Information and Pre-computed KV cache for low latency and minimizing retrieval errors [20 Dec 2024] [git](https://github.com/hhhuang/CAG) ![**github stars**](https://img.shields.io/github/stars/hhhuang/CAG?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [CoRAG📑](https://arxiv.org/abs/2501.14342): Chain-of-Retrieval Augmented Generation. RAG: single search -> CoRAG: Iterative search and reasoning [24 Jan 2025]
-- [Corrective Retrieval Augmented Generation (CRAG)📑](https://arxiv.org/abs/2401.15884): Retrieval Evaluator assesses the retrieved documents and categorizes them as Correct, Ambiguous, or Incorrect. For Ambiguous and Incorrect documents, the method uses Web Search to improve the quality of the information. The refined and distilled documents are then used to generate the final output. [29 Jan 2024] CRAG implementation by LangGraph [git](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb)
+- [Corrective Retrieval Augmented Generation (CRAG)📑](https://arxiv.org/abs/2401.15884):💡Retrieval Evaluator assesses the retrieved documents and categorizes them as Correct, Ambiguous, or Incorrect. For Ambiguous and Incorrect documents, the method uses Web Search to improve the quality of the information. The refined and distilled documents are then used to generate the final output. [29 Jan 2024] CRAG implementation by LangGraph [git](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb)
 - [CRAG: Comprehensive RAG Benchmark📑](https://arxiv.org/abs/2406.04744): a factual question answering benchmark of 4,409 question-answer pairs and mock APIs to simulate web and Knowledge Graph (KG) search [✍️](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) [7 Jun 2024]
 - [Discuss-RAG📑](https://arxiv.org/abs/2504.21252): Agent-Led Discussions for Better RAG in Medical QA [30 Apr 2025]
 - [FreshLLMs📑](https://arxiv.org/abs/2310.03214): Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://github.com/freshllms/freshqa) [5 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/freshllms/freshqa?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -84,7 +77,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [From Local to Global: GraphRAG📑💡](https://arxiv.org/abs/2404.16130): Entity graph + community summaries to scale QFS over large corpora. [Apr 2024]
 - [HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation📑](https://arxiv.org/abs/2507.05714): fine-tunes LLMs to learn a three-level hierarchical reasoning process — Filtering: select relevant information; Combination: synthesize across documents; RAG-specific reasoning: infer using retrieved documents plus internal knowledge. [8 Jul 2025]
 - [HippoRAG📑💡](https://arxiv.org/abs/2405.14831): RAG + Long-Term Memory (Knowledge Graphs) + Personalized PageRank. [23 May 2024]
-- [Hyde📑](https://arxiv.org/abs/2212.10496): Hypothetical Document Embeddings. `zero-shot (generate a hypothetical document) -> embedding -> avg vectors -> retrieval` [20 Dec 2022]
+- [Hyde📑](https://arxiv.org/abs/2212.10496):💡Hypothetical Document Embeddings. `zero-shot (generate a hypothetical document) -> embedding -> avg vectors -> retrieval` [20 Dec 2022]
 - [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning📑](https://arxiv.org/abs/2401.06532): INTERS covers 21 search tasks across three categories: query understanding, document understanding, and query-document relationship understanding. The dataset is designed for instruction tuning, a method that fine-tunes LLMs on natural language instructions. [git](https://github.com/DaoD/INTERS) [12 Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/DaoD/INTERS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Is Grep All You Need?📑](https://arxiv.org/abs/2605.15184): Agent harness study comparing grep and vector retrieval. [May 2026]
@@ -96,7 +89,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [RAG for LLMs📑💡](https://arxiv.org/abs/2312.10997): Survey: Naive → Advanced → Modular RAG; practices and benchmarks. [Dec 2023]
 - [RAG vs Fine-tuning📑](https://arxiv.org/abs/2401.08406): Pipelines, Tradeoffs, and a Case Study on Agriculture. [16 Jan 2024]
 - [RARE: Retrieval-Augmented Reasoning Modeling 📑](https://arxiv.org/abs/2503.23513): LLM Training from static knowledge storage (memorization) to reasoning-focused. Combining domain knowledge and thinking (Knowledge Remembering & Contextualized Reasoning). 20% increase in accuracy on tasks like PubMedQA and CoVERT. [30 Mar 2025]
-- [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval📑](https://arxiv.org/abs/2401.18059): Introduce a novel approach to retrieval-augmented language models by constructing a recursive tree structure from documents. [git](https://github.com/run-llama/llama_index/blob/main/llama-index-packs/llama-index-packs-raptor/README.md) `pip install llama-index-packs-raptor` / [git](https://github.com/profintegra/raptor-rag) [31 Jan 2024] ![**github stars**](https://img.shields.io/github/stars/profintegra/raptor-rag?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval📑](https://arxiv.org/abs/2401.18059):💡Introduce a novel approach to retrieval-augmented language models by constructing a recursive tree structure from documents. [git](https://github.com/run-llama/llama_index/blob/main/llama-index-packs/llama-index-packs-raptor/README.md) `pip install llama-index-packs-raptor` / [git](https://github.com/profintegra/raptor-rag) [31 Jan 2024] ![**github stars**](https://img.shields.io/github/stars/profintegra/raptor-rag?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [RECOMP: Improving Retrieval-Augmented LMs with Compressors📑](https://arxiv.org/abs/2310.04408): 1. We propose RECOMP (Retrieve, Compress, Prepend), an intermediate step which compresses retrieved documents into a textual summary prior to prepending them to improve retrieval-augmented language models (RALMs). 2. We present two compressors – an `extractive compressor` which selects useful sentences from retrieved documents and an `abstractive compressor` which generates summaries by synthesizing information from multiple documents. 3. Both compressors are trained. [6 Oct 2023]
 - [REFRAG: Rethinking RAG based Decoding📑](https://arxiv.org/abs/2509.01092): Meta. Compress (chunk → single embedding) → Sense/Select (RL policy picks relevant chunks) → Expand (Selective expansion). 16× Longer Contexts and Up to 31× Faster RAG Decoding. [1 Sep 2025] [✍️](https://x.com/_avichawla/status/1977260787027919209)
 - [Retrieval Augmented Generation (RAG) and Beyond📑](https://arxiv.org/abs/2409.14924):🏆The paper classifies user queries into four levels—`explicit, implicit, interpretable rationale, and hidden rationale`—and highlights the need for external data integration and fine-tuning LLMs for specialized tasks. [23 Sep 2024]
@@ -187,6 +180,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [AI Coding Assistants Haven’t Sped up Delivery Because Coding Was Never the Bottleneck✍️](https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/): AI shifts bottlenecks upstream to specification, alignment, and verification. [Mar 2026]
 - [Azure AI Foundry Agent Ochestration Patterns ](https://aifoundry.app/patterns): Prompt Chaining, Routing, Parallelization, Orchestrator, Evaluator-optimizer
 - [Decision Matrix: API vs MCP Tools✍️](https://techcommunity.microsoft.com/blog/azurearchitectureblog/decision-matrix-api-vs-mcp-tools-%E2%80%94-the-great-integration-showdown-%F0%9F%A5%8A/4499385): Tradeoffs between REST APIs, SDKs, and MCP tools. [Jul 2025]
+- [Effective context engineering for AI agents✍️](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): Treat context as a finite attention budget; covers high-signal context, compaction, persistent notes, and subagent isolation for long-horizon work. [29 Sep 2025]
 - [Beyond the Gang of Four: Practical Design Patterns for Modern AI Systems✍️](https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/): **Prompting & Context:** Few-Shot Prompting, Role Prompting, Chain-of-Thought, RAG; **Responsible AI:** Output Guardrails, Model Critic; **UX:** Contextual Guidance, Editable Output, Iterative Exploration; **AI-Ops:** Metrics-Driven AI-Ops, Prompt-Model-Config Versioning; **Optimization:** Prompt Caching, Dynamic Batching, Intelligent Model Routing. [15 My 2025]
 - [Building effective agents✍️](https://www.anthropic.com/engineering/building-effective-agents):💡Anthrophic. Prompt Chaining, Sequential LLM calls, Routing, Input classification, Parallelization, Concurrent execution, Orchestrator-Workers, Delegation, Evaluator-Optimizer, Feedback loops, Iterative refinement [19 Dec 2024]
 - [Enterprise Spec-Driven Development✍️](https://www.infoq.com/articles/enterprise-spec-driven-development): Specs as the source of truth for enterprise AI delivery. [Feb 2026]
@@ -195,11 +189,13 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 - [Generative AI Design Patterns for Agentic AI Systems](https://github.com/microsoft/azure-genai-design-patterns): Design Patterns for Agentic solutions in Azure [May 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/azure-genai-design-patterns?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Google AI Agents Whitepaper](https://www.kaggle.com/whitepaper-agents) [12 Nov 2024]
+- [Harness design for long-running application development✍️](https://www.anthropic.com/engineering/harness-design-long-running-apps): Planner, generator, and evaluator roles; artifact-based handoffs; independent QA; and simplifying the harness as models improve. [24 Mar 2026]
 - [How Anthropic Built a Multi-Agent Research System✍️](https://blog.bytebytego.com/p/how-anthropic-built-a-multi-agent): Lead Researcher agent to coordinate specialized subagents, enabling dynamic, parallelized research and citation verification [17 Sep 2025]
 - [How to write a great agents.md: Lessons from over 2,500 repositories✍️](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/): How to write effective agents.md files for GitHub Copilot with practical tips [19 Nov 2025]
 - [How we built our multi-agent research system✍️](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Language Agent Tree Search Method (LATS)](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [LLM Powered Autonomous Agents✍️](https://lilianweng.github.io/posts/2023-06-23-agent/): Conceptual agent architecture spanning planning, reflection, memory, retrieval, and tool use. [23 Jun 2023]
 - [Taxonomy of failure modes in AI agents ✍️](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
 - [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
@@ -212,7 +208,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [A Practical Approach for Building Production-Grade Conversational Agents with Workflow Graphs📑](https://arxiv.org/abs/2505.23006): DAG-based workflows for e-commerce tasks with response and loss masking. [May 2025]
 1. [Advances and Challenges in Foundation Agents📑](https://arxiv.org/abs/2504.01990): Brain-inspired to evolutionary, collaborative, and safe agent systems. [Mar 2025]
 1. [Agent-as-a-Judge📑](https://arxiv.org/abs/2410.10934): Evaluate agents with agents; DevAI benchmark of 55 development tasks. [Oct 2024]
-1. [AgentBench📑](https://arxiv.org/abs/2308.03688): Evaluates LLM-as-Agent reasoning and decision-making. [Aug 2023]
+1. [AgentBench📑](https://arxiv.org/abs/2308.03688):💡Evaluates LLM-as-Agent reasoning and decision-making. [Aug 2023]
 1. [Agentic Context Engineering📑](https://arxiv.org/abs/2510.04618): ACE lets models self-improve by evolving contexts without fine-tuning. [Oct 2025]
 1. [Agentic Reasoning for Large Language Models📑](https://arxiv.org/abs/2601.12538): Survey of agentic reasoning: planning, self-evolution, and multi-agent collaboration. [Jan 2026]
 1. [Agentic World Modeling📑](https://arxiv.org/pdf/2604.22748): Survey of world-model foundations, capabilities, laws, and agentic applications. [Apr 2026]
@@ -224,7 +220,7 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 1. [AutoHarness📑](https://arxiv.org/abs/2603.03329): Auto-synthesized code harnesses eliminate illegal agent actions. [Mar 2026]
 1. [Awesome-LLM-Reasoning-Failures](https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures): Curated papers on discovery, analysis, and mitigation of LLM reasoning failures. ![**github stars**](https://img.shields.io/github/stars/Peiyang-Song/Awesome-LLM-Reasoning-Failures?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 1. [Codified Context: Infrastructure for AI Agents in a Complex Codebase📑](https://arxiv.org/abs/2602.20478): Persistent memory, specialist agents, and spec docs for large codebases. [Feb 2026]
-1. [Cognitive Architectures for Language Agents📑](https://arxiv.org/abs/2309.02427): CoALA with procedural, semantic, and episodic memory. [Sep 2023]
+1. [Cognitive Architectures for Language Agents📑](https://arxiv.org/abs/2309.02427):💡CoALA with procedural, semantic, and episodic memory. [Sep 2023]
 1. [Darwin Godel Machine📑](https://arxiv.org/abs/2505.22954): Self-modifying agents evolve via SWE-bench/Polyglot validation. [May 2025]
 1. **Darwin Gödel Machine (DGM)**: **Humans direct agents** through fixed prompts, evaluation logic, and self-improvement rules, while agents recursively improve themselves within this human-designed framework.
 **Darwin Gödel Machine-Hyperagents (DGM-H)**: **Agents direct agents**, forming self-organizing internal societies that evolve their own coordination, memory, and improvement strategies.
@@ -295,38 +291,39 @@ This file curates blogs (✍️), best practices, architectural guidance, and im
 
 - Agentic Design Patterns [✍️](https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-reflection/) [Mar 2024]
 - Reflection: LLM self-evaluates to improve.
-  - [Self-Refine📑](https://arxiv.org/abs/2303.17651) [30 Mar 2023]
-  - [Reflexion📑](https://arxiv.org/abs/2303.11366) [20 Mar 2023]
-  - [CRITIC📑](https://arxiv.org/abs/2305.11738) [19 May 2023]
+  > - [Self-Refine📑](https://arxiv.org/abs/2303.17651):💡[30 Mar 2023]
+  > - [Reflexion📑](https://arxiv.org/abs/2303.11366):💡[20 Mar 2023]
+  > - [CRITIC📑](https://arxiv.org/abs/2305.11738) [19 May 2023]
 - Tool use: LLM uses tools for information gathering, action, or data processing.
-  - [Gorilla📑](https://arxiv.org/abs/2305.15334) [24 May 2023]
-  - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
-  - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
-  - [Executable Code Actions Elicit Better LLM Agents📑](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
+  > - [Gorilla📑](https://arxiv.org/abs/2305.15334) [24 May 2023]
+  > - [MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action📑](https://arxiv.org/abs/2303.11381) [20 Mar 2023]
+  > - [Efficient Tool Use with Chain-of-Abstraction Reasoning📑](https://arxiv.org/abs/2401.17464) [30 Jan 2024]
+  > - [Executable Code Actions Elicit Better LLM Agents📑](https://arxiv.org/abs/2402.01030): CodeAct. Unlike fixed-format outputs such as JSON or text, CodeAct enables LLMs to produce executable Python code as actions. [1 Feb 2024]
 - Planning: LLM devises and executes multistep plans to reach goals.
-  - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://arxiv.org/abs/2201.11903) [28 Jan 2022]
-  - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
-  - [Understanding the planning of LLM agents: A survey📑](https://arxiv.org/abs/2402.02716) [5 Feb 2024]
+  > - [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models📑](https://arxiv.org/abs/2201.11903):🏆[28 Jan 2022]
+  > - [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face📑](https://arxiv.org/abs/2303.17580) [30 Mar 2023]
+  > - [Understanding the planning of LLM agents: A survey📑](https://arxiv.org/abs/2402.02716) [5 Feb 2024]
 - Multi-agent collaboration: Multiple AI agents collaborate for better solutions.
-  - [Communicative Agents for Software Development📑](https://arxiv.org/abs/2307.07924) [16 Jul 2023]
-  - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://arxiv.org/abs/2308.08155) [16 Aug 2023]
-  - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://arxiv.org/abs/2308.00352) [1 Aug 2023]
+  > - [Communicative Agents for Software Development📑](https://arxiv.org/abs/2307.07924) [16 Jul 2023]
+  > - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation📑](https://arxiv.org/abs/2308.08155) [16 Aug 2023]
+  > - [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework📑](https://arxiv.org/abs/2308.00352) [1 Aug 2023]
 
 ### **Tool Use: LLM to Master APIs**
 
 - [APIGen📑](https://arxiv.org/abs/2406.18518): Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets [26 Jun 2024]
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard_live.html) V2 [Aug 2024]
 - [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models📑](https://arxiv.org/abs/2304.09842): Different tasks require different tools, and different models show different tool preferences—e.g., ChatGPT favors image captioning, while GPT-4 leans toward knowledge retrieval. [Tool transition](https://chameleon-llm.github.io/) [19 Apr 2023]
-- [Gorilla: An API store for LLMs📑](https://arxiv.org/abs/2305.15334): Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [git](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![**github stars**](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
-  - Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.  
-  - Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.  
+- [Gorilla: An API store for LLMs📑](https://arxiv.org/abs/2305.15334):💡Gorilla: Large Language Model Connected with Massive APIs. 1,645 APIs. [git](https://github.com/ShishirPatil/gorilla) [24 May 2023] ![**github stars**](https://img.shields.io/github/stars/ShishirPatil/gorilla?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
+  > - Used GPT-4 to generate a dataset of instruction-api pairs for fine-tuning Gorilla.  
+  > - Used the abstract syntax tree (AST) of the generated code to match with APIs in the database and test set for evaluation purposes.  
   > Another user asked how Gorilla compared to LangChain; Patil replied: LangChain is a terrific project that tries to teach agents how to use tools using prompting. Our take on this is that prompting is not scalable if you want to pick between 1000s of APIs. So Gorilla is a LLM that can pick and write the semantically and syntactically correct API for you to call! A drop in replacement into LangChain! [cite✍️](https://www.infoq.com/news/2023/07/microsoft-gorilla/) [04 Jul 2023]  
-- [Toolformer📑](https://arxiv.org/abs/2302.04761): Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
+- [Toolformer📑](https://arxiv.org/abs/2302.04761):🏆Language Models That Can Use Tools, by MetaAI. Finetuned GPT-J to learn 5 tools. [git](https://github.com/lucidrains/toolformer-pytorch) [9 Feb 2023]
  ![**github stars**](https://img.shields.io/github/stars/lucidrains/toolformer-pytorch?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ToolLLM📑](https://arxiv.org/abs/2307.16789): : Facilitating Large Language Models to Master 16000+ Real-world APIs [git](https://github.com/OpenBMB/ToolBench) [31 Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/OpenBMB/ToolBench?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ToolShed📑](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
-- [Voyager: An Open-Ended Embodied Agent with Large Language Models📑](https://arxiv.org/abs/2305.16291): The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
+- [Voyager: An Open-Ended Embodied Agent with Large Language Models📑](https://arxiv.org/abs/2305.16291):💡The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
+- [Writing effective tools for agents — with agents✍️](https://www.anthropic.com/engineering/writing-tools-for-agents): Evaluation-first tool design, clear tool boundaries, namespacing, token-efficient responses, and agent-optimized tool descriptions. [11 Sep 2025]
 
 ### **Proposals & Glossary**
 

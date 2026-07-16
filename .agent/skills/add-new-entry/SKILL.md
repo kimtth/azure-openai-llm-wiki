@@ -187,7 +187,6 @@ Use **exact** heading names when labeling entries in `temp_entries.md`. Format: 
 - Proposals & Glossary
 
 ### `tools_extra.md`
-- General AI Tools and Extensions
 - LLM for Robotics
 - Awesome demo
 - Datasets for LLM Training
