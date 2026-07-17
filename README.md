@@ -142,6 +142,8 @@ Refereces: [DailyDoseOfDS - *Evolution of the Agent Landscape*](https://blog.dai
   - [Agent Research](section/best_practices.md#agent-research)
   - [**Agent Research** (Ranked by cite count >=100)](section/best_practices.md#agent-research-ranked-by-cite-count-100)
   - [Tool Use: LLM to Master APIs](section/best_practices.md#tool-use)
+- **Security**
+  - [Security and Governance](section/best_practices.md#security-and-governance)
 - **Reference**
   - [Proposals & Glossary](section/best_practices.md#proposals--glossary)
 
