@@ -495,23 +495,23 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
   - Simple linear layer to connect image features into the word embedding space. A trainable projection matrix W is applied to the visual features Zv, transforming them into visual embedding tokens Hv. These tokens are then concatenated with the language embedding sequence Hq to form a single sequence. Note that Hv and Hq are not multiplied or added, but concatenated, both are same dimensionality.
 - [LLaVA-CoT📑](https://arxiv.org/abs/2411.10440): (FKA. LLaVA-o1) Let Vision Language Models Reason Step-by-Step. [git](https://github.com/PKU-YuanGroup/LLaVA-CoT) [15 Nov 2024]
 - Meta (aka. Facebook)
-  - [facebookresearch/ImageBind📑](https://arxiv.org/abs/2305.05665): ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
+  > - [facebookresearch/ImageBind📑](https://arxiv.org/abs/2305.05665): ImageBind One Embedding Space to Bind Them All [git](https://github.com/facebookresearch/ImageBind) [9 May 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-  - [facebookresearch/segment-anything(SAM)📑](https://arxiv.org/abs/2304.02643):🏆The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
+  > - [facebookresearch/segment-anything(SAM)📑](https://arxiv.org/abs/2304.02643):🏆The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. [git](https://github.com/facebookresearch/segment-anything) [5 Apr 2023]
  ![**github stars**](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-  - [facebookresearch/SeamlessM4T📑](https://arxiv.org/abs/2308.11596): SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [22 Aug 2023]
-  - [Chameleon📑](https://arxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
-  - [Models and libraries](https://ai.meta.com/resources/models-and-libraries/)
+  > - [facebookresearch/SeamlessM4T📑](https://arxiv.org/abs/2308.11596): SeamlessM4T is the first all-in-one multilingual multimodal AI translation and transcription model. This single model can perform speech-to-text, speech-to-speech, text-to-speech, and text-to-text translations for up to 100 languages depending on the task. [22 Aug 2023]
+  > - [Chameleon📑](https://arxiv.org/abs/2405.09818): Early-fusion token-based mixed-modal models capable of understanding and generating images and text in any arbitrary sequence. The unified approach uses fully token-based representations for both image and textual modalities. no vision-encoder. [16 May 2024]
+  > - [Models and libraries](https://ai.meta.com/resources/models-and-libraries/)
 - Microsoft
-  - Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1📑](https://arxiv.org/abs/2302.14045): [27 Feb 2023]
-  - [Kosmos-2📑](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World [26 Jun 2023]
-  - [Kosmos-2.5📑](https://arxiv.org/abs/2309.11419): A Multimodal Literate Model [20 Sep 2023]
-  - [BEiT-3📑](https://arxiv.org/abs/2208.10442): Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks [22 Aug 2022]
-  - [TaskMatrix.AI📑](https://arxiv.org/abs/2303.16434): TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
-  - [Florence-2📑](https://arxiv.org/abs/2311.06242): Advancing a unified representation for various vision tasks, demonstrating specialized models like `CLIP` for classification, `GroundingDINO` for object detection, and `SAM` for segmentation. [🤗](https://huggingface.co/microsoft/Florence-2-large) [10 Nov 2023]
-  - [LLM2CLIP](https://github.com/microsoft/LLM2CLIP): Directly integrating LLMs into CLIP causes catastrophic performance drops. We propose LLM2CLIP, a caption contrastive fine-tuning method that leverages LLMs to enhance CLIP. [7 Nov 2024]
-  - [Florence-VL📑](https://arxiv.org/abs/2412.04424): A multimodal large language model (MLLM) that integrates Florence-2. [5 Dec 2024]
-  - [Magma](https://github.com/microsoft/Magma): Magma: A Foundation Model for Multimodal AI Agents [18 Feb 2025]
+  > - Language Is Not All You Need: Aligning Perception with Language Models [Kosmos-1📑](https://arxiv.org/abs/2302.14045): [27 Feb 2023]
+  > - [Kosmos-2📑](https://arxiv.org/abs/2306.14824): Grounding Multimodal Large Language Models to the World [26 Jun 2023]
+  > - [Kosmos-2.5📑](https://arxiv.org/abs/2309.11419): A Multimodal Literate Model [20 Sep 2023]
+  > - [BEiT-3📑](https://arxiv.org/abs/2208.10442): Image as a Foreign Language: BEiT Pretraining for Vision and Vision-Language Tasks [22 Aug 2022]
+  > - [TaskMatrix.AI📑](https://arxiv.org/abs/2303.16434): TaskMatrix connects ChatGPT and a series of Visual Foundation Models to enable sending and receiving images during chatting. [29 Mar 2023]
+  > - [Florence-2📑](https://arxiv.org/abs/2311.06242): Advancing a unified representation for various vision tasks, demonstrating specialized models like `CLIP` for classification, `GroundingDINO` for object detection, and `SAM` for segmentation. [🤗](https://huggingface.co/microsoft/Florence-2-large) [10 Nov 2023]
+  > - [LLM2CLIP](https://github.com/microsoft/LLM2CLIP): Directly integrating LLMs into CLIP causes catastrophic performance drops. We propose LLM2CLIP, a caption contrastive fine-tuning method that leverages LLMs to enhance CLIP. [7 Nov 2024]
+  > - [Florence-VL📑](https://arxiv.org/abs/2412.04424): A multimodal large language model (MLLM) that integrates Florence-2. [5 Dec 2024]
+  > - [Magma](https://github.com/microsoft/Magma): Magma: A Foundation Model for Multimodal AI Agents [18 Feb 2025]
 - [MiniCPM-o](https://github.com/OpenBMB/MiniCPM-o): A GPT-4o Level MLLM for Vision, Speech and Multimodal Live Streaming on Your Phone [15 Jan 2025]
 - [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V): MiniCPM-Llama3-V 2.5: A GPT-4V Level Multimodal LLM on Your Phone [Jan 2024]
  ![**github stars**](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -667,6 +667,8 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 ## **Large Language Model Training and Optimization**
 
+- [Megatron-LM📑](https://arxiv.org/abs/1909.08053): NVIDIA's GPU-optimized framework for training Transformer models at scale, providing tensor, pipeline, data, expert, and context parallelism through [Megatron Core](https://github.com/NVIDIA/Megatron-LM). [Sep 2019]
+ ![**github stars**](https://img.shields.io/github/stars/NVIDIA/Megatron-LM?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [New LLM Pre-training and Post-training Paradigms](https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training): Dataset -> Preprocessing -> Pre-training -> Post-training -> Optimization [17 Aug 2024] <br/>
 - [The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs📑](https://arxiv.org/abs/2408.13296): An Exhaustive Review of Technologies, Research, Best Practices  [23 Aug 2024]
 
@@ -683,6 +685,8 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 
 #### **Architecture Variants, Attention, and Sparse Computation**
 
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding📑](https://arxiv.org/abs/1810.04805):🏆Encoder-only Transformer that learns bidirectional representations through masked-language modeling, establishing a widely adopted pre-training and fine-tuning pattern for language understanding. [11 Oct 2018]
+- [T5: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer📑](https://arxiv.org/abs/1910.10683):🏆Frames every NLP task as text-to-text generation, systematically studies transfer learning choices, and introduces the C4 pretraining corpus. [23 Oct 2019]
 - [Simplifying Transformer Blocks📑](https://arxiv.org/abs/2311.01906): Simplifie Transformer. Removed several block components, including skip connections, projection/value matrices, sequential sub-blocks and normalisation layers without loss of training speed. [3 Nov 2023]
 - [Differential Transformer📑](https://arxiv.org/abs/2410.05258): Amplifies attention to the relevant context while minimizing noise using two separate softmax attention mechanisms. [7 Oct 2024]
 - [ModernBERT📑](https://arxiv.org/abs/2412.13663): ModernBERT can handle sequences up to 8,192 tokens and utilizes sparse attention mechanisms to efficiently manage longer context lengths. [18 Dec 2024]
@@ -745,6 +749,8 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Numbers every LLM Developer should know](https://github.com/ray-project/llm-numbers) [18 May 2023] ![**github stars**](https://img.shields.io/github/stars/ray-project/llm-numbers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)  
   <img src="../files/llm-numbers.png" height="360">
 - [Open AI Tokenizer](https://platform.openai.com/tokenizer): GPT-3, Codex Token counting
+- [SentencePiece📑](https://arxiv.org/abs/1808.06226):💡Language-independent subword tokenizer and detokenizer that learns BPE or unigram models directly from raw text, eliminating a language-specific pre-tokenization dependency. [git](https://github.com/google/sentencepiece) [17 Aug 2018]
+ ![**github stars**](https://img.shields.io/github/stars/google/sentencepiece?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [tiktoken](https://github.com/openai/tiktoken): BPE tokeniser for use with OpenAI's models. Token counting. [Tiktokenizer.vercel.app](https://tiktokenizer.vercel.app/):💡online app [Dec 2022]
  ![**github stars**](https://img.shields.io/github/stars/openai/tiktoken?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Tokencost](https://github.com/AgentOps-AI/tokencost): Token price estimates for 400+ LLMs [Dec 2023]
@@ -1002,37 +1008,25 @@ denses the reasoning process into minimal, abstract
 
 ### **Trust, Safety, and Security**
 
-- [20 AI Governance Papers📑](https://www.linkedin.com/posts/oliver-patel_12-papers-was-not-enough-to-do-the-field-activity-7282005401032613888-6Ck4?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy) [Jan 2025]
 - [A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models📑](https://arxiv.org/abs/2401.01313): A compre
 hensive survey of over thirty-two techniques developed to mitigate hallucination in LLMs [2 Jan 2024]
 - [AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y): Model Collapse. We find that indiscriminate use of model-generated content in training causes irreversible defects in the resulting models, in which tails of the original content distribution disappear. [24 Jul 2024]
 - [Alignment Faking](https://www.anthropic.com/research/alignment-faking): LLMs may pretend to align with training objectives during monitored interactions but revert to original behaviors when unmonitored. [18 Dec 2024] | demo: [How to alignment faking](https://alignment.anthropic.com/2024/how-to-alignment-faking/) | [Alignment Science Blog](https://alignment.anthropic.com/)
-- [An Approach to Technical AGI Safety and Security📑](https://arxiv.org/abs/2504.01849): Google DeepMind. We focus on technical solutions to `misuse` and `misalignment`, two of four key AI risks (the others being `mistakes` and `structural risks`). To prevent misuse, we limit access to dangerous capabilities through detection and security. For misalignment, we use two defenses: model-level alignment via training and oversight, and system-level controls like monitoring and access restrictions. [Taking a responsible path to agi](https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/) [2 Apr 2025]
 - [Anthropic Many-shot jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking): simple long-context attack, Bypassing safety guardrails by bombarding them with unsafe or harmful questions and answers. [3 Apr 2024]
 - [Extracting Concepts from GPT-4](https://openai.com/index/extracting-concepts-from-gpt-4/): Sparse Autoencoders identify key features, enhancing the interpretability of language models like GPT-4. They extract 16 million interpretable features using GPT-4's outputs as input for training. [6 Jun 2024]
 - [FactTune📑](https://arxiv.org/abs/2311.08401): A procedure that enhances the factuality of LLMs without the need for human feedback. The process involves the fine-tuning of a separated LLM using methods such as DPO and RLAIF, guided by preferences generated by [FActScore](https://github.com/shmsw25/FActScore). [14 Nov 2023] `FActScore` works by breaking down a generation into a series of atomic facts and then computing the percentage of these atomic facts by a reliable knowledge source. ![**github stars**](https://img.shields.io/github/stars/shmsw25/FActScore?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/): Google DeepMind, Frontier Safety Framework, a set of protocols designed to identify and mitigate potential harms from future AI systems. [17 May 2024]
-- [Google SAIF](https://www.saif.google/): Secure AI Framework for managing AI security risks. [05 Nov 2025]
-- [Guardrails Hub](https://hub.guardrailsai.com): Guardrails for common LLM validation use cases
 - [Hallucination Index](https://www.galileo.ai/hallucinationindex): w.r.t. RAG, Testing LLMs with short (≤5k), medium (5k–25k), and long (40k–100k) contexts to evaluate improved RAG performance　[Nov 2023]
 - [Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard/): Evaluate how often an LLM introduces hallucinations when summarizing a document. [Nov 2023]
 - [Hallucinations📑](https://arxiv.org/abs/2311.05232): A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions [9 Nov 2023]
 - [Large Language Models Reflect the Ideology of their Creators📑](https://arxiv.org/abs/2410.18417): When prompted in Chinese, all LLMs favor pro-Chinese figures; Western LLMs similarly align more with Western values, even in English prompts. [24 Oct 2024]
-- [LlamaFirewall](https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall): Scans and filters AI inputs to block prompt injections and malicious content. [29 Apr 2025]
 - [LLMs Will Always Hallucinate, and We Need to Live With This📑](https://arxiv.org/abs/2409.05746):💡LLMs cannot completely eliminate hallucinations through architectural improvements, dataset enhancements, or fact-checking mechanisms due to fundamental mathematical and logical limitations. [9 Sep 2024]
 - [Machine unlearning](https://en.m.wikipedia.org/wiki/Machine_unlearning): Machine unlearning: techniques to remove specific data from trained machine learning models.
 - [Mapping the Mind of a Large Language Model](https://cdn.sanity.io/files/4zrzovbb/website/e2ae0c997653dfd8a7cf23d06f5f06fd84ccfd58.pdf): Anthrophic, A technique called "dictionary learning" can help understand model behavior by identifying which features respond to a particular input, thus providing insight into the model's "reasoning." [Mapping mind language model](https://www.anthropic.com/research/mapping-mind-language-model) [21 May 2024]
-- [Model Cards for Model Reporting📑](https://arxiv.org/abs/1810.03993):🏆Standardizes model documentation for intended use, performance characteristics, caveats, and fairness considerations. [Oct 2018]
-- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building Trustworthy, Safe and Secure LLM Conversational Systems [Apr 2023]
- ![**github stars**](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework/ai-rmf-development):🏆NIST released the first complete version of the NIST AI RMF Playbook on March 30, 2023
 - [OpenAI Weak-to-strong generalization📑](https://arxiv.org/abs/2312.09390):💡In the superalignment problem, humans must supervise models that are much smarter than them. The paper discusses supervising a GPT-4 or 3.5-level model using a GPT-2-level model. It finds that while strong models supervised by weak models can outperform the weak models, they still don’t perform as well as when supervised by ground truth. [git](https://github.com/openai/weak-to-strong) [14 Dec 2023]
  ![**github stars**](https://img.shields.io/github/stars/openai/weak-to-strong?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Political biases of LLMs📑](https://arxiv.org/abs/2305.08283): From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models. [15 May 2023] <br/>
   <img src="../files/political-llm.png" width="450">
-- Red Teaming: The term red teaming has historically described systematic adversarial attacks for testing security vulnerabilities. LLM red teamers should be a mix of people with diverse social and professional backgrounds, demographic groups, and interdisciplinary expertise that fits the deployment context of your AI system. [Red teaming](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
 - [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?📑](https://dl.acm.org/doi/10.1145/3442188.3445922):🏆Examines environmental, data-provenance, representational-harm, and deployment risks of large language models. [Mar 2021]
-- [The Foundation Model Transparency Index📑](https://arxiv.org/abs/2310.12941): A comprehensive assessment of the transparency of foundation model developers [The Foundation Model Transparency Index](https://crfm.stanford.edu/fmti/) [19 Oct 2023]
 - [The Instruction Hierarchy📑](https://arxiv.org/abs/2404.13208): Training LLMs to Prioritize Privileged Instructions. The OpenAI highlights the need for instruction privileges in LLMs to prevent attacks and proposes training models to conditionally follow lower-level instructions based on their alignment with higher-level instructions. [19 Apr 2024]
 - [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model):💡`Claude 3.5 Haiku` 1. `Universal Thought Processing (Multiple Languages)`: Shared concepts exist across languages and are then translated into the respective language.  2. `Advance Planning (Composing Poetry)`: Despite generating text word by word, it anticipates rhyming words in advance.  3. `Fabricated Reasoning (Math)`: Produces plausible-sounding arguments even when given an incorrect hint. [27 Mar 2025] 
 - [Trustworthy LLMs📑](https://arxiv.org/abs/2308.05374): Comprehensive overview for assessing LLM trustworthiness; Reliability, safety, fairness, resistance to misuse, explainability and reasoning, adherence to social norms, and robustness. [10 Aug 2023]
@@ -1055,18 +1049,14 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Senior Developers Ship nearly 2.5x more AI Code than Junior Counterparts](https://www.fastly.com/blog/senior-developers-ship-more-ai-code): About a third of senior developers (10+ years of experience) say over half their shipped code is AI-generated [27 Aug 2025]
 - [SignalFire State of Talent Report 2025](https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025): 1. Entry‑level hiring down sharply since 2019 (-50%) 2. Anthropic dominate mid/senior talent retention 3. Roles labeled “junior” filled by seniors, blocking grads. [20 May 2025]
 - State of AI
-  - [Retool: Status of AI](https://retool.com/reports): A Report on AI In Production [State of AI 2023](https://retool.com/reports/state-of-ai-2023) -> [State of AI 2024](https://retool.com/blog/state-of-ai-h1-2024)
-  - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/) [ⓒ2023]
-    > 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models.
-  - [Standford AI Index Annual Report](https://aiindex.stanford.edu/report/)
-  - [State of AI Report 2024](https://www.stateof.ai/2024) [10 Oct 2024]
-  - [State of AI Report 2025](https://www.stateof.ai/2025-report-launch) [9 Oct 2025]
-  - [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
+  > - [Retool: Status of AI](https://retool.com/reports): A Report on AI In Production [State of AI 2023](https://retool.com/reports/state-of-ai-2023) -> [State of AI 2024](https://retool.com/blog/state-of-ai-h1-2024)
+  > - [The State of Generative AI in the Enterprise](https://menlovc.com/2023-the-state-of-generative-ai-in-the-enterprise-report/): 1. 96% of AI spend is on inference, not training. 2. Only 10% of enterprises pre-trained own models. 3. 85% of models in use are closed-source. 4. 60% of enterprises use multiple models. [ⓒ2023]
+- [LangChain > State of AI Agents](https://www.langchain.com/stateofaiagents) [19 Dec 2024]
 - [Stanford HAI AI Index Report](https://hai.stanford.edu/ai-index)
-  - [The 2023 AI Index Report](https://hai.stanford.edu/ai-index/2023-ai-index-report) [3 Apr 2023]
-  - [The 2024 AI Index Report](https://hai.stanford.edu/ai-index/2024-ai-index-report) [15 Apr 2024]
-  - [The 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report) [7 Apr 2025]
-  - [The 2026 AI Index Report](https://hai.stanford.edu/ai-index/2026-ai-index-report) [13 Apr 2026]
+  > - [The 2023 AI Index Report](https://hai.stanford.edu/ai-index/2023-ai-index-report) [3 Apr 2023]
+  > - [The 2024 AI Index Report](https://hai.stanford.edu/ai-index/2024-ai-index-report) [15 Apr 2024]
+  > - [The 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report) [7 Apr 2025]
+  > - [The 2026 AI Index Report](https://hai.stanford.edu/ai-index/2026-ai-index-report) [13 Apr 2026]
 - [The leading generative AI companies](https://iot-analytics.com/leading-generative-ai-companies/):💡GPU: Nvidia 92% market share, Generative AI foundational models and platforms: Microsoft 32% market share, Generative AI services: no single dominant [4 Mar 2025]
 - [Trends – Artiﬁcial Intelligence](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf):💡Issued by Bondcap VC. 340 Slides. ChatGPT’s 800 Million Users, 99% Cost Drop within 17 months. [May 2025]
 - [Who is using AI to code? Global diffusion and impact of generative AI📑](https://arxiv.org/abs/2506.08945): AI wrote 30% of Python functions by U.S. devs in 2024. Adoption is uneven globally but boosts output and innovation. New coders use AI more, and usage drives $9.6–$14.4B in U.S. annual value. [10 Jun 2025]
@@ -1210,15 +1200,15 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 ![**github stars**](https://img.shields.io/github/stars/HKUSTDial/NL2SQL_Handbook?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [A Survey of Transformers📑](https://arxiv.org/abs/2106.04554):[8 Jun 2021]
 - Google AI Research Recap
-  - [Gemini](https://blog.google/technology/ai/google-gemini-ai) [06 Dec 2023] Three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU [Gemini 1 report](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf)
-  - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
-  - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
-  - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
-  - [Large Language Models: A Survey📑](https://arxiv.org/abs/2402.06196): 🏆Well organized visuals and contents [9 Feb 2024]
+  > - [Gemini](https://blog.google/technology/ai/google-gemini-ai) [06 Dec 2023] Three different sizes: Ultra, Pro, Nano. With a score of 90.0%, Gemini Ultra is the first model to outperform human experts on MMLU [Gemini 1 report](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf)
+  > - [Google AI Research Recap (2022 Edition)](https://ai.googleblog.com/2023/01/google-research-2022-beyond-language.html)
+  > - [Themes from 2021 and Beyond](https://ai.googleblog.com/2022/01/google-research-themes-from-2021-and.html)
+  > - [Looking Back at 2020, and Forward to 2021](https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html)
+  > - [Large Language Models: A Survey📑](https://arxiv.org/abs/2402.06196): 🏆Well organized visuals and contents [9 Feb 2024]
 - [LLM Post-Training: A Deep Dive into Reasoning Large Language Models📑](https://arxiv.org/abs/2502.21321): [git](https://github.com/mbzuai-oryx/Awesome-LLM-Post-training) [28 Feb 2025]
 - [LLM Research Papers: The 2024 List](https://sebastianraschka.com/blog/2024/llm-research-papers-the-2024-list.html) [29 Dec 2024]
 - Microsoft Research Recap
-  - [Research at Microsoft 2023](https://www.microsoft.com/en-us/research/blog/research-at-microsoft-2023-a-year-of-groundbreaking-ai-advances-and-discoveries/): A year of groundbreaking AI advances and discoveries
+  > - [Research at Microsoft 2023](https://www.microsoft.com/en-us/research/blog/research-at-microsoft-2023-a-year-of-groundbreaking-ai-advances-and-discoveries/): A year of groundbreaking AI advances and discoveries
 - [Noteworthy LLM Research Papers of 2024](https://sebastianraschka.com/blog/2025/llm-research-2024.html) [23 Jan 2025]
 
 ### **Additional Topics: A Survey of LLMs**

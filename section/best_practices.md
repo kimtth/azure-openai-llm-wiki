@@ -21,6 +21,7 @@
   - [Agent Research (Ranked by cite count >=100)](#agent-research-ranked-by-cite-count-100)
   - [Reflection, Tool Use, Planning and Multi-agent collaboration](#reflection-tool-use-planning-and-multi-agent-collaboration)
   - [Tool Use: LLM to Master APIs](#tool-use)
+- [Security and Governance](#security-and-governance)
 - [Proposals & Glossary](#proposals--glossary)
 
 ## **RAG Best Practices**
@@ -72,6 +73,8 @@
 - [Corrective Retrieval Augmented Generation (CRAG)📑](https://arxiv.org/abs/2401.15884):💡Retrieval Evaluator assesses the retrieved documents and categorizes them as Correct, Ambiguous, or Incorrect. For Ambiguous and Incorrect documents, the method uses Web Search to improve the quality of the information. The refined and distilled documents are then used to generate the final output. [29 Jan 2024] CRAG implementation by LangGraph [git](https://github.com/langchain-ai/langgraph/blob/main/examples/rag/langgraph_crag.ipynb)
 - [CRAG: Comprehensive RAG Benchmark📑](https://arxiv.org/abs/2406.04744): a factual question answering benchmark of 4,409 question-answer pairs and mock APIs to simulate web and Knowledge Graph (KG) search [7 Jun 2024]
 - [Discuss-RAG📑](https://arxiv.org/abs/2504.21252): Agent-Led Discussions for Better RAG in Medical QA [30 Apr 2025]
+- [Dense Passage Retrieval for Open-Domain Question Answering📑](https://arxiv.org/abs/2004.04906):🏆Introduces the dual-encoder dense retriever that learns query and passage embeddings, establishing a core retrieval pattern for modern RAG systems. [git](https://github.com/facebookresearch/DPR) [10 Apr 2020]
+ ![**github stars**](https://img.shields.io/github/stars/facebookresearch/DPR?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [FreshLLMs📑](https://arxiv.org/abs/2310.03214): Fresh Prompt, Google search first, then use results in prompt. Our experiments show that FreshPrompt outperforms both competing search engine-augmented prompting methods such as Self-Ask (Press et al., 2022) as well as commercial systems such as Perplexity.AI. [git](https://github.com/freshllms/freshqa) [5 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/freshllms/freshqa?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Graph Retrieval-Augmented Generation: A Survey📑](https://arxiv.org/abs/2408.08921) [15 Aug 2024]
 - [From Local to Global: GraphRAG📑💡](https://arxiv.org/abs/2404.16130): Entity graph + community summaries to scale QFS over large corpora. [Apr 2024]
@@ -195,7 +198,7 @@
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system): Anthrophic. [13 Jun 2025]
 - [Hugging Face Agents Course](https://github.com/huggingface/agents-course) 🤗 Hugging Face Agents Course. [Jan 2025]
 - [Language Agent Tree Search Method (LATS)](https://github.com/lapisrocks/LanguageAgentTreeSearch): LATS leverages an external environment and an MCTS (Monte Carlo Tree Search)-based search [6 Oct 2023] ![**github stars**](https://img.shields.io/github/stars/lapisrocks/LanguageAgentTreeSearch?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/): Conceptual agent architecture spanning planning, reflection, memory, retrieval, and tool use. [23 Jun 2023]
+- [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/):💡Conceptual agent architecture spanning planning, reflection, memory, retrieval, and tool use. [23 Jun 2023]
 - [Taxonomy of failure modes in AI agents ](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents): Microsoft AI Red Team (AIRT) has categorized identified failure modes into two types: novel and existing, under the pillars of safety and security. [24 Apr 2025]
 - [The Different Ochestration Frameworks](https://newsletter.theaiedge.io/p/implementing-a-language-agent-tree):💡Orchestration frameworks for LLM applications: Micro-orchestration / Macro-orchestration / Agentic Design Frameworks / Optimizer frameworks [11 Oct 2024]
 - [The Last Mile Problem: Why Your AI Models Stumble Before the Finish Line](https://solutionsreview.com/data-management/the-last-mile-problem-why-your-ai-models-stumble-before-the-finish-line/): According to Gartner, by 2025, at least 30 percent of GenAI projects will be abandoned after the POC stage. [25 Oct 2024]
@@ -324,6 +327,23 @@
 - [ToolShed📑](https://arxiv.org/abs/2410.14594): Toolshed Knowledge Bases & Advanced RAG-Tool Fusion, optimized for storing and retrieving tools in a vector database for large-scale agents. To address the limitations of primary methods, two approaches are: 1. tuning-based tool calling via LLM fine-tuning, and 2. retriever-based tool selection and planning. [18 Oct 2024]
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models📑](https://arxiv.org/abs/2305.16291):💡The 'Skill Library' in Voyager functions like a skill manager, storing and organizing learned behaviors or code snippets that the agent can reuse and combine to solve various tasks in the Minecraft environment. [25 May 2023]
 - [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents): Evaluation-first tool design, clear tool boundaries, namespacing, token-efficient responses, and agent-optimized tool descriptions. [11 Sep 2025]
+
+### **Security and Governance**
+
+- [20 AI Governance Papers📑](https://www.linkedin.com/posts/oliver-patel_12-papers-was-not-enough-to-do-the-field-activity-7282005401032613888-6Ck4?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy) [Jan 2025]
+- [An Approach to Technical AGI Safety and Security📑](https://arxiv.org/abs/2504.01849): Google DeepMind's framework separates misuse and misalignment risks and combines model-level alignment with system-level controls such as monitoring and access restrictions. [2 Apr 2025]
+- [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/): Google DeepMind protocols for identifying and mitigating potential harms from frontier AI systems. [17 May 2024]
+- [Google SAIF](https://www.saif.google/): Secure AI Framework for managing AI security risks. [5 Nov 2025]
+- [Guardrails Hub](https://hub.guardrailsai.com): Guardrails for common LLM validation use cases.
+- [LlamaFirewall](https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall): Scans and filters AI inputs to block prompt injections and malicious content. [29 Apr 2025]
+- [MITRE ATLAS](https://atlas.mitre.org/):💡A living knowledge base of adversary tactics, techniques, mitigations, and case studies for predictive, generative, and agentic AI systems, including prompt injection, RAG poisoning, and tool poisoning.
+- [Model Cards for Model Reporting📑](https://arxiv.org/abs/1810.03993):🏆Standardizes model documentation for intended use, performance characteristics, caveats, and fairness considerations. [Oct 2018]
+- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails): Building trustworthy, safe, and secure LLM conversational systems. [Apr 2023]
+ ![**github stars**](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework/ai-rmf-development):🏆NIST framework and playbook for managing AI risks. [30 Mar 2023]
+- [OWASP Top 10 for LLM and Generative AI Applications](https://genai.owasp.org/llm-top-10/):🏆Practical risk and mitigation guidance for production GenAI systems, covering prompt injection, sensitive-information disclosure, supply-chain risks, data/model poisoning, excessive agency, vector/embedding weaknesses, misinformation, and unbounded consumption. [2025]
+- [Red Teaming](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming): Microsoft guidance for conducting systematic, interdisciplinary adversarial testing of generative-AI systems.
+- [The Foundation Model Transparency Index📑](https://arxiv.org/abs/2310.12941): Assesses the transparency of foundation-model developers across their models, data, and governance practices. [19 Oct 2023]
 
 ### **Proposals & Glossary**
 
