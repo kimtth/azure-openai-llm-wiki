@@ -11,7 +11,11 @@ if str(CODE_DIR) not in sys.path:
 from utils.github_api import get_repo_created_date
 from utils.http_utils import create_session
 from utils.io_utils import read_text_input, write_text_output
-from utils.markdown_utils import DATE_TOKEN_PATTERN, GITHUB_REPO_URL_PATTERN, clean_repo_name
+from utils.markdown_utils import (
+    DATE_TOKEN_PATTERN,
+    GITHUB_REPO_URL_PATTERN,
+    clean_repo_name,
+)
 
 # Process markdown text with GitHub links and append creation dates
 

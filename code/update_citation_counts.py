@@ -7,7 +7,6 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import List, Tuple
 
 CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
@@ -41,7 +40,7 @@ def get_citation_count(
         return None
     return data.get("citationCount", 0)
 
-def extract_papers_from_ranked_section(content: str, section_name: str) -> List[Tuple[str, str, int, str]]:
+def extract_papers_from_ranked_section(content: str, section_name: str) -> list[tuple[str, str, str, int, str]]:
     """Extract papers from a ranked section."""
     section_pattern = f'### \\*\\*{re.escape(section_name)}\\*\\*'
     section_match = re.search(section_pattern, content)

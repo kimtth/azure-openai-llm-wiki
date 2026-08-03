@@ -149,6 +149,7 @@ databricks-dolly-15k: Instruction-Tuned [🤗](https://huggingface.co/datasets/d
 - [OCR Arena](https://www.ocrarena.ai/battle): a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. [Nov 2025]
 - [Prometheus: Inducing Fine-grained Evaluation Capability in Language Models📑](https://arxiv.org/abs/2310.08491): We utilize the FEEDBACK COLLECTION, a novel dataset, to train PROMETHEUS, an open-source large language model with 13 billion parameters, designed specifically for evaluation tasks. [12 Oct 2023]
 - [The Leaderboard Illusion📑](https://arxiv.org/abs/2504.20879):💡Chatbot Arena's benchmarking is skewed by selective disclosures, private testing advantages, and data access asymmetries, leading to overfitting and unfair model rankings. [29 Apr 2025]
+- [Verifiers](https://github.com/PrimeIntellect-ai/verifiers) - Library of reinforcement-learning environments and evaluators. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/PrimeIntellect-ai/verifiers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 ### **LLM Evaluation Benchmarks**
 

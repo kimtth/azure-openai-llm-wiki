@@ -1,18 +1,12 @@
 
 from __future__ import annotations
 
-# merge the md files under section for one README.md file
-# the order of the files is the order of the sections in the README.md
-
 import argparse
 import os
 import re
-import sys
-from pathlib import Path
 
-CODE_DIR = Path(__file__).resolve().parent
-if str(CODE_DIR) not in sys.path:
-    sys.path.insert(0, str(CODE_DIR))
+# Merge the markdown files under section into one README file.
+# Their order follows the sections in README.md.
 
 def replace_section_links(content, section_files):
     # 1. Update the regex to include an optional slash before the anchor

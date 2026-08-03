@@ -36,6 +36,7 @@
 ### **RAG Solution Design**
 
 - [Advanced RAG with Azure AI Search and LlamaIndex](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/advanced-rag-with-azure-ai-search-and-llamaindex/ba-p/4115007)
+- **Agent-driven web-search choices:** **SERP** provides broad, fresh coverage but requires multiple fetches; **neural search** retrieves relevant passages with less irrelevant context but may be incomplete; an **owned index** supplies agent-ready documents with the lowest retrieval tax but requires maintenance.
 - [Announcing cost-effective RAG at scale with Azure AI Search](https://aka.ms/AAqfqla)
 - [Azure OpenAI chat baseline architecture in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone)
 - [GPT-RAG](https://github.com/Azure/GPT-RAG): Enterprise RAG Solution Accelerator [Jun 2023]
@@ -219,6 +220,8 @@
 - [AgentQ📑](https://arxiv.org/abs/2408.07199): Off-policy policy gradient for multi-step agent planning. [13 Aug 2024]
 - [Agents Are Not Enough📑](https://arxiv.org/abs/2412.16241): Proposes ecosystem of agents, sims, and assistants. [Dec 2024]
 - [AI Agents That Matter📑](https://arxiv.org/abs/2407.01502): Agent evaluations for accuracy and cost optimization. [Jul 2024]
+- [AI Coding Outpaces Governance](https://www.infoq.com/news/2026/06/ai-coding-outpaces-governance/): GitLab research shows AI shifts software bottlenecks to validation and governance. [Jun 2026]
+- [Are We Ready For an Agent-Native Memory System?📑](https://arxiv.org/abs/2606.24775): Evaluates agent memory architectures across cost, updates, and long-horizon stability. [Jun 2026]
 - [Automated Design of Agentic Systems📑](https://arxiv.org/abs/2408.08435): ADAS auto-creates agentic designs with novel building blocks. [Aug 2024]
 - [AutoHarness📑](https://arxiv.org/abs/2603.03329): Auto-synthesized code harnesses eliminate illegal agent actions. [Mar 2026]
 - [Awesome-LLM-Reasoning-Failures](https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures): Curated papers on discovery, analysis, and mitigation of LLM reasoning failures. ![**github stars**](https://img.shields.io/github/stars/Peiyang-Song/Awesome-LLM-Reasoning-Failures?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)

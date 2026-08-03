@@ -4,30 +4,23 @@ import argparse
 import os
 import random
 import re
-import sys
 import time
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 
 import requests
-
-CODE_DIR = Path(__file__).resolve().parent
-if str(CODE_DIR) not in sys.path:
-    sys.path.insert(0, str(CODE_DIR))
-
-from utils.http_utils import create_session  # noqa: E402
-from utils.path_utils import get_repo_root  # noqa: E402
+from utils.http_utils import create_session
+from utils.path_utils import get_repo_root
 
 
-def infer_arxiv_date(arxiv_id: str) -> Optional[Tuple[int, int]]:
+def infer_arxiv_date(arxiv_id: str) -> tuple[int, int] | None:
     """Infer (year, month) from arXiv ID (YYMM.NNNNN format)."""
     match = re.match(r'(\d{2})(\d{2})\.(\d{4,5})', arxiv_id)
     if not match:
         return None
     yy, mm = int(match.group(1)), int(match.group(2))
     year = 2000 + yy if yy <= 99 else yy
-    if not (1 <= mm <= 12 and 1991 <= year <= datetime.now().year + 1):
+    if not (1 <= mm <= 12 and 1991 <= year <= datetime.now(UTC).year + 1):
         return None
     return year, mm
 
@@ -44,8 +37,8 @@ class SemanticScholarFetcher:
     def __init__(
         self,
         *,
-        user_agent: Optional[str],
-        api_key: Optional[str],
+        user_agent: str | None,
+        api_key: str | None,
         timeout: int,
         max_retries: int,
         backoff: float,
@@ -60,8 +53,26 @@ class SemanticScholarFetcher:
         self.backoff = backoff
         self.request_delay = request_delay
         self.jitter = jitter
+        # Pace every request, including the first, for unauthenticated API use.
+        self._next_request_at = 0.0
 
-    def search_papers(self, query: str, limit: int = 50, fields: List[str] | None = None) -> List[Dict]:
+    def _wait_for_request_slot(self) -> None:
+        wait = self._next_request_at - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        self._next_request_at = (
+            time.monotonic()
+            + max(self.request_delay, 1.0)
+            + random.uniform(0, max(self.jitter, 0))
+        )
+
+    def _defer_after_rate_limit(self, backoff: float) -> None:
+        self._next_request_at = max(
+            self._next_request_at,
+            time.monotonic() + backoff + random.uniform(0, max(self.jitter, 0)),
+        )
+
+    def search_papers(self, query: str, limit: int = 50, fields: list[str] | None = None) -> list[dict]:
         """Search papers by query and return results."""
         if fields is None:
             fields = [
@@ -89,13 +100,12 @@ class SemanticScholarFetcher:
 
         for attempt in range(self.max_retries):
             try:
+                self._wait_for_request_slot()
                 response = self.session.get(url, params=params, timeout=self.timeout)
             except requests.RequestException as exc:
                 last_error = f"{type(exc).__name__}: {exc}"
             else:
                 if response.status_code == 200:
-                    if self.request_delay > 0:
-                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
                     return response.json().get("data", [])
 
                 message = ""
@@ -118,17 +128,16 @@ class SemanticScholarFetcher:
                     except ValueError:
                         pass
                 elif response.status_code == 429:
-                    backoff = max(backoff, 60.0)
+                    backoff = max(backoff, 120.0)
+                    self._defer_after_rate_limit(backoff)
 
             if attempt < self.max_retries - 1:
                 time.sleep(backoff)
                 backoff = min(backoff * 2, 300.0)
 
-        if self.request_delay > 0:
-            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
         raise RuntimeError(f"Semantic Scholar query failed after retries ({last_error}): {query}")
 
-    def batch_papers(self, ids: List[str], fields: List[str] | None = None) -> List[Dict | None]:
+    def batch_papers(self, ids: list[str], fields: list[str] | None = None) -> list[dict | None]:
         """Fetch papers by stable IDs in one low-volume API request."""
         if fields is None:
             fields = [
@@ -151,13 +160,12 @@ class SemanticScholarFetcher:
 
         for attempt in range(self.max_retries):
             try:
+                self._wait_for_request_slot()
                 response = self.session.post(url, params=params, json={"ids": ids}, timeout=self.timeout)
             except requests.RequestException as exc:
                 last_error = f"{type(exc).__name__}: {exc}"
             else:
                 if response.status_code == 200:
-                    if self.request_delay > 0:
-                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
                     return response.json()
 
                 message = ""
@@ -180,17 +188,16 @@ class SemanticScholarFetcher:
                     except ValueError:
                         pass
                 elif response.status_code == 429:
-                    backoff = max(backoff, 60.0)
+                    backoff = max(backoff, 120.0)
+                    self._defer_after_rate_limit(backoff)
 
             if attempt < self.max_retries - 1:
                 time.sleep(backoff)
                 backoff = min(backoff * 2, 300.0)
 
-        if self.request_delay > 0:
-            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
         raise RuntimeError(f"Semantic Scholar batch fetch failed after retries ({last_error})")
 
-    def get_papers_sorted_by_citations(self, query: str, top_n: int = 30, min_citations: int = 100) -> List[Dict]:
+    def get_papers_sorted_by_citations(self, query: str, top_n: int = 30, min_citations: int = 100) -> list[dict]:
         """Get top N papers sorted by citation count."""
         papers = self.search_papers(query, limit=100)
 
@@ -206,7 +213,7 @@ class SemanticScholarFetcher:
         return sorted_papers[:top_n]
 
 
-def format_paper_info(paper: Dict, rank: int) -> str:
+def format_paper_info(paper: dict, rank: int) -> str:
     """Format paper information for display"""
     authors = paper.get('authors', [])
     author_names = ', '.join([a.get('name', '') for a in authors[:3]])
@@ -240,10 +247,10 @@ def format_paper_info(paper: Dict, rank: int) -> str:
     return '\n'.join(lines) + '\n'
 
 
-def save_to_markdown(topic: str, papers: List[Dict], filename: str):
+def save_to_markdown(topic: str, papers: list[dict], filename: str) -> None:
     """Save papers to a markdown file"""
     with open(filename, 'a', encoding='utf-8') as f:
-        f.write(f"\n## {topic}\n\n*Retrieved: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
+        f.write(f"\n## {topic}\n\n*Retrieved: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
         
         for idx, paper in enumerate(papers, 1):
             authors = paper.get('authors', [])
@@ -280,7 +287,7 @@ def save_to_markdown(topic: str, papers: List[Dict], filename: str):
             f.write("---\n\n")
 
 
-def paper_lookup_id(paper: Dict) -> Optional[str]:
+def paper_lookup_id(paper: dict) -> str | None:
     external_ids = paper.get("externalIds") or {}
     arxiv_id = external_ids.get("ArXiv")
     if arxiv_id:
@@ -293,15 +300,15 @@ def paper_lookup_id(paper: Dict) -> Optional[str]:
     return None
 
 
-def parse_existing_markdown(filename: str) -> List[Tuple[str, List[Dict]]]:
+def parse_existing_markdown(filename: str) -> list[tuple[str, list[dict]]]:
     text = Path(filename).read_text(encoding="utf-8")
-    sections: List[Tuple[str, List[Dict]]] = []
-    section_re = re.compile(r"^## (.+?)\n\n\*Retrieved: [^*]+\*\n\n(.*?)(?=^## |\Z)", re.S | re.M)
-    entry_re = re.compile(r"^### \d+\. (.+?)\n\n(.*?)(?=^### \d+\. |\Z)", re.S | re.M)
+    sections: list[tuple[str, list[dict]]] = []
+    section_re = re.compile(r"^## (.+?)\n\n\*Retrieved: [^*]+\*\n\n(.*?)(?=^## |\Z)", re.DOTALL | re.MULTILINE)
+    entry_re = re.compile(r"^### \d+\. (.+?)\n\n(.*?)(?=^### \d+\. |\Z)", re.DOTALL | re.MULTILINE)
 
     for section_match in section_re.finditer(text):
         topic_name = section_match.group(1)
-        papers: List[Dict] = []
+        papers: list[dict] = []
         for entry_match in entry_re.finditer(section_match.group(2)):
             title = entry_match.group(1).strip()
             block = entry_match.group(2)
@@ -311,7 +318,7 @@ def parse_existing_markdown(filename: str) -> List[Tuple[str, List[Dict]]]:
             fields_match = re.search(r"\*\*Fields:\*\*([^\n]+)", block)
             url_match = re.search(r"\*\*URL:\*\* \[([^\]]+)\]", block)
             arxiv_match = re.search(r"\*\*arXiv:\*\* \[https://arxiv\.org/abs/([^\]]+)\]", block)
-            abstract_match = re.search(r"\*\*Abstract:\*\* (.*?)(?:\n\n---|\Z)", block, re.S)
+            abstract_match = re.search(r"\*\*Abstract:\*\* (.*?)(?:\n\n---|\Z)", block, re.DOTALL)
             authors_match = re.search(r"\*\*Authors:\*\*([^\n]+)", block)
 
             external_ids = {"ArXiv": arxiv_match.group(1)} if arxiv_match else {}
@@ -330,19 +337,24 @@ def parse_existing_markdown(filename: str) -> List[Tuple[str, List[Dict]]]:
     return sections
 
 
-def refresh_existing_markdown(fetcher: SemanticScholarFetcher, filename: str, min_citations: int) -> None:
+def refresh_existing_markdown(
+    fetcher: SemanticScholarFetcher,
+    filename: str,
+    min_citations: int,
+    batch_size: int,
+) -> None:
     sections = parse_existing_markdown(filename)
     lookup_ids = [paper_lookup_id(paper) for _, papers in sections for paper in papers]
-    live_by_id: Dict[str, Dict | None] = {}
+    live_by_id: dict[str, dict | None] = {}
 
-    for start in range(0, len(lookup_ids), 450):
-        chunk = [paper_id for paper_id in lookup_ids[start:start + 450] if paper_id]
+    for start in range(0, len(lookup_ids), batch_size):
+        chunk = [paper_id for paper_id in lookup_ids[start:start + batch_size] if paper_id]
         if not chunk:
             continue
         print(f"[batch] Fetching {len(chunk)} papers ({start + 1}-{start + len(chunk)})")
         live_by_id.update(zip(chunk, fetcher.batch_papers(chunk)))
 
-    refreshed_sections: List[Tuple[str, List[Dict]]] = []
+    refreshed_sections: list[tuple[str, list[dict]]] = []
     changed = 0
     missing = 0
     for topic_name, papers in sections:
@@ -367,7 +379,7 @@ def refresh_existing_markdown(fetcher: SemanticScholarFetcher, filename: str, mi
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write("# Popular Papers on RAG & AI Agents (Computer Science)\n\n")
-        f.write(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n")
+        f.write(f"*Generated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}*\n")
         f.write("*Source: Semantic Scholar batch API refresh of existing paper IDs*\n")
         f.write("*Filtered for Computer Science papers only*\n")
 
@@ -404,6 +416,10 @@ def main() -> None:
         "--refresh-existing", action="store_true",
         help="Refresh existing output entries from Semantic Scholar batch API without running search queries."
     )
+    parser.add_argument(
+        "--batch-size", type=int, default=50,
+        help="Number of papers per refresh request (default: 50; lower values reduce unauthenticated API pressure)."
+    )
     parser.add_argument("--user-agent", default="Academic-Research-Tool/1.0", help="Custom User-Agent.")
     args = parser.parse_args()
 
@@ -421,7 +437,7 @@ def main() -> None:
     output_file = args.output or str(root_dir / "section" / "x_popular_papers.md")
 
     if args.refresh_existing:
-        refresh_existing_markdown(fetcher, output_file, args.min_citations)
+        refresh_existing_markdown(fetcher, output_file, args.min_citations, args.batch_size)
         return
 
     topics = {
@@ -479,7 +495,7 @@ def main() -> None:
         
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("# Popular Papers on RAG & AI Agents (Computer Science)\n\n")
-        f.write(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n")
+        f.write(f"*Generated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')}*\n")
         f.write("*Filtered for Computer Science papers only*\n")
     
     for topic_name, filtered_papers in topic_papers:

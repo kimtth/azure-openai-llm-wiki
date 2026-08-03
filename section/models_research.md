@@ -208,6 +208,7 @@
 - Founded in 2019. Canadian multinational tech.
 - [Command R+🤗](https://huggingface.co/collections/CohereForAI/c4ai-command-r-plus-660ec4c34f7a69c50ce7f7b9): The performant model for RAG capabilities, multilingual support, and tool use. [Aug 2024]
 - [An Overview of Cohere’s Models](https://docs.cohere.com/v2/docs/models) | [Cohere Playground](https://dashboard.cohere.com/playground)
+- [Aya Vision 8B🤗](https://huggingface.co/CohereLabs/aya-vision-8b): Multilingual 8B vision-language model supporting 23 languages. [Dec 2024]
 
 #### **Cursor**
 
@@ -345,9 +346,20 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [Kimi K2 Thinking](https://moonshotai.github.io/Kimi-K2/thinking.html): The first open-source model beats GPT-5 in Agent benchmark. [7 Nov 2025]
 - [Kimi-K2.5](https://github.com/MoonshotAI/Kimi-K2.5): Open-source multimodal agentic model by Moonshot AI. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/MoonshotAI/Kimi-K2.5?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Kimi K2.6](https://www.kimi.com/blog/kimi-k2-6): Open-source coding model with long-horizon execution, coding-driven design, agent swarms, and proactive agent workflows. [Apr 2026]
+- [Kimi K3](https://www.kimi.com/blog/kimi-k3): Open 2.8T-parameter multimodal model with a 1M-token context window, built for long-horizon coding, knowledge work, and reasoning. [16 Jul 2026]
+
+#### **Motif Technologies**
+
+- Motif Technologies is a South Korean AI company founded in 2025.
+- [Motif-3 Beta🤗](https://huggingface.co/Motif-Technologies/Motif-3-Beta): 314B-parameter MoE model with 13B active parameters and 256K context. [Jul 2026]
 
 #### **NVIDIA**
 
+- [Alpamayo](https://www.nvidia.com/en-us/self-driving-cars/alpamayo/): Open vision-language-action models for reasoning-based autonomous driving.
+- [BioNeMo](https://www.nvidia.com/en-us/clara/bionemo/): Biology and drug-discovery platform with open models, libraries, datasets, and NIM microservices.
+- [Cosmos 3](https://www.nvidia.com/en-us/ai/cosmos/): Open physical-AI foundation model for native reasoning, world generation, and action generation.
+- [Earth-2](https://www.nvidia.com/en-us/high-performance-computing/earth-2/): Open AI weather-model family for forecasting, nowcasting, assimilation, and downscaling.
+- [Isaac GR00T 1.7](https://developer.nvidia.com/isaac/gr00t): Open multimodal robot foundation model for generalized humanoid reasoning and skills.
 - [Nemotron-4 340B](https://research.nvidia.com/publication/2024-06_nemotron-4-340b): Synthetic Data Generation for Training Large Language Models [14 Jun 2024]
 
 #### **OpenAI**
@@ -368,6 +380,11 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] / [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![**github stars**](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
 - A list of models: / [git](https://github.com/Tencent-Hunyuan)
+
+#### **Thinking Machines Lab**
+
+- Thinking Machines Lab is a U.S. AI company founded in February 2025.
+- [Inkling🤗](https://huggingface.co/thinkingmachines/inkling): 975B-parameter MoE model with 41B active parameters, 1M context, and native text, image, and audio reasoning. [Jul 2026]
 
 #### **xAI**
 
@@ -644,6 +661,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [OpenAI Prompt Pack](https://academy.openai.com/public/tags/prompt-packs-6849a0f98c613939acef841c): curated collections of pre-designed prompts tailored for specific roles, industries, or use cases.
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): 🏆Copyright © 2023 DAIR.AI
 - [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/): Prompt Engineering, also known as In-Context Prompting ... [Mar 2023]
+- [prompts.chat](https://prompts.chat/): Open-source community platform for sharing and discovering AI prompts.
 - [Prompts for Education](https://github.com/microsoft/prompts-for-edu): Microsoft Prompts for Education [Jul 2023]
  ![**github stars**](https://img.shields.io/github/stars/microsoft/prompts-for-edu?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ShumerPrompt](https://shumerprompt.com/): Discover and share powerful prompts for AI models
@@ -715,6 +733,7 @@ systematic, step-by-step comparative evaluation. [19 Mar 2024]
 - [Doc-to-LoRA: Learning to Instantly Internalize Contexts📑](https://arxiv.org/abs/2602.15902): Generates LoRA adapters from long context to cut repeated context cost. [Feb 2026]
 - [DroPE](https://pub.sakana.ai/DroPE): Extends LLM context by dropping positional embeddings and brief recalibration, improving long-context performance without retraining. Sakana AI. [13 Dec 2025]
 - [Giraffe📑](https://arxiv.org/abs/2308.10882): Adventures in Expanding Context Lengths in LLMs. A new truncation strategy for modifying the basis for the position encoding.  [Giraffe long context llms](https://blog.abacus.ai/blog/2023/08/22/giraffe-long-context-llms/) [2 Jan 2024]
+- [gigatoken](https://github.com/marcelroed/gigatoken): High-throughput language-model tokenization at gigabytes per second. [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/marcelroed/gigatoken?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Introducing 100K Context Windows](https://www.anthropic.com/index/100k-context-windows): hundreds of pages, Around 75,000 words; [11 May 2023] [demo](https://youtu.be/2kFhloXz5_E) Anthropic Claude
 - [Leave No Context Behind📑](https://arxiv.org/abs/2404.07143): Efficient `Infinite Context` Transformers with Infini-attention. The Infini-attention incorporates a compressive memory into the vanilla attention mechanism. Integrate attention from both local and global attention. [10 Apr 2024]
 - [LLM Maybe LongLM📑](https://arxiv.org/abs/2401.01325): Self-Extend LLM Context Window Without Tuning. With only four lines of code modification, the proposed method can effortlessly extend existing LLMs' context window without any fine-tuning. [2 Jan 2024]
@@ -1029,6 +1048,7 @@ hensive survey of over thirty-two techniques developed to mitigate hallucination
 - [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model):💡`Claude 3.5 Haiku` 1. `Universal Thought Processing (Multiple Languages)`: Shared concepts exist across languages and are then translated into the respective language.  2. `Advance Planning (Composing Poetry)`: Despite generating text word by word, it anticipates rhyming words in advance.  3. `Fabricated Reasoning (Math)`: Produces plausible-sounding arguments even when given an incorrect hint. [27 Mar 2025] 
 - [Trustworthy LLMs📑](https://arxiv.org/abs/2308.05374): Comprehensive overview for assessing LLM trustworthiness; Reliability, safety, fairness, resistance to misuse, explainability and reasoning, adherence to social norms, and robustness. [10 Aug 2023]
 - [Vibe Hacking](https://www.anthropic.com/news/disrupting-AI-espionage): Anthropic reports vibe-hacking attempts. [14 Nov 2025]
+- [Why Are All LLMs Obsessed with Japanese Culture?📑](https://arxiv.org/abs/2604.21751): Studies cultural and regional biases emerging in LLM post-training. [Apr 2026]
 
 ### **Business Adoption and Use Cases**
 
@@ -1127,6 +1147,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
 - [ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/): New ChatGPT image-generation system focused on precision, multilingual text, richer styles, and visual reasoning. [Apr 2026]
 - [ChatGPT Memory](https://openai.com/blog/memory-and-new-controls-for-chatgpt): Remembering things you discuss `across all chats` saves you from having to repeat information and makes future conversations more helpful. [Apr 2024]
 - [ChatGPT Plugin](https://openai.com/blog/chatgpt-plugins) [23 Mar 2023]
+- [ChatGPT Work](https://openai.com/chatgpt-work/): Turns connected workplace context into documents, analyses, and scheduled tasks.
 - [CriticGPT](https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/): a version of GPT-4 fine-tuned to critique code generated by ChatGPT [27 Jun 2024]
 - [Codex 5.3](https://openai.com/index/introducing-gpt-5-3-codex/): OpenAI Codex with enhanced coding and agentic reasoning. [5 Feb 2026]
 - [Custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt): In a nutshell, the Custom Instructions feature is a cross-session memory that allows ChatGPT to retain key instructions across chat sessions. [20 Jul 2023]
@@ -1134,6 +1155,7 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
  ![**github stars**](https://img.shields.io/github/stars/openai/dall-e?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [deep research](https://openai.com/index/introducing-deep-research/): An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks [2 Feb 2025]
 - [GPT-3.5 Turbo Fine-tuning](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) Fine-tuning for GPT-3.5 Turbo is now available, with fine-tuning for GPT-4 coming this fall. [22 Aug 2023]
+- [GPT-Live](https://openai.com/index/introducing-gpt-live/): Full-duplex voice models for natural conversational interaction. [Jul 2026]
 - [Introducing the GPT Store](https://openai.com/blog/introducing-the-gpt-store): Roll out the GPT Store to ChatGPT Plus, Team and Enterprise users  [GPTs](https://chat.openai.com/gpts) [10 Jan 2024]
 - [New embedding models](https://openai.com/blog/new-embedding-models-and-api-updates) `text-embedding-3-small`: Embedding size: 512, 1536 `text-embedding-3-large`: Embedding size: 256,1024,3072 [25 Jan 2024]
 - Open AI Enterprise: Removes GPT-4 usage caps, and performs up to two times faster [Introducing chatgpt enterprise](https://openai.com/blog/introducing-chatgpt-enterprise) [28 Aug 2023]
@@ -1411,6 +1433,8 @@ Reuse (MR), Divide and Conquer (DC), Self-Refinement (SR), Context Identificatio
  ![**github stars**](https://img.shields.io/github/stars/databricks-academy/large-language-models?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [LLM FineTuning Projects and notes on common practical techniques](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models) [Oct 2023]
  ![**github stars**](https://img.shields.io/github/stars/rohan-paul/LLM-FineTuning-Large-Language-Models?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- LLM inference optimization techniques: Flash Attention, Paged Attention, continuous batching, speculative decoding, and kernel fusion.
+  <img width="650" alt="Infographic comparing Flash Attention, Paged Attention, Continuous Batching, Speculative Decoding, and Kernel Fusion for efficient LLM inference" src="https://github.com/user-attachments/assets/b50fd53d-0b0a-4158-9860-e1473bea5ec3" />
 - [LLM Visualization](https://bbycroft.net/llm): A 3D animated visualization of an LLM with a walkthrough
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): ml algorithms or implementation from scratch [Oct 2016] ![**github stars**](https://img.shields.io/github/stars/rushter/MLAlgorithms?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Must read: the 100 most cited AI papers in 2022](https://www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-in-2022) [8 Mar 2023]

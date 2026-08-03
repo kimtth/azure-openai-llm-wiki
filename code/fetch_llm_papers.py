@@ -13,25 +13,21 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import os
 import random
 import re
-import requests
 import subprocess
 import sys
 import time
-from datetime import datetime
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable, Dict, List, Optional, Tuple
+from typing import ClassVar
 
-CODE_DIR = Path(__file__).resolve().parent
-if str(CODE_DIR) not in sys.path:
-    sys.path.insert(0, str(CODE_DIR))
-
-from utils.http_utils import create_session  # noqa: E402
-from utils.path_utils import get_repo_root  # noqa: E402
-
+import requests
+from utils.http_utils import create_session
+from utils.path_utils import get_repo_root
 
 # ---------------------------------------------------------------------------
 # Topic → query mapping
@@ -39,7 +35,7 @@ from utils.path_utils import get_repo_root  # noqa: E402
 # Queries intentionally omit "survey" to capture ALL high-citation papers
 # (research contributions, position papers, benchmarks, overviews) in each area.
 # ---------------------------------------------------------------------------
-TOPICS: Dict[str, List[str]] = {
+TOPICS: dict[str, list[str]] = {
     "Reasoning in LLMs": [
         "advancing reasoning large language models methods approaches",
         "chain-of-thought reasoning LLM prompting",
@@ -73,6 +69,9 @@ TOPICS: Dict[str, List[str]] = {
         "retrieval augmented text generation LLM",
         "retrieval structuring augmented generation LLM",
         "dense passage retrieval open-domain question answering",
+        "self-RAG retrieval augmented generation reflection",
+        "corrective retrieval augmented generation CRAG",
+        "hypothetical document embeddings HyDE retrieval",
     ],
     "GUI Agents": [
         "GUI agents large language models",
@@ -97,6 +96,9 @@ TOPICS: Dict[str, List[str]] = {
         "context engineering large language models",
         "long context large language models",
         "retrieval augmented generation context window",
+        "long context language models benchmark retrieval",
+        "context compression large language models",
+        "needle in a haystack long context language models",
     ],
     "LLM Memory & Personalization": [
         "memory mechanism large language model agents",
@@ -146,6 +148,19 @@ TOPICS: Dict[str, List[str]] = {
         "mathematical reasoning multimodal large language models challenges",
         "vision language model image understanding",
     ],
+    "Multilingual & Low-Resource LLMs": [
+        "multilingual large language models cross-lingual evaluation",
+        "low-resource language large language models",
+        "multilingual instruction tuning language models",
+        "machine translation large language models multilingual",
+        "culturally aware multilingual language models benchmark",
+    ],
+    "Speech & Audio Language Models": [
+        "speech language models audio understanding",
+        "audio large language models multimodal",
+        "speech instruction tuning language model",
+        "spoken dialogue large language models",
+    ],
     "Small Language Models": [
         "small language models measurements insights",
         "small language models era large language models",
@@ -178,12 +193,29 @@ TOPICS: Dict[str, List[str]] = {
         "data management large language models",
         "data synthesis augmentation large language models",
         "pretraining data curation large language models",
+        "synthetic data large language models instruction tuning",
+        "data contamination large language model benchmarks",
+        "web-scale dataset curation language model pretraining",
     ],
     "Trustworthy & Secure LLMs": [
         "trustworthy large language models safety",
         "adversarial attacks aligned language models universal",
         "jailbreak attacks large language models",
         "red-teaming large language models safety",
+    ],
+    "LLM Governance, Privacy & Copyright": [
+        "large language model governance responsible AI",
+        "privacy preserving large language models",
+        "copyright training data large language models",
+        "machine unlearning large language models",
+        "AI regulation foundation models risk management",
+    ],
+    "Interpretability & Mechanistic Understanding": [
+        "mechanistic interpretability transformer language models",
+        "interpretability large language models circuits",
+        "understanding language model representations probing",
+        "explainable AI large language models",
+        "sparse autoencoders language model features",
     ],
     "LLM Overview & History": [
         "AI-generated content AIGC history generative AI GAN ChatGPT",
@@ -230,6 +262,12 @@ TOPICS: Dict[str, List[str]] = {
         "LLM tool augmented generation external knowledge",
         "language models API calling tool use",
         "plan and execute LLM tools agents",
+    ],
+    "Structured Generation & Constrained Decoding": [
+        "constrained decoding large language models structured output",
+        "grammar constrained generation language models",
+        "JSON schema guided generation large language models",
+        "formal language constrained decoding LLM",
     ],
     "LLM for Robotics & Embodied AI": [
         "large language models robotics embodied AI",
@@ -343,7 +381,7 @@ CORE_RELEVANCE_TERMS = (
     "lora", "quantization", "embedding", "state space model", "mamba", "rlhf", "alignment",
 )
 
-TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
+TOPIC_KEYWORDS: dict[str, tuple[str, ...]] = {
     "Reasoning in LLMs": (
         "reasoning", "chain-of-thought", "chain of thought", "tree of thoughts", "math reasoning",
         "logical reasoning", "test-time compute", "process reward", "verifiable reward",
@@ -367,6 +405,12 @@ TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
     "Alignment & RLHF": ("alignment", "rlhf", "human feedback", "preference", "reward model", "dpo"),
     "Evaluation of LLMs & Agents": ("evaluation", "benchmark", "bench", "leaderboard", "judge"),
     "Multimodal LLMs": ("multimodal", "vision-language", "vision language", "video", "image", "audio"),
+    "Multilingual & Low-Resource LLMs": (
+        "multilingual", "cross-lingual", "low-resource", "machine translation", "cultural",
+    ),
+    "Speech & Audio Language Models": (
+        "speech", "audio", "spoken dialogue", "speech recognition", "text-to-speech",
+    ),
     "Small Language Models": ("small language", "slm", "mobilellm", "phi", "on-device"),
     "Mixture of Experts": ("mixture of experts", "mixture-of-experts", "moe", "routing"),
     "LLMs for Healthcare & Science": ("healthcare", "clinical", "medical", "medicine", "science", "chemistry", "biology"),
@@ -375,6 +419,12 @@ TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
     "Data for LLMs": ("data", "dataset", "pretraining data", "synthetic data", "data curation"),
     "Trustworthy & Secure LLMs": (
         "trustworthy", "security", "safety", "jailbreak", "red-teaming", "adversarial", "privacy",
+    ),
+    "LLM Governance, Privacy & Copyright": (
+        "governance", "responsible ai", "privacy", "copyright", "regulation", "machine unlearning",
+    ),
+    "Interpretability & Mechanistic Understanding": (
+        "interpretability", "mechanistic", "circuits", "probing", "explainable", "sparse autoencoder",
     ),
     "LLM Overview & History": ("survey", "overview", "history", "foundation models", "aigc", "chatgpt"),
     "AIOps & Observability": ("aiops", "observability", "monitoring", "logs", "anomaly"),
@@ -385,6 +435,9 @@ TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
     "GraphRAG & Knowledge Graphs": ("graphrag", "knowledge graph", "graph rag", "graph retrieval"),
     "Embeddings & Vector Search": ("embedding", "embeddings", "vector", "semantic similarity", "dense retrieval"),
     "Function Calling & Tool Use": ("tool", "tools", "function calling", "api", "tool learning"),
+    "Structured Generation & Constrained Decoding": (
+        "constrained decoding", "structured output", "grammar", "json schema", "guided generation",
+    ),
     "LLM for Robotics & Embodied AI": ("robot", "robotics", "embodied", "vision-language-action", "vla"),
     "LLMOps & Model Serving": ("llmops", "serving", "deployment", "continuous batching", "pagedattention"),
     "PEFT & LoRA": ("lora", "qlora", "adapter", "parameter-efficient", "peft", "prefix tuning"),
@@ -408,14 +461,14 @@ TOPIC_KEYWORDS: Dict[str, Tuple[str, ...]] = {
 # Helpers
 # ---------------------------------------------------------------------------
 
-def infer_arxiv_date(arxiv_id: str) -> Optional[Tuple[int, int]]:
+def infer_arxiv_date(arxiv_id: str) -> tuple[int, int] | None:
     """Infer (year, month) from arXiv ID (YYMM.NNNNN format)."""
     match = re.match(r"(\d{2})(\d{2})\.(\d{4,5})", arxiv_id)
     if not match:
         return None
     yy, mm = int(match.group(1)), int(match.group(2))
     year = 2000 + yy
-    if not (1 <= mm <= 12 and 2000 <= year <= datetime.now().year + 1):
+    if not (1 <= mm <= 12 and 2000 <= year <= datetime.datetime.now(datetime.UTC).year + 1):
         return None
     return year, mm
 
@@ -426,7 +479,7 @@ def format_month_year(year: int, month: int) -> str:
     return f"[{months[month - 1]} {year}]"
 
 
-def _paper_text(paper: Dict) -> str:
+def _paper_text(paper: dict) -> str:
     return " ".join(
         str(paper.get(key) or "") for key in ("title", "abstract", "venue")
     ).lower()
@@ -439,12 +492,12 @@ def _contains_term(text: str, term: str) -> bool:
     return term in text
 
 
-def _has_core_relevance(paper: Dict) -> bool:
+def _has_core_relevance(paper: dict) -> bool:
     text = _paper_text(paper)
     return any(_contains_term(text, term) for term in CORE_RELEVANCE_TERMS)
 
 
-def _topic_score(paper: Dict, topic: str) -> float:
+def _topic_score(paper: dict, topic: str) -> float:
     text = _paper_text(paper)
     score = 0.0
 
@@ -463,7 +516,7 @@ def _topic_score(paper: Dict, topic: str) -> float:
     return score
 
 
-def infer_paper_topics(paper: Dict, max_topics: int = 3) -> List[str]:
+def infer_paper_topics(paper: dict, max_topics: int = 3) -> list[str]:
     """Infer likely topic tags from title/abstract text for compact output."""
     existing = paper.get("topics") or []
     if existing:
@@ -479,7 +532,7 @@ def infer_paper_topics(paper: Dict, max_topics: int = 3) -> List[str]:
     return topics[:max_topics]
 
 
-def _is_relevant_paper(paper: Dict, topic: str) -> bool:
+def _is_relevant_paper(paper: dict, topic: str) -> bool:
     """Keep broad Semantic Scholar searches from drifting away from the LLM landscape."""
     fields = paper.get("fieldsOfStudy") or []
     if "Computer Science" not in fields:
@@ -496,7 +549,7 @@ class QueryFetchError(RuntimeError):
 class TopicFetchIncomplete(RuntimeError):
     """Raised when a topic has partial results but one or more queries failed."""
 
-    def __init__(self, topic: str, papers: List[Dict], failed_queries: List[str]) -> None:
+    def __init__(self, topic: str, papers: list[dict], failed_queries: list[str]) -> None:
         super().__init__(f"{topic}: {len(failed_queries)} query/query(s) failed")
         self.topic = topic
         self.papers = papers
@@ -510,7 +563,7 @@ class TopicFetchIncomplete(RuntimeError):
 class SemanticScholarFetcher:
     BASE_URL = "https://api.semanticscholar.org/graph/v1"
 
-    _FIELDS = [
+    _FIELDS: ClassVar[list[str]] = [
         "paperId",
         "title",
         "authors",
@@ -526,8 +579,8 @@ class SemanticScholarFetcher:
     def __init__(
         self,
         *,
-        user_agent: Optional[str],
-        api_key: Optional[str],
+        user_agent: str | None,
+        api_key: str | None,
         timeout: int,
         max_retries: int,
         backoff: float,
@@ -542,8 +595,27 @@ class SemanticScholarFetcher:
         self.backoff = backoff
         self.request_delay = request_delay
         self.jitter = jitter
+        # Public Semantic Scholar access is heavily rate-limited. Reserve the
+        # next request slot before every call, including the first one.
+        self._next_request_at = 0.0
 
-    def search_papers(self, query: str, limit: int = 100) -> List[Dict]:
+    def _wait_for_request_slot(self) -> None:
+        wait = self._next_request_at - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        self._next_request_at = (
+            time.monotonic()
+            + max(self.request_delay, 1.0)
+            + random.uniform(0, max(self.jitter, 0))
+        )
+
+    def _defer_after_rate_limit(self, backoff: float) -> None:
+        self._next_request_at = max(
+            self._next_request_at,
+            time.monotonic() + backoff + random.uniform(0, max(self.jitter, 0)),
+        )
+
+    def search_papers(self, query: str, limit: int = 100) -> list[dict]:
         params = {
             "query": query,
             "limit": min(limit, 100),
@@ -555,13 +627,12 @@ class SemanticScholarFetcher:
 
         for attempt in range(self.max_retries):
             try:
+                self._wait_for_request_slot()
                 response = self.session.get(url, params=params, timeout=self.timeout)
             except requests.RequestException as exc:
                 last_error = f"{type(exc).__name__}: {exc}"
             else:
                 if response.status_code == 200:
-                    if self.request_delay > 0:
-                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
                     return response.json().get("data", [])
 
                 message = ""
@@ -584,17 +655,16 @@ class SemanticScholarFetcher:
                     except ValueError:
                         pass
                 elif response.status_code == 429:
-                    backoff = max(backoff, 60.0)
+                    backoff = max(backoff, 120.0)
+                    self._defer_after_rate_limit(backoff)
 
             if attempt < self.max_retries - 1:
                 time.sleep(backoff)
                 backoff = min(backoff * 2, 300.0)
 
-        if self.request_delay > 0:
-            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
         raise QueryFetchError(f"Semantic Scholar query failed after retries ({last_error}): {query}")
 
-    def batch_papers(self, ids: List[str]) -> List[Optional[Dict]]:
+    def batch_papers(self, ids: list[str]) -> list[dict | None]:
         """Fetch papers by stable IDs in one low-volume API request."""
         if not ids:
             return []
@@ -606,13 +676,12 @@ class SemanticScholarFetcher:
 
         for attempt in range(self.max_retries):
             try:
+                self._wait_for_request_slot()
                 response = self.session.post(url, params=params, json={"ids": ids}, timeout=self.timeout)
             except requests.RequestException as exc:
                 last_error = f"{type(exc).__name__}: {exc}"
             else:
                 if response.status_code == 200:
-                    if self.request_delay > 0:
-                        time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
                     return response.json()
 
                 message = ""
@@ -635,29 +704,28 @@ class SemanticScholarFetcher:
                     except ValueError:
                         pass
                 elif response.status_code == 429:
-                    backoff = max(backoff, 60.0)
+                    backoff = max(backoff, 120.0)
+                    self._defer_after_rate_limit(backoff)
 
             if attempt < self.max_retries - 1:
                 time.sleep(backoff)
                 backoff = min(backoff * 2, 300.0)
 
-        if self.request_delay > 0:
-            time.sleep(self.request_delay + random.uniform(0, max(self.jitter, 0)))
         raise QueryFetchError(f"Semantic Scholar batch fetch failed after retries ({last_error})")
 
     def fetch_topic(
         self,
         topic: str,
-        queries: List[str],
+        queries: list[str],
         top_n: int,
         min_citations: int,
-        query_cache: Dict[str, List[Dict]],
-        cache_updated: Optional[Callable[[], None]] = None,
-    ) -> List[Dict]:
+        query_cache: dict[str, list[dict]],
+        cache_updated: Callable[[], None] | None = None,
+    ) -> list[dict]:
         """Aggregate results for multiple queries, deduplicate, filter, sort."""
         seen: set = set()
-        papers: List[Dict] = []
-        failed_queries: List[str] = []
+        papers: list[dict] = []
+        failed_queries: list[str] = []
 
         for query in queries:
             cache_key = query.strip().lower()
@@ -701,17 +769,17 @@ class SemanticScholarFetcher:
 # Formatting
 # ---------------------------------------------------------------------------
 
-def _paper_arxiv_url(paper: Dict) -> Optional[str]:
+def _paper_arxiv_url(paper: dict) -> str | None:
     ext = paper.get("externalIds") or {}
     arxiv_id = ext.get("ArXiv")
     return f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else None
 
 
-def _paper_link(paper: Dict) -> str:
+def _paper_link(paper: dict) -> str:
     return _paper_arxiv_url(paper) or paper.get("link") or paper.get("url") or "#"
 
 
-def _paper_lookup_id(paper: Dict) -> Optional[str]:
+def _paper_lookup_id(paper: dict) -> str | None:
     ext = paper.get("externalIds") or {}
     arxiv_id = ext.get("ArXiv")
     if arxiv_id:
@@ -725,7 +793,7 @@ def _paper_lookup_id(paper: Dict) -> Optional[str]:
     return None
 
 
-def _paper_date_str(paper: Dict) -> str:
+def _paper_date_str(paper: dict) -> str:
     if paper.get("date_str"):
         return paper["date_str"]
     ext = paper.get("externalIds") or {}
@@ -737,19 +805,21 @@ def _paper_date_str(paper: Dict) -> str:
     return ""
 
 
-def _author_str(paper: Dict) -> str:
+def _author_str(paper: dict) -> str:
     authors = paper.get("authors", [])
     names = [a.get("name", "") for a in authors[:3]]
     suffix = ", et al." if len(authors) > 3 else ""
     return ", ".join(names) + suffix
 
 
-def format_paper_console(paper: Dict, rank: int) -> str:
+def format_paper_console(paper: dict, rank: int) -> str:
     lines = [
         f"\n{rank}. {paper.get('title', 'No title')}",
         f"   Authors: {_author_str(paper)}",
-        f"   Year: {paper.get('year', 'N/A')} | Citations: {paper.get('citationCount', 0):,}"
-        f" | Venue: {paper.get('venue', 'N/A')}",
+        (
+            f"   Year: {paper.get('year', 'N/A')} | Citations: {paper.get('citationCount', 0):,}"
+            f" | Venue: {paper.get('venue', 'N/A')}"
+        ),
     ]
     date_str = _paper_date_str(paper)
     if date_str:
@@ -762,7 +832,7 @@ def format_paper_console(paper: Dict, rank: int) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _short_description(paper: Dict) -> str:
+def _short_description(paper: dict) -> str:
     """Return a short description from the abstract (first sentence, max 200 chars)."""
     if paper.get("description"):
         return paper["description"].strip()
@@ -781,7 +851,7 @@ def _short_description(paper: Dict) -> str:
     return abstract
 
 
-def format_compact_entry(paper: Dict, rank: int = 0) -> str:
+def format_compact_entry(paper: dict, rank: int = 0) -> str:
     """Format: N. [Title📑](url): description. [Mon YYYY] (Citations: NNN)"""
     title = paper.get("title", "No title")
     link = _paper_link(paper)
@@ -801,7 +871,7 @@ def format_compact_entry(paper: Dict, rank: int = 0) -> str:
     return entry
 
 
-def _parse_compact_entry(line: str) -> Optional[Dict]:
+def _parse_compact_entry(line: str) -> dict | None:
     if not re.match(r"^\d+\. ", line):
         return None
 
@@ -843,9 +913,9 @@ def _parse_compact_entry(line: str) -> Optional[Dict]:
     return paper
 
 
-def _compact_entry_blocks(markdown_text: str) -> List[str]:
-    blocks: List[str] = []
-    current: List[str] = []
+def _compact_entry_blocks(markdown_text: str) -> list[str]:
+    blocks: list[str] = []
+    current: list[str] = []
 
     for line in markdown_text.splitlines():
         if re.match(r"^\d+\. ", line):
@@ -860,23 +930,28 @@ def _compact_entry_blocks(markdown_text: str) -> List[str]:
     return blocks
 
 
-def refresh_existing_papers(fetcher: SemanticScholarFetcher, output_file: str, min_citations: int) -> None:
+def refresh_existing_papers(
+    fetcher: SemanticScholarFetcher,
+    output_file: str,
+    min_citations: int,
+    batch_size: int,
+) -> None:
     existing_papers = _load_existing_markdown(output_file)
     if not existing_papers:
         print(f"No compact paper entries found in: {output_file}")
         return
 
     lookup_ids = [_paper_lookup_id(paper) for paper in existing_papers]
-    refreshed_by_id: Dict[str, Optional[Dict]] = {}
-    for start in range(0, len(lookup_ids), 450):
-        chunk = [paper_id for paper_id in lookup_ids[start:start + 450] if paper_id]
+    refreshed_by_id: dict[str, dict | None] = {}
+    for start in range(0, len(lookup_ids), batch_size):
+        chunk = [paper_id for paper_id in lookup_ids[start:start + batch_size] if paper_id]
         if not chunk:
             continue
         print(f"[batch] Fetching {len(chunk)} papers ({start + 1}-{start + len(chunk)})")
         results = fetcher.batch_papers(chunk)
         refreshed_by_id.update(zip(chunk, results))
 
-    refreshed: List[Dict] = []
+    refreshed: list[dict] = []
     updated = 0
     missing = 0
     for original, lookup_id in zip(existing_papers, lookup_ids):
@@ -899,7 +974,7 @@ def refresh_existing_papers(fetcher: SemanticScholarFetcher, output_file: str, m
     )
 
 
-def _load_existing_markdown(output_file: str, source_file: Optional[str] = None) -> List[Dict]:
+def _load_existing_markdown(output_file: str, source_file: str | None = None) -> list[dict]:
     if source_file == "-":
         markdown_text = sys.stdin.read()
     elif source_file and source_file.startswith("git:"):
@@ -923,15 +998,15 @@ def _load_existing_markdown(output_file: str, source_file: Optional[str] = None)
     return papers
 
 
-def _topic_counts(papers: List[Dict]) -> Dict[str, int]:
-    counts: Dict[str, int] = {}
+def _topic_counts(papers: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
     for paper in papers:
         for topic in infer_paper_topics(paper):
             counts[topic] = counts.get(topic, 0) + 1
     return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
 
 
-def _load_checkpoint(checkpoint_file: str) -> tuple[List[Dict], set, List[str], Dict[str, List[Dict]], List[str]]:
+def _load_checkpoint(checkpoint_file: str) -> tuple[list[dict], set[str], list[str], dict[str, list[dict]], list[str]]:
     """Load checkpoint with backward compatibility for older checkpoint files."""
     path = Path(checkpoint_file)
     if not path.exists():
@@ -948,17 +1023,17 @@ def _load_checkpoint(checkpoint_file: str) -> tuple[List[Dict], set, List[str], 
             f"{len(query_cache)} cached queries from checkpoint."
         )
         return papers, seen, completed, query_cache, failed_queries
-    except Exception as exc:
+    except (AttributeError, OSError, TypeError, ValueError) as exc:
         print(f"  [WARN] Could not read checkpoint ({exc}); starting fresh.")
         return [], set(), [], {}, []
 
 
 def _save_checkpoint(
     checkpoint_file: str,
-    papers: List[Dict],
-    completed_topics: List[str],
-    query_cache: Dict[str, List[Dict]],
-    failed_queries: List[str],
+    papers: list[dict],
+    completed_topics: list[str],
+    query_cache: dict[str, list[dict]],
+    failed_queries: list[str],
 ) -> None:
     """Persist current state to checkpoint JSON."""
     data = {
@@ -970,28 +1045,27 @@ def _save_checkpoint(
     Path(checkpoint_file).write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
 
-def _flush_output(output_file: str, papers: List[Dict], min_citations: int) -> List[str]:
+def _flush_output(output_file: str, papers: list[dict], min_citations: int) -> list[str]:
     """Sort papers by citation count and rewrite the output markdown. Returns compact lines."""
     sorted_papers = sorted(papers, key=lambda p: p.get("citationCount", 0), reverse=True)
     compact_lines = [format_compact_entry(p, rank=i + 1) for i, p in enumerate(sorted_papers)]
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write("# LLM Landscape Papers (Citation \u2265 {})\n\n".format(min_citations))
-        f.write(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*  \n")
+        f.write(f"# LLM Landscape Papers (Citation \u2265 {min_citations})\n\n")
+        f.write(f"*Generated: {datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}*  \n")
         f.write("*Source: Semantic Scholar API and local topic inference \u2014 Computer Science papers only*  \n")
         f.write(f"*Total papers: {len(sorted_papers)}*\n\n")
         counts = _topic_counts(sorted_papers)
         if counts:
             f.write("## Topic Coverage\n\n")
-            for topic, count in counts.items():
-                f.write(f"- {topic}: {count}\n")
+            f.writelines(f"- {topic}: {count}\n" for topic, count in counts.items())
             f.write("\n## Papers\n\n")
         f.write("\n".join(compact_lines) + "\n")
     return compact_lines
 
 
-def write_markdown_section(f, topic: str, papers: List[Dict]) -> None:
+def write_markdown_section(f, topic: str, papers: list[dict]) -> None:
     f.write(f"\n## {topic}\n\n")
-    f.write(f"*Retrieved: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*  \n")
+    f.write(f"*Retrieved: {datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}*  \n")
     f.write(f"*Papers shown: {len(papers)}*\n\n")
 
     if not papers:
@@ -1082,6 +1156,10 @@ def main() -> None:
         help="Refresh existing output entries from Semantic Scholar batch API without running search queries."
     )
     parser.add_argument(
+        "--batch-size", type=int, default=100,
+        help="Number of papers per refresh request (default: 100; lower values reduce unauthenticated API pressure)."
+    )
+    parser.add_argument(
         "--annotate-source",
         help="Optional markdown source for --annotate-existing; use '-' for stdin or 'git:<rev>:<path>'."
     )
@@ -1110,7 +1188,7 @@ def main() -> None:
     )
 
     if args.refresh_existing:
-        refresh_existing_papers(fetcher, output_file, args.min_citations)
+        refresh_existing_papers(fetcher, output_file, args.min_citations, args.batch_size)
         return
 
     # Optionally filter topics
@@ -1139,7 +1217,7 @@ def main() -> None:
     def persist_progress() -> None:
         _save_checkpoint(checkpoint_file, global_papers, completed_topics, query_cache, failed_queries)
 
-    def merge_papers(papers: List[Dict], topic_name: str) -> int:
+    def merge_papers(papers: list[dict], topic_name: str) -> int:
         added = 0
         by_id = {paper.get("paperId"): paper for paper in global_papers if paper.get("paperId")}
         for paper in papers:
