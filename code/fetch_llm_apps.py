@@ -4,11 +4,11 @@ The default output is `section/x_llm_apps.md`, intended to back the
 "Popular LLM Applications" link in `section/applications.md`.
 
 Usage:
-    python code/get_app_list_by_github_star.py
-    python code/get_app_list_by_github_star.py --token <GITHUB_TOKEN>
-    python code/get_app_list_by_github_star.py --min-stars 1500
-    python code/get_app_list_by_github_star.py --output files/llm_apps.json
-    python code/get_app_list_by_github_star.py --topics llm ai-agent rag
+    python code/fetch_llm_apps.py
+    python code/fetch_llm_apps.py --token <GITHUB_TOKEN>
+    python code/fetch_llm_apps.py --min-stars 1500
+    python code/fetch_llm_apps.py --output files/llm_apps.json
+    python code/fetch_llm_apps.py --topics llm ai-agent rag
 """
 
 from __future__ import annotations
@@ -18,10 +18,12 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import UTC, datetime
 from importlib import import_module
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
+
+import requests
 
 CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
@@ -55,7 +57,14 @@ DEFAULT_TOPICS = [
     "qwen",
     "llama",
     "deepseek",
-    "grok"
+    "grok",
+    "ade",
+    "agent-ide",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "cursor-agent",
+    "opencode",
 ]
 
 GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
@@ -68,7 +77,7 @@ def format_month_year(date_str: str) -> str:
     if not date_str:
         return ""
     try:
-        dt = datetime.strptime(date_str[:10], "%Y-%m-%d")
+        dt = datetime.strptime(date_str[:10], "%Y-%m-%d").replace(tzinfo=UTC)
     except ValueError:
         return ""
     return dt.strftime("[%b %Y]")
@@ -91,7 +100,7 @@ def clean_description(text: str, max_len: int = 220) -> str:
     return f"{clipped} ..."
 
 
-def build_headers(token: Optional[str]) -> dict[str, str]:
+def build_headers(token: str | None) -> dict[str, str]:
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": DEFAULT_USER_AGENT,
@@ -110,13 +119,13 @@ def github_get_json(
     timeout: int,
     max_retries: int,
     backoff: float,
-) -> Optional[dict[str, Any]]:
+) -> dict[str, Any] | None:
     current_backoff = backoff
 
     for attempt in range(max_retries):
         try:
             response = session.get(url, headers=headers, params=params, timeout=timeout)
-        except Exception:
+        except requests.RequestException:
             if attempt == max_retries - 1:
                 return None
             time.sleep(current_backoff)
@@ -253,7 +262,7 @@ def save_markdown(rows: list[dict[str, Any]], path: Path, *, min_stars: int, top
     lines = [format_compact_entry(repo, rank=index) for index, repo in enumerate(rows, 1)]
     with path.open("w", encoding="utf-8") as handle:
         handle.write(f"# Popular LLM Applications (GitHub Stars >= {min_stars})\n\n")
-        handle.write(f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*  \n")
+        handle.write(f"*Generated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}*  \n")
         handle.write("*Source: GitHub Search API - deduplicated across topic queries*  \n")
         handle.write(f"*Topics searched: {', '.join(topics)}*  \n")
         handle.write(f"*Total repositories: {len(rows)}*\n\n")
@@ -273,7 +282,7 @@ def parse_markdown_entries(path: Path) -> list[dict[str, Any]]:
         return repos
 
     pattern = re.compile(
-        r'^\d+\.\s+\[([^\]]+)\u2728\]\(([^)]+)\)'
+        r'^\d+\.\s+\[([^\]]+?)(?:\u2728)?\]\(([^)]+)\)'
         r'(?::\s*(.*?))?'
         r'\s*(?:\[(\w+ \d{4})\])?'
         r'\s*\(⭐\s*([\d,]+)\)',
@@ -291,7 +300,7 @@ def parse_markdown_entries(path: Path) -> list[dict[str, Any]]:
         created_at = ""
         if created_month_year:
             try:
-                created_at = datetime.strptime(created_month_year, "%b %Y").strftime("%Y-%m-01")
+                created_at = datetime.strptime(created_month_year, "%b %Y").replace(tzinfo=UTC).strftime("%Y-%m-01")
             except ValueError:
                 pass
 

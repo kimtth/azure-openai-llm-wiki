@@ -1,14 +1,15 @@
 from __future__ import annotations
 
 import time
-from typing import Any, Dict, Iterable, Optional
+from collections.abc import Iterable
+from typing import Any
 
 import requests
 
 DEFAULT_RETRY_STATUSES = {429, 500, 502, 503, 504}
 
 
-def create_session(user_agent: Optional[str] = None) -> requests.Session:
+def create_session(user_agent: str | None = None) -> requests.Session:
     session = requests.Session()
     if user_agent:
         session.headers.update({"User-Agent": user_agent})
@@ -19,13 +20,13 @@ def get_json(
     session: requests.Session,
     url: str,
     *,
-    params: Optional[Dict[str, Any]] = None,
+    params: dict[str, Any] | None = None,
     timeout: int = 10,
     max_retries: int = 3,
     backoff: float = 1.0,
     retry_statuses: Iterable[int] = DEFAULT_RETRY_STATUSES,
     retry_after_header: bool = True,
-) -> Optional[Dict[str, Any]]:
+) -> dict[str, Any] | None:
     retry_statuses_set = set(retry_statuses)
 
     for attempt in range(max_retries):

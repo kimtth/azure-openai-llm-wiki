@@ -1,5 +1,5 @@
 ---
-name: add-new-entry
+name: add-new-entry-from-temp-md
 description: "Workflow and tools for adding new entries from temp.md to the section files. Includes legend format, section reference, code tools, and common pitfalls. USE FOR: Adding new resources to the knowledge base. DO NOT USE FOR: Editing existing entries or restructuring sections."
 ---
 
@@ -12,7 +12,7 @@ description: "Workflow and tools for adding new entries from temp.md to the sect
 
 1. **Classify each URL** → determine which section file (`azure.md`, `applications.md`, `models_research.md`, `best_practices.md`, `tools_extra.md`) and which current section heading it belongs to.
 2. **Fetch descriptions** — use `code/fetch_github_description.py` for GitHub repos. For arXiv papers and blog/web links, use `fetch_webpage` to extract a one-sentence description.
-3. **Fetch creation dates** — use `code/get_github_dates.py` for GitHub repos. For arXiv, derive the date from the ID prefix (e.g., `2602.xxxxx` → Feb 2026). For blog posts, read from the page.
+3. **Fetch creation dates** — use `code/update_github_dates.py` for GitHub repos. For arXiv, derive the date from the ID prefix (e.g., `2602.xxxxx` → Feb 2026). For blog posts, read from the page.
 4. **Add star badges** — use `code/add_github_stars.py` for all GitHub links.
 5. **Apply legend symbols** — see the **Legend Format** section below. `azure.md` should not use emoji markers.
 6. **Shorten descriptions** — keep each description to ≤15 words. One punchy sentence. Do not repeat the link name.
@@ -204,9 +204,10 @@ All tools are in `code/`. Run with `python code/<script>.py`.
 | Script | Purpose |
 |--------|---------|
 | `fetch_github_description.py` | Fetch GitHub repo descriptions; appends after the link colon. Skips lines that already have a description. |
-| `get_github_dates.py` | Fetch GitHub repo creation date; appends `[Mon YYYY]` or `(Mon YYYY)`. Skips lines already dated. |
+| `update_github_dates.py` | Fetch GitHub repo creation date; appends `[Mon YYYY]` or `(Mon YYYY)`. Skips lines already dated. |
 | `add_github_stars.py` | Append star badge to lines with GitHub links. Skips duplicates. |
 | `fetch_popular_papers.py` | Query Semantic Scholar for review-only RAG/agent paper candidates; not part of normal entry insertion. |
+| `fetch_llm_papers.py` | Generate or refresh the separate LLM-landscape paper pool; use `fetch-llm-papers` rather than hand-editing its output. |
 | `update_citation_counts.py` | Update citation counts for ranked paper sections via Semantic Scholar. |
 | `check_unused_files.py` | Scan markdown for file refs; move unreferenced files to `files/_bak/`. |
 
@@ -215,7 +216,7 @@ All tools are in `code/`. Run with `python code/<script>.py`.
 **Common CLI pattern:**
 ```powershell
 python code/fetch_github_description.py --input temp.md --output temp_with_desc.md
-python code/get_github_dates.py --input temp_with_desc.md --in-place
+python code/update_github_dates.py --input temp_with_desc.md --in-place
 python code/add_github_stars.py --input temp_with_desc.md --in-place
 ```
 
@@ -233,6 +234,6 @@ python code/add_github_stars.py --input temp_with_desc.md --in-place
 
 5. **Date format mismatch:** `azure.md` uses `(Mon YYYY)` parentheses. All other section files use `[Mon YYYY]` square brackets.
 
-6. **emoji stripping via heredoc:** Writing file content via PowerShell heredoc strips emoji characters. Use `replace_string_in_file` or `multi_replace_string_in_file` to patch emoji symbols back in if they are lost.
+6. **Emoji preservation:** Ensure edits preserve existing legend symbols such as 📑, 📺, and 🤗.
 
 7. **Star badges on non-GitHub links:** Only add star badges to `github.com` links. Blog posts, arXiv papers, and product pages must not have a star badge.

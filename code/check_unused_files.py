@@ -1,8 +1,5 @@
 from __future__ import annotations
 
-# Check for unused files in the files directory and move them to bak directory
-# This script scans all markdown files and checks if files in 'files' directory are referenced
-
 import argparse
 import os
 import re
@@ -10,11 +7,15 @@ import shutil
 import sys
 from pathlib import Path
 
+# Check for unused files in the files directory and move them to bak directory.
+# This script scans all markdown files and checks whether files are referenced.
+
 CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
     sys.path.insert(0, str(CODE_DIR))
 
 from utils.path_utils import get_repo_root
+
 
 def get_all_markdown_files(root_dir):
     """Get all markdown files in the repository."""
@@ -80,8 +81,8 @@ def scan_markdown_for_references(root_dir):
                     normalized = normalize_path(ref)
                     if normalized:
                         all_references.add(normalized)
-        except Exception as e:
-            print(f"Error reading {md_file}: {e}")
+        except (OSError, UnicodeError) as exc:
+            print(f"Error reading {md_file}: {exc}")
     
     return all_references
 
@@ -169,8 +170,8 @@ def move_unused_files(root_dir, files_dir, dry_run=True, check_archive=False):
                 try:
                     shutil.move(src, dst)
                     print(f"  ✓ Moved: {file}")
-                except Exception as e:
-                    print(f"  ✗ Error moving {file}: {e}")
+                except (OSError, shutil.Error) as exc:
+                    print(f"  ✗ Error moving {file}: {exc}")
     else:
         print("All files are being used! No files to move.")
     
