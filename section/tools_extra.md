@@ -270,6 +270,7 @@ databricks-dolly-15k: Instruction-Tuned [🤗](https://huggingface.co/datasets/d
 
 ## **LLMOps: Large Language Model Operations**
 
+- [Agent QA](https://github.com/vostride/agent-qa): The self-improving QA agent for software teams, with natural-language web/mobile regression tests and persistent test memory. [May 2026] ![**github stars**](https://img.shields.io/github/stars/vostride/agent-qa?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Agent Trace](https://agent-trace.dev/): Data spec for recording AI agent attribution, reasoning steps, and tool calls.
 - [agenta](https://github.com/Agenta-AI/agenta): OSS LLMOps workflow: building (LLM playground, evaluation), deploying (prompt and configuration management), and monitoring (LLM observability and tracing). [Jun 2023] ![**github stars**](https://img.shields.io/github/stars/Agenta-AI/agenta?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Azure ML Prompt flow](https://microsoft.github.io/promptflow/index.html): A set of LLMOps tools designed to facilitate the creation of LLM-based AI applications [Sep 2023] > [How to Evaluate & Upgrade Model Versions in the Azure OpenAI Service](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/how-to-evaluate-amp-upgrade-model-versions-in-the-azure-openai/ba-p/4218880) [14 Aug 2024]
