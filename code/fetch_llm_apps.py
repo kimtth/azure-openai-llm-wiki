@@ -65,6 +65,28 @@ DEFAULT_TOPICS = [
     "codex",
     "cursor-agent",
     "opencode",
+    "agentic-ai",
+    "multi-agent",
+    "mcp",
+    "model-context-protocol",
+    "a2a",
+    "agent2agent",
+    "coding-agent",
+    "ai-coding-agent",
+    "deep-research",
+    "research-agent",
+    "computer-use",
+    "browser-agent",
+    "ai-automation",
+    "context-engineering",
+    "llmops",
+    "ai-gateway",
+    "model-gateway",
+    "prompt-management",
+    "graphrag",
+    "vector-search",
+    "local-ai",
+    "voice-agent",
 ]
 
 GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
@@ -165,11 +187,12 @@ def search_repositories(
     max_retries: int,
     backoff: float,
     sleep_s: float,
+    max_pages: int,
 ) -> list[dict[str, Any]]:
     query = f"topic:{topic} stars:>={min_stars}"
     repos: list[dict[str, Any]] = []
 
-    for page in range(1, MAX_PAGES_PER_QUERY + 1):
+    for page in range(1, max_pages + 1):
         params = {
             "q": query,
             "sort": "stars",
@@ -262,9 +285,9 @@ def save_markdown(rows: list[dict[str, Any]], path: Path, *, min_stars: int, top
     lines = [format_compact_entry(repo, rank=index) for index, repo in enumerate(rows, 1)]
     with path.open("w", encoding="utf-8") as handle:
         handle.write(f"# Popular LLM Applications (GitHub Stars >= {min_stars})\n\n")
-        handle.write(f"*Generated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}*  \n")
-        handle.write("*Source: GitHub Search API - deduplicated across topic queries*  \n")
-        handle.write(f"*Topics searched: {', '.join(topics)}*  \n")
+        handle.write(f"*Generated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}*<br>\n")
+        handle.write("*Source: GitHub Search API - deduplicated across topic queries*<br>\n")
+        handle.write(f"*Topics searched: {', '.join(topics)}*<br>\n")
         handle.write(f"*Total repositories: {len(rows)}*\n\n")
 
         if rows:
@@ -325,6 +348,21 @@ def parse_markdown_entries(path: Path) -> list[dict[str, Any]]:
     return repos
 
 
+def parse_markdown_topics(path: Path) -> list[str]:
+    """Return the topic list recorded in an existing Markdown catalog."""
+    if not path.exists():
+        return []
+
+    match = re.search(
+        r"^\*Topics searched:\s*(.*?)\*(?:<br>)?\s*$",
+        path.read_text(encoding="utf-8"),
+        re.MULTILINE,
+    )
+    if not match:
+        return []
+    return [topic.strip() for topic in match.group(1).split(",") if topic.strip()]
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Fetch popular GitHub repositories for LLM applications and write a ranked list."
@@ -362,6 +400,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--backoff", type=float, default=1.0, help="Initial retry backoff in seconds.")
     parser.add_argument("--sleep", type=float, default=1.0, help="Sleep between successful page requests.")
     parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=MAX_PAGES_PER_QUERY,
+        help=f"Maximum pages to retrieve per topic (default: {MAX_PAGES_PER_QUERY}).",
+    )
+    parser.add_argument(
         "--include-archived",
         action="store_true",
         help="Include archived repositories. By default archived repos are excluded.",
@@ -369,7 +413,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--append",
         action="store_true",
-        help="Read existing output file and append results from --topics, then resort by stars.",
+        help="Merge results from --topics into existing output, refresh matching entries, then resort by stars.",
     )
     return parser
 
@@ -392,15 +436,20 @@ def main() -> None:
 
     seen: set[str] = set()
     repos: list[dict[str, Any]] = []
+    repo_indices: dict[str, int] = {}
+    recorded_topics: list[str] = []
 
     if args.append and output_path.exists():
         print(f"[append] Parsing existing entries from {output_path}")
         existing = parse_markdown_entries(output_path)
+        recorded_topics = parse_markdown_topics(output_path)
         print(f"[append] Loaded {len(existing)} existing repositories")
         for repo in existing:
             full_name = repo.get("full_name", "")
-            if full_name and full_name not in seen:
-                seen.add(full_name)
+            key = full_name.casefold()
+            if full_name and key not in seen:
+                seen.add(key)
+                repo_indices[key] = len(repos)
                 repos.append(repo)
 
     for topic in args.topics:
@@ -414,21 +463,27 @@ def main() -> None:
             max_retries=args.max_retries,
             backoff=args.backoff,
             sleep_s=args.sleep,
+            max_pages=args.max_pages,
         )
 
         added = 0
         for item in raw_items:
             full_name = item.get("full_name", "")
-            if not full_name or full_name in seen:
+            if not full_name:
                 continue
 
             normalized = normalize_repo(item)
             if normalized["archived"] and not args.include_archived:
                 continue
 
-            seen.add(full_name)
-            repos.append(normalized)
-            added += 1
+            key = full_name.casefold()
+            if key in seen:
+                repos[repo_indices[key]] = normalized
+            else:
+                seen.add(key)
+                repo_indices[key] = len(repos)
+                repos.append(normalized)
+                added += 1
 
         print(f"  -> {added} new unique repositories (total: {len(repos)})")
         time.sleep(args.sleep)
@@ -438,7 +493,8 @@ def main() -> None:
     print(f"\n[result] {len(repos)} repositories after dedupe and filtering")
     print_table(repos, limit=args.show)
 
-    save_markdown(repos, output_path, min_stars=args.min_stars, topics=args.topics)
+    topics = list(dict.fromkeys([*recorded_topics, *args.topics]))
+    save_markdown(repos, output_path, min_stars=args.min_stars, topics=topics)
 
 
 if __name__ == "__main__":

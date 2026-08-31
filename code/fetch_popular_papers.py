@@ -153,6 +153,9 @@ class SemanticScholarFetcher:
                 "fieldsOfStudy",
             ]
 
+        if len(ids) == 1:
+            return [self.get_paper(ids[0], fields)]
+
         url = f"{self.BASE_URL}/paper/batch"
         params = {"fields": ",".join(fields)}
         backoff = self.backoff
@@ -196,6 +199,41 @@ class SemanticScholarFetcher:
                 backoff = min(backoff * 2, 300.0)
 
         raise RuntimeError(f"Semantic Scholar batch fetch failed after retries ({last_error})")
+
+    def get_paper(self, paper_id: str, fields: list[str]) -> dict | None:
+        """Fetch a single paper when the batch endpoint is rate limited."""
+        url = f"{self.BASE_URL}/paper/{paper_id}"
+        params = {"fields": ",".join(fields)}
+        backoff = self.backoff
+
+        for attempt in range(self.max_retries):
+            try:
+                self._wait_for_request_slot()
+                response = self.session.get(url, params=params, timeout=self.timeout)
+            except requests.RequestException:
+                response = None
+
+            if response is not None and response.status_code == 200:
+                return response.json()
+
+            if response is None or response.status_code not in {429, 500, 502, 503, 504}:
+                return None
+
+            retry_after = response.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    backoff = max(backoff, float(retry_after))
+                except ValueError:
+                    pass
+            elif response.status_code == 429:
+                backoff = max(backoff, 120.0)
+                self._defer_after_rate_limit(backoff)
+
+            if attempt < self.max_retries - 1:
+                time.sleep(backoff)
+                backoff = min(backoff * 2, 300.0)
+
+        return None
 
     def get_papers_sorted_by_citations(self, query: str, top_n: int = 30, min_citations: int = 100) -> list[dict]:
         """Get top N papers sorted by citation count."""

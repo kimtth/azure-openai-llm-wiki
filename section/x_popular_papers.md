@@ -3,6 +3,7 @@
 *Generated: 2026-07-01 10:55:39*
 *Source: Semantic Scholar batch API refresh of existing paper IDs*
 *Filtered for Computer Science papers only*
+*Citation data refreshed: 2026-08-31 for 52 arXiv-linked entries; 6 entries without an arXiv identifier retain their previously recorded values.*
 
 ## RAG (Retrieval-Augmented Generation)
 
@@ -11,7 +12,7 @@
 ### 1. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
 
 **Authors:** Patrick Lewis, Ethan Perez, Aleksandara Piktus, et al.  
-**Year:** 2020 | **Citations:** 15,276 | **Venue:** Neural Information Processing Systems  
+**Year:** 2020 | **Citations:** 17,662 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [May 2020]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/659bf9ce7175e1ec266ff54359e2bd76e0b7ff31](https://www.semanticscholar.org/paper/659bf9ce7175e1ec266ff54359e2bd76e0b7ff31)  
@@ -24,7 +25,7 @@
 ### 2. Retrieval-Augmented Generation for Large Language Models: A Survey
 
 **Authors:** Yunfan Gao, Yun Xiong, Xinyu Gao, et al.  
-**Year:** 2023 | **Citations:** 3,557 | **Venue:** arXiv.org  
+**Year:** 2023 | **Citations:** 3,980 | **Venue:** arXiv.org  
 **Year Month:** [Dec 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/46f9f7b8f88f72e12cbdb21e3311f995eb6e65c5](https://www.semanticscholar.org/paper/46f9f7b8f88f72e12cbdb21e3311f995eb6e65c5)  
@@ -50,7 +51,7 @@
 ### 4. Active Retrieval Augmented Generation
 
 **Authors:** Zhengbao Jiang, Frank F. Xu, Luyu Gao, et al.  
-**Year:** 2023 | **Citations:** 704 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2023 | **Citations:** 814 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [May 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/88884b8806262a4095036041e3567d450dba39f7](https://www.semanticscholar.org/paper/88884b8806262a4095036041e3567d450dba39f7)  
@@ -76,7 +77,7 @@
 ### 6. Benchmarking Large Language Models in Retrieval-Augmented Generation
 
 **Authors:** Jiawei Chen, Hongyu Lin, Xianpei Han, et al.  
-**Year:** 2023 | **Citations:** 566 | **Venue:** AAAI Conference on Artificial Intelligence  
+**Year:** 2023 | **Citations:** 643 | **Venue:** AAAI Conference on Artificial Intelligence  
 **Year Month:** [Sep 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/28e2ecb4183ebc0eec504b12dddc677f8aef8745](https://www.semanticscholar.org/paper/28e2ecb4183ebc0eec504b12dddc677f8aef8745)  
@@ -89,7 +90,7 @@
 ### 7. Benchmarking Retrieval-Augmented Generation for Medicine
 
 **Authors:** Guangzhi Xiong, Qiao Jin, Zhiyong Lu, et al.  
-**Year:** 2024 | **Citations:** 543 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
+**Year:** 2024 | **Citations:** 607 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/b798cf6af813638fab09a8af6ad0f3df6c241485](https://www.semanticscholar.org/paper/b798cf6af813638fab09a8af6ad0f3df6c241485)  
@@ -115,7 +116,7 @@
 ### 9. LightRAG: Simple and Fast Retrieval-Augmented Generation
 
 **Authors:** Zirui Guo, Lianghao Xia, Yanhua Yu, et al.  
-**Year:** 2024 | **Citations:** 347 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2024 | **Citations:** 442 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [Oct 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1ea143c34b9bc359780f79ba4d68dee68bcc1129](https://www.semanticscholar.org/paper/1ea143c34b9bc359780f79ba4d68dee68bcc1129)  
@@ -128,7 +129,7 @@
 ### 10. Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG
 
 **Authors:** Aditi Singh, Abul Ehtesham, Saket Kumar, et al.  
-**Year:** 2025 | **Citations:** 332 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 405 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7](https://www.semanticscholar.org/paper/ba7952e7c4fb891c36980ca19f94251257da6eb7)  
@@ -141,7 +142,7 @@
 ### 11. G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering
 
 **Authors:** Xiaoxin He, Yijun Tian, Yifei Sun, et al.  
-**Year:** 2024 | **Citations:** 296 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 344 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/a41d4a3b005c8ec4f821e6ee96672d930ca9596c](https://www.semanticscholar.org/paper/a41d4a3b005c8ec4f821e6ee96672d930ca9596c)  
@@ -154,7 +155,7 @@
 ### 12. MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries
 
 **Authors:** Yixuan Tang, Yi Yang  
-**Year:** 2024 | **Citations:** 293 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 322 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239](https://www.semanticscholar.org/paper/4e71624e90960cb003e311a0fe3b8be4c2863239)  
@@ -167,7 +168,7 @@
 ### 13. RankRAG: Unifying Context Ranking with Retrieval-Augmented Generation in LLMs
 
 **Authors:** Yue Yu, Wei Ping, Zihan Liu, et al.  
-**Year:** 2024 | **Citations:** 282 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 307 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/80478de9c7a81561e2f3dac9b8b1ef3df389ff2d](https://www.semanticscholar.org/paper/80478de9c7a81561e2f3dac9b8b1ef3df389ff2d)  
@@ -193,7 +194,7 @@
 ### 15. Corrective Retrieval Augmented Generation
 
 **Authors:** Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, et al.  
-**Year:** 2024 | **Citations:** 232 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 278 | **Venue:** arXiv.org  
 **Year Month:** [Jan 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/5bbc2b5aa6c63c6a2cfccf095d6020b063ad47ac](https://www.semanticscholar.org/paper/5bbc2b5aa6c63c6a2cfccf095d6020b063ad47ac)  
@@ -219,7 +220,7 @@
 ### 17. PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models
 
 **Authors:** Wei Zou, Runpeng Geng, Binghui Wang, et al.  
-**Year:** 2024 | **Citations:** 219 | **Venue:** USENIX Security Symposium  
+**Year:** 2024 | **Citations:** 291 | **Venue:** USENIX Security Symposium  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/f4e06256ab07727ff4e0465deea83fcf45012354](https://www.semanticscholar.org/paper/f4e06256ab07727ff4e0465deea83fcf45012354)  
@@ -232,7 +233,7 @@
 ### 18. The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)
 
 **Authors:** Shenglai Zeng, Jiankun Zhang, Pengfei He, et al.  
-**Year:** 2024 | **Citations:** 216 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
+**Year:** 2024 | **Citations:** 246 | **Venue:** Annual Meeting of the Association for Computational Linguistics  
 **Year Month:** [Feb 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8](https://www.semanticscholar.org/paper/ea89b058ce619ed16d4de633126b02a8179457c8)  
@@ -245,7 +246,7 @@
 ### 19. VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents
 
 **Authors:** Shi Yu, Chaoyue Tang, Bokai Xu, et al.  
-**Year:** 2024 | **Citations:** 215 | **Venue:** International Conference on Learning Representations  
+**Year:** 2024 | **Citations:** 273 | **Venue:** International Conference on Learning Representations  
 **Year Month:** [Oct 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58](https://www.semanticscholar.org/paper/d9052dd87959e6076baf35e8f7ee87d568a32b58)  
@@ -258,7 +259,7 @@
 ### 20. FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research
 
 **Authors:** Jiajie Jin, Yutao Zhu, Xinyu Yang, et al.  
-**Year:** 2024 | **Citations:** 202 | **Venue:** The Web Conference  
+**Year:** 2024 | **Citations:** 232 | **Venue:** The Web Conference  
 **Year Month:** [May 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07](https://www.semanticscholar.org/paper/daebec92963ab8dea492f0c209bdf57e87bcaa07)  
@@ -271,7 +272,7 @@
 ### 21. RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation
 
 **Authors:** Chi-Min Chan, Chunpu Xu, Ruibin Yuan, et al.  
-**Year:** 2024 | **Citations:** 190 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 206 | **Venue:** arXiv.org  
 **Year Month:** [Apr 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a](https://www.semanticscholar.org/paper/746b96ee17e329f1085a047116c05e12eaa3925a)  
@@ -310,7 +311,7 @@
 ### 24. Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach
 
 **Authors:** Zhuowan Li, Cheng Li, Mingyang Zhang, et al.  
-**Year:** 2024 | **Citations:** 155 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2024 | **Citations:** 172 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d](https://www.semanticscholar.org/paper/ccb5afb760a73f5507e31995397f80960db7842d)  
@@ -378,7 +379,7 @@
 ### 1. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
 
 **Authors:** John Yang, Carlos E. Jimenez, Alexander Wettig, et al.  
-**Year:** 2024 | **Citations:** 1,317 | **Venue:** Neural Information Processing Systems  
+**Year:** 2024 | **Citations:** 1,690 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [May 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1c3c531fc0fbe79f97f367ed3648de8467caeeaa](https://www.semanticscholar.org/paper/1c3c531fc0fbe79f97f367ed3648de8467caeeaa)  
@@ -404,7 +405,7 @@
 ### 3. Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models
 
 **Authors:** Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, et al.  
-**Year:** 2023 | **Citations:** 533 | **Venue:** International Conference on Machine Learning  
+**Year:** 2023 | **Citations:** 615 | **Venue:** International Conference on Machine Learning  
 **Year Month:** [Oct 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b](https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b)  
@@ -417,7 +418,7 @@
 ### 4. Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory
 
 **Authors:** P. Chhikara, Dev Khant, Saket Aryan, et al.  
-**Year:** 2025 | **Citations:** 441 | **Venue:** European Conference on Artificial Intelligence  
+**Year:** 2025 | **Citations:** 579 | **Venue:** European Conference on Artificial Intelligence  
 **Year Month:** [Apr 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382](https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382)  
@@ -430,7 +431,7 @@
 ### 5. AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges
 
 **Authors:** Ranjan Sapkota, Konstantinos I. Roumeliotis, Manoj Karkee  
-**Year:** 2025 | **Citations:** 404 | **Venue:** Information Fusion  
+**Year:** 2025 | **Citations:** 518 | **Venue:** Information Fusion  
 **Year Month:** [May 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf](https://www.semanticscholar.org/paper/986e813f4c4f36786c3642cb9c8718586e47bdcf)  
@@ -443,7 +444,7 @@
 ### 6. Identifying the Risks of LM Agents with an LM-Emulated Sandbox
 
 **Authors:** Yangjun Ruan, Honghua Dong, Andrew Wang, et al.  
-**Year:** 2023 | **Citations:** 396 | **Venue:** International Conference on Learning Representations  
+**Year:** 2023 | **Citations:** 520 | **Venue:** International Conference on Learning Representations  
 **Year Month:** [Sep 2023]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564](https://www.semanticscholar.org/paper/0a893657e00fe8ecfadcc65c63bf293e70cb1564)  
@@ -467,7 +468,7 @@
 ### 8. Empowering Biomedical Discovery with AI Agents
 
 **Authors:** Shanghua Gao, Ada Fang, Yepeng Huang, et al.  
-**Year:** 2024 | **Citations:** 336 | **Venue:** Cell  
+**Year:** 2024 | **Citations:** 375 | **Venue:** Cell  
 **Year Month:** [Apr 2024]  
 **Fields:** Computer Science, Medicine  
 **URL:** [https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c](https://www.semanticscholar.org/paper/8cedeb11139eab187e43414fd7097c5d578dad7c)  
@@ -480,7 +481,7 @@
 ### 9. Pre-Trained Language Models for Interactive Decision-Making
 
 **Authors:** Shuang Li, Xavier Puig, Yilun Du, et al.  
-**Year:** 2022 | **Citations:** 334 | **Venue:** Neural Information Processing Systems  
+**Year:** 2022 | **Citations:** 339 | **Venue:** Neural Information Processing Systems  
 **Year Month:** [Feb 2022]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef](https://www.semanticscholar.org/paper/b9b220b485d2add79118ffdc2aaa148b67fa53ef)  
@@ -493,7 +494,7 @@
 ### 10. Small Language Models are the Future of Agentic AI
 
 **Authors:** Peter Belcák, Greg Heinrich, Shizhe Diao, et al.  
-**Year:** 2025 | **Citations:** 288 | **Venue:** arXiv.org  
+**Year:** 2025 | **Citations:** 354 | **Venue:** arXiv.org  
 **Year Month:** [Jun 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/f1d477ccd20b3e90611fc46b1951b3708651a425](https://www.semanticscholar.org/paper/f1d477ccd20b3e90611fc46b1951b3708651a425)  
@@ -545,7 +546,7 @@
 ### 14. Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents
 
 **Authors:** Pranav Putta, Edmund Mills, Naman Garg, et al.  
-**Year:** 2024 | **Citations:** 201 | **Venue:** arXiv.org  
+**Year:** 2024 | **Citations:** 211 | **Venue:** arXiv.org  
 **Year Month:** [Aug 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/b393f619a87c5b6aa63c7abc7118263205b6aa62](https://www.semanticscholar.org/paper/b393f619a87c5b6aa63c7abc7118263205b6aa62)  
@@ -579,7 +580,7 @@
 ### 17. Language Models as Agent Models
 
 **Authors:** Jacob Andreas  
-**Year:** 2022 | **Citations:** 194 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
+**Year:** 2022 | **Citations:** 198 | **Venue:** Conference on Empirical Methods in Natural Language Processing  
 **Year Month:** [Dec 2022]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b](https://www.semanticscholar.org/paper/4596139b28c3ceacbd7e3c34dc0df079dbf4e96b)  
@@ -650,7 +651,7 @@
 ### 23. Magma: A Foundation Model for Multimodal AI Agents
 
 **Authors:** Jianwei Yang, Reuben Tan, Qianhui Wu, et al.  
-**Year:** 2025 | **Citations:** 152 | **Venue:** Computer Vision and Pattern Recognition  
+**Year:** 2025 | **Citations:** 172 | **Venue:** Computer Vision and Pattern Recognition  
 **Year Month:** [Feb 2025]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/512b311213c905087ab439b5c303db2e382a7518](https://www.semanticscholar.org/paper/512b311213c905087ab439b5c303db2e382a7518)  
@@ -676,7 +677,7 @@
 ### 25. Tree Search for Language Model Agents
 
 **Authors:** Jing Yu Koh, S. McAleer, Daniel Fried, et al.  
-**Year:** 2024 | **Citations:** 147 | **Venue:** Trans. Mach. Learn. Res.  
+**Year:** 2024 | **Citations:** 151 | **Venue:** Trans. Mach. Learn. Res.  
 **Year Month:** [Jul 2024]  
 **Fields:** Computer Science  
 **URL:** [https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588](https://www.semanticscholar.org/paper/9345e55a21959948499cee997522aa5eac7ed588)  
