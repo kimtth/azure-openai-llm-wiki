@@ -187,6 +187,8 @@
 - [Claude 4](https://www.anthropic.com/news/claude-4): Claude Opus 4 (72.5% on SWE-bench),  Claude Sonnet 4 (72.7% on SWE-bench). Extended Thinking Mode (Beta). Parallel Tool Use & Memory. Claude Code SDK. AI agents: code execution, MCP connector, Files API, and 1-hour prompt caching. [23 May 2025]
 - [Claude 4.5](https://www.anthropic.com/news/claude-sonnet-4-5): Major upgrades in autonomous coding, tool use, context handling, memory, and long-horizon reasoning; supports over 30 hours of continuous operation. [30 Sep 2025]
 - [Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5):  SWE-bench Verified (80.9%).  $5/$25 per million tokens [25 Nov 2025]
+- [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5): Frontier Claude model for coding and knowledge work, with adjustable effort levels and improved cost effectiveness over Opus 4.8. [24 Jul 2026]
+- [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5): Agentic model for planning, browser and terminal tool use, coding, and knowledge work; it approaches Opus 4.8 performance at a lower price. [30 Jun 2026]
 - [anthropic/cookbook](https://github.com/anthropics/anthropic-cookbook)
 
 #### **Apple**
@@ -265,6 +267,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [gemini/cookbook](https://github.com/google-gemini/cookbook)
 - [Gemini 3 Pro](https://blog.google/products/gemini/gemini-3/): Deep Think reasoning, Advanced  multimodal understanding, spatial reasoning, and agentic capabilities up 30% from 2.5 Pro — reaching 37.5% on Humanity’s Last Exam (41% in Deep Think mode). [18 Nov 2025]
 - [Gemini 3.5 Flash](https://deepmind.google/models/gemini/): Frontier-speed agentic coding and multimodal model from Google. [May 2026]
+- [Gemini 3.7 Flash](https://deepmind.google/models/gemini/flash/): Multimodal general-availability model for agentic coding, advanced reasoning, and knowledge work, with function calling, search, and computer use. [2026]
 - [Gemini Omni](https://deepmind.google/models/gemini-omni/): Any-input generative media model starting with video. [May 2026]
 
 #### **Groq**
@@ -307,7 +310,9 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [NotebookLlama](https://github.com/meta-llama/llama-recipes/tree/main/recipes/quickstart/NotebookLlama): An Open Source version of NotebookLM [28 Oct 2024]
 - [Llama 3.3](https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/): a text-only 70B instruction-tuned model. Llama 3.3 70B approaches the performance of Llama 3.1 405B. [6 Dec 2024]
 - [Llama 4](https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/):  Mixture of Experts (MoE). Llama 4 Scout (actived 17b / total 109b, 10M Context, single GPU), Llama 4 Maverick (actived 17b / total 400b, 1M Context) / [git](https://github.com/meta-llama/llama-models/tree/main/models/llama4): Model Card [5 Apr 2025] 
+- [Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/): Apache-2.0, 30B open model for always-on local agents; supports reliable tool calling, persistent state, self-managed memory, and multimodal perception on a single GPU or Mac. [Aug 2026]
 - [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl): Meta's multimodal reasoning model with tool use, visual chain-of-thought, and multi-agent Contemplating mode. [Apr 2026]
+- [Muse Spark 1.2](https://developer.meta.com/ai/models/muse-spark/): 1M-context model optimized for coding workflows, reliable tool calling, and long-running tasks. [Aug 2026]
 
 #### **Microsoft**
 
@@ -328,6 +333,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 #### **MiniMaxAI**
 
 - Founded in Dec 2021. Shanghai, China.
+- [MiniMax H3](https://www.minimax.io/blog/minimax-h3): General-purpose multimodal generation model that takes text, images, video, and audio as unified context and produces up-to-15-second 2K video with native stereo sound. [31 Jul 2026]
 - [MiniMax-M2](https://github.com/MiniMax-AI/MiniMax-M2): Coding and Agent tasks, 230B (10B Active), MoE, a new high ahead of DeepSeek-V3.2 and Kimi K2. ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M2?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3): New flagship model with 512K context window, 128K max output, image input, available via OpenAI- and Anthropic-compatible APIs. ![**github stars**](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M3?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
@@ -377,6 +383,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 #### **Tencent**
 
 - Founded in 1998, Tencent is a Chinese company dedicated to various technology sectors, including social media, gaming, and AI development.
+- [Hy4 preview](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/): Open-source 770B-parameter MoE model with 49B active parameters and a context window exceeding 1M tokens, built for coding, office work, and scientific research. [28 Aug 2026]
 - [Hunyuan-Large](https://arxiv.org/pdf/2411.02265): An open-source MoE model with open weights. [4 Nov 2024] / [git](https://github.com/Tencent/Tencent-Hunyuan-Large) ![**github stars**](https://img.shields.io/github/stars/Tencent/Tencent-Hunyuan-Large?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Hunyuan-T1](https://tencent.github.io/llm.hunyuan.T1/README_EN.html): Reasoning model [21 Mar 2025]
 - A list of models: / [git](https://github.com/Tencent-Hunyuan)
@@ -397,6 +404,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [Grok-4](https://x.ai/news/grok-4): Humanity’s Last Exam, Grok 4 Heavy scored 44.4% [9 Jul 2025]
 - [Grok 4.1](https://x.ai/news/grok-4-1) [17 Nov 2025]
 - [Grok 4.3 Beta](https://grok.com/release-notes/apr-17-2026): Pretrained Grok model update with computer access for creating presentations, documents, and spreadsheets. [Apr 2026]
+- [Grok 4.6](https://x.ai/news/grok-4-6): Long-horizon agentic model for coding, research, and interactive work; available through the API, Grok Build, Cursor, and partners. [12 Aug 2026]
 
 #### **Xiaomi**
 
@@ -410,6 +418,7 @@ length of 128K tokens, SigLIP encoder, Reasoning [Gemma 3 Technical Report](http
 - [GLM-4.5](https://github.com/zai-org/GLM-4.5): An open-source large language model designed for intelligent agents
 - [GLM-4.6](https://z.ai/blog/glm-4.6): GLM-4.6: Advanced Agentic, Reasoning and Coding Capabilities [30 Sep 2025]
 - [GLM-5.2](https://z.ai/blog/glm-5.2): Open MIT long-horizon model with solid 1M context, IndexShare sparse attention, 81.0 Terminal-Bench 2.1, 62.1 SWE-bench Pro, and top open-source long-horizon coding results. [Jun 2026]
+- [GLM-5.3](https://z.ai/blog/glm-5-3): Open-weights model whose post-training improves complex coding and long-horizon work; its cyber capabilities are being safety evaluated before weight release. [14 Aug 2026]
 
 ### **Domain-Specific and Specialized LLMs**
 

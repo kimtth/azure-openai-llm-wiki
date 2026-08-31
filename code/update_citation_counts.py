@@ -40,7 +40,7 @@ def get_citation_count(
         return None
     return data.get("citationCount", 0)
 
-def extract_papers_from_ranked_section(content: str, section_name: str) -> list[tuple[str, str, str, int, str]]:
+def extract_papers_from_ranked_section(content: str, section_name: str) -> list[tuple[str, str, int, str, str]]:
     """Extract papers from a ranked section."""
     section_pattern = f'### \\*\\*{re.escape(section_name)}\\*\\*'
     section_match = re.search(section_pattern, content)
@@ -51,12 +51,45 @@ def extract_papers_from_ranked_section(content: str, section_name: str) -> list[
     next_section = re.search(r'\n(?:###|---)', content[start:])
     section_content = content[start:start + next_section.start()] if next_section else content[start:]
     
-    paper_pattern = r'(\d+)\.\s+\[([^\]]+)📑💡?\]\(https://arxiv\.org/abs/(\d{4}\.\d{4,5})\):[^\n]+\(Citations:\s*(\d+)\)'
+    paper_pattern = r'^-\s+\[([^\]]*?)📑(?:💡)?\]\(https://arxiv\.org/abs/(\d{4}\.\d{4,5})\):[^\n]+\(Citations:\s*([\d,]+)\)'
     
     return [
-        (match.group(1), match.group(2), match.group(3), int(match.group(4)), match.group(0))
-        for match in re.finditer(paper_pattern, section_content)
+        (
+            match.group(1),
+            match.group(2),
+            int(match.group(3).replace(",", "")),
+            match.group(3),
+            match.group(0),
+        )
+        for match in re.finditer(paper_pattern, section_content, re.MULTILINE)
     ]
+
+def sort_ranked_section(content: str, section_name: str) -> str:
+    """Sort a ranked section in descending citation-count order."""
+    section_pattern = f'### \\*\\*{re.escape(section_name)}\\*\\*'
+    section_match = re.search(section_pattern, content)
+    if not section_match:
+        return content
+
+    start = section_match.end()
+    next_section = re.search(r'\n(?:###|---)', content[start:])
+    end = start + next_section.start() if next_section else len(content)
+    section_lines = content[start:end].splitlines(keepends=True)
+    citation_lines = [
+        line for line in section_lines
+        if re.search(r'\(Citations:\s*[\d,]+\)', line)
+    ]
+    sorted_citation_lines = sorted(
+        citation_lines,
+        key=lambda line: int(re.search(r'\(Citations:\s*([\d,]+)\)', line).group(1).replace(",", "")),
+        reverse=True,
+    )
+    citation_line_iter = iter(sorted_citation_lines)
+    sorted_section = "".join(
+        next(citation_line_iter) if line in citation_lines else line
+        for line in section_lines
+    )
+    return content[:start] + sorted_section + content[end:]
 
 def update_ranked_sections(
     file_path: Path,
@@ -65,6 +98,7 @@ def update_ranked_sections(
     max_retries: int,
     sleep_s: float,
     dry_run: bool,
+    sort_only: bool,
 ) -> int:
     """Update citation counts in ranked sections."""
 
@@ -83,8 +117,11 @@ def update_ranked_sections(
     for section_name in sections:
         papers = extract_papers_from_ranked_section(content, section_name)
         total_papers += len(papers)
-        
-        for idx, (_, title, arxiv_id, current_citations, original_text) in enumerate(papers, 1):
+
+        if sort_only:
+            continue
+
+        for idx, (title, arxiv_id, current_citations, current_citations_text, original_text) in enumerate(papers, 1):
             print(f"[{idx}/{len(papers)}] Checking {arxiv_id}...", end='\r')
             new_citations = get_citation_count(
                 arxiv_id,
@@ -96,8 +133,8 @@ def update_ranked_sections(
             
             if new_citations is not None and new_citations != current_citations:
                 new_text = original_text.replace(
-                    f'(Citations: {current_citations})',
-                    f'(Citations: {new_citations})'
+                    f'(Citations: {current_citations_text})',
+                    f'(Citations: {new_citations:,})'
                 )
                 
                 replacements.append({
@@ -112,24 +149,28 @@ def update_ranked_sections(
             
             time.sleep(sleep_s)
     
-    print(f"\nProcessed {total_papers} papers")
-    
+    if not sort_only:
+        print(f"\nProcessed {total_papers} papers")
+
+    updated_content = content
     if replacements:
         print("\nUpdates needed:")
         for i, r in enumerate(replacements, 1):
             print(f"{i}. {r['title'][:50]}... ({r['arxiv_id']}): {r['old_count']} → {r['new_count']}")
         
-        updated_content = content
         for r in replacements:
             updated_content = updated_content.replace(r['old'], r['new'])
-        
-        if dry_run:
-            print("\nDRY RUN: No files written.")
-        else:
-            file_path.write_text(updated_content, encoding="utf-8")
-            print(f"\n✓ Updated {len(replacements)} papers")
-    else:
+
+    for section_name in sections:
+        updated_content = sort_ranked_section(updated_content, section_name)
+
+    if updated_content == content:
         print("✓ All up to date")
+    elif dry_run:
+        print("\nDRY RUN: No files written.")
+    else:
+        file_path.write_text(updated_content, encoding="utf-8")
+        print(f"\n✓ Updated {len(replacements)} papers and re-sorted ranked sections")
 
     return len(replacements)
 
@@ -144,6 +185,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-retries", type=int, default=3, help="Max retries for API calls.")
     parser.add_argument("--sleep", type=float, default=0.5, help="Sleep between API calls in seconds.")
     parser.add_argument("--dry-run", action="store_true", help="Preview updates without writing.")
+    parser.add_argument("--sort-only", action="store_true", help="Re-sort ranked sections without calling the API.")
     return parser
 
 def main() -> None:
@@ -158,6 +200,7 @@ def main() -> None:
         max_retries=args.max_retries,
         sleep_s=args.sleep,
         dry_run=args.dry_run,
+        sort_only=args.sort_only,
     )
 
 

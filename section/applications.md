@@ -6,10 +6,10 @@
 |---|---|
 | Building Retrieval-Augmented Applications | [RAG](#rag-retrieval-augmented-generation) → [GraphRAG](#graphrag) → [RAG Application](#rag-application) |
 | Building an AI Application | [AI Application](#ai-application) for Frameworks, Memory, Serving, Gateways, Observability, and UI |
-| Delivering a Production AI Engineering Stack | [Top Agent Frameworks](#top-agent-frameworks) → [Data Processing & OCR](#data-processing--ocr) → [Memory](#memory) → [Model Gateway](#model-gateway) → [Observability & LLMOps](#observability--llmops) → [UI & No-Code Tool](#ui--no-code-tool) → [Skills](#skills) → [Harness](#harness) → [Loop Engineering](#loop-engineering) |
+| Delivering a Production AI Engineering Stack | [Top Agent Frameworks](#top-agent-frameworks) → [Data Processing & OCR](#data-processing--ocr) → [Memory](#memory) → [Model Gateway](#model-gateway) → [Observability & LLMOps](#observability--llmops) → [UI & No-Code Tool](#ui--no-code-tool) → [Skills](#skills) → [Agentic Engineering](#agentic-engineering) |
 | Connecting Agents to Tools or Other Agents | [Agent Protocol](#agent-protocol) |
 | Building Coding or Research Agents | [Coding](#coding) → [Deep Research](#deep-research) → [Domain-Specific Agents](#domain-specific-agents) |
-| Creating Agent Capabilities and Execution Environments | [Skills](#skills) → [Harness](#harness) → [Loop Engineering](#loop-engineering) |
+| Creating Agent Capabilities and Execution Environments | [Skills](#skills) → [Agentic Engineering](#agentic-engineering) |
 
 ## Contents
 
@@ -41,8 +41,7 @@
   - [Deep Research](#deep-research)
   - [Domain-Specific Agents](#domain-specific-agents)
   - [Skills](#skills)
-  - [Harness](#harness)
-    - [Loop Engineering](#loop-engineering)
+  - [Agentic Engineering](#agentic-engineering)
 
 ### **RAG (Retrieval-Augmented Generation)**
 
@@ -430,6 +429,7 @@
 - [Atlas](https://github.com/noamschwartz/atlas-memory-demo): Elasticsearch agent memory with hybrid retrieval, decay, and user isolation. [May 2026] [Overview](https://www.infoq.com/news/2026/06/elastic-atlas-agent-memory/) ![**github stars**](https://img.shields.io/github/stars/noamschwartz/atlas-memory-demo?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [claude-mem](https://github.com/thedotmack/claude-mem): A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/thedotmack/claude-mem?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [cognee](https://github.com/topoteretes/cognee): LLM Memory using Dynamic knowledge graphs (lightweight ECL pipelines) [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/topoteretes/cognee?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Engram](https://github.com/Gentleman-Programming/engram): Persistent, agent-agnostic memory for AI coding agents with SQLite/FTS5, MCP, HTTP API, CLI, and TUI interfaces. [Feb 2026] ![**github stars**](https://img.shields.io/github/stars/Gentleman-Programming/engram?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [EverMemOS](https://github.com/EverMind-AI/EverMemOS): A long-term memory layer composed of a Memory Construction Layer and a Memory Perception Layer. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/EverMind-AI/EverMemOS?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Gemini Memory](https://www.shloked.com/writing/gemini-memory): Gemini uses a structured, typed `user_context` summary with timestamps, accessed only when explicitly requested; simpler and more unified than ChatGPT or Claude memory. [19 Nov 2025]
 - [Graphiti](https://github.com/getzep/graphiti): Graphiti leverages [zep](https://github.com/getzep/zep)'s memory layer. Build Real-Time Knowledge Graphs for AI Agents [Aug 2024] ![**github stars**](https://img.shields.io/github/stars/getzep/graphiti?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -448,6 +448,7 @@
 - [OpenMemory](https://github.com/CaviraOSS/OpenMemory): Long-term memory for AI systems. Open source, self-hosted, and explainable. [Oct 2025] ![**github stars**](https://img.shields.io/github/stars/CaviraOSS/OpenMemory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [OptMem](https://github.com/VictorTaelin/OptMem): Compact permanent memory layer for AI agents. [Jul 2026] ![**github stars**](https://img.shields.io/github/stars/VictorTaelin/OptMem?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [supermemory](https://github.com/supermemoryai/supermemory): Memory engine and app that is extremely fast, scalable. [Feb 2024] ![**github stars**](https://img.shields.io/github/stars/supermemoryai/supermemory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory): Team memory hub that turns conversations, documents, and code into shared chat-memory, skill, LLM-wiki, and code-graph assets. [Apr 2026] ![**github stars**](https://img.shields.io/github/stars/TencentCloud/TencentDB-Agent-Memory?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [zep](https://github.com/getzep/zep): Long term memory layer. Zep intelligently integrates new information into the user's Knowledge Graph. ![**github stars**](https://img.shields.io/github/stars/getzep/zep?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) [May 2023]
 
 #### Model Gateway
@@ -456,6 +457,7 @@
 - [Agent-as-a-Router](https://github.com/LanceZPF/agent-as-a-router): Agentic model routing implementations for coding tasks. [Jun 2026] ![**github stars**](https://img.shields.io/github/stars/LanceZPF/agent-as-a-router?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [agentgateway](https://github.com/agentgateway/agentgateway): Next-generation agentic proxy for AI agents and MCP servers. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/agentgateway/agentgateway?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [AI Gateway](https://github.com/Portkey-AI/gateway): AI Gateway with integrated guardrails. Route to 200+ LLMs, 50+ AI Guardrails [Aug 2023] ![**github stars**](https://img.shields.io/github/stars/Portkey-AI/gateway?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Evolutionary Architecture for AI Gateways](https://www.infoq.com/articles/evolutionary-architecture-pattern/): Positions the gateway as an evolutionary control layer for model routing, agent identity and policy, guardrails, and auditing, while discussing centralization trade-offs. [Jul 2026]
 - [aisuite](https://github.com/andrewyng/aisuite): Andrew Ng launches a tool offering a simple, unified interface for multiple generative AI providers. [26 Nov 2024] ![**github stars**](https://img.shields.io/github/stars/andrewyng/aisuite?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000) vs [litellm](https://github.com/BerriAI/litellm)
 - [Bifrost](https://github.com/maximhq/bifrost): Enterprise AI gateway with adaptive load balancing, cluster mode, guardrails, and broad model support. [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/maximhq/bifrost?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [ClawRouter](https://github.com/BlockRunAI/ClawRouter): Agent-native LLM router for OpenClaw. [Feb 2026] ![**github stars**](https://img.shields.io/github/stars/BlockRunAI/ClawRouter?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -474,6 +476,7 @@
 #### Model Serving & Local Runtimes
 
 - [exo](https://github.com/exo-explore/exo): Run your own AI cluster at home with everyday devices [Jun 2024]
+- [FreeToken](https://github.com/FlashML-org/FreeToken): Local model-serving system for running large models efficiently on desktop and datacenter hardware. [Jul 2026] ![**github stars**](https://img.shields.io/github/stars/FlashML-org/FreeToken?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Harbor](https://github.com/av/harbor): Effortlessly run LLM backends, APIs, frontends, and services with one command. a helper for the local LLM development environment. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/av/harbor?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Hyperlight](https://github.com/hyperlight-dev/hyperlight): Embeddable micro-VM runtime for low-latency untrusted code execution. [Nov 2024] ![**github stars**](https://img.shields.io/github/stars/hyperlight-dev/hyperlight?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [KTransformers](https://github.com/kvcache-ai/ktransformers): A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/kvcache-ai/ktransformers?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -639,6 +642,8 @@
 - [CogAgent](https://github.com/THUDM/CogAgent): An open-sourced end-to-end VLM-based GUI Agent [Dec 2023] ![**github stars**](https://img.shields.io/github/stars/THUDM/CogAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Computer Use OOTB](https://github.com/showlab/computer_use_ootb): Out-of-the-box (OOTB) GUI Agent for Windows and macOS. [Oct 2024] ![**github stars**](https://img.shields.io/github/stars/showlab/computer_use_ootb?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [cua](https://github.com/trycua/cua): Open-source infrastructure for Computer-Use Agents. [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/trycua/cua?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Ego Lite](https://github.com/citrolabs/ego-lite): Agent browser that shares a logged-in browser state with coding agents without disrupting the user's active session. [Apr 2026] ![**github stars**](https://img.shields.io/github/stars/citrolabs/ego-lite?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Kitesurf](https://blog.cloudflare.com/kitesurf/): Cloudflare's agent-first browser running in isolated V8/Workers environments, with a Browser Run beta for CDP and MCP clients. [Aug 2026]
 - [Open-Interface](https://github.com/AmberSahdev/Open-Interface/): LLM backend (GPT-4V, etc), supporting Linux, Mac, Windows. [Jan 2024] ![**github stars**](https://img.shields.io/github/stars/AmberSahdev/Open-Interface?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Open Operator](https://github.com/browserbase/open-operator): a web agent based on Browserbase [24 Jan 2025] ![**github stars**](https://img.shields.io/github/stars/browserbase/open-operator?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [OpenAI Operator](https://openai.com/index/introducing-operator/) [23 Jan 2025]
@@ -675,6 +680,7 @@
 - [MCP Registry](https://github.com/mcp): Github. centralizes Model Context Protocol (MCP) servers, facilitating the discovery and integration of AI tools with external data sources and services. [16 Sep 2025]
 - [MCP Run Python](https://ai.pydantic.dev/mcp/run-python/): PydanticAI. Use Pyodide to run Python code in a JavaScript environment with Deno [19 Mar 2025]
 - [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan): Auto-discover MCP Security Vulnerabilities. [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/invariantlabs-ai/mcp-scan?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [MCP Scanner](https://github.com/cisco-ai-defense/mcp-scanner): Scans MCP servers for potential threats and security findings. [Sep 2025] ![**github stars**](https://img.shields.io/github/stars/cisco-ai-defense/mcp-scanner?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [mcp.so](https://mcp.so/): Find Awesome MCP Servers and Clients
 - [mcp-ui](https://github.com/idosal/mcp-ui): SDK for UI over MCP. Create next-gen UI experiences! [May 2025] ![**github stars**](https://img.shields.io/github/stars/idosal/mcp-ui?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [mcp-use](https://github.com/mcp-use/mcp-use): MCP Client Library to connect any LLM to any MCP server [Mar 2025] ![**github stars**](https://img.shields.io/github/stars/mcp-use/mcp-use?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -683,6 +689,7 @@
 - [Postman launches full support for Model Context Protocol (MCP)](https://blog.postman.com/postman-launches-full-support-for-model-context-protocol-mcp-build-better-ai-agents-faster/) [1 May 2025]
 - [Programmatic Tool Calling (PTC) Demo](https://github.com/Chen-zexi/open-ptc-agent): An open source implementation of code execution with MCP (Programatic Tool Calling) [Nov 2025] ![**github stars**](https://img.shields.io/github/stars/Chen-zexi/open-ptc-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset): MCP server that routes image-generation prompts to 30+ models (DALL-E, Stable Diffusion, Flux, Ideogram, and more) through a single interface. [Apr 2025] ![**github stars**](https://img.shields.io/github/stars/MohamedAbdallah-14/prompt-to-asset?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Sequential Thinking MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking): MCP tool for iterative, revisable, and branching problem decomposition. [2026]
 
 ### **Coding & Research**
 
@@ -719,6 +726,7 @@
 - [Cline](https://github.com/cline/cline):💡CLI aNd Editor. Autonomous coding agent. VSCode Extension. [Jul 2024] ![**github stars**](https://img.shields.io/github/stars/cline/cline?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [code2prompt](https://github.com/mufeedvh/code2prompt/): a command-line tool (CLI) that converts your codebase into a single LLM prompt with a source tree [Mar 2024]
 - [Code Shaping](https://github.com/CodeShaping/code-shaping): Editing code with free-form sketch annotations on the code and console output. [6 Feb 2025] [ref📑](https://arxiv.org/abs/2502.03719) ![**github stars**](https://img.shields.io/github/stars/CodeShaping/code-shaping?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Code Review Graph](https://github.com/tirth8205/code-review-graph): Local-first persistent code-intelligence graph for MCP and CLI coding tools. [Feb 2026] ![**github stars**](https://img.shields.io/github/stars/tirth8205/code-review-graph?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [CodeLLM by Abacus.AI](https://codellm.abacus.ai/): AI-powered code editor with automatic selection of state-of-the-art LLMs based on coding tasks. [Dec 2024]
 - [codegen](https://github.com/codegen-sh/codegen): Python SDK to interact with intelligent code generation agents [Jan 2025] ![**github stars**](https://img.shields.io/github/stars/codegen-sh/codegen?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [codegraph](https://github.com/colbymchenry/codegraph): Local pre-indexed code knowledge graph for coding agents. [Jan 2026] ![**github stars**](https://img.shields.io/github/stars/colbymchenry/codegraph?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -744,7 +752,7 @@
 - [GitHub Copilot](https://github.com/features/copilot):🏆 AI pair programmer by GitHub and OpenAI. Supports VS Code, Visual Studio, Neovim, and JetBrains IDEs. [29 Jun 2021] > [Awesome GitHub Copilot Customizations](https://github.com/github/awesome-copilot): Official curated collection.
 - [Github Spark](https://githubnext.com/projects/github-spark): an AI-powered tool for creating and sharing micro apps (“sparks”) [29 Oct 2024]
 - [Google Antigravity](https://antigravity.google/): A VSCode‑forked IDE with an artifacts conceept, similar to Claude. [18 Nov 2025]
-- **Graphify vs GitNexus vs CodeGraph:** [Graphify](https://github.com/safishamsi/graphify) turns code, documents, and multimedia into knowledge graphs; [GitNexus](https://github.com/abhigyanpatwari/GitNexus) exposes multi-repository graphs through MCP; and [CodeGraph](https://github.com/colbymchenry/codegraph) focuses on live synchronization and dynamic code tracing.
+- **Graphify vs GitNexus vs CodeGraph:** [Graphify](https://github.com/Graphify-Labs/graphify) turns codebases, documentation, schemas, configurations, and PDFs into a local deterministic knowledge graph; [GitNexus](https://github.com/abhigyanpatwari/GitNexus) exposes multi-repository graphs through MCP; and [CodeGraph](https://github.com/colbymchenry/codegraph) focuses on live synchronization and dynamic code tracing. [Apr 2026] ![**github stars**](https://img.shields.io/github/stars/Graphify-Labs/graphify?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Google CodeWiki](https://codewiki.google/): AI-powered documentation platform that automatically transforms any GitHub repository into comprehensive documentation. [13 Nov 2025]
 - [GPT Pilot](https://github.com/Pythagora-io/gpt-pilot): The first real AI developer. Dev tool that writes scalable apps from scratch while the developer oversees the implementation [Jul 2023] ![**github stars**](https://img.shields.io/github/stars/Pythagora-io/gpt-pilot?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [GPT wrapper for git](https://github.com/di-sukharev/opencommit): GPT wrapper for git — generate commit messages with an LLM in 1 sec [Mar 2023] ![**github stars**](https://img.shields.io/github/stars/di-sukharev/opencommit?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
@@ -974,17 +982,21 @@ Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills. ![**github s
 - [VS Code Agent Skills Guide](https://code.visualstudio.com/docs/copilot/customization/agent-skills): Official documentation for portable, on-demand `SKILL.md` capabilities in GitHub Copilot, including creation, sharing, and progressive loading. [Jul 2026]
 - [OpenCode Agent Skills Guide](https://opencode.ai/docs/skills/): Documents `SKILL.md` discovery, on-demand loading, validation, and per-agent skill permissions. [Jul 2026]
 
-#### Harness
+#### Agentic Engineering
 
+- **Agentic Engineering:** **Harness Engineering → Loop Engineering → Graph Engineering.** Harness engineering makes an individual agent dependable; loop engineering makes work persistent and self-correcting; and graph engineering coordinates tasks, agents, worktrees, dependencies, and project state across the system. [2026]
 - [12 Agentic Harness Patterns from Claude Code](https://generativeprogrammer.com/p/12-agentic-harness-patterns-from): Reusable memory, orchestration, permission, and hook patterns for agent harness design. [Apr 2026]
 - [12-Factor Agents](https://github.com/humanlayer/12-factor-agents): Production principles for reliable LLM applications, including context ownership, execution state, control flow, error compaction, and small focused agents. [2025] ![**github stars**](https://img.shields.io/github/stars/humanlayer/12-factor-agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Advanced Context Engineering](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents): Retrospective on human review for AI software factories. [Aug 2025] ![**github stars**](https://img.shields.io/github/stars/humanlayer/advanced-context-engineering-for-coding-agents?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Agent Harness Korean Guide](https://wikidocs.net/book/19689): Korean-language guide to agent harness concepts and practice.
+- [Agents as Loops](https://github.com/humanlayer/12-factor-agents#agents-as-loops): Explains the core cycle of selecting an action, executing it, appending the result to context, and repeating until completion. [2025]
 - [AGENTS.md](https://agents.md/): Open format for repository-level guidance that gives coding agents the commands, conventions, and context needed to work effectively. [2025]
 - [Anthropic Designs Three-Agent Harness Supports Long-Running Full-Stack AI Development](https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/): Summary of Anthropic's planning, generation, and evaluator-agent harness for multi-hour app-building loops. [Apr 2026]
 - [browser-harness](https://github.com/browser-use/browser-harness): Self-healing browser-agent harness for completing browser tasks. [Apr 2026] ![**github stars**](https://img.shields.io/github/stars/browser-use/browser-harness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents): Influential guide to choosing workflows or agents and applying composable patterns such as routing, orchestrator-workers, and evaluator-optimizer. [19 Dec 2024]
 - [Code as Agent Harness📑](https://arxiv.org/abs/2605.18747): Survey of code as executable infrastructure for agents. [May 2026]
+- [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): MIT-licensed, plugin-oriented harness for configuring and extending DeepSeek agent workflows. [Aug 2026] ![**github stars**](https://img.shields.io/github/stars/deepseek-ai/deepseek-harness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Evaluator-Optimizer](https://www.anthropic.com/engineering/building-effective-agents#evaluator-optimizer): A generator–evaluator feedback loop for iterative refinement when success criteria are clear. [19 Dec 2024]
 - [GenericAgent](https://github.com/lsdefine/GenericAgent): Self-evolving agent that grows a skill tree from a compact seed program. ![**github stars**](https://img.shields.io/github/stars/lsdefine/GenericAgent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Harness Design for Long-Running Apps](https://www.anthropic.com/engineering/harness-design-long-running-apps): Anthropic engineering write-up on harnesses for long-running app design and full-stack generation. [2026]
 - [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html): Mental model for coding-agent feedforward guides, feedback sensors, and computational vs inferential controls. [Apr 2026]
@@ -993,10 +1005,13 @@ Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills. ![**github s
 - [Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html): Software-delivery patterns for human-agent collaboration. [Mar 2026]
 - [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code): A compact, from-scratch Claude Code–style agent harness implementation. [Jun 2025] ![**github stars**](https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering): Beginner tutorial for building agent harnesses from scratch. [Mar 2026] ![**github stars**](https://img.shields.io/github/stars/walkinglabs/learn-harness-engineering?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Loop Engineering](https://addyosmani.com/blog/loop-engineering/): Designing iterative control flow that plans, executes, verifies, and retries until a task succeeds. / [Stop Making Prompts, Start Designing Loops](https://x.com/steipete/status/2063697162748260627?s=20) [Jun 2026]
 - [Microsoft Ships AI Agents](https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at): Production-agent harness lessons covering context, identity, and continuous evaluation. [Jul 2026]
 - [Omnigent](https://github.com/omnigent-ai/omnigent): Meta-harness for orchestrating coding agents with policy enforcement, sandboxing, and real-time collaboration. [Jun 2026] ![**github stars**](https://img.shields.io/github/stars/omnigent-ai/omnigent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
-- [OpenHarness](https://github.com/HKUDS/OpenHarness): Open agent harness with a built-in personal agent. ![**github stars**](https://img.shields.io/github/stars/HKUDS/OpenHarness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Open Knowledge Format📑](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md): Specification for structured knowledge catalogs. ![**github stars**](https://img.shields.io/github/stars/GoogleCloudPlatform/knowledge-catalog?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [OpenHarness](https://github.com/HKUDS/OpenHarness): Open agent harness with a built-in personal agent. ![**github stars**](https://img.shields.io/github/stars/HKUDS/OpenHarness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [Orca](https://github.com/stablyai/orca): Agent development environment that coordinates a fleet of coding agents in parallel, isolated worktrees while keeping tasks and project state connected and visible. [Mar 2026] ![**github stars**](https://img.shields.io/github/stars/stablyai/orca?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
+- [qm](https://github.com/yc-software/qm): Multiplayer harness for coordinating agents on work. [Jul 2026] ![**github stars**](https://img.shields.io/github/stars/yc-software/qm?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [revfactory/harness](https://github.com/revfactory/harness): Meta-skill that designs domain-specific agent teams and generates the skills they use. ![**github stars**](https://img.shields.io/github/stars/revfactory/harness?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [Self-Harness📑](https://arxiv.org/abs/2606.09498): Self-improves a single harness through propose-validate iterations. [Jun 2026]
 - **Self-Harness vs HarnessX:** Self-Harness improves one agent harness through propose–validate iterations, while [HarnessX](https://github.com/Darwin-Agent/HarnessX) evolves reusable, modular harness components through trace-driven multi-agent adaptation.
@@ -1004,8 +1019,3 @@ Supercharge Claude Code with 11 AI agents, 36 commands & 15 skills. ![**github s
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent): Open-source coding-agent harness that lets models use tools to solve issues in real repositories; its successor, mini-SWE-agent, emphasizes a simpler implementation. [May 2024] ![**github stars**](https://img.shields.io/github/stars/SWE-agent/SWE-agent?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 - [The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness): Defines Agent = Model + Harness and surveys harness primitives such as filesystem, tools, sandboxing, memory, search, and compaction. [Mar 2026]
 
-#### Loop Engineering
-
-- [Agents as Loops](https://github.com/humanlayer/12-factor-agents#agents-as-loops): Explains the core cycle of selecting an action, executing it, appending the result to context, and repeating until completion. [2025]
-- [Evaluator-Optimizer](https://www.anthropic.com/engineering/building-effective-agents#evaluator-optimizer): A generator–evaluator feedback loop for iterative refinement when success criteria are clear. [19 Dec 2024]
-- [Loop Engineering](https://addyosmani.com/blog/loop-engineering/): Designing iterative control flow that plans, executes, verifies, and retries until a task succeeds. / [Stop Making Prompts, Start Designing Loops](https://x.com/steipete/status/2063697162748260627?s=20) [Jun 2026]

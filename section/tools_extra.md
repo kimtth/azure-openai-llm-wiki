@@ -330,6 +330,8 @@ databricks-dolly-15k: Instruction-Tuned [🤗](https://huggingface.co/datasets/d
 - [Mobile ALOHA](https://mobile-aloha.github.io/): Stanford’s mobile ALOHA robot learns from humans to cook, clean, do laundry. Mobile ALOHA extends the original ALOHA system by mounting it on a wheeled base [4 Jan 2024] / [ALOHA](https://www.trossenrobotics.com/aloha.aspx): A Low-cost Open-source Hardware System for Bimanual Teleoperation.
 - [Figure 01 + OpenAI](https://www.figure.ai/): Humanoid Robots Powered by OpenAI ChatGPT [📺](https://youtu.be/Sq1QZB5baNw?si=wyufZA1xtTYRfLf3) [Mar 2024]
 - [Gemini Robotics](https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/): Robotics built on the foundation of Gemini 2.0 [12 Mar 2025]
+- [Gemini Robotics 2](https://deepmind.google/models/gemini-robotics/): Vision-language-action model for controlling robot embodiments, with companion embodied-reasoning and on-device models. [2026]
+- [WorldClaw](https://github.com/Tencent-Hunyuan/Hunyuan3D-WorldClaw): Agentic 3D open-world generation system. [Aug 2026] ![**github stars**](https://img.shields.io/github/stars/Tencent-Hunyuan/Hunyuan3D-WorldClaw?style=flat&label=%20&color=f0f1f2&cacheSeconds=360000)
 
 ## **Awesome demo**
 
